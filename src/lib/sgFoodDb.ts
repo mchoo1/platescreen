@@ -1,8 +1,15 @@
 /**
- * Singapore Food Database
+ * PlateScreen Food Database
  * ─────────────────────────────────────────────────────────────────────────────
  * Central data store for restaurant chains, grab & go options, grocery
  * ingredients, and recipe suggestions available in Singapore.
+ *
+ * OWNERSHIP
+ * ───────────────
+ * This dataset originated as a duplicate of Stride's SG food database
+ * (2026-08-09) but is now maintained independently and exclusively for
+ * PlateScreen. Edit it directly here — changes do not sync to or from the
+ * Stride app, and Stride's data changes will not flow into this file.
  *
  * HOW TO ADD DATA
  * ───────────────

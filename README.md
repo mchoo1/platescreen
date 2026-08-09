@@ -8,11 +8,15 @@ run client-side from a static dataset.
 ## Data
 
 `src/lib/sgFoodDb.ts`, `sgHawkerPlaces.ts`, `sgHawkerCentresAuto.ts`, and
-`sgFoodCourtPlaces.ts` are copied verbatim from the Stride app
-(`C:\stride-app\app\src\lib`) — 1,775 menu items across 294 outlets
-(chains, hawker stalls, food courts). `src/types/index.ts` is copied the
-same way. Don't hand-edit macro data here; update it in the Stride repo and
-re-copy if the source changes.
+`sgFoodCourtPlaces.ts` hold PlateScreen's own food database — 1,775 menu
+items across 294 outlets (chains, hawker stalls, food courts). `src/types/index.ts`
+holds the shared type definitions.
+
+This dataset was duplicated from the Stride app's SG food database on
+2026-08-09 as a one-time starting point, but is now **maintained
+independently and exclusively for PlateScreen**. Edit these files directly
+to add or update items — changes here do not sync back to Stride, and
+future changes in Stride's database will not flow into PlateScreen.
 
 `src/lib/geo.ts` ports the haversine distance function and the static
 outlet-coordinate map from Stride's `EatPageClient.tsx`, used for the

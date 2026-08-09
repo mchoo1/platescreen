@@ -1,7 +1,9 @@
-// AUTO-GENERATED — Singapore hawker centres from NEA open data (data.gov.sg)
+// Singapore hawker centres from NEA open data (data.gov.sg), originally generated
+// via a script in the Stride repo. Duplicated into PlateScreen on 2026-08-09 and
+// now maintained independently here as a static, hand-editable file — there is no
+// regeneration script in this project. Edit entries directly to add/update.
 // 'estimated_menu' tier: each centre carries a shared set of popular hawker dishes
 // with HPB-estimated macros (source:'hpb', verified:false). GPS-matched by aliases.
-// Regenerate via outputs/gen_hawkers.py. Last generated: 2026-07-07
 import type { SGRestaurant } from './sgFoodDb';
 
 export const SG_HAWKER_CENTRES_AUTO: SGRestaurant[] = [
