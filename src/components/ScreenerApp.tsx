@@ -175,7 +175,10 @@ export function ScreenerApp() {
       <header className="border-b border-slate-200 bg-white dark:bg-slate-900 dark:border-slate-800">
         <div className="max-w-[1400px] mx-auto flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
-            <span className="flex items-center justify-center w-8 h-8 rounded-lg bg-brand text-white text-sm font-bold">P</span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/mark.svg" alt="PlateScreen" className="w-8 h-8 dark:hidden" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/mark-white.svg" alt="PlateScreen" className="w-8 h-8 hidden dark:block" />
             <h1 className="text-base font-bold text-slate-900 dark:text-slate-100">
               Plate<span className="text-brand dark:text-blue-400">Screen</span>
             </h1>
