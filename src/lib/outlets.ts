@@ -1,4 +1,6 @@
 // Generated data — see reference/migration-scripts/migrate.ts
+// sfa field populated 2026-08-09 from SFA/data.gov.sg licensed-establishment
+// exports — see reference/migration-scripts/applySfaData.py for the matching logic.
 
 export const OUTLETS = [
   {
@@ -1822,7 +1824,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "2 ADAM ROAD #01-02,ADAM ROAD FOOD CENTRE,Singapore 289876",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "kallang_estate_fresh_market_and_food_centre",
@@ -1989,7 +1999,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "676 WOODLANDS DRIVE 71 #02-37,Kampung Admiralty Hawker Centre,Singapore 730676",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "market_street_hawker_centre",
@@ -2103,7 +2121,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "110 PASIR RIS CENTRAL #01-07,PASIR RIS CENTRAL HAWKER CENTRE,Singapore 519641",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "albert_centre",
@@ -2121,7 +2147,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "270 QUEEN STREET #01-54,ALBERT CENTRE,Singapore 180270",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "redhill_market",
@@ -2157,7 +2191,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE,Singapore 159469",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "sims_vista_market_and_food_centre",
@@ -2421,7 +2463,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "320 SHUNFU ROAD #02-02,SHUNFU MART,Singapore 570320",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "kebun_baru_market_and_food_centre",
@@ -2457,7 +2507,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "407 ANG MO KIO AVENUE 10 #01-733,TECK GHEE SQUARE,Singapore 560407",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "chong_boon_market_and_food_centre",
@@ -2807,7 +2865,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "2 BUKIT PANJANG RING ROAD #02-22,BUKIT PANJANG HAWKER CENTRE,Singapore 679947",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "changi_village_blk_2_and_3",
@@ -2873,7 +2939,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "51 HOUGANG AVENUE 9 #01-43,CI YUAN HAWKER CENTRE,Singapore 538776",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "circuit_road_blk_89",
@@ -3077,7 +3151,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "1 TAMPINES WALK #01-60,HAWKER CENTRE @ OUR TAMPINES HUB,Singapore 528523",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "kovan_hougang_market_and_food_centre",
@@ -3201,7 +3283,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "50 JURONG WEST STREET 61 #01-07,JURONG WEST HAWKER CENTRE,Singapore 648202",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "yuhua_market_and_hawker_centre",
@@ -3289,7 +3379,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "73A AYER RAJAH CRESCENT AYER RAJAH FOOD CENTRE I,Singapore 139957",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "hong_lim_food_centre_and_market",
@@ -3323,7 +3421,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "51 YISHUN AVENUE 11 #01-14,YISHUN PARK HAWKER CENTRE,Singapore 768867",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "chong_pang_market_and_food_centre",
@@ -3341,7 +3447,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "104 YISHUN RING ROAD #01-81,CHONG PANG MARKET & FOOD CENTRE,Singapore 760104",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "margaret_drive_hawker_centre",
@@ -3373,7 +3487,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "339 ANCHORVALE ROAD ANCHORVALE VILLAGE HAWKER CENTRE,Singapore 540339",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "fernvale_hawker_centre_market",
@@ -3389,7 +3511,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "21 SENGKANG WEST AVENUE #03-19,FERNVALE HAWKER CENTRE & MARKET,Singapore 797650",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "one_punggol_hawker_centre",
@@ -3421,7 +3551,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "21 CANBERRA LINK #01-20,BUKIT CANBERRA HAWKER CENTRE,Singapore 756973",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "punggol_coast_hawker_centre",
@@ -3437,7 +3575,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "84 PUNGGOL WAY #02-K74,PUNGGOL COAST HAWKER CENTRE,Singapore 829911",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "senja_hawker_centre",
@@ -3453,7 +3599,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "2 SENJA CLOSE #02-26,Senja Hawker Centre,Singapore 677632",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "buangkok_hawker_centre",
@@ -3469,7 +3623,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "70 COMPASSVALE BOW #02-K45,BUANGKOK HAWKER CENTRE,Singapore 544692",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "bukit_batok_west_hawker_centre",
@@ -3501,7 +3663,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "202C WOODLEIGH LINK #01-38,Woodleigh Village Hawker Centre,Singapore 363202",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "bukit_timah_interim_hawker_centre_and_market",
@@ -3601,7 +3771,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "339 ANG MO KIO AVENUE 1 #01-1601,TECK GHEE COURT,Singapore 560339",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "east_coast_lagoon_food_village",
@@ -3683,7 +3861,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "166 JALAN BESAR 005,BERSEH FOOD CENTRE,Singapore 208877",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "tian_tian_chicken_rice",
@@ -3704,7 +3890,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "AMO094002",
+      licenseeName: "CHEE HIANG SAN",
+      premisesAddress: "7 MAXWELL ROAD 094,MND BUILDING ANNEXE B,Singapore 069111",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "maxwell_wonton_mee",
@@ -3803,7 +3997,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "AMO035003",
+      licenseeName: "NG SOON CHYE",
+      premisesAddress: "7 MAXWELL ROAD 035,MND BUILDING ANNEXE B,Singapore 069111",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "maxwell_oyster_omelette",
@@ -4135,7 +4337,15 @@ export const OUTLETS = [
     priceRange: "$$",
     platforms: [
       "dine_in"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "W91119C049",
+      licenseeName: "HOUSE OF BRANDS SINGAPORE PTE. LTD.",
+      premisesAddress: "18 RAFFLES QUAY Lau Pa Sat,Singapore 048582",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "lau_pa_sat_maya_veggie",
@@ -4534,7 +4744,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "SM102050003",
+      licenseeName: "YEO MUI LENG",
+      premisesAddress: "335 SMITH STREET #02-050,CHINATOWN COMPLEX,Singapore 050335",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "cc_desserts_stall",
@@ -4712,7 +4930,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "BF101251004",
+      licenseeName: "JIMMA BI W/O NANIMAIR",
+      premisesAddress: "665 BUFFALO ROAD #01-251,ZHUJIAO CENTRE (TEKKA MARKET),Singapore 210665",
+      grade: "C",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "tekka_rojak_stall",
@@ -5000,7 +5226,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "GMFB135003",
+      licenseeName: "KOH GUEK CHENG",
+      premisesAddress: "505 BEACH ROAD #B1-35,GOLDEN MILE FOOD CENTRE,Singapore 199583",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "gmfc_bak_kut_teh",
@@ -5041,7 +5275,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "GMFB150004",
+      licenseeName: "CHONG YOKE WENG",
+      premisesAddress: "505 BEACH ROAD #B1-50,GOLDEN MILE FOOD CENTRE,Singapore 199583",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "gmfc_hokkien_mee",
@@ -5167,7 +5409,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "GMF0175003",
+      licenseeName: "NG GEOK KWAN @WEE GEOK KWAN",
+      premisesAddress: "505 BEACH ROAD #01-75,GOLDEN MILE FOOD CENTRE,Singapore 199583",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "gsm_nasi_lemak_stall",
@@ -5384,7 +5634,15 @@ export const OUTLETS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
+    ],
+    sfa: {
+      licenceNumber: "SE09804L000",
+      licenseeName: "MTT GROUP PTE. LTD.",
+      premisesAddress: "1 GEYLANG SERAI #01-210,Singapore 402001",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    }
   },
   {
     id: "whampoa_chicken_rice",

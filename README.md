@@ -44,6 +44,18 @@ for a base record before researching menu/macro data. This is currently a
 manual workflow (ask to have new outlets researched and added) rather than
 an automated schedule.
 
+**SFA enhancement (2026-08-09):** 32 of 296 `Outlet` records now carry a real
+`sfa` block, matched from 8 SFA Track Records exports (52,093 unique licensed
+establishments after dedup). Coverage is intentionally conservative — most of
+the 231 hawker/food_court_stall outlets couldn't be matched confidently:
+114 are "whole hawker centre" entries (many stalls, not one licence — these
+get a centre-level record with `grade: 'not_applicable'` and no single
+`licenceNumber` instead), 27 are generic food-court-operator archetypes
+(e.g. "Koufu Chicken Rice Stall") not tied to any one physical premises, and
+the rest failed a deliberately strict dish-keyword match rather than risk a
+wrong attribution. Full methodology, the false-positive bugs found along the
+way, and the matcher itself: `reference/migration-scripts/applySfaData.py`.
+
 ### Sending data to Stride
 
 `src/lib/exportToStride.ts` (`exportAllToStride`) converts PlateScreen's

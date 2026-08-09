@@ -1,0 +1,258 @@
+{
+  "adam_road_food_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "2 ADAM ROAD #01-02,ADAM ROAD FOOD CENTRE,Singapore 289876",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "kampung_admiralty_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "676 WOODLANDS DRIVE 71 #02-37,Kampung Admiralty Hawker Centre,Singapore 730676",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "pasir_ris_central_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "110 PASIR RIS CENTRAL #01-07,PASIR RIS CENTRAL HAWKER CENTRE,Singapore 519641",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "albert_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "270 QUEEN STREET #01-54,ALBERT CENTRE,Singapore 180270",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "redhill_food_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE,Singapore 159469",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "shunfu_mart": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "320 SHUNFU ROAD #02-02,SHUNFU MART,Singapore 570320",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "teck_ghee_square": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "407 ANG MO KIO AVENUE 10 #01-733,TECK GHEE SQUARE,Singapore 560407",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "bukit_panjang_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "2 BUKIT PANJANG RING ROAD #02-22,BUKIT PANJANG HAWKER CENTRE,Singapore 679947",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "ci_yuan_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "51 HOUGANG AVENUE 9 #01-43,CI YUAN HAWKER CENTRE,Singapore 538776",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "hawker_centre_our_tampines_hub": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "1 TAMPINES WALK #01-60,HAWKER CENTRE @ OUR TAMPINES HUB,Singapore 528523",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "jurong_west_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "50 JURONG WEST STREET 61 #01-07,JURONG WEST HAWKER CENTRE,Singapore 648202",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "ayer_rajah_food_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "73A AYER RAJAH CRESCENT AYER RAJAH FOOD CENTRE I,Singapore 139957",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "yishun_park_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "51 YISHUN AVENUE 11 #01-14,YISHUN PARK HAWKER CENTRE,Singapore 768867",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "chong_pang_market_and_food_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "104 YISHUN RING ROAD #01-81,CHONG PANG MARKET & FOOD CENTRE,Singapore 760104",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "anchorvale_village_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "339 ANCHORVALE ROAD ANCHORVALE VILLAGE HAWKER CENTRE,Singapore 540339",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "fernvale_hawker_centre_market": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "21 SENGKANG WEST AVENUE #03-19,FERNVALE HAWKER CENTRE & MARKET,Singapore 797650",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "bukit_canberra_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "21 CANBERRA LINK #01-20,BUKIT CANBERRA HAWKER CENTRE,Singapore 756973",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "punggol_coast_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "84 PUNGGOL WAY #02-K74,PUNGGOL COAST HAWKER CENTRE,Singapore 829911",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "senja_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "2 SENJA CLOSE #02-26,Senja Hawker Centre,Singapore 677632",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "buangkok_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "70 COMPASSVALE BOW #02-K45,BUANGKOK HAWKER CENTRE,Singapore 544692",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "woodleigh_village_hawker_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "202C WOODLEIGH LINK #01-38,Woodleigh Village Hawker Centre,Singapore 363202",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "teck_ghee_court": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "339 ANG MO KIO AVENUE 1 #01-1601,TECK GHEE COURT,Singapore 560339",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "berseh_food_centre": {
+    "licenceNumber": null,
+    "licenseeName": null,
+    "premisesAddress": "166 JALAN BESAR 005,BERSEH FOOD CENTRE,Singapore 208877",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "tian_tian_chicken_rice": {
+    "licenceNumber": "AMO094002",
+    "licenseeName": "CHEE HIANG SAN",
+    "premisesAddress": "7 MAXWELL ROAD 094,MND BUILDING ANNEXE B,Singapore 069111",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "maxwell_carrot_cake": {
+    "licenceNumber": "AMO035003",
+    "licenseeName": "NG SOON CHYE",
+    "premisesAddress": "7 MAXWELL ROAD 035,MND BUILDING ANNEXE B,Singapore 069111",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "lau_pa_sat_taliwang": {
+    "licenceNumber": "W91119C049",
+    "licenseeName": "HOUSE OF BRANDS SINGAPORE PTE. LTD.",
+    "premisesAddress": "18 RAFFLES QUAY Lau Pa Sat,Singapore 048582",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "cc_rice_noodle_rolls": {
+    "licenceNumber": "SM102050003",
+    "licenseeName": "YEO MUI LENG",
+    "premisesAddress": "335 SMITH STREET #02-050,CHINATOWN COMPLEX,Singapore 050335",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "tekka_mee_goreng_stall": {
+    "licenceNumber": "BF101251004",
+    "licenseeName": "JIMMA BI W/O NANIMAIR",
+    "premisesAddress": "665 BUFFALO ROAD #01-251,ZHUJIAO CENTRE (TEKKA MARKET),Singapore 210665",
+    "grade": "C",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "gmfc_chicken_rice": {
+    "licenceNumber": "GMFB135003",
+    "licenseeName": "KOH GUEK CHENG",
+    "premisesAddress": "505 BEACH ROAD #B1-35,GOLDEN MILE FOOD CENTRE,Singapore 199583",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "gmfc_char_kway_teow": {
+    "licenceNumber": "GMFB150004",
+    "licenseeName": "CHONG YOKE WENG",
+    "premisesAddress": "505 BEACH ROAD #B1-50,GOLDEN MILE FOOD CENTRE,Singapore 199583",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "gmfc_desserts_drinks": {
+    "licenceNumber": "GMF0175003",
+    "licenseeName": "NG GEOK KWAN @WEE GEOK KWAN",
+    "premisesAddress": "505 BEACH ROAD #01-75,GOLDEN MILE FOOD CENTRE,Singapore 199583",
+    "grade": "A",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  },
+  "gsm_desserts_drinks": {
+    "licenceNumber": "SE09804L000",
+    "licenseeName": "MTT GROUP PTE. LTD.",
+    "premisesAddress": "1 GEYLANG SERAI #01-210,Singapore 402001",
+    "grade": "not_applicable",
+    "demeritPoints": null,
+    "licenceSuspended": false
+  }
+}
