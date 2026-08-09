@@ -5948,5 +5948,22 @@ export const OUTLETS = [
     platforms: [
       "self_cook"
     ]
+  },
+  {
+    id: "kopitiam",
+    name: "Kopitiam",
+    emoji: "🏮",
+    type: "food_court",
+    cuisine: "Food Court",
+    aliases: [
+      "kopitiam",
+      "ntuc kopitiam"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
   }
 ];

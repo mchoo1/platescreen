@@ -28366,5 +28366,140 @@ export const FOOD_OPTIONS = [
       "halal"
     ],
     confidence: "estimated"
+  },
+  {
+    id: "kopitiam_kaya_toast_set",
+    outletId: "kopitiam",
+    name: "Traditional Kaya Toast Set",
+    emoji: "🍞",
+    category: "Breakfast",
+    price: 4.5,
+    calories: 650,
+    protein: 27,
+    carbs: 71,
+    fat: 29,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "kopitiam_roti_prata",
+    outletId: "kopitiam",
+    name: "Roti Prata (Plain, 2pc) with Curry",
+    emoji: "🫓",
+    category: "Breakfast",
+    price: 2.5,
+    calories: 480,
+    protein: 10,
+    carbs: 70,
+    fat: 24,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "kopitiam_char_kway_teow",
+    outletId: "kopitiam",
+    name: "Char Kway Teow",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 5,
+    calories: 650,
+    protein: 18,
+    carbs: 78,
+    fat: 26,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "kopitiam_hokkien_mee",
+    outletId: "kopitiam",
+    name: "Hokkien Mee (Prawn Noodle)",
+    emoji: "🦐",
+    category: "Noodles",
+    price: 5.5,
+    calories: 560,
+    protein: 26,
+    carbs: 62,
+    fat: 20,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "kopitiam_bak_chor_mee",
+    outletId: "kopitiam",
+    name: "Bak Chor Mee (Dry)",
+    emoji: "🍲",
+    category: "Noodles",
+    price: 5,
+    calories: 460,
+    protein: 25,
+    carbs: 50,
+    fat: 18,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "kopitiam_chwee_kueh",
+    outletId: "kopitiam",
+    name: "Chwee Kueh (5pc)",
+    emoji: "🍘",
+    category: "Snacks",
+    price: 3,
+    calories: 280,
+    protein: 4,
+    carbs: 40,
+    fat: 10,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "kopitiam_popiah",
+    outletId: "kopitiam",
+    name: "Popiah (2 rolls)",
+    emoji: "🌯",
+    category: "Snacks",
+    price: 4,
+    calories: 376,
+    protein: 8,
+    carbs: 28,
+    fat: 14,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "kopitiam_yong_tau_foo",
+    outletId: "kopitiam",
+    name: "Yong Tau Foo (Noodle Soup, Mixed)",
+    emoji: "🥟",
+    category: "Noodles",
+    price: 4.5,
+    calories: 380,
+    protein: 20,
+    carbs: 45,
+    fat: 8,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
   }
 ];
