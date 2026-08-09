@@ -137,8 +137,8 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "grab_go",
     cuisine: "Healthy",
     priority: "high",
-    status: "pending",
-    notes: "Nutrition data in docs/food-data/grab-and-go/grain_sg.json"
+    status: "researched",
+    notes: "Nutrition data in docs/food-data/grab-and-go/grain_sg.json — id already present in outlets.ts as of 2026-08-10 scheduled run; no new record added, status corrected to researched."
   },
   {
     id: "saladbox",
@@ -149,8 +149,8 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "grab_go",
     cuisine: "Salads",
     priority: "medium",
-    status: "pending",
-    notes: "Nutrition data in docs/food-data/grab-and-go/saladbox_sg.json"
+    status: "researched",
+    notes: "Nutrition data in docs/food-data/grab-and-go/saladbox_sg.json — id already present in outlets.ts as of 2026-08-10 scheduled run; no new record added, status corrected to researched."
   },
   {
     id: "soulgreen",
@@ -162,7 +162,8 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "grab_go",
     cuisine: "Healthy",
     priority: "medium",
-    status: "pending"
+    status: "pending",
+    notes: "2026-08-10 scheduled run: only matching SG business found was 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), which closed in 2023 per web search. No menu, pricing, or nutrition data available anywhere online. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-10-soulgreen.md."
   },
   {
     id: "ichiban_boshi",
