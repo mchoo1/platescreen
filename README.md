@@ -1,0 +1,43 @@
+# PlateScreen
+
+A stock-screener-style web app for Singapore food: search by macros, price,
+protein-per-dollar, diet tags, outlet type, and location. Standalone from the
+main Stride app — no login, no Firebase, no backend. All data and filtering
+run client-side from a static dataset.
+
+## Data
+
+`src/lib/sgFoodDb.ts`, `sgHawkerPlaces.ts`, `sgHawkerCentresAuto.ts`, and
+`sgFoodCourtPlaces.ts` are copied verbatim from the Stride app
+(`C:\stride-app\app\src\lib`) — 1,775 menu items across 294 outlets
+(chains, hawker stalls, food courts). `src/types/index.ts` is copied the
+same way. Don't hand-edit macro data here; update it in the Stride repo and
+re-copy if the source changes.
+
+`src/lib/geo.ts` ports the haversine distance function and the static
+outlet-coordinate map from Stride's `EatPageClient.tsx`, used for the
+"near me" GPS filter.
+
+`src/lib/screener.ts` is PlateScreen-specific: flattens restaurants into
+one row per menu item, and holds filtering/sorting/preset logic.
+
+## Run locally
+
+```
+npm install
+npm run dev       # http://localhost:3000
+npm run typecheck
+npm run build      # static export -> ./out (next.config.js sets output: 'export')
+```
+
+## Features
+
+- Sortable screener table: Item, Restaurant, Calories, Protein, Carbs, Fat,
+  Price, Protein/$ (colour-coded green ≥6, amber 3–6, red <3)
+- Filter panel: calorie/protein/carb/price sliders, dietary-preference
+  toggles (halal, vegetarian, vegan, keto, high_protein, no_pork, low_carb),
+  outlet-type buttons, verified-only toggle
+- One-click macro presets: Cut, Bulk, Budget, Keto, High Value
+- All filters encoded in the URL for shareable links (`?cal_max=500&prot_min=25&tag=halal&sort=ppd`)
+- Meal builder tray with sticky running totals (cal/protein/carbs/fat/cost)
+- Location filter by MRT/area text match, plus GPS "near me" with a distance slider
