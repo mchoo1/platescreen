@@ -12,6 +12,7 @@ interface Column {
 const COLUMNS: Column[] = [
   { key: 'name', label: 'Item' },
   { key: 'restaurant', label: 'Restaurant' },
+  { key: 'location', label: 'Location' },
   { key: 'calories', label: 'Cal', align: 'right' },
   { key: 'protein', label: 'Protein', align: 'right' },
   { key: 'carbs', label: 'Carbs', align: 'right' },
@@ -34,7 +35,7 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
   return (
     <div className="rounded-xl border border-slate-200 bg-white shadow-card overflow-hidden dark:bg-slate-900 dark:border-slate-800">
       <div className="overflow-auto scrollbar-thin max-h-[70vh]">
-        <table className="w-full text-sm tabular min-w-[880px]">
+        <table className="w-full text-sm tabular min-w-[980px]">
           <thead className="sticky top-0 z-10 bg-slate-50 dark:bg-slate-900">
             <tr className="border-b border-slate-200 dark:border-slate-800">
               <th className="w-9 px-3 py-2.5"></th>
@@ -100,6 +101,9 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
                   <span className="mr-1">{row.restaurantEmoji}</span>
                   {row.restaurantName}
                 </td>
+                <td className="px-3 py-2 whitespace-nowrap text-slate-500 dark:text-slate-400">
+                  {row.location || '—'}
+                </td>
                 <td className="px-3 py-2 text-right text-slate-700 dark:text-slate-300">{row.calories}</td>
                 <td className="px-3 py-2 text-right text-slate-700 dark:text-slate-300">{row.protein}g</td>
                 <td className="px-3 py-2 text-right text-slate-700 dark:text-slate-300">{row.carbs}g</td>
@@ -122,7 +126,7 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
             ))}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={showDistance ? 11 : 10} className="px-3 py-14 text-center text-slate-400">
+                <td colSpan={showDistance ? 12 : 11} className="px-3 py-14 text-center text-slate-400">
                   No items match these filters. Try loosening a slider or clearing a tag.
                 </td>
               </tr>

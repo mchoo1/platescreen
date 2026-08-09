@@ -98,7 +98,7 @@ export function withDistances(rows: ScreenerRow[], userLat: number, userLng: num
 }
 
 export type SortKey =
-  | 'name' | 'restaurant' | 'calories' | 'protein' | 'carbs' | 'fat' | 'price' | 'ppd' | 'distance';
+  | 'name' | 'restaurant' | 'location' | 'calories' | 'protein' | 'carbs' | 'fat' | 'price' | 'ppd' | 'distance';
 export type SortDir = 'asc' | 'desc';
 
 export function sortRows(rows: ScreenerRow[], key: SortKey, dir: SortDir): ScreenerRow[] {
