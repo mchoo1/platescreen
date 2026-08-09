@@ -1,9 +1,29 @@
-import { SG_RESTAURANTS, proteinPerDollar, ppdColor } from './sgFoodDb';
-import type { SGMenuItem, SGRestaurant, PriceRange, VerifiedSource } from './sgFoodDb';
-import type { DietaryFlag, OutletType } from '@/types';
+import { OUTLETS as RAW_OUTLETS } from './outlets';
+import { FOOD_OPTIONS as RAW_FOOD_OPTIONS } from './foodOptions';
+import type { Outlet, FoodOption, Platform } from '@/types/db';
+import type { DietaryFlag, OutletType, PriceRange } from '@/types';
 import { RESTAURANT_STATIC_COORDS, haversineKm } from './geo';
 
-/** One flattened, screenable row: a menu item + its parent restaurant context. */
+// Generated data files are intentionally untyped literals (a ~1,800-element
+// array checked against a union-typed interface blows past TS's structural
+// comparison complexity limit — TS2590). Cast once at the boundary instead.
+const OUTLETS = RAW_OUTLETS as unknown as Outlet[];
+const FOOD_OPTIONS = RAW_FOOD_OPTIONS as unknown as FoodOption[];
+
+/** Protein per dollar (g/$), rounded to 1 decimal. Returns 0 if price is 0. */
+export function proteinPerDollar(protein: number, price: number): number {
+  if (!price) return 0;
+  return Math.round((protein / price) * 10) / 10;
+}
+
+/** Colour code for protein/$ value. Green ≥6, amber 3–6, red <3. */
+export function ppdColor(value: number): string {
+  if (value >= 6) return '#1E7F5C';
+  if (value >= 3) return '#C98A2E';
+  return '#D04E36';
+}
+
+/** One flattened, screenable row: a food option + its parent outlet context. */
 export interface ScreenerRow {
   id: string;
   name: string;
@@ -14,9 +34,9 @@ export interface ScreenerRow {
   cuisine: string;
   outletType: OutletType;
   priceRange: PriceRange;
-  serviceTypes: string[];
+  platforms: Platform[];
   dietTags: DietaryFlag[];
-  location: string;         // hawkerLocation / venueName / restaurant name — used for text location search
+  location: string;         // outlet.location / outlet.name — used for text location search
   calories: number;
   protein: number;
   carbs: number;
@@ -31,42 +51,39 @@ export interface ScreenerRow {
   distanceKm: number | null; // filled in when user location is known
 }
 
-const CONFIDENCE_RANK: Record<string, number> = { verified: 0, estimated: 1, community: 2 };
-
-/** Flatten every restaurant's menu into one row-per-item dataset. Computed once. */
+/** Join every FoodOption to its Outlet into one row-per-item dataset. Computed once. */
 export function buildScreenerRows(): ScreenerRow[] {
+  const outletById = new Map<string, Outlet>(OUTLETS.map((o) => [o.id, o]));
   const rows: ScreenerRow[] = [];
-  for (const r of SG_RESTAURANTS as SGRestaurant[]) {
-    const coords = RESTAURANT_STATIC_COORDS[r.id];
-    for (const item of r.menu) {
-      if (item.visibility === 'component_only') continue; // not orderable standalone
-      rows.push({
-        id: item.id,
-        name: item.name,
-        emoji: item.emoji,
-        restaurantId: r.id,
-        restaurantName: r.name,
-        restaurantEmoji: r.emoji,
-        cuisine: r.cuisine,
-        outletType: r.outletType,
-        priceRange: r.priceRange,
-        serviceTypes: r.serviceTypes,
-        dietTags: r.dietTags ?? [],
-        location: r.hawkerLocation || r.venueName || r.name,
-        calories: item.calories,
-        protein: item.protein,
-        carbs: item.carbs,
-        fat: item.fat,
-        price: item.price,
-        ppd: proteinPerDollar(item.protein, item.price),
-        ppdColor: ppdColor(proteinPerDollar(item.protein, item.price)),
-        category: item.category,
-        compatibleWith: item.compatibleWith ?? [],
-        confidence: (item.confidence ?? 'estimated') as ScreenerRow['confidence'],
-        isPopular: !!item.isPopular,
-        distanceKm: coords ? null : null, // populated later once user coords are known
-      });
-    }
+  for (const item of FOOD_OPTIONS as FoodOption[]) {
+    const o = outletById.get(item.outletId);
+    if (!o) continue; // orphaned food option — shouldn't happen, skip defensively
+    rows.push({
+      id: item.id,
+      name: item.name,
+      emoji: item.emoji,
+      restaurantId: o.id,
+      restaurantName: o.name,
+      restaurantEmoji: o.emoji,
+      cuisine: o.cuisine,
+      outletType: o.type,
+      priceRange: o.priceRange,
+      platforms: o.platforms,
+      dietTags: o.dietTags ?? [],
+      location: o.location || o.name,
+      calories: item.calories,
+      protein: item.protein,
+      carbs: item.carbs,
+      fat: item.fat,
+      price: item.price,
+      ppd: proteinPerDollar(item.protein, item.price),
+      ppdColor: ppdColor(proteinPerDollar(item.protein, item.price)),
+      category: item.category,
+      compatibleWith: item.compatibleWith ?? [],
+      confidence: item.confidence,
+      isPopular: !!item.isPopular,
+      distanceKm: null, // populated later once user coords are known
+    });
   }
   return rows;
 }
@@ -220,4 +237,5 @@ export const OUTLET_TYPE_OPTIONS: { value: OutletType; label: string }[] = [
   { value: 'canteen', label: 'Canteen' },
   { value: 'supermarket', label: 'Grocery' },
   { value: 'ready_to_eat', label: 'Ready-to-Eat' },
+  { value: 'home_cooked', label: 'Home Cooked' },
 ];
