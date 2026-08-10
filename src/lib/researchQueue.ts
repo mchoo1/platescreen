@@ -163,7 +163,7 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     cuisine: "Healthy",
     priority: "medium",
     status: "pending",
-    notes: "2026-08-10 scheduled run: only matching SG business found was 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), which closed in 2023 per web search. No menu, pricing, or nutrition data available anywhere online. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-10-soulgreen.md."
+    notes: "Re-checked 2026-08-11 (still no data — same dead end as 2026-08-10 run): only matching SG business is 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), closed since 2023. A 'Soulgreen' brand exists but is UAE-based, unrelated to SG. No menu, pricing, or nutrition data available anywhere online. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-11-soulgreen.md. Recommend a human review whether this queue entry should be removed rather than re-attempted by future automated runs."
   },
   {
     id: "ichiban_boshi",
