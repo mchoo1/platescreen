@@ -28501,5 +28501,140 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated",
     isPopular: false
+  },
+  {
+    id: "koufu_kaya_toast_set",
+    outletId: "koufu",
+    name: "Traditional Kaya Toast Set",
+    emoji: "🍞",
+    category: "Breakfast",
+    price: 4.5,
+    calories: 650,
+    protein: 27,
+    carbs: 71,
+    fat: 29,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "koufu_roti_prata",
+    outletId: "koufu",
+    name: "Roti Prata (Plain, 2pc) with Curry",
+    emoji: "🫓",
+    category: "Breakfast",
+    price: 2.5,
+    calories: 480,
+    protein: 10,
+    carbs: 70,
+    fat: 24,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "koufu_hokkien_mee",
+    outletId: "koufu",
+    name: "Hokkien Mee (Prawn Noodle)",
+    emoji: "🦐",
+    category: "Noodles",
+    price: 5.5,
+    calories: 560,
+    protein: 26,
+    carbs: 62,
+    fat: 20,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "koufu_bak_chor_mee",
+    outletId: "koufu",
+    name: "Bak Chor Mee (Dry)",
+    emoji: "🍲",
+    category: "Noodles",
+    price: 5,
+    calories: 460,
+    protein: 25,
+    carbs: 50,
+    fat: 18,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "koufu_chwee_kueh",
+    outletId: "koufu",
+    name: "Chwee Kueh (5pc)",
+    emoji: "🍘",
+    category: "Snacks",
+    price: 3,
+    calories: 280,
+    protein: 4,
+    carbs: 40,
+    fat: 10,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "koufu_popiah",
+    outletId: "koufu",
+    name: "Popiah (2 rolls)",
+    emoji: "🌯",
+    category: "Snacks",
+    price: 4,
+    calories: 376,
+    protein: 8,
+    carbs: 28,
+    fat: 14,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "koufu_yong_tau_foo",
+    outletId: "koufu",
+    name: "Yong Tau Foo (Noodle Soup, Mixed)",
+    emoji: "🥟",
+    category: "Noodles",
+    price: 4.5,
+    calories: 380,
+    protein: 20,
+    carbs: 45,
+    fat: 8,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "koufu_fishball_noodle_soup",
+    outletId: "koufu",
+    name: "Fishball Noodle Soup",
+    emoji: "🐟",
+    category: "Noodles",
+    price: 4.5,
+    calories: 360,
+    protein: 19,
+    carbs: 50,
+    fat: 6,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
   }
 ];

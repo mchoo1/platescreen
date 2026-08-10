@@ -88,7 +88,7 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "pending",
+    status: "researched",
     notes: "Food Shop Licence (food court). Use HPB nutrient data for stall dishes."
   },
   {

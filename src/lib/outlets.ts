@@ -5965,5 +5965,21 @@ export const OUTLETS = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "koufu",
+    name: "Koufu",
+    emoji: "🍽️",
+    type: "food_court",
+    cuisine: "Food Court",
+    aliases: [
+      "koufu"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
   }
 ];
