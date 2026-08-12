@@ -5981,5 +5981,22 @@ export const OUTLETS = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "foodfare",
+    name: "Foodfare",
+    emoji: "🍽️",
+    type: "food_court",
+    cuisine: "Food Court",
+    aliases: [
+      "foodfare",
+      "ntuc foodfare"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
   }
 ];

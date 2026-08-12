@@ -3,3 +3,8 @@ node_modules
 out
 *.tsbuildinfo
 .DS_Store
+
+# Stray empty files left by a 2026-08-11 automated session (sandbox couldn't
+# delete files on this mount). Safe to delete manually; ignored meanwhile.
+overwrite_test.txt
+testfile_top_2

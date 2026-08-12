@@ -28636,5 +28636,134 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated",
     isPopular: false
+  },
+  {
+    id: "foodfare_economy_rice",
+    outletId: "foodfare",
+    name: "Economy Mixed Vegetable Rice (3 Dishes)",
+    emoji: "🍱",
+    category: "Rice",
+    price: 4,
+    calories: 550,
+    protein: 20,
+    carbs: 65,
+    fat: 20,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "foodfare_chicken_rice",
+    outletId: "foodfare",
+    name: "Chicken Rice",
+    emoji: "🍗",
+    category: "Rice",
+    price: 4.5,
+    calories: 600,
+    protein: 30,
+    carbs: 65,
+    fat: 22,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "foodfare_laksa",
+    outletId: "foodfare",
+    name: "Laksa",
+    emoji: "🍲",
+    category: "Noodles",
+    price: 5.5,
+    calories: 600,
+    protein: 18,
+    carbs: 55,
+    fat: 35,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "foodfare_mee_siam",
+    outletId: "foodfare",
+    name: "Mee Siam",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 4,
+    calories: 420,
+    protein: 10,
+    carbs: 68,
+    fat: 12,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "foodfare_wonton_noodle_dry",
+    outletId: "foodfare",
+    name: "Wonton Noodle (Dry)",
+    emoji: "🥟",
+    category: "Noodles",
+    price: 4.5,
+    calories: 420,
+    protein: 20,
+    carbs: 58,
+    fat: 12,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "foodfare_carrot_cake",
+    outletId: "foodfare",
+    name: "Fried Carrot Cake (Black)",
+    emoji: "🍘",
+    category: "Snacks",
+    price: 3.5,
+    calories: 480,
+    protein: 8,
+    carbs: 60,
+    fat: 22,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "foodfare_curry_chicken_rice",
+    outletId: "foodfare",
+    name: "Curry Chicken with Rice",
+    emoji: "🍛",
+    category: "Rice",
+    price: 5,
+    calories: 620,
+    protein: 28,
+    carbs: 60,
+    fat: 28,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "foodfare_tau_huay",
+    outletId: "foodfare",
+    name: "Soya Bean Curd (Tau Huay)",
+    emoji: "🥣",
+    category: "Desserts",
+    price: 1.8,
+    calories: 120,
+    protein: 6,
+    carbs: 18,
+    fat: 3,
+    compatibleWith: [
+      "vegetarian",
+      "lactose_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
   }
 ];

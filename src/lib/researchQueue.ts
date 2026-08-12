@@ -101,8 +101,8 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "pending",
-    notes: "NTUC operator. Food Shop Licence (food court). Use HPB nutrient data."
+    status: "researched",
+    notes: "NTUC operator. Food Shop Licence (food court). Use HPB nutrient data. Researched 2026-08-12: 8 representative food-court dishes added (economy rice, chicken rice, laksa, mee siam, wonton noodle, carrot cake, curry chicken rice, tau huay), confidence 'estimated' from generic HPB/NutriKaki-style hawker dish nutrient estimation — same methodology as sibling operators Kopitiam/Koufu. No SFA lookup (operator brand, not tied to one premises)."
   },
   {
     id: "banquet",
@@ -163,7 +163,7 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     cuisine: "Healthy",
     priority: "medium",
     status: "pending",
-    notes: "Re-checked 2026-08-11 (still no data — same dead end as 2026-08-10 run): only matching SG business is 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), closed since 2023. A 'Soulgreen' brand exists but is UAE-based, unrelated to SG. No menu, pricing, or nutrition data available anywhere online. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-11-soulgreen.md. Recommend a human review whether this queue entry should be removed rather than re-attempted by future automated runs."
+    notes: "Re-checked 2026-08-12 (third consecutive dead end — same result as 2026-08-10 and 2026-08-11 runs): only matching SG business is 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), closed since 2023. A 'Soulgreen' brand exists but is UAE-based (soulgreen.ae, a supplement product line), unrelated to SG. No menu, pricing, or nutrition data available anywhere online across three independent search passes. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-12-soulgreen.md. Strongly recommend human review to remove or replace this queue entry — further automated re-attempts are very unlikely to yield new data."
   },
   {
     id: "ichiban_boshi",
