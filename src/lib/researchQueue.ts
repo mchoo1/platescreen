@@ -113,8 +113,8 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "pending",
-    notes: "Food Shop Licence (food court). Use HPB nutrient data for stall dishes."
+    status: "researched",
+    notes: "Food Shop Licence (food court). Use HPB nutrient data for stall dishes. Researched 2026-08-13: 9 representative dishes added (chicken rice, nasi lemak, mee rebus, chicken briyani, yong tau foo, chicken shawarma wrap, roti prata, ayam penyet, rojak), confidence 'estimated' via generic HPB/NutriKaki-style hawker dish nutrient estimation — same methodology as sibling operators Kopitiam/Koufu/Foodfare. Banquet is documented (Zabihah, operator listings) as an all-halal-certified food court chain (Jurong Point, Woodlands Square, VivoCity), so dietTags: ['halal'] set at outlet level and every dish tagged halal + no_pork — a step beyond the other operator entries, justified by that outlet-wide certification fact rather than guessed. No SFA lookup (operator brand, not tied to one premises)."
   },
   {
     id: "ok_convenience",

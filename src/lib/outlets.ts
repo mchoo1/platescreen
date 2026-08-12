@@ -5998,5 +5998,25 @@ export const OUTLETS = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "banquet",
+    name: "Banquet",
+    emoji: "🍽️",
+    type: "food_court",
+    cuisine: "Food Court",
+    aliases: [
+      "banquet",
+      "banquet food court",
+      "banquet halal food court"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
   }
 ];

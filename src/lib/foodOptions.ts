@@ -28765,5 +28765,168 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated",
     isPopular: false
+  },
+  {
+    id: "banquet_chicken_rice",
+    outletId: "banquet",
+    name: "Chicken Rice",
+    emoji: "🍗",
+    category: "Rice",
+    price: 4.5,
+    calories: 600,
+    protein: 30,
+    carbs: 65,
+    fat: 22,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "banquet_nasi_lemak",
+    outletId: "banquet",
+    name: "Nasi Lemak with Fried Chicken",
+    emoji: "🍚",
+    category: "Rice",
+    price: 4.5,
+    calories: 520,
+    protein: 20,
+    carbs: 62,
+    fat: 20,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "banquet_mee_rebus",
+    outletId: "banquet",
+    name: "Mee Rebus",
+    emoji: "🍲",
+    category: "Noodles",
+    price: 4.5,
+    calories: 480,
+    protein: 18,
+    carbs: 72,
+    fat: 14,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "banquet_chicken_briyani",
+    outletId: "banquet",
+    name: "Chicken Briyani",
+    emoji: "🍛",
+    category: "Rice",
+    price: 6,
+    calories: 650,
+    protein: 32,
+    carbs: 78,
+    fat: 22,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "banquet_yong_tau_foo",
+    outletId: "banquet",
+    name: "Yong Tau Foo (Soup, 5pc)",
+    emoji: "🍲",
+    category: "Noodles",
+    price: 4,
+    calories: 380,
+    protein: 24,
+    carbs: 40,
+    fat: 12,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "banquet_chicken_shawarma",
+    outletId: "banquet",
+    name: "Chicken Shawarma Wrap",
+    emoji: "🌯",
+    category: "Wraps",
+    price: 6.5,
+    calories: 550,
+    protein: 30,
+    carbs: 50,
+    fat: 24,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "banquet_roti_prata",
+    outletId: "banquet",
+    name: "Roti Prata (Plain, 2pc) with Curry",
+    emoji: "🫓",
+    category: "Snacks",
+    price: 2.8,
+    calories: 480,
+    protein: 10,
+    carbs: 70,
+    fat: 24,
+    compatibleWith: [
+      "halal",
+      "vegetarian",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "banquet_ayam_penyet",
+    outletId: "banquet",
+    name: "Ayam Penyet (Smashed Fried Chicken) with Rice",
+    emoji: "🍗",
+    category: "Rice",
+    price: 6,
+    calories: 680,
+    protein: 35,
+    carbs: 70,
+    fat: 28,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "banquet_rojak",
+    outletId: "banquet",
+    name: "Rojak (Fruit & Vegetable Salad)",
+    emoji: "🥗",
+    category: "Salads",
+    price: 4,
+    calories: 350,
+    protein: 8,
+    carbs: 45,
+    fat: 15,
+    compatibleWith: [
+      "halal",
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: false
   }
 ];
