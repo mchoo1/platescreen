@@ -6018,5 +6018,22 @@ export const OUTLETS = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "ichiban_boshi",
+    name: "Ichiban Boshi",
+    emoji: "🍣",
+    type: "restaurant",
+    cuisine: "Japanese",
+    aliases: [
+      "ichiban boshi",
+      "ichiban"
+    ],
+    dietTags: [],
+    priceRange: "$$",
+    platforms: [
+      "dine_in",
+      "delivery"
+    ]
   }
 ];

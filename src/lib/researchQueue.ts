@@ -175,7 +175,8 @@ export const RESEARCH_QUEUE: ResearchQueueEntry[] = [
     type: "restaurant",
     cuisine: "Japanese",
     priority: "medium",
-    status: "pending"
+    status: "researched",
+    notes: "Researched 2026-08-20: no official SG nutrition PDF/HPB entry found for this full-service Japanese restaurant chain (RE&S group) — HPB's Nutrition Information Centre does not cover it. 10 representative items added across Donburi/Jyu/Udon/Salad/Bento Sides categories (chicken katsu don, chicken teriyaki don, beef teriyaki don, black pepper salmon don, unajyu, salmon sashimi salad, tori karaage, tempura udon, chirashi jyu, edamame), prices sourced from sgmenuprice.net menu listing (Feb 2024, cross-checked against pricelisto.com). Macros are reasoned estimates from close analogs (typical Japanese-restaurant donburi/udon/sashimi nutrition profiles) — confidence 'estimated' for all except edamame ('community', generic single-ingredient value). Outlet confirmed NOT halal-certified per source article, so dietTags left empty rather than guessed; compatibleWith only tags pescatarian/gluten_free/vegan/etc. where confirmable from dish composition (e.g. fish-only dishes, plain edamame). No SFA lookup — type is 'restaurant', not hawker/food_court_stall. Note for human review: unrelated to this entry, spotted that 'saizeriya' (still flagged 'pending' in this queue) already has a matching id present in outlets.ts — looks like a stale queue status from an earlier run, left untouched as out of scope for this task."
   },
   {
     id: "saizeriya",

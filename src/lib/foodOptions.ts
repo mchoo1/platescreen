@@ -28928,5 +28928,173 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated",
     isPopular: false
+  },
+  {
+    id: "ichiban_boshi_chicken_katsu_don",
+    outletId: "ichiban_boshi",
+    name: "Chicken Katsu Don",
+    emoji: "🍛",
+    category: "Donburi",
+    price: 18.18,
+    calories: 820,
+    protein: 32,
+    carbs: 88,
+    fat: 32,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "ichiban_boshi_chicken_teriyaki_don",
+    outletId: "ichiban_boshi",
+    name: "Chicken Teriyaki Don",
+    emoji: "🍛",
+    category: "Donburi",
+    price: 14.01,
+    calories: 650,
+    protein: 34,
+    carbs: 78,
+    fat: 16,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "ichiban_boshi_beef_teriyaki_don",
+    outletId: "ichiban_boshi",
+    name: "Beef Teriyaki Don",
+    emoji: "🍛",
+    category: "Donburi",
+    price: 16.36,
+    calories: 700,
+    protein: 30,
+    carbs: 75,
+    fat: 22,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "ichiban_boshi_black_pepper_salmon_don",
+    outletId: "ichiban_boshi",
+    name: "Black Pepper Salmon Don",
+    emoji: "🍣",
+    category: "Donburi",
+    price: 21.07,
+    calories: 680,
+    protein: 30,
+    carbs: 68,
+    fat: 26,
+    compatibleWith: [
+      "pescatarian"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "ichiban_boshi_unajyu",
+    outletId: "ichiban_boshi",
+    name: "Unajyu (Grilled Eel Rice)",
+    emoji: "🍱",
+    category: "Donburi",
+    price: 30.48,
+    calories: 750,
+    protein: 26,
+    carbs: 95,
+    fat: 22,
+    compatibleWith: [
+      "pescatarian"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "ichiban_boshi_salmon_sashimi_salad",
+    outletId: "ichiban_boshi",
+    name: "Salmon Sashimi Salad",
+    emoji: "🥗",
+    category: "Salad",
+    price: 17.54,
+    calories: 320,
+    protein: 22,
+    carbs: 14,
+    fat: 18,
+    compatibleWith: [
+      "pescatarian",
+      "gluten_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "ichiban_boshi_tori_karaage",
+    outletId: "ichiban_boshi",
+    name: "Tori Karaage",
+    emoji: "🍗",
+    category: "Bento Sides",
+    price: 9.3,
+    calories: 420,
+    protein: 22,
+    carbs: 24,
+    fat: 26,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "ichiban_boshi_tempura_udon",
+    outletId: "ichiban_boshi",
+    name: "Tempura Udon",
+    emoji: "🍜",
+    category: "Udon & Soba",
+    price: 18.71,
+    calories: 600,
+    protein: 18,
+    carbs: 82,
+    fat: 18,
+    compatibleWith: [
+      "pescatarian"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "ichiban_boshi_chirashi_jyu",
+    outletId: "ichiban_boshi",
+    name: "Chirashi Jyu",
+    emoji: "🍣",
+    category: "Jyu",
+    price: 23.42,
+    calories: 540,
+    protein: 34,
+    carbs: 68,
+    fat: 10,
+    compatibleWith: [
+      "pescatarian",
+      "gluten_free"
+    ],
+    confidence: "estimated",
+    isPopular: false
+  },
+  {
+    id: "ichiban_boshi_edamame",
+    outletId: "ichiban_boshi",
+    name: "Edamame",
+    emoji: "🌱",
+    category: "Bento Sides",
+    price: 5.77,
+    calories: 120,
+    protein: 11,
+    carbs: 9,
+    fat: 5,
+    compatibleWith: [
+      "vegan",
+      "vegetarian",
+      "gluten_free",
+      "dairy_free",
+      "nut_free"
+    ],
+    confidence: "community",
+    isPopular: false
   }
 ];
