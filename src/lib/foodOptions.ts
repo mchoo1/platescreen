@@ -1,7 +1,7 @@
 // Generated data — see reference/migration-scripts/migrate.ts
 
 export const FOOD_OPTIONS = [
-  {
+{
     id: "mcd_big_mac",
     outletId: "mcd",
     name: "Big Mac",
@@ -18,7 +18,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_mcspicy",
     outletId: "mcd",
     name: "McSpicy",
@@ -35,7 +35,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_double_mcspicy",
     outletId: "mcd",
     name: "Double McSpicy",
@@ -51,7 +51,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_mcspicy_cheese",
     outletId: "mcd",
     name: "McSpicy with Cheese",
@@ -67,7 +67,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_double_mcspicy_cheese",
     outletId: "mcd",
     name: "Double McSpicy with Cheese",
@@ -83,7 +83,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_mcchicken",
     outletId: "mcd",
     name: "McChicken",
@@ -100,7 +100,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_mcchicken_cheese",
     outletId: "mcd",
     name: "McChicken with Cheese",
@@ -116,7 +116,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_cheeseburger",
     outletId: "mcd",
     name: "Cheeseburger",
@@ -132,7 +132,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_double_cheeseburger",
     outletId: "mcd",
     name: "Double Cheeseburger",
@@ -148,7 +148,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_triple_cheeseburger",
     outletId: "mcd",
     name: "Triple Cheeseburger",
@@ -164,7 +164,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_hamburger",
     outletId: "mcd",
     name: "Hamburger",
@@ -180,7 +180,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_quarter_pounder",
     outletId: "mcd",
     name: "Quarter Pounder with Cheese",
@@ -196,7 +196,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_double_quarter_pounder",
     outletId: "mcd",
     name: "Double Quarter Pounder with Cheese",
@@ -212,7 +212,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_mccrispy",
     outletId: "mcd",
     name: "McCrispy",
@@ -229,7 +229,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_double_mccrispy",
     outletId: "mcd",
     name: "Double McCrispy",
@@ -245,7 +245,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_buttermilk_crispy",
     outletId: "mcd",
     name: "Buttermilk Crispy Chicken",
@@ -261,7 +261,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_filet_o_fish",
     outletId: "mcd",
     name: "Filet-O-Fish",
@@ -278,7 +278,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_double_filet",
     outletId: "mcd",
     name: "Double Filet-O-Fish",
@@ -294,7 +294,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_nuggets_6pc",
     outletId: "mcd",
     name: "Chicken McNuggets (6pc)",
@@ -311,7 +311,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_nuggets_9pc",
     outletId: "mcd",
     name: "Chicken McNuggets (9pc)",
@@ -327,7 +327,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_mcwings_4pc",
     outletId: "mcd",
     name: "McWings (4pc)",
@@ -343,7 +343,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_egg_mcmuffin",
     outletId: "mcd",
     name: "Egg McMuffin",
@@ -360,7 +360,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_sausage_mcmuffin",
     outletId: "mcd",
     name: "Sausage McMuffin",
@@ -376,7 +376,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_sausage_mcmuffin_egg",
     outletId: "mcd",
     name: "Sausage McMuffin with Egg",
@@ -392,7 +392,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_double_sausage_mcmuffin",
     outletId: "mcd",
     name: "Double Sausage McMuffin",
@@ -408,7 +408,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_double_sausage_mcmuffin_egg",
     outletId: "mcd",
     name: "Double Sausage McMuffin with Egg",
@@ -424,7 +424,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_chicken_muffin",
     outletId: "mcd",
     name: "Chicken Muffin",
@@ -440,7 +440,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_chicken_muffin_egg",
     outletId: "mcd",
     name: "Chicken Muffin with Egg",
@@ -456,7 +456,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_scrambled_egg_chicken",
     outletId: "mcd",
     name: "Scrambled Egg Burger with Chicken",
@@ -472,7 +472,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_scrambled_egg_sausage",
     outletId: "mcd",
     name: "Scrambled Egg Burger with Sausage",
@@ -488,7 +488,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_hotcakes",
     outletId: "mcd",
     name: "Hotcakes",
@@ -504,7 +504,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_hotcakes_sausage",
     outletId: "mcd",
     name: "Hotcakes with Sausage",
@@ -520,7 +520,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_big_breakfast",
     outletId: "mcd",
     name: "Big Breakfast",
@@ -537,7 +537,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_breakfast_deluxe",
     outletId: "mcd",
     name: "Breakfast Deluxe",
@@ -553,7 +553,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_breakfast_wrap_ham",
     outletId: "mcd",
     name: "Breakfast Wrap (Chicken Ham)",
@@ -569,7 +569,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_breakfast_wrap_sausage",
     outletId: "mcd",
     name: "Breakfast Wrap (Chicken Sausage)",
@@ -585,7 +585,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_breakfast_burger_sausage",
     outletId: "mcd",
     name: "Breakfast Burger (Sausage)",
@@ -601,7 +601,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "mcd_breakfast_burger_ham",
     outletId: "mcd",
     name: "Breakfast Burger (Chicken Ham)",
@@ -617,7 +617,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "mcd_chicken_bacon_egg_mcmuffin",
     outletId: "mcd",
     name: "Chicken Bacon & Egg McMuffin",
@@ -633,7 +633,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "mcd_nuggets_20pc",
     outletId: "mcd",
     name: "Chicken McNuggets (20pc)",
@@ -649,7 +649,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_milo_iced_s",
     outletId: "mcd",
     name: "Iced Milo (S)",
@@ -665,7 +665,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_milo_iced_m",
     outletId: "mcd",
     name: "Iced Milo (M)",
@@ -681,7 +681,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_milo_hot",
     outletId: "mcd",
     name: "Hot Milo",
@@ -697,7 +697,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_coffee",
     outletId: "mcd",
     name: "Premium Roast Coffee",
@@ -713,7 +713,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_americano",
     outletId: "mcd",
     name: "Americano",
@@ -729,7 +729,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_iced_americano",
     outletId: "mcd",
     name: "Iced Americano",
@@ -745,7 +745,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_latte",
     outletId: "mcd",
     name: "Latte",
@@ -761,7 +761,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_iced_latte",
     outletId: "mcd",
     name: "Iced Latte",
@@ -777,7 +777,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_cappuccino",
     outletId: "mcd",
     name: "Cappuccino",
@@ -793,7 +793,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_oreo_mcflurry",
     outletId: "mcd",
     name: "Oreo McFlurry",
@@ -810,7 +810,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "mcd_hot_fudge_sundae",
     outletId: "mcd",
     name: "Hot Fudge Sundae",
@@ -826,7 +826,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_strawberry_sundae",
     outletId: "mcd",
     name: "Strawberry Sundae",
@@ -842,7 +842,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_vanilla_cone",
     outletId: "mcd",
     name: "Vanilla Cone",
@@ -858,7 +858,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_apple_pie",
     outletId: "mcd",
     name: "Apple Pie",
@@ -874,7 +874,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_hash_brown",
     outletId: "mcd",
     name: "Hash Brown",
@@ -890,7 +890,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "mcd_corn",
     outletId: "mcd",
     name: "Corn Cup",
@@ -906,7 +906,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "kfc_orig_1pc",
     outletId: "kfc",
     name: "Original Recipe Chicken (1 pc)",
@@ -923,7 +923,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kfc_crispy_1pc",
     outletId: "kfc",
     name: "Hot & Crispy Chicken (1 pc)",
@@ -939,7 +939,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "kfc_popcorn",
     outletId: "kfc",
     name: "Popcorn Chicken (Regular)",
@@ -956,7 +956,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kfc_zinger",
     outletId: "kfc",
     name: "Zinger Burger",
@@ -973,7 +973,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kfc_twister",
     outletId: "kfc",
     name: "Twister (Original)",
@@ -989,7 +989,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "kfc_coleslaw",
     outletId: "kfc",
     name: "Coleslaw",
@@ -1006,7 +1006,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "kfc_mashed_potato",
     outletId: "kfc",
     name: "Mashed Potato",
@@ -1023,7 +1023,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "kfc_corn",
     outletId: "kfc",
     name: "Corn on the Cob",
@@ -1040,7 +1040,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "kfc_2pc_meal",
     outletId: "kfc",
     name: "2-pc Chicken Meal",
@@ -1058,7 +1058,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kfc_zinger_meal",
     outletId: "kfc",
     name: "Zinger Burger Meal",
@@ -1076,7 +1076,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kfc_snack_plate",
     outletId: "kfc",
     name: "Snack Plate",
@@ -1094,7 +1094,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_whopper",
     outletId: "bk",
     name: "Whopper",
@@ -1111,7 +1111,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_double_whopper",
     outletId: "bk",
     name: "Double Whopper",
@@ -1127,7 +1127,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_chicken_royale",
     outletId: "bk",
     name: "Chicken Royale",
@@ -1144,7 +1144,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_mushroom_swiss",
     outletId: "bk",
     name: "Mushroom Swiss Burger",
@@ -1160,7 +1160,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_onion_rings",
     outletId: "bk",
     name: "Onion Rings (Regular)",
@@ -1178,7 +1178,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_fries_m",
     outletId: "bk",
     name: "Classic Fries (M)",
@@ -1196,7 +1196,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_sundae",
     outletId: "bk",
     name: "Chocolate Sundae",
@@ -1213,7 +1213,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_whopper_jr",
     outletId: "bk",
     name: "Whopper Jr",
@@ -1231,7 +1231,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_tendercrisp",
     outletId: "bk",
     name: "TenderCrisp",
@@ -1249,7 +1249,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "bk_big_fish",
     outletId: "bk",
     name: "BK Big Fish",
@@ -1267,7 +1267,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "bk_fries_s",
     outletId: "bk",
     name: "Classic Fries (S)",
@@ -1284,7 +1284,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_fries_l",
     outletId: "bk",
     name: "Classic Fries (L)",
@@ -1301,7 +1301,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_nuggets_6",
     outletId: "bk",
     name: "Chicken Nuggets (6 pc)",
@@ -1319,7 +1319,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_nuggets_9",
     outletId: "bk",
     name: "Chicken Nuggets (9 pc)",
@@ -1336,7 +1336,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_apple_pie",
     outletId: "bk",
     name: "Apple Pie",
@@ -1354,7 +1354,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bk_soft_serve",
     outletId: "bk",
     name: "Soft Serve Cone",
@@ -1373,7 +1373,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_whopper_meal",
     outletId: "bk",
     name: "Whopper Meal",
@@ -1391,7 +1391,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bk_tendercrisp_meal",
     outletId: "bk",
     name: "TenderCrisp Meal",
@@ -1409,7 +1409,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sub_chicken_breast",
     outletId: "subway",
     name: "Chicken Breast (6\")",
@@ -1426,7 +1426,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sub_roast_beef",
     outletId: "subway",
     name: "Roast Beef (6\")",
@@ -1442,7 +1442,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "sub_tuna",
     outletId: "subway",
     name: "Tuna (6\")",
@@ -1459,7 +1459,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sub_veggie_delight",
     outletId: "subway",
     name: "Veggie Delight (6\")",
@@ -1476,7 +1476,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "sub_egg_mayo",
     outletId: "subway",
     name: "Egg Mayo (6\")",
@@ -1493,7 +1493,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "sub_meatball",
     outletId: "subway",
     name: "Meatball Marinara (6\")",
@@ -1510,7 +1510,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sub_chicken_breast_ft",
     outletId: "subway",
     name: "Chicken Breast (Footlong)",
@@ -1526,7 +1526,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "sub_chicken_salad",
     outletId: "subway",
     name: "Chicken Breast Salad",
@@ -1543,7 +1543,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "sub_chicken_breast_meal",
     outletId: "subway",
     name: "Chicken Breast Sub Meal (6\")",
@@ -1560,7 +1560,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sub_tuna_meal",
     outletId: "subway",
     name: "Tuna Sub Meal (6\")",
@@ -1577,7 +1577,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ock_curry_puff_chicken",
     outletId: "old_chang_kee",
     name: "Curry Puff (Chicken)",
@@ -1594,7 +1594,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ock_curry_puff_egg",
     outletId: "old_chang_kee",
     name: "Curry Puff (Egg)",
@@ -1611,7 +1611,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "ock_chicken_roll",
     outletId: "old_chang_kee",
     name: "Chicken 'O'",
@@ -1628,7 +1628,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ock_otah_stick",
     outletId: "old_chang_kee",
     name: "Otah Stick",
@@ -1645,7 +1645,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ock_curry_puff_sardine",
     outletId: "old_chang_kee",
     name: "Curry Puff (Sardine)",
@@ -1661,7 +1661,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "ock_nuggets",
     outletId: "old_chang_kee",
     name: "Chicken Nuggets (6 pcs)",
@@ -1677,7 +1677,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "yk_kaya_toast_thin",
     outletId: "ya_kun",
     name: "Kaya Butter Toast (Thin)",
@@ -1694,7 +1694,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yk_kaya_toast_thick",
     outletId: "ya_kun",
     name: "Kaya Butter Toast (Thick)",
@@ -1711,7 +1711,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yk_french_toast",
     outletId: "ya_kun",
     name: "French Toast",
@@ -1727,7 +1727,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "yk_soft_eggs",
     outletId: "ya_kun",
     name: "Soft-Boiled Eggs (2 pcs)",
@@ -1745,7 +1745,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yk_kopi",
     outletId: "ya_kun",
     name: "Kopi (Coffee with Condensed Milk)",
@@ -1762,7 +1762,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yk_teh",
     outletId: "ya_kun",
     name: "Teh (Tea with Condensed Milk)",
@@ -1778,7 +1778,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "yk_set_a",
     outletId: "ya_kun",
     name: "Set A (2 Toast + 2 Eggs + Drink)",
@@ -1795,7 +1795,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yk_set_b",
     outletId: "ya_kun",
     name: "Set B (French Toast + 2 Eggs + Drink)",
@@ -1812,7 +1812,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "bt_floss_bun",
     outletId: "breadtalk",
     name: "Pork Floss Bun",
@@ -1827,7 +1827,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bt_cheese_sausage",
     outletId: "breadtalk",
     name: "Cheese Sausage Bun",
@@ -1844,7 +1844,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bt_tuna_mayo",
     outletId: "breadtalk",
     name: "Tuna Mayo Bun",
@@ -1860,7 +1860,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bt_cocktail_bun",
     outletId: "breadtalk",
     name: "Cocktail Bun",
@@ -1877,7 +1877,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bt_raisin_walnut_slice",
     outletId: "breadtalk",
     name: "Raisin Walnut Loaf (per slice)",
@@ -1894,7 +1894,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "bt_chicken_floss",
     outletId: "breadtalk",
     name: "Chicken Floss Bun",
@@ -1910,7 +1910,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gc_milk_tea_m",
     outletId: "gong_cha",
     name: "Milk Tea (M, 0% sugar)",
@@ -1928,7 +1928,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gc_brown_sugar_m",
     outletId: "gong_cha",
     name: "Brown Sugar Milk Tea (M)",
@@ -1946,7 +1946,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gc_taro_m",
     outletId: "gong_cha",
     name: "Taro Milk Tea (M)",
@@ -1964,7 +1964,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gc_matcha_latte_m",
     outletId: "gong_cha",
     name: "Matcha Latte (M)",
@@ -1981,7 +1981,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gc_mango_green_m",
     outletId: "gong_cha",
     name: "Mango Green Tea (M)",
@@ -1999,7 +1999,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gc_wintermelon_m",
     outletId: "gong_cha",
     name: "Wintermelon Tea (M)",
@@ -2017,7 +2017,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "7e_hotdog",
     outletId: "7eleven",
     name: "Big Bite Hot Dog",
@@ -2032,7 +2032,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "7e_chicken_pie",
     outletId: "7eleven",
     name: "Chicken Pie",
@@ -2049,7 +2049,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "7e_tuna_sandwich",
     outletId: "7eleven",
     name: "Tuna Sandwich",
@@ -2064,7 +2064,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "7e_onigiri_tuna",
     outletId: "7eleven",
     name: "Onigiri — Tuna Mayo",
@@ -2079,7 +2079,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "7e_onigiri_salmon",
     outletId: "7eleven",
     name: "Onigiri — Salmon",
@@ -2093,7 +2093,7 @@ export const FOOD_OPTIONS = [
     compatibleWith: [],
     confidence: "estimated"
   },
-  {
+{
     id: "7e_boiled_eggs",
     outletId: "7eleven",
     name: "Hard-Boiled Eggs (2 pcs)",
@@ -2111,7 +2111,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "7e_slurpee_m",
     outletId: "7eleven",
     name: "Slurpee (M)",
@@ -2128,7 +2128,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "7e_greek_yogurt",
     outletId: "7eleven",
     name: "Greek Yogurt (Meiji)",
@@ -2145,7 +2145,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "grain_grain_s_curry_chicken_stew_and_buns",
     outletId: "grain",
     name: "Grain's Curry Chicken Stew (and Buns)",
@@ -2160,7 +2160,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_marinara_fish_pasta",
     outletId: "grain",
     name: "Marinara Fish Pasta",
@@ -2175,7 +2175,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_ayam_kampung_masak_merah",
     outletId: "grain",
     name: "Ayam Kampung Masak Merah",
@@ -2192,7 +2192,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_grilled_farm_fresh_chicken",
     outletId: "grain",
     name: "Grilled Farm Fresh Chicken",
@@ -2209,7 +2209,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_honey_duo_mustard_chicken",
     outletId: "grain",
     name: "Honey Duo Mustard Chicken",
@@ -2226,7 +2226,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_mentai_mayonnaise_aburi_salmon",
     outletId: "grain",
     name: "Mentai Mayonnaise Aburi Salmon",
@@ -2241,7 +2241,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_basil_thunder_tea_rice",
     outletId: "grain",
     name: "Basil Thunder Tea Rice",
@@ -2258,7 +2258,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_thai_fiesta_salad",
     outletId: "grain",
     name: "Thai Fiesta Salad",
@@ -2277,7 +2277,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_impossible_ground_beef_hamburg_with_japanese_curry",
     outletId: "grain",
     name: "Impossible Ground Beef Hamburg with Japanese Curry",
@@ -2295,7 +2295,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "grain_grilled_forest_mushroom_salad",
     outletId: "grain",
     name: "Grilled Forest Mushroom Salad",
@@ -2314,7 +2314,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_piri_piri_chicken_bites",
     outletId: "grain",
     name: "Piri-piri Chicken Bites",
@@ -2332,7 +2332,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_ondeh_ondeh_pandan_cake",
     outletId: "grain",
     name: "Ondeh Ondeh Pandan Cake",
@@ -2349,7 +2349,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_greek_yoghurt_granola_cup",
     outletId: "grain",
     name: "Greek Yoghurt Granola Cup",
@@ -2366,7 +2366,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_seasonal_fruit_parcel",
     outletId: "grain",
     name: "Seasonal Fruit Parcel",
@@ -2384,7 +2384,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_bandung_gao",
     outletId: "grain",
     name: "Bandung Gao",
@@ -2401,7 +2401,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_teh_c_floral",
     outletId: "grain",
     name: "Teh C Floral",
@@ -2418,7 +2418,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_honey_yuzu_tea",
     outletId: "grain",
     name: "Honey Yuzu Tea",
@@ -2435,7 +2435,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_white_cold_brew",
     outletId: "grain",
     name: "White Cold Brew",
@@ -2453,7 +2453,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_straight_guava_oj",
     outletId: "grain",
     name: "Straight Guava OJ",
@@ -2471,7 +2471,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "grain_watermelime_crush",
     outletId: "grain",
     name: "Watermelime Crush",
@@ -2489,7 +2489,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "stuffd_chicken_kebab",
     outletId: "stuffd",
     name: "Chicken Kebab",
@@ -2506,7 +2506,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "stuffd_chicken_rendang_kebab",
     outletId: "stuffd",
     name: "Chicken Rendang Kebab",
@@ -2523,7 +2523,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "stuffd_beef_kebab",
     outletId: "stuffd",
     name: "Beef Kebab",
@@ -2540,7 +2540,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "stuffd_chicken_burrito",
     outletId: "stuffd",
     name: "Chicken Burrito",
@@ -2557,7 +2557,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "stuffd_beef_burrito",
     outletId: "stuffd",
     name: "Beef Burrito",
@@ -2574,7 +2574,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "stuffd_chicken_rendang_daily_bowl",
     outletId: "stuffd",
     name: "Chicken Rendang Daily Bowl",
@@ -2591,7 +2591,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "stuffd_chicken_daily_bowl",
     outletId: "stuffd",
     name: "Chicken Daily Bowl",
@@ -2608,7 +2608,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_mozza_burger",
     outletId: "aw",
     name: "Mozza Burger",
@@ -2626,7 +2626,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_double_mozza_burger",
     outletId: "aw",
     name: "Double Mozza Burger",
@@ -2644,7 +2644,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_double_cheeseburger",
     outletId: "aw",
     name: "Double Cheeseburger",
@@ -2662,7 +2662,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_cheeseburger",
     outletId: "aw",
     name: "Cheeseburger",
@@ -2679,7 +2679,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_cream_cheese_chicken_burger",
     outletId: "aw",
     name: "Cream Cheese Chicken Burger",
@@ -2696,7 +2696,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_cream_cheese_beef_burger",
     outletId: "aw",
     name: "Cream Cheese Beef Burger",
@@ -2713,7 +2713,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_chubby_chicken_sandwich",
     outletId: "aw",
     name: "Chubby Chicken Sandwich",
@@ -2730,7 +2730,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_spicy_chicken_sandwich",
     outletId: "aw",
     name: "Spicy Chicken Sandwich",
@@ -2747,7 +2747,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_coney_dog",
     outletId: "aw",
     name: "A&W Coney Dog (Beef)",
@@ -2764,7 +2764,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_chicken_coney_dog",
     outletId: "aw",
     name: "Chicken Coney Dog",
@@ -2781,7 +2781,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_coney_cheese_dog",
     outletId: "aw",
     name: "Coney Cheese Dog",
@@ -2798,7 +2798,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_golden_aroma_chicken_1pc",
     outletId: "aw",
     name: "Golden Aroma Chicken (1 pc)",
@@ -2816,7 +2816,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_chicken_strips_3pc",
     outletId: "aw",
     name: "Chubby Chicken Strips (3 pc)",
@@ -2834,7 +2834,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_curly_fries_regular",
     outletId: "aw",
     name: "Curly Fries (Regular)",
@@ -2852,7 +2852,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_onion_rings",
     outletId: "aw",
     name: "Onion Rings",
@@ -2870,7 +2870,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_beef_coney_cheese_fries",
     outletId: "aw",
     name: "Beef Coney Cheese Fries",
@@ -2887,7 +2887,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_chicken_coney_cheese_fries",
     outletId: "aw",
     name: "Chicken Coney Cheese Fries",
@@ -2904,7 +2904,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_waffle_plain",
     outletId: "aw",
     name: "Waffle (Plain)",
@@ -2922,7 +2922,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_waffle_ice_cream",
     outletId: "aw",
     name: "Waffle with Ice Cream",
@@ -2940,7 +2940,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_waffle_sundae",
     outletId: "aw",
     name: "Waffle Sundae",
@@ -2958,7 +2958,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_root_beer_regular",
     outletId: "aw",
     name: "Root Beer (Regular)",
@@ -2977,7 +2977,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_root_beer_zero",
     outletId: "aw",
     name: "Root Beer Zero Sugar",
@@ -2997,7 +2997,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_root_beer_float",
     outletId: "aw",
     name: "Root Beer Float",
@@ -3015,7 +3015,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_mozza_combo",
     outletId: "aw",
     name: "Mozza Burger Combo",
@@ -3030,7 +3030,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_double_mozza_combo",
     outletId: "aw",
     name: "Double Mozza Burger Combo",
@@ -3045,7 +3045,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aw_cream_cheese_chicken_combo",
     outletId: "aw",
     name: "Cream Cheese Chicken Combo",
@@ -3060,7 +3060,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aw_coney_dog_combo",
     outletId: "aw",
     name: "Coney Dog Combo",
@@ -3075,7 +3075,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_1pc",
     outletId: "jollibee",
     name: "Chickenjoy (1 pc)",
@@ -3093,7 +3093,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_2pc",
     outletId: "jollibee",
     name: "Chickenjoy (2 pc) Meal",
@@ -3111,7 +3111,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_3pc",
     outletId: "jollibee",
     name: "Chickenjoy (3 pc) Meal",
@@ -3129,7 +3129,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "jollibee_chickenjoy_6pc_bucket",
     outletId: "jollibee",
     name: "Chickenjoy (6 pc) Bucket",
@@ -3147,7 +3147,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_8pc_bucket",
     outletId: "jollibee",
     name: "Chickenjoy (8 pc) Bucket",
@@ -3165,7 +3165,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_yumburger",
     outletId: "jollibee",
     name: "Yumburger",
@@ -3182,7 +3182,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "jollibee_yumburger_with_cheese",
     outletId: "jollibee",
     name: "Yumburger with Cheese",
@@ -3199,7 +3199,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_champ_burger",
     outletId: "jollibee",
     name: "Champ Burger",
@@ -3216,7 +3216,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_sandwich",
     outletId: "jollibee",
     name: "Chickenjoy Sandwich",
@@ -3233,7 +3233,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_aloha_chicken_sandwich",
     outletId: "jollibee",
     name: "Aloha Chicken Sandwich",
@@ -3250,7 +3250,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_jolly_spaghetti",
     outletId: "jollibee",
     name: "Jolly Spaghetti",
@@ -3267,7 +3267,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_jolly_hotdog",
     outletId: "jollibee",
     name: "Jolly Hotdog",
@@ -3284,7 +3284,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "jollibee_crispy_fries_regular",
     outletId: "jollibee",
     name: "Jolly Crispy Fries (Regular)",
@@ -3301,7 +3301,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_crispy_fries_large",
     outletId: "jollibee",
     name: "Jolly Crispy Fries (Large)",
@@ -3318,7 +3318,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_peach_mango_pie",
     outletId: "jollibee",
     name: "Peach Mango Pie",
@@ -3335,7 +3335,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_coke_regular",
     outletId: "jollibee",
     name: "Coca-Cola (Regular)",
@@ -3352,7 +3352,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "jollibee_pineapple_quencher",
     outletId: "jollibee",
     name: "Pineapple Quencher",
@@ -3369,7 +3369,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_iced_tea",
     outletId: "jollibee",
     name: "Iced Tea",
@@ -3386,7 +3386,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "jollibee_burger_steak",
     outletId: "jollibee",
     name: "Burger Steak",
@@ -3404,7 +3404,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_1pc_meal",
     outletId: "jollibee",
     name: "1-pc Chickenjoy Meal",
@@ -3422,7 +3422,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_chickenjoy_2pc_meal",
     outletId: "jollibee",
     name: "2-pc Chickenjoy Meal",
@@ -3440,7 +3440,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "jollibee_yumburger_meal",
     outletId: "jollibee",
     name: "Yumburger Meal",
@@ -3458,7 +3458,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tb_kaya_toast_thin",
     outletId: "toast_box",
     name: "Traditional Kaya Toast (Thin)",
@@ -3475,7 +3475,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_kaya_toast_thick",
     outletId: "toast_box",
     name: "Thick Kaya Toast",
@@ -3492,7 +3492,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tb_peanut_butter_toast",
     outletId: "toast_box",
     name: "Peanut Butter Kaya Toast (Thick)",
@@ -3509,7 +3509,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_french_toast",
     outletId: "toast_box",
     name: "French Toast",
@@ -3526,7 +3526,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_soft_eggs",
     outletId: "toast_box",
     name: "Soft-Boiled Eggs (2 pcs)",
@@ -3544,7 +3544,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_set_a",
     outletId: "toast_box",
     name: "Set A (2 Kaya Toast + 2 Eggs + Hot Drink)",
@@ -3561,7 +3561,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_kopi_o",
     outletId: "toast_box",
     name: "Kopi O (Black Coffee with Sugar)",
@@ -3581,7 +3581,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_kopi",
     outletId: "toast_box",
     name: "Kopi (Coffee with Condensed Milk)",
@@ -3599,7 +3599,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_teh",
     outletId: "toast_box",
     name: "Teh (Tea with Condensed Milk)",
@@ -3617,7 +3617,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tb_milo_dinosaur",
     outletId: "toast_box",
     name: "Milo Dinosaur",
@@ -3635,7 +3635,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_laksa_lemak",
     outletId: "toast_box",
     name: "Laksa Lemak",
@@ -3650,7 +3650,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_nasi_lemak",
     outletId: "toast_box",
     name: "Nasi Lemak Set",
@@ -3665,7 +3665,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_mee_siam",
     outletId: "toast_box",
     name: "Mee Siam",
@@ -3680,7 +3680,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tb_set_a",
     outletId: "toast_box",
     name: "Set A (Toast + 2 Eggs + Drink)",
@@ -3697,7 +3697,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tb_set_b",
     outletId: "toast_box",
     name: "Set B (French Toast + 2 Eggs + Drink)",
@@ -3714,7 +3714,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_caffe_latte_tall",
     outletId: "starbucks_sg",
     name: "Caffè Latte (Tall)",
@@ -3729,7 +3729,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_iced_caffe_latte_tall",
     outletId: "starbucks_sg",
     name: "Iced Caffè Latte (Tall)",
@@ -3744,7 +3744,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_cappuccino_tall",
     outletId: "starbucks_sg",
     name: "Cappuccino (Tall)",
@@ -3759,7 +3759,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_flat_white_tall",
     outletId: "starbucks_sg",
     name: "Flat White (Tall)",
@@ -3774,7 +3774,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_caffe_americano_tall",
     outletId: "starbucks_sg",
     name: "Caffè Americano (Tall)",
@@ -3789,7 +3789,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_iced_americano_tall",
     outletId: "starbucks_sg",
     name: "Iced Americano (Tall)",
@@ -3804,7 +3804,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_caffe_mocha_tall",
     outletId: "starbucks_sg",
     name: "Caffè Mocha (Tall)",
@@ -3819,7 +3819,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_iced_mocha_tall",
     outletId: "starbucks_sg",
     name: "Iced Mocha (Tall)",
@@ -3834,7 +3834,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_vanilla_latte_tall",
     outletId: "starbucks_sg",
     name: "Vanilla Latte (Tall)",
@@ -3849,7 +3849,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_iced_vanilla_latte_tall",
     outletId: "starbucks_sg",
     name: "Iced Vanilla Latte (Tall)",
@@ -3864,7 +3864,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_caramel_macchiato_tall",
     outletId: "starbucks_sg",
     name: "Caramel Macchiato (Tall)",
@@ -3879,7 +3879,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_white_choc_mocha_tall",
     outletId: "starbucks_sg",
     name: "White Chocolate Mocha (Tall)",
@@ -3894,7 +3894,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_java_chip_frap_tall",
     outletId: "starbucks_sg",
     name: "Java Chip Frappuccino® (Tall)",
@@ -3909,7 +3909,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_caramel_frap_tall",
     outletId: "starbucks_sg",
     name: "Caramel Frappuccino® (Tall)",
@@ -3924,7 +3924,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_mocha_frap_tall",
     outletId: "starbucks_sg",
     name: "Mocha Frappuccino® (Tall)",
@@ -3939,7 +3939,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_matcha_creme_frap_tall",
     outletId: "starbucks_sg",
     name: "Matcha Crème Frappuccino® (Tall)",
@@ -3954,7 +3954,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_dark_mocha_frap_tall",
     outletId: "starbucks_sg",
     name: "Dark Mocha Frappuccino® (Tall)",
@@ -3969,7 +3969,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_ham_cheese_croissant",
     outletId: "starbucks_sg",
     name: "Ham & Cheese Croissant",
@@ -3984,7 +3984,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_rosemary_chicken_croissant",
     outletId: "starbucks_sg",
     name: "Rosemary Chicken & Emmental Cheese Croissant",
@@ -3999,7 +3999,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_scrambled_egg_brioche",
     outletId: "starbucks_sg",
     name: "Scrambled Egg & Cheese Brioche Sandwich",
@@ -4014,7 +4014,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_chicken_ham_panwich",
     outletId: "starbucks_sg",
     name: "Chicken Ham & Cheese Panwich",
@@ -4029,7 +4029,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_sriracha_chicken_pita",
     outletId: "starbucks_sg",
     name: "Sriracha Chicken Whole Wheat Pita",
@@ -4044,7 +4044,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_chicken_ham_crepe_wrap",
     outletId: "starbucks_sg",
     name: "Chicken Ham & Cheese Egg Crepe Wrap",
@@ -4059,7 +4059,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_buttery_croissant",
     outletId: "starbucks_sg",
     name: "Buttery Croissant",
@@ -4076,7 +4076,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sbux_almond_croissant",
     outletId: "starbucks_sg",
     name: "Almond Croissant",
@@ -4093,7 +4093,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_banana_walnut_muffin",
     outletId: "starbucks_sg",
     name: "Banana Walnut Muffin",
@@ -4110,7 +4110,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_blueberry_muffin",
     outletId: "starbucks_sg",
     name: "Blueberry Crumble Muffin",
@@ -4127,7 +4127,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sbux_bagel",
     outletId: "starbucks_sg",
     name: "Bagels",
@@ -4144,7 +4144,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_chicken_thigh_mild",
     outletId: "popeyes",
     name: "Chicken Thigh — Classic",
@@ -4162,7 +4162,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_chicken_thigh_spicy",
     outletId: "popeyes",
     name: "Chicken Thigh — Spicy",
@@ -4180,7 +4180,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_chicken_leg_mild",
     outletId: "popeyes",
     name: "Chicken Leg — Classic",
@@ -4198,7 +4198,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_chicken_leg_spicy",
     outletId: "popeyes",
     name: "Chicken Leg — Spicy",
@@ -4216,7 +4216,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_chicken_breast_mild",
     outletId: "popeyes",
     name: "Chicken Breast — Classic",
@@ -4235,7 +4235,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_chicken_breast_spicy",
     outletId: "popeyes",
     name: "Chicken Breast — Spicy",
@@ -4254,7 +4254,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_chicken_wing_mild",
     outletId: "popeyes",
     name: "Chicken Wing — Classic",
@@ -4272,7 +4272,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_chicken_wing_spicy",
     outletId: "popeyes",
     name: "Chicken Wing — Spicy",
@@ -4290,7 +4290,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_tenders_3pc",
     outletId: "popeyes",
     name: "Chicken Tenders (3pc)",
@@ -4309,7 +4309,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_tenders_5pc",
     outletId: "popeyes",
     name: "Chicken Tenders (5pc)",
@@ -4328,7 +4328,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_classic_chicken_burger",
     outletId: "popeyes",
     name: "Classic Chicken Burger",
@@ -4346,7 +4346,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_spicy_chicken_burger",
     outletId: "popeyes",
     name: "Spicy Chicken Burger",
@@ -4364,7 +4364,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_coleslaw_reg",
     outletId: "popeyes",
     name: "Coleslaw (Regular)",
@@ -4383,7 +4383,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_mashed_potato_gravy",
     outletId: "popeyes",
     name: "Mashed Potato with Gravy",
@@ -4401,7 +4401,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_cajun_rice",
     outletId: "popeyes",
     name: "Cajun Rice",
@@ -4419,7 +4419,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_corn_on_cob",
     outletId: "popeyes",
     name: "Corn on the Cob",
@@ -4440,7 +4440,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_red_beans_rice",
     outletId: "popeyes",
     name: "Red Beans & Rice",
@@ -4459,7 +4459,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pop_biscuit",
     outletId: "popeyes",
     name: "Buttermilk Biscuit",
@@ -4478,7 +4478,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_2pc_chicken_meal",
     outletId: "popeyes",
     name: "2-pc Chicken Meal",
@@ -4496,7 +4496,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pop_chicken_sandwich_meal",
     outletId: "popeyes",
     name: "Chicken Sandwich Meal",
@@ -4514,7 +4514,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_quarter_breast",
     outletId: "nandos",
     name: "1/4 Chicken — Breast & Wing",
@@ -4533,7 +4533,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_quarter_thigh_leg",
     outletId: "nandos",
     name: "1/4 Chicken — Thigh & Leg",
@@ -4552,7 +4552,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_half_chicken",
     outletId: "nandos",
     name: "1/2 Chicken",
@@ -4571,7 +4571,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_whole_chicken",
     outletId: "nandos",
     name: "Whole Chicken",
@@ -4590,7 +4590,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nan_breast_fillet_burger",
     outletId: "nandos",
     name: "Chicken Breast Fillet Burger",
@@ -4608,7 +4608,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_thigh_burger",
     outletId: "nandos",
     name: "Chicken Thigh Burger",
@@ -4626,7 +4626,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nan_pita_wrap",
     outletId: "nandos",
     name: "Fino Pitta (Chicken Wrap)",
@@ -4644,7 +4644,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_chicken_livers",
     outletId: "nandos",
     name: "Chicken Livers",
@@ -4663,7 +4663,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_wings_4pc",
     outletId: "nandos",
     name: "PERi-PERi Chicken Wings (4 pc)",
@@ -4682,7 +4682,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_peri_chips",
     outletId: "nandos",
     name: "PERi-PERi Chips",
@@ -4701,7 +4701,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_corn_cob",
     outletId: "nandos",
     name: "Corn on the Cob",
@@ -4721,7 +4721,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_coleslaw",
     outletId: "nandos",
     name: "Coleslaw",
@@ -4741,7 +4741,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nan_garlic_bread",
     outletId: "nandos",
     name: "Garlic Bread",
@@ -4760,7 +4760,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nan_portuguese_rice",
     outletId: "nandos",
     name: "Portuguese Rice",
@@ -4780,7 +4780,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nan_quarter_thigh_plate",
     outletId: "nandos",
     name: "1/4 Chicken Plate — Thigh & Leg",
@@ -4795,7 +4795,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_quarter_breast_plate",
     outletId: "nandos",
     name: "1/4 Chicken Plate — Breast & Wing",
@@ -4810,7 +4810,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nan_half_chicken_plate",
     outletId: "nandos",
     name: "1/2 Chicken Plate",
@@ -4825,7 +4825,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nan_burger_meal",
     outletId: "nandos",
     name: "Chicken Breast Fillet Burger + Chips",
@@ -4840,7 +4840,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ph_personal_pepperoni",
     outletId: "pizza_hut",
     name: "Personal Pan Pizza — Pepperoni",
@@ -4855,7 +4855,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ph_personal_hawaiian",
     outletId: "pizza_hut",
     name: "Personal Pan Pizza — Hawaiian",
@@ -4870,7 +4870,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ph_personal_mushroom",
     outletId: "pizza_hut",
     name: "Personal Pan Pizza — Mushroom",
@@ -4887,7 +4887,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ph_personal_bbq_chicken",
     outletId: "pizza_hut",
     name: "Personal Pan Pizza — BBQ Chicken",
@@ -4902,7 +4902,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ph_super_supreme_slice",
     outletId: "pizza_hut",
     name: "Super Supreme (per slice, Medium)",
@@ -4917,7 +4917,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ph_pepperoni_lovers_slice",
     outletId: "pizza_hut",
     name: "Pepperoni Lovers (per slice, Medium)",
@@ -4932,7 +4932,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ph_hawaiian_slice",
     outletId: "pizza_hut",
     name: "Hawaiian (per slice, Medium)",
@@ -4947,7 +4947,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ph_bbq_chicken_slice",
     outletId: "pizza_hut",
     name: "BBQ Chicken (per slice, Medium)",
@@ -4962,7 +4962,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ph_pasta_bolognese",
     outletId: "pizza_hut",
     name: "Baked Pasta — Bolognese",
@@ -4977,7 +4977,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ph_pasta_creamy_mushroom",
     outletId: "pizza_hut",
     name: "Baked Pasta — Creamy Mushroom",
@@ -4994,7 +4994,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ph_garlic_bread",
     outletId: "pizza_hut",
     name: "5 Cheese Garlic Bread",
@@ -5011,7 +5011,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ph_wings_8pc",
     outletId: "pizza_hut",
     name: "Chicken Wings (8 pc)",
@@ -5026,7 +5026,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_chicken_pepperoni_slice",
     outletId: "dominos",
     name: "Chicken Pepperoni (per slice, Regular)",
@@ -5044,7 +5044,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_beef_mushroom_slice",
     outletId: "dominos",
     name: "Beef & Mushroom (per slice, Regular)",
@@ -5062,7 +5062,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dom_garden_fresh_slice",
     outletId: "dominos",
     name: "Garden Fresh (per slice, Regular)",
@@ -5081,7 +5081,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dom_bbq_chicken_slice",
     outletId: "dominos",
     name: "BBQ Chicken (per slice, Regular)",
@@ -5099,7 +5099,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_double_decadence_slice",
     outletId: "dominos",
     name: "Double Decadence (per slice, Regular)",
@@ -5117,7 +5117,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dom_personal_chicken_pepperoni",
     outletId: "dominos",
     name: "Personal Pizza — Chicken Pepperoni",
@@ -5135,7 +5135,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_personal_veg",
     outletId: "dominos",
     name: "Personal Pizza — Garden Fresh",
@@ -5154,7 +5154,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dom_wings_4pc",
     outletId: "dominos",
     name: "Chicken Wings (4 pc)",
@@ -5172,7 +5172,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_boneless_chicken_6pc",
     outletId: "dominos",
     name: "Boneless Chicken (6 pc)",
@@ -5190,7 +5190,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_garlic_twists",
     outletId: "dominos",
     name: "Garlic Twists (8 pc)",
@@ -5209,7 +5209,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_lava_cake",
     outletId: "dominos",
     name: "Lava Cake (2 pc)",
@@ -5228,7 +5228,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dom_pasta_bolognese",
     outletId: "dominos",
     name: "Pasta — Bolognese",
@@ -5246,7 +5246,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ws_wings_6pc_hot",
     outletId: "wingstop",
     name: "Classic Wings 6 pc — Classic Hot",
@@ -5264,7 +5264,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_wings_6pc_lemon_pepper",
     outletId: "wingstop",
     name: "Classic Wings 6 pc — Lemon Pepper",
@@ -5282,7 +5282,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_wings_6pc_garlic_parm",
     outletId: "wingstop",
     name: "Classic Wings 6 pc — Garlic Parmesan",
@@ -5300,7 +5300,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ws_wings_6pc_cajun",
     outletId: "wingstop",
     name: "Classic Wings 6 pc — Cajun",
@@ -5318,7 +5318,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ws_wings_6pc_mango_habanero",
     outletId: "wingstop",
     name: "Classic Wings 6 pc — Mango Habanero",
@@ -5336,7 +5336,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_wings_10pc_hot",
     outletId: "wingstop",
     name: "Classic Wings 10 pc — Classic Hot",
@@ -5354,7 +5354,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_boneless_6pc_hot",
     outletId: "wingstop",
     name: "Boneless Wings 6 pc — Classic Hot",
@@ -5372,7 +5372,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ws_seasoned_fries_reg",
     outletId: "wingstop",
     name: "Seasoned Fries (Regular)",
@@ -5391,7 +5391,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_cajun_fries_reg",
     outletId: "wingstop",
     name: "Cajun Fries (Regular)",
@@ -5410,7 +5410,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_coleslaw",
     outletId: "wingstop",
     name: "Coleslaw",
@@ -5429,7 +5429,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ws_corn",
     outletId: "wingstop",
     name: "Corn on the Cob",
@@ -5449,7 +5449,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ws_6pc_combo",
     outletId: "wingstop",
     name: "6 Classic Wings Combo",
@@ -5464,7 +5464,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_10pc_combo",
     outletId: "wingstop",
     name: "10 Classic Wings Combo",
@@ -5479,7 +5479,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ws_boneless_6pc_combo",
     outletId: "wingstop",
     name: "6 Boneless Wings Combo",
@@ -5494,7 +5494,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "gyg_burrito_chicken",
     outletId: "gyg",
     name: "Burrito — Grilled Chicken",
@@ -5512,7 +5512,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gyg_burrito_beef",
     outletId: "gyg",
     name: "Burrito — Pulled Beef",
@@ -5530,7 +5530,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gyg_bowl_chicken",
     outletId: "gyg",
     name: "Bowl — Grilled Chicken",
@@ -5549,7 +5549,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gyg_bowl_beef",
     outletId: "gyg",
     name: "Bowl — Pulled Beef",
@@ -5568,7 +5568,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "gyg_tacos_2pc_chicken",
     outletId: "gyg",
     name: "Tacos 2 pc — Grilled Chicken",
@@ -5586,7 +5586,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gyg_taco_1pc_chicken",
     outletId: "gyg",
     name: "Taco 1 pc — Grilled Chicken",
@@ -5604,7 +5604,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "gyg_quesadilla_chicken",
     outletId: "gyg",
     name: "Quesadilla — Grilled Chicken",
@@ -5622,7 +5622,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "gyg_nachos_chicken",
     outletId: "gyg",
     name: "Nachos — Grilled Chicken",
@@ -5640,7 +5640,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "gyg_chips_guac",
     outletId: "gyg",
     name: "Chips & Guacamole",
@@ -5660,7 +5660,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gyg_churros",
     outletId: "gyg",
     name: "Churros (3 pc)",
@@ -5679,7 +5679,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_shackburger",
     outletId: "shake_shack",
     name: "ShackBurger",
@@ -5694,7 +5694,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_double_shackburger",
     outletId: "shake_shack",
     name: "Double ShackBurger",
@@ -5709,7 +5709,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_smokeshack",
     outletId: "shake_shack",
     name: "SmokeShack",
@@ -5724,7 +5724,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_shackmeister",
     outletId: "shake_shack",
     name: "ShackMeister",
@@ -5739,7 +5739,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_shroom_burger",
     outletId: "shake_shack",
     name: "'Shroom Burger",
@@ -5756,7 +5756,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_chickn_shack",
     outletId: "shake_shack",
     name: "Chick'n Shack",
@@ -5771,7 +5771,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_chickn_bites_6pc",
     outletId: "shake_shack",
     name: "Chick'n Bites (6 pc)",
@@ -5786,7 +5786,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_crinkle_fries",
     outletId: "shake_shack",
     name: "Crinkle Cut Fries",
@@ -5803,7 +5803,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_cheese_fries",
     outletId: "shake_shack",
     name: "Cheese Fries",
@@ -5820,7 +5820,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_vanilla_shake",
     outletId: "shake_shack",
     name: "Vanilla Shake",
@@ -5837,7 +5837,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_chocolate_shake",
     outletId: "shake_shack",
     name: "Chocolate Shake",
@@ -5854,7 +5854,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_strawberry_shake",
     outletId: "shake_shack",
     name: "Strawberry Shake",
@@ -5871,7 +5871,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_shackburger_meal",
     outletId: "shake_shack",
     name: "ShackBurger Meal",
@@ -5886,7 +5886,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_double_shackburger_meal",
     outletId: "shake_shack",
     name: "Double ShackBurger Meal",
@@ -5901,7 +5901,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_smokeshack_meal",
     outletId: "shake_shack",
     name: "SmokeShack Meal",
@@ -5916,7 +5916,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_chickn_shack_meal",
     outletId: "shake_shack",
     name: "Chick'n Shack Meal",
@@ -5931,7 +5931,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_hamburger",
     outletId: "five_guys",
     name: "Hamburger",
@@ -5946,7 +5946,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_cheeseburger",
     outletId: "five_guys",
     name: "Cheeseburger",
@@ -5961,7 +5961,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fg_bacon_cheeseburger",
     outletId: "five_guys",
     name: "Bacon Cheeseburger",
@@ -5976,7 +5976,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fg_little_hamburger",
     outletId: "five_guys",
     name: "Little Hamburger",
@@ -5991,7 +5991,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_little_cheeseburger",
     outletId: "five_guys",
     name: "Little Cheeseburger",
@@ -6006,7 +6006,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fg_veggie_sandwich",
     outletId: "five_guys",
     name: "Veggie Sandwich",
@@ -6023,7 +6023,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_hot_dog",
     outletId: "five_guys",
     name: "Hot Dog",
@@ -6038,7 +6038,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_fries_little",
     outletId: "five_guys",
     name: "Little Fries",
@@ -6055,7 +6055,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_fries_regular",
     outletId: "five_guys",
     name: "Regular Fries",
@@ -6072,7 +6072,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fg_large_fries",
     outletId: "five_guys",
     name: "Large Fries",
@@ -6089,7 +6089,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fg_vanilla_shake",
     outletId: "five_guys",
     name: "Vanilla Milkshake",
@@ -6106,7 +6106,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kk_original_glazed",
     outletId: "krispy_kreme",
     name: "Original Glazed Doughnut",
@@ -6123,7 +6123,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_chocolate_iced",
     outletId: "krispy_kreme",
     name: "Chocolate Iced Glazed",
@@ -6140,7 +6140,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_strawberry_sprinkles",
     outletId: "krispy_kreme",
     name: "Strawberry Sprinkles",
@@ -6157,7 +6157,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kk_chocolate_kreme_filled",
     outletId: "krispy_kreme",
     name: "Chocolate Kreme Filled",
@@ -6174,7 +6174,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_original_kreme_filled",
     outletId: "krispy_kreme",
     name: "Original Kreme Filled",
@@ -6191,7 +6191,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kk_biscoff_kreme",
     outletId: "krispy_kreme",
     name: "Biscoff Kreme Doughnut",
@@ -6208,7 +6208,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_matcha",
     outletId: "krispy_kreme",
     name: "Matcha Doughnut",
@@ -6225,7 +6225,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_glazed_cruller",
     outletId: "krispy_kreme",
     name: "Glazed Cruller",
@@ -6242,7 +6242,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kk_dozen_original",
     outletId: "krispy_kreme",
     name: "Dozen Original Glazed",
@@ -6259,7 +6259,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_hot_latte",
     outletId: "krispy_kreme",
     name: "Original Glazed Hot Latte",
@@ -6276,7 +6276,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kk_iced_latte",
     outletId: "krispy_kreme",
     name: "Original Glazed Iced Latte",
@@ -6293,7 +6293,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dd_glazed",
     outletId: "dunkin",
     name: "Glazed Doughnut",
@@ -6312,7 +6312,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_chocolate_frosted",
     outletId: "dunkin",
     name: "Chocolate Frosted Doughnut",
@@ -6331,7 +6331,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_strawberry_frosted",
     outletId: "dunkin",
     name: "Strawberry Frosted Doughnut",
@@ -6350,7 +6350,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dd_boston_kreme",
     outletId: "dunkin",
     name: "Boston Kreme",
@@ -6369,7 +6369,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_jelly",
     outletId: "dunkin",
     name: "Jelly Doughnut",
@@ -6388,7 +6388,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dd_munchkins_5pc",
     outletId: "dunkin",
     name: "Munchkins Doughnut Holes (5 pc)",
@@ -6407,7 +6407,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_original_coffee_med",
     outletId: "dunkin",
     name: "Original Blend Coffee (Medium)",
@@ -6426,7 +6426,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_caramel_latte_med",
     outletId: "dunkin",
     name: "Caramel Swirl Latte (Medium)",
@@ -6445,7 +6445,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_iced_coffee_med",
     outletId: "dunkin",
     name: "Iced Coffee (Medium)",
@@ -6464,7 +6464,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dd_egg_cheese_croissant",
     outletId: "dunkin",
     name: "Egg & Cheese Croissant",
@@ -6483,7 +6483,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dd_hash_browns",
     outletId: "dunkin",
     name: "Hash Browns (3 pc)",
@@ -6502,7 +6502,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_original_pretzel",
     outletId: "auntie_annes",
     name: "Original Pretzel",
@@ -6521,7 +6521,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_cinnamon_sugar_pretzel",
     outletId: "auntie_annes",
     name: "Cinnamon Sugar Pretzel",
@@ -6540,7 +6540,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_almond_pretzel",
     outletId: "auntie_annes",
     name: "Almond Pretzel",
@@ -6559,7 +6559,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aa_cheese_pretzel",
     outletId: "auntie_annes",
     name: "Cheese Pretzel",
@@ -6578,7 +6578,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_garlic_pretzel",
     outletId: "auntie_annes",
     name: "Garlic Pretzel",
@@ -6597,7 +6597,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aa_sour_cream_onion_pretzel",
     outletId: "auntie_annes",
     name: "Sour Cream & Onion Pretzel",
@@ -6616,7 +6616,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aa_pretzel_dog",
     outletId: "auntie_annes",
     name: "Pretzel Dog",
@@ -6634,7 +6634,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_pretzel_bites",
     outletId: "auntie_annes",
     name: "Pretzel Bites (Original)",
@@ -6653,7 +6653,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_cinnamon_sugar_bites",
     outletId: "auntie_annes",
     name: "Pretzel Bites (Cinnamon Sugar)",
@@ -6672,7 +6672,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aa_nuggets_4pc",
     outletId: "auntie_annes",
     name: "Pretzel Nuggets (4 pc)",
@@ -6691,7 +6691,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "aa_lemonade",
     outletId: "auntie_annes",
     name: "Dutch Ice Lemonade",
@@ -6710,7 +6710,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "aa_dipping_cheese",
     outletId: "auntie_annes",
     name: "Cheese Dipping Sauce",
@@ -6729,7 +6729,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_orig_1pc_thigh",
     outletId: "texas_chicken",
     name: "Original Recipe — Thigh (1 pc)",
@@ -6747,7 +6747,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_orig_1pc_breast",
     outletId: "texas_chicken",
     name: "Original Recipe — Breast (1 pc)",
@@ -6765,7 +6765,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tc_spicy_1pc_thigh",
     outletId: "texas_chicken",
     name: "Spicy — Thigh (1 pc)",
@@ -6783,7 +6783,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_tenders_3pc",
     outletId: "texas_chicken",
     name: "Chicken Tenders (3 pc)",
@@ -6801,7 +6801,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_chicken_sandwich",
     outletId: "texas_chicken",
     name: "Chicken Sandwich",
@@ -6819,7 +6819,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_honey_butter_biscuit",
     outletId: "texas_chicken",
     name: "Honey Butter Biscuit",
@@ -6838,7 +6838,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_coleslaw",
     outletId: "texas_chicken",
     name: "Coleslaw",
@@ -6857,7 +6857,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tc_mashed_potato",
     outletId: "texas_chicken",
     name: "Mashed Potato & Gravy",
@@ -6875,7 +6875,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tc_fries_regular",
     outletId: "texas_chicken",
     name: "Seasoned Fries (Regular)",
@@ -6894,7 +6894,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_corn_cobette",
     outletId: "texas_chicken",
     name: "Corn Cobette",
@@ -6914,7 +6914,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tc_1pc_thigh_meal",
     outletId: "texas_chicken",
     name: "1pc Chicken Meal (Thigh)",
@@ -6929,7 +6929,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_1pc_breast_meal",
     outletId: "texas_chicken",
     name: "1pc Chicken Meal (Breast)",
@@ -6944,7 +6944,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tc_tenders_meal",
     outletId: "texas_chicken",
     name: "Chicken Tenders (3pc) Meal",
@@ -6959,7 +6959,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tc_sandwich_meal",
     outletId: "texas_chicken",
     name: "Chicken Sandwich Meal",
@@ -6974,7 +6974,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cj_western_bacon",
     outletId: "carl_jr",
     name: "Western Bacon Cheeseburger",
@@ -6989,7 +6989,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cj_famous_star",
     outletId: "carl_jr",
     name: "Famous Star with Cheese",
@@ -7004,7 +7004,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cj_super_star",
     outletId: "carl_jr",
     name: "Super Star with Cheese",
@@ -7019,7 +7019,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cj_beyond_famous_star",
     outletId: "carl_jr",
     name: "Beyond Famous Star",
@@ -7036,7 +7036,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cj_chicken_sandwich",
     outletId: "carl_jr",
     name: "Charbroiled Chicken Club Sandwich",
@@ -7051,7 +7051,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cj_fries_medium",
     outletId: "carl_jr",
     name: "Natural-Cut Fries (Medium)",
@@ -7068,7 +7068,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cj_onion_rings",
     outletId: "carl_jr",
     name: "Fried Zucchini / Onion Rings",
@@ -7085,7 +7085,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cj_vanilla_shake",
     outletId: "carl_jr",
     name: "Vanilla Shake",
@@ -7102,7 +7102,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mos_mos_burger",
     outletId: "mos_burger",
     name: "MOS Burger",
@@ -7120,7 +7120,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_teriyaki_chicken",
     outletId: "mos_burger",
     name: "Teriyaki Chicken Burger",
@@ -7138,7 +7138,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_spicy_chicken",
     outletId: "mos_burger",
     name: "Spicy Chicken Burger",
@@ -7156,7 +7156,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_fish_burger",
     outletId: "mos_burger",
     name: "Fish Burger",
@@ -7174,7 +7174,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mos_rice_burger_chicken",
     outletId: "mos_burger",
     name: "Rice Burger — Teriyaki Chicken",
@@ -7193,7 +7193,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_onion_rings",
     outletId: "mos_burger",
     name: "Onion Rings",
@@ -7212,7 +7212,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_fries",
     outletId: "mos_burger",
     name: "French Fries",
@@ -7231,7 +7231,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mos_corn_soup",
     outletId: "mos_burger",
     name: "Corn Soup",
@@ -7250,7 +7250,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mos_mos_burger_set",
     outletId: "mos_burger",
     name: "MOS Burger Set",
@@ -7265,7 +7265,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_teriyaki_chicken_set",
     outletId: "mos_burger",
     name: "Teriyaki Chicken Burger Set",
@@ -7280,7 +7280,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mos_spicy_chicken_set",
     outletId: "mos_burger",
     name: "Spicy Chicken Burger Set",
@@ -7295,7 +7295,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mos_rice_burger_set",
     outletId: "mos_burger",
     name: "Rice Burger Set (Teriyaki Chicken)",
@@ -7310,7 +7310,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_beef_bowl_reg",
     outletId: "yoshinoya",
     name: "Beef Bowl (Regular)",
@@ -7328,7 +7328,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_beef_bowl_large",
     outletId: "yoshinoya",
     name: "Beef Bowl (Large)",
@@ -7346,7 +7346,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "yoshi_chicken_bowl_reg",
     outletId: "yoshinoya",
     name: "Chicken Bowl (Regular)",
@@ -7364,7 +7364,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_cheese_beef_bowl",
     outletId: "yoshinoya",
     name: "Cheese Beef Bowl (Regular)",
@@ -7382,7 +7382,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_salmon_bowl",
     outletId: "yoshinoya",
     name: "Salmon Bowl (Regular)",
@@ -7400,7 +7400,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "yoshi_egg",
     outletId: "yoshinoya",
     name: "Onsen Egg",
@@ -7420,7 +7420,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_miso_soup",
     outletId: "yoshinoya",
     name: "Miso Soup",
@@ -7439,7 +7439,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_potato_salad",
     outletId: "yoshinoya",
     name: "Japanese Potato Salad",
@@ -7458,7 +7458,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "yoshi_beef_bowl_set_reg",
     outletId: "yoshinoya",
     name: "Beef Bowl Set (Regular)",
@@ -7473,7 +7473,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_beef_bowl_set_large",
     outletId: "yoshinoya",
     name: "Beef Bowl Set (Large)",
@@ -7488,7 +7488,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "yoshi_chicken_bowl_set",
     outletId: "yoshinoya",
     name: "Chicken Bowl Set (Regular)",
@@ -7503,7 +7503,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "yoshi_cheese_beef_set",
     outletId: "yoshinoya",
     name: "Cheese Beef Bowl Set",
@@ -7518,7 +7518,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "saiz_margherita",
     outletId: "saizeriya",
     name: "Margherita Pizza",
@@ -7535,7 +7535,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "saiz_pepperoni",
     outletId: "saizeriya",
     name: "Pepperoni Pizza",
@@ -7550,7 +7550,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "saiz_aglio_olio",
     outletId: "saizeriya",
     name: "Aglio e Olio Spaghetti",
@@ -7567,7 +7567,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "saiz_carbonara",
     outletId: "saizeriya",
     name: "Carbonara",
@@ -7582,7 +7582,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "saiz_bolognese",
     outletId: "saizeriya",
     name: "Meat Sauce Spaghetti (Bolognese)",
@@ -7597,7 +7597,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "saiz_grilled_chicken",
     outletId: "saizeriya",
     name: "Grilled Chicken with Herb",
@@ -7612,7 +7612,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "saiz_caesar_salad",
     outletId: "saizeriya",
     name: "Caesar Salad",
@@ -7629,7 +7629,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "saiz_tiramisu",
     outletId: "saizeriya",
     name: "Tiramisu",
@@ -7646,7 +7646,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "saiz_garlic_bread",
     outletId: "saizeriya",
     name: "Garlic Bread",
@@ -7663,7 +7663,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "genki_salmon_nigiri",
     outletId: "genki_sushi",
     name: "Salmon Nigiri (2 pc)",
@@ -7680,7 +7680,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "genki_tuna_nigiri",
     outletId: "genki_sushi",
     name: "Tuna Nigiri (2 pc)",
@@ -7697,7 +7697,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "genki_ebi_nigiri",
     outletId: "genki_sushi",
     name: "Prawn Nigiri (2 pc)",
@@ -7714,7 +7714,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "genki_salmon_aburi",
     outletId: "genki_sushi",
     name: "Aburi Salmon (2 pc)",
@@ -7731,7 +7731,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "genki_salmon_roll",
     outletId: "genki_sushi",
     name: "Salmon Roll (6 pc)",
@@ -7748,7 +7748,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "genki_spicy_tuna_roll",
     outletId: "genki_sushi",
     name: "Spicy Tuna Roll (6 pc)",
@@ -7765,7 +7765,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "genki_edamame",
     outletId: "genki_sushi",
     name: "Edamame",
@@ -7785,7 +7785,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "genki_miso_soup",
     outletId: "genki_sushi",
     name: "Miso Soup",
@@ -7803,7 +7803,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "genki_karaage",
     outletId: "genki_sushi",
     name: "Chicken Karaage (3 pc)",
@@ -7820,7 +7820,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_latte",
     outletId: "mccafe",
     name: "Café Latte (Medium)",
@@ -7839,7 +7839,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_cappuccino",
     outletId: "mccafe",
     name: "Cappuccino (Medium)",
@@ -7858,7 +7858,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_americano",
     outletId: "mccafe",
     name: "Americano (Medium)",
@@ -7879,7 +7879,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mccafe_mocha",
     outletId: "mccafe",
     name: "Mocha (Medium)",
@@ -7898,7 +7898,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_frappe_mocha",
     outletId: "mccafe",
     name: "Frappe Mocha (Medium)",
@@ -7917,7 +7917,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_frappe_caramel",
     outletId: "mccafe",
     name: "Frappe Caramel (Medium)",
@@ -7936,7 +7936,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mccafe_chocolate_muffin",
     outletId: "mccafe",
     name: "Double Chocolate Muffin",
@@ -7955,7 +7955,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_blueberry_muffin",
     outletId: "mccafe",
     name: "Blueberry Muffin",
@@ -7974,7 +7974,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mccafe_choc_chip_cookie",
     outletId: "mccafe",
     name: "Chocolate Chip Cookie",
@@ -7993,7 +7993,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mccafe_hot_chocolate",
     outletId: "mccafe",
     name: "Hot Chocolate (Medium)",
@@ -8012,7 +8012,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cbtl_ice_blended_original",
     outletId: "coffee_bean",
     name: "Original Ice Blended® (Medium)",
@@ -8030,7 +8030,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cbtl_ice_blended_chocolate",
     outletId: "coffee_bean",
     name: "Chocolate Ice Blended® (Medium)",
@@ -8048,7 +8048,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cbtl_ice_blended_matcha",
     outletId: "coffee_bean",
     name: "Matcha Latte Ice Blended® (Medium)",
@@ -8066,7 +8066,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cbtl_latte",
     outletId: "coffee_bean",
     name: "Latte (Medium)",
@@ -8084,7 +8084,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cbtl_cold_brew",
     outletId: "coffee_bean",
     name: "Cold Brew Coffee (Medium)",
@@ -8104,7 +8104,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cbtl_earl_grey",
     outletId: "coffee_bean",
     name: "Earl Grey Tea Latte (Hot)",
@@ -8122,7 +8122,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cbtl_croissant",
     outletId: "coffee_bean",
     name: "Butter Croissant",
@@ -8140,7 +8140,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cbtl_choc_cake",
     outletId: "coffee_bean",
     name: "Chocolate Fudge Cake (slice)",
@@ -8158,7 +8158,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "astons_ribeye",
     outletId: "astons",
     name: "Ribeye Steak (180g)",
@@ -8176,7 +8176,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "astons_sirloin",
     outletId: "astons",
     name: "Sirloin Steak (180g)",
@@ -8194,7 +8194,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "astons_chicken_chop",
     outletId: "astons",
     name: "Chicken Chop",
@@ -8211,7 +8211,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "astons_fish_chips",
     outletId: "astons",
     name: "Fish & Chips",
@@ -8228,7 +8228,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "astons_salmon",
     outletId: "astons",
     name: "Grilled Salmon",
@@ -8246,7 +8246,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "astons_mashed_potato",
     outletId: "astons",
     name: "Mashed Potato",
@@ -8264,7 +8264,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "astons_coleslaw",
     outletId: "astons",
     name: "Coleslaw",
@@ -8282,7 +8282,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "astons_fries",
     outletId: "astons",
     name: "Steak Fries",
@@ -8300,7 +8300,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_chicken_mushroom",
     outletId: "soup_spoon",
     name: "Chicken & Mushroom Soup (Large)",
@@ -8317,7 +8317,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_cream_mushroom",
     outletId: "soup_spoon",
     name: "Cream of Mushroom (Large)",
@@ -8335,7 +8335,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_tomato_basil",
     outletId: "soup_spoon",
     name: "Tomato Basil Soup (Large)",
@@ -8354,7 +8354,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_lobster_bisque",
     outletId: "soup_spoon",
     name: "Lobster Bisque (Large)",
@@ -8371,7 +8371,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_minestrone",
     outletId: "soup_spoon",
     name: "Minestrone (Large)",
@@ -8390,7 +8390,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_clam_chowder",
     outletId: "soup_spoon",
     name: "New England Clam Chowder (Large)",
@@ -8407,7 +8407,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_sourdough",
     outletId: "soup_spoon",
     name: "Sourdough Bread (side)",
@@ -8425,7 +8425,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_caesar_salad",
     outletId: "soup_spoon",
     name: "Caesar Salad",
@@ -8443,7 +8443,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tdc_chicken_rice",
     outletId: "daily_cut",
     name: "Grilled Chicken Thigh Bowl (Brown Rice)",
@@ -8461,7 +8461,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tdc_salmon_rice",
     outletId: "daily_cut",
     name: "Teriyaki Salmon Bowl (Brown Rice)",
@@ -8478,7 +8478,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tdc_beef_rice",
     outletId: "daily_cut",
     name: "Slow-Cooked Beef Bowl (Brown Rice)",
@@ -8496,7 +8496,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tdc_chicken_quinoa",
     outletId: "daily_cut",
     name: "Grilled Chicken Thigh Bowl (Quinoa)",
@@ -8514,7 +8514,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tdc_salad_base",
     outletId: "daily_cut",
     name: "Grilled Chicken Salad (Greens base)",
@@ -8532,7 +8532,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tdc_tofu_bowl",
     outletId: "daily_cut",
     name: "Pan-Fried Tofu Bowl (Brown Rice)",
@@ -8551,7 +8551,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "tdc_protein_smoothie",
     outletId: "daily_cut",
     name: "Protein Smoothie",
@@ -8569,7 +8569,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pacai_classic_bowl",
     outletId: "project_acai",
     name: "Classic Açaí Bowl",
@@ -8587,7 +8587,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pacai_protein_bowl",
     outletId: "project_acai",
     name: "Protein Açaí Bowl",
@@ -8605,7 +8605,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pacai_pitaya_bowl",
     outletId: "project_acai",
     name: "Pitaya (Dragon Fruit) Bowl",
@@ -8625,7 +8625,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pacai_green_bowl",
     outletId: "project_acai",
     name: "Green Detox Bowl",
@@ -8645,7 +8645,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "pacai_smoothie_acai",
     outletId: "project_acai",
     name: "Açaí Smoothie (regular)",
@@ -8665,7 +8665,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pacai_pb_bowl",
     outletId: "project_acai",
     name: "Peanut Butter Açaí Bowl",
@@ -8683,7 +8683,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "liho_cheese_ggt",
     outletId: "liho",
     name: "Cheese Green Tea (M, 70% sugar)",
@@ -8701,7 +8701,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "liho_cheese_oolong",
     outletId: "liho",
     name: "Cheese Oolong Tea (M, 70% sugar)",
@@ -8719,7 +8719,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "liho_milk_tea",
     outletId: "liho",
     name: "Classic Milk Tea (M, 70% sugar, with pearls)",
@@ -8737,7 +8737,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "liho_brown_sugar_milk",
     outletId: "liho",
     name: "Brown Sugar Pearl Fresh Milk (M)",
@@ -8755,7 +8755,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "liho_matcha_milk",
     outletId: "liho",
     name: "Matcha Latte (M, 70% sugar)",
@@ -8773,7 +8773,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "liho_passionfruit_tea",
     outletId: "liho",
     name: "Passionfruit Green Tea (M, 70% sugar)",
@@ -8792,7 +8792,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "koi_oolong_milk_tea",
     outletId: "koi",
     name: "KOI Milk Tea (M, 70% sugar, with pearls)",
@@ -8811,7 +8811,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "koi_3q",
     outletId: "koi",
     name: "3Q Milk Tea (M, 70% sugar)",
@@ -8830,7 +8830,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "koi_fresh_milk_tea",
     outletId: "koi",
     name: "Fresh Milk Tea (M, 70% sugar)",
@@ -8849,7 +8849,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "koi_matcha_milk",
     outletId: "koi",
     name: "Matcha Milk (M, 70% sugar)",
@@ -8868,7 +8868,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "koi_passionfruit_green",
     outletId: "koi",
     name: "Passionfruit, Peach & Green Tea (M, 70% sugar)",
@@ -8888,7 +8888,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "koi_brown_sugar",
     outletId: "koi",
     name: "Brown Sugar Milk with Pearl (M)",
@@ -8907,7 +8907,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "chagee_jasmine_milk",
     outletId: "chagee",
     name: "Jasmine Milk Green Tea (M, standard sugar)",
@@ -8925,7 +8925,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "chagee_bawang_oolong",
     outletId: "chagee",
     name: "BAWANG Oolong Milk Tea (M, standard sugar)",
@@ -8943,7 +8943,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "chagee_cheese_milk_tea",
     outletId: "chagee",
     name: "Cheese Milk Tea (M, standard sugar)",
@@ -8961,7 +8961,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "chagee_puremax_latte",
     outletId: "chagee",
     name: "Puremax Tea Latte (M, standard sugar)",
@@ -8979,7 +8979,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "chagee_fruit_tea",
     outletId: "chagee",
     name: "Seasonal Fruit Tea (M)",
@@ -8998,7 +8998,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mixue_soft_serve",
     outletId: "mixue",
     name: "Vanilla Soft Serve",
@@ -9017,7 +9017,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mixue_milk_tea",
     outletId: "mixue",
     name: "Classic Milk Tea (M, standard sugar, with pearls)",
@@ -9036,7 +9036,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mixue_strawberry_lemonade",
     outletId: "mixue",
     name: "Strawberry Lemonade (M)",
@@ -9056,7 +9056,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mixue_mango_tea",
     outletId: "mixue",
     name: "Mango Green Tea (M)",
@@ -9076,7 +9076,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "mixue_matcha_latte",
     outletId: "mixue",
     name: "Matcha Latte (M)",
@@ -9095,7 +9095,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "mixue_sundae",
     outletId: "mixue",
     name: "Chocolate Soft Serve Sundae",
@@ -9114,7 +9114,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dosirak_bulgogi_set",
     outletId: "dosirak",
     name: "Bulgogi Beef Rice Set",
@@ -9131,7 +9131,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dosirak_spicy_chicken_set",
     outletId: "dosirak",
     name: "Spicy Chicken Rice Set",
@@ -9148,7 +9148,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dosirak_kimchi_fried_rice",
     outletId: "dosirak",
     name: "Kimchi Fried Rice",
@@ -9165,7 +9165,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dosirak_army_stew",
     outletId: "dosirak",
     name: "Budae Jjigae (Army Stew)",
@@ -9180,7 +9180,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dosirak_tteokbokki",
     outletId: "dosirak",
     name: "Tteokbokki",
@@ -9197,7 +9197,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "dosirak_japchae",
     outletId: "dosirak",
     name: "Japchae (Glass Noodles)",
@@ -9214,7 +9214,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "dosirak_kimchi_side",
     outletId: "dosirak",
     name: "Kimchi (side)",
@@ -9234,7 +9234,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "makisan_classic_6pc",
     outletId: "makisan",
     name: "Classic Sushi Roll (6 pc)",
@@ -9252,7 +9252,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "makisan_salmon_6pc",
     outletId: "makisan",
     name: "Salmon Sushi Roll (6 pc)",
@@ -9270,7 +9270,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "makisan_spicy_tuna_6pc",
     outletId: "makisan",
     name: "Spicy Tuna Roll (6 pc)",
@@ -9288,7 +9288,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "makisan_veg_6pc",
     outletId: "makisan",
     name: "Vegetable Roll (6 pc)",
@@ -9308,7 +9308,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "makisan_sashimi_bowl",
     outletId: "makisan",
     name: "Sashimi Don (Rice Bowl)",
@@ -9326,7 +9326,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "makisan_edamame",
     outletId: "makisan",
     name: "Edamame",
@@ -9347,7 +9347,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nb_chicken_bowl",
     outletId: "nourish_bowl",
     name: "Grilled Chicken Power Bowl",
@@ -9365,7 +9365,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nb_salmon_bowl",
     outletId: "nourish_bowl",
     name: "Salmon Teriyaki Bowl",
@@ -9382,7 +9382,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nb_vegan_bowl",
     outletId: "nourish_bowl",
     name: "Vegan Buddha Bowl",
@@ -9402,7 +9402,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "nb_smoothie",
     outletId: "nourish_bowl",
     name: "Green Smoothie",
@@ -9422,7 +9422,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "nb_beef_bowl",
     outletId: "nourish_bowl",
     name: "Teriyaki Beef Bowl",
@@ -9440,7 +9440,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sfk_signature_bowl",
     outletId: "superfood_kitchen",
     name: "Superfood Signature Bowl",
@@ -9458,7 +9458,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sfk_chicken_bowl",
     outletId: "superfood_kitchen",
     name: "Grilled Chicken Superfood Bowl",
@@ -9476,7 +9476,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sfk_açai_bowl",
     outletId: "superfood_kitchen",
     name: "Açaí Power Bowl",
@@ -9495,7 +9495,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sfk_detox_salad",
     outletId: "superfood_kitchen",
     name: "Detox Kale Salad",
@@ -9515,7 +9515,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sfk_protein_smoothie",
     outletId: "superfood_kitchen",
     name: "Protein Power Smoothie",
@@ -9533,7 +9533,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "boost_mango_magic",
     outletId: "boost_juice",
     name: "Mango Magic (Original)",
@@ -9550,7 +9550,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "boost_all_berry_bang",
     outletId: "boost_juice",
     name: "All Berry Bang (Original)",
@@ -9567,7 +9567,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "boost_strawberry_squeeze",
     outletId: "boost_juice",
     name: "Strawberry Squeeze (Original)",
@@ -9584,7 +9584,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "boost_protein_supreme",
     outletId: "boost_juice",
     name: "Protein Supreme (Original)",
@@ -9601,7 +9601,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "boost_watermelon_lychee_crush",
     outletId: "boost_juice",
     name: "Watermelon Lychee Crush (Original)",
@@ -9619,7 +9619,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cheers_treats_roast_chicken_sandwich",
     outletId: "cheers",
     name: "Treats Roasted Chicken with Herbs Sandwich",
@@ -9636,7 +9636,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "cheers_treats_egg_mayo_sandwich",
     outletId: "cheers",
     name: "Treats Egg Mayo Sandwich",
@@ -9654,7 +9654,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cheers_treats_honey_chicken_ham_sandwich",
     outletId: "cheers",
     name: "Treats Honey Chicken Ham Sandwich",
@@ -9671,7 +9671,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cheers_treats_chicken_rendang_bento",
     outletId: "cheers",
     name: "Treats Chicken Rendang Biryani Rice",
@@ -9688,7 +9688,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cheers_treats_ayam_bakar_bento",
     outletId: "cheers",
     name: "Treats Ayam Bakar & Braised Cabbage",
@@ -9706,7 +9706,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cheers_chicken_hotdog",
     outletId: "cheers",
     name: "Chicken Hot Dog",
@@ -9723,7 +9723,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fpx_treats_chicken_rice_bento",
     outletId: "fairprice_xpress",
     name: "Treats Chicken Rice Bento",
@@ -9741,7 +9741,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fpx_grab_go_tuna_sandwich",
     outletId: "fairprice_xpress",
     name: "Grab & Go Tuna Sandwich",
@@ -9758,7 +9758,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fpx_yoghurt_parfait",
     outletId: "fairprice_xpress",
     name: "Yoghurt Parfait",
@@ -9775,7 +9775,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fpx_fresh_fruit_cup",
     outletId: "fairprice_xpress",
     name: "Fresh Fruit Salad Cup",
@@ -9795,7 +9795,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fpx_chicken_skewer",
     outletId: "fairprice_xpress",
     name: "Chicken Skewer (per stick)",
@@ -9813,7 +9813,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fpx_hard_boiled_eggs",
     outletId: "fairprice_xpress",
     name: "Hard Boiled Eggs (2 pcs)",
@@ -9833,7 +9833,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_tuna_san",
     outletId: "saladstop",
     name: "Tuna San (Signature Bowl)",
@@ -9851,7 +9851,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "ss_hail_caesar",
     outletId: "saladstop",
     name: "Hail Caesar (Signature Bowl)",
@@ -9866,7 +9866,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_harvest_bowl",
     outletId: "saladstop",
     name: "Harvest Bowl (Warm)",
@@ -9883,7 +9883,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_sabai_sabai",
     outletId: "saladstop",
     name: "Sabai Sabai Grain Bowl",
@@ -9900,7 +9900,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "ss_smoosha_acai",
     outletId: "saladstop",
     name: "Smoosha Açaí Bowl",
@@ -9918,7 +9918,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "ss_cyo_starter",
     outletId: "saladstop",
     name: "CYO Starter Bowl",
@@ -9936,7 +9936,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "pb_almond_croissant",
     outletId: "paris_baguette",
     name: "Almond Croissant",
@@ -9953,7 +9953,7 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-  {
+{
     id: "pb_croissant",
     outletId: "paris_baguette",
     name: "Butter Croissant",
@@ -9969,7 +9969,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "pb_ham_cheese_baguette",
     outletId: "paris_baguette",
     name: "Ham & Cheese Baguette",
@@ -9984,7 +9984,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "pb_tuna_sandwich",
     outletId: "paris_baguette",
     name: "Tuna Sandwich",
@@ -9998,7 +9998,7 @@ export const FOOD_OPTIONS = [
     compatibleWith: [],
     confidence: "estimated"
   },
-  {
+{
     id: "pb_strawberry_cake",
     outletId: "paris_baguette",
     name: "Strawberry Yoghurt Cream Cake (slice)",
@@ -10014,7 +10014,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "pb_americano",
     outletId: "paris_baguette",
     name: "Americano",
@@ -10033,7 +10033,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "pb_matcha_latte",
     outletId: "paris_baguette",
     name: "Matcha Latte",
@@ -10050,7 +10050,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "se_salmon_nigiri",
     outletId: "sushi_express",
     name: "Salmon Nigiri (2 pc plate)",
@@ -10068,7 +10068,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "se_tuna_nigiri",
     outletId: "sushi_express",
     name: "Tuna Nigiri (2 pc plate)",
@@ -10085,7 +10085,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "se_ebi_nigiri",
     outletId: "sushi_express",
     name: "Ebi Nigiri (2 pc plate)",
@@ -10102,7 +10102,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "se_tamago",
     outletId: "sushi_express",
     name: "Tamago Sushi (2 pc plate)",
@@ -10119,7 +10119,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "se_california_roll",
     outletId: "sushi_express",
     name: "California Roll (4 pc plate)",
@@ -10136,7 +10136,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "se_salmon_maki",
     outletId: "sushi_express",
     name: "Salmon Maki (4 pc plate)",
@@ -10153,7 +10153,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "se_karaage",
     outletId: "sushi_express",
     name: "Karaage Chicken (3 pc plate)",
@@ -10170,7 +10170,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "se_chawanmushi",
     outletId: "sushi_express",
     name: "Chawanmushi",
@@ -10187,7 +10187,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "se_edamame",
     outletId: "sushi_express",
     name: "Edamame",
@@ -10206,7 +10206,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "sb_cajun_chicken",
     outletId: "saladbox",
     name: "Cajun Chicken Salad",
@@ -10221,7 +10221,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sb_crispy_caesar",
     outletId: "saladbox",
     name: "Crispy Caesar Salad",
@@ -10236,7 +10236,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sb_teriyaki_chicken",
     outletId: "saladbox",
     name: "Teriyaki Chicken Salad",
@@ -10251,7 +10251,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sb_rainbow_salad",
     outletId: "saladbox",
     name: "Rainbow Salad",
@@ -10266,7 +10266,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "sb_tofu_salad",
     outletId: "saladbox",
     name: "Tofu Salad",
@@ -10283,7 +10283,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sb_garden_salad",
     outletId: "saladbox",
     name: "Garden Salad",
@@ -10301,7 +10301,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "sb_immune_booster",
     outletId: "saladbox",
     name: "Immune Booster Juice",
@@ -10319,7 +10319,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fp_rotisserie_quarter",
     outletId: "fairprice",
     name: "Rotisserie Chicken (Quarter)",
@@ -10338,7 +10338,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fp_rotisserie_half",
     outletId: "fairprice",
     name: "Rotisserie Chicken (Half)",
@@ -10357,7 +10357,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fp_sushi_6pc",
     outletId: "fairprice",
     name: "Freshly Made Sushi (6pc)",
@@ -10372,7 +10372,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fp_bento",
     outletId: "fairprice",
     name: "Ready Bento Box",
@@ -10389,7 +10389,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fp_salad_pack",
     outletId: "fairprice",
     name: "Pre-packed Salad",
@@ -10408,7 +10408,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fp_sandwich",
     outletId: "fairprice",
     name: "Sandwich (Chicken / Egg)",
@@ -10425,7 +10425,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fp_inari_sushi",
     outletId: "fairprice",
     name: "Inari Sushi (2pc)",
@@ -10442,7 +10442,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fp_onigiri",
     outletId: "fairprice",
     name: "Onigiri (Rice Ball)",
@@ -10459,7 +10459,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fpf_rotisserie_quarter",
     outletId: "fairprice_finest",
     name: "Rotisserie Chicken (Quarter)",
@@ -10478,7 +10478,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fpf_salad_bar_200g",
     outletId: "fairprice_finest",
     name: "Salad Bar (200g)",
@@ -10497,7 +10497,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fpf_bento",
     outletId: "fairprice_finest",
     name: "Ready Bento Box (Premium)",
@@ -10514,7 +10514,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fpf_sushi_set",
     outletId: "fairprice_finest",
     name: "Freshly Made Sushi Set (8pc)",
@@ -10529,7 +10529,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cs_rotisserie_quarter",
     outletId: "cold_storage",
     name: "Rotisserie Chicken (Quarter)",
@@ -10548,7 +10548,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cs_deli_salad_200g",
     outletId: "cold_storage",
     name: "Deli Salad Bar (200g)",
@@ -10566,7 +10566,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cs_ready_meal",
     outletId: "cold_storage",
     name: "Ready Meal Bento",
@@ -10581,7 +10581,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cs_sandwich",
     outletId: "cold_storage",
     name: "Gourmet Sandwich",
@@ -10596,7 +10596,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "cs_sushi_8pc",
     outletId: "cold_storage",
     name: "Freshly Made Sushi (8pc)",
@@ -10611,7 +10611,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "giant_rotisserie_quarter",
     outletId: "giant",
     name: "Rotisserie Chicken (Quarter)",
@@ -10630,7 +10630,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "giant_bento",
     outletId: "giant",
     name: "Ready Bento Box",
@@ -10647,7 +10647,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "giant_sandwich",
     outletId: "giant",
     name: "Sandwich",
@@ -10664,7 +10664,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ss_roast_chicken_quarter",
     outletId: "sheng_siong",
     name: "Roast Chicken (Quarter)",
@@ -10682,7 +10682,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_bento",
     outletId: "sheng_siong",
     name: "Ready Bento Box",
@@ -10697,7 +10697,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ss_roast_pork",
     outletId: "sheng_siong",
     name: "Char Siu / Roast Pork Slice",
@@ -10715,7 +10715,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ddk_takoyaki_6pc",
     outletId: "don_don_donki",
     name: "Takoyaki (6 pieces)",
@@ -10730,7 +10730,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_karaage_5pc",
     outletId: "don_don_donki",
     name: "Karaage Chicken (5 pieces)",
@@ -10745,7 +10745,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_gyoza_5pc",
     outletId: "don_don_donki",
     name: "Gyoza (5 pieces)",
@@ -10760,7 +10760,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_onigiri",
     outletId: "don_don_donki",
     name: "Onigiri",
@@ -10775,7 +10775,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_sushi_8pc",
     outletId: "don_don_donki",
     name: "Sushi Set (8 pieces)",
@@ -10790,7 +10790,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_melon_bread",
     outletId: "don_don_donki",
     name: "Melon Bread",
@@ -10807,7 +10807,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_soft_serve",
     outletId: "don_don_donki",
     name: "Soft Serve Ice Cream",
@@ -10824,7 +10824,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ddk_ramen_cup",
     outletId: "don_don_donki",
     name: "Hot Ramen Cup",
@@ -10839,7 +10839,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kfc_steamed_cr",
     outletId: "koufu_chicken_rice_stall",
     name: "Steamed Chicken Rice",
@@ -10856,7 +10856,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kfc_roasted_cr",
     outletId: "koufu_chicken_rice_stall",
     name: "Roasted Chicken Rice",
@@ -10873,7 +10873,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kfc_char_siew_r",
     outletId: "koufu_chicken_rice_stall",
     name: "Char Siew Rice",
@@ -10890,7 +10890,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kmvr_2dish",
     outletId: "koufu_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (2 dishes)",
@@ -10907,7 +10907,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kmvr_3dish",
     outletId: "koufu_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (3 dishes)",
@@ -10924,7 +10924,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kmvr_4dish",
     outletId: "koufu_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (4 dishes)",
@@ -10939,7 +10939,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kwn_dry",
     outletId: "koufu_wonton_noodle_stall",
     name: "Wonton Mee (Dry)",
@@ -10956,7 +10956,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kwn_soup",
     outletId: "koufu_wonton_noodle_stall",
     name: "Wonton Mee (Soup)",
@@ -10973,7 +10973,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "klak_laksa",
     outletId: "koufu_laksa_stall",
     name: "Laksa",
@@ -10990,7 +10990,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "klak_meesiam",
     outletId: "koufu_laksa_stall",
     name: "Mee Siam",
@@ -11007,7 +11007,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "knl_basic",
     outletId: "koufu_nasi_lemak_stall",
     name: "Nasi Lemak (basic)",
@@ -11024,7 +11024,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "knl_chicken",
     outletId: "koufu_nasi_lemak_stall",
     name: "Nasi Lemak with Chicken",
@@ -11041,7 +11041,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kbm_ban_mian",
     outletId: "koufu_ban_mian_stall",
     name: "Ban Mian",
@@ -11058,7 +11058,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kbm_fish_ball",
     outletId: "koufu_ban_mian_stall",
     name: "Fish Ball Noodle Soup",
@@ -11075,7 +11075,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kckt_ckt",
     outletId: "koufu_char_kway_teow_stall",
     name: "Char Kway Teow",
@@ -11090,7 +11090,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kckt_hokkien_mee",
     outletId: "koufu_char_kway_teow_stall",
     name: "Hokkien Mee",
@@ -11105,7 +11105,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kdrk_kopi_o",
     outletId: "koufu_drinks_stall",
     name: "Kopi O (Black Coffee)",
@@ -11125,7 +11125,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kdrk_kopi",
     outletId: "koufu_drinks_stall",
     name: "Kopi (Coffee with Milk)",
@@ -11143,7 +11143,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kdrk_teh_tarik",
     outletId: "koufu_drinks_stall",
     name: "Teh Tarik",
@@ -11161,7 +11161,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kdrk_milo",
     outletId: "koufu_drinks_stall",
     name: "Milo (Hot)",
@@ -11179,7 +11179,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopicr_steamed",
     outletId: "kopitiam_chicken_rice_stall",
     name: "Steamed Chicken Rice",
@@ -11196,7 +11196,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopicr_roasted",
     outletId: "kopitiam_chicken_rice_stall",
     name: "Roasted Chicken Rice",
@@ -11213,7 +11213,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopimvr_2dish",
     outletId: "kopitiam_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (2 dishes)",
@@ -11230,7 +11230,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopimvr_3dish",
     outletId: "kopitiam_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (3 dishes)",
@@ -11247,7 +11247,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopinod_wonton",
     outletId: "kopitiam_noodle_stall",
     name: "Wonton Mee (Dry)",
@@ -11264,7 +11264,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopinod_ban_mian",
     outletId: "kopitiam_noodle_stall",
     name: "Ban Mian",
@@ -11281,7 +11281,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopinod_fishball",
     outletId: "kopitiam_noodle_stall",
     name: "Fishball Noodle",
@@ -11298,7 +11298,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopilak_laksa",
     outletId: "kopitiam_laksa_stall",
     name: "Laksa",
@@ -11315,7 +11315,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopilak_curry_n",
     outletId: "kopitiam_laksa_stall",
     name: "Curry Noodle",
@@ -11332,7 +11332,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopinl_basic",
     outletId: "kopitiam_nasi_lemak_stall",
     name: "Nasi Lemak (basic)",
@@ -11349,7 +11349,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopinl_chicken",
     outletId: "kopitiam_nasi_lemak_stall",
     name: "Nasi Lemak with Chicken",
@@ -11366,7 +11366,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopiwest_chop",
     outletId: "kopitiam_western_stall",
     name: "Chicken Chop",
@@ -11383,7 +11383,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopiwest_fish",
     outletId: "kopitiam_western_stall",
     name: "Fish & Chips",
@@ -11398,7 +11398,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopiwest_pasta",
     outletId: "kopitiam_western_stall",
     name: "Pasta (Aglio Olio)",
@@ -11415,7 +11415,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "kopidrk_kopi_o",
     outletId: "kopitiam_drinks_stall",
     name: "Kopi O",
@@ -11435,7 +11435,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopidrk_teh_tarik",
     outletId: "kopitiam_drinks_stall",
     name: "Teh Tarik",
@@ -11453,7 +11453,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "kopidrk_milo",
     outletId: "kopitiam_drinks_stall",
     name: "Milo (Hot)",
@@ -11471,7 +11471,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ffcr_steamed",
     outletId: "foodfare_chicken_rice_stall",
     name: "Steamed Chicken Rice",
@@ -11488,7 +11488,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ffcr_roasted",
     outletId: "foodfare_chicken_rice_stall",
     name: "Roasted Chicken Rice",
@@ -11505,7 +11505,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ffmvr_2dish",
     outletId: "foodfare_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (2 dishes)",
@@ -11522,7 +11522,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ffmvr_3dish",
     outletId: "foodfare_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (3 dishes)",
@@ -11539,7 +11539,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ffnod_ckt",
     outletId: "foodfare_noodle_stall",
     name: "Char Kway Teow",
@@ -11554,7 +11554,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ffnod_mee_goreng",
     outletId: "foodfare_noodle_stall",
     name: "Mee Goreng",
@@ -11571,7 +11571,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ffnod_mee_rebus",
     outletId: "foodfare_noodle_stall",
     name: "Mee Rebus",
@@ -11588,7 +11588,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "fflak_laksa",
     outletId: "foodfare_laksa_stall",
     name: "Laksa",
@@ -11605,7 +11605,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "fflak_meesiam",
     outletId: "foodfare_laksa_stall",
     name: "Mee Siam",
@@ -11622,7 +11622,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ffnl_basic",
     outletId: "foodfare_nasi_lemak_stall",
     name: "Nasi Lemak (basic)",
@@ -11639,7 +11639,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ffnl_chicken",
     outletId: "foodfare_nasi_lemak_stall",
     name: "Nasi Lemak with Chicken",
@@ -11656,7 +11656,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ffdrk_kopi_o",
     outletId: "foodfare_drinks_stall",
     name: "Kopi O",
@@ -11676,7 +11676,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ffdrk_teh_tarik",
     outletId: "foodfare_drinks_stall",
     name: "Teh Tarik",
@@ -11694,7 +11694,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ffdrk_milo",
     outletId: "foodfare_drinks_stall",
     name: "Milo (Hot)",
@@ -11712,7 +11712,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "banqcr_steamed",
     outletId: "banquet_chicken_rice_stall",
     name: "Steamed Chicken Rice",
@@ -11729,7 +11729,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqcr_roasted",
     outletId: "banquet_chicken_rice_stall",
     name: "Roasted Chicken Rice",
@@ -11746,7 +11746,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "banqmvr_2dish",
     outletId: "banquet_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (2 dishes)",
@@ -11763,7 +11763,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "banqmvr_3dish",
     outletId: "banquet_mixed_veg_rice_stall",
     name: "Mixed Veg Rice (3 dishes)",
@@ -11780,7 +11780,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqnod_wonton",
     outletId: "banquet_noodle_stall",
     name: "Wonton Mee (Dry)",
@@ -11797,7 +11797,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqnod_ban_mian",
     outletId: "banquet_noodle_stall",
     name: "Ban Mian",
@@ -11814,7 +11814,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "banqlak_laksa",
     outletId: "banquet_laksa_stall",
     name: "Laksa",
@@ -11831,7 +11831,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqnl_basic",
     outletId: "banquet_nasi_lemak_stall",
     name: "Nasi Lemak (basic)",
@@ -11848,7 +11848,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqnl_chicken",
     outletId: "banquet_nasi_lemak_stall",
     name: "Nasi Lemak with Chicken",
@@ -11865,7 +11865,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "banqdrk_kopi_o",
     outletId: "banquet_drinks_stall",
     name: "Kopi O",
@@ -11885,7 +11885,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqdrk_teh_tarik",
     outletId: "banquet_drinks_stall",
     name: "Teh Tarik",
@@ -11903,7 +11903,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "banqdrk_milo",
     outletId: "banquet_drinks_stall",
     name: "Milo (Hot)",
@@ -11921,13117 +11921,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
-    id: "commonwealth_crescent_market_chicken_rice",
-    outletId: "commonwealth_crescent_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "commonwealth_crescent_market_char_kway_teow",
-    outletId: "commonwealth_crescent_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "commonwealth_crescent_market_fishball_noodles",
-    outletId: "commonwealth_crescent_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "commonwealth_crescent_market_nasi_lemak",
-    outletId: "commonwealth_crescent_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "commonwealth_crescent_market_laksa",
-    outletId: "commonwealth_crescent_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "commonwealth_crescent_market_mee_goreng",
-    outletId: "commonwealth_crescent_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "commonwealth_crescent_market_teh_tarik",
-    outletId: "commonwealth_crescent_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "commonwealth_crescent_market_kopi",
-    outletId: "commonwealth_crescent_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tiong_bahru_market_chicken_rice",
-    outletId: "tiong_bahru_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tiong_bahru_market_char_kway_teow",
-    outletId: "tiong_bahru_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tiong_bahru_market_fishball_noodles",
-    outletId: "tiong_bahru_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tiong_bahru_market_nasi_lemak",
-    outletId: "tiong_bahru_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tiong_bahru_market_laksa",
-    outletId: "tiong_bahru_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tiong_bahru_market_mee_goreng",
-    outletId: "tiong_bahru_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tiong_bahru_market_teh_tarik",
-    outletId: "tiong_bahru_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tiong_bahru_market_kopi",
-    outletId: "tiong_bahru_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "dunman_food_centre_chicken_rice",
-    outletId: "dunman_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "dunman_food_centre_char_kway_teow",
-    outletId: "dunman_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "dunman_food_centre_fishball_noodles",
-    outletId: "dunman_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "dunman_food_centre_nasi_lemak",
-    outletId: "dunman_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "dunman_food_centre_laksa",
-    outletId: "dunman_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "dunman_food_centre_mee_goreng",
-    outletId: "dunman_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "dunman_food_centre_teh_tarik",
-    outletId: "dunman_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "dunman_food_centre_kopi",
-    outletId: "dunman_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "beo_crescent_market_chicken_rice",
-    outletId: "beo_crescent_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "beo_crescent_market_char_kway_teow",
-    outletId: "beo_crescent_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "beo_crescent_market_fishball_noodles",
-    outletId: "beo_crescent_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "beo_crescent_market_nasi_lemak",
-    outletId: "beo_crescent_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "beo_crescent_market_laksa",
-    outletId: "beo_crescent_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "beo_crescent_market_mee_goreng",
-    outletId: "beo_crescent_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "beo_crescent_market_teh_tarik",
-    outletId: "beo_crescent_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "beo_crescent_market_kopi",
-    outletId: "beo_crescent_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "adam_road_food_centre_chicken_rice",
-    outletId: "adam_road_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "adam_road_food_centre_char_kway_teow",
-    outletId: "adam_road_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "adam_road_food_centre_fishball_noodles",
-    outletId: "adam_road_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "adam_road_food_centre_nasi_lemak",
-    outletId: "adam_road_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "adam_road_food_centre_laksa",
-    outletId: "adam_road_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "adam_road_food_centre_mee_goreng",
-    outletId: "adam_road_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "adam_road_food_centre_teh_tarik",
-    outletId: "adam_road_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "adam_road_food_centre_kopi",
-    outletId: "adam_road_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_chicken_rice",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_char_kway_teow",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_fishball_noodles",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_nasi_lemak",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_laksa",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_mee_goreng",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_teh_tarik",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kallang_estate_fresh_market_and_food_centre_kopi",
-    outletId: "kallang_estate_fresh_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "peoples_park_food_centre_chicken_rice",
-    outletId: "peoples_park_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "peoples_park_food_centre_char_kway_teow",
-    outletId: "peoples_park_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "peoples_park_food_centre_fishball_noodles",
-    outletId: "peoples_park_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "peoples_park_food_centre_nasi_lemak",
-    outletId: "peoples_park_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "peoples_park_food_centre_laksa",
-    outletId: "peoples_park_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "peoples_park_food_centre_mee_goreng",
-    outletId: "peoples_park_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "peoples_park_food_centre_teh_tarik",
-    outletId: "peoples_park_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "peoples_park_food_centre_kopi",
-    outletId: "peoples_park_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "north_bridge_road_market_chicken_rice",
-    outletId: "north_bridge_road_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "north_bridge_road_market_char_kway_teow",
-    outletId: "north_bridge_road_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "north_bridge_road_market_fishball_noodles",
-    outletId: "north_bridge_road_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "north_bridge_road_market_nasi_lemak",
-    outletId: "north_bridge_road_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "north_bridge_road_market_laksa",
-    outletId: "north_bridge_road_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "north_bridge_road_market_mee_goreng",
-    outletId: "north_bridge_road_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "north_bridge_road_market_teh_tarik",
-    outletId: "north_bridge_road_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "north_bridge_road_market_kopi",
-    outletId: "north_bridge_road_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_village_market_and_food_centre_chicken_rice",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "holland_village_market_and_food_centre_char_kway_teow",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "holland_village_market_and_food_centre_fishball_noodles",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "holland_village_market_and_food_centre_nasi_lemak",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_village_market_and_food_centre_laksa",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_village_market_and_food_centre_mee_goreng",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_village_market_and_food_centre_teh_tarik",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_village_market_and_food_centre_kopi",
-    outletId: "holland_village_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chomp_chomp_food_centre_chicken_rice",
-    outletId: "chomp_chomp_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chomp_chomp_food_centre_char_kway_teow",
-    outletId: "chomp_chomp_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chomp_chomp_food_centre_fishball_noodles",
-    outletId: "chomp_chomp_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chomp_chomp_food_centre_nasi_lemak",
-    outletId: "chomp_chomp_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chomp_chomp_food_centre_laksa",
-    outletId: "chomp_chomp_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chomp_chomp_food_centre_mee_goreng",
-    outletId: "chomp_chomp_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chomp_chomp_food_centre_teh_tarik",
-    outletId: "chomp_chomp_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chomp_chomp_food_centre_kopi",
-    outletId: "chomp_chomp_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_chicken_rice",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_char_kway_teow",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_fishball_noodles",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_nasi_lemak",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_laksa",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_mee_goreng",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_teh_tarik",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_kopi",
-    outletId: "yuhua_village_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_chicken_rice",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jurong_west_street_52_blk_505_char_kway_teow",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jurong_west_street_52_blk_505_fishball_noodles",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jurong_west_street_52_blk_505_nasi_lemak",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_laksa",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_mee_goreng",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_teh_tarik",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_kopi",
-    outletId: "jurong_west_street_52_blk_505",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_chicken_rice",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_char_kway_teow",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_fishball_noodles",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_nasi_lemak",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_laksa",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_mee_goreng",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_teh_tarik",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marine_terrace_blk_50a_50a_marine_terrace_kopi",
-    outletId: "marine_terrace_blk_50a_50a_marine_terrace",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_chicken_rice",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_char_kway_teow",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_fishball_noodles",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_nasi_lemak",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_laksa",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_mee_goreng",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_teh_tarik",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "84_marine_parade_central_market_and_food_centre_kopi",
-    outletId: "84_marine_parade_central_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_chicken_rice",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_char_kway_teow",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_fishball_noodles",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_nasi_lemak",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_laksa",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_mee_goreng",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_teh_tarik",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kampung_admiralty_hawker_centre_kopi",
-    outletId: "kampung_admiralty_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "market_street_hawker_centre_chicken_rice",
-    outletId: "market_street_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "market_street_hawker_centre_char_kway_teow",
-    outletId: "market_street_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "market_street_hawker_centre_fishball_noodles",
-    outletId: "market_street_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "market_street_hawker_centre_nasi_lemak",
-    outletId: "market_street_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "market_street_hawker_centre_laksa",
-    outletId: "market_street_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "market_street_hawker_centre_mee_goreng",
-    outletId: "market_street_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "market_street_hawker_centre_teh_tarik",
-    outletId: "market_street_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "market_street_hawker_centre_kopi",
-    outletId: "market_street_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_chicken_rice",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marsiling_lane_blk_20_21_char_kway_teow",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marsiling_lane_blk_20_21_fishball_noodles",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marsiling_lane_blk_20_21_nasi_lemak",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_laksa",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_mee_goreng",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_teh_tarik",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_kopi",
-    outletId: "marsiling_lane_blk_20_21",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_mall_hawker_centre_chicken_rice",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marsiling_mall_hawker_centre_char_kway_teow",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marsiling_mall_hawker_centre_fishball_noodles",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "marsiling_mall_hawker_centre_nasi_lemak",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_mall_hawker_centre_laksa",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_mall_hawker_centre_mee_goreng",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_mall_hawker_centre_teh_tarik",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "marsiling_mall_hawker_centre_kopi",
-    outletId: "marsiling_mall_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mei_chin_road_market_chicken_rice",
-    outletId: "mei_chin_road_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "mei_chin_road_market_char_kway_teow",
-    outletId: "mei_chin_road_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "mei_chin_road_market_fishball_noodles",
-    outletId: "mei_chin_road_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "mei_chin_road_market_nasi_lemak",
-    outletId: "mei_chin_road_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mei_chin_road_market_laksa",
-    outletId: "mei_chin_road_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mei_chin_road_market_mee_goreng",
-    outletId: "mei_chin_road_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mei_chin_road_market_teh_tarik",
-    outletId: "mei_chin_road_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mei_chin_road_market_kopi",
-    outletId: "mei_chin_road_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_chicken_rice",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_char_kway_teow",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_fishball_noodles",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_nasi_lemak",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_laksa",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_mee_goreng",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_teh_tarik",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_kopi",
-    outletId: "new_upper_changi_road_blk_208b",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_chicken_rice",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "new_upper_changi_road_blk_58_char_kway_teow",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "new_upper_changi_road_blk_58_fishball_noodles",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "new_upper_changi_road_blk_58_nasi_lemak",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_laksa",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_mee_goreng",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_teh_tarik",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_kopi",
-    outletId: "new_upper_changi_road_blk_58",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_chicken_rice",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_char_kway_teow",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_fishball_noodles",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_nasi_lemak",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_laksa",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_mee_goreng",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_teh_tarik",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_kopi",
-    outletId: "pasir_ris_central_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "albert_centre_chicken_rice",
-    outletId: "albert_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "albert_centre_char_kway_teow",
-    outletId: "albert_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "albert_centre_fishball_noodles",
-    outletId: "albert_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "albert_centre_nasi_lemak",
-    outletId: "albert_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "albert_centre_laksa",
-    outletId: "albert_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "albert_centre_mee_goreng",
-    outletId: "albert_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "albert_centre_teh_tarik",
-    outletId: "albert_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "albert_centre_kopi",
-    outletId: "albert_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_market_chicken_rice",
-    outletId: "redhill_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "redhill_market_char_kway_teow",
-    outletId: "redhill_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "redhill_market_fishball_noodles",
-    outletId: "redhill_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "redhill_market_nasi_lemak",
-    outletId: "redhill_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_market_laksa",
-    outletId: "redhill_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_market_mee_goreng",
-    outletId: "redhill_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_market_teh_tarik",
-    outletId: "redhill_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_market_kopi",
-    outletId: "redhill_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_food_centre_chicken_rice",
-    outletId: "redhill_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "redhill_food_centre_char_kway_teow",
-    outletId: "redhill_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "redhill_food_centre_fishball_noodles",
-    outletId: "redhill_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "redhill_food_centre_nasi_lemak",
-    outletId: "redhill_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_food_centre_laksa",
-    outletId: "redhill_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_food_centre_mee_goreng",
-    outletId: "redhill_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_food_centre_teh_tarik",
-    outletId: "redhill_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "redhill_food_centre_kopi",
-    outletId: "redhill_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "sims_vista_market_and_food_centre_chicken_rice",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "sims_vista_market_and_food_centre_char_kway_teow",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "sims_vista_market_and_food_centre_fishball_noodles",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "sims_vista_market_and_food_centre_nasi_lemak",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "sims_vista_market_and_food_centre_laksa",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "sims_vista_market_and_food_centre_mee_goreng",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "sims_vista_market_and_food_centre_teh_tarik",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "sims_vista_market_and_food_centre_kopi",
-    outletId: "sims_vista_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_chicken_rice",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_char_kway_teow",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_fishball_noodles",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_nasi_lemak",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_laksa",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_mee_goreng",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_teh_tarik",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "taman_jurong_market_and_food_centre_kopi",
-    outletId: "taman_jurong_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tampines_round_market_and_food_centre_chicken_rice",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tampines_round_market_and_food_centre_char_kway_teow",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tampines_round_market_and_food_centre_fishball_noodles",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tampines_round_market_and_food_centre_nasi_lemak",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tampines_round_market_and_food_centre_laksa",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tampines_round_market_and_food_centre_mee_goreng",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tampines_round_market_and_food_centre_teh_tarik",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tampines_round_market_and_food_centre_kopi",
-    outletId: "tampines_round_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_chicken_rice",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_char_kway_teow",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_fishball_noodles",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_nasi_lemak",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_laksa",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_mee_goreng",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_teh_tarik",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_kopi",
-    outletId: "teban_gardens_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_food_centre_chicken_rice",
-    outletId: "telok_blangah_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_food_centre_char_kway_teow",
-    outletId: "telok_blangah_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_food_centre_fishball_noodles",
-    outletId: "telok_blangah_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_food_centre_nasi_lemak",
-    outletId: "telok_blangah_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_food_centre_laksa",
-    outletId: "telok_blangah_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_food_centre_mee_goreng",
-    outletId: "telok_blangah_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_food_centre_teh_tarik",
-    outletId: "telok_blangah_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_food_centre_kopi",
-    outletId: "telok_blangah_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_market_chicken_rice",
-    outletId: "telok_blangah_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_market_char_kway_teow",
-    outletId: "telok_blangah_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_market_fishball_noodles",
-    outletId: "telok_blangah_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_market_nasi_lemak",
-    outletId: "telok_blangah_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_market_laksa",
-    outletId: "telok_blangah_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_market_mee_goreng",
-    outletId: "telok_blangah_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_market_teh_tarik",
-    outletId: "telok_blangah_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_market_kopi",
-    outletId: "telok_blangah_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_rise_market_chicken_rice",
-    outletId: "telok_blangah_rise_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_rise_market_char_kway_teow",
-    outletId: "telok_blangah_rise_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_rise_market_fishball_noodles",
-    outletId: "telok_blangah_rise_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_blangah_rise_market_nasi_lemak",
-    outletId: "telok_blangah_rise_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_rise_market_laksa",
-    outletId: "telok_blangah_rise_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_rise_market_mee_goreng",
-    outletId: "telok_blangah_rise_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_rise_market_teh_tarik",
-    outletId: "telok_blangah_rise_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_blangah_rise_market_kopi",
-    outletId: "telok_blangah_rise_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_vista_market_chicken_rice",
-    outletId: "toa_payoh_vista_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_vista_market_char_kway_teow",
-    outletId: "toa_payoh_vista_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_vista_market_fishball_noodles",
-    outletId: "toa_payoh_vista_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_vista_market_nasi_lemak",
-    outletId: "toa_payoh_vista_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_vista_market_laksa",
-    outletId: "toa_payoh_vista_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_vista_market_mee_goreng",
-    outletId: "toa_payoh_vista_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_vista_market_teh_tarik",
-    outletId: "toa_payoh_vista_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_vista_market_kopi",
-    outletId: "toa_payoh_vista_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_chicken_rice",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_char_kway_teow",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_fishball_noodles",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_nasi_lemak",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_laksa",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_mee_goreng",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_teh_tarik",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_kopi",
-    outletId: "toa_payoh_west_market_and_food_court",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_chicken_rice",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_char_kway_teow",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_fishball_noodles",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_nasi_lemak",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_laksa",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_mee_goreng",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_teh_tarik",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "11_telok_blangah_crescent_market_and_food_centre_kopi",
-    outletId: "11_telok_blangah_crescent_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_chicken_rice",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_char_kway_teow",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_fishball_noodles",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_nasi_lemak",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_laksa",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_mee_goreng",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_teh_tarik",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_kopi",
-    outletId: "blk_6_tanjong_pagar_plaza_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_chicken_rice",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_char_kway_teow",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_fishball_noodles",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_nasi_lemak",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_laksa",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_mee_goreng",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_teh_tarik",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_kopi",
-    outletId: "toa_payoh_lorong_4_blk_93",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_chicken_rice",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_char_kway_teow",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_fishball_noodles",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_nasi_lemak",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_laksa",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_mee_goreng",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_teh_tarik",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_kopi",
-    outletId: "kim_keat_palm_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_chicken_rice",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_char_kway_teow",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_fishball_noodles",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_nasi_lemak",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_laksa",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_mee_goreng",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_teh_tarik",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_5_blk_75_kopi",
-    outletId: "toa_payoh_lorong_5_blk_75",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "shunfu_mart_chicken_rice",
-    outletId: "shunfu_mart",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "shunfu_mart_char_kway_teow",
-    outletId: "shunfu_mart",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "shunfu_mart_fishball_noodles",
-    outletId: "shunfu_mart",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "shunfu_mart_nasi_lemak",
-    outletId: "shunfu_mart",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "shunfu_mart_laksa",
-    outletId: "shunfu_mart",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "shunfu_mart_mee_goreng",
-    outletId: "shunfu_mart",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "shunfu_mart_teh_tarik",
-    outletId: "shunfu_mart",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "shunfu_mart_kopi",
-    outletId: "shunfu_mart",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_chicken_rice",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_char_kway_teow",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_fishball_noodles",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_nasi_lemak",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_laksa",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_mee_goreng",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_teh_tarik",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_market_and_food_centre_kopi",
-    outletId: "kebun_baru_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_square_chicken_rice",
-    outletId: "teck_ghee_square",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teck_ghee_square_char_kway_teow",
-    outletId: "teck_ghee_square",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teck_ghee_square_fishball_noodles",
-    outletId: "teck_ghee_square",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teck_ghee_square_nasi_lemak",
-    outletId: "teck_ghee_square",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_square_laksa",
-    outletId: "teck_ghee_square",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_square_mee_goreng",
-    outletId: "teck_ghee_square",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_square_teh_tarik",
-    outletId: "teck_ghee_square",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_square_kopi",
-    outletId: "teck_ghee_square",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_boon_market_and_food_centre_chicken_rice",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chong_boon_market_and_food_centre_char_kway_teow",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chong_boon_market_and_food_centre_fishball_noodles",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chong_boon_market_and_food_centre_nasi_lemak",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_boon_market_and_food_centre_laksa",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_boon_market_and_food_centre_mee_goreng",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_boon_market_and_food_centre_teh_tarik",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_boon_market_and_food_centre_kopi",
-    outletId: "chong_boon_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_chicken_rice",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_char_kway_teow",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_fishball_noodles",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_nasi_lemak",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_laksa",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_mee_goreng",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_teh_tarik",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_kopi",
-    outletId: "cheng_san_market_and_cooked_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mayflower_market_chicken_rice",
-    outletId: "mayflower_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "mayflower_market_char_kway_teow",
-    outletId: "mayflower_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "mayflower_market_fishball_noodles",
-    outletId: "mayflower_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "mayflower_market_nasi_lemak",
-    outletId: "mayflower_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mayflower_market_laksa",
-    outletId: "mayflower_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mayflower_market_mee_goreng",
-    outletId: "mayflower_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mayflower_market_teh_tarik",
-    outletId: "mayflower_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "mayflower_market_kopi",
-    outletId: "mayflower_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ang_mo_kio_628_market_chicken_rice",
-    outletId: "ang_mo_kio_628_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ang_mo_kio_628_market_char_kway_teow",
-    outletId: "ang_mo_kio_628_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ang_mo_kio_628_market_fishball_noodles",
-    outletId: "ang_mo_kio_628_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ang_mo_kio_628_market_nasi_lemak",
-    outletId: "ang_mo_kio_628_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ang_mo_kio_628_market_laksa",
-    outletId: "ang_mo_kio_628_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ang_mo_kio_628_market_mee_goreng",
-    outletId: "ang_mo_kio_628_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ang_mo_kio_628_market_teh_tarik",
-    outletId: "ang_mo_kio_628_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ang_mo_kio_628_market_kopi",
-    outletId: "ang_mo_kio_628_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_chicken_rice",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_char_kway_teow",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_fishball_noodles",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_nasi_lemak",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_laksa",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_mee_goreng",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_teh_tarik",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_kopi",
-    outletId: "blk_724_ang_mo_kio_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_food_centre_chicken_rice",
-    outletId: "kebun_baru_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kebun_baru_food_centre_char_kway_teow",
-    outletId: "kebun_baru_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kebun_baru_food_centre_fishball_noodles",
-    outletId: "kebun_baru_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kebun_baru_food_centre_nasi_lemak",
-    outletId: "kebun_baru_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_food_centre_laksa",
-    outletId: "kebun_baru_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_food_centre_mee_goreng",
-    outletId: "kebun_baru_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_food_centre_teh_tarik",
-    outletId: "kebun_baru_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kebun_baru_food_centre_kopi",
-    outletId: "kebun_baru_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_1_blk_216_chicken_rice",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_north_street_1_blk_216_char_kway_teow",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_north_street_1_blk_216_fishball_noodles",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_north_street_1_blk_216_nasi_lemak",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_1_blk_216_laksa",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_1_blk_216_mee_goreng",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_1_blk_216_teh_tarik",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_1_blk_216_kopi",
-    outletId: "bedok_north_street_1_blk_216",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_chicken_rice",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_char_kway_teow",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_fishball_noodles",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_nasi_lemak",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_laksa",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_mee_goreng",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_teh_tarik",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_kopi",
-    outletId: "kaki_bukit_511_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_chicken_rice",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_north_street_3_blk_538_char_kway_teow",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_north_street_3_blk_538_fishball_noodles",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_north_street_3_blk_538_nasi_lemak",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_laksa",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_mee_goreng",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_teh_tarik",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_kopi",
-    outletId: "bedok_north_street_3_blk_538",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "85_fengshan_centre_chicken_rice",
-    outletId: "85_fengshan_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "85_fengshan_centre_char_kway_teow",
-    outletId: "85_fengshan_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "85_fengshan_centre_fishball_noodles",
-    outletId: "85_fengshan_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "85_fengshan_centre_nasi_lemak",
-    outletId: "85_fengshan_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "85_fengshan_centre_laksa",
-    outletId: "85_fengshan_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "85_fengshan_centre_mee_goreng",
-    outletId: "85_fengshan_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "85_fengshan_centre_teh_tarik",
-    outletId: "85_fengshan_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "85_fengshan_centre_kopi",
-    outletId: "85_fengshan_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_chicken_rice",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_char_kway_teow",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_fishball_noodles",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_nasi_lemak",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_laksa",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_mee_goreng",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_teh_tarik",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_reservoir_road_blk_630_kopi",
-    outletId: "bedok_reservoir_road_blk_630",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_south_road_blk_16_chicken_rice",
-    outletId: "bedok_south_road_blk_16",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_south_road_blk_16_char_kway_teow",
-    outletId: "bedok_south_road_blk_16",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_south_road_blk_16_fishball_noodles",
-    outletId: "bedok_south_road_blk_16",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_south_road_blk_16_nasi_lemak",
-    outletId: "bedok_south_road_blk_16",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_south_road_blk_16_laksa",
-    outletId: "bedok_south_road_blk_16",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_south_road_blk_16_mee_goreng",
-    outletId: "bedok_south_road_blk_16",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_south_road_blk_16_teh_tarik",
-    outletId: "bedok_south_road_blk_16",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_south_road_blk_16_kopi",
-    outletId: "bedok_south_road_blk_16",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_chicken_rice",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bendemeer_market_and_food_centre_char_kway_teow",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bendemeer_market_and_food_centre_fishball_noodles",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bendemeer_market_and_food_centre_nasi_lemak",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_laksa",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_mee_goreng",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_teh_tarik",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_kopi",
-    outletId: "bendemeer_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_chicken_rice",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_char_kway_teow",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_fishball_noodles",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_nasi_lemak",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_laksa",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_mee_goreng",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_teh_tarik",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "boon_lay_place_market_and_food_village_kopi",
-    outletId: "boon_lay_place_market_and_food_village",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_chicken_rice",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_char_kway_teow",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_fishball_noodles",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_nasi_lemak",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_laksa",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_mee_goreng",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_teh_tarik",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_117_aljunied_market_and_food_centre_kopi",
-    outletId: "blk_117_aljunied_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_merah_central_food_centre_chicken_rice",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_merah_central_food_centre_char_kway_teow",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_merah_central_food_centre_fishball_noodles",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_merah_central_food_centre_nasi_lemak",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_merah_central_food_centre_laksa",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_merah_central_food_centre_mee_goreng",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_merah_central_food_centre_teh_tarik",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_merah_central_food_centre_kopi",
-    outletId: "bukit_merah_central_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_chicken_rice",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_char_kway_teow",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_fishball_noodles",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_nasi_lemak",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_laksa",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_mee_goreng",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_teh_tarik",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_115_bukit_merah_view_market_and_food_centre_kopi",
-    outletId: "blk_115_bukit_merah_view_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "alexandra_village_food_centre_chicken_rice",
-    outletId: "alexandra_village_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "alexandra_village_food_centre_char_kway_teow",
-    outletId: "alexandra_village_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "alexandra_village_food_centre_fishball_noodles",
-    outletId: "alexandra_village_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "alexandra_village_food_centre_nasi_lemak",
-    outletId: "alexandra_village_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "alexandra_village_food_centre_laksa",
-    outletId: "alexandra_village_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "alexandra_village_food_centre_mee_goreng",
-    outletId: "alexandra_village_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "alexandra_village_food_centre_teh_tarik",
-    outletId: "alexandra_village_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "alexandra_village_food_centre_kopi",
-    outletId: "alexandra_village_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_chicken_rice",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pek_kio_market_and_food_centre_char_kway_teow",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pek_kio_market_and_food_centre_fishball_noodles",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pek_kio_market_and_food_centre_nasi_lemak",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_laksa",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_mee_goreng",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_teh_tarik",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_kopi",
-    outletId: "pek_kio_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_chicken_rice",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_panjang_hawker_centre_char_kway_teow",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_panjang_hawker_centre_fishball_noodles",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_panjang_hawker_centre_nasi_lemak",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_laksa",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_mee_goreng",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_teh_tarik",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_kopi",
-    outletId: "bukit_panjang_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "changi_village_blk_2_and_3_chicken_rice",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "changi_village_blk_2_and_3_char_kway_teow",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "changi_village_blk_2_and_3_fishball_noodles",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "changi_village_blk_2_and_3_nasi_lemak",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "changi_village_blk_2_and_3_laksa",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "changi_village_blk_2_and_3_mee_goreng",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "changi_village_blk_2_and_3_teh_tarik",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "changi_village_blk_2_and_3_kopi",
-    outletId: "changi_village_blk_2_and_3",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_chicken_rice",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_char_kway_teow",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_fishball_noodles",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_nasi_lemak",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_laksa",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_mee_goreng",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_teh_tarik",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "80_circuit_road_market_and_food_centre_kopi",
-    outletId: "80_circuit_road_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_79_79a_chicken_rice",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "circuit_road_blk_79_79a_char_kway_teow",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "circuit_road_blk_79_79a_fishball_noodles",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "circuit_road_blk_79_79a_nasi_lemak",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_79_79a_laksa",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_79_79a_mee_goreng",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_79_79a_teh_tarik",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_79_79a_kopi",
-    outletId: "circuit_road_blk_79_79a",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ci_yuan_hawker_centre_chicken_rice",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ci_yuan_hawker_centre_char_kway_teow",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ci_yuan_hawker_centre_fishball_noodles",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ci_yuan_hawker_centre_nasi_lemak",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ci_yuan_hawker_centre_laksa",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ci_yuan_hawker_centre_mee_goreng",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ci_yuan_hawker_centre_teh_tarik",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ci_yuan_hawker_centre_kopi",
-    outletId: "ci_yuan_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_89_chicken_rice",
-    outletId: "circuit_road_blk_89",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "circuit_road_blk_89_char_kway_teow",
-    outletId: "circuit_road_blk_89",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "circuit_road_blk_89_fishball_noodles",
-    outletId: "circuit_road_blk_89",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "circuit_road_blk_89_nasi_lemak",
-    outletId: "circuit_road_blk_89",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_89_laksa",
-    outletId: "circuit_road_blk_89",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_89_mee_goreng",
-    outletId: "circuit_road_blk_89",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_89_teh_tarik",
-    outletId: "circuit_road_blk_89",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "circuit_road_blk_89_kopi",
-    outletId: "circuit_road_blk_89",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_chicken_rice",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_char_kway_teow",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_fishball_noodles",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_nasi_lemak",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_laksa",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_mee_goreng",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_teh_tarik",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_kopi",
-    outletId: "clementi_ave_2_market_cooked_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_3_blk_448_chicken_rice",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_ave_3_blk_448_char_kway_teow",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_ave_3_blk_448_fishball_noodles",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_ave_3_blk_448_nasi_lemak",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_3_blk_448_laksa",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_3_blk_448_mee_goreng",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_3_blk_448_teh_tarik",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_ave_3_blk_448_kopi",
-    outletId: "clementi_ave_3_blk_448",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_chicken_rice",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_west_street_2_blk_726_char_kway_teow",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_west_street_2_blk_726_fishball_noodles",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "clementi_west_street_2_blk_726_nasi_lemak",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_laksa",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_mee_goreng",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_teh_tarik",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_kopi",
-    outletId: "clementi_west_street_2_blk_726",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "empress_road_market_and_food_centre_chicken_rice",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "empress_road_market_and_food_centre_char_kway_teow",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "empress_road_market_and_food_centre_fishball_noodles",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "empress_road_market_and_food_centre_nasi_lemak",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "empress_road_market_and_food_centre_laksa",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "empress_road_market_and_food_centre_mee_goreng",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "empress_road_market_and_food_centre_teh_tarik",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "empress_road_market_and_food_centre_kopi",
-    outletId: "empress_road_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "eunos_crescent_blk_4a_chicken_rice",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "eunos_crescent_blk_4a_char_kway_teow",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "eunos_crescent_blk_4a_fishball_noodles",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "eunos_crescent_blk_4a_nasi_lemak",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "eunos_crescent_blk_4a_laksa",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "eunos_crescent_blk_4a_mee_goreng",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "eunos_crescent_blk_4a_teh_tarik",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "eunos_crescent_blk_4a_kopi",
-    outletId: "eunos_crescent_blk_4a",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_chicken_rice",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_char_kway_teow",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_fishball_noodles",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_nasi_lemak",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_laksa",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_mee_goreng",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_teh_tarik",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_kopi",
-    outletId: "blk_69_geylang_bahru_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ghim_moh_road_blk_20_chicken_rice",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ghim_moh_road_blk_20_char_kway_teow",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ghim_moh_road_blk_20_fishball_noodles",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ghim_moh_road_blk_20_nasi_lemak",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ghim_moh_road_blk_20_laksa",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ghim_moh_road_blk_20_mee_goreng",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ghim_moh_road_blk_20_teh_tarik",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ghim_moh_road_blk_20_kopi",
-    outletId: "ghim_moh_road_blk_20",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_chicken_rice",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_char_kway_teow",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_fishball_noodles",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_nasi_lemak",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_laksa",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_mee_goreng",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_teh_tarik",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "haig_road_market_and_cooked_food_centre_kopi",
-    outletId: "haig_road_market_and_cooked_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_chicken_rice",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "havelock_road_cooked_food_centre_char_kway_teow",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "havelock_road_cooked_food_centre_fishball_noodles",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "havelock_road_cooked_food_centre_nasi_lemak",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_laksa",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_mee_goreng",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_teh_tarik",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_kopi",
-    outletId: "havelock_road_cooked_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_drive_market_and_food_centre_chicken_rice",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "holland_drive_market_and_food_centre_char_kway_teow",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "holland_drive_market_and_food_centre_fishball_noodles",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "holland_drive_market_and_food_centre_nasi_lemak",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_drive_market_and_food_centre_laksa",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_drive_market_and_food_centre_mee_goreng",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_drive_market_and_food_centre_teh_tarik",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "holland_drive_market_and_food_centre_kopi",
-    outletId: "holland_drive_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_chicken_rice",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_char_kway_teow",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_fishball_noodles",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_nasi_lemak",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_laksa",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_mee_goreng",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_teh_tarik",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hawker_centre_our_tampines_hub_kopi",
-    outletId: "hawker_centre_our_tampines_hub",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_chicken_rice",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_char_kway_teow",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_fishball_noodles",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_nasi_lemak",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_laksa",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_mee_goreng",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_teh_tarik",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kovan_hougang_market_and_food_centre_kopi",
-    outletId: "kovan_hougang_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_chicken_rice",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_char_kway_teow",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_fishball_noodles",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_nasi_lemak",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_laksa",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_mee_goreng",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_teh_tarik",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_4a_jalan_batu_hawker_centre_market_kopi",
-    outletId: "blk_4a_jalan_batu_hawker_centre_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_chicken_rice",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_char_kway_teow",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_fishball_noodles",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_nasi_lemak",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_laksa",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_mee_goreng",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_teh_tarik",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_kopi",
-    outletId: "hougang_105_hainanese_village_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_chicken_rice",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_char_kway_teow",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_fishball_noodles",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_nasi_lemak",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_laksa",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_mee_goreng",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_teh_tarik",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_112_jalan_bukit_merah_market_and_food_centre_kopi",
-    outletId: "blk_112_jalan_bukit_merah_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_chicken_rice",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "abc_brickworks_market_food_centre_char_kway_teow",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "abc_brickworks_market_food_centre_fishball_noodles",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "abc_brickworks_market_food_centre_nasi_lemak",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_laksa",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_mee_goreng",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_teh_tarik",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_kopi",
-    outletId: "abc_brickworks_market_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kukoh_21_food_centre_chicken_rice",
-    outletId: "kukoh_21_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kukoh_21_food_centre_char_kway_teow",
-    outletId: "kukoh_21_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kukoh_21_food_centre_fishball_noodles",
-    outletId: "kukoh_21_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kukoh_21_food_centre_nasi_lemak",
-    outletId: "kukoh_21_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kukoh_21_food_centre_laksa",
-    outletId: "kukoh_21_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kukoh_21_food_centre_mee_goreng",
-    outletId: "kukoh_21_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kukoh_21_food_centre_teh_tarik",
-    outletId: "kukoh_21_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "kukoh_21_food_centre_kopi",
-    outletId: "kukoh_21_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_hawker_centre_chicken_rice",
-    outletId: "jurong_west_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jurong_west_hawker_centre_char_kway_teow",
-    outletId: "jurong_west_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jurong_west_hawker_centre_fishball_noodles",
-    outletId: "jurong_west_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jurong_west_hawker_centre_nasi_lemak",
-    outletId: "jurong_west_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_hawker_centre_laksa",
-    outletId: "jurong_west_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_hawker_centre_mee_goreng",
-    outletId: "jurong_west_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_hawker_centre_teh_tarik",
-    outletId: "jurong_west_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jurong_west_hawker_centre_kopi",
-    outletId: "jurong_west_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_chicken_rice",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_char_kway_teow",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_fishball_noodles",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_nasi_lemak",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_laksa",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_mee_goreng",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_teh_tarik",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_kopi",
-    outletId: "yuhua_market_and_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_chicken_rice",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_char_kway_teow",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_fishball_noodles",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_nasi_lemak",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_laksa",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_mee_goreng",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_teh_tarik",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_kopi",
-    outletId: "toa_payoh_lorong_8_blk_210",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_chicken_rice",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_char_kway_teow",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_fishball_noodles",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_nasi_lemak",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_laksa",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_mee_goreng",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_teh_tarik",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_kopi",
-    outletId: "blk_17_upper_boon_keng_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_market_chicken_rice",
-    outletId: "ayer_rajah_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ayer_rajah_market_char_kway_teow",
-    outletId: "ayer_rajah_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ayer_rajah_market_fishball_noodles",
-    outletId: "ayer_rajah_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ayer_rajah_market_nasi_lemak",
-    outletId: "ayer_rajah_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_market_laksa",
-    outletId: "ayer_rajah_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_market_mee_goreng",
-    outletId: "ayer_rajah_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_market_teh_tarik",
-    outletId: "ayer_rajah_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_market_kopi",
-    outletId: "ayer_rajah_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_food_centre_chicken_rice",
-    outletId: "ayer_rajah_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ayer_rajah_food_centre_char_kway_teow",
-    outletId: "ayer_rajah_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ayer_rajah_food_centre_fishball_noodles",
-    outletId: "ayer_rajah_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "ayer_rajah_food_centre_nasi_lemak",
-    outletId: "ayer_rajah_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_food_centre_laksa",
-    outletId: "ayer_rajah_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_food_centre_mee_goreng",
-    outletId: "ayer_rajah_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_food_centre_teh_tarik",
-    outletId: "ayer_rajah_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "ayer_rajah_food_centre_kopi",
-    outletId: "ayer_rajah_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_chicken_rice",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hong_lim_food_centre_and_market_char_kway_teow",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hong_lim_food_centre_and_market_fishball_noodles",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "hong_lim_food_centre_and_market_nasi_lemak",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_laksa",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_mee_goreng",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_teh_tarik",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_kopi",
-    outletId: "hong_lim_food_centre_and_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yishun_park_hawker_centre_chicken_rice",
-    outletId: "yishun_park_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yishun_park_hawker_centre_char_kway_teow",
-    outletId: "yishun_park_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yishun_park_hawker_centre_fishball_noodles",
-    outletId: "yishun_park_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "yishun_park_hawker_centre_nasi_lemak",
-    outletId: "yishun_park_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yishun_park_hawker_centre_laksa",
-    outletId: "yishun_park_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yishun_park_hawker_centre_mee_goreng",
-    outletId: "yishun_park_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yishun_park_hawker_centre_teh_tarik",
-    outletId: "yishun_park_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "yishun_park_hawker_centre_kopi",
-    outletId: "yishun_park_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_chicken_rice",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chong_pang_market_and_food_centre_char_kway_teow",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chong_pang_market_and_food_centre_fishball_noodles",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "chong_pang_market_and_food_centre_nasi_lemak",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_laksa",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_mee_goreng",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_teh_tarik",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_kopi",
-    outletId: "chong_pang_market_and_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "margaret_drive_hawker_centre_chicken_rice",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "margaret_drive_hawker_centre_char_kway_teow",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "margaret_drive_hawker_centre_fishball_noodles",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "margaret_drive_hawker_centre_nasi_lemak",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "margaret_drive_hawker_centre_laksa",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "margaret_drive_hawker_centre_mee_goreng",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "margaret_drive_hawker_centre_teh_tarik",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "margaret_drive_hawker_centre_kopi",
-    outletId: "margaret_drive_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_chicken_rice",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "anchorvale_village_hawker_centre_char_kway_teow",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "anchorvale_village_hawker_centre_fishball_noodles",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "anchorvale_village_hawker_centre_nasi_lemak",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_laksa",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_mee_goreng",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_teh_tarik",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_kopi",
-    outletId: "anchorvale_village_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "fernvale_hawker_centre_market_chicken_rice",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "fernvale_hawker_centre_market_char_kway_teow",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "fernvale_hawker_centre_market_fishball_noodles",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "fernvale_hawker_centre_market_nasi_lemak",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "fernvale_hawker_centre_market_laksa",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "fernvale_hawker_centre_market_mee_goreng",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "fernvale_hawker_centre_market_teh_tarik",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "fernvale_hawker_centre_market_kopi",
-    outletId: "fernvale_hawker_centre_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "one_punggol_hawker_centre_chicken_rice",
-    outletId: "one_punggol_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "one_punggol_hawker_centre_char_kway_teow",
-    outletId: "one_punggol_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "one_punggol_hawker_centre_fishball_noodles",
-    outletId: "one_punggol_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "one_punggol_hawker_centre_nasi_lemak",
-    outletId: "one_punggol_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "one_punggol_hawker_centre_laksa",
-    outletId: "one_punggol_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "one_punggol_hawker_centre_mee_goreng",
-    outletId: "one_punggol_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "one_punggol_hawker_centre_teh_tarik",
-    outletId: "one_punggol_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "one_punggol_hawker_centre_kopi",
-    outletId: "one_punggol_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_chicken_rice",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_canberra_hawker_centre_char_kway_teow",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_canberra_hawker_centre_fishball_noodles",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_canberra_hawker_centre_nasi_lemak",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_laksa",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_mee_goreng",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_teh_tarik",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_kopi",
-    outletId: "bukit_canberra_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "punggol_coast_hawker_centre_chicken_rice",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "punggol_coast_hawker_centre_char_kway_teow",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "punggol_coast_hawker_centre_fishball_noodles",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "punggol_coast_hawker_centre_nasi_lemak",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "punggol_coast_hawker_centre_laksa",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "punggol_coast_hawker_centre_mee_goreng",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "punggol_coast_hawker_centre_teh_tarik",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "punggol_coast_hawker_centre_kopi",
-    outletId: "punggol_coast_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "senja_hawker_centre_chicken_rice",
-    outletId: "senja_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "senja_hawker_centre_char_kway_teow",
-    outletId: "senja_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "senja_hawker_centre_fishball_noodles",
-    outletId: "senja_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "senja_hawker_centre_nasi_lemak",
-    outletId: "senja_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "senja_hawker_centre_laksa",
-    outletId: "senja_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "senja_hawker_centre_mee_goreng",
-    outletId: "senja_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "senja_hawker_centre_teh_tarik",
-    outletId: "senja_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "senja_hawker_centre_kopi",
-    outletId: "senja_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "buangkok_hawker_centre_chicken_rice",
-    outletId: "buangkok_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "buangkok_hawker_centre_char_kway_teow",
-    outletId: "buangkok_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "buangkok_hawker_centre_fishball_noodles",
-    outletId: "buangkok_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "buangkok_hawker_centre_nasi_lemak",
-    outletId: "buangkok_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "buangkok_hawker_centre_laksa",
-    outletId: "buangkok_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "buangkok_hawker_centre_mee_goreng",
-    outletId: "buangkok_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "buangkok_hawker_centre_teh_tarik",
-    outletId: "buangkok_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "buangkok_hawker_centre_kopi",
-    outletId: "buangkok_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_chicken_rice",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_char_kway_teow",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_fishball_noodles",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_nasi_lemak",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_laksa",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_mee_goreng",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_teh_tarik",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_batok_west_hawker_centre_kopi",
-    outletId: "bukit_batok_west_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "woodleigh_village_hawker_centre_chicken_rice",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "woodleigh_village_hawker_centre_char_kway_teow",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "woodleigh_village_hawker_centre_fishball_noodles",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "woodleigh_village_hawker_centre_nasi_lemak",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "woodleigh_village_hawker_centre_laksa",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "woodleigh_village_hawker_centre_mee_goreng",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "woodleigh_village_hawker_centre_teh_tarik",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "woodleigh_village_hawker_centre_kopi",
-    outletId: "woodleigh_village_hawker_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_chicken_rice",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_char_kway_teow",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_fishball_noodles",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_nasi_lemak",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_laksa",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_mee_goreng",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_teh_tarik",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bukit_timah_interim_hawker_centre_and_market_kopi",
-    outletId: "bukit_timah_interim_hawker_centre_and_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_ayer_food_centre_chicken_rice",
-    outletId: "telok_ayer_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_ayer_food_centre_char_kway_teow",
-    outletId: "telok_ayer_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_ayer_food_centre_fishball_noodles",
-    outletId: "telok_ayer_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "telok_ayer_food_centre_nasi_lemak",
-    outletId: "telok_ayer_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_ayer_food_centre_laksa",
-    outletId: "telok_ayer_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_ayer_food_centre_mee_goreng",
-    outletId: "telok_ayer_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_ayer_food_centre_teh_tarik",
-    outletId: "telok_ayer_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "telok_ayer_food_centre_kopi",
-    outletId: "telok_ayer_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_panjang_food_centre_chicken_rice",
-    outletId: "pasir_panjang_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pasir_panjang_food_centre_char_kway_teow",
-    outletId: "pasir_panjang_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pasir_panjang_food_centre_fishball_noodles",
-    outletId: "pasir_panjang_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "pasir_panjang_food_centre_nasi_lemak",
-    outletId: "pasir_panjang_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_panjang_food_centre_laksa",
-    outletId: "pasir_panjang_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_panjang_food_centre_mee_goreng",
-    outletId: "pasir_panjang_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_panjang_food_centre_teh_tarik",
-    outletId: "pasir_panjang_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "pasir_panjang_food_centre_kopi",
-    outletId: "pasir_panjang_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_food_centre_chicken_rice",
-    outletId: "bedok_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_food_centre_char_kway_teow",
-    outletId: "bedok_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_food_centre_fishball_noodles",
-    outletId: "bedok_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "bedok_food_centre_nasi_lemak",
-    outletId: "bedok_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_food_centre_laksa",
-    outletId: "bedok_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_food_centre_mee_goreng",
-    outletId: "bedok_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_food_centre_teh_tarik",
-    outletId: "bedok_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "bedok_food_centre_kopi",
-    outletId: "bedok_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "zion_riverside_food_centre_chicken_rice",
-    outletId: "zion_riverside_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "zion_riverside_food_centre_char_kway_teow",
-    outletId: "zion_riverside_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "zion_riverside_food_centre_fishball_noodles",
-    outletId: "zion_riverside_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "zion_riverside_food_centre_nasi_lemak",
-    outletId: "zion_riverside_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "zion_riverside_food_centre_laksa",
-    outletId: "zion_riverside_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "zion_riverside_food_centre_mee_goreng",
-    outletId: "zion_riverside_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "zion_riverside_food_centre_teh_tarik",
-    outletId: "zion_riverside_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "zion_riverside_food_centre_kopi",
-    outletId: "zion_riverside_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_court_chicken_rice",
-    outletId: "teck_ghee_court",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teck_ghee_court_char_kway_teow",
-    outletId: "teck_ghee_court",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teck_ghee_court_fishball_noodles",
-    outletId: "teck_ghee_court",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "teck_ghee_court_nasi_lemak",
-    outletId: "teck_ghee_court",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_court_laksa",
-    outletId: "teck_ghee_court",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_court_mee_goreng",
-    outletId: "teck_ghee_court",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_court_teh_tarik",
-    outletId: "teck_ghee_court",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "teck_ghee_court_kopi",
-    outletId: "teck_ghee_court",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "east_coast_lagoon_food_village_chicken_rice",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "east_coast_lagoon_food_village_char_kway_teow",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "east_coast_lagoon_food_village_fishball_noodles",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "east_coast_lagoon_food_village_nasi_lemak",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "east_coast_lagoon_food_village_laksa",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "east_coast_lagoon_food_village_mee_goreng",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "east_coast_lagoon_food_village_teh_tarik",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "east_coast_lagoon_food_village_kopi",
-    outletId: "east_coast_lagoon_food_village",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "serangoon_garden_market_chicken_rice",
-    outletId: "serangoon_garden_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "serangoon_garden_market_char_kway_teow",
-    outletId: "serangoon_garden_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "serangoon_garden_market_fishball_noodles",
-    outletId: "serangoon_garden_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "serangoon_garden_market_nasi_lemak",
-    outletId: "serangoon_garden_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "serangoon_garden_market_laksa",
-    outletId: "serangoon_garden_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "serangoon_garden_market_mee_goreng",
-    outletId: "serangoon_garden_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "serangoon_garden_market_teh_tarik",
-    outletId: "serangoon_garden_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "serangoon_garden_market_kopi",
-    outletId: "serangoon_garden_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jalan_leban_food_centre_chicken_rice",
-    outletId: "jalan_leban_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jalan_leban_food_centre_char_kway_teow",
-    outletId: "jalan_leban_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jalan_leban_food_centre_fishball_noodles",
-    outletId: "jalan_leban_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "jalan_leban_food_centre_nasi_lemak",
-    outletId: "jalan_leban_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jalan_leban_food_centre_laksa",
-    outletId: "jalan_leban_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jalan_leban_food_centre_mee_goreng",
-    outletId: "jalan_leban_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jalan_leban_food_centre_teh_tarik",
-    outletId: "jalan_leban_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "jalan_leban_food_centre_kopi",
-    outletId: "jalan_leban_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tanglin_halt_market_chicken_rice",
-    outletId: "tanglin_halt_market",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tanglin_halt_market_char_kway_teow",
-    outletId: "tanglin_halt_market",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tanglin_halt_market_fishball_noodles",
-    outletId: "tanglin_halt_market",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "tanglin_halt_market_nasi_lemak",
-    outletId: "tanglin_halt_market",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tanglin_halt_market_laksa",
-    outletId: "tanglin_halt_market",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tanglin_halt_market_mee_goreng",
-    outletId: "tanglin_halt_market",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tanglin_halt_market_teh_tarik",
-    outletId: "tanglin_halt_market",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "tanglin_halt_market_kopi",
-    outletId: "tanglin_halt_market",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "berseh_food_centre_chicken_rice",
-    outletId: "berseh_food_centre",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 447,
-    protein: 30,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "berseh_food_centre_char_kway_teow",
-    outletId: "berseh_food_centre",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "berseh_food_centre_fishball_noodles",
-    outletId: "berseh_food_centre",
-    name: "Fishball Noodles",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "berseh_food_centre_nasi_lemak",
-    outletId: "berseh_food_centre",
-    name: "Nasi Lemak",
-    emoji: "🍚",
-    category: "Rice",
-    price: 3.5,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "berseh_food_centre_laksa",
-    outletId: "berseh_food_centre",
-    name: "Laksa",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "berseh_food_centre_mee_goreng",
-    outletId: "berseh_food_centre",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "berseh_food_centre_teh_tarik",
-    outletId: "berseh_food_centre",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "berseh_food_centre_kopi",
-    outletId: "berseh_food_centre",
-    name: "Kopi-O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 60,
-    protein: 0,
-    carbs: 14,
-    fat: 0,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
+{
     id: "tian_tian_steamed",
     outletId: "tian_tian_chicken_rice",
     name: "Steamed Chicken Rice",
@@ -25048,7 +11938,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tian_tian_roasted",
     outletId: "tian_tian_chicken_rice",
     name: "Roasted Chicken Rice",
@@ -25064,7 +11954,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tian_tian_char_siew",
     outletId: "tian_tian_chicken_rice",
     name: "Char Siew Rice",
@@ -25081,7 +11971,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "max_wonton_mee",
     outletId: "maxwell_wonton_mee",
     name: "Wonton Mee (Dry)",
@@ -25097,7 +11987,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_laksa",
     outletId: "maxwell_laksa",
     name: "Laksa",
@@ -25114,7 +12004,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "max_char_kway_teow",
     outletId: "maxwell_char_kway_teow",
     name: "Char Kway Teow",
@@ -25130,7 +12020,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_popiah",
     outletId: "maxwell_popiah",
     name: "Fresh Popiah",
@@ -25147,7 +12037,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_carrot_cake_black",
     outletId: "maxwell_carrot_cake",
     name: "Carrot Cake (Black)",
@@ -25165,7 +12055,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "max_carrot_cake_white",
     outletId: "maxwell_carrot_cake",
     name: "Carrot Cake (White)",
@@ -25182,7 +12072,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_oyster_omelette",
     outletId: "maxwell_oyster_omelette",
     name: "Oyster Omelette",
@@ -25199,7 +12089,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "max_rojak",
     outletId: "maxwell_rojak",
     name: "Rojak",
@@ -25217,7 +12107,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_tau_huay",
     outletId: "maxwell_drinks_desserts",
     name: "Tau Huay",
@@ -25236,7 +12126,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_kopi",
     outletId: "maxwell_drinks_desserts",
     name: "Kopi",
@@ -25253,7 +12143,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_kopi_o",
     outletId: "maxwell_drinks_desserts",
     name: "Kopi O",
@@ -25272,7 +12162,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "max_barley",
     outletId: "maxwell_drinks_desserts",
     name: "Barley Water",
@@ -25291,7 +12181,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_satay_chicken",
     outletId: "lau_pa_sat_satay_street",
     name: "Chicken Satay (5 sticks)",
@@ -25310,7 +12200,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_satay_beef",
     outletId: "lau_pa_sat_satay_street",
     name: "Beef Satay (5 sticks)",
@@ -25328,7 +12218,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_otah",
     outletId: "lau_pa_sat_satay_street",
     name: "Otah (2 pieces)",
@@ -25346,7 +12236,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_oyster_omelette",
     outletId: "lau_pa_sat_oyster_omelette",
     name: "Oyster Omelette",
@@ -25363,7 +12253,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_sk_hokkien_mee",
     outletId: "lau_pa_sat_seng_kee",
     name: "Hokkien Mee",
@@ -25380,7 +12270,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_sk_laksa",
     outletId: "lau_pa_sat_seng_kee",
     name: "Laksa",
@@ -25397,7 +12287,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_sk_ckt",
     outletId: "lau_pa_sat_seng_kee",
     name: "Fried Kway Teow",
@@ -25413,7 +12303,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_lfz_black_ckt",
     outletId: "lau_pa_sat_lao_fu_zi_ckt",
     name: "Black Fried Kway Teow",
@@ -25430,7 +12320,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_lfz_white_ckt",
     outletId: "lau_pa_sat_lao_fu_zi_ckt",
     name: "White Fried Kway Teow",
@@ -25446,7 +12336,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_lfz_laksa",
     outletId: "lau_pa_sat_lao_fu_zi_ckt",
     name: "Laksa",
@@ -25462,7 +12352,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_prawn_noodles",
     outletId: "lau_pa_sat_prawn_noodles",
     name: "Prawn Noodles (Soup)",
@@ -25478,7 +12368,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_bak_chor_mee",
     outletId: "lau_pa_sat_bak_chor_mee",
     name: "Bak Chor Mee",
@@ -25494,7 +12384,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_chicken_rice",
     outletId: "lau_pa_sat_chicken_rice",
     name: "Steamed Chicken Rice",
@@ -25511,7 +12401,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_roast_chicken_rice",
     outletId: "lau_pa_sat_chicken_rice",
     name: "Roast Chicken Rice",
@@ -25528,7 +12418,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_rojak",
     outletId: "lau_pa_sat_rojak",
     name: "Rojak",
@@ -25546,7 +12436,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_bc_egg_tart",
     outletId: "lau_pa_sat_butter_cream",
     name: "Original Egg Tart",
@@ -25562,7 +12452,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_bc_salted_egg_tart",
     outletId: "lau_pa_sat_butter_cream",
     name: "Salted Egg Lava Tart",
@@ -25579,7 +12469,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_bc_hokkaido_doffin",
     outletId: "lau_pa_sat_butter_cream",
     name: "Hokkaido Doffin",
@@ -25596,7 +12486,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_bc_oreo_doffin",
     outletId: "lau_pa_sat_butter_cream",
     name: "Oreo Doffin",
@@ -25612,7 +12502,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_cc_single_gelato",
     outletId: "lau_pa_sat_creme_cone",
     name: "Single Gelato (Cup)",
@@ -25629,7 +12519,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_cc_double_gelato",
     outletId: "lau_pa_sat_creme_cone",
     name: "Double Gelato (Cup)",
@@ -25645,7 +12535,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_cc_pastry",
     outletId: "lau_pa_sat_creme_cone",
     name: "Gourmet Tart / Cheesecake",
@@ -25661,7 +12551,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_wps_mee_soto",
     outletId: "lau_pa_sat_warong_pak_sapari",
     name: "Original Mee Soto",
@@ -25679,7 +12569,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_wps_mee_rebus",
     outletId: "lau_pa_sat_warong_pak_sapari",
     name: "Original Mee Rebus",
@@ -25697,7 +12587,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_wps_nasi_soto",
     outletId: "lau_pa_sat_warong_pak_sapari",
     name: "Nasi Soto",
@@ -25714,7 +12604,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_tal_nasi_lemak",
     outletId: "lau_pa_sat_taliwang",
     name: "Nasi Lemak Ayam Taliwang",
@@ -25732,7 +12622,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_tal_curry_rice",
     outletId: "lau_pa_sat_taliwang",
     name: "Chicken Fillet Curry Rice",
@@ -25749,7 +12639,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_maya_briyani",
     outletId: "lau_pa_sat_maya_veggie",
     name: "Vegetarian Briyani",
@@ -25767,7 +12657,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_maya_palak_paneer",
     outletId: "lau_pa_sat_maya_veggie",
     name: "Palak Paneer",
@@ -25783,7 +12673,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_maya_kadhai_paneer",
     outletId: "lau_pa_sat_maya_veggie",
     name: "Kadhai Paneer",
@@ -25799,7 +12689,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_maya_veg_butter_chicken",
     outletId: "lau_pa_sat_maya_veggie",
     name: "Veg Butter Chicken",
@@ -25815,7 +12705,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "lps_lx_fishball_noodles",
     outletId: "lau_pa_sat_lixin_fishball",
     name: "Fishball Noodles",
@@ -25832,7 +12722,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_lx_folks_favourite",
     outletId: "lau_pa_sat_lixin_fishball",
     name: "The Folks' Favourite",
@@ -25849,7 +12739,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_fx_herbal_bkt",
     outletId: "lau_pa_sat_feng_xiang_bkt",
     name: "Herbal Bak Kut Teh",
@@ -25866,7 +12756,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "lps_fx_organ_porridge",
     outletId: "lau_pa_sat_feng_xiang_bkt",
     name: "Mixed Pig Organ Fried Porridge",
@@ -25882,7 +12772,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_satay_chicken",
     outletId: "newton_satay_stall",
     name: "Chicken Satay (5 sticks)",
@@ -25901,7 +12791,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "newt_satay_beef",
     outletId: "newton_satay_stall",
     name: "Beef Satay (5 sticks)",
@@ -25919,7 +12809,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_bbq_chicken_wings",
     outletId: "newton_bbq_seafood",
     name: "BBQ Chicken Wings (2 pcs)",
@@ -25938,7 +12828,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "newt_stingray",
     outletId: "newton_bbq_seafood",
     name: "BBQ Stingray",
@@ -25956,7 +12846,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "newt_otah",
     outletId: "newton_bbq_seafood",
     name: "Otah (2 pieces)",
@@ -25974,7 +12864,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_hokkien_mee",
     outletId: "newton_hokkien_mee",
     name: "Hokkien Mee",
@@ -25991,7 +12881,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "newt_prawn_noodles",
     outletId: "newton_prawn_noodles",
     name: "Prawn Noodles",
@@ -26008,7 +12898,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "newt_oyster_omelette",
     outletId: "newton_oyster_omelette",
     name: "Oyster Omelette",
@@ -26024,7 +12914,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_carrot_cake_white",
     outletId: "newton_carrot_cake",
     name: "Carrot Cake (White)",
@@ -26041,7 +12931,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_char_kway_teow",
     outletId: "newton_char_kway_teow",
     name: "Char Kway Teow",
@@ -26057,7 +12947,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_kopi_o",
     outletId: "newton_drinks_stall",
     name: "Kopi O",
@@ -26076,7 +12966,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "newt_bandung",
     outletId: "newton_drinks_stall",
     name: "Bandung (Rose Milk)",
@@ -26093,7 +12983,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_duck_rice",
     outletId: "cc_roast_meats_stall",
     name: "Roast Duck Rice",
@@ -26110,7 +13000,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cc_char_siew_rice",
     outletId: "cc_roast_meats_stall",
     name: "Char Siew Rice",
@@ -26126,7 +13016,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_claypot_rice",
     outletId: "cc_claypot_rice_stall",
     name: "Claypot Rice",
@@ -26143,7 +13033,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cc_kway_chap",
     outletId: "cc_kway_chap_stall",
     name: "Kway Chap",
@@ -26160,7 +13050,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "cc_wonton_mee",
     outletId: "cc_wonton_mee_stall",
     name: "Wonton Mee (Dry)",
@@ -26176,7 +13066,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_ban_mian",
     outletId: "cc_ban_mian_stall",
     name: "Ban Mian Soup",
@@ -26192,7 +13082,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_bak_chor_mee",
     outletId: "cc_bak_chor_mee_stall",
     name: "Bak Chor Mee",
@@ -26208,7 +13098,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_char_kway_teow",
     outletId: "cc_char_kway_teow_stall",
     name: "Char Kway Teow",
@@ -26224,7 +13114,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_chee_cheong_fun",
     outletId: "cc_rice_noodle_rolls",
     name: "Chee Cheong Fun",
@@ -26241,7 +13131,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_popiah",
     outletId: "cc_rice_noodle_rolls",
     name: "Popiah (Fresh)",
@@ -26258,7 +13148,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_ice_kachang",
     outletId: "cc_desserts_stall",
     name: "Ice Kachang",
@@ -26277,7 +13167,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_tau_huay",
     outletId: "cc_desserts_stall",
     name: "Tau Huay",
@@ -26296,7 +13186,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_chendol",
     outletId: "cc_desserts_stall",
     name: "Chendol",
@@ -26315,7 +13205,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "cc_kopi_o",
     outletId: "cc_kopi_stall",
     name: "Kopi O",
@@ -26334,7 +13224,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_roti_prata_plain",
     outletId: "tekka_prata_stall",
     name: "Roti Prata (Plain)",
@@ -26352,7 +13242,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tekka_roti_prata_egg",
     outletId: "tekka_prata_stall",
     name: "Roti Prata (Egg)",
@@ -26370,7 +13260,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tekka_masala_prata",
     outletId: "tekka_prata_stall",
     name: "Masala Prata",
@@ -26387,7 +13277,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_thosai",
     outletId: "tekka_thosai_stall",
     name: "Thosai (Plain)",
@@ -26407,7 +13297,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_vadai",
     outletId: "tekka_thosai_stall",
     name: "Vadai",
@@ -26426,7 +13316,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_murtabak",
     outletId: "tekka_murtabak_stall",
     name: "Murtabak (Chicken)",
@@ -26442,7 +13332,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_nasi_briyani",
     outletId: "tekka_briyani_stall",
     name: "Nasi Briyani (Chicken)",
@@ -26461,7 +13351,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "tekka_nasi_lemak",
     outletId: "tekka_nasi_lemak_stall",
     name: "Nasi Lemak Set",
@@ -26479,7 +13369,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_lontong",
     outletId: "tekka_nasi_lemak_stall",
     name: "Lontong",
@@ -26498,7 +13388,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_mee_goreng",
     outletId: "tekka_mee_goreng_stall",
     name: "Mee Goreng",
@@ -26515,7 +13405,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_rojak",
     outletId: "tekka_rojak_stall",
     name: "Rojak",
@@ -26533,7 +13423,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_teh_tarik",
     outletId: "tekka_drinks_stall",
     name: "Teh Tarik",
@@ -26550,7 +13440,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_bandung",
     outletId: "tekka_drinks_stall",
     name: "Bandung (Rose Milk)",
@@ -26567,7 +13457,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "tekka_coconut_water",
     outletId: "tekka_drinks_stall",
     name: "Fresh Coconut Water",
@@ -26587,7 +13477,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_char_kway_teow",
     outletId: "oar_char_kway_teow",
     name: "Char Kway Teow",
@@ -26604,7 +13494,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "oar_hokkien_mee",
     outletId: "oar_hokkien_mee",
     name: "Hokkien Mee",
@@ -26621,7 +13511,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "oar_prawn_noodles",
     outletId: "oar_prawn_noodles",
     name: "Prawn Noodles (Soup)",
@@ -26638,7 +13528,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "oar_bak_chor_mee",
     outletId: "oar_bak_chor_mee",
     name: "Bak Chor Mee",
@@ -26654,7 +13544,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_duck_rice",
     outletId: "oar_roast_duck_rice",
     name: "Roast Duck Rice",
@@ -26671,7 +13561,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "oar_economic_rice",
     outletId: "oar_economic_rice",
     name: "Economic Rice (2 sides)",
@@ -26688,7 +13578,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_fried_rice",
     outletId: "oar_economic_rice",
     name: "Fried Rice",
@@ -26705,7 +13595,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_laksa",
     outletId: "oar_laksa",
     name: "Laksa",
@@ -26721,7 +13611,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_wonton_mee",
     outletId: "oar_wonton_mee",
     name: "Wonton Mee (Dry)",
@@ -26737,7 +13627,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_popiah",
     outletId: "oar_popiah",
     name: "Fresh Popiah",
@@ -26754,7 +13644,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_oyster_omelette",
     outletId: "oar_oyster_omelette",
     name: "Oyster Omelette",
@@ -26770,7 +13660,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_ice_kachang",
     outletId: "oar_desserts_drinks",
     name: "Ice Kachang",
@@ -26789,7 +13679,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_teh_tarik",
     outletId: "oar_desserts_drinks",
     name: "Teh Tarik",
@@ -26806,7 +13696,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "oar_kopi",
     outletId: "oar_desserts_drinks",
     name: "Kopi",
@@ -26823,7 +13713,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_chicken_rice",
     outletId: "gmfc_chicken_rice",
     name: "Hainanese Chicken Rice",
@@ -26840,7 +13730,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gmfc_bak_kut_teh",
     outletId: "gmfc_bak_kut_teh",
     name: "Bak Kut Teh",
@@ -26858,7 +13748,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gmfc_char_kway_teow",
     outletId: "gmfc_char_kway_teow",
     name: "Char Kway Teow",
@@ -26875,7 +13765,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gmfc_hokkien_mee",
     outletId: "gmfc_hokkien_mee",
     name: "Hokkien Mee",
@@ -26891,7 +13781,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_laksa",
     outletId: "gmfc_laksa",
     name: "Laksa",
@@ -26907,7 +13797,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_prawn_noodles",
     outletId: "gmfc_prawn_noodles",
     name: "Prawn Noodles",
@@ -26924,7 +13814,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gmfc_satay_chicken",
     outletId: "gmfc_satay_stall",
     name: "Chicken Satay (5 sticks)",
@@ -26942,7 +13832,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_oyster_cake",
     outletId: "gmfc_snacks_stall",
     name: "Fuzhou Oyster Cake",
@@ -26958,7 +13848,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_carrot_cake",
     outletId: "gmfc_snacks_stall",
     name: "Carrot Cake (Black)",
@@ -26975,7 +13865,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_peanut_soup",
     outletId: "gmfc_desserts_drinks",
     name: "Ah Balling Peanut Soup",
@@ -26994,7 +13884,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_kopi",
     outletId: "gmfc_desserts_drinks",
     name: "Kopi",
@@ -27011,7 +13901,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gmfc_kopi_o",
     outletId: "gmfc_desserts_drinks",
     name: "Kopi O",
@@ -27030,7 +13920,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_nasi_lemak",
     outletId: "gsm_nasi_lemak_stall",
     name: "Nasi Lemak Set",
@@ -27048,7 +13938,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gsm_nasi_briyani",
     outletId: "gsm_briyani_stall",
     name: "Nasi Briyani (Chicken)",
@@ -27067,7 +13957,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gsm_nasi_padang",
     outletId: "gsm_nasi_padang_stall",
     name: "Nasi Padang",
@@ -27084,7 +13974,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_ayam_penyet",
     outletId: "gsm_ayam_penyet_stall",
     name: "Ayam Penyet",
@@ -27101,7 +13991,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_lontong",
     outletId: "gsm_lontong_stall",
     name: "Lontong",
@@ -27120,7 +14010,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_murtabak",
     outletId: "gsm_murtabak_stall",
     name: "Murtabak (Chicken)",
@@ -27136,7 +14026,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_mee_goreng",
     outletId: "gsm_mee_stall",
     name: "Mee Goreng",
@@ -27154,7 +14044,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "gsm_mee_siam",
     outletId: "gsm_mee_stall",
     name: "Mee Siam",
@@ -27171,7 +14061,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_economy_beehoon",
     outletId: "gsm_beehoon_stall",
     name: "Economy Beehoon",
@@ -27189,7 +14079,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_rojak",
     outletId: "gsm_rojak_stall",
     name: "Rojak",
@@ -27207,7 +14097,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_bubur_hitam",
     outletId: "gsm_desserts_drinks",
     name: "Bubur Hitam",
@@ -27226,7 +14116,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_teh_tarik",
     outletId: "gsm_desserts_drinks",
     name: "Teh Tarik",
@@ -27243,7 +14133,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "gsm_bandung",
     outletId: "gsm_desserts_drinks",
     name: "Bandung (Rose Milk)",
@@ -27260,7 +14150,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_chicken_rice",
     outletId: "whampoa_chicken_rice",
     name: "Chicken Rice",
@@ -27277,7 +14167,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "whampoa_economy_rice",
     outletId: "whampoa_economic_rice",
     name: "Economic Rice (2 sides)",
@@ -27294,7 +14184,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_laksa",
     outletId: "whampoa_laksa",
     name: "Laksa",
@@ -27311,7 +14201,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "whampoa_bak_chor_mee",
     outletId: "whampoa_bak_chor_mee",
     name: "Bak Chor Mee",
@@ -27328,7 +14218,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "whampoa_ban_mian",
     outletId: "whampoa_ban_mian",
     name: "Ban Mian Soup",
@@ -27344,7 +14234,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_wonton_mee",
     outletId: "whampoa_wonton_mee",
     name: "Wonton Mee",
@@ -27360,7 +14250,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_char_kway_teow",
     outletId: "whampoa_char_kway_teow",
     name: "Char Kway Teow",
@@ -27376,7 +14266,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_hokkien_mee",
     outletId: "whampoa_hokkien_mee",
     name: "Hokkien Mee",
@@ -27392,7 +14282,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_roti_prata",
     outletId: "whampoa_prata_stall",
     name: "Roti Prata (Egg)",
@@ -27409,7 +14299,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_tau_huay",
     outletId: "whampoa_desserts_drinks",
     name: "Tau Huay",
@@ -27428,7 +14318,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_kopi",
     outletId: "whampoa_desserts_drinks",
     name: "Kopi",
@@ -27445,7 +14335,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_kopi_o",
     outletId: "whampoa_desserts_drinks",
     name: "Kopi O",
@@ -27464,7 +14354,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "whampoa_teh_tarik",
     outletId: "whampoa_desserts_drinks",
     name: "Teh Tarik",
@@ -27481,7 +14371,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "luckin_americano_m",
     outletId: "luckin_coffee",
     name: "Americano (M)",
@@ -27499,7 +14389,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "luckin_latte_m",
     outletId: "luckin_coffee",
     name: "Latte (M)",
@@ -27517,7 +14407,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "luckin_cold_brew_latte_m",
     outletId: "luckin_coffee",
     name: "Cold Brew Latte (M)",
@@ -27535,7 +14425,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "luckin_raw_coconut_latte_m",
     outletId: "luckin_coffee",
     name: "Raw Coconut Latte (M)",
@@ -27553,7 +14443,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "luckin_velvet_latte_m",
     outletId: "luckin_coffee",
     name: "Velvet Latte (M)",
@@ -27571,7 +14461,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "luckin_matcha_latte_m",
     outletId: "luckin_coffee",
     name: "Matcha Latte (M)",
@@ -27589,7 +14479,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "luckin_cheese_tea_m",
     outletId: "luckin_coffee",
     name: "Cheese Tea (M)",
@@ -27606,7 +14496,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bonchon_wings_rice_set",
     outletId: "bonchon",
     name: "Wings & Rice Set (4pc)",
@@ -27621,7 +14511,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bonchon_drums_rice_set",
     outletId: "bonchon",
     name: "Drums & Rice Set (4pc)",
@@ -27636,7 +14526,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "bonchon_wings_sg_6pc",
     outletId: "bonchon",
     name: "Wings Soy Garlic (6pc)",
@@ -27651,7 +14541,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bonchon_wings_spicy_6pc",
     outletId: "bonchon",
     name: "Wings Spicy (6pc)",
@@ -27666,7 +14556,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bonchon_drums_sg_6pc",
     outletId: "bonchon",
     name: "Drums Soy Garlic (6pc)",
@@ -27681,7 +14571,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bonchon_tenders_5pc",
     outletId: "bonchon",
     name: "Tenders (5pc)",
@@ -27696,7 +14586,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "bonchon_bibimbap",
     outletId: "bonchon",
     name: "Bibimbap",
@@ -27713,7 +14603,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "bonchon_tteokbokki",
     outletId: "bonchon",
     name: "Tteokbokki",
@@ -27730,7 +14620,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "llao_tarrina_s",
     outletId: "llaollao",
     name: "Tarrina S",
@@ -27748,7 +14638,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "llao_sanum_s",
     outletId: "llaollao",
     name: "Sanum S",
@@ -27765,7 +14655,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "llao_sanum_m",
     outletId: "llaollao",
     name: "Sanum M",
@@ -27782,7 +14672,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "llao_sanum_l",
     outletId: "llaollao",
     name: "Sanum L",
@@ -27799,7 +14689,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "llao_granola_s",
     outletId: "llaollao",
     name: "Granola S",
@@ -27816,7 +14706,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "llao_signature",
     outletId: "llaollao",
     name: "Llaollao (Signature)",
@@ -27833,7 +14723,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_daves_single_combo",
     outletId: "wendys",
     name: "Dave's Single Combo",
@@ -27848,7 +14738,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_spicy_chk_combo",
     outletId: "wendys",
     name: "Spicy Chicken Combo",
@@ -27863,7 +14753,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_daves_single",
     outletId: "wendys",
     name: "Dave's Single",
@@ -27878,7 +14768,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_daves_double",
     outletId: "wendys",
     name: "Dave's Double",
@@ -27893,7 +14783,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_daves_triple",
     outletId: "wendys",
     name: "Dave's Triple",
@@ -27908,7 +14798,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "wendys_spicy_chicken",
     outletId: "wendys",
     name: "Spicy Chicken Sandwich",
@@ -27923,7 +14813,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_baconator",
     outletId: "wendys",
     name: "Baconator",
@@ -27938,7 +14828,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "wendys_frosty_s",
     outletId: "wendys",
     name: "Frosty (S)",
@@ -27955,7 +14845,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ing_chicken_breast",
     outletId: "store_fairprice",
     name: "Chicken Breast (skinless)",
@@ -27972,7 +14862,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_chicken_thigh",
     outletId: "store_fairprice",
     name: "Chicken Thigh (boneless, skinless)",
@@ -27989,7 +14879,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_eggs_10",
     outletId: "store_fairprice",
     name: "Eggs (Local Farm)",
@@ -28006,7 +14896,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_canned_tuna",
     outletId: "store_fairprice",
     name: "Tuna in Water (Ayam Brand)",
@@ -28022,7 +14912,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_silken_tofu",
     outletId: "store_fairprice",
     name: "Silken Tofu (Unicurd)",
@@ -28041,7 +14931,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_greek_yogurt",
     outletId: "store_fairprice",
     name: "Low-fat Greek Yogurt (Meiji)",
@@ -28058,7 +14948,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_jasmine_rice",
     outletId: "store_fairprice",
     name: "Jasmine Rice (Fragrant)",
@@ -28077,7 +14967,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_brown_rice",
     outletId: "store_fairprice",
     name: "Brown Rice (SunWhite)",
@@ -28096,7 +14986,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_rolled_oats",
     outletId: "store_fairprice",
     name: "Rolled Oats (Quaker)",
@@ -28114,7 +15004,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_sweet_potato",
     outletId: "store_fairprice",
     name: "Sweet Potato (Orange)",
@@ -28133,7 +15023,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_canned_chickpeas",
     outletId: "store_fairprice",
     name: "Chickpeas, canned (Ayam Brand)",
@@ -28152,7 +15042,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_banana",
     outletId: "store_fairprice",
     name: "Banana (Cavendish)",
@@ -28171,7 +15061,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_baby_spinach",
     outletId: "store_fairprice",
     name: "Baby Spinach",
@@ -28190,7 +15080,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_broccoli",
     outletId: "store_fairprice",
     name: "Broccoli",
@@ -28209,7 +15099,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_whole_milk",
     outletId: "store_fairprice",
     name: "Full Cream Milk (Meiji)",
@@ -28226,7 +15116,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_light_soy_sauce",
     outletId: "store_fairprice",
     name: "Light Soy Sauce (Kikkoman)",
@@ -28244,7 +15134,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "ing_sesame_oil",
     outletId: "store_fairprice",
     name: "Sesame Oil",
@@ -28263,7 +15153,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-  {
+{
     id: "rec_chicken_rice_bowl",
     outletId: "home_cooked",
     name: "High-Protein Chicken Rice Bowl",
@@ -28280,7 +15170,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "rec_tuna_oat_salad",
     outletId: "home_cooked",
     name: "Tuna Spinach Salad with Oats",
@@ -28296,7 +15186,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "rec_egg_fried_rice",
     outletId: "home_cooked",
     name: "High-Protein Egg Fried Rice",
@@ -28313,7 +15203,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "rec_overnight_oats",
     outletId: "home_cooked",
     name: "Overnight Oats with Banana",
@@ -28330,7 +15220,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "rec_tofu_veggie_stir_fry",
     outletId: "home_cooked",
     name: "Tofu & Veggie Stir Fry",
@@ -28349,7 +15239,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
+{
     id: "rec_chickpea_sweet_potato_bowl",
     outletId: "home_cooked",
     name: "Chickpea & Sweet Potato Bowl",
@@ -28367,569 +15257,7 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-  {
-    id: "kopitiam_kaya_toast_set",
-    outletId: "kopitiam",
-    name: "Traditional Kaya Toast Set",
-    emoji: "🍞",
-    category: "Breakfast",
-    price: 4.5,
-    calories: 650,
-    protein: 27,
-    carbs: 71,
-    fat: 29,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kopitiam_roti_prata",
-    outletId: "kopitiam",
-    name: "Roti Prata (Plain, 2pc) with Curry",
-    emoji: "🫓",
-    category: "Breakfast",
-    price: 2.5,
-    calories: 480,
-    protein: 10,
-    carbs: 70,
-    fat: 24,
-    compatibleWith: [
-      "halal",
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "kopitiam_char_kway_teow",
-    outletId: "kopitiam",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 650,
-    protein: 18,
-    carbs: 78,
-    fat: 26,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kopitiam_hokkien_mee",
-    outletId: "kopitiam",
-    name: "Hokkien Mee (Prawn Noodle)",
-    emoji: "🦐",
-    category: "Noodles",
-    price: 5.5,
-    calories: 560,
-    protein: 26,
-    carbs: 62,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "kopitiam_bak_chor_mee",
-    outletId: "kopitiam",
-    name: "Bak Chor Mee (Dry)",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 5,
-    calories: 460,
-    protein: 25,
-    carbs: 50,
-    fat: 18,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "kopitiam_chwee_kueh",
-    outletId: "kopitiam",
-    name: "Chwee Kueh (5pc)",
-    emoji: "🍘",
-    category: "Snacks",
-    price: 3,
-    calories: 280,
-    protein: 4,
-    carbs: 40,
-    fat: 10,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "kopitiam_popiah",
-    outletId: "kopitiam",
-    name: "Popiah (2 rolls)",
-    emoji: "🌯",
-    category: "Snacks",
-    price: 4,
-    calories: 376,
-    protein: 8,
-    carbs: 28,
-    fat: 14,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "kopitiam_yong_tau_foo",
-    outletId: "kopitiam",
-    name: "Yong Tau Foo (Noodle Soup, Mixed)",
-    emoji: "🥟",
-    category: "Noodles",
-    price: 4.5,
-    calories: 380,
-    protein: 20,
-    carbs: 45,
-    fat: 8,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "koufu_kaya_toast_set",
-    outletId: "koufu",
-    name: "Traditional Kaya Toast Set",
-    emoji: "🍞",
-    category: "Breakfast",
-    price: 4.5,
-    calories: 650,
-    protein: 27,
-    carbs: 71,
-    fat: 29,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "koufu_roti_prata",
-    outletId: "koufu",
-    name: "Roti Prata (Plain, 2pc) with Curry",
-    emoji: "🫓",
-    category: "Breakfast",
-    price: 2.5,
-    calories: 480,
-    protein: 10,
-    carbs: 70,
-    fat: 24,
-    compatibleWith: [
-      "halal",
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "koufu_hokkien_mee",
-    outletId: "koufu",
-    name: "Hokkien Mee (Prawn Noodle)",
-    emoji: "🦐",
-    category: "Noodles",
-    price: 5.5,
-    calories: 560,
-    protein: 26,
-    carbs: 62,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "koufu_bak_chor_mee",
-    outletId: "koufu",
-    name: "Bak Chor Mee (Dry)",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 5,
-    calories: 460,
-    protein: 25,
-    carbs: 50,
-    fat: 18,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "koufu_chwee_kueh",
-    outletId: "koufu",
-    name: "Chwee Kueh (5pc)",
-    emoji: "🍘",
-    category: "Snacks",
-    price: 3,
-    calories: 280,
-    protein: 4,
-    carbs: 40,
-    fat: 10,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "koufu_popiah",
-    outletId: "koufu",
-    name: "Popiah (2 rolls)",
-    emoji: "🌯",
-    category: "Snacks",
-    price: 4,
-    calories: 376,
-    protein: 8,
-    carbs: 28,
-    fat: 14,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "koufu_yong_tau_foo",
-    outletId: "koufu",
-    name: "Yong Tau Foo (Noodle Soup, Mixed)",
-    emoji: "🥟",
-    category: "Noodles",
-    price: 4.5,
-    calories: 380,
-    protein: 20,
-    carbs: 45,
-    fat: 8,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "koufu_fishball_noodle_soup",
-    outletId: "koufu",
-    name: "Fishball Noodle Soup",
-    emoji: "🐟",
-    category: "Noodles",
-    price: 4.5,
-    calories: 360,
-    protein: 19,
-    carbs: 50,
-    fat: 6,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "foodfare_economy_rice",
-    outletId: "foodfare",
-    name: "Economy Mixed Vegetable Rice (3 Dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 4,
-    calories: 550,
-    protein: 20,
-    carbs: 65,
-    fat: 20,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "foodfare_chicken_rice",
-    outletId: "foodfare",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 600,
-    protein: 30,
-    carbs: 65,
-    fat: 22,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "foodfare_laksa",
-    outletId: "foodfare",
-    name: "Laksa",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 5.5,
-    calories: 600,
-    protein: 18,
-    carbs: 55,
-    fat: 35,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "foodfare_mee_siam",
-    outletId: "foodfare",
-    name: "Mee Siam",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4,
-    calories: 420,
-    protein: 10,
-    carbs: 68,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "foodfare_wonton_noodle_dry",
-    outletId: "foodfare",
-    name: "Wonton Noodle (Dry)",
-    emoji: "🥟",
-    category: "Noodles",
-    price: 4.5,
-    calories: 420,
-    protein: 20,
-    carbs: 58,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "foodfare_carrot_cake",
-    outletId: "foodfare",
-    name: "Fried Carrot Cake (Black)",
-    emoji: "🍘",
-    category: "Snacks",
-    price: 3.5,
-    calories: 480,
-    protein: 8,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "foodfare_curry_chicken_rice",
-    outletId: "foodfare",
-    name: "Curry Chicken with Rice",
-    emoji: "🍛",
-    category: "Rice",
-    price: 5,
-    calories: 620,
-    protein: 28,
-    carbs: 60,
-    fat: 28,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "foodfare_tau_huay",
-    outletId: "foodfare",
-    name: "Soya Bean Curd (Tau Huay)",
-    emoji: "🥣",
-    category: "Desserts",
-    price: 1.8,
-    calories: 120,
-    protein: 6,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [
-      "vegetarian",
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "banquet_chicken_rice",
-    outletId: "banquet",
-    name: "Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4.5,
-    calories: 600,
-    protein: 30,
-    carbs: 65,
-    fat: 22,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "banquet_nasi_lemak",
-    outletId: "banquet",
-    name: "Nasi Lemak with Fried Chicken",
-    emoji: "🍚",
-    category: "Rice",
-    price: 4.5,
-    calories: 520,
-    protein: 20,
-    carbs: 62,
-    fat: 20,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "banquet_mee_rebus",
-    outletId: "banquet",
-    name: "Mee Rebus",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4.5,
-    calories: 480,
-    protein: 18,
-    carbs: 72,
-    fat: 14,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "banquet_chicken_briyani",
-    outletId: "banquet",
-    name: "Chicken Briyani",
-    emoji: "🍛",
-    category: "Rice",
-    price: 6,
-    calories: 650,
-    protein: 32,
-    carbs: 78,
-    fat: 22,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "banquet_yong_tau_foo",
-    outletId: "banquet",
-    name: "Yong Tau Foo (Soup, 5pc)",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4,
-    calories: 380,
-    protein: 24,
-    carbs: 40,
-    fat: 12,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "banquet_chicken_shawarma",
-    outletId: "banquet",
-    name: "Chicken Shawarma Wrap",
-    emoji: "🌯",
-    category: "Wraps",
-    price: 6.5,
-    calories: 550,
-    protein: 30,
-    carbs: 50,
-    fat: 24,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "banquet_roti_prata",
-    outletId: "banquet",
-    name: "Roti Prata (Plain, 2pc) with Curry",
-    emoji: "🫓",
-    category: "Snacks",
-    price: 2.8,
-    calories: 480,
-    protein: 10,
-    carbs: 70,
-    fat: 24,
-    compatibleWith: [
-      "halal",
-      "vegetarian",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "banquet_ayam_penyet",
-    outletId: "banquet",
-    name: "Ayam Penyet (Smashed Fried Chicken) with Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 6,
-    calories: 680,
-    protein: 35,
-    carbs: 70,
-    fat: 28,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
-    id: "banquet_rojak",
-    outletId: "banquet",
-    name: "Rojak (Fruit & Vegetable Salad)",
-    emoji: "🥗",
-    category: "Salads",
-    price: 4,
-    calories: 350,
-    protein: 8,
-    carbs: 45,
-    fat: 15,
-    compatibleWith: [
-      "halal",
-      "no_pork"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-  {
+{
     id: "ichiban_boshi_chicken_katsu_don",
     outletId: "ichiban_boshi",
     name: "Chicken Katsu Don",
@@ -28944,7 +15272,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ichiban_boshi_chicken_teriyaki_don",
     outletId: "ichiban_boshi",
     name: "Chicken Teriyaki Don",
@@ -28959,7 +15287,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ichiban_boshi_beef_teriyaki_don",
     outletId: "ichiban_boshi",
     name: "Beef Teriyaki Don",
@@ -28974,7 +15302,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ichiban_boshi_black_pepper_salmon_don",
     outletId: "ichiban_boshi",
     name: "Black Pepper Salmon Don",
@@ -28991,7 +15319,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ichiban_boshi_unajyu",
     outletId: "ichiban_boshi",
     name: "Unajyu (Grilled Eel Rice)",
@@ -29008,7 +15336,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ichiban_boshi_salmon_sashimi_salad",
     outletId: "ichiban_boshi",
     name: "Salmon Sashimi Salad",
@@ -29026,7 +15354,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ichiban_boshi_tori_karaage",
     outletId: "ichiban_boshi",
     name: "Tori Karaage",
@@ -29041,7 +15369,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
+{
     id: "ichiban_boshi_tempura_udon",
     outletId: "ichiban_boshi",
     name: "Tempura Udon",
@@ -29058,7 +15386,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ichiban_boshi_chirashi_jyu",
     outletId: "ichiban_boshi",
     name: "Chirashi Jyu",
@@ -29076,7 +15404,7 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: false
   },
-  {
+{
     id: "ichiban_boshi_edamame",
     outletId: "ichiban_boshi",
     name: "Edamame",

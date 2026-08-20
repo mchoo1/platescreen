@@ -116,7 +116,14 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
                 </td>
                 {showDistance && (
                   <td className="px-3 py-2 text-right text-slate-500 dark:text-slate-400">
-                    {row.distanceKm != null ? `${row.distanceKm.toFixed(1)} km` : '—'}
+                    {row.distanceKm != null ? (
+                      <>
+                        {row.distanceKm.toFixed(1)} km
+                        {row.nearestBranchName && (
+                          <div className="text-[10px] text-slate-400 dark:text-slate-500">{row.nearestBranchName}</div>
+                        )}
+                      </>
+                    ) : '—'}
                   </td>
                 )}
                 <td className="px-3 py-2 whitespace-nowrap text-xs text-slate-400">

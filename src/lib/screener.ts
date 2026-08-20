@@ -2,13 +2,16 @@ import { OUTLETS as RAW_OUTLETS } from './outlets';
 import { FOOD_OPTIONS as RAW_FOOD_OPTIONS } from './foodOptions';
 import type { Outlet, FoodOption, Platform } from '@/types/db';
 import type { DietaryFlag, OutletType, PriceRange } from '@/types';
-import { RESTAURANT_STATIC_COORDS, haversineKm } from './geo';
+import { haversineKm } from './geo';
 
 // Generated data files are intentionally untyped literals (a ~1,800-element
 // array checked against a union-typed interface blows past TS's structural
 // comparison complexity limit — TS2590). Cast once at the boundary instead.
 const OUTLETS = RAW_OUTLETS as unknown as Outlet[];
 const FOOD_OPTIONS = RAW_FOOD_OPTIONS as unknown as FoodOption[];
+
+// Lookup by id, once, for distance calc and row-building.
+const OUTLET_BY_ID = new Map<string, Outlet>(OUTLETS.map((o) => [o.id, o]));
 
 /** Protein per dollar (g/$), rounded to 1 decimal. Returns 0 if price is 0. */
 export function proteinPerDollar(protein: number, price: number): number {
@@ -48,15 +51,15 @@ export interface ScreenerRow {
   compatibleWith: DietaryFlag[];
   confidence: 'verified' | 'estimated' | 'community';
   isPopular: boolean;
-  distanceKm: number | null; // filled in when user location is known
+  distanceKm: number | null;       // filled in when user location is known
+  nearestBranchName: string | null; // which physical branch distanceKm refers to (multi-branch chains only)
 }
 
 /** Join every FoodOption to its Outlet into one row-per-item dataset. Computed once. */
 export function buildScreenerRows(): ScreenerRow[] {
-  const outletById = new Map<string, Outlet>(OUTLETS.map((o) => [o.id, o]));
   const rows: ScreenerRow[] = [];
   for (const item of FOOD_OPTIONS as FoodOption[]) {
-    const o = outletById.get(item.outletId);
+    const o = OUTLET_BY_ID.get(item.outletId);
     if (!o) continue; // orphaned food option — shouldn't happen, skip defensively
     rows.push({
       id: item.id,
@@ -83,17 +86,43 @@ export function buildScreenerRows(): ScreenerRow[] {
       confidence: item.confidence,
       isPopular: !!item.isPopular,
       distanceKm: null, // populated later once user coords are known
+      nearestBranchName: null,
     });
   }
   return rows;
 }
 
+/**
+ * Nearest-branch distance (km) for an outlet, or null if we have no location
+ * data for it at all. Multi-location chains with real per-branch data
+ * (Outlet.branches) use the closest branch; single-location outlets
+ * (hawker stalls, home_cooked, etc.) use Outlet.lat/lng directly.
+ */
+function nearestBranch(outletId: string, userLat: number, userLng: number): { distanceKm: number; branchName: string | null } | null {
+  const outlet = OUTLET_BY_ID.get(outletId);
+  if (!outlet) return null;
+  const branches = outlet.branches;
+  if (branches && branches.length) {
+    let best = branches[0];
+    let min = haversineKm(userLat, userLng, best.lat, best.lng);
+    for (const b of branches.slice(1)) {
+      const d = haversineKm(userLat, userLng, b.lat, b.lng);
+      if (d < min) { min = d; best = b; }
+    }
+    return { distanceKm: min, branchName: best.name };
+  }
+  if (outlet.lat != null && outlet.lng != null) {
+    return { distanceKm: haversineKm(userLat, userLng, outlet.lat, outlet.lng), branchName: null };
+  }
+  return null;
+}
+
 /** Attach live distance (km) from a user coordinate to every row that has a known outlet location. */
 export function withDistances(rows: ScreenerRow[], userLat: number, userLng: number): ScreenerRow[] {
   return rows.map((row) => {
-    const coords = RESTAURANT_STATIC_COORDS[row.restaurantId];
-    if (!coords) return row;
-    return { ...row, distanceKm: haversineKm(userLat, userLng, coords[0], coords[1]) };
+    const nearest = nearestBranch(row.restaurantId, userLat, userLng);
+    if (!nearest) return row;
+    return { ...row, distanceKm: nearest.distanceKm, nearestBranchName: nearest.branchName };
   });
 }
 

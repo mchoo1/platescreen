@@ -20,7 +20,22 @@ export interface SfaRegistration {
   licenceSuspended?: boolean;
 }
 
-// ── Outlet: WHERE you get food ──────────────────────────────────────────────
+// ── OutletBranch: one physical premises of a multi-location Outlet ──────────
+// Embedded directly on the Outlet that owns it (see Outlet.branches) — there
+// is no separate branches table. Only multi-location chains need this
+// (McDonald's, KFC, etc., where Outlet.id represents the whole brand and one
+// lat/lng can't represent "nearest branch"). Single-location outlets (hawker
+// stalls, home_cooked, one-off restaurants) just use Outlet.lat/lng directly.
+export interface OutletBranch {
+  name: string;                // branch/mall name, e.g. "Jurong Point"
+  address: string;             // full official address
+  postal?: string;
+  lat: number;
+  lng: number;
+  source: string;              // where this address came from, e.g. brand's official store list
+}
+
+// ── Outlet: WHERE you get food — one row per physical store OR brand ────────
 export interface Outlet {
   id: string;
   name: string;
@@ -33,6 +48,9 @@ export interface Outlet {
   priceRange: PriceRange;
   platforms: Platform[];
   sfa?: SfaRegistration;     // populated for hawker / food_court_stall outlets
+  lat?: number;               // single-location outlets: real coordinate directly on the row
+  lng?: number;
+  branches?: OutletBranch[];  // multi-location chains: real per-branch coordinates instead of lat/lng
 }
 
 // ── FoodOption: WHAT you can screen — one row per dish ──────────────────────
@@ -63,4 +81,13 @@ export interface ResearchQueueEntry {
   status: 'pending' | 'researched';
   notes?: string;
   sfaLicenceNo?: string;     // if known ahead of time, disambiguates which branch to research
+}
+
+// ── BranchQueueEntry: work items for the branch-backfill research task ──────
+export interface BranchQueueEntry {
+  outletId: string;          // must match an existing Outlet.id
+  name: string;
+  priority: 'high' | 'medium' | 'low';
+  status: 'pending' | 'researched';
+  notes?: string;
 }
