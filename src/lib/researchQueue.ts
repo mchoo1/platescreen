@@ -202,8 +202,8 @@ export const RESEARCH_QUEUE = [
     type: "restaurant",
     cuisine: "Italian / Japanese",
     priority: "medium",
-    status: "pending",
-    notes: "Japanese-Italian chain, nutrition PDF on website"
+    status: "researched",
+    notes: "Researched 2026-08-21: Brand already existed in brands.ts with 9 MenuItems from a prior run — this queue entry's 'pending' status was stale (flagged by the katsu-don session on 2026-08-20, see note on that entry). Confirmed the official SG menu PDF (saizeriya.com.sg/menu, GrandMenu202603S_single.pdf, dated 2026-03) has no nutrition/macro data, only dish names and SGD prices — the old 'nutrition PDF on website' note was inaccurate. Added 4 more MenuItems (Milano Doria, Hamburger, Arugula Chicken Salad, Sautéed Spinach with Bacon) verified against the current official SG menu for names/prices; macros are 'estimated' from the closest available analog — same-chain Japan menu data via kalori.jp (itself partly AI-estimated) — since no Singapore-specific macro source exists. Brought total to 13 items. No SFA lookup — type is 'restaurant', Brand already existed, Phase 3 skipped per instructions."
   },
   {
     id: "gen_korean_bbq",

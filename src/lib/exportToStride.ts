@@ -1,6 +1,6 @@
 /**
- * FIRST-PASS EXPORT CONVERTER — maps PlateScreen's simplified Outlet/FoodOption
- * back into Stride's full SGRestaurant/SGMenuItem shape (see
+ * FIRST-PASS EXPORT CONVERTER — maps PlateScreen's Brand/Premises/MenuItem
+ * schema back into Stride's full SGRestaurant/SGMenuItem shape (see
  * reference/stride-original/sgFoodDb.ts for the canonical target interfaces).
  *
  * This is a manual mapping target, not a shared type import — Stride's schema
@@ -9,7 +9,7 @@
  * sync (per the reviewable-diff workflow — nothing here writes to stride-app
  * automatically).
  */
-import type { Outlet, FoodOption, Platform } from '@/types/db';
+import type { Brand, Premises, MenuItem, Platform } from '@/types/db';
 
 export interface StrideMenuItemDraft {
   id: string;
@@ -43,6 +43,7 @@ export interface StrideRestaurantDraft {
   hawkerLocation?: string;
   sfaLicenceType?: 'food_shop' | 'food_stall' | 'hawker_stall' | 'supermarket' | 'none';
   sfaLicenceNo?: string;
+  premisesCount: number;    // how many real Premises rows this brand has (0 = no location data at all)
 }
 
 /** self_cook has no Stride equivalent (Stride has no home-cooked outlet concept) — dropped. */
@@ -51,13 +52,13 @@ function platformsToServiceTypes(platforms: Platform[]): string[] {
   return mapped.length ? mapped : ['grab_go'];
 }
 
-function confidenceToSource(confidence: FoodOption['confidence']): string {
+function confidenceToSource(confidence: MenuItem['confidence']): string {
   if (confidence === 'verified') return 'official_sg';
   if (confidence === 'community') return 'community';
   return 'ai_estimate';
 }
 
-function outletTypeToSfaLicenceType(type: Outlet['type']): StrideRestaurantDraft['sfaLicenceType'] {
+function brandTypeToSfaLicenceType(type: Brand['type']): StrideRestaurantDraft['sfaLicenceType'] {
   switch (type) {
     case 'hawker': return 'hawker_stall';
     case 'food_court_stall': return 'food_stall';
@@ -68,28 +69,38 @@ function outletTypeToSfaLicenceType(type: Outlet['type']): StrideRestaurantDraft
   }
 }
 
-function tierFromItems(items: FoodOption[]): StrideRestaurantDraft['tier'] {
+function tierFromItems(items: MenuItem[]): StrideRestaurantDraft['tier'] {
+  if (items.length === 0) return 'place_only';
   if (items.every((i) => i.confidence === 'verified')) return 'full_menu';
   if (items.some((i) => i.confidence === 'verified')) return 'partial_menu';
   return 'estimated_menu';
 }
 
-/** Convert one Outlet + its FoodOptions into a Stride-shaped restaurant draft. */
-export function exportOutletToStride(outlet: Outlet, items: FoodOption[]): StrideRestaurantDraft {
+/** Convert one Brand + its Premises + its MenuItems into a Stride-shaped restaurant draft. */
+export function exportBrandToStride(brand: Brand, premises: Premises[], items: MenuItem[]): StrideRestaurantDraft {
+  // Prefer the first premises' SFA record (most brands have at most one licence
+  // shape worth surfacing to Stride today); a brand with many premises just
+  // reports its count — Stride doesn't have a per-branch concept yet either.
+  const primaryPremises = premises[0];
+  const locationLabel =
+    premises.length === 0 ? undefined :
+    premises.length === 1 ? (primaryPremises.locationContext || primaryPremises.label) :
+    'Multiple outlets islandwide';
   return {
-    id: outlet.id,
-    name: outlet.name,
-    emoji: outlet.emoji,
-    cuisine: outlet.cuisine,
-    serviceTypes: platformsToServiceTypes(outlet.platforms),
-    aliases: outlet.aliases,
-    dietTags: outlet.dietTags,
-    priceRange: outlet.priceRange,
-    outletType: outlet.type,
+    id: brand.id,
+    name: brand.name,
+    emoji: brand.emoji,
+    cuisine: brand.cuisine,
+    serviceTypes: platformsToServiceTypes(brand.platforms),
+    aliases: brand.aliases,
+    dietTags: brand.dietTags,
+    priceRange: brand.priceRange,
+    outletType: brand.type,
     tier: tierFromItems(items),
-    hawkerLocation: outlet.location,
-    sfaLicenceType: outletTypeToSfaLicenceType(outlet.type),
-    sfaLicenceNo: outlet.sfa?.licenceNumber,
+    hawkerLocation: locationLabel,
+    sfaLicenceType: brandTypeToSfaLicenceType(brand.type),
+    sfaLicenceNo: primaryPremises?.sfa?.licenceNumber,
+    premisesCount: premises.length,
     menu: items.map((item) => ({
       id: item.id,
       name: item.name,
@@ -109,15 +120,21 @@ export function exportOutletToStride(outlet: Outlet, items: FoodOption[]): Strid
   };
 }
 
-/** Convert the full PlateScreen dataset into Stride-shaped restaurant drafts, grouped by outlet. */
-export function exportAllToStride(outlets: Outlet[], foodOptions: FoodOption[]): StrideRestaurantDraft[] {
-  const byOutlet = new Map<string, FoodOption[]>();
-  for (const item of foodOptions) {
-    const list = byOutlet.get(item.outletId) ?? [];
+/** Convert the full PlateScreen dataset into Stride-shaped restaurant drafts, grouped by brand. */
+export function exportAllToStride(brands: Brand[], premises: Premises[], menuItems: MenuItem[]): StrideRestaurantDraft[] {
+  const itemsByBrand = new Map<string, MenuItem[]>();
+  for (const item of menuItems) {
+    const list = itemsByBrand.get(item.brandId) ?? [];
     list.push(item);
-    byOutlet.set(item.outletId, list);
+    itemsByBrand.set(item.brandId, list);
   }
-  return outlets
-    .filter((o) => o.type !== 'home_cooked') // no Stride equivalent — self-cook recipes stay PlateScreen-only
-    .map((o) => exportOutletToStride(o, byOutlet.get(o.id) ?? []));
+  const premByBrand = new Map<string, Premises[]>();
+  for (const p of premises) {
+    const list = premByBrand.get(p.brandId) ?? [];
+    list.push(p);
+    premByBrand.set(p.brandId, list);
+  }
+  return brands
+    .filter((b) => b.type !== 'home_cooked') // no Stride equivalent — self-cook recipes stay PlateScreen-only
+    .map((b) => exportBrandToStride(b, premByBrand.get(b.id) ?? [], itemsByBrand.get(b.id) ?? []));
 }

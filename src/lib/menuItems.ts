@@ -1,9 +1,10 @@
-// Generated data — see reference/migration-scripts/migrate.ts
+// Generated 2026-08-20 — one row per dish, FK to Brand.id (renamed from FoodOption/outletId).
+// Untyped literal export (see MenuItem in types/db.ts) — screener.ts casts at the boundary.
 
-export const FOOD_OPTIONS = [
-{
+export const MENU_ITEMS = [
+  {
     id: "mcd_big_mac",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Big Mac",
     emoji: "🍔",
     category: "Burgers",
@@ -18,9 +19,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_mcspicy",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "McSpicy",
     emoji: "🍔",
     category: "Burgers",
@@ -35,9 +36,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_double_mcspicy",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double McSpicy",
     emoji: "🍔",
     category: "Burgers",
@@ -51,9 +52,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_mcspicy_cheese",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "McSpicy with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -67,9 +68,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_double_mcspicy_cheese",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double McSpicy with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -83,9 +84,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_mcchicken",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "McChicken",
     emoji: "🍗",
     category: "Burgers",
@@ -100,9 +101,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_mcchicken_cheese",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "McChicken with Cheese",
     emoji: "🍗",
     category: "Burgers",
@@ -116,9 +117,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_cheeseburger",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Cheeseburger",
     emoji: "🍔",
     category: "Burgers",
@@ -132,9 +133,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_double_cheeseburger",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double Cheeseburger",
     emoji: "🍔",
     category: "Burgers",
@@ -148,9 +149,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_triple_cheeseburger",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Triple Cheeseburger",
     emoji: "🍔",
     category: "Burgers",
@@ -164,9 +165,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_hamburger",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Hamburger",
     emoji: "🍔",
     category: "Burgers",
@@ -180,9 +181,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_quarter_pounder",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Quarter Pounder with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -196,9 +197,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_double_quarter_pounder",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double Quarter Pounder with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -212,9 +213,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_mccrispy",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "McCrispy",
     emoji: "🍗",
     category: "Burgers",
@@ -229,9 +230,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_double_mccrispy",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double McCrispy",
     emoji: "🍗",
     category: "Burgers",
@@ -245,9 +246,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_buttermilk_crispy",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Buttermilk Crispy Chicken",
     emoji: "🍗",
     category: "Burgers",
@@ -261,9 +262,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_filet_o_fish",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Filet-O-Fish",
     emoji: "🐟",
     category: "Burgers",
@@ -278,9 +279,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_double_filet",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double Filet-O-Fish",
     emoji: "🐟",
     category: "Burgers",
@@ -294,9 +295,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_nuggets_6pc",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Chicken McNuggets (6pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -311,9 +312,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_nuggets_9pc",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Chicken McNuggets (9pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -327,9 +328,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_mcwings_4pc",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "McWings (4pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -343,9 +344,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_egg_mcmuffin",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Egg McMuffin",
     emoji: "🥪",
     category: "Breakfast",
@@ -360,9 +361,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_sausage_mcmuffin",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Sausage McMuffin",
     emoji: "🥪",
     category: "Breakfast",
@@ -376,9 +377,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_sausage_mcmuffin_egg",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Sausage McMuffin with Egg",
     emoji: "🥪",
     category: "Breakfast",
@@ -392,9 +393,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_double_sausage_mcmuffin",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double Sausage McMuffin",
     emoji: "🥪",
     category: "Breakfast",
@@ -408,9 +409,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_double_sausage_mcmuffin_egg",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Double Sausage McMuffin with Egg",
     emoji: "🥪",
     category: "Breakfast",
@@ -424,9 +425,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_chicken_muffin",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Chicken Muffin",
     emoji: "🥪",
     category: "Breakfast",
@@ -440,9 +441,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_chicken_muffin_egg",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Chicken Muffin with Egg",
     emoji: "🥪",
     category: "Breakfast",
@@ -456,9 +457,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_scrambled_egg_chicken",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Scrambled Egg Burger with Chicken",
     emoji: "🥪",
     category: "Breakfast",
@@ -472,9 +473,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_scrambled_egg_sausage",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Scrambled Egg Burger with Sausage",
     emoji: "🥪",
     category: "Breakfast",
@@ -488,9 +489,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_hotcakes",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Hotcakes",
     emoji: "🥞",
     category: "Breakfast",
@@ -504,9 +505,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_hotcakes_sausage",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Hotcakes with Sausage",
     emoji: "🥞",
     category: "Breakfast",
@@ -520,9 +521,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_big_breakfast",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Big Breakfast",
     emoji: "🍳",
     category: "Breakfast",
@@ -537,9 +538,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_breakfast_deluxe",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Breakfast Deluxe",
     emoji: "🍳",
     category: "Breakfast",
@@ -553,9 +554,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_breakfast_wrap_ham",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Breakfast Wrap (Chicken Ham)",
     emoji: "🌯",
     category: "Breakfast",
@@ -569,9 +570,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_breakfast_wrap_sausage",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Breakfast Wrap (Chicken Sausage)",
     emoji: "🌯",
     category: "Breakfast",
@@ -585,9 +586,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_breakfast_burger_sausage",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Breakfast Burger (Sausage)",
     emoji: "🥪",
     category: "Breakfast",
@@ -601,9 +602,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "mcd_breakfast_burger_ham",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Breakfast Burger (Chicken Ham)",
     emoji: "🥪",
     category: "Breakfast",
@@ -617,9 +618,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "mcd_chicken_bacon_egg_mcmuffin",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Chicken Bacon & Egg McMuffin",
     emoji: "🥪",
     category: "Breakfast",
@@ -633,9 +634,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "mcd_nuggets_20pc",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Chicken McNuggets (20pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -649,9 +650,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_milo_iced_s",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Iced Milo (S)",
     emoji: "🥛",
     category: "Drinks",
@@ -665,9 +666,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_milo_iced_m",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Iced Milo (M)",
     emoji: "🥛",
     category: "Drinks",
@@ -681,9 +682,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_milo_hot",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Hot Milo",
     emoji: "🥛",
     category: "Drinks",
@@ -697,9 +698,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_coffee",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Premium Roast Coffee",
     emoji: "☕",
     category: "Drinks",
@@ -713,9 +714,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_americano",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Americano",
     emoji: "☕",
     category: "Drinks",
@@ -729,9 +730,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_iced_americano",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Iced Americano",
     emoji: "☕",
     category: "Drinks",
@@ -745,9 +746,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_latte",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Latte",
     emoji: "☕",
     category: "Drinks",
@@ -761,9 +762,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_iced_latte",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Iced Latte",
     emoji: "☕",
     category: "Drinks",
@@ -777,9 +778,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_cappuccino",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Cappuccino",
     emoji: "☕",
     category: "Drinks",
@@ -793,9 +794,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_oreo_mcflurry",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Oreo McFlurry",
     emoji: "🍦",
     category: "Desserts",
@@ -810,9 +811,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "mcd_hot_fudge_sundae",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Hot Fudge Sundae",
     emoji: "🍦",
     category: "Desserts",
@@ -826,9 +827,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_strawberry_sundae",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Strawberry Sundae",
     emoji: "🍦",
     category: "Desserts",
@@ -842,9 +843,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_vanilla_cone",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Vanilla Cone",
     emoji: "🍦",
     category: "Desserts",
@@ -858,9 +859,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_apple_pie",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Apple Pie",
     emoji: "🥧",
     category: "Desserts",
@@ -874,9 +875,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_hash_brown",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Hash Brown",
     emoji: "🥔",
     category: "Breakfast",
@@ -890,9 +891,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "mcd_corn",
-    outletId: "mcd",
+    brandId: "mcd",
     name: "Corn Cup",
     emoji: "🌽",
     category: "Breakfast",
@@ -906,9 +907,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "kfc_orig_1pc",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Original Recipe Chicken (1 pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -923,9 +924,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kfc_crispy_1pc",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Hot & Crispy Chicken (1 pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -939,9 +940,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "kfc_popcorn",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Popcorn Chicken (Regular)",
     emoji: "🍿",
     category: "Chicken",
@@ -956,9 +957,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kfc_zinger",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Zinger Burger",
     emoji: "🌶️",
     category: "Burgers",
@@ -973,9 +974,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kfc_twister",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Twister (Original)",
     emoji: "🌯",
     category: "Burgers",
@@ -989,9 +990,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "kfc_coleslaw",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Coleslaw",
     emoji: "🥗",
     category: "Sides",
@@ -1006,9 +1007,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "kfc_mashed_potato",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Mashed Potato",
     emoji: "🥔",
     category: "Sides",
@@ -1023,9 +1024,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "kfc_corn",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Corn on the Cob",
     emoji: "🌽",
     category: "Sides",
@@ -1040,9 +1041,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "kfc_2pc_meal",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "2-pc Chicken Meal",
     emoji: "🍗",
     category: "Meals",
@@ -1058,9 +1059,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kfc_zinger_meal",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Zinger Burger Meal",
     emoji: "🌶️",
     category: "Meals",
@@ -1076,9 +1077,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kfc_snack_plate",
-    outletId: "kfc",
+    brandId: "kfc",
     name: "Snack Plate",
     emoji: "🍱",
     category: "Meals",
@@ -1094,9 +1095,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_whopper",
-    outletId: "bk",
+    brandId: "bk",
     name: "Whopper",
     emoji: "🍔",
     category: "Burgers",
@@ -1111,9 +1112,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_double_whopper",
-    outletId: "bk",
+    brandId: "bk",
     name: "Double Whopper",
     emoji: "🍔",
     category: "Burgers",
@@ -1127,9 +1128,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_chicken_royale",
-    outletId: "bk",
+    brandId: "bk",
     name: "Chicken Royale",
     emoji: "🍗",
     category: "Burgers",
@@ -1144,9 +1145,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_mushroom_swiss",
-    outletId: "bk",
+    brandId: "bk",
     name: "Mushroom Swiss Burger",
     emoji: "🍄",
     category: "Burgers",
@@ -1160,9 +1161,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_onion_rings",
-    outletId: "bk",
+    brandId: "bk",
     name: "Onion Rings (Regular)",
     emoji: "🧅",
     category: "Sides",
@@ -1178,9 +1179,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_fries_m",
-    outletId: "bk",
+    brandId: "bk",
     name: "Classic Fries (M)",
     emoji: "🍟",
     category: "Sides",
@@ -1196,9 +1197,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_sundae",
-    outletId: "bk",
+    brandId: "bk",
     name: "Chocolate Sundae",
     emoji: "🍫",
     category: "Desserts",
@@ -1213,9 +1214,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_whopper_jr",
-    outletId: "bk",
+    brandId: "bk",
     name: "Whopper Jr",
     emoji: "🍔",
     category: "Burgers",
@@ -1231,9 +1232,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_tendercrisp",
-    outletId: "bk",
+    brandId: "bk",
     name: "TenderCrisp",
     emoji: "🍗",
     category: "Burgers",
@@ -1246,12 +1247,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "bk_big_fish",
-    outletId: "bk",
+    brandId: "bk",
     name: "BK Big Fish",
     emoji: "🐟",
     category: "Burgers",
@@ -1264,12 +1264,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "bk_fries_s",
-    outletId: "bk",
+    brandId: "bk",
     name: "Classic Fries (S)",
     emoji: "🍟",
     category: "Sides",
@@ -1284,9 +1283,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_fries_l",
-    outletId: "bk",
+    brandId: "bk",
     name: "Classic Fries (L)",
     emoji: "🍟",
     category: "Sides",
@@ -1301,9 +1300,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_nuggets_6",
-    outletId: "bk",
+    brandId: "bk",
     name: "Chicken Nuggets (6 pc)",
     emoji: "🍗",
     category: "Sides",
@@ -1319,9 +1318,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_nuggets_9",
-    outletId: "bk",
+    brandId: "bk",
     name: "Chicken Nuggets (9 pc)",
     emoji: "🍗",
     category: "Sides",
@@ -1336,9 +1335,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_apple_pie",
-    outletId: "bk",
+    brandId: "bk",
     name: "Apple Pie",
     emoji: "🥧",
     category: "Desserts",
@@ -1354,9 +1353,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bk_soft_serve",
-    outletId: "bk",
+    brandId: "bk",
     name: "Soft Serve Cone",
     emoji: "🍦",
     category: "Desserts",
@@ -1373,9 +1372,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_whopper_meal",
-    outletId: "bk",
+    brandId: "bk",
     name: "Whopper Meal",
     emoji: "🍔",
     category: "Meals",
@@ -1391,9 +1390,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bk_tendercrisp_meal",
-    outletId: "bk",
+    brandId: "bk",
     name: "TenderCrisp Meal",
     emoji: "🍗",
     category: "Meals",
@@ -1406,12 +1405,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sub_chicken_breast",
-    outletId: "subway",
+    brandId: "subway",
     name: "Chicken Breast (6\")",
     emoji: "🍗",
     category: "6-inch Subs",
@@ -1426,9 +1424,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sub_roast_beef",
-    outletId: "subway",
+    brandId: "subway",
     name: "Roast Beef (6\")",
     emoji: "🥩",
     category: "6-inch Subs",
@@ -1442,9 +1440,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "sub_tuna",
-    outletId: "subway",
+    brandId: "subway",
     name: "Tuna (6\")",
     emoji: "🐟",
     category: "6-inch Subs",
@@ -1459,9 +1457,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sub_veggie_delight",
-    outletId: "subway",
+    brandId: "subway",
     name: "Veggie Delight (6\")",
     emoji: "🥗",
     category: "6-inch Subs",
@@ -1476,9 +1474,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "sub_egg_mayo",
-    outletId: "subway",
+    brandId: "subway",
     name: "Egg Mayo (6\")",
     emoji: "🥚",
     category: "6-inch Subs",
@@ -1493,9 +1491,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "sub_meatball",
-    outletId: "subway",
+    brandId: "subway",
     name: "Meatball Marinara (6\")",
     emoji: "🍝",
     category: "6-inch Subs",
@@ -1510,9 +1508,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sub_chicken_breast_ft",
-    outletId: "subway",
+    brandId: "subway",
     name: "Chicken Breast (Footlong)",
     emoji: "🍗",
     category: "Footlong Subs",
@@ -1526,9 +1524,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "sub_chicken_salad",
-    outletId: "subway",
+    brandId: "subway",
     name: "Chicken Breast Salad",
     emoji: "🥗",
     category: "Salads",
@@ -1543,9 +1541,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "sub_chicken_breast_meal",
-    outletId: "subway",
+    brandId: "subway",
     name: "Chicken Breast Sub Meal (6\")",
     emoji: "🥖",
     category: "Meals",
@@ -1560,9 +1558,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sub_tuna_meal",
-    outletId: "subway",
+    brandId: "subway",
     name: "Tuna Sub Meal (6\")",
     emoji: "🐟",
     category: "Meals",
@@ -1574,12 +1572,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ock_curry_puff_chicken",
-    outletId: "old_chang_kee",
+    brandId: "old_chang_kee",
     name: "Curry Puff (Chicken)",
     emoji: "🥟",
     category: "Curry Puffs",
@@ -1594,9 +1591,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ock_curry_puff_egg",
-    outletId: "old_chang_kee",
+    brandId: "old_chang_kee",
     name: "Curry Puff (Egg)",
     emoji: "🥚",
     category: "Curry Puffs",
@@ -1611,9 +1608,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "ock_chicken_roll",
-    outletId: "old_chang_kee",
+    brandId: "old_chang_kee",
     name: "Chicken 'O'",
     emoji: "🍢",
     category: "Rolls & Sticks",
@@ -1628,9 +1625,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ock_otah_stick",
-    outletId: "old_chang_kee",
+    brandId: "old_chang_kee",
     name: "Otah Stick",
     emoji: "🐟",
     category: "Rolls & Sticks",
@@ -1645,9 +1642,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ock_curry_puff_sardine",
-    outletId: "old_chang_kee",
+    brandId: "old_chang_kee",
     name: "Curry Puff (Sardine)",
     emoji: "🐟",
     category: "Curry Puffs",
@@ -1661,9 +1658,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "ock_nuggets",
-    outletId: "old_chang_kee",
+    brandId: "old_chang_kee",
     name: "Chicken Nuggets (6 pcs)",
     emoji: "🍗",
     category: "Snacks",
@@ -1677,9 +1674,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "yk_kaya_toast_thin",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Kaya Butter Toast (Thin)",
     emoji: "🍞",
     category: "Toast",
@@ -1694,9 +1691,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yk_kaya_toast_thick",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Kaya Butter Toast (Thick)",
     emoji: "🍞",
     category: "Toast",
@@ -1711,9 +1708,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yk_french_toast",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "French Toast",
     emoji: "🍳",
     category: "Toast",
@@ -1727,9 +1724,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "yk_soft_eggs",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Soft-Boiled Eggs (2 pcs)",
     emoji: "🥚",
     category: "Eggs",
@@ -1745,9 +1742,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yk_kopi",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Kopi (Coffee with Condensed Milk)",
     emoji: "☕",
     category: "Drinks",
@@ -1762,9 +1759,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yk_teh",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Teh (Tea with Condensed Milk)",
     emoji: "🍵",
     category: "Drinks",
@@ -1778,9 +1775,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "yk_set_a",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Set A (2 Toast + 2 Eggs + Drink)",
     emoji: "🍽️",
     category: "Sets",
@@ -1795,9 +1792,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yk_set_b",
-    outletId: "ya_kun",
+    brandId: "ya_kun",
     name: "Set B (French Toast + 2 Eggs + Drink)",
     emoji: "🍽️",
     category: "Sets",
@@ -1809,12 +1806,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "bt_floss_bun",
-    outletId: "breadtalk",
+    brandId: "breadtalk",
     name: "Pork Floss Bun",
     emoji: "🥐",
     category: "Savoury Buns",
@@ -1827,9 +1823,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bt_cheese_sausage",
-    outletId: "breadtalk",
+    brandId: "breadtalk",
     name: "Cheese Sausage Bun",
     emoji: "🌭",
     category: "Savoury Buns",
@@ -1844,9 +1840,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bt_tuna_mayo",
-    outletId: "breadtalk",
+    brandId: "breadtalk",
     name: "Tuna Mayo Bun",
     emoji: "🐟",
     category: "Savoury Buns",
@@ -1860,9 +1856,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bt_cocktail_bun",
-    outletId: "breadtalk",
+    brandId: "breadtalk",
     name: "Cocktail Bun",
     emoji: "🫐",
     category: "Sweet Buns",
@@ -1877,9 +1873,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bt_raisin_walnut_slice",
-    outletId: "breadtalk",
+    brandId: "breadtalk",
     name: "Raisin Walnut Loaf (per slice)",
     emoji: "🍞",
     category: "Loaves",
@@ -1894,9 +1890,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "bt_chicken_floss",
-    outletId: "breadtalk",
+    brandId: "breadtalk",
     name: "Chicken Floss Bun",
     emoji: "🥐",
     category: "Savoury Buns",
@@ -1910,9 +1906,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gc_milk_tea_m",
-    outletId: "gong_cha",
+    brandId: "gong_cha",
     name: "Milk Tea (M, 0% sugar)",
     emoji: "🧋",
     category: "Milk Tea",
@@ -1928,9 +1924,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gc_brown_sugar_m",
-    outletId: "gong_cha",
+    brandId: "gong_cha",
     name: "Brown Sugar Milk Tea (M)",
     emoji: "🍮",
     category: "Milk Tea",
@@ -1946,9 +1942,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gc_taro_m",
-    outletId: "gong_cha",
+    brandId: "gong_cha",
     name: "Taro Milk Tea (M)",
     emoji: "🟣",
     category: "Milk Tea",
@@ -1964,9 +1960,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gc_matcha_latte_m",
-    outletId: "gong_cha",
+    brandId: "gong_cha",
     name: "Matcha Latte (M)",
     emoji: "🍵",
     category: "Specialty",
@@ -1981,9 +1977,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gc_mango_green_m",
-    outletId: "gong_cha",
+    brandId: "gong_cha",
     name: "Mango Green Tea (M)",
     emoji: "🥭",
     category: "Fruit Tea",
@@ -1999,9 +1995,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gc_wintermelon_m",
-    outletId: "gong_cha",
+    brandId: "gong_cha",
     name: "Wintermelon Tea (M)",
     emoji: "🍈",
     category: "Fruit Tea",
@@ -2017,9 +2013,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "7e_hotdog",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Big Bite Hot Dog",
     emoji: "🌭",
     category: "Hot Food",
@@ -2032,9 +2028,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "7e_chicken_pie",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Chicken Pie",
     emoji: "🥧",
     category: "Hot Food",
@@ -2049,9 +2045,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "7e_tuna_sandwich",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Tuna Sandwich",
     emoji: "🥪",
     category: "Sandwiches & Onigiri",
@@ -2064,9 +2060,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "7e_onigiri_tuna",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Onigiri — Tuna Mayo",
     emoji: "🍙",
     category: "Sandwiches & Onigiri",
@@ -2079,9 +2075,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "7e_onigiri_salmon",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Onigiri — Salmon",
     emoji: "🍙",
     category: "Sandwiches & Onigiri",
@@ -2093,9 +2089,9 @@ export const FOOD_OPTIONS = [
     compatibleWith: [],
     confidence: "estimated"
   },
-{
+  {
     id: "7e_boiled_eggs",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Hard-Boiled Eggs (2 pcs)",
     emoji: "🥚",
     category: "Snacks",
@@ -2111,9 +2107,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "7e_slurpee_m",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Slurpee (M)",
     emoji: "🧊",
     category: "Drinks",
@@ -2128,9 +2124,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "7e_greek_yogurt",
-    outletId: "7eleven",
+    brandId: "7eleven",
     name: "Greek Yogurt (Meiji)",
     emoji: "🫙",
     category: "Chilled",
@@ -2145,9 +2141,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "grain_grain_s_curry_chicken_stew_and_buns",
-    outletId: "grain",
+    brandId: "grain",
     name: "Grain's Curry Chicken Stew (and Buns)",
     emoji: "🍗",
     category: "Mains",
@@ -2160,9 +2156,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_marinara_fish_pasta",
-    outletId: "grain",
+    brandId: "grain",
     name: "Marinara Fish Pasta",
     emoji: "🐟",
     category: "Mains",
@@ -2175,9 +2171,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_ayam_kampung_masak_merah",
-    outletId: "grain",
+    brandId: "grain",
     name: "Ayam Kampung Masak Merah",
     emoji: "🥘",
     category: "Mains",
@@ -2192,9 +2188,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_grilled_farm_fresh_chicken",
-    outletId: "grain",
+    brandId: "grain",
     name: "Grilled Farm Fresh Chicken",
     emoji: "🍗",
     category: "Mains",
@@ -2209,9 +2205,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_honey_duo_mustard_chicken",
-    outletId: "grain",
+    brandId: "grain",
     name: "Honey Duo Mustard Chicken",
     emoji: "🍗",
     category: "Mains",
@@ -2226,9 +2222,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_mentai_mayonnaise_aburi_salmon",
-    outletId: "grain",
+    brandId: "grain",
     name: "Mentai Mayonnaise Aburi Salmon",
     emoji: "🐟",
     category: "Mains",
@@ -2241,9 +2237,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_basil_thunder_tea_rice",
-    outletId: "grain",
+    brandId: "grain",
     name: "Basil Thunder Tea Rice",
     emoji: "🍵",
     category: "Mains",
@@ -2258,9 +2254,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_thai_fiesta_salad",
-    outletId: "grain",
+    brandId: "grain",
     name: "Thai Fiesta Salad",
     emoji: "🥗",
     category: "Mains",
@@ -2277,9 +2273,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_impossible_ground_beef_hamburg_with_japanese_curry",
-    outletId: "grain",
+    brandId: "grain",
     name: "Impossible Ground Beef Hamburg with Japanese Curry",
     emoji: "🥘",
     category: "Mains",
@@ -2295,9 +2291,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "grain_grilled_forest_mushroom_salad",
-    outletId: "grain",
+    brandId: "grain",
     name: "Grilled Forest Mushroom Salad",
     emoji: "🥗",
     category: "Sides",
@@ -2311,12 +2307,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "low_carb"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_piri_piri_chicken_bites",
-    outletId: "grain",
+    brandId: "grain",
     name: "Piri-piri Chicken Bites",
     emoji: "🍗",
     category: "Sides",
@@ -2329,12 +2324,11 @@ export const FOOD_OPTIONS = [
       "low_carb",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_ondeh_ondeh_pandan_cake",
-    outletId: "grain",
+    brandId: "grain",
     name: "Ondeh Ondeh Pandan Cake",
     emoji: "🍰",
     category: "Desserts",
@@ -2346,12 +2340,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_greek_yoghurt_granola_cup",
-    outletId: "grain",
+    brandId: "grain",
     name: "Greek Yoghurt Granola Cup",
     emoji: "🍰",
     category: "Desserts",
@@ -2363,12 +2356,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_seasonal_fruit_parcel",
-    outletId: "grain",
+    brandId: "grain",
     name: "Seasonal Fruit Parcel",
     emoji: "🍰",
     category: "Desserts",
@@ -2381,12 +2373,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_bandung_gao",
-    outletId: "grain",
+    brandId: "grain",
     name: "Bandung Gao",
     emoji: "🍵",
     category: "Drinks",
@@ -2398,12 +2389,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_teh_c_floral",
-    outletId: "grain",
+    brandId: "grain",
     name: "Teh C Floral",
     emoji: "🍵",
     category: "Drinks",
@@ -2415,12 +2405,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_honey_yuzu_tea",
-    outletId: "grain",
+    brandId: "grain",
     name: "Honey Yuzu Tea",
     emoji: "🍵",
     category: "Drinks",
@@ -2432,12 +2421,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_white_cold_brew",
-    outletId: "grain",
+    brandId: "grain",
     name: "White Cold Brew",
     emoji: "🍵",
     category: "Drinks",
@@ -2450,12 +2438,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_straight_guava_oj",
-    outletId: "grain",
+    brandId: "grain",
     name: "Straight Guava OJ",
     emoji: "🍵",
     category: "Drinks",
@@ -2468,12 +2455,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "grain_watermelime_crush",
-    outletId: "grain",
+    brandId: "grain",
     name: "Watermelime Crush",
     emoji: "🍵",
     category: "Drinks",
@@ -2486,12 +2472,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "stuffd_chicken_kebab",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Chicken Kebab",
     emoji: "🌯",
     category: "Kebabs",
@@ -2506,9 +2491,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "stuffd_chicken_rendang_kebab",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Chicken Rendang Kebab",
     emoji: "🌯",
     category: "Kebabs",
@@ -2520,12 +2505,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "stuffd_beef_kebab",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Beef Kebab",
     emoji: "🌯",
     category: "Kebabs",
@@ -2537,12 +2521,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "stuffd_chicken_burrito",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Chicken Burrito",
     emoji: "🌯",
     category: "Burritos",
@@ -2557,9 +2540,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "stuffd_beef_burrito",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Beef Burrito",
     emoji: "🌯",
     category: "Burritos",
@@ -2571,12 +2554,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "stuffd_chicken_rendang_daily_bowl",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Chicken Rendang Daily Bowl",
     emoji: "🥣",
     category: "Daily Bowls",
@@ -2588,12 +2570,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "stuffd_chicken_daily_bowl",
-    outletId: "stuffd",
+    brandId: "stuffd",
     name: "Chicken Daily Bowl",
     emoji: "🥣",
     category: "Daily Bowls",
@@ -2605,12 +2586,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_mozza_burger",
-    outletId: "aw",
+    brandId: "aw",
     name: "Mozza Burger",
     emoji: "🍔",
     category: "Signature Burgers",
@@ -2626,9 +2606,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_double_mozza_burger",
-    outletId: "aw",
+    brandId: "aw",
     name: "Double Mozza Burger",
     emoji: "🍔",
     category: "Signature Burgers",
@@ -2641,12 +2621,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_double_cheeseburger",
-    outletId: "aw",
+    brandId: "aw",
     name: "Double Cheeseburger",
     emoji: "🍔",
     category: "Signature Burgers",
@@ -2662,9 +2641,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_cheeseburger",
-    outletId: "aw",
+    brandId: "aw",
     name: "Cheeseburger",
     emoji: "🍔",
     category: "Signature Burgers",
@@ -2676,12 +2655,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_cream_cheese_chicken_burger",
-    outletId: "aw",
+    brandId: "aw",
     name: "Cream Cheese Chicken Burger",
     emoji: "🥪",
     category: "Cream Cheese Burgers",
@@ -2696,9 +2674,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_cream_cheese_beef_burger",
-    outletId: "aw",
+    brandId: "aw",
     name: "Cream Cheese Beef Burger",
     emoji: "🍔",
     category: "Cream Cheese Burgers",
@@ -2710,12 +2688,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_chubby_chicken_sandwich",
-    outletId: "aw",
+    brandId: "aw",
     name: "Chubby Chicken Sandwich",
     emoji: "🥪",
     category: "Golden Aroma Chicken",
@@ -2730,9 +2707,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_spicy_chicken_sandwich",
-    outletId: "aw",
+    brandId: "aw",
     name: "Spicy Chicken Sandwich",
     emoji: "🥪",
     category: "Golden Aroma Chicken",
@@ -2744,12 +2721,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_coney_dog",
-    outletId: "aw",
+    brandId: "aw",
     name: "A&W Coney Dog (Beef)",
     emoji: "🌭",
     category: "All American Coney",
@@ -2764,9 +2740,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_chicken_coney_dog",
-    outletId: "aw",
+    brandId: "aw",
     name: "Chicken Coney Dog",
     emoji: "🌭",
     category: "All American Coney",
@@ -2781,9 +2757,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_coney_cheese_dog",
-    outletId: "aw",
+    brandId: "aw",
     name: "Coney Cheese Dog",
     emoji: "🌭",
     category: "All American Coney",
@@ -2795,12 +2771,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_golden_aroma_chicken_1pc",
-    outletId: "aw",
+    brandId: "aw",
     name: "Golden Aroma Chicken (1 pc)",
     emoji: "🍗",
     category: "Golden Aroma Chicken",
@@ -2816,9 +2791,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_chicken_strips_3pc",
-    outletId: "aw",
+    brandId: "aw",
     name: "Chubby Chicken Strips (3 pc)",
     emoji: "🍗",
     category: "Golden Aroma Chicken",
@@ -2831,12 +2806,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_curly_fries_regular",
-    outletId: "aw",
+    brandId: "aw",
     name: "Curly Fries (Regular)",
     emoji: "🍟",
     category: "Snacks",
@@ -2852,9 +2826,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_onion_rings",
-    outletId: "aw",
+    brandId: "aw",
     name: "Onion Rings",
     emoji: "🧅",
     category: "Snacks",
@@ -2867,12 +2841,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_beef_coney_cheese_fries",
-    outletId: "aw",
+    brandId: "aw",
     name: "Beef Coney Cheese Fries",
     emoji: "🍟",
     category: "Snacks",
@@ -2887,9 +2860,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_chicken_coney_cheese_fries",
-    outletId: "aw",
+    brandId: "aw",
     name: "Chicken Coney Cheese Fries",
     emoji: "🍟",
     category: "Snacks",
@@ -2901,12 +2874,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_waffle_plain",
-    outletId: "aw",
+    brandId: "aw",
     name: "Waffle (Plain)",
     emoji: "🧇",
     category: "Waffles & Desserts",
@@ -2919,12 +2891,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_waffle_ice_cream",
-    outletId: "aw",
+    brandId: "aw",
     name: "Waffle with Ice Cream",
     emoji: "🧇",
     category: "Waffles & Desserts",
@@ -2940,9 +2911,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_waffle_sundae",
-    outletId: "aw",
+    brandId: "aw",
     name: "Waffle Sundae",
     emoji: "🧇",
     category: "Waffles & Desserts",
@@ -2958,9 +2929,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_root_beer_regular",
-    outletId: "aw",
+    brandId: "aw",
     name: "Root Beer (Regular)",
     emoji: "🥤",
     category: "Drinks",
@@ -2977,9 +2948,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_root_beer_zero",
-    outletId: "aw",
+    brandId: "aw",
     name: "Root Beer Zero Sugar",
     emoji: "🥤",
     category: "Drinks",
@@ -2994,12 +2965,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "low_carb"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_root_beer_float",
-    outletId: "aw",
+    brandId: "aw",
     name: "Root Beer Float",
     emoji: "🥤",
     category: "Drinks",
@@ -3015,9 +2985,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_mozza_combo",
-    outletId: "aw",
+    brandId: "aw",
     name: "Mozza Burger Combo",
     emoji: "🍔",
     category: "Combo Meals",
@@ -3030,9 +3000,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_double_mozza_combo",
-    outletId: "aw",
+    brandId: "aw",
     name: "Double Mozza Burger Combo",
     emoji: "🍔",
     category: "Combo Meals",
@@ -3042,12 +3012,11 @@ export const FOOD_OPTIONS = [
     carbs: 116,
     fat: 67,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aw_cream_cheese_chicken_combo",
-    outletId: "aw",
+    brandId: "aw",
     name: "Cream Cheese Chicken Combo",
     emoji: "🍔",
     category: "Combo Meals",
@@ -3060,9 +3029,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aw_coney_dog_combo",
-    outletId: "aw",
+    brandId: "aw",
     name: "Coney Dog Combo",
     emoji: "🌭",
     category: "Combo Meals",
@@ -3075,9 +3044,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_1pc",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Chickenjoy (1 pc)",
     emoji: "🍗",
     category: "Chickenjoy",
@@ -3093,9 +3062,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_2pc",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Chickenjoy (2 pc) Meal",
     emoji: "🍗",
     category: "Chickenjoy",
@@ -3111,9 +3080,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_3pc",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Chickenjoy (3 pc) Meal",
     emoji: "🍗",
     category: "Chickenjoy",
@@ -3126,12 +3095,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "jollibee_chickenjoy_6pc_bucket",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Chickenjoy (6 pc) Bucket",
     emoji: "🍗",
     category: "Chickenjoy",
@@ -3147,9 +3115,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_8pc_bucket",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Chickenjoy (8 pc) Bucket",
     emoji: "🍗",
     category: "Chickenjoy",
@@ -3165,9 +3133,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_yumburger",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Yumburger",
     emoji: "🍔",
     category: "Burgers",
@@ -3179,12 +3147,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "jollibee_yumburger_with_cheese",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Yumburger with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -3199,9 +3166,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_champ_burger",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Champ Burger",
     emoji: "🍔",
     category: "Burgers",
@@ -3216,9 +3183,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_sandwich",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Chickenjoy Sandwich",
     emoji: "🥪",
     category: "Chicken Sandwiches",
@@ -3233,9 +3200,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_aloha_chicken_sandwich",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Aloha Chicken Sandwich",
     emoji: "🥪",
     category: "Chicken Sandwiches",
@@ -3250,9 +3217,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_jolly_spaghetti",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Jolly Spaghetti",
     emoji: "🍝",
     category: "Pasta",
@@ -3267,9 +3234,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_jolly_hotdog",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Jolly Hotdog",
     emoji: "🌭",
     category: "Hotdogs & Sides",
@@ -3281,12 +3248,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "jollibee_crispy_fries_regular",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Jolly Crispy Fries (Regular)",
     emoji: "🍟",
     category: "Sides",
@@ -3301,9 +3267,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_crispy_fries_large",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Jolly Crispy Fries (Large)",
     emoji: "🍟",
     category: "Sides",
@@ -3318,9 +3284,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_peach_mango_pie",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Peach Mango Pie",
     emoji: "🥧",
     category: "Desserts",
@@ -3335,9 +3301,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_coke_regular",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Coca-Cola (Regular)",
     emoji: "🥤",
     category: "Beverages",
@@ -3349,12 +3315,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "jollibee_pineapple_quencher",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Pineapple Quencher",
     emoji: "🍹",
     category: "Beverages",
@@ -3369,9 +3334,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_iced_tea",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Iced Tea",
     emoji: "🧋",
     category: "Beverages",
@@ -3383,12 +3348,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "jollibee_burger_steak",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Burger Steak",
     emoji: "🍽️",
     category: "Rice Meals",
@@ -3404,9 +3368,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_1pc_meal",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "1-pc Chickenjoy Meal",
     emoji: "🍗",
     category: "Meals",
@@ -3422,9 +3386,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_chickenjoy_2pc_meal",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "2-pc Chickenjoy Meal",
     emoji: "🍗",
     category: "Meals",
@@ -3440,9 +3404,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "jollibee_yumburger_meal",
-    outletId: "jollibee",
+    brandId: "jollibee",
     name: "Yumburger Meal",
     emoji: "🍔",
     category: "Meals",
@@ -3455,12 +3419,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tb_kaya_toast_thin",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Traditional Kaya Toast (Thin)",
     emoji: "🍞",
     category: "Toast",
@@ -3475,9 +3438,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_kaya_toast_thick",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Thick Kaya Toast",
     emoji: "🍞",
     category: "Toast",
@@ -3489,12 +3452,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tb_peanut_butter_toast",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Peanut Butter Kaya Toast (Thick)",
     emoji: "🥜",
     category: "Toast",
@@ -3509,9 +3471,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_french_toast",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "French Toast",
     emoji: "🍳",
     category: "Toast",
@@ -3526,9 +3488,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_soft_eggs",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Soft-Boiled Eggs (2 pcs)",
     emoji: "🥚",
     category: "Eggs",
@@ -3544,9 +3506,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_set_a",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Set A (2 Kaya Toast + 2 Eggs + Hot Drink)",
     emoji: "🍽️",
     category: "Sets",
@@ -3561,9 +3523,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_kopi_o",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Kopi O (Black Coffee with Sugar)",
     emoji: "☕",
     category: "Drinks",
@@ -3581,9 +3543,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_kopi",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Kopi (Coffee with Condensed Milk)",
     emoji: "☕",
     category: "Drinks",
@@ -3599,9 +3561,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_teh",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Teh (Tea with Condensed Milk)",
     emoji: "🍵",
     category: "Drinks",
@@ -3614,12 +3576,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tb_milo_dinosaur",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Milo Dinosaur",
     emoji: "🦕",
     category: "Drinks",
@@ -3635,9 +3596,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_laksa_lemak",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Laksa Lemak",
     emoji: "🥣",
     category: "Noodles & Rice",
@@ -3650,9 +3611,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_nasi_lemak",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Nasi Lemak Set",
     emoji: "🍛",
     category: "Noodles & Rice",
@@ -3665,9 +3626,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_mee_siam",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Mee Siam",
     emoji: "🍜",
     category: "Noodles & Rice",
@@ -3677,12 +3638,11 @@ export const FOOD_OPTIONS = [
     carbs: 68,
     fat: 10,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tb_set_a",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Set A (Toast + 2 Eggs + Drink)",
     emoji: "🍽️",
     category: "Sets",
@@ -3697,9 +3657,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tb_set_b",
-    outletId: "toast_box",
+    brandId: "toast_box",
     name: "Set B (French Toast + 2 Eggs + Drink)",
     emoji: "🍽️",
     category: "Sets",
@@ -3711,12 +3671,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_caffe_latte_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Caffè Latte (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3729,9 +3688,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_iced_caffe_latte_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Iced Caffè Latte (Tall)",
     emoji: "🧊",
     category: "Espresso Beverages",
@@ -3744,9 +3703,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_cappuccino_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Cappuccino (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3756,12 +3715,11 @@ export const FOOD_OPTIONS = [
     carbs: 16,
     fat: 12.4,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_flat_white_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Flat White (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3771,12 +3729,11 @@ export const FOOD_OPTIONS = [
     carbs: 15.6,
     fat: 11.7,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_caffe_americano_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Caffè Americano (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3786,12 +3743,11 @@ export const FOOD_OPTIONS = [
     carbs: 1.4,
     fat: 0,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_iced_americano_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Iced Americano (Tall)",
     emoji: "🧊",
     category: "Espresso Beverages",
@@ -3804,9 +3760,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_caffe_mocha_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Caffè Mocha (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3819,9 +3775,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_iced_mocha_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Iced Mocha (Tall)",
     emoji: "🧊",
     category: "Espresso Beverages",
@@ -3831,12 +3787,11 @@ export const FOOD_OPTIONS = [
     carbs: 33,
     fat: 23.4,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_vanilla_latte_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Vanilla Latte (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3849,9 +3804,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_iced_vanilla_latte_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Iced Vanilla Latte (Tall)",
     emoji: "🧊",
     category: "Espresso Beverages",
@@ -3861,12 +3816,11 @@ export const FOOD_OPTIONS = [
     carbs: 36.9,
     fat: 10.3,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_caramel_macchiato_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Caramel Macchiato (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3879,9 +3833,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_white_choc_mocha_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "White Chocolate Mocha (Tall)",
     emoji: "☕",
     category: "Espresso Beverages",
@@ -3891,12 +3845,11 @@ export const FOOD_OPTIONS = [
     carbs: 46.5,
     fat: 21.7,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_java_chip_frap_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Java Chip Frappuccino® (Tall)",
     emoji: "🍫",
     category: "Frappuccino",
@@ -3909,9 +3862,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_caramel_frap_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Caramel Frappuccino® (Tall)",
     emoji: "🍮",
     category: "Frappuccino",
@@ -3924,9 +3877,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_mocha_frap_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Mocha Frappuccino® (Tall)",
     emoji: "🍫",
     category: "Frappuccino",
@@ -3936,12 +3889,11 @@ export const FOOD_OPTIONS = [
     carbs: 33,
     fat: 11,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_matcha_creme_frap_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Matcha Crème Frappuccino® (Tall)",
     emoji: "🍵",
     category: "Frappuccino",
@@ -3954,9 +3906,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_dark_mocha_frap_tall",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Dark Mocha Frappuccino® (Tall)",
     emoji: "🍫",
     category: "Frappuccino",
@@ -3966,12 +3918,11 @@ export const FOOD_OPTIONS = [
     carbs: 35.9,
     fat: 13.8,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_ham_cheese_croissant",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Ham & Cheese Croissant",
     emoji: "🥐",
     category: "Food",
@@ -3984,9 +3935,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_rosemary_chicken_croissant",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Rosemary Chicken & Emmental Cheese Croissant",
     emoji: "🥐",
     category: "Food",
@@ -3996,12 +3947,11 @@ export const FOOD_OPTIONS = [
     carbs: 28.4,
     fat: 24,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_scrambled_egg_brioche",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Scrambled Egg & Cheese Brioche Sandwich",
     emoji: "🥚",
     category: "Food",
@@ -4014,9 +3964,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_chicken_ham_panwich",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Chicken Ham & Cheese Panwich",
     emoji: "🥪",
     category: "Food",
@@ -4026,12 +3976,11 @@ export const FOOD_OPTIONS = [
     carbs: 37.6,
     fat: 33,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_sriracha_chicken_pita",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Sriracha Chicken Whole Wheat Pita",
     emoji: "🌶️",
     category: "Food",
@@ -4041,12 +3990,11 @@ export const FOOD_OPTIONS = [
     carbs: 44.1,
     fat: 13.5,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_chicken_ham_crepe_wrap",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Chicken Ham & Cheese Egg Crepe Wrap",
     emoji: "🌯",
     category: "Food",
@@ -4059,9 +4007,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_buttery_croissant",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Buttery Croissant",
     emoji: "🥐",
     category: "Bakery",
@@ -4076,9 +4024,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sbux_almond_croissant",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Almond Croissant",
     emoji: "🥐",
     category: "Bakery",
@@ -4090,12 +4038,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_banana_walnut_muffin",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Banana Walnut Muffin",
     emoji: "🧁",
     category: "Bakery",
@@ -4107,12 +4054,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_blueberry_muffin",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Blueberry Crumble Muffin",
     emoji: "🧁",
     category: "Bakery",
@@ -4124,12 +4070,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sbux_bagel",
-    outletId: "starbucks_sg",
+    brandId: "starbucks_sg",
     name: "Bagels",
     emoji: "🥯",
     category: "Bakery",
@@ -4141,12 +4086,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_chicken_thigh_mild",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Thigh — Classic",
     emoji: "🍗",
     category: "Chicken",
@@ -4162,9 +4106,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_chicken_thigh_spicy",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Thigh — Spicy",
     emoji: "🌶️",
     category: "Chicken",
@@ -4180,9 +4124,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_chicken_leg_mild",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Leg — Classic",
     emoji: "🍗",
     category: "Chicken",
@@ -4195,12 +4139,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_chicken_leg_spicy",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Leg — Spicy",
     emoji: "🌶️",
     category: "Chicken",
@@ -4213,12 +4156,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_chicken_breast_mild",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Breast — Classic",
     emoji: "🍗",
     category: "Chicken",
@@ -4232,12 +4174,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_chicken_breast_spicy",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Breast — Spicy",
     emoji: "🌶️",
     category: "Chicken",
@@ -4251,12 +4192,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_chicken_wing_mild",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Wing — Classic",
     emoji: "🍗",
     category: "Chicken",
@@ -4269,12 +4209,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_chicken_wing_spicy",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Wing — Spicy",
     emoji: "🌶️",
     category: "Chicken",
@@ -4287,12 +4226,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_tenders_3pc",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Tenders (3pc)",
     emoji: "🍗",
     category: "Tenders",
@@ -4309,9 +4247,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_tenders_5pc",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Tenders (5pc)",
     emoji: "🍗",
     category: "Tenders",
@@ -4325,12 +4263,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "high_protein"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_classic_chicken_burger",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Classic Chicken Burger",
     emoji: "🍔",
     category: "Burgers",
@@ -4346,9 +4283,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_spicy_chicken_burger",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Spicy Chicken Burger",
     emoji: "🌶️",
     category: "Burgers",
@@ -4361,12 +4298,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_coleslaw_reg",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Coleslaw (Regular)",
     emoji: "🥗",
     category: "Sides",
@@ -4383,9 +4319,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_mashed_potato_gravy",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Mashed Potato with Gravy",
     emoji: "🥔",
     category: "Sides",
@@ -4401,9 +4337,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_cajun_rice",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Cajun Rice",
     emoji: "🍚",
     category: "Sides",
@@ -4419,9 +4355,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_corn_on_cob",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Corn on the Cob",
     emoji: "🌽",
     category: "Sides",
@@ -4437,12 +4373,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_red_beans_rice",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Red Beans & Rice",
     emoji: "🫘",
     category: "Sides",
@@ -4456,12 +4391,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pop_biscuit",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Buttermilk Biscuit",
     emoji: "🧁",
     category: "Sides",
@@ -4478,9 +4412,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_2pc_chicken_meal",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "2-pc Chicken Meal",
     emoji: "🍗",
     category: "Meals",
@@ -4496,9 +4430,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pop_chicken_sandwich_meal",
-    outletId: "popeyes",
+    brandId: "popeyes",
     name: "Chicken Sandwich Meal",
     emoji: "🥪",
     category: "Meals",
@@ -4514,9 +4448,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_quarter_breast",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "1/4 Chicken — Breast & Wing",
     emoji: "🍗",
     category: "Chicken",
@@ -4533,9 +4467,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_quarter_thigh_leg",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "1/4 Chicken — Thigh & Leg",
     emoji: "🍗",
     category: "Chicken",
@@ -4552,9 +4486,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_half_chicken",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "1/2 Chicken",
     emoji: "🍗",
     category: "Chicken",
@@ -4571,9 +4505,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_whole_chicken",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Whole Chicken",
     emoji: "🍗",
     category: "Chicken",
@@ -4587,12 +4521,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nan_breast_fillet_burger",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Chicken Breast Fillet Burger",
     emoji: "🍔",
     category: "Burgers",
@@ -4608,9 +4541,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_thigh_burger",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Chicken Thigh Burger",
     emoji: "🍔",
     category: "Burgers",
@@ -4623,12 +4556,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nan_pita_wrap",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Fino Pitta (Chicken Wrap)",
     emoji: "🫓",
     category: "Wraps",
@@ -4644,9 +4576,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_chicken_livers",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Chicken Livers",
     emoji: "🍲",
     category: "Starters",
@@ -4663,9 +4595,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_wings_4pc",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "PERi-PERi Chicken Wings (4 pc)",
     emoji: "🍗",
     category: "Starters",
@@ -4682,9 +4614,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_peri_chips",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "PERi-PERi Chips",
     emoji: "🍟",
     category: "Sides",
@@ -4701,9 +4633,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_corn_cob",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Corn on the Cob",
     emoji: "🌽",
     category: "Sides",
@@ -4721,9 +4653,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_coleslaw",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Coleslaw",
     emoji: "🥗",
     category: "Sides",
@@ -4738,12 +4670,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nan_garlic_bread",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Garlic Bread",
     emoji: "🍞",
     category: "Sides",
@@ -4757,12 +4688,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nan_portuguese_rice",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Portuguese Rice",
     emoji: "🍚",
     category: "Sides",
@@ -4777,12 +4707,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nan_quarter_thigh_plate",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "1/4 Chicken Plate — Thigh & Leg",
     emoji: "🍗",
     category: "Plates",
@@ -4795,9 +4724,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_quarter_breast_plate",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "1/4 Chicken Plate — Breast & Wing",
     emoji: "🍗",
     category: "Plates",
@@ -4807,12 +4736,11 @@ export const FOOD_OPTIONS = [
     carbs: 62,
     fat: 29,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nan_half_chicken_plate",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "1/2 Chicken Plate",
     emoji: "🍗",
     category: "Plates",
@@ -4825,9 +4753,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nan_burger_meal",
-    outletId: "nandos",
+    brandId: "nandos",
     name: "Chicken Breast Fillet Burger + Chips",
     emoji: "🍔",
     category: "Plates",
@@ -4837,12 +4765,11 @@ export const FOOD_OPTIONS = [
     carbs: 100,
     fat: 31,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ph_personal_pepperoni",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Personal Pan Pizza — Pepperoni",
     emoji: "🍕",
     category: "Personal Pizza",
@@ -4855,9 +4782,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ph_personal_hawaiian",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Personal Pan Pizza — Hawaiian",
     emoji: "🍕",
     category: "Personal Pizza",
@@ -4870,9 +4797,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ph_personal_mushroom",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Personal Pan Pizza — Mushroom",
     emoji: "🍕",
     category: "Personal Pizza",
@@ -4884,12 +4811,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ph_personal_bbq_chicken",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Personal Pan Pizza — BBQ Chicken",
     emoji: "🍕",
     category: "Personal Pizza",
@@ -4899,12 +4825,11 @@ export const FOOD_OPTIONS = [
     carbs: 72,
     fat: 24,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ph_super_supreme_slice",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Super Supreme (per slice, Medium)",
     emoji: "🍕",
     category: "Pizza — Medium",
@@ -4917,9 +4842,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ph_pepperoni_lovers_slice",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Pepperoni Lovers (per slice, Medium)",
     emoji: "🍕",
     category: "Pizza — Medium",
@@ -4932,9 +4857,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ph_hawaiian_slice",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Hawaiian (per slice, Medium)",
     emoji: "🍕",
     category: "Pizza — Medium",
@@ -4944,12 +4869,11 @@ export const FOOD_OPTIONS = [
     carbs: 28,
     fat: 9,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ph_bbq_chicken_slice",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "BBQ Chicken (per slice, Medium)",
     emoji: "🍕",
     category: "Pizza — Medium",
@@ -4959,12 +4883,11 @@ export const FOOD_OPTIONS = [
     carbs: 29,
     fat: 10,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ph_pasta_bolognese",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Baked Pasta — Bolognese",
     emoji: "🍝",
     category: "Pastas",
@@ -4977,9 +4900,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ph_pasta_creamy_mushroom",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Baked Pasta — Creamy Mushroom",
     emoji: "🍝",
     category: "Pastas",
@@ -4991,12 +4914,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ph_garlic_bread",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "5 Cheese Garlic Bread",
     emoji: "🧄",
     category: "Sides",
@@ -5011,9 +4933,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ph_wings_8pc",
-    outletId: "pizza_hut",
+    brandId: "pizza_hut",
     name: "Chicken Wings (8 pc)",
     emoji: "🍗",
     category: "Sides",
@@ -5026,9 +4948,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_chicken_pepperoni_slice",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Chicken Pepperoni (per slice, Regular)",
     emoji: "🍕",
     category: "Pizza — Regular",
@@ -5044,9 +4966,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_beef_mushroom_slice",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Beef & Mushroom (per slice, Regular)",
     emoji: "🍕",
     category: "Pizza — Regular",
@@ -5059,12 +4981,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dom_garden_fresh_slice",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Garden Fresh (per slice, Regular)",
     emoji: "🍕",
     category: "Pizza — Regular",
@@ -5078,12 +4999,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dom_bbq_chicken_slice",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "BBQ Chicken (per slice, Regular)",
     emoji: "🍕",
     category: "Pizza — Regular",
@@ -5099,9 +5019,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_double_decadence_slice",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Double Decadence (per slice, Regular)",
     emoji: "🍕",
     category: "Pizza — Regular",
@@ -5114,12 +5034,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dom_personal_chicken_pepperoni",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Personal Pizza — Chicken Pepperoni",
     emoji: "🍕",
     category: "Personal Pizza",
@@ -5135,9 +5054,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_personal_veg",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Personal Pizza — Garden Fresh",
     emoji: "🍕",
     category: "Personal Pizza",
@@ -5151,12 +5070,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dom_wings_4pc",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Chicken Wings (4 pc)",
     emoji: "🍗",
     category: "Sides",
@@ -5172,9 +5090,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_boneless_chicken_6pc",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Boneless Chicken (6 pc)",
     emoji: "🍗",
     category: "Sides",
@@ -5190,9 +5108,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_garlic_twists",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Garlic Twists (8 pc)",
     emoji: "🧄",
     category: "Sides",
@@ -5209,9 +5127,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_lava_cake",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Lava Cake (2 pc)",
     emoji: "🍫",
     category: "Desserts",
@@ -5228,9 +5146,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dom_pasta_bolognese",
-    outletId: "dominos",
+    brandId: "dominos",
     name: "Pasta — Bolognese",
     emoji: "🍝",
     category: "Pastas",
@@ -5243,12 +5161,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ws_wings_6pc_hot",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Classic Wings 6 pc — Classic Hot",
     emoji: "🍗",
     category: "Wings",
@@ -5264,9 +5181,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_wings_6pc_lemon_pepper",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Classic Wings 6 pc — Lemon Pepper",
     emoji: "🍗",
     category: "Wings",
@@ -5282,9 +5199,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_wings_6pc_garlic_parm",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Classic Wings 6 pc — Garlic Parmesan",
     emoji: "🍗",
     category: "Wings",
@@ -5297,12 +5214,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ws_wings_6pc_cajun",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Classic Wings 6 pc — Cajun",
     emoji: "🍗",
     category: "Wings",
@@ -5315,12 +5231,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ws_wings_6pc_mango_habanero",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Classic Wings 6 pc — Mango Habanero",
     emoji: "🌶️",
     category: "Wings",
@@ -5336,9 +5251,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_wings_10pc_hot",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Classic Wings 10 pc — Classic Hot",
     emoji: "🍗",
     category: "Wings",
@@ -5354,9 +5269,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_boneless_6pc_hot",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Boneless Wings 6 pc — Classic Hot",
     emoji: "🍗",
     category: "Wings",
@@ -5369,12 +5284,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ws_seasoned_fries_reg",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Seasoned Fries (Regular)",
     emoji: "🍟",
     category: "Sides",
@@ -5391,9 +5305,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_cajun_fries_reg",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Cajun Fries (Regular)",
     emoji: "🍟",
     category: "Sides",
@@ -5410,9 +5324,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_coleslaw",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Coleslaw",
     emoji: "🥗",
     category: "Sides",
@@ -5426,12 +5340,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ws_corn",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "Corn on the Cob",
     emoji: "🌽",
     category: "Sides",
@@ -5446,12 +5359,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ws_6pc_combo",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "6 Classic Wings Combo",
     emoji: "🍗",
     category: "Wing Combos",
@@ -5464,9 +5376,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_10pc_combo",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "10 Classic Wings Combo",
     emoji: "🍗",
     category: "Wing Combos",
@@ -5479,9 +5391,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ws_boneless_6pc_combo",
-    outletId: "wingstop",
+    brandId: "wingstop",
     name: "6 Boneless Wings Combo",
     emoji: "🍗",
     category: "Wing Combos",
@@ -5491,12 +5403,11 @@ export const FOOD_OPTIONS = [
     carbs: 95,
     fat: 44,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "gyg_burrito_chicken",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Burrito — Grilled Chicken",
     emoji: "🌯",
     category: "Burritos",
@@ -5512,9 +5423,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gyg_burrito_beef",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Burrito — Pulled Beef",
     emoji: "🌯",
     category: "Burritos",
@@ -5530,9 +5441,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gyg_bowl_chicken",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Bowl — Grilled Chicken",
     emoji: "🥗",
     category: "Bowls",
@@ -5549,9 +5460,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gyg_bowl_beef",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Bowl — Pulled Beef",
     emoji: "🥗",
     category: "Bowls",
@@ -5565,12 +5476,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "gyg_tacos_2pc_chicken",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Tacos 2 pc — Grilled Chicken",
     emoji: "🌮",
     category: "Tacos",
@@ -5586,9 +5496,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gyg_taco_1pc_chicken",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Taco 1 pc — Grilled Chicken",
     emoji: "🌮",
     category: "Tacos",
@@ -5601,12 +5511,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "gyg_quesadilla_chicken",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Quesadilla — Grilled Chicken",
     emoji: "🫓",
     category: "Quesadillas",
@@ -5619,12 +5528,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "gyg_nachos_chicken",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Nachos — Grilled Chicken",
     emoji: "🧀",
     category: "Nachos",
@@ -5637,12 +5545,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "gyg_chips_guac",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Chips & Guacamole",
     emoji: "🥑",
     category: "Sides",
@@ -5660,9 +5567,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gyg_churros",
-    outletId: "gyg",
+    brandId: "gyg",
     name: "Churros (3 pc)",
     emoji: "🍩",
     category: "Desserts",
@@ -5679,9 +5586,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_shackburger",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "ShackBurger",
     emoji: "🍔",
     category: "Burgers",
@@ -5694,9 +5601,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_double_shackburger",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Double ShackBurger",
     emoji: "🍔",
     category: "Burgers",
@@ -5709,9 +5616,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_smokeshack",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "SmokeShack",
     emoji: "🥓",
     category: "Burgers",
@@ -5724,9 +5631,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_shackmeister",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "ShackMeister",
     emoji: "🍄",
     category: "Burgers",
@@ -5736,12 +5643,11 @@ export const FOOD_OPTIONS = [
     carbs: 43,
     fat: 33,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_shroom_burger",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "'Shroom Burger",
     emoji: "🍄",
     category: "Burgers",
@@ -5753,12 +5659,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_chickn_shack",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Chick'n Shack",
     emoji: "🍗",
     category: "Burgers",
@@ -5771,9 +5676,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_chickn_bites_6pc",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Chick'n Bites (6 pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -5783,12 +5688,11 @@ export const FOOD_OPTIONS = [
     carbs: 26,
     fat: 20,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_crinkle_fries",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Crinkle Cut Fries",
     emoji: "🍟",
     category: "Sides",
@@ -5803,9 +5707,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_cheese_fries",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Cheese Fries",
     emoji: "🧀",
     category: "Sides",
@@ -5820,9 +5724,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_vanilla_shake",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Vanilla Shake",
     emoji: "🥛",
     category: "Shakes",
@@ -5837,9 +5741,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_chocolate_shake",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Chocolate Shake",
     emoji: "🍫",
     category: "Shakes",
@@ -5851,12 +5755,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_strawberry_shake",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Strawberry Shake",
     emoji: "🍓",
     category: "Shakes",
@@ -5868,12 +5771,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_shackburger_meal",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "ShackBurger Meal",
     emoji: "🍔",
     category: "Shack Meals",
@@ -5886,9 +5788,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_double_shackburger_meal",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Double ShackBurger Meal",
     emoji: "🍔",
     category: "Shack Meals",
@@ -5898,12 +5800,11 @@ export const FOOD_OPTIONS = [
     carbs: 136,
     fat: 69,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_smokeshack_meal",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "SmokeShack Meal",
     emoji: "🍔",
     category: "Shack Meals",
@@ -5916,9 +5817,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_chickn_shack_meal",
-    outletId: "shake_shack",
+    brandId: "shake_shack",
     name: "Chick'n Shack Meal",
     emoji: "🍔",
     category: "Shack Meals",
@@ -5928,12 +5829,11 @@ export const FOOD_OPTIONS = [
     carbs: 140,
     fat: 47,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_hamburger",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Hamburger",
     emoji: "🍔",
     category: "Burgers",
@@ -5943,12 +5843,11 @@ export const FOOD_OPTIONS = [
     carbs: 40,
     fat: 43,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_cheeseburger",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Cheeseburger",
     emoji: "🍔",
     category: "Burgers",
@@ -5961,9 +5860,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fg_bacon_cheeseburger",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Bacon Cheeseburger",
     emoji: "🥓",
     category: "Burgers",
@@ -5976,9 +5875,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fg_little_hamburger",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Little Hamburger",
     emoji: "🍔",
     category: "Burgers",
@@ -5988,12 +5887,11 @@ export const FOOD_OPTIONS = [
     carbs: 39,
     fat: 26,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_little_cheeseburger",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Little Cheeseburger",
     emoji: "🍔",
     category: "Burgers",
@@ -6006,9 +5904,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fg_veggie_sandwich",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Veggie Sandwich",
     emoji: "🥬",
     category: "Burgers",
@@ -6020,12 +5918,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_hot_dog",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Hot Dog",
     emoji: "🌭",
     category: "Hot Dogs",
@@ -6035,12 +5932,11 @@ export const FOOD_OPTIONS = [
     carbs: 40,
     fat: 32,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_fries_little",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Little Fries",
     emoji: "🍟",
     category: "Sides",
@@ -6052,12 +5948,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_fries_regular",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Regular Fries",
     emoji: "🍟",
     category: "Sides",
@@ -6072,9 +5967,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fg_large_fries",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Large Fries",
     emoji: "🍟",
     category: "Sides",
@@ -6086,12 +5981,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fg_vanilla_shake",
-    outletId: "five_guys",
+    brandId: "five_guys",
     name: "Vanilla Milkshake",
     emoji: "🥛",
     category: "Shakes",
@@ -6103,12 +5997,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "kk_original_glazed",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Original Glazed Doughnut",
     emoji: "🍩",
     category: "Classic Doughnuts",
@@ -6123,9 +6016,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_chocolate_iced",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Chocolate Iced Glazed",
     emoji: "🍩",
     category: "Classic Doughnuts",
@@ -6140,9 +6033,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_strawberry_sprinkles",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Strawberry Sprinkles",
     emoji: "🍓",
     category: "Classic Doughnuts",
@@ -6154,12 +6047,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "kk_chocolate_kreme_filled",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Chocolate Kreme Filled",
     emoji: "🍩",
     category: "Filled Doughnuts",
@@ -6174,9 +6066,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_original_kreme_filled",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Original Kreme Filled",
     emoji: "🍩",
     category: "Filled Doughnuts",
@@ -6188,12 +6080,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "kk_biscoff_kreme",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Biscoff Kreme Doughnut",
     emoji: "🍪",
     category: "Specialty Doughnuts",
@@ -6208,9 +6099,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_matcha",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Matcha Doughnut",
     emoji: "🍵",
     category: "Specialty Doughnuts",
@@ -6225,9 +6116,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_glazed_cruller",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Glazed Cruller",
     emoji: "🍩",
     category: "Classic Doughnuts",
@@ -6239,12 +6130,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "kk_dozen_original",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Dozen Original Glazed",
     emoji: "📦",
     category: "Boxes",
@@ -6259,9 +6149,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_hot_latte",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Original Glazed Hot Latte",
     emoji: "☕",
     category: "Beverages",
@@ -6276,9 +6166,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "kk_iced_latte",
-    outletId: "krispy_kreme",
+    brandId: "krispy_kreme",
     name: "Original Glazed Iced Latte",
     emoji: "🧋",
     category: "Beverages",
@@ -6290,12 +6180,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dd_glazed",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Glazed Doughnut",
     emoji: "🍩",
     category: "Classic Doughnuts",
@@ -6312,9 +6201,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_chocolate_frosted",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Chocolate Frosted Doughnut",
     emoji: "🍩",
     category: "Classic Doughnuts",
@@ -6331,9 +6220,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_strawberry_frosted",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Strawberry Frosted Doughnut",
     emoji: "🍓",
     category: "Classic Doughnuts",
@@ -6347,12 +6236,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dd_boston_kreme",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Boston Kreme",
     emoji: "🍩",
     category: "Filled Doughnuts",
@@ -6369,9 +6257,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_jelly",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Jelly Doughnut",
     emoji: "🍩",
     category: "Filled Doughnuts",
@@ -6385,12 +6273,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dd_munchkins_5pc",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Munchkins Doughnut Holes (5 pc)",
     emoji: "🍩",
     category: "Munchkins",
@@ -6407,9 +6294,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_original_coffee_med",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Original Blend Coffee (Medium)",
     emoji: "☕",
     category: "Coffee",
@@ -6426,9 +6313,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_caramel_latte_med",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Caramel Swirl Latte (Medium)",
     emoji: "☕",
     category: "Coffee",
@@ -6445,9 +6332,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_iced_coffee_med",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Iced Coffee (Medium)",
     emoji: "🧋",
     category: "Coffee",
@@ -6464,9 +6351,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dd_egg_cheese_croissant",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Egg & Cheese Croissant",
     emoji: "🥐",
     category: "Food",
@@ -6480,12 +6367,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dd_hash_browns",
-    outletId: "dunkin",
+    brandId: "dunkin",
     name: "Hash Browns (3 pc)",
     emoji: "🥔",
     category: "Food",
@@ -6502,9 +6388,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_original_pretzel",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Original Pretzel",
     emoji: "🥨",
     category: "Pretzels",
@@ -6521,9 +6407,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_cinnamon_sugar_pretzel",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Cinnamon Sugar Pretzel",
     emoji: "🥨",
     category: "Pretzels",
@@ -6540,9 +6426,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_almond_pretzel",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Almond Pretzel",
     emoji: "🥨",
     category: "Pretzels",
@@ -6556,12 +6442,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aa_cheese_pretzel",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Cheese Pretzel",
     emoji: "🧀",
     category: "Pretzels",
@@ -6578,9 +6463,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_garlic_pretzel",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Garlic Pretzel",
     emoji: "🧄",
     category: "Pretzels",
@@ -6594,12 +6479,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aa_sour_cream_onion_pretzel",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Sour Cream & Onion Pretzel",
     emoji: "🥨",
     category: "Pretzels",
@@ -6613,12 +6497,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aa_pretzel_dog",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Pretzel Dog",
     emoji: "🌭",
     category: "Pretzel Dogs",
@@ -6634,9 +6517,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_pretzel_bites",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Pretzel Bites (Original)",
     emoji: "🥨",
     category: "Pretzel Bites",
@@ -6653,9 +6536,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_cinnamon_sugar_bites",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Pretzel Bites (Cinnamon Sugar)",
     emoji: "🥨",
     category: "Pretzel Bites",
@@ -6669,12 +6552,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aa_nuggets_4pc",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Pretzel Nuggets (4 pc)",
     emoji: "🥨",
     category: "Pretzel Bites",
@@ -6688,12 +6570,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "aa_lemonade",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Dutch Ice Lemonade",
     emoji: "🍋",
     category: "Beverages",
@@ -6710,9 +6591,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "aa_dipping_cheese",
-    outletId: "auntie_annes",
+    brandId: "auntie_annes",
     name: "Cheese Dipping Sauce",
     emoji: "🧀",
     category: "Extras",
@@ -6729,9 +6610,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_orig_1pc_thigh",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Original Recipe — Thigh (1 pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -6747,9 +6628,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_orig_1pc_breast",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Original Recipe — Breast (1 pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -6762,12 +6643,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tc_spicy_1pc_thigh",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Spicy — Thigh (1 pc)",
     emoji: "🌶️",
     category: "Chicken",
@@ -6783,9 +6663,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_tenders_3pc",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Chicken Tenders (3 pc)",
     emoji: "🍗",
     category: "Chicken",
@@ -6801,9 +6681,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_chicken_sandwich",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Chicken Sandwich",
     emoji: "🍔",
     category: "Burgers",
@@ -6819,9 +6699,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_honey_butter_biscuit",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Honey Butter Biscuit",
     emoji: "🧇",
     category: "Sides",
@@ -6838,9 +6718,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_coleslaw",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Coleslaw",
     emoji: "🥗",
     category: "Sides",
@@ -6854,12 +6734,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tc_mashed_potato",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Mashed Potato & Gravy",
     emoji: "🥔",
     category: "Sides",
@@ -6872,12 +6751,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tc_fries_regular",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Seasoned Fries (Regular)",
     emoji: "🍟",
     category: "Sides",
@@ -6894,9 +6772,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_corn_cobette",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Corn Cobette",
     emoji: "🌽",
     category: "Sides",
@@ -6911,12 +6789,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tc_1pc_thigh_meal",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "1pc Chicken Meal (Thigh)",
     emoji: "🍗",
     category: "Meal Sets",
@@ -6929,9 +6806,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_1pc_breast_meal",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "1pc Chicken Meal (Breast)",
     emoji: "🍗",
     category: "Meal Sets",
@@ -6941,12 +6818,11 @@ export const FOOD_OPTIONS = [
     carbs: 91,
     fat: 47,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tc_tenders_meal",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Chicken Tenders (3pc) Meal",
     emoji: "🍗",
     category: "Meal Sets",
@@ -6959,9 +6835,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tc_sandwich_meal",
-    outletId: "texas_chicken",
+    brandId: "texas_chicken",
     name: "Chicken Sandwich Meal",
     emoji: "🍔",
     category: "Meal Sets",
@@ -6971,12 +6847,11 @@ export const FOOD_OPTIONS = [
     carbs: 134,
     fat: 41,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cj_western_bacon",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Western Bacon Cheeseburger",
     emoji: "🍔",
     category: "Burgers",
@@ -6989,9 +6864,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cj_famous_star",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Famous Star with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -7004,9 +6879,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cj_super_star",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Super Star with Cheese",
     emoji: "🍔",
     category: "Burgers",
@@ -7016,12 +6891,11 @@ export const FOOD_OPTIONS = [
     carbs: 52,
     fat: 55,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cj_beyond_famous_star",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Beyond Famous Star",
     emoji: "🌱",
     category: "Burgers",
@@ -7033,12 +6907,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cj_chicken_sandwich",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Charbroiled Chicken Club Sandwich",
     emoji: "🍗",
     category: "Burgers",
@@ -7048,12 +6921,11 @@ export const FOOD_OPTIONS = [
     carbs: 44,
     fat: 24,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cj_fries_medium",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Natural-Cut Fries (Medium)",
     emoji: "🍟",
     category: "Sides",
@@ -7068,9 +6940,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cj_onion_rings",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Fried Zucchini / Onion Rings",
     emoji: "🧅",
     category: "Sides",
@@ -7082,12 +6954,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cj_vanilla_shake",
-    outletId: "carl_jr",
+    brandId: "carl_jr",
     name: "Vanilla Shake",
     emoji: "🥛",
     category: "Shakes",
@@ -7099,12 +6970,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mos_mos_burger",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "MOS Burger",
     emoji: "🍔",
     category: "Burgers",
@@ -7120,9 +6990,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_teriyaki_chicken",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Teriyaki Chicken Burger",
     emoji: "🍔",
     category: "Burgers",
@@ -7138,9 +7008,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_spicy_chicken",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Spicy Chicken Burger",
     emoji: "🌶️",
     category: "Burgers",
@@ -7156,9 +7026,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_fish_burger",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Fish Burger",
     emoji: "🐟",
     category: "Burgers",
@@ -7171,12 +7041,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mos_rice_burger_chicken",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Rice Burger — Teriyaki Chicken",
     emoji: "🍚",
     category: "Rice Burgers",
@@ -7193,9 +7062,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_onion_rings",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Onion Rings",
     emoji: "🧅",
     category: "Sides",
@@ -7212,9 +7081,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_fries",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "French Fries",
     emoji: "🍟",
     category: "Sides",
@@ -7228,12 +7097,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mos_corn_soup",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Corn Soup",
     emoji: "🌽",
     category: "Sides",
@@ -7247,12 +7115,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mos_mos_burger_set",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "MOS Burger Set",
     emoji: "🍔",
     category: "Sets",
@@ -7265,9 +7132,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_teriyaki_chicken_set",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Teriyaki Chicken Burger Set",
     emoji: "🍔",
     category: "Sets",
@@ -7280,9 +7147,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mos_spicy_chicken_set",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Spicy Chicken Burger Set",
     emoji: "🍔",
     category: "Sets",
@@ -7292,12 +7159,11 @@ export const FOOD_OPTIONS = [
     carbs: 123,
     fat: 32,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mos_rice_burger_set",
-    outletId: "mos_burger",
+    brandId: "mos_burger",
     name: "Rice Burger Set (Teriyaki Chicken)",
     emoji: "🍚",
     category: "Sets",
@@ -7310,9 +7176,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_beef_bowl_reg",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Beef Bowl (Regular)",
     emoji: "🍱",
     category: "Beef Bowls",
@@ -7328,9 +7194,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_beef_bowl_large",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Beef Bowl (Large)",
     emoji: "🍱",
     category: "Beef Bowls",
@@ -7343,12 +7209,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "yoshi_chicken_bowl_reg",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Chicken Bowl (Regular)",
     emoji: "🍗",
     category: "Chicken Bowls",
@@ -7364,9 +7229,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_cheese_beef_bowl",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Cheese Beef Bowl (Regular)",
     emoji: "🧀",
     category: "Beef Bowls",
@@ -7382,9 +7247,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_salmon_bowl",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Salmon Bowl (Regular)",
     emoji: "🐟",
     category: "Other Bowls",
@@ -7397,12 +7262,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "yoshi_egg",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Onsen Egg",
     emoji: "🥚",
     category: "Extras",
@@ -7420,9 +7284,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_miso_soup",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Miso Soup",
     emoji: "🍜",
     category: "Sides",
@@ -7439,9 +7303,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_potato_salad",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Japanese Potato Salad",
     emoji: "🥔",
     category: "Sides",
@@ -7455,12 +7319,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "yoshi_beef_bowl_set_reg",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Beef Bowl Set (Regular)",
     emoji: "🥩",
     category: "Bowl Sets",
@@ -7473,9 +7336,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_beef_bowl_set_large",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Beef Bowl Set (Large)",
     emoji: "🥩",
     category: "Bowl Sets",
@@ -7485,12 +7348,11 @@ export const FOOD_OPTIONS = [
     carbs: 122,
     fat: 27,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "yoshi_chicken_bowl_set",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Chicken Bowl Set (Regular)",
     emoji: "🍗",
     category: "Bowl Sets",
@@ -7503,9 +7365,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "yoshi_cheese_beef_set",
-    outletId: "yoshinoya",
+    brandId: "yoshinoya",
     name: "Cheese Beef Bowl Set",
     emoji: "🧀",
     category: "Bowl Sets",
@@ -7515,12 +7377,11 @@ export const FOOD_OPTIONS = [
     carbs: 95,
     fat: 34,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "saiz_margherita",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Margherita Pizza",
     emoji: "🍕",
     category: "Pizza",
@@ -7535,9 +7396,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "saiz_pepperoni",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Pepperoni Pizza",
     emoji: "🍕",
     category: "Pizza",
@@ -7550,9 +7411,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "saiz_aglio_olio",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Aglio e Olio Spaghetti",
     emoji: "🍝",
     category: "Pasta",
@@ -7567,9 +7428,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "saiz_carbonara",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Carbonara",
     emoji: "🍝",
     category: "Pasta",
@@ -7582,9 +7443,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "saiz_bolognese",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Meat Sauce Spaghetti (Bolognese)",
     emoji: "🍝",
     category: "Pasta",
@@ -7594,12 +7455,11 @@ export const FOOD_OPTIONS = [
     carbs: 100,
     fat: 26,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "saiz_grilled_chicken",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Grilled Chicken with Herb",
     emoji: "🍗",
     category: "Mains",
@@ -7609,12 +7469,11 @@ export const FOOD_OPTIONS = [
     carbs: 4,
     fat: 18,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "saiz_caesar_salad",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Caesar Salad",
     emoji: "🥗",
     category: "Salads",
@@ -7626,12 +7485,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "saiz_tiramisu",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Tiramisu",
     emoji: "🍰",
     category: "Desserts",
@@ -7646,9 +7504,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "saiz_garlic_bread",
-    outletId: "saizeriya",
+    brandId: "saizeriya",
     name: "Garlic Bread",
     emoji: "🧄",
     category: "Sides",
@@ -7663,9 +7521,66 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
+    id: "saiz_milano_doria",
+    brandId: "saizeriya",
+    name: "Milano Doria",
+    emoji: "🍚",
+    category: "Doria & Rice",
+    price: 5.9,
+    calories: 547,
+    protein: 17,
+    carbs: 76,
+    fat: 20,
+    compatibleWith: [],
+    confidence: "estimated"
+  },
+  {
+    id: "saiz_hamburger",
+    brandId: "saizeriya",
+    name: "Hamburger (Beef, Demi Sauce)",
+    emoji: "🍔",
+    category: "Grill",
+    price: 6.5,
+    calories: 540,
+    protein: 31,
+    carbs: 17,
+    fat: 39,
+    compatibleWith: [],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "saiz_arugula_chicken_salad",
+    brandId: "saizeriya",
+    name: "Arugula Chicken Salad",
+    emoji: "🥗",
+    category: "Salads",
+    price: 4.9,
+    calories: 235,
+    protein: 27,
+    carbs: 14,
+    fat: 8,
+    compatibleWith: [],
+    confidence: "estimated"
+  },
+  {
+    id: "saiz_sauteed_spinach_bacon",
+    brandId: "saizeriya",
+    name: "Sautéed Spinach with Bacon",
+    emoji: "🥬",
+    category: "Appetiser",
+    price: 4.9,
+    calories: 223,
+    protein: 9,
+    carbs: 9,
+    fat: 17,
+    compatibleWith: [],
+    confidence: "estimated"
+  },
+  {
     id: "genki_salmon_nigiri",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Salmon Nigiri (2 pc)",
     emoji: "🍣",
     category: "Nigiri",
@@ -7680,9 +7595,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "genki_tuna_nigiri",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Tuna Nigiri (2 pc)",
     emoji: "🍣",
     category: "Nigiri",
@@ -7697,9 +7612,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "genki_ebi_nigiri",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Prawn Nigiri (2 pc)",
     emoji: "🍤",
     category: "Nigiri",
@@ -7711,12 +7626,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "genki_salmon_aburi",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Aburi Salmon (2 pc)",
     emoji: "🔥",
     category: "Aburi",
@@ -7731,9 +7645,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "genki_salmon_roll",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Salmon Roll (6 pc)",
     emoji: "🍣",
     category: "Rolls",
@@ -7748,9 +7662,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "genki_spicy_tuna_roll",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Spicy Tuna Roll (6 pc)",
     emoji: "🌶️",
     category: "Rolls",
@@ -7762,12 +7676,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "genki_edamame",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Edamame",
     emoji: "🫘",
     category: "Sides",
@@ -7785,9 +7698,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "genki_miso_soup",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Miso Soup",
     emoji: "🍜",
     category: "Sides",
@@ -7800,12 +7713,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "genki_karaage",
-    outletId: "genki_sushi",
+    brandId: "genki_sushi",
     name: "Chicken Karaage (3 pc)",
     emoji: "🍗",
     category: "Hot Food",
@@ -7820,9 +7732,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_latte",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Café Latte (Medium)",
     emoji: "☕",
     category: "Hot Coffee",
@@ -7839,9 +7751,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_cappuccino",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Cappuccino (Medium)",
     emoji: "☕",
     category: "Hot Coffee",
@@ -7858,9 +7770,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_americano",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Americano (Medium)",
     emoji: "☕",
     category: "Hot Coffee",
@@ -7876,12 +7788,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mccafe_mocha",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Mocha (Medium)",
     emoji: "☕",
     category: "Hot Coffee",
@@ -7898,9 +7809,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_frappe_mocha",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Frappe Mocha (Medium)",
     emoji: "🥤",
     category: "Blended",
@@ -7917,9 +7828,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_frappe_caramel",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Frappe Caramel (Medium)",
     emoji: "🥤",
     category: "Blended",
@@ -7933,12 +7844,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mccafe_chocolate_muffin",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Double Chocolate Muffin",
     emoji: "🧁",
     category: "Bakery",
@@ -7955,9 +7865,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_blueberry_muffin",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Blueberry Muffin",
     emoji: "🧁",
     category: "Bakery",
@@ -7971,12 +7881,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mccafe_choc_chip_cookie",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Chocolate Chip Cookie",
     emoji: "🍪",
     category: "Bakery",
@@ -7993,9 +7902,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mccafe_hot_chocolate",
-    outletId: "mccafe",
+    brandId: "mccafe",
     name: "Hot Chocolate (Medium)",
     emoji: "🍫",
     category: "Hot Drinks",
@@ -8009,12 +7918,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cbtl_ice_blended_original",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Original Ice Blended® (Medium)",
     emoji: "🥤",
     category: "Ice Blended",
@@ -8030,9 +7938,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cbtl_ice_blended_chocolate",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Chocolate Ice Blended® (Medium)",
     emoji: "🥤",
     category: "Ice Blended",
@@ -8048,9 +7956,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cbtl_ice_blended_matcha",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Matcha Latte Ice Blended® (Medium)",
     emoji: "🍵",
     category: "Ice Blended",
@@ -8066,9 +7974,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cbtl_latte",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Latte (Medium)",
     emoji: "☕",
     category: "Hot Coffee",
@@ -8084,9 +7992,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cbtl_cold_brew",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Cold Brew Coffee (Medium)",
     emoji: "🧊",
     category: "Cold Coffee",
@@ -8101,12 +8009,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cbtl_earl_grey",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Earl Grey Tea Latte (Hot)",
     emoji: "🫖",
     category: "Tea",
@@ -8119,12 +8026,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cbtl_croissant",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Butter Croissant",
     emoji: "🥐",
     category: "Bakery",
@@ -8140,9 +8046,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cbtl_choc_cake",
-    outletId: "coffee_bean",
+    brandId: "coffee_bean",
     name: "Chocolate Fudge Cake (slice)",
     emoji: "🍰",
     category: "Cakes",
@@ -8158,9 +8064,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "astons_ribeye",
-    outletId: "astons",
+    brandId: "astons",
     name: "Ribeye Steak (180g)",
     emoji: "🥩",
     category: "Steaks",
@@ -8176,9 +8082,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "astons_sirloin",
-    outletId: "astons",
+    brandId: "astons",
     name: "Sirloin Steak (180g)",
     emoji: "🥩",
     category: "Steaks",
@@ -8194,9 +8100,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "astons_chicken_chop",
-    outletId: "astons",
+    brandId: "astons",
     name: "Chicken Chop",
     emoji: "🍗",
     category: "Chicken",
@@ -8211,9 +8117,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "astons_fish_chips",
-    outletId: "astons",
+    brandId: "astons",
     name: "Fish & Chips",
     emoji: "🐟",
     category: "Seafood",
@@ -8225,12 +8131,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "astons_salmon",
-    outletId: "astons",
+    brandId: "astons",
     name: "Grilled Salmon",
     emoji: "🐟",
     category: "Seafood",
@@ -8246,9 +8151,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "astons_mashed_potato",
-    outletId: "astons",
+    brandId: "astons",
     name: "Mashed Potato",
     emoji: "🥔",
     category: "Sides",
@@ -8264,9 +8169,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "astons_coleslaw",
-    outletId: "astons",
+    brandId: "astons",
     name: "Coleslaw",
     emoji: "🥗",
     category: "Sides",
@@ -8279,12 +8184,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "astons_fries",
-    outletId: "astons",
+    brandId: "astons",
     name: "Steak Fries",
     emoji: "🍟",
     category: "Sides",
@@ -8300,9 +8204,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_chicken_mushroom",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Chicken & Mushroom Soup (Large)",
     emoji: "🥣",
     category: "Soups",
@@ -8317,9 +8221,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_cream_mushroom",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Cream of Mushroom (Large)",
     emoji: "🍄",
     category: "Soups",
@@ -8335,9 +8239,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_tomato_basil",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Tomato Basil Soup (Large)",
     emoji: "🍅",
     category: "Soups",
@@ -8354,9 +8258,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_lobster_bisque",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Lobster Bisque (Large)",
     emoji: "🦞",
     category: "Soups",
@@ -8371,9 +8275,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_minestrone",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Minestrone (Large)",
     emoji: "🥣",
     category: "Soups",
@@ -8387,12 +8291,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "vegan"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_clam_chowder",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "New England Clam Chowder (Large)",
     emoji: "🥣",
     category: "Soups",
@@ -8407,9 +8310,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_sourdough",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Sourdough Bread (side)",
     emoji: "🍞",
     category: "Sides",
@@ -8425,9 +8328,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_caesar_salad",
-    outletId: "soup_spoon",
+    brandId: "soup_spoon",
     name: "Caesar Salad",
     emoji: "🥗",
     category: "Salads",
@@ -8440,12 +8343,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tdc_chicken_rice",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Grilled Chicken Thigh Bowl (Brown Rice)",
     emoji: "🥗",
     category: "Signature Bowls",
@@ -8461,9 +8363,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tdc_salmon_rice",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Teriyaki Salmon Bowl (Brown Rice)",
     emoji: "🐟",
     category: "Signature Bowls",
@@ -8478,9 +8380,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tdc_beef_rice",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Slow-Cooked Beef Bowl (Brown Rice)",
     emoji: "🥩",
     category: "Signature Bowls",
@@ -8496,9 +8398,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tdc_chicken_quinoa",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Grilled Chicken Thigh Bowl (Quinoa)",
     emoji: "🥗",
     category: "Signature Bowls",
@@ -8511,12 +8413,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tdc_salad_base",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Grilled Chicken Salad (Greens base)",
     emoji: "🥗",
     category: "Salads",
@@ -8529,12 +8430,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tdc_tofu_bowl",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Pan-Fried Tofu Bowl (Brown Rice)",
     emoji: "🌱",
     category: "Signature Bowls",
@@ -8548,12 +8448,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "vegan"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "tdc_protein_smoothie",
-    outletId: "daily_cut",
+    brandId: "daily_cut",
     name: "Protein Smoothie",
     emoji: "🥤",
     category: "Drinks",
@@ -8566,12 +8465,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pacai_classic_bowl",
-    outletId: "project_acai",
+    brandId: "project_acai",
     name: "Classic Açaí Bowl",
     emoji: "🫐",
     category: "Açaí Bowls",
@@ -8587,9 +8485,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pacai_protein_bowl",
-    outletId: "project_acai",
+    brandId: "project_acai",
     name: "Protein Açaí Bowl",
     emoji: "💪",
     category: "Açaí Bowls",
@@ -8605,9 +8503,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pacai_pitaya_bowl",
-    outletId: "project_acai",
+    brandId: "project_acai",
     name: "Pitaya (Dragon Fruit) Bowl",
     emoji: "🐉",
     category: "Açaí Bowls",
@@ -8625,9 +8523,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pacai_green_bowl",
-    outletId: "project_acai",
+    brandId: "project_acai",
     name: "Green Detox Bowl",
     emoji: "🥝",
     category: "Açaí Bowls",
@@ -8642,12 +8540,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "pacai_smoothie_acai",
-    outletId: "project_acai",
+    brandId: "project_acai",
     name: "Açaí Smoothie (regular)",
     emoji: "🥤",
     category: "Smoothies",
@@ -8665,9 +8562,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pacai_pb_bowl",
-    outletId: "project_acai",
+    brandId: "project_acai",
     name: "Peanut Butter Açaí Bowl",
     emoji: "🥜",
     category: "Açaí Bowls",
@@ -8680,12 +8577,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "liho_cheese_ggt",
-    outletId: "liho",
+    brandId: "liho",
     name: "Cheese Green Tea (M, 70% sugar)",
     emoji: "🧋",
     category: "Cheese Tea",
@@ -8701,9 +8597,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "liho_cheese_oolong",
-    outletId: "liho",
+    brandId: "liho",
     name: "Cheese Oolong Tea (M, 70% sugar)",
     emoji: "🧋",
     category: "Cheese Tea",
@@ -8719,9 +8615,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "liho_milk_tea",
-    outletId: "liho",
+    brandId: "liho",
     name: "Classic Milk Tea (M, 70% sugar, with pearls)",
     emoji: "🧋",
     category: "Milk Tea",
@@ -8737,9 +8633,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "liho_brown_sugar_milk",
-    outletId: "liho",
+    brandId: "liho",
     name: "Brown Sugar Pearl Fresh Milk (M)",
     emoji: "🧋",
     category: "Fresh Milk",
@@ -8755,9 +8651,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "liho_matcha_milk",
-    outletId: "liho",
+    brandId: "liho",
     name: "Matcha Latte (M, 70% sugar)",
     emoji: "🍵",
     category: "Milk Tea",
@@ -8773,9 +8669,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "liho_passionfruit_tea",
-    outletId: "liho",
+    brandId: "liho",
     name: "Passionfruit Green Tea (M, 70% sugar)",
     emoji: "🍹",
     category: "Fruit Tea",
@@ -8789,12 +8685,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "vegan"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "koi_oolong_milk_tea",
-    outletId: "koi",
+    brandId: "koi",
     name: "KOI Milk Tea (M, 70% sugar, with pearls)",
     emoji: "🧋",
     category: "Milk Tea",
@@ -8811,9 +8706,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "koi_3q",
-    outletId: "koi",
+    brandId: "koi",
     name: "3Q Milk Tea (M, 70% sugar)",
     emoji: "🧋",
     category: "Milk Tea",
@@ -8830,9 +8725,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "koi_fresh_milk_tea",
-    outletId: "koi",
+    brandId: "koi",
     name: "Fresh Milk Tea (M, 70% sugar)",
     emoji: "🧋",
     category: "Fresh Milk Tea",
@@ -8849,9 +8744,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "koi_matcha_milk",
-    outletId: "koi",
+    brandId: "koi",
     name: "Matcha Milk (M, 70% sugar)",
     emoji: "🍵",
     category: "Milk Tea",
@@ -8868,9 +8763,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "koi_passionfruit_green",
-    outletId: "koi",
+    brandId: "koi",
     name: "Passionfruit, Peach & Green Tea (M, 70% sugar)",
     emoji: "🍹",
     category: "Fruit Tea",
@@ -8888,9 +8783,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "koi_brown_sugar",
-    outletId: "koi",
+    brandId: "koi",
     name: "Brown Sugar Milk with Pearl (M)",
     emoji: "🧋",
     category: "Fresh Milk",
@@ -8907,9 +8802,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "chagee_jasmine_milk",
-    outletId: "chagee",
+    brandId: "chagee",
     name: "Jasmine Milk Green Tea (M, standard sugar)",
     emoji: "🍵",
     category: "Milk Tea",
@@ -8925,9 +8820,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "chagee_bawang_oolong",
-    outletId: "chagee",
+    brandId: "chagee",
     name: "BAWANG Oolong Milk Tea (M, standard sugar)",
     emoji: "🍵",
     category: "Milk Tea",
@@ -8943,9 +8838,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "chagee_cheese_milk_tea",
-    outletId: "chagee",
+    brandId: "chagee",
     name: "Cheese Milk Tea (M, standard sugar)",
     emoji: "🧋",
     category: "Cheese Tea",
@@ -8961,9 +8856,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "chagee_puremax_latte",
-    outletId: "chagee",
+    brandId: "chagee",
     name: "Puremax Tea Latte (M, standard sugar)",
     emoji: "☕",
     category: "Tea Latte",
@@ -8976,12 +8871,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "chagee_fruit_tea",
-    outletId: "chagee",
+    brandId: "chagee",
     name: "Seasonal Fruit Tea (M)",
     emoji: "🍹",
     category: "Fruit Tea",
@@ -8995,12 +8889,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "vegan"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mixue_soft_serve",
-    outletId: "mixue",
+    brandId: "mixue",
     name: "Vanilla Soft Serve",
     emoji: "🍦",
     category: "Ice Cream",
@@ -9017,9 +8910,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mixue_milk_tea",
-    outletId: "mixue",
+    brandId: "mixue",
     name: "Classic Milk Tea (M, standard sugar, with pearls)",
     emoji: "🧋",
     category: "Milk Tea",
@@ -9036,9 +8929,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mixue_strawberry_lemonade",
-    outletId: "mixue",
+    brandId: "mixue",
     name: "Strawberry Lemonade (M)",
     emoji: "🍓",
     category: "Fruit Tea",
@@ -9056,9 +8949,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mixue_mango_tea",
-    outletId: "mixue",
+    brandId: "mixue",
     name: "Mango Green Tea (M)",
     emoji: "🥭",
     category: "Fruit Tea",
@@ -9076,9 +8969,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "mixue_matcha_latte",
-    outletId: "mixue",
+    brandId: "mixue",
     name: "Matcha Latte (M)",
     emoji: "🍵",
     category: "Milk Tea",
@@ -9092,12 +8985,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "mixue_sundae",
-    outletId: "mixue",
+    brandId: "mixue",
     name: "Chocolate Soft Serve Sundae",
     emoji: "🍨",
     category: "Ice Cream",
@@ -9111,12 +9003,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dosirak_bulgogi_set",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Bulgogi Beef Rice Set",
     emoji: "🍱",
     category: "Rice Sets",
@@ -9131,9 +9022,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dosirak_spicy_chicken_set",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Spicy Chicken Rice Set",
     emoji: "🌶️",
     category: "Rice Sets",
@@ -9148,9 +9039,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dosirak_kimchi_fried_rice",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Kimchi Fried Rice",
     emoji: "🍚",
     category: "Rice",
@@ -9165,9 +9056,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dosirak_army_stew",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Budae Jjigae (Army Stew)",
     emoji: "🍲",
     category: "Stews",
@@ -9180,9 +9071,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dosirak_tteokbokki",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Tteokbokki",
     emoji: "🌶️",
     category: "Sides",
@@ -9197,9 +9088,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "dosirak_japchae",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Japchae (Glass Noodles)",
     emoji: "🍜",
     category: "Noodles",
@@ -9211,12 +9102,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "no_pork"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "dosirak_kimchi_side",
-    outletId: "dosirak",
+    brandId: "dosirak",
     name: "Kimchi (side)",
     emoji: "🥬",
     category: "Sides",
@@ -9231,12 +9121,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "makisan_classic_6pc",
-    outletId: "makisan",
+    brandId: "makisan",
     name: "Classic Sushi Roll (6 pc)",
     emoji: "🌯",
     category: "Classic Rolls",
@@ -9252,9 +9141,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "makisan_salmon_6pc",
-    outletId: "makisan",
+    brandId: "makisan",
     name: "Salmon Sushi Roll (6 pc)",
     emoji: "🍣",
     category: "Classic Rolls",
@@ -9270,9 +9159,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "makisan_spicy_tuna_6pc",
-    outletId: "makisan",
+    brandId: "makisan",
     name: "Spicy Tuna Roll (6 pc)",
     emoji: "🌶️",
     category: "Classic Rolls",
@@ -9288,9 +9177,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "makisan_veg_6pc",
-    outletId: "makisan",
+    brandId: "makisan",
     name: "Vegetable Roll (6 pc)",
     emoji: "🥑",
     category: "Classic Rolls",
@@ -9305,12 +9194,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "vegan"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "makisan_sashimi_bowl",
-    outletId: "makisan",
+    brandId: "makisan",
     name: "Sashimi Don (Rice Bowl)",
     emoji: "🍱",
     category: "Rice Bowls",
@@ -9326,9 +9214,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "makisan_edamame",
-    outletId: "makisan",
+    brandId: "makisan",
     name: "Edamame",
     emoji: "🫘",
     category: "Sides",
@@ -9344,12 +9232,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nb_chicken_bowl",
-    outletId: "nourish_bowl",
+    brandId: "nourish_bowl",
     name: "Grilled Chicken Power Bowl",
     emoji: "🥗",
     category: "Power Bowls",
@@ -9365,9 +9252,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nb_salmon_bowl",
-    outletId: "nourish_bowl",
+    brandId: "nourish_bowl",
     name: "Salmon Teriyaki Bowl",
     emoji: "🐟",
     category: "Power Bowls",
@@ -9382,9 +9269,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nb_vegan_bowl",
-    outletId: "nourish_bowl",
+    brandId: "nourish_bowl",
     name: "Vegan Buddha Bowl",
     emoji: "🌱",
     category: "Power Bowls",
@@ -9402,9 +9289,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "nb_smoothie",
-    outletId: "nourish_bowl",
+    brandId: "nourish_bowl",
     name: "Green Smoothie",
     emoji: "🥤",
     category: "Smoothies",
@@ -9419,12 +9306,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "nb_beef_bowl",
-    outletId: "nourish_bowl",
+    brandId: "nourish_bowl",
     name: "Teriyaki Beef Bowl",
     emoji: "🥩",
     category: "Power Bowls",
@@ -9437,12 +9323,11 @@ export const FOOD_OPTIONS = [
       "no_pork",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sfk_signature_bowl",
-    outletId: "superfood_kitchen",
+    brandId: "superfood_kitchen",
     name: "Superfood Signature Bowl",
     emoji: "🥬",
     category: "Superfood Bowls",
@@ -9458,9 +9343,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sfk_chicken_bowl",
-    outletId: "superfood_kitchen",
+    brandId: "superfood_kitchen",
     name: "Grilled Chicken Superfood Bowl",
     emoji: "🍗",
     category: "Superfood Bowls",
@@ -9476,9 +9361,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sfk_açai_bowl",
-    outletId: "superfood_kitchen",
+    brandId: "superfood_kitchen",
     name: "Açaí Power Bowl",
     emoji: "🫐",
     category: "Superfood Bowls",
@@ -9495,9 +9380,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sfk_detox_salad",
-    outletId: "superfood_kitchen",
+    brandId: "superfood_kitchen",
     name: "Detox Kale Salad",
     emoji: "🥗",
     category: "Salads",
@@ -9512,12 +9397,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sfk_protein_smoothie",
-    outletId: "superfood_kitchen",
+    brandId: "superfood_kitchen",
     name: "Protein Power Smoothie",
     emoji: "🥤",
     category: "Smoothies",
@@ -9533,9 +9417,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "boost_mango_magic",
-    outletId: "boost_juice",
+    brandId: "boost_juice",
     name: "Mango Magic (Original)",
     emoji: "🥭",
     category: "Smoothies",
@@ -9550,9 +9434,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "boost_all_berry_bang",
-    outletId: "boost_juice",
+    brandId: "boost_juice",
     name: "All Berry Bang (Original)",
     emoji: "🫐",
     category: "Smoothies",
@@ -9567,9 +9451,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "boost_strawberry_squeeze",
-    outletId: "boost_juice",
+    brandId: "boost_juice",
     name: "Strawberry Squeeze (Original)",
     emoji: "🍓",
     category: "Smoothies",
@@ -9581,12 +9465,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "boost_protein_supreme",
-    outletId: "boost_juice",
+    brandId: "boost_juice",
     name: "Protein Supreme (Original)",
     emoji: "💪",
     category: "Protein & Energy",
@@ -9601,9 +9484,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "boost_watermelon_lychee_crush",
-    outletId: "boost_juice",
+    brandId: "boost_juice",
     name: "Watermelon Lychee Crush (Original)",
     emoji: "🍉",
     category: "Crushes",
@@ -9619,9 +9502,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cheers_treats_roast_chicken_sandwich",
-    outletId: "cheers",
+    brandId: "cheers",
     name: "Treats Roasted Chicken with Herbs Sandwich",
     emoji: "🥪",
     category: "Sandwiches",
@@ -9636,9 +9519,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "cheers_treats_egg_mayo_sandwich",
-    outletId: "cheers",
+    brandId: "cheers",
     name: "Treats Egg Mayo Sandwich",
     emoji: "🥚",
     category: "Sandwiches",
@@ -9654,9 +9537,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cheers_treats_honey_chicken_ham_sandwich",
-    outletId: "cheers",
+    brandId: "cheers",
     name: "Treats Honey Chicken Ham Sandwich",
     emoji: "🥪",
     category: "Sandwiches",
@@ -9668,12 +9551,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cheers_treats_chicken_rendang_bento",
-    outletId: "cheers",
+    brandId: "cheers",
     name: "Treats Chicken Rendang Biryani Rice",
     emoji: "🍱",
     category: "Bento & Rice",
@@ -9688,9 +9570,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cheers_treats_ayam_bakar_bento",
-    outletId: "cheers",
+    brandId: "cheers",
     name: "Treats Ayam Bakar & Braised Cabbage",
     emoji: "🍱",
     category: "Bento & Rice",
@@ -9703,12 +9585,11 @@ export const FOOD_OPTIONS = [
       "halal",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cheers_chicken_hotdog",
-    outletId: "cheers",
+    brandId: "cheers",
     name: "Chicken Hot Dog",
     emoji: "🌭",
     category: "Hot Food",
@@ -9723,9 +9604,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fpx_treats_chicken_rice_bento",
-    outletId: "fairprice_xpress",
+    brandId: "fairprice_xpress",
     name: "Treats Chicken Rice Bento",
     emoji: "🍱",
     category: "Bento & Rice",
@@ -9741,9 +9622,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fpx_grab_go_tuna_sandwich",
-    outletId: "fairprice_xpress",
+    brandId: "fairprice_xpress",
     name: "Grab & Go Tuna Sandwich",
     emoji: "🥪",
     category: "Sandwiches",
@@ -9758,9 +9639,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fpx_yoghurt_parfait",
-    outletId: "fairprice_xpress",
+    brandId: "fairprice_xpress",
     name: "Yoghurt Parfait",
     emoji: "🍨",
     category: "Chilled Snacks",
@@ -9772,12 +9653,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fpx_fresh_fruit_cup",
-    outletId: "fairprice_xpress",
+    brandId: "fairprice_xpress",
     name: "Fresh Fruit Salad Cup",
     emoji: "🍓",
     category: "Chilled Snacks",
@@ -9792,12 +9672,11 @@ export const FOOD_OPTIONS = [
       "gluten_free",
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fpx_chicken_skewer",
-    outletId: "fairprice_xpress",
+    brandId: "fairprice_xpress",
     name: "Chicken Skewer (per stick)",
     emoji: "🍢",
     category: "Hot Food",
@@ -9813,9 +9692,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fpx_hard_boiled_eggs",
-    outletId: "fairprice_xpress",
+    brandId: "fairprice_xpress",
     name: "Hard Boiled Eggs (2 pcs)",
     emoji: "🥚",
     category: "Chilled Snacks",
@@ -9830,12 +9709,11 @@ export const FOOD_OPTIONS = [
       "gluten_free",
       "keto"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_tuna_san",
-    outletId: "saladstop",
+    brandId: "saladstop",
     name: "Tuna San (Signature Bowl)",
     emoji: "🐟",
     category: "Signature Bowls",
@@ -9851,9 +9729,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "ss_hail_caesar",
-    outletId: "saladstop",
+    brandId: "saladstop",
     name: "Hail Caesar (Signature Bowl)",
     emoji: "🥗",
     category: "Signature Bowls",
@@ -9866,9 +9744,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_harvest_bowl",
-    outletId: "saladstop",
+    brandId: "saladstop",
     name: "Harvest Bowl (Warm)",
     emoji: "🍲",
     category: "Warm Protein Bowls",
@@ -9883,9 +9761,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_sabai_sabai",
-    outletId: "saladstop",
+    brandId: "saladstop",
     name: "Sabai Sabai Grain Bowl",
     emoji: "🌾",
     category: "Warm Protein Bowls",
@@ -9900,9 +9778,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "ss_smoosha_acai",
-    outletId: "saladstop",
+    brandId: "saladstop",
     name: "Smoosha Açaí Bowl",
     emoji: "🫐",
     category: "Smoosha Bowls",
@@ -9918,9 +9796,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "ss_cyo_starter",
-    outletId: "saladstop",
+    brandId: "saladstop",
     name: "CYO Starter Bowl",
     emoji: "🥙",
     category: "Create Your Own",
@@ -9936,9 +9814,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "pb_almond_croissant",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Almond Croissant",
     emoji: "🥐",
     category: "Pastries",
@@ -9953,9 +9831,9 @@ export const FOOD_OPTIONS = [
     confidence: "verified",
     isPopular: true
   },
-{
+  {
     id: "pb_croissant",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Butter Croissant",
     emoji: "🥐",
     category: "Pastries",
@@ -9969,9 +9847,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "pb_ham_cheese_baguette",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Ham & Cheese Baguette",
     emoji: "🥖",
     category: "Sandwiches",
@@ -9984,9 +9862,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "pb_tuna_sandwich",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Tuna Sandwich",
     emoji: "🥪",
     category: "Sandwiches",
@@ -9998,9 +9876,9 @@ export const FOOD_OPTIONS = [
     compatibleWith: [],
     confidence: "estimated"
   },
-{
+  {
     id: "pb_strawberry_cake",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Strawberry Yoghurt Cream Cake (slice)",
     emoji: "🍰",
     category: "Cakes",
@@ -10014,9 +9892,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "pb_americano",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Americano",
     emoji: "☕",
     category: "Beverages",
@@ -10033,9 +9911,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "pb_matcha_latte",
-    outletId: "paris_baguette",
+    brandId: "paris_baguette",
     name: "Matcha Latte",
     emoji: "🍵",
     category: "Beverages",
@@ -10050,9 +9928,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "se_salmon_nigiri",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Salmon Nigiri (2 pc plate)",
     emoji: "🍣",
     category: "Nigiri",
@@ -10068,9 +9946,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "se_tuna_nigiri",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Tuna Nigiri (2 pc plate)",
     emoji: "🍣",
     category: "Nigiri",
@@ -10085,9 +9963,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "se_ebi_nigiri",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Ebi Nigiri (2 pc plate)",
     emoji: "🍤",
     category: "Nigiri",
@@ -10102,9 +9980,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "se_tamago",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Tamago Sushi (2 pc plate)",
     emoji: "🥚",
     category: "Nigiri",
@@ -10119,9 +9997,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "se_california_roll",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "California Roll (4 pc plate)",
     emoji: "🌀",
     category: "Maki",
@@ -10136,9 +10014,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "se_salmon_maki",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Salmon Maki (4 pc plate)",
     emoji: "🌀",
     category: "Maki",
@@ -10153,9 +10031,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "se_karaage",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Karaage Chicken (3 pc plate)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10170,9 +10048,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "se_chawanmushi",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Chawanmushi",
     emoji: "🍮",
     category: "Hot Food",
@@ -10187,9 +10065,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "se_edamame",
-    outletId: "sushi_express",
+    brandId: "sushi_express",
     name: "Edamame",
     emoji: "🫘",
     category: "Sides",
@@ -10206,9 +10084,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "sb_cajun_chicken",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Cajun Chicken Salad",
     emoji: "🍗",
     category: "Salads",
@@ -10221,9 +10099,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sb_crispy_caesar",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Crispy Caesar Salad",
     emoji: "🥗",
     category: "Salads",
@@ -10236,9 +10114,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sb_teriyaki_chicken",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Teriyaki Chicken Salad",
     emoji: "🍗",
     category: "Salads",
@@ -10251,9 +10129,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sb_rainbow_salad",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Rainbow Salad",
     emoji: "🌈",
     category: "Salads",
@@ -10266,9 +10144,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "sb_tofu_salad",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Tofu Salad",
     emoji: "🧆",
     category: "Salads",
@@ -10280,12 +10158,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sb_garden_salad",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Garden Salad",
     emoji: "🌱",
     category: "Salads",
@@ -10298,12 +10175,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "vegan"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "sb_immune_booster",
-    outletId: "saladbox",
+    brandId: "saladbox",
     name: "Immune Booster Juice",
     emoji: "🧃",
     category: "Drinks",
@@ -10316,12 +10192,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fp_rotisserie_quarter",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Rotisserie Chicken (Quarter)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10338,9 +10213,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fp_rotisserie_half",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Rotisserie Chicken (Half)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10357,9 +10232,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fp_sushi_6pc",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Freshly Made Sushi (6pc)",
     emoji: "🍱",
     category: "Sushi",
@@ -10372,9 +10247,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fp_bento",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Ready Bento Box",
     emoji: "🍱",
     category: "Bento",
@@ -10389,9 +10264,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fp_salad_pack",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Pre-packed Salad",
     emoji: "🥗",
     category: "Salads",
@@ -10405,12 +10280,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fp_sandwich",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Sandwich (Chicken / Egg)",
     emoji: "🥪",
     category: "Sandwiches",
@@ -10422,12 +10296,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fp_inari_sushi",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Inari Sushi (2pc)",
     emoji: "🍱",
     category: "Sushi",
@@ -10439,12 +10312,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fp_onigiri",
-    outletId: "fairprice",
+    brandId: "fairprice",
     name: "Onigiri (Rice Ball)",
     emoji: "🍙",
     category: "Snacks",
@@ -10456,12 +10328,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fpf_rotisserie_quarter",
-    outletId: "fairprice_finest",
+    brandId: "fairprice_finest",
     name: "Rotisserie Chicken (Quarter)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10478,9 +10349,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fpf_salad_bar_200g",
-    outletId: "fairprice_finest",
+    brandId: "fairprice_finest",
     name: "Salad Bar (200g)",
     emoji: "🥗",
     category: "Salads",
@@ -10497,9 +10368,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "fpf_bento",
-    outletId: "fairprice_finest",
+    brandId: "fairprice_finest",
     name: "Ready Bento Box (Premium)",
     emoji: "🍱",
     category: "Bento",
@@ -10511,12 +10382,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "fpf_sushi_set",
-    outletId: "fairprice_finest",
+    brandId: "fairprice_finest",
     name: "Freshly Made Sushi Set (8pc)",
     emoji: "🍣",
     category: "Sushi",
@@ -10529,9 +10399,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cs_rotisserie_quarter",
-    outletId: "cold_storage",
+    brandId: "cold_storage",
     name: "Rotisserie Chicken (Quarter)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10548,9 +10418,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cs_deli_salad_200g",
-    outletId: "cold_storage",
+    brandId: "cold_storage",
     name: "Deli Salad Bar (200g)",
     emoji: "🥗",
     category: "Salads",
@@ -10566,9 +10436,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cs_ready_meal",
-    outletId: "cold_storage",
+    brandId: "cold_storage",
     name: "Ready Meal Bento",
     emoji: "🍱",
     category: "Bento",
@@ -10578,12 +10448,11 @@ export const FOOD_OPTIONS = [
     carbs: 60,
     fat: 18,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cs_sandwich",
-    outletId: "cold_storage",
+    brandId: "cold_storage",
     name: "Gourmet Sandwich",
     emoji: "🥪",
     category: "Sandwiches",
@@ -10593,12 +10462,11 @@ export const FOOD_OPTIONS = [
     carbs: 36,
     fat: 13,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "cs_sushi_8pc",
-    outletId: "cold_storage",
+    brandId: "cold_storage",
     name: "Freshly Made Sushi (8pc)",
     emoji: "🍣",
     category: "Sushi",
@@ -10611,9 +10479,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "giant_rotisserie_quarter",
-    outletId: "giant",
+    brandId: "giant",
     name: "Rotisserie Chicken (Quarter)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10630,9 +10498,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "giant_bento",
-    outletId: "giant",
+    brandId: "giant",
     name: "Ready Bento Box",
     emoji: "🍱",
     category: "Bento",
@@ -10647,9 +10515,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "giant_sandwich",
-    outletId: "giant",
+    brandId: "giant",
     name: "Sandwich",
     emoji: "🥪",
     category: "Sandwiches",
@@ -10661,12 +10529,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "halal"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ss_roast_chicken_quarter",
-    outletId: "sheng_siong",
+    brandId: "sheng_siong",
     name: "Roast Chicken (Quarter)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10682,9 +10549,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_bento",
-    outletId: "sheng_siong",
+    brandId: "sheng_siong",
     name: "Ready Bento Box",
     emoji: "🍱",
     category: "Bento",
@@ -10697,9 +10564,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ss_roast_pork",
-    outletId: "sheng_siong",
+    brandId: "sheng_siong",
     name: "Char Siu / Roast Pork Slice",
     emoji: "🍖",
     category: "Hot Food",
@@ -10712,12 +10579,11 @@ export const FOOD_OPTIONS = [
       "gluten_free",
       "lactose_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ddk_takoyaki_6pc",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Takoyaki (6 pieces)",
     emoji: "🐙",
     category: "Hot Food",
@@ -10730,9 +10596,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_karaage_5pc",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Karaage Chicken (5 pieces)",
     emoji: "🍗",
     category: "Hot Food",
@@ -10745,9 +10611,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_gyoza_5pc",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Gyoza (5 pieces)",
     emoji: "🥟",
     category: "Hot Food",
@@ -10760,9 +10626,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_onigiri",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Onigiri",
     emoji: "🍙",
     category: "Snacks",
@@ -10775,9 +10641,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_sushi_8pc",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Sushi Set (8 pieces)",
     emoji: "🍣",
     category: "Sushi",
@@ -10790,9 +10656,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_melon_bread",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Melon Bread",
     emoji: "🍞",
     category: "Bakery",
@@ -10807,9 +10673,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_soft_serve",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Soft Serve Ice Cream",
     emoji: "🍦",
     category: "Desserts",
@@ -10824,9 +10690,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ddk_ramen_cup",
-    outletId: "don_don_donki",
+    brandId: "don_don_donki",
     name: "Hot Ramen Cup",
     emoji: "🍜",
     category: "Noodles",
@@ -10836,1094 +10702,11 @@ export const FOOD_OPTIONS = [
     carbs: 55,
     fat: 10,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
-    id: "kfc_steamed_cr",
-    outletId: "koufu_chicken_rice_stall",
-    name: "Steamed Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 607,
-    protein: 35,
-    carbs: 74,
-    fat: 17,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kfc_roasted_cr",
-    outletId: "koufu_chicken_rice_stall",
-    name: "Roasted Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 650,
-    protein: 36,
-    carbs: 76,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kfc_char_siew_r",
-    outletId: "koufu_chicken_rice_stall",
-    name: "Char Siew Rice",
-    emoji: "🍖",
-    category: "Rice",
-    price: 4.5,
-    calories: 660,
-    protein: 30,
-    carbs: 76,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kmvr_2dish",
-    outletId: "koufu_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (2 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 3.5,
-    calories: 390,
-    protein: 14,
-    carbs: 55,
-    fat: 12,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kmvr_3dish",
-    outletId: "koufu_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (3 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 4.5,
-    calories: 480,
-    protein: 18,
-    carbs: 65,
-    fat: 16,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kmvr_4dish",
-    outletId: "koufu_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (4 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 5.5,
-    calories: 570,
-    protein: 22,
-    carbs: 74,
-    fat: 20,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kwn_dry",
-    outletId: "koufu_wonton_noodle_stall",
-    name: "Wonton Mee (Dry)",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4,
-    calories: 434,
-    protein: 22,
-    carbs: 58,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kwn_soup",
-    outletId: "koufu_wonton_noodle_stall",
-    name: "Wonton Mee (Soup)",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4,
-    calories: 400,
-    protein: 22,
-    carbs: 54,
-    fat: 10,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "klak_laksa",
-    outletId: "koufu_laksa_stall",
-    name: "Laksa",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4.5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "klak_meesiam",
-    outletId: "koufu_laksa_stall",
-    name: "Mee Siam",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4,
-    calories: 450,
-    protein: 16,
-    carbs: 66,
-    fat: 14,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "knl_basic",
-    outletId: "koufu_nasi_lemak_stall",
-    name: "Nasi Lemak (basic)",
-    emoji: "🍚",
-    category: "Rice",
-    price: 4,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "knl_chicken",
-    outletId: "koufu_nasi_lemak_stall",
-    name: "Nasi Lemak with Chicken",
-    emoji: "🍗",
-    category: "Rice",
-    price: 5.5,
-    calories: 680,
-    protein: 30,
-    carbs: 62,
-    fat: 30,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kbm_ban_mian",
-    outletId: "koufu_ban_mian_stall",
-    name: "Ban Mian",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 460,
-    protein: 22,
-    carbs: 64,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kbm_fish_ball",
-    outletId: "koufu_ban_mian_stall",
-    name: "Fish Ball Noodle Soup",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kckt_ckt",
-    outletId: "koufu_char_kway_teow_stall",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kckt_hokkien_mee",
-    outletId: "koufu_char_kway_teow_stall",
-    name: "Hokkien Mee",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 5,
-    calories: 570,
-    protein: 24,
-    carbs: 68,
-    fat: 20,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kdrk_kopi_o",
-    outletId: "koufu_drinks_stall",
-    name: "Kopi O (Black Coffee)",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 15,
-    protein: 0,
-    carbs: 3,
-    fat: 0,
-    compatibleWith: [
-      "vegan",
-      "halal",
-      "gluten_free",
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kdrk_kopi",
-    outletId: "koufu_drinks_stall",
-    name: "Kopi (Coffee with Milk)",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.3,
-    calories: 80,
-    protein: 2,
-    carbs: 12,
-    fat: 2,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kdrk_teh_tarik",
-    outletId: "koufu_drinks_stall",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kdrk_milo",
-    outletId: "koufu_drinks_stall",
-    name: "Milo (Hot)",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.6,
-    calories: 140,
-    protein: 3,
-    carbs: 26,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopicr_steamed",
-    outletId: "kopitiam_chicken_rice_stall",
-    name: "Steamed Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 607,
-    protein: 35,
-    carbs: 74,
-    fat: 17,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopicr_roasted",
-    outletId: "kopitiam_chicken_rice_stall",
-    name: "Roasted Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 650,
-    protein: 36,
-    carbs: 76,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopimvr_2dish",
-    outletId: "kopitiam_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (2 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 3.5,
-    calories: 390,
-    protein: 14,
-    carbs: 55,
-    fat: 12,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopimvr_3dish",
-    outletId: "kopitiam_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (3 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 4.5,
-    calories: 480,
-    protein: 18,
-    carbs: 65,
-    fat: 16,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopinod_wonton",
-    outletId: "kopitiam_noodle_stall",
-    name: "Wonton Mee (Dry)",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4,
-    calories: 434,
-    protein: 22,
-    carbs: 58,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopinod_ban_mian",
-    outletId: "kopitiam_noodle_stall",
-    name: "Ban Mian",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 460,
-    protein: 22,
-    carbs: 64,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopinod_fishball",
-    outletId: "kopitiam_noodle_stall",
-    name: "Fishball Noodle",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4,
-    calories: 382,
-    protein: 19,
-    carbs: 60,
-    fat: 6,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopilak_laksa",
-    outletId: "kopitiam_laksa_stall",
-    name: "Laksa",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4.5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopilak_curry_n",
-    outletId: "kopitiam_laksa_stall",
-    name: "Curry Noodle",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 22,
-    carbs: 60,
-    fat: 20,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopinl_basic",
-    outletId: "kopitiam_nasi_lemak_stall",
-    name: "Nasi Lemak (basic)",
-    emoji: "🍚",
-    category: "Rice",
-    price: 4,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopinl_chicken",
-    outletId: "kopitiam_nasi_lemak_stall",
-    name: "Nasi Lemak with Chicken",
-    emoji: "🍗",
-    category: "Rice",
-    price: 5.5,
-    calories: 680,
-    protein: 30,
-    carbs: 62,
-    fat: 30,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopiwest_chop",
-    outletId: "kopitiam_western_stall",
-    name: "Chicken Chop",
-    emoji: "🍗",
-    category: "Mains",
-    price: 6.5,
-    calories: 560,
-    protein: 38,
-    carbs: 30,
-    fat: 30,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopiwest_fish",
-    outletId: "kopitiam_western_stall",
-    name: "Fish & Chips",
-    emoji: "🐟",
-    category: "Mains",
-    price: 6.5,
-    calories: 600,
-    protein: 30,
-    carbs: 55,
-    fat: 28,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopiwest_pasta",
-    outletId: "kopitiam_western_stall",
-    name: "Pasta (Aglio Olio)",
-    emoji: "🍝",
-    category: "Mains",
-    price: 6,
-    calories: 520,
-    protein: 16,
-    carbs: 72,
-    fat: 18,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "kopidrk_kopi_o",
-    outletId: "kopitiam_drinks_stall",
-    name: "Kopi O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 15,
-    protein: 0,
-    carbs: 3,
-    fat: 0,
-    compatibleWith: [
-      "vegan",
-      "halal",
-      "gluten_free",
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopidrk_teh_tarik",
-    outletId: "kopitiam_drinks_stall",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "kopidrk_milo",
-    outletId: "kopitiam_drinks_stall",
-    name: "Milo (Hot)",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.6,
-    calories: 140,
-    protein: 3,
-    carbs: 26,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "ffcr_steamed",
-    outletId: "foodfare_chicken_rice_stall",
-    name: "Steamed Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 607,
-    protein: 35,
-    carbs: 74,
-    fat: 17,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "ffcr_roasted",
-    outletId: "foodfare_chicken_rice_stall",
-    name: "Roasted Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 650,
-    protein: 36,
-    carbs: 76,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "ffmvr_2dish",
-    outletId: "foodfare_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (2 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 3.5,
-    calories: 390,
-    protein: 14,
-    carbs: 55,
-    fat: 12,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "ffmvr_3dish",
-    outletId: "foodfare_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (3 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 4.5,
-    calories: 480,
-    protein: 18,
-    carbs: 65,
-    fat: 16,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "ffnod_ckt",
-    outletId: "foodfare_noodle_stall",
-    name: "Char Kway Teow",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 660,
-    protein: 20,
-    carbs: 82,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "ffnod_mee_goreng",
-    outletId: "foodfare_noodle_stall",
-    name: "Mee Goreng",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 520,
-    protein: 18,
-    carbs: 72,
-    fat: 16,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "ffnod_mee_rebus",
-    outletId: "foodfare_noodle_stall",
-    name: "Mee Rebus",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4.5,
-    calories: 480,
-    protein: 18,
-    carbs: 72,
-    fat: 14,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "fflak_laksa",
-    outletId: "foodfare_laksa_stall",
-    name: "Laksa",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4.5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "fflak_meesiam",
-    outletId: "foodfare_laksa_stall",
-    name: "Mee Siam",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4,
-    calories: 450,
-    protein: 16,
-    carbs: 66,
-    fat: 14,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "ffnl_basic",
-    outletId: "foodfare_nasi_lemak_stall",
-    name: "Nasi Lemak (basic)",
-    emoji: "🍚",
-    category: "Rice",
-    price: 4,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "ffnl_chicken",
-    outletId: "foodfare_nasi_lemak_stall",
-    name: "Nasi Lemak with Chicken",
-    emoji: "🍗",
-    category: "Rice",
-    price: 5.5,
-    calories: 680,
-    protein: 30,
-    carbs: 62,
-    fat: 30,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "ffdrk_kopi_o",
-    outletId: "foodfare_drinks_stall",
-    name: "Kopi O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 15,
-    protein: 0,
-    carbs: 3,
-    fat: 0,
-    compatibleWith: [
-      "vegan",
-      "halal",
-      "gluten_free",
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "ffdrk_teh_tarik",
-    outletId: "foodfare_drinks_stall",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "ffdrk_milo",
-    outletId: "foodfare_drinks_stall",
-    name: "Milo (Hot)",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.6,
-    calories: 140,
-    protein: 3,
-    carbs: 26,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "banqcr_steamed",
-    outletId: "banquet_chicken_rice_stall",
-    name: "Steamed Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 607,
-    protein: 35,
-    carbs: 74,
-    fat: 17,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqcr_roasted",
-    outletId: "banquet_chicken_rice_stall",
-    name: "Roasted Chicken Rice",
-    emoji: "🍗",
-    category: "Rice",
-    price: 4,
-    calories: 650,
-    protein: 36,
-    carbs: 76,
-    fat: 20,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "banqmvr_2dish",
-    outletId: "banquet_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (2 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 3.5,
-    calories: 390,
-    protein: 14,
-    carbs: 55,
-    fat: 12,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "banqmvr_3dish",
-    outletId: "banquet_mixed_veg_rice_stall",
-    name: "Mixed Veg Rice (3 dishes)",
-    emoji: "🍱",
-    category: "Rice",
-    price: 4.5,
-    calories: 480,
-    protein: 18,
-    carbs: 65,
-    fat: 16,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqnod_wonton",
-    outletId: "banquet_noodle_stall",
-    name: "Wonton Mee (Dry)",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4,
-    calories: 434,
-    protein: 22,
-    carbs: 58,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqnod_ban_mian",
-    outletId: "banquet_noodle_stall",
-    name: "Ban Mian",
-    emoji: "🍜",
-    category: "Noodles",
-    price: 4.5,
-    calories: 460,
-    protein: 22,
-    carbs: 64,
-    fat: 12,
-    compatibleWith: [
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "banqlak_laksa",
-    outletId: "banquet_laksa_stall",
-    name: "Laksa",
-    emoji: "🍲",
-    category: "Noodles",
-    price: 4.5,
-    calories: 589,
-    protein: 27,
-    carbs: 68,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqnl_basic",
-    outletId: "banquet_nasi_lemak_stall",
-    name: "Nasi Lemak (basic)",
-    emoji: "🍚",
-    category: "Rice",
-    price: 4,
-    calories: 494,
-    protein: 14,
-    carbs: 60,
-    fat: 22,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqnl_chicken",
-    outletId: "banquet_nasi_lemak_stall",
-    name: "Nasi Lemak with Chicken",
-    emoji: "🍗",
-    category: "Rice",
-    price: 5.5,
-    calories: 680,
-    protein: 30,
-    carbs: 62,
-    fat: 30,
-    compatibleWith: [
-      "halal"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
-    id: "banqdrk_kopi_o",
-    outletId: "banquet_drinks_stall",
-    name: "Kopi O",
-    emoji: "☕",
-    category: "Drinks",
-    price: 1.2,
-    calories: 15,
-    protein: 0,
-    carbs: 3,
-    fat: 0,
-    compatibleWith: [
-      "vegan",
-      "halal",
-      "gluten_free",
-      "lactose_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqdrk_teh_tarik",
-    outletId: "banquet_drinks_stall",
-    name: "Teh Tarik",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.5,
-    calories: 112,
-    protein: 4,
-    carbs: 18,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-{
-    id: "banqdrk_milo",
-    outletId: "banquet_drinks_stall",
-    name: "Milo (Hot)",
-    emoji: "🥤",
-    category: "Drinks",
-    price: 1.6,
-    calories: 140,
-    protein: 3,
-    carbs: 26,
-    fat: 3,
-    compatibleWith: [
-      "halal",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: false
-  },
-{
+  {
     id: "tian_tian_steamed",
-    outletId: "tian_tian_chicken_rice",
+    brandId: "tian_tian_chicken_rice",
     name: "Steamed Chicken Rice",
     emoji: "🍗",
     category: "Rice",
@@ -11938,9 +10721,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tian_tian_roasted",
-    outletId: "tian_tian_chicken_rice",
+    brandId: "tian_tian_chicken_rice",
     name: "Roasted Chicken Rice",
     emoji: "🍗",
     category: "Rice",
@@ -11954,9 +10737,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tian_tian_char_siew",
-    outletId: "tian_tian_chicken_rice",
+    brandId: "tian_tian_chicken_rice",
     name: "Char Siew Rice",
     emoji: "🍖",
     category: "Rice",
@@ -11971,9 +10754,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "max_wonton_mee",
-    outletId: "maxwell_wonton_mee",
+    brandId: "maxwell_wonton_mee",
     name: "Wonton Mee (Dry)",
     emoji: "🍜",
     category: "Noodles",
@@ -11987,9 +10770,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_laksa",
-    outletId: "maxwell_laksa",
+    brandId: "maxwell_laksa",
     name: "Laksa",
     emoji: "🍜",
     category: "Noodles",
@@ -12004,9 +10787,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "max_char_kway_teow",
-    outletId: "maxwell_char_kway_teow",
+    brandId: "maxwell_char_kway_teow",
     name: "Char Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -12020,9 +10803,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_popiah",
-    outletId: "maxwell_popiah",
+    brandId: "maxwell_popiah",
     name: "Fresh Popiah",
     emoji: "🌯",
     category: "Snacks",
@@ -12037,9 +10820,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_carrot_cake_black",
-    outletId: "maxwell_carrot_cake",
+    brandId: "maxwell_carrot_cake",
     name: "Carrot Cake (Black)",
     emoji: "🍳",
     category: "Sides",
@@ -12055,9 +10838,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "max_carrot_cake_white",
-    outletId: "maxwell_carrot_cake",
+    brandId: "maxwell_carrot_cake",
     name: "Carrot Cake (White)",
     emoji: "🍳",
     category: "Sides",
@@ -12072,9 +10855,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_oyster_omelette",
-    outletId: "maxwell_oyster_omelette",
+    brandId: "maxwell_oyster_omelette",
     name: "Oyster Omelette",
     emoji: "🦪",
     category: "Sides",
@@ -12089,9 +10872,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "max_rojak",
-    outletId: "maxwell_rojak",
+    brandId: "maxwell_rojak",
     name: "Rojak",
     emoji: "🥗",
     category: "Sides",
@@ -12107,9 +10890,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_tau_huay",
-    outletId: "maxwell_drinks_desserts",
+    brandId: "maxwell_drinks_desserts",
     name: "Tau Huay",
     emoji: "🫙",
     category: "Desserts",
@@ -12126,9 +10909,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_kopi",
-    outletId: "maxwell_drinks_desserts",
+    brandId: "maxwell_drinks_desserts",
     name: "Kopi",
     emoji: "☕",
     category: "Drinks",
@@ -12143,9 +10926,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_kopi_o",
-    outletId: "maxwell_drinks_desserts",
+    brandId: "maxwell_drinks_desserts",
     name: "Kopi O",
     emoji: "☕",
     category: "Drinks",
@@ -12162,9 +10945,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "max_barley",
-    outletId: "maxwell_drinks_desserts",
+    brandId: "maxwell_drinks_desserts",
     name: "Barley Water",
     emoji: "🥤",
     category: "Drinks",
@@ -12181,9 +10964,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_satay_chicken",
-    outletId: "lau_pa_sat_satay_street",
+    brandId: "lau_pa_sat_satay_street",
     name: "Chicken Satay (5 sticks)",
     emoji: "🍢",
     category: "Grill",
@@ -12200,9 +10983,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_satay_beef",
-    outletId: "lau_pa_sat_satay_street",
+    brandId: "lau_pa_sat_satay_street",
     name: "Beef Satay (5 sticks)",
     emoji: "🍢",
     category: "Grill",
@@ -12218,9 +11001,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_otah",
-    outletId: "lau_pa_sat_satay_street",
+    brandId: "lau_pa_sat_satay_street",
     name: "Otah (2 pieces)",
     emoji: "🐟",
     category: "Grill",
@@ -12236,9 +11019,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_oyster_omelette",
-    outletId: "lau_pa_sat_oyster_omelette",
+    brandId: "lau_pa_sat_oyster_omelette",
     name: "Oyster Omelette",
     emoji: "🦪",
     category: "Eggs",
@@ -12253,9 +11036,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_sk_hokkien_mee",
-    outletId: "lau_pa_sat_seng_kee",
+    brandId: "lau_pa_sat_seng_kee",
     name: "Hokkien Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -12270,9 +11053,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_sk_laksa",
-    outletId: "lau_pa_sat_seng_kee",
+    brandId: "lau_pa_sat_seng_kee",
     name: "Laksa",
     emoji: "🍲",
     category: "Noodles",
@@ -12287,9 +11070,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_sk_ckt",
-    outletId: "lau_pa_sat_seng_kee",
+    brandId: "lau_pa_sat_seng_kee",
     name: "Fried Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -12303,9 +11086,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_lfz_black_ckt",
-    outletId: "lau_pa_sat_lao_fu_zi_ckt",
+    brandId: "lau_pa_sat_lao_fu_zi_ckt",
     name: "Black Fried Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -12320,9 +11103,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_lfz_white_ckt",
-    outletId: "lau_pa_sat_lao_fu_zi_ckt",
+    brandId: "lau_pa_sat_lao_fu_zi_ckt",
     name: "White Fried Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -12336,9 +11119,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_lfz_laksa",
-    outletId: "lau_pa_sat_lao_fu_zi_ckt",
+    brandId: "lau_pa_sat_lao_fu_zi_ckt",
     name: "Laksa",
     emoji: "🍲",
     category: "Noodles",
@@ -12352,9 +11135,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_prawn_noodles",
-    outletId: "lau_pa_sat_prawn_noodles",
+    brandId: "lau_pa_sat_prawn_noodles",
     name: "Prawn Noodles (Soup)",
     emoji: "🦐",
     category: "Noodles",
@@ -12368,9 +11151,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_bak_chor_mee",
-    outletId: "lau_pa_sat_bak_chor_mee",
+    brandId: "lau_pa_sat_bak_chor_mee",
     name: "Bak Chor Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -12384,9 +11167,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_chicken_rice",
-    outletId: "lau_pa_sat_chicken_rice",
+    brandId: "lau_pa_sat_chicken_rice",
     name: "Steamed Chicken Rice",
     emoji: "🍗",
     category: "Rice",
@@ -12401,9 +11184,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_roast_chicken_rice",
-    outletId: "lau_pa_sat_chicken_rice",
+    brandId: "lau_pa_sat_chicken_rice",
     name: "Roast Chicken Rice",
     emoji: "🍗",
     category: "Rice",
@@ -12418,9 +11201,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_rojak",
-    outletId: "lau_pa_sat_rojak",
+    brandId: "lau_pa_sat_rojak",
     name: "Rojak",
     emoji: "🥗",
     category: "Sides",
@@ -12436,9 +11219,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_bc_egg_tart",
-    outletId: "lau_pa_sat_butter_cream",
+    brandId: "lau_pa_sat_butter_cream",
     name: "Original Egg Tart",
     emoji: "🥮",
     category: "Desserts",
@@ -12452,9 +11235,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_bc_salted_egg_tart",
-    outletId: "lau_pa_sat_butter_cream",
+    brandId: "lau_pa_sat_butter_cream",
     name: "Salted Egg Lava Tart",
     emoji: "🥮",
     category: "Desserts",
@@ -12469,9 +11252,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_bc_hokkaido_doffin",
-    outletId: "lau_pa_sat_butter_cream",
+    brandId: "lau_pa_sat_butter_cream",
     name: "Hokkaido Doffin",
     emoji: "🍩",
     category: "Desserts",
@@ -12486,9 +11269,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_bc_oreo_doffin",
-    outletId: "lau_pa_sat_butter_cream",
+    brandId: "lau_pa_sat_butter_cream",
     name: "Oreo Doffin",
     emoji: "🍩",
     category: "Desserts",
@@ -12502,9 +11285,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_cc_single_gelato",
-    outletId: "lau_pa_sat_creme_cone",
+    brandId: "lau_pa_sat_creme_cone",
     name: "Single Gelato (Cup)",
     emoji: "🍦",
     category: "Desserts",
@@ -12519,9 +11302,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_cc_double_gelato",
-    outletId: "lau_pa_sat_creme_cone",
+    brandId: "lau_pa_sat_creme_cone",
     name: "Double Gelato (Cup)",
     emoji: "🍦",
     category: "Desserts",
@@ -12535,9 +11318,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_cc_pastry",
-    outletId: "lau_pa_sat_creme_cone",
+    brandId: "lau_pa_sat_creme_cone",
     name: "Gourmet Tart / Cheesecake",
     emoji: "🍰",
     category: "Desserts",
@@ -12551,9 +11334,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_wps_mee_soto",
-    outletId: "lau_pa_sat_warong_pak_sapari",
+    brandId: "lau_pa_sat_warong_pak_sapari",
     name: "Original Mee Soto",
     emoji: "🍜",
     category: "Noodles",
@@ -12569,9 +11352,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_wps_mee_rebus",
-    outletId: "lau_pa_sat_warong_pak_sapari",
+    brandId: "lau_pa_sat_warong_pak_sapari",
     name: "Original Mee Rebus",
     emoji: "🍜",
     category: "Noodles",
@@ -12587,9 +11370,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_wps_nasi_soto",
-    outletId: "lau_pa_sat_warong_pak_sapari",
+    brandId: "lau_pa_sat_warong_pak_sapari",
     name: "Nasi Soto",
     emoji: "🍚",
     category: "Rice",
@@ -12604,9 +11387,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_tal_nasi_lemak",
-    outletId: "lau_pa_sat_taliwang",
+    brandId: "lau_pa_sat_taliwang",
     name: "Nasi Lemak Ayam Taliwang",
     emoji: "🍛",
     category: "Rice",
@@ -12622,9 +11405,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_tal_curry_rice",
-    outletId: "lau_pa_sat_taliwang",
+    brandId: "lau_pa_sat_taliwang",
     name: "Chicken Fillet Curry Rice",
     emoji: "🍛",
     category: "Rice",
@@ -12639,9 +11422,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_maya_briyani",
-    outletId: "lau_pa_sat_maya_veggie",
+    brandId: "lau_pa_sat_maya_veggie",
     name: "Vegetarian Briyani",
     emoji: "🍛",
     category: "Rice",
@@ -12657,9 +11440,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_maya_palak_paneer",
-    outletId: "lau_pa_sat_maya_veggie",
+    brandId: "lau_pa_sat_maya_veggie",
     name: "Palak Paneer",
     emoji: "🫕",
     category: "Mains",
@@ -12673,9 +11456,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_maya_kadhai_paneer",
-    outletId: "lau_pa_sat_maya_veggie",
+    brandId: "lau_pa_sat_maya_veggie",
     name: "Kadhai Paneer",
     emoji: "🫕",
     category: "Mains",
@@ -12689,9 +11472,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_maya_veg_butter_chicken",
-    outletId: "lau_pa_sat_maya_veggie",
+    brandId: "lau_pa_sat_maya_veggie",
     name: "Veg Butter Chicken",
     emoji: "🍛",
     category: "Mains",
@@ -12705,9 +11488,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "lps_lx_fishball_noodles",
-    outletId: "lau_pa_sat_lixin_fishball",
+    brandId: "lau_pa_sat_lixin_fishball",
     name: "Fishball Noodles",
     emoji: "🍢",
     category: "Noodles",
@@ -12722,9 +11505,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_lx_folks_favourite",
-    outletId: "lau_pa_sat_lixin_fishball",
+    brandId: "lau_pa_sat_lixin_fishball",
     name: "The Folks' Favourite",
     emoji: "🍢",
     category: "Noodles",
@@ -12739,9 +11522,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_fx_herbal_bkt",
-    outletId: "lau_pa_sat_feng_xiang_bkt",
+    brandId: "lau_pa_sat_feng_xiang_bkt",
     name: "Herbal Bak Kut Teh",
     emoji: "🍲",
     category: "Soups",
@@ -12756,9 +11539,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "lps_fx_organ_porridge",
-    outletId: "lau_pa_sat_feng_xiang_bkt",
+    brandId: "lau_pa_sat_feng_xiang_bkt",
     name: "Mixed Pig Organ Fried Porridge",
     emoji: "🍚",
     category: "Rice",
@@ -12772,9 +11555,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_satay_chicken",
-    outletId: "newton_satay_stall",
+    brandId: "newton_satay_stall",
     name: "Chicken Satay (5 sticks)",
     emoji: "🍢",
     category: "Grill",
@@ -12791,9 +11574,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "newt_satay_beef",
-    outletId: "newton_satay_stall",
+    brandId: "newton_satay_stall",
     name: "Beef Satay (5 sticks)",
     emoji: "🍢",
     category: "Grill",
@@ -12809,9 +11592,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_bbq_chicken_wings",
-    outletId: "newton_bbq_seafood",
+    brandId: "newton_bbq_seafood",
     name: "BBQ Chicken Wings (2 pcs)",
     emoji: "🍗",
     category: "Grill",
@@ -12828,9 +11611,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "newt_stingray",
-    outletId: "newton_bbq_seafood",
+    brandId: "newton_bbq_seafood",
     name: "BBQ Stingray",
     emoji: "🐟",
     category: "Seafood",
@@ -12846,9 +11629,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "newt_otah",
-    outletId: "newton_bbq_seafood",
+    brandId: "newton_bbq_seafood",
     name: "Otah (2 pieces)",
     emoji: "🐠",
     category: "Seafood",
@@ -12864,9 +11647,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_hokkien_mee",
-    outletId: "newton_hokkien_mee",
+    brandId: "newton_hokkien_mee",
     name: "Hokkien Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -12881,9 +11664,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "newt_prawn_noodles",
-    outletId: "newton_prawn_noodles",
+    brandId: "newton_prawn_noodles",
     name: "Prawn Noodles",
     emoji: "🦐",
     category: "Noodles",
@@ -12898,9 +11681,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "newt_oyster_omelette",
-    outletId: "newton_oyster_omelette",
+    brandId: "newton_oyster_omelette",
     name: "Oyster Omelette",
     emoji: "🦪",
     category: "Sides",
@@ -12914,9 +11697,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_carrot_cake_white",
-    outletId: "newton_carrot_cake",
+    brandId: "newton_carrot_cake",
     name: "Carrot Cake (White)",
     emoji: "🍳",
     category: "Sides",
@@ -12931,9 +11714,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_char_kway_teow",
-    outletId: "newton_char_kway_teow",
+    brandId: "newton_char_kway_teow",
     name: "Char Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -12947,9 +11730,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_kopi_o",
-    outletId: "newton_drinks_stall",
+    brandId: "newton_drinks_stall",
     name: "Kopi O",
     emoji: "☕",
     category: "Drinks",
@@ -12966,9 +11749,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "newt_bandung",
-    outletId: "newton_drinks_stall",
+    brandId: "newton_drinks_stall",
     name: "Bandung (Rose Milk)",
     emoji: "🌸",
     category: "Drinks",
@@ -12983,9 +11766,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_duck_rice",
-    outletId: "cc_roast_meats_stall",
+    brandId: "cc_roast_meats_stall",
     name: "Roast Duck Rice",
     emoji: "🦆",
     category: "Rice",
@@ -13000,9 +11783,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cc_char_siew_rice",
-    outletId: "cc_roast_meats_stall",
+    brandId: "cc_roast_meats_stall",
     name: "Char Siew Rice",
     emoji: "🍖",
     category: "Rice",
@@ -13016,9 +11799,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_claypot_rice",
-    outletId: "cc_claypot_rice_stall",
+    brandId: "cc_claypot_rice_stall",
     name: "Claypot Rice",
     emoji: "🍚",
     category: "Rice",
@@ -13033,9 +11816,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cc_kway_chap",
-    outletId: "cc_kway_chap_stall",
+    brandId: "cc_kway_chap_stall",
     name: "Kway Chap",
     emoji: "🍜",
     category: "Noodles",
@@ -13050,9 +11833,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "cc_wonton_mee",
-    outletId: "cc_wonton_mee_stall",
+    brandId: "cc_wonton_mee_stall",
     name: "Wonton Mee (Dry)",
     emoji: "🍜",
     category: "Noodles",
@@ -13066,9 +11849,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_ban_mian",
-    outletId: "cc_ban_mian_stall",
+    brandId: "cc_ban_mian_stall",
     name: "Ban Mian Soup",
     emoji: "🍜",
     category: "Noodles",
@@ -13082,9 +11865,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_bak_chor_mee",
-    outletId: "cc_bak_chor_mee_stall",
+    brandId: "cc_bak_chor_mee_stall",
     name: "Bak Chor Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -13098,9 +11881,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_char_kway_teow",
-    outletId: "cc_char_kway_teow_stall",
+    brandId: "cc_char_kway_teow_stall",
     name: "Char Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -13114,9 +11897,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_chee_cheong_fun",
-    outletId: "cc_rice_noodle_rolls",
+    brandId: "cc_rice_noodle_rolls",
     name: "Chee Cheong Fun",
     emoji: "🍜",
     category: "Snacks",
@@ -13131,9 +11914,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_popiah",
-    outletId: "cc_rice_noodle_rolls",
+    brandId: "cc_rice_noodle_rolls",
     name: "Popiah (Fresh)",
     emoji: "🌯",
     category: "Snacks",
@@ -13148,9 +11931,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_ice_kachang",
-    outletId: "cc_desserts_stall",
+    brandId: "cc_desserts_stall",
     name: "Ice Kachang",
     emoji: "🍧",
     category: "Desserts",
@@ -13167,9 +11950,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_tau_huay",
-    outletId: "cc_desserts_stall",
+    brandId: "cc_desserts_stall",
     name: "Tau Huay",
     emoji: "🫙",
     category: "Desserts",
@@ -13186,9 +11969,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_chendol",
-    outletId: "cc_desserts_stall",
+    brandId: "cc_desserts_stall",
     name: "Chendol",
     emoji: "🍮",
     category: "Desserts",
@@ -13205,9 +11988,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "cc_kopi_o",
-    outletId: "cc_kopi_stall",
+    brandId: "cc_kopi_stall",
     name: "Kopi O",
     emoji: "☕",
     category: "Drinks",
@@ -13224,9 +12007,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_roti_prata_plain",
-    outletId: "tekka_prata_stall",
+    brandId: "tekka_prata_stall",
     name: "Roti Prata (Plain)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -13242,9 +12025,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tekka_roti_prata_egg",
-    outletId: "tekka_prata_stall",
+    brandId: "tekka_prata_stall",
     name: "Roti Prata (Egg)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -13260,9 +12043,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tekka_masala_prata",
-    outletId: "tekka_prata_stall",
+    brandId: "tekka_prata_stall",
     name: "Masala Prata",
     emoji: "🫓",
     category: "Indian Breads",
@@ -13277,9 +12060,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_thosai",
-    outletId: "tekka_thosai_stall",
+    brandId: "tekka_thosai_stall",
     name: "Thosai (Plain)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -13297,9 +12080,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_vadai",
-    outletId: "tekka_thosai_stall",
+    brandId: "tekka_thosai_stall",
     name: "Vadai",
     emoji: "🍩",
     category: "Indian Breads",
@@ -13316,9 +12099,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_murtabak",
-    outletId: "tekka_murtabak_stall",
+    brandId: "tekka_murtabak_stall",
     name: "Murtabak (Chicken)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -13332,9 +12115,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_nasi_briyani",
-    outletId: "tekka_briyani_stall",
+    brandId: "tekka_briyani_stall",
     name: "Nasi Briyani (Chicken)",
     emoji: "🍛",
     category: "Rice",
@@ -13351,9 +12134,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "tekka_nasi_lemak",
-    outletId: "tekka_nasi_lemak_stall",
+    brandId: "tekka_nasi_lemak_stall",
     name: "Nasi Lemak Set",
     emoji: "🍛",
     category: "Rice",
@@ -13369,9 +12152,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_lontong",
-    outletId: "tekka_nasi_lemak_stall",
+    brandId: "tekka_nasi_lemak_stall",
     name: "Lontong",
     emoji: "🍲",
     category: "Rice",
@@ -13388,9 +12171,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_mee_goreng",
-    outletId: "tekka_mee_goreng_stall",
+    brandId: "tekka_mee_goreng_stall",
     name: "Mee Goreng",
     emoji: "🍜",
     category: "Noodles",
@@ -13405,9 +12188,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_rojak",
-    outletId: "tekka_rojak_stall",
+    brandId: "tekka_rojak_stall",
     name: "Rojak",
     emoji: "🥗",
     category: "Sides",
@@ -13423,9 +12206,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_teh_tarik",
-    outletId: "tekka_drinks_stall",
+    brandId: "tekka_drinks_stall",
     name: "Teh Tarik",
     emoji: "🍵",
     category: "Drinks",
@@ -13440,9 +12223,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_bandung",
-    outletId: "tekka_drinks_stall",
+    brandId: "tekka_drinks_stall",
     name: "Bandung (Rose Milk)",
     emoji: "🌸",
     category: "Drinks",
@@ -13457,9 +12240,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "tekka_coconut_water",
-    outletId: "tekka_drinks_stall",
+    brandId: "tekka_drinks_stall",
     name: "Fresh Coconut Water",
     emoji: "🥥",
     category: "Drinks",
@@ -13477,9 +12260,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_char_kway_teow",
-    outletId: "oar_char_kway_teow",
+    brandId: "oar_char_kway_teow",
     name: "Char Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -13494,9 +12277,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "oar_hokkien_mee",
-    outletId: "oar_hokkien_mee",
+    brandId: "oar_hokkien_mee",
     name: "Hokkien Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -13511,9 +12294,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "oar_prawn_noodles",
-    outletId: "oar_prawn_noodles",
+    brandId: "oar_prawn_noodles",
     name: "Prawn Noodles (Soup)",
     emoji: "🦐",
     category: "Noodles",
@@ -13528,9 +12311,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "oar_bak_chor_mee",
-    outletId: "oar_bak_chor_mee",
+    brandId: "oar_bak_chor_mee",
     name: "Bak Chor Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -13544,9 +12327,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_duck_rice",
-    outletId: "oar_roast_duck_rice",
+    brandId: "oar_roast_duck_rice",
     name: "Roast Duck Rice",
     emoji: "🦆",
     category: "Rice",
@@ -13561,9 +12344,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "oar_economic_rice",
-    outletId: "oar_economic_rice",
+    brandId: "oar_economic_rice",
     name: "Economic Rice (2 sides)",
     emoji: "🍱",
     category: "Rice",
@@ -13578,9 +12361,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_fried_rice",
-    outletId: "oar_economic_rice",
+    brandId: "oar_economic_rice",
     name: "Fried Rice",
     emoji: "🍳",
     category: "Rice",
@@ -13595,9 +12378,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_laksa",
-    outletId: "oar_laksa",
+    brandId: "oar_laksa",
     name: "Laksa",
     emoji: "🍜",
     category: "Noodles",
@@ -13611,9 +12394,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_wonton_mee",
-    outletId: "oar_wonton_mee",
+    brandId: "oar_wonton_mee",
     name: "Wonton Mee (Dry)",
     emoji: "🍜",
     category: "Noodles",
@@ -13627,9 +12410,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_popiah",
-    outletId: "oar_popiah",
+    brandId: "oar_popiah",
     name: "Fresh Popiah",
     emoji: "🌯",
     category: "Snacks",
@@ -13644,9 +12427,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_oyster_omelette",
-    outletId: "oar_oyster_omelette",
+    brandId: "oar_oyster_omelette",
     name: "Oyster Omelette",
     emoji: "🦪",
     category: "Sides",
@@ -13660,9 +12443,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_ice_kachang",
-    outletId: "oar_desserts_drinks",
+    brandId: "oar_desserts_drinks",
     name: "Ice Kachang",
     emoji: "🍧",
     category: "Desserts",
@@ -13679,9 +12462,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_teh_tarik",
-    outletId: "oar_desserts_drinks",
+    brandId: "oar_desserts_drinks",
     name: "Teh Tarik",
     emoji: "🍵",
     category: "Drinks",
@@ -13696,9 +12479,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "oar_kopi",
-    outletId: "oar_desserts_drinks",
+    brandId: "oar_desserts_drinks",
     name: "Kopi",
     emoji: "☕",
     category: "Drinks",
@@ -13713,9 +12496,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_chicken_rice",
-    outletId: "gmfc_chicken_rice",
+    brandId: "gmfc_chicken_rice",
     name: "Hainanese Chicken Rice",
     emoji: "🍗",
     category: "Rice",
@@ -13730,9 +12513,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gmfc_bak_kut_teh",
-    outletId: "gmfc_bak_kut_teh",
+    brandId: "gmfc_bak_kut_teh",
     name: "Bak Kut Teh",
     emoji: "🍲",
     category: "Rice",
@@ -13748,9 +12531,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gmfc_char_kway_teow",
-    outletId: "gmfc_char_kway_teow",
+    brandId: "gmfc_char_kway_teow",
     name: "Char Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -13765,9 +12548,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gmfc_hokkien_mee",
-    outletId: "gmfc_hokkien_mee",
+    brandId: "gmfc_hokkien_mee",
     name: "Hokkien Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -13781,9 +12564,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_laksa",
-    outletId: "gmfc_laksa",
+    brandId: "gmfc_laksa",
     name: "Laksa",
     emoji: "🍜",
     category: "Noodles",
@@ -13797,9 +12580,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_prawn_noodles",
-    outletId: "gmfc_prawn_noodles",
+    brandId: "gmfc_prawn_noodles",
     name: "Prawn Noodles",
     emoji: "🦐",
     category: "Noodles",
@@ -13814,9 +12597,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gmfc_satay_chicken",
-    outletId: "gmfc_satay_stall",
+    brandId: "gmfc_satay_stall",
     name: "Chicken Satay (5 sticks)",
     emoji: "🍢",
     category: "Grill",
@@ -13832,9 +12615,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_oyster_cake",
-    outletId: "gmfc_snacks_stall",
+    brandId: "gmfc_snacks_stall",
     name: "Fuzhou Oyster Cake",
     emoji: "🦪",
     category: "Snacks",
@@ -13848,9 +12631,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_carrot_cake",
-    outletId: "gmfc_snacks_stall",
+    brandId: "gmfc_snacks_stall",
     name: "Carrot Cake (Black)",
     emoji: "🍳",
     category: "Sides",
@@ -13865,9 +12648,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_peanut_soup",
-    outletId: "gmfc_desserts_drinks",
+    brandId: "gmfc_desserts_drinks",
     name: "Ah Balling Peanut Soup",
     emoji: "🫙",
     category: "Desserts",
@@ -13884,9 +12667,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_kopi",
-    outletId: "gmfc_desserts_drinks",
+    brandId: "gmfc_desserts_drinks",
     name: "Kopi",
     emoji: "☕",
     category: "Drinks",
@@ -13901,9 +12684,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gmfc_kopi_o",
-    outletId: "gmfc_desserts_drinks",
+    brandId: "gmfc_desserts_drinks",
     name: "Kopi O",
     emoji: "☕",
     category: "Drinks",
@@ -13920,9 +12703,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_nasi_lemak",
-    outletId: "gsm_nasi_lemak_stall",
+    brandId: "gsm_nasi_lemak_stall",
     name: "Nasi Lemak Set",
     emoji: "🍛",
     category: "Rice",
@@ -13938,9 +12721,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gsm_nasi_briyani",
-    outletId: "gsm_briyani_stall",
+    brandId: "gsm_briyani_stall",
     name: "Nasi Briyani (Chicken)",
     emoji: "🍛",
     category: "Rice",
@@ -13957,9 +12740,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gsm_nasi_padang",
-    outletId: "gsm_nasi_padang_stall",
+    brandId: "gsm_nasi_padang_stall",
     name: "Nasi Padang",
     emoji: "🍛",
     category: "Rice",
@@ -13974,9 +12757,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_ayam_penyet",
-    outletId: "gsm_ayam_penyet_stall",
+    brandId: "gsm_ayam_penyet_stall",
     name: "Ayam Penyet",
     emoji: "🍗",
     category: "Rice",
@@ -13991,9 +12774,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_lontong",
-    outletId: "gsm_lontong_stall",
+    brandId: "gsm_lontong_stall",
     name: "Lontong",
     emoji: "🍲",
     category: "Rice",
@@ -14010,9 +12793,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_murtabak",
-    outletId: "gsm_murtabak_stall",
+    brandId: "gsm_murtabak_stall",
     name: "Murtabak (Chicken)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -14026,9 +12809,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_mee_goreng",
-    outletId: "gsm_mee_stall",
+    brandId: "gsm_mee_stall",
     name: "Mee Goreng",
     emoji: "🍜",
     category: "Noodles",
@@ -14044,9 +12827,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "gsm_mee_siam",
-    outletId: "gsm_mee_stall",
+    brandId: "gsm_mee_stall",
     name: "Mee Siam",
     emoji: "🍜",
     category: "Noodles",
@@ -14061,9 +12844,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_economy_beehoon",
-    outletId: "gsm_beehoon_stall",
+    brandId: "gsm_beehoon_stall",
     name: "Economy Beehoon",
     emoji: "🍝",
     category: "Noodles",
@@ -14079,9 +12862,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_rojak",
-    outletId: "gsm_rojak_stall",
+    brandId: "gsm_rojak_stall",
     name: "Rojak",
     emoji: "🥗",
     category: "Sides",
@@ -14097,9 +12880,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_bubur_hitam",
-    outletId: "gsm_desserts_drinks",
+    brandId: "gsm_desserts_drinks",
     name: "Bubur Hitam",
     emoji: "🍮",
     category: "Desserts",
@@ -14116,9 +12899,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_teh_tarik",
-    outletId: "gsm_desserts_drinks",
+    brandId: "gsm_desserts_drinks",
     name: "Teh Tarik",
     emoji: "🍵",
     category: "Drinks",
@@ -14133,9 +12916,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "gsm_bandung",
-    outletId: "gsm_desserts_drinks",
+    brandId: "gsm_desserts_drinks",
     name: "Bandung (Rose Milk)",
     emoji: "🌸",
     category: "Drinks",
@@ -14150,9 +12933,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_chicken_rice",
-    outletId: "whampoa_chicken_rice",
+    brandId: "whampoa_chicken_rice",
     name: "Chicken Rice",
     emoji: "🍗",
     category: "Rice",
@@ -14167,9 +12950,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "whampoa_economy_rice",
-    outletId: "whampoa_economic_rice",
+    brandId: "whampoa_economic_rice",
     name: "Economic Rice (2 sides)",
     emoji: "🍱",
     category: "Rice",
@@ -14184,9 +12967,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_laksa",
-    outletId: "whampoa_laksa",
+    brandId: "whampoa_laksa",
     name: "Laksa",
     emoji: "🍜",
     category: "Noodles",
@@ -14201,9 +12984,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "whampoa_bak_chor_mee",
-    outletId: "whampoa_bak_chor_mee",
+    brandId: "whampoa_bak_chor_mee",
     name: "Bak Chor Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -14218,9 +13001,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "whampoa_ban_mian",
-    outletId: "whampoa_ban_mian",
+    brandId: "whampoa_ban_mian",
     name: "Ban Mian Soup",
     emoji: "🍜",
     category: "Noodles",
@@ -14234,9 +13017,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_wonton_mee",
-    outletId: "whampoa_wonton_mee",
+    brandId: "whampoa_wonton_mee",
     name: "Wonton Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -14250,9 +13033,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_char_kway_teow",
-    outletId: "whampoa_char_kway_teow",
+    brandId: "whampoa_char_kway_teow",
     name: "Char Kway Teow",
     emoji: "🍜",
     category: "Noodles",
@@ -14266,9 +13049,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_hokkien_mee",
-    outletId: "whampoa_hokkien_mee",
+    brandId: "whampoa_hokkien_mee",
     name: "Hokkien Mee",
     emoji: "🍜",
     category: "Noodles",
@@ -14282,9 +13065,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_roti_prata",
-    outletId: "whampoa_prata_stall",
+    brandId: "whampoa_prata_stall",
     name: "Roti Prata (Egg)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -14299,9 +13082,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_tau_huay",
-    outletId: "whampoa_desserts_drinks",
+    brandId: "whampoa_desserts_drinks",
     name: "Tau Huay",
     emoji: "🫙",
     category: "Desserts",
@@ -14318,9 +13101,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_kopi",
-    outletId: "whampoa_desserts_drinks",
+    brandId: "whampoa_desserts_drinks",
     name: "Kopi",
     emoji: "☕",
     category: "Drinks",
@@ -14335,9 +13118,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_kopi_o",
-    outletId: "whampoa_desserts_drinks",
+    brandId: "whampoa_desserts_drinks",
     name: "Kopi O",
     emoji: "☕",
     category: "Drinks",
@@ -14354,9 +13137,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "whampoa_teh_tarik",
-    outletId: "whampoa_desserts_drinks",
+    brandId: "whampoa_desserts_drinks",
     name: "Teh Tarik",
     emoji: "🍵",
     category: "Drinks",
@@ -14371,9 +13154,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "luckin_americano_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Americano (M)",
     emoji: "☕",
     category: "Espresso",
@@ -14386,12 +13169,11 @@ export const FOOD_OPTIONS = [
       "vegan",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "luckin_latte_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Latte (M)",
     emoji: "☕",
     category: "Espresso",
@@ -14407,9 +13189,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "luckin_cold_brew_latte_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Cold Brew Latte (M)",
     emoji: "🧊",
     category: "Cold Brew",
@@ -14425,9 +13207,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "luckin_raw_coconut_latte_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Raw Coconut Latte (M)",
     emoji: "🥥",
     category: "Signature",
@@ -14443,9 +13225,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "luckin_velvet_latte_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Velvet Latte (M)",
     emoji: "🫗",
     category: "Signature",
@@ -14461,9 +13243,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "luckin_matcha_latte_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Matcha Latte (M)",
     emoji: "🍵",
     category: "Matcha",
@@ -14479,9 +13261,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "luckin_cheese_tea_m",
-    outletId: "luckin_coffee",
+    brandId: "luckin_coffee",
     name: "Cheese Tea (M)",
     emoji: "🫧",
     category: "Cheese Tea",
@@ -14496,9 +13278,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bonchon_wings_rice_set",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Wings & Rice Set (4pc)",
     emoji: "🍱",
     category: "Sets",
@@ -14511,9 +13293,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bonchon_drums_rice_set",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Drums & Rice Set (4pc)",
     emoji: "🍱",
     category: "Sets",
@@ -14523,12 +13305,11 @@ export const FOOD_OPTIONS = [
     carbs: 76,
     fat: 30,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "bonchon_wings_sg_6pc",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Wings Soy Garlic (6pc)",
     emoji: "🍗",
     category: "Wings",
@@ -14541,9 +13322,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bonchon_wings_spicy_6pc",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Wings Spicy (6pc)",
     emoji: "🌶️",
     category: "Wings",
@@ -14556,9 +13337,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bonchon_drums_sg_6pc",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Drums Soy Garlic (6pc)",
     emoji: "🍗",
     category: "Drums",
@@ -14571,9 +13352,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bonchon_tenders_5pc",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Tenders (5pc)",
     emoji: "🍗",
     category: "Tenders",
@@ -14586,9 +13367,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "bonchon_bibimbap",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Bibimbap",
     emoji: "🍚",
     category: "Rice",
@@ -14600,12 +13381,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "bonchon_tteokbokki",
-    outletId: "bonchon",
+    brandId: "bonchon",
     name: "Tteokbokki",
     emoji: "🍢",
     category: "Snacks",
@@ -14620,9 +13400,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "llao_tarrina_s",
-    outletId: "llaollao",
+    brandId: "llaollao",
     name: "Tarrina S",
     emoji: "🍦",
     category: "Plain",
@@ -14635,12 +13415,11 @@ export const FOOD_OPTIONS = [
       "vegetarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "llao_sanum_s",
-    outletId: "llaollao",
+    brandId: "llaollao",
     name: "Sanum S",
     emoji: "🍦",
     category: "Sanum",
@@ -14655,9 +13434,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "llao_sanum_m",
-    outletId: "llaollao",
+    brandId: "llaollao",
     name: "Sanum M",
     emoji: "🍦",
     category: "Sanum",
@@ -14672,9 +13451,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "llao_sanum_l",
-    outletId: "llaollao",
+    brandId: "llaollao",
     name: "Sanum L",
     emoji: "🍦",
     category: "Sanum",
@@ -14686,12 +13465,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "vegetarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "llao_granola_s",
-    outletId: "llaollao",
+    brandId: "llaollao",
     name: "Granola S",
     emoji: "🌾",
     category: "Granola",
@@ -14706,9 +13484,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "llao_signature",
-    outletId: "llaollao",
+    brandId: "llaollao",
     name: "Llaollao (Signature)",
     emoji: "🍦",
     category: "Signature",
@@ -14723,9 +13501,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_daves_single_combo",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Dave's Single Combo",
     emoji: "🍔",
     category: "Combo Meals",
@@ -14738,9 +13516,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_spicy_chk_combo",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Spicy Chicken Combo",
     emoji: "🌶️",
     category: "Combo Meals",
@@ -14753,9 +13531,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_daves_single",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Dave's Single",
     emoji: "🍔",
     category: "Burgers",
@@ -14768,9 +13546,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_daves_double",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Dave's Double",
     emoji: "🍔",
     category: "Burgers",
@@ -14783,9 +13561,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_daves_triple",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Dave's Triple",
     emoji: "🍔",
     category: "Burgers",
@@ -14795,12 +13573,11 @@ export const FOOD_OPTIONS = [
     carbs: 43,
     fat: 70,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "wendys_spicy_chicken",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Spicy Chicken Sandwich",
     emoji: "🌶️",
     category: "Chicken",
@@ -14813,9 +13590,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_baconator",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Baconator",
     emoji: "🥓",
     category: "Burgers",
@@ -14828,9 +13605,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "wendys_frosty_s",
-    outletId: "wendys",
+    brandId: "wendys",
     name: "Frosty (S)",
     emoji: "🍦",
     category: "Desserts",
@@ -14845,9 +13622,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ing_chicken_breast",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Chicken Breast (skinless)",
     emoji: "🍗",
     category: "Ingredients",
@@ -14862,9 +13639,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_chicken_thigh",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Chicken Thigh (boneless, skinless)",
     emoji: "🍗",
     category: "Ingredients",
@@ -14879,9 +13656,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_eggs_10",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Eggs (Local Farm)",
     emoji: "🥚",
     category: "Ingredients",
@@ -14896,9 +13673,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_canned_tuna",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Tuna in Water (Ayam Brand)",
     emoji: "🐟",
     category: "Ingredients",
@@ -14912,9 +13689,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_silken_tofu",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Silken Tofu (Unicurd)",
     emoji: "🫘",
     category: "Ingredients",
@@ -14931,9 +13708,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_greek_yogurt",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Low-fat Greek Yogurt (Meiji)",
     emoji: "🫙",
     category: "Ingredients",
@@ -14948,9 +13725,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_jasmine_rice",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Jasmine Rice (Fragrant)",
     emoji: "🍚",
     category: "Ingredients",
@@ -14967,9 +13744,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_brown_rice",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Brown Rice (SunWhite)",
     emoji: "🍚",
     category: "Ingredients",
@@ -14986,9 +13763,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_rolled_oats",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Rolled Oats (Quaker)",
     emoji: "🌾",
     category: "Ingredients",
@@ -15004,9 +13781,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_sweet_potato",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Sweet Potato (Orange)",
     emoji: "🍠",
     category: "Ingredients",
@@ -15023,9 +13800,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_canned_chickpeas",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Chickpeas, canned (Ayam Brand)",
     emoji: "🫘",
     category: "Ingredients",
@@ -15042,9 +13819,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_banana",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Banana (Cavendish)",
     emoji: "🍌",
     category: "Ingredients",
@@ -15061,9 +13838,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_baby_spinach",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Baby Spinach",
     emoji: "🥬",
     category: "Ingredients",
@@ -15080,9 +13857,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_broccoli",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Broccoli",
     emoji: "🥦",
     category: "Ingredients",
@@ -15099,9 +13876,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_whole_milk",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Full Cream Milk (Meiji)",
     emoji: "🥛",
     category: "Ingredients",
@@ -15116,9 +13893,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_light_soy_sauce",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Light Soy Sauce (Kikkoman)",
     emoji: "🍶",
     category: "Ingredients",
@@ -15134,9 +13911,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "ing_sesame_oil",
-    outletId: "store_fairprice",
+    brandId: "fairprice",
     name: "Sesame Oil",
     emoji: "🫙",
     category: "Ingredients",
@@ -15153,9 +13930,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "verified"
   },
-{
+  {
     id: "rec_chicken_rice_bowl",
-    outletId: "home_cooked",
+    brandId: "home_cooked",
     name: "High-Protein Chicken Rice Bowl",
     emoji: "🍱",
     category: "High Protein",
@@ -15170,9 +13947,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "rec_tuna_oat_salad",
-    outletId: "home_cooked",
+    brandId: "home_cooked",
     name: "Tuna Spinach Salad with Oats",
     emoji: "🥗",
     category: "Quick & Easy",
@@ -15186,9 +13963,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "rec_egg_fried_rice",
-    outletId: "home_cooked",
+    brandId: "home_cooked",
     name: "High-Protein Egg Fried Rice",
     emoji: "🍳",
     category: "Budget Meal",
@@ -15203,9 +13980,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "rec_overnight_oats",
-    outletId: "home_cooked",
+    brandId: "home_cooked",
     name: "Overnight Oats with Banana",
     emoji: "🌙",
     category: "Meal Prep",
@@ -15220,9 +13997,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "rec_tofu_veggie_stir_fry",
-    outletId: "home_cooked",
+    brandId: "home_cooked",
     name: "Tofu & Veggie Stir Fry",
     emoji: "🥦",
     category: "Vegetarian",
@@ -15239,9 +14016,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "rec_chickpea_sweet_potato_bowl",
-    outletId: "home_cooked",
+    brandId: "home_cooked",
     name: "Chickpea & Sweet Potato Bowl",
     emoji: "🍠",
     category: "Vegetarian",
@@ -15257,9 +14034,9 @@ export const FOOD_OPTIONS = [
     ],
     confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_chicken_katsu_don",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Chicken Katsu Don",
     emoji: "🍛",
     category: "Donburi",
@@ -15272,9 +14049,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ichiban_boshi_chicken_teriyaki_don",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Chicken Teriyaki Don",
     emoji: "🍛",
     category: "Donburi",
@@ -15287,9 +14064,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ichiban_boshi_beef_teriyaki_don",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Beef Teriyaki Don",
     emoji: "🍛",
     category: "Donburi",
@@ -15299,12 +14076,11 @@ export const FOOD_OPTIONS = [
     carbs: 75,
     fat: 22,
     compatibleWith: [],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_black_pepper_salmon_don",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Black Pepper Salmon Don",
     emoji: "🍣",
     category: "Donburi",
@@ -15316,12 +14092,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "pescatarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_unajyu",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Unajyu (Grilled Eel Rice)",
     emoji: "🍱",
     category: "Donburi",
@@ -15333,12 +14108,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "pescatarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_salmon_sashimi_salad",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Salmon Sashimi Salad",
     emoji: "🥗",
     category: "Salad",
@@ -15351,12 +14125,11 @@ export const FOOD_OPTIONS = [
       "pescatarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_tori_karaage",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Tori Karaage",
     emoji: "🍗",
     category: "Bento Sides",
@@ -15369,9 +14142,9 @@ export const FOOD_OPTIONS = [
     confidence: "estimated",
     isPopular: true
   },
-{
+  {
     id: "ichiban_boshi_tempura_udon",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Tempura Udon",
     emoji: "🍜",
     category: "Udon & Soba",
@@ -15383,12 +14156,11 @@ export const FOOD_OPTIONS = [
     compatibleWith: [
       "pescatarian"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_chirashi_jyu",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Chirashi Jyu",
     emoji: "🍣",
     category: "Jyu",
@@ -15401,12 +14173,11 @@ export const FOOD_OPTIONS = [
       "pescatarian",
       "gluten_free"
     ],
-    confidence: "estimated",
-    isPopular: false
+    confidence: "estimated"
   },
-{
+  {
     id: "ichiban_boshi_edamame",
-    outletId: "ichiban_boshi",
+    brandId: "ichiban_boshi",
     name: "Edamame",
     emoji: "🌱",
     category: "Bento Sides",
@@ -15422,7 +14193,6 @@ export const FOOD_OPTIONS = [
       "dairy_free",
       "nut_free"
     ],
-    confidence: "community",
-    isPopular: false
+    confidence: "community"
   }
 ];
