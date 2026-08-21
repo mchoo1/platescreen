@@ -19,5 +19,10 @@ export const OPERATORS = [
     id: "foodfare",
     name: "NTUC Foodfare",
     type: "food_court_operator"
+  },
+  {
+    id: "hawkers_street",
+    name: "Hawkers' Street",
+    type: "food_court_operator"
   }
 ];

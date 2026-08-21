@@ -12583,5 +12583,458 @@ export const BRANDS = [
     platforms: [
       "dine_in"
     ]
+  },
+  {
+    id: "hawkers_street",
+    name: "Hawkers' Street",
+    emoji: "🍜",
+    type: "food_court",
+    cuisine: "Food Court (multi-stall, operator-run — Select Group)",
+    aliases: [
+      "hawkers street",
+      "hawkers' street",
+      "hawker street"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "tai_wah_pork_noodle",
+    name: "Tai Wah Pork Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Teochew Noodles",
+    aliases: [
+      "tai wah pork noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "tiong_bahru_chicken_rice_hws",
+    name: "Tiong Bahru Hainanese Chicken Rice",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hainanese Chicken Rice",
+    aliases: [
+      "tiong bahru hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "jason_penang_cuisine",
+    name: "Jason Penang Cuisine",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Penang / Malaysian",
+    aliases: [
+      "jason penang cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "tai_seng_fish_soup",
+    name: "Tai Seng Fish Soup",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Fish Soup",
+    aliases: [
+      "tai seng fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "chef_wei_hk_cheong_fun",
+    name: "Chef Wei HK Cheong Fun",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hong Kong / Cheong Fun",
+    aliases: [
+      "chef wei hk cheong fun"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "king_of_fried_rice_hws",
+    name: "King of Fried Rice",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Fried Rice",
+    aliases: [
+      "king of fried rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "hill_street_coffee_shop",
+    name: "Hill Street Coffee Shop",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop / Kopi",
+    aliases: [
+      "hill street coffee shop"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "pangs_hakka_ytf",
+    name: "Pang's Hakka Yong Tau Foo",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hakka",
+    aliases: [
+      "pang's hakka yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "hill_street_hainanese_curry_rice",
+    name: "Hill Street Hainanese Curry Rice",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hainanese Curry Rice",
+    aliases: [
+      "hill street hainanese curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "famous_eunos_bak_chor_mee",
+    name: "Famous Eunos Bak Chor Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Bak Chor Mee",
+    aliases: [
+      "famous eunos bak chor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "jiak_song_mee_hoon_kway",
+    name: "Jiak Song Mee Hoon Kway",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Mee Hoon Kway",
+    aliases: [
+      "jiak song mee hoon kway"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "ramen_king_hws",
+    name: "Ramen King",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Japanese Ramen",
+    aliases: [
+      "ramen king"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "beach_road_scissor_cut_curry_rice",
+    name: "Beach Road Scissor-Cut Curry Rice",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Curry Rice",
+    aliases: [
+      "beach road scissor-cut curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "koungs_wan_tan_mee",
+    name: "Koung's Wan Tan Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Wanton Mee",
+    aliases: [
+      "koung's wan tan mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "old_teochew_satay_beehoon",
+    name: "Old Teochew Satay Bee Hoon & Mee Siam",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Teochew",
+    aliases: [
+      "old teochew satay bee hoon & mee siam"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "kaki_makan",
+    name: "Kaki Makan",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Halal Local",
+    aliases: [
+      "kaki makan"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "thai_makan_by_thai_dynasty",
+    name: "Thai Makan by Thai Dynasty",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Halal Thai",
+    aliases: [
+      "thai makan by thai dynasty"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "raja_wok",
+    name: "Raja Wok",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Halal Fried Rice",
+    aliases: [
+      "raja wok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "waker_chicken",
+    name: "Waker Chicken",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Korean Fried Chicken",
+    aliases: [
+      "waker chicken"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "loong_kee_yong_tau_fu",
+    name: "Loong Kee Yong Tau Fu",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Yong Tau Fu",
+    aliases: [
+      "loong kee yong tau fu"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "fei_fei_roasted_noodle",
+    name: "Fei Fei Roasted Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Roasted Meats / Noodles",
+    aliases: [
+      "fei fei roasted noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "top_1_home_made_noodle",
+    name: "Top 1 Home Made Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Ban Mian / Noodles",
+    aliases: [
+      "top 1 home made noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "nikmat_nasi_lemak_husk",
+    name: "Nikmat Nasi Lemak by Husk",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Nasi Lemak",
+    aliases: [
+      "nikmat nasi lemak by husk"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "pondok_indah_nasi_padang",
+    name: "Pondok Indah Indonesian Nasi Padang",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Nasi Padang",
+    aliases: [
+      "pondok indah indonesian nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "fire_western_n_grill",
+    name: "Fire Western 'N' Grill",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "fire western 'n' grill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "nam_sing_hokkien_mee",
+    name: "Nam Sing Hokkien Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hokkien Mee",
+    aliases: [
+      "nam sing hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "garden_street_kway_chap",
+    name: "Garden Street Kway Chap",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Kway Chap",
+    aliases: [
+      "garden street kway chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "hawkers_street"
   }
 ];

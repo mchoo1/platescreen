@@ -178,7 +178,7 @@ export const RESEARCH_QUEUE = [
     cuisine: "Healthy",
     priority: "medium",
     status: "pending",
-    notes: "Re-checked 2026-08-12 (third consecutive dead end — same result as 2026-08-10 and 2026-08-11 runs): only matching SG business is 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), closed since 2023. A 'Soulgreen' brand exists but is UAE-based (soulgreen.ae, a supplement product line), unrelated to SG. No menu, pricing, or nutrition data available anywhere online across three independent search passes. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-12-soulgreen.md. Strongly recommend human review to remove or replace this queue entry — further automated re-attempts are very unlikely to yield new data."
+    notes: "Re-checked 2026-08-21 (FOURTH consecutive dead end — same result as 2026-08-10, 2026-08-11, and 2026-08-12 runs): only matching SG business is 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), closed since 2023. A 'Soulgreen' brand exists but is UAE-based (soulgreen.ae, a supplement product line), unrelated to SG. No menu, pricing, or nutrition data available anywhere online across four independent search passes. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-21-soulgreen.md. Four consecutive scheduled runs have now reached this identical dead end: strongly recommend a human remove or replace this queue entry — further automated re-attempts will almost certainly keep re-deriving the same result and waste run cycles."
   },
   {
     id: "ichiban_boshi",
@@ -6732,5 +6732,329 @@ export const RESEARCH_QUEUE = [
     status: "pending",
     sfaLicenceNo: "B99091N004",
     notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chong Pang Market and Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
+  },
+  {
+    id: "tai_wah_pork_noodle",
+    name: "Tai Wah Pork Noodles",
+    aliases: [
+      "tai wah pork noodles"
+    ],
+    type: "food_court_stall",
+    cuisine: "Teochew Noodles",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 5 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "tiong_bahru_chicken_rice_hws",
+    name: "Tiong Bahru Hainanese Chicken Rice",
+    aliases: [
+      "tiong bahru hainanese chicken rice"
+    ],
+    type: "food_court_stall",
+    cuisine: "Hainanese Chicken Rice",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 2 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "jason_penang_cuisine",
+    name: "Jason Penang Cuisine",
+    aliases: [
+      "jason penang cuisine"
+    ],
+    type: "food_court_stall",
+    cuisine: "Penang / Malaysian",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 2 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "tai_seng_fish_soup",
+    name: "Tai Seng Fish Soup",
+    aliases: [
+      "tai seng fish soup"
+    ],
+    type: "food_court_stall",
+    cuisine: "Fish Soup",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 4 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "chef_wei_hk_cheong_fun",
+    name: "Chef Wei HK Cheong Fun",
+    aliases: [
+      "chef wei hk cheong fun"
+    ],
+    type: "food_court_stall",
+    cuisine: "Hong Kong / Cheong Fun",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 3 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "king_of_fried_rice_hws",
+    name: "King of Fried Rice",
+    aliases: [
+      "king of fried rice"
+    ],
+    type: "food_court_stall",
+    cuisine: "Fried Rice",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 3 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "hill_street_coffee_shop",
+    name: "Hill Street Coffee Shop",
+    aliases: [
+      "hill street coffee shop"
+    ],
+    type: "food_court_stall",
+    cuisine: "Coffeeshop / Kopi",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 4 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "pangs_hakka_ytf",
+    name: "Pang's Hakka Yong Tau Foo",
+    aliases: [
+      "pang's hakka yong tau foo"
+    ],
+    type: "food_court_stall",
+    cuisine: "Hakka",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 4 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "hill_street_hainanese_curry_rice",
+    name: "Hill Street Hainanese Curry Rice",
+    aliases: [
+      "hill street hainanese curry rice"
+    ],
+    type: "food_court_stall",
+    cuisine: "Hainanese Curry Rice",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 4 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "famous_eunos_bak_chor_mee",
+    name: "Famous Eunos Bak Chor Mee",
+    aliases: [
+      "famous eunos bak chor mee"
+    ],
+    type: "food_court_stall",
+    cuisine: "Bak Chor Mee",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "jiak_song_mee_hoon_kway",
+    name: "Jiak Song Mee Hoon Kway",
+    aliases: [
+      "jiak song mee hoon kway"
+    ],
+    type: "food_court_stall",
+    cuisine: "Mee Hoon Kway",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 3 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "ramen_king_hws",
+    name: "Ramen King",
+    aliases: [
+      "ramen king"
+    ],
+    type: "food_court_stall",
+    cuisine: "Japanese Ramen",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 2 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "beach_road_scissor_cut_curry_rice",
+    name: "Beach Road Scissor-Cut Curry Rice",
+    aliases: [
+      "beach road scissor-cut curry rice"
+    ],
+    type: "food_court_stall",
+    cuisine: "Curry Rice",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 2 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "koungs_wan_tan_mee",
+    name: "Koung's Wan Tan Mee",
+    aliases: [
+      "koung's wan tan mee"
+    ],
+    type: "food_court_stall",
+    cuisine: "Wanton Mee",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 2 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "old_teochew_satay_beehoon",
+    name: "Old Teochew Satay Bee Hoon & Mee Siam",
+    aliases: [
+      "old teochew satay bee hoon & mee siam"
+    ],
+    type: "food_court_stall",
+    cuisine: "Teochew",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 3 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "kaki_makan",
+    name: "Kaki Makan",
+    aliases: [
+      "kaki makan"
+    ],
+    type: "food_court_stall",
+    cuisine: "Halal Local",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "thai_makan_by_thai_dynasty",
+    name: "Thai Makan by Thai Dynasty",
+    aliases: [
+      "thai makan by thai dynasty"
+    ],
+    type: "food_court_stall",
+    cuisine: "Halal Thai",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "raja_wok",
+    name: "Raja Wok",
+    aliases: [
+      "raja wok"
+    ],
+    type: "food_court_stall",
+    cuisine: "Halal Fried Rice",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "waker_chicken",
+    name: "Waker Chicken",
+    aliases: [
+      "waker chicken"
+    ],
+    type: "food_court_stall",
+    cuisine: "Korean Fried Chicken",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "loong_kee_yong_tau_fu",
+    name: "Loong Kee Yong Tau Fu",
+    aliases: [
+      "loong kee yong tau fu"
+    ],
+    type: "food_court_stall",
+    cuisine: "Yong Tau Fu",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 2 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "fei_fei_roasted_noodle",
+    name: "Fei Fei Roasted Noodle",
+    aliases: [
+      "fei fei roasted noodle"
+    ],
+    type: "food_court_stall",
+    cuisine: "Roasted Meats / Noodles",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 3 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "top_1_home_made_noodle",
+    name: "Top 1 Home Made Noodle",
+    aliases: [
+      "top 1 home made noodle"
+    ],
+    type: "food_court_stall",
+    cuisine: "Ban Mian / Noodles",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "nikmat_nasi_lemak_husk",
+    name: "Nikmat Nasi Lemak by Husk",
+    aliases: [
+      "nikmat nasi lemak by husk"
+    ],
+    type: "food_court_stall",
+    cuisine: "Nasi Lemak",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "pondok_indah_nasi_padang",
+    name: "Pondok Indah Indonesian Nasi Padang",
+    aliases: [
+      "pondok indah indonesian nasi padang"
+    ],
+    type: "food_court_stall",
+    cuisine: "Nasi Padang",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "fire_western_n_grill",
+    name: "Fire Western 'N' Grill",
+    aliases: [
+      "fire western 'n' grill"
+    ],
+    type: "food_court_stall",
+    cuisine: "Western",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "nam_sing_hokkien_mee",
+    name: "Nam Sing Hokkien Mee",
+    aliases: [
+      "nam sing hokkien mee"
+    ],
+    type: "food_court_stall",
+    cuisine: "Hokkien Mee",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "garden_street_kway_chap",
+    name: "Garden Street Kway Chap",
+    aliases: [
+      "garden street kway chap"
+    ],
+    type: "food_court_stall",
+    cuisine: "Kway Chap",
+    priority: "medium",
+    status: "pending",
+    notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
   }
 ];
