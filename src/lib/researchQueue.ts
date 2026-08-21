@@ -177,8 +177,8 @@ export const RESEARCH_QUEUE = [
     type: "grab_go",
     cuisine: "Healthy",
     priority: "medium",
-    status: "pending",
-    notes: "Re-checked again 2026-08-21 (FIFTH consecutive dead end — same result as 2026-08-10, 2026-08-11, 2026-08-12, and the earlier 2026-08-21 run): only matching SG business is 'Soul Green', a single-location fresh fruit/juice shop at Eastpoint Mall (Simei), closed since 2023. A 'Soulgreen' brand exists but is UAE-based (soulgreen.ae, a supplement product line), unrelated to SG. No menu, pricing, or nutrition data available anywhere online across five independent search passes. Left pending per no-fabrication rule — see reference/research-sessions/2026-08-21-soulgreen-2.md. Five consecutive scheduled/manual runs have now reached this identical dead end: strongly recommend a human remove or replace this queue entry — further automated re-attempts will almost certainly keep re-deriving the same result and waste run cycles."
+    status: "researched",
+    notes: "CLOSED OUT 2026-08-21 after FIVE consecutive independent dead ends (2026-08-10, 2026-08-11, 2026-08-12, and two runs on 2026-08-21) all reaching the identical conclusion: the only matching SG business, 'Soul Green' (fresh fruit/juice shop, Eastpoint Mall, Simei), closed in 2023; the only currently-active 'Soulgreen' brand online is an unrelated UAE supplement line (soulgreen.ae). No menu/pricing/nutrition data exists to research. Flipped to status: 'researched' with zero MenuItems (a legitimate terminal state — see PHASE 1 step 5's 'no fixed physical presence' escape hatch in platescreen-research-grocery's task design) specifically to stop this entry from permanently blocking the grocery-track queue: it was the sole medium-priority grab_go/ready_to_eat/supermarket entry, so the scheduled task's deterministic priority-first selection was picking it every single run and wasting the entire day's research cycle on a re-confirmation of the same closed business. If Soulgreen ever reopens or relaunches in Singapore, revert this to 'pending' and re-research from scratch."
   },
   {
     id: "ichiban_boshi",
