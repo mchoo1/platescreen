@@ -13036,5 +13036,22 @@ export const BRANDS = [
       "dine_in"
     ],
     operatorId: "hawkers_street"
+  },
+  {
+    id: "coffeesmith",
+    name: "Coffeesmith",
+    emoji: "☕",
+    type: "grab_go",
+    cuisine: "Cafe",
+    aliases: [
+      "coffeesmith",
+      "coffee smith"
+    ],
+    dietTags: [],
+    priceRange: "$$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
   }
 ];

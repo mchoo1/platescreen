@@ -14194,5 +14194,223 @@ export const MENU_ITEMS = [
       "nut_free"
     ],
     confidence: "community"
+  },
+  {
+    id: "coffeesmith_espresso",
+    brandId: "coffeesmith",
+    name: "Espresso",
+    emoji: "☕",
+    category: "Espresso",
+    price: 4.95,
+    calories: 5,
+    protein: 0,
+    carbs: 1,
+    fat: 0,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "keto",
+      "dairy_free",
+      "low_carb",
+      "nut_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_americano",
+    brandId: "coffeesmith",
+    name: "Cafe Americano",
+    emoji: "☕",
+    category: "Coffee",
+    price: 5.5,
+    calories: 10,
+    protein: 1,
+    carbs: 2,
+    fat: 0,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "keto",
+      "dairy_free",
+      "low_carb",
+      "nut_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_cafe_latte",
+    brandId: "coffeesmith",
+    name: "Cafe Latte",
+    emoji: "☕",
+    category: "Coffee",
+    price: 7.15,
+    calories: 190,
+    protein: 10,
+    carbs: 15,
+    fat: 7,
+    compatibleWith: [
+      "vegetarian",
+      "gluten_free",
+      "nut_free"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "coffeesmith_cappuccino",
+    brandId: "coffeesmith",
+    name: "Cafe Cappuccino",
+    emoji: "☕",
+    category: "Coffee",
+    price: 7.15,
+    calories: 120,
+    protein: 7,
+    carbs: 10,
+    fat: 5,
+    compatibleWith: [
+      "vegetarian",
+      "gluten_free",
+      "nut_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_cafe_mocha",
+    brandId: "coffeesmith",
+    name: "Cafe Mocha",
+    emoji: "☕",
+    category: "Coffee",
+    price: 7.7,
+    calories: 290,
+    protein: 9,
+    carbs: 35,
+    fat: 11,
+    compatibleWith: [
+      "vegetarian",
+      "gluten_free",
+      "nut_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_iced_caramel_macchiato",
+    brandId: "coffeesmith",
+    name: "Iced Cafe Caramel Macchiato",
+    emoji: "🧊",
+    category: "Coffee",
+    price: 8.8,
+    calories: 240,
+    protein: 7,
+    carbs: 38,
+    fat: 7,
+    compatibleWith: [
+      "vegetarian",
+      "gluten_free",
+      "nut_free"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "coffeesmith_croissant",
+    brandId: "coffeesmith",
+    name: "Croissant",
+    emoji: "🥐",
+    category: "Bakery",
+    price: 5,
+    calories: 230,
+    protein: 5,
+    carbs: 26,
+    fat: 12,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_ham_cheese_croissant",
+    brandId: "coffeesmith",
+    name: "Ham & Cheese Croissant",
+    emoji: "🥐",
+    category: "Croissant",
+    price: 12,
+    calories: 420,
+    protein: 18,
+    carbs: 30,
+    fat: 26,
+    compatibleWith: [],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_smith_waffle",
+    brandId: "coffeesmith",
+    name: "Smith Waffle",
+    emoji: "🧇",
+    category: "Bakery",
+    price: 12,
+    calories: 450,
+    protein: 8,
+    carbs: 55,
+    fat: 22,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "coffeesmith_injeolmi_toast",
+    brandId: "coffeesmith",
+    name: "Injeolmi Toast",
+    emoji: "🍞",
+    category: "Injeolmi Toast",
+    price: 8.7,
+    calories: 380,
+    protein: 9,
+    carbs: 62,
+    fat: 11,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "coffeesmith_chocolate_truffle_cake",
+    brandId: "coffeesmith",
+    name: "Chocolate Truffle Cake",
+    emoji: "🍰",
+    category: "Cakes",
+    price: 9.35,
+    calories: 420,
+    protein: 5,
+    carbs: 45,
+    fat: 24,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "coffeesmith_strawberry_ade",
+    brandId: "coffeesmith",
+    name: "Strawberry Ade",
+    emoji: "🍓",
+    category: "Smith Ade",
+    price: 6.6,
+    calories: 180,
+    protein: 0,
+    carbs: 45,
+    fat: 0,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free",
+      "nut_free"
+    ],
+    confidence: "estimated"
   }
 ];

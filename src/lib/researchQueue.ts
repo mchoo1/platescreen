@@ -35,7 +35,7 @@ export const RESEARCH_QUEUE = [
     type: "grab_go",
     cuisine: "Coffee",
     priority: "low",
-    status: "pending"
+    status: "researched"
   },
   {
     id: "hollin",
