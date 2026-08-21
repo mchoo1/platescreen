@@ -12,6 +12,14 @@
 // reference/research-sessions/2026-08-21-sfa-track-records.md for full detail).
 // A handful couldn't be geocoded — lat/lng left null rather than guessed.
 //
+// 2026-08-22: removed the "gong_cha_p2" legacy_static_coordinate placeholder — confirmed via
+// web research that Gong Cha closed every Singapore outlet on 2026-10-02 in a complete
+// franchisee exit (site/socials wiped) and has not reopened as of this date; the vacated
+// outlets are now trading as a different brand, Cai Ca. Zero real gong_cha premises exist in
+// Singapore right now, so the vague "multiple outlets islandwide" placeholder was actively
+// misleading rather than merely unresearched. See
+// reference/research-sessions/2026-08-22-branches-gong_cha.md.
+//
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
 // inference limit (TS2590); chunking keeps each individual literal small enough to check.
@@ -19,19 +27,6 @@
 // same convention as outlets.ts/foodOptions.ts used before this restructure.
 
 const PREMISES_1 = [
-  {
-    id: "gong_cha_p2",
-    brandId: "gong_cha",
-    label: "Multiple outlets islandwide",
-    locationType: "standalone_shopfront",
-    locationContext: "Multiple outlets islandwide",
-    address: null,
-    postal: null,
-    lat: 1.3008,
-    lng: 103.8355,
-    sfa: null,
-    source: "legacy_static_coordinate"
-  },
   {
     id: "grain_p4",
     brandId: "grain",
