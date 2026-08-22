@@ -14890,5 +14890,104 @@ export const MENU_ITEMS = [
     fat: 3,
     compatibleWith: [],
     confidence: "estimated"
+  },
+  {
+    id: "kopikiosk_kaya_toast",
+    brandId: "kopitiam_kopi_kiosk",
+    name: "Kaya Toast",
+    emoji: "🍞",
+    category: "Toast",
+    price: 1.6,
+    calories: 220,
+    protein: 5,
+    carbs: 32,
+    fat: 8,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "kopikiosk_kaya_butter_toast",
+    brandId: "kopitiam_kopi_kiosk",
+    name: "Kaya Butter Toast",
+    emoji: "🍞",
+    category: "Toast",
+    price: 2,
+    calories: 300,
+    protein: 6,
+    carbs: 38,
+    fat: 13,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "kopikiosk_kopi",
+    brandId: "kopitiam_kopi_kiosk",
+    name: "Kopi",
+    emoji: "☕",
+    category: "Drinks",
+    price: 1.5,
+    calories: 130,
+    protein: 2,
+    carbs: 20,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "kopikiosk_teh",
+    brandId: "kopitiam_kopi_kiosk",
+    name: "Teh",
+    emoji: "🍵",
+    category: "Drinks",
+    price: 1.5,
+    calories: 140,
+    protein: 2,
+    carbs: 23,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "kopikiosk_ice_kacang",
+    brandId: "kopitiam_kopi_kiosk",
+    name: "Ice Kacang",
+    emoji: "🍧",
+    category: "Desserts",
+    price: 2.8,
+    calories: 290,
+    protein: 5,
+    carbs: 68,
+    fat: 5,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "kopikiosk_kaya_butter_set_meal",
+    brandId: "kopitiam_kopi_kiosk",
+    name: "Kaya Butter Set Meal",
+    emoji: "🍽️",
+    category: "Sets",
+    price: 5.2,
+    calories: 560,
+    protein: 20,
+    carbs: 63,
+    fat: 23,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
   }
 ];
