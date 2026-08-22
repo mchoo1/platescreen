@@ -1,0 +1,3157 @@
+[
+  {
+    "id": "venue_kopitiam_1",
+    "operatorId": "kopitiam",
+    "label": "11 JALAN TAN TOCK SENG",
+    "address": "11 JALAN TAN TOCK SENG #01-13 TAN TOCK SENG HOSPITAL SINGAPORE 308433",
+    "postal": "308433",
+    "lat": 1.321368648806794,
+    "lng": 103.8456940410183,
+    "sfa": {
+      "licenceNumber": "W99185J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "11 JALAN TAN TOCK SENG #01-13 TAN TOCK SENG HOSPITAL SINGAPORE 308433",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_2",
+    "operatorId": "kopitiam",
+    "label": "6 OUTRAM ROAD SINGAPORE GENERAL HOSPITAL SINGAPORE 169608",
+    "address": "6 OUTRAM ROAD SINGAPORE GENERAL HOSPITAL SINGAPORE 169608",
+    "postal": "169608",
+    "lat": 1.279939687521296,
+    "lng": 103.8307217735341,
+    "sfa": {
+      "licenceNumber": "W92200L000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "6 OUTRAM ROAD SINGAPORE GENERAL HOSPITAL SINGAPORE 169608",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_3",
+    "operatorId": "kopitiam",
+    "label": "1 HOSPITAL DRIVE SINGAPORE GENERAL HOSPITAL SINGAPORE 169608",
+    "address": "1 HOSPITAL DRIVE SINGAPORE GENERAL HOSPITAL SINGAPORE 169608",
+    "postal": "169608",
+    "lat": 1.279939687521296,
+    "lng": 103.8307217735341,
+    "sfa": {
+      "licenceNumber": "W92189L000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "1 HOSPITAL DRIVE SINGAPORE GENERAL HOSPITAL SINGAPORE 169608",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_4",
+    "operatorId": "kopitiam",
+    "label": "1 ROCHOR ROAD",
+    "address": "1 ROCHOR ROAD #01-506 ROCHOR CENTRE SINGAPORE 180001",
+    "postal": "180001",
+    "lat": 1.307619,
+    "lng": 103.854219,
+    "sfa": {
+      "licenceNumber": "W77119C000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "1 ROCHOR ROAD #01-506 ROCHOR CENTRE SINGAPORE 180001",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_5",
+    "operatorId": "kopitiam",
+    "label": "10 JURONG EAST STREET 12",
+    "address": "10 JURONG EAST STREET 12 #01-01 JURONG EAST MRT STATION SINGAPORE 609690",
+    "postal": "609690",
+    "lat": 1.333027515439408,
+    "lng": 103.7423704876066,
+    "sfa": {
+      "licenceNumber": "SW12C65C000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "10 JURONG EAST STREET 12 #01-01 JURONG EAST MRT STATION SINGAPORE 609690",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_6",
+    "operatorId": "kopitiam",
+    "label": "624 CHOA CHU KANG STREET 62",
+    "address": "624 CHOA CHU KANG STREET 62 #02-222/224 YEW TEE SHOPPING CENTRE SINGAPORE 680624",
+    "postal": "680624",
+    "lat": 1.398047361530158,
+    "lng": 103.7470847789317,
+    "sfa": {
+      "licenceNumber": "SW11A03J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "624 CHOA CHU KANG STREET 62 #02-222/224 YEW TEE SHOPPING CENTRE SINGAPORE 680624",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_7",
+    "operatorId": "kopitiam",
+    "label": "BLK 118 RIVERVALE DRIVE",
+    "address": "BLK 118 RIVERVALE DRIVE #02-14 RIVERVALE PLAZA SINGAPORE 540118",
+    "postal": "540118",
+    "lat": 1.385337361077732,
+    "lng": 103.9018410441215,
+    "sfa": {
+      "licenceNumber": "S99122B000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "BLK 118 RIVERVALE DRIVE #02-14 RIVERVALE PLAZA SINGAPORE 540118",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_8",
+    "operatorId": "kopitiam",
+    "label": "BLK 735 PASIR RIS STREET 72",
+    "address": "BLK 735 PASIR RIS STREET 72 #01-342 SINGAPORE 510735",
+    "postal": "510735",
+    "lat": 1.379668120441751,
+    "lng": 103.9365746136632,
+    "sfa": {
+      "licenceNumber": "S97115P000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "BLK 735 PASIR RIS STREET 72 #01-342 SINGAPORE 510735",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_9",
+    "operatorId": "kopitiam",
+    "label": "735 PASIR RIS STREET 72",
+    "address": "735 PASIR RIS STREET 72 #01-364 SINGAPORE 510735",
+    "postal": "510735",
+    "lat": 1.379668120441751,
+    "lng": 103.9365746136632,
+    "sfa": {
+      "licenceNumber": "S97098E000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "735 PASIR RIS STREET 72 #01-364 SINGAPORE 510735",
+      "grade": "not_applicable",
+      "demeritPoints": 0,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_10",
+    "operatorId": "kopitiam",
+    "label": "11 TAMPINES STREET 32",
+    "address": "11 TAMPINES STREET 32 #01-01 SINGAPORE 529287",
+    "postal": "529287",
+    "lat": 1.354364937990946,
+    "lng": 103.9600421882809,
+    "sfa": {
+      "licenceNumber": "S95116P000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "11 TAMPINES STREET 32 #01-01 SINGAPORE 529287",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_11",
+    "operatorId": "kopitiam",
+    "label": "284 BISHAN STREET 22",
+    "address": "284 BISHAN STREET 22 #01-211 SINGAPORE 570284",
+    "postal": "570284",
+    "lat": 1.358866664629053,
+    "lng": 103.8441505382283,
+    "sfa": {
+      "licenceNumber": "S91051X000",
+      "licenseeName": "CHENG LI KOPITIAM PTE. LTD.",
+      "premisesAddress": "284 BISHAN STREET 22 #01-211 SINGAPORE 570284",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_12",
+    "operatorId": "kopitiam",
+    "label": "248 SIMEI STREET 3",
+    "address": "248 SIMEI STREET 3 #01-136 SINGAPORE 520248",
+    "postal": "520248",
+    "lat": 1.343593762696094,
+    "lng": 103.9535411428251,
+    "sfa": {
+      "licenceNumber": "S90128N000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "248 SIMEI STREET 3 #01-136 SINGAPORE 520248",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_13",
+    "operatorId": "kopitiam",
+    "label": "9007 TAMPINES STREET 93 SINGAPORE 528841",
+    "address": "9007 TAMPINES STREET 93 SINGAPORE 528841",
+    "postal": "528841",
+    "lat": 1.338711197586347,
+    "lng": 103.9410385406616,
+    "sfa": {
+      "licenceNumber": "S87156C000",
+      "licenseeName": "9007 KOPITIAM PTE. LTD.",
+      "premisesAddress": "9007 TAMPINES STREET 93 SINGAPORE 528841",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_14",
+    "operatorId": "kopitiam",
+    "label": "BLK 401 HOUGANG AVENUE 10",
+    "address": "BLK 401 HOUGANG AVENUE 10 #01-1158 SINGAPORE 530401",
+    "postal": "530401",
+    "lat": 1.374843394858062,
+    "lng": 103.8969941613635,
+    "sfa": {
+      "licenceNumber": "S85260C000",
+      "licenseeName": "KPT KOPITIAM (HOUGANG) PTE LTD",
+      "premisesAddress": "BLK 401 HOUGANG AVENUE 10 #01-1158 SINGAPORE 530401",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_15",
+    "operatorId": "kopitiam",
+    "label": "542B SERANGOON NORTH AVENUE 3",
+    "address": "542B SERANGOON NORTH AVENUE 3 #01-01 SINGAPORE 551542",
+    "postal": "551542",
+    "lat": 1.373528162005997,
+    "lng": 103.87169704269,
+    "sfa": {
+      "licenceNumber": "S00119A000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "542B SERANGOON NORTH AVENUE 3 #01-01 SINGAPORE 551542",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_16",
+    "operatorId": "kopitiam",
+    "label": "504 YISHUN STREET 51",
+    "address": "504 YISHUN STREET 51 #01-01 SINGAPORE 760504",
+    "postal": "760504",
+    "lat": 1.418407467778265,
+    "lng": 103.8445476647715,
+    "sfa": {
+      "licenceNumber": "NW15357B000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "504 YISHUN STREET 51 #01-01 SINGAPORE 760504",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_17",
+    "operatorId": "kopitiam",
+    "label": "960 WOODLANDS ROAD",
+    "address": "960 WOODLANDS ROAD #01-02 KRANJI MRT STATION SINGAPORE 738702",
+    "postal": "738702",
+    "lat": 1.425086980736478,
+    "lng": 103.762137459497,
+    "sfa": {
+      "licenceNumber": "NW12G31L000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "960 WOODLANDS ROAD #01-02 KRANJI MRT STATION SINGAPORE 738702",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_18",
+    "operatorId": "kopitiam",
+    "label": "BLK 277C COMPASSVALE LINK",
+    "address": "BLK 277C COMPASSVALE LINK #01-13 (KIOSK 1) SINGAPORE 543277",
+    "postal": "543277",
+    "lat": 1.382336989669811,
+    "lng": 103.8936078387552,
+    "sfa": {
+      "licenceNumber": "NE11340V000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "BLK 277C COMPASSVALE LINK #01-13 (KIOSK 1) SINGAPORE 543277",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_19",
+    "operatorId": "kopitiam",
+    "label": "275D COMPASSVALE LINK",
+    "address": "275D COMPASSVALE LINK #01-01 UNIT 1 SINGAPORE 544275",
+    "postal": "544275",
+    "lat": 1.382904957314137,
+    "lng": 103.8937134851232,
+    "sfa": {
+      "licenceNumber": "NE08064V000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "275D COMPASSVALE LINK #01-01 UNIT 1 SINGAPORE 544275",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_20",
+    "operatorId": "kopitiam",
+    "label": "108 PUNGGOL FIELD",
+    "address": "108 PUNGGOL FIELD #01-01 SINGAPORE 820108",
+    "postal": "820108",
+    "lat": 1.396498616281076,
+    "lng": 103.9088663070251,
+    "sfa": {
+      "licenceNumber": "NE05132K000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "108 PUNGGOL FIELD #01-01 SINGAPORE 820108",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_21",
+    "operatorId": "kopitiam",
+    "label": "639 PUNGGOL DRIVE",
+    "address": "639 PUNGGOL DRIVE #01-07 SINGAPORE 820639",
+    "postal": "820639",
+    "lat": 1.39944615081316,
+    "lng": 103.9160546531649,
+    "sfa": {
+      "licenceNumber": "NE04163C000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "639 PUNGGOL DRIVE #01-07 SINGAPORE 820639",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_22",
+    "operatorId": "kopitiam",
+    "label": "475 CHOA CHU KANG AVENUE 3",
+    "address": "475 CHOA CHU KANG AVENUE 3 #01-31 SINGAPORE 680475",
+    "postal": "680475",
+    "lat": 1.377897275999276,
+    "lng": 103.7390154860207,
+    "sfa": {
+      "licenceNumber": "J99021J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "475 CHOA CHU KANG AVENUE 3 #01-31 SINGAPORE 680475",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_23",
+    "operatorId": "kopitiam",
+    "label": "624 CHOA CHU KANG STREET 62",
+    "address": "624 CHOA CHU KANG STREET 62 #02-222 YEW TEE SHOPPING CENTRE SINGAPORE 680624",
+    "postal": "680624",
+    "lat": 1.398047361530158,
+    "lng": 103.7470847789317,
+    "sfa": {
+      "licenceNumber": "J96115A000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "624 CHOA CHU KANG STREET 62 #02-222 YEW TEE SHOPPING CENTRE SINGAPORE 680624",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_24",
+    "operatorId": "kopitiam",
+    "label": "90 BOON LAY PLACE",
+    "address": "90 BOON LAY PLACE #01-01 SAVOY THEATRE SINGAPORE 649884",
+    "postal": "649884",
+    "lat": 1.347379342950926,
+    "lng": 103.7119384977343,
+    "sfa": {
+      "licenceNumber": "J88097J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "90 BOON LAY PLACE #01-01 SAVOY THEATRE SINGAPORE 649884",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_25",
+    "operatorId": "kopitiam",
+    "label": "279 BUKIT BATOK EAST AVENUE 3",
+    "address": "279 BUKIT BATOK EAST AVENUE 3 #01-337 SINGAPORE 650279",
+    "postal": "650279",
+    "lat": 1.34816051653432,
+    "lng": 103.7573372879288,
+    "sfa": {
+      "licenceNumber": "J87104J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "279 BUKIT BATOK EAST AVENUE 3 #01-337 SINGAPORE 650279",
+      "grade": "not_applicable",
+      "demeritPoints": 6,
+      "licenceSuspended": true
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_26",
+    "operatorId": "kopitiam",
+    "label": "273 BUKIT BATOK EAST AVENUE 4",
+    "address": "273 BUKIT BATOK EAST AVENUE 4 #01-78 SINGAPORE 650273",
+    "postal": "650273",
+    "lat": 1.348422645299852,
+    "lng": 103.7575792322673,
+    "sfa": {
+      "licenceNumber": "J85135K000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "273 BUKIT BATOK EAST AVENUE 4 #01-78 SINGAPORE 650273",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_27",
+    "operatorId": "kopitiam",
+    "label": "236 - 238 GEYLANG ROAD SINGAPORE 389295",
+    "address": "236 - 238 GEYLANG ROAD SINGAPORE 389295",
+    "postal": "389295",
+    "lat": 1.312121209815897,
+    "lng": 103.8776134438425,
+    "sfa": {
+      "licenceNumber": "E97032A000",
+      "licenseeName": "351 KOPITIAM PTE. LTD.",
+      "premisesAddress": "236 - 238 GEYLANG ROAD SINGAPORE 389295",
+      "grade": "not_applicable",
+      "demeritPoints": 6,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_28",
+    "operatorId": "kopitiam",
+    "label": "3 LORONG LEW LIAN",
+    "address": "3 LORONG LEW LIAN #01-76 SINGAPORE 531003",
+    "postal": "531003",
+    "lat": 1.35047535991421,
+    "lng": 103.8761329572104,
+    "sfa": {
+      "licenceNumber": "E77120L000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "3 LORONG LEW LIAN #01-76 SINGAPORE 531003",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_29",
+    "operatorId": "kopitiam",
+    "label": "131 UPPER PAYA LEBAR ROAD SINGAPORE 534841",
+    "address": "131 UPPER PAYA LEBAR ROAD SINGAPORE 534841",
+    "postal": "534841",
+    "lat": 1.338666245761943,
+    "lng": 103.8862974144144,
+    "sfa": {
+      "licenceNumber": "E53019N000",
+      "licenseeName": "JIALE KOPITIAM PTE LTD",
+      "premisesAddress": "131 UPPER PAYA LEBAR ROAD SINGAPORE 534841",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_30",
+    "operatorId": "kopitiam",
+    "label": "10 UBI CRESCENT",
+    "address": "10 UBI CRESCENT #01-04 UBI TECHPARK SINGAPORE 408564",
+    "postal": "408564",
+    "lat": 1.326336832922053,
+    "lng": 103.8962622153951,
+    "sfa": {
+      "licenceNumber": "E01191A000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "10 UBI CRESCENT #01-04 UBI TECHPARK SINGAPORE 408564",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_31",
+    "operatorId": "kopitiam",
+    "label": "437 FERNVALE ROAD",
+    "address": "437 FERNVALE ROAD #01-01 MULTI STOREY CAR PARK SINGAPORE 790437",
+    "postal": "790437",
+    "lat": 1.392550405465336,
+    "lng": 103.8763303947236,
+    "sfa": {
+      "licenceNumber": "CE11G62K000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "437 FERNVALE ROAD #01-01 MULTI STOREY CAR PARK SINGAPORE 790437",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_32",
+    "operatorId": "kopitiam",
+    "label": "6A NAPIER ROAD",
+    "address": "6A NAPIER ROAD #02-21/22 GLENEAGLES HOSPITAL SINGAPORE 258500",
+    "postal": "258500",
+    "lat": 1.307427931760776,
+    "lng": 103.8196050164203,
+    "sfa": {
+      "licenceNumber": "CE05332L000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "6A NAPIER ROAD #02-21/22 GLENEAGLES HOSPITAL SINGAPORE 258500",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_33",
+    "operatorId": "kopitiam",
+    "label": "2 BENOI PLACE SINGAPORE 629924",
+    "address": "2 BENOI PLACE SINGAPORE 629924",
+    "postal": "629924",
+    "lat": 1.313189674183361,
+    "lng": 103.6792179617608,
+    "sfa": {
+      "licenceNumber": "C86227E000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "2 BENOI PLACE SINGAPORE 629924",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_34",
+    "operatorId": "kopitiam",
+    "label": "1 WHOLESALE CENTRE",
+    "address": "1 WHOLESALE CENTRE #01-02 SINGAPORE 110001",
+    "postal": "110001",
+    "lat": 1.285272083657444,
+    "lng": 103.7791168105906,
+    "sfa": {
+      "licenceNumber": "C84028E000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "1 WHOLESALE CENTRE #01-02 SINGAPORE 110001",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_35",
+    "operatorId": "kopitiam",
+    "label": "BLK 325 CLEMENTI AVENUE 5",
+    "address": "BLK 325 CLEMENTI AVENUE 5 #01-129 SINGAPORE 120325",
+    "postal": "120325",
+    "lat": 1.315096685325003,
+    "lng": 103.7668174006665,
+    "sfa": {
+      "licenceNumber": "C77092V000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "BLK 325 CLEMENTI AVENUE 5 #01-129 SINGAPORE 120325",
+      "grade": "not_applicable",
+      "demeritPoints": 6,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_36",
+    "operatorId": "kopitiam",
+    "label": "19 GHIM MOH ROAD",
+    "address": "19 GHIM MOH ROAD #01-229 SINGAPORE 270019",
+    "postal": "270019",
+    "lat": 1.311438523159521,
+    "lng": 103.7882988923767,
+    "sfa": {
+      "licenceNumber": "C77001N000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "19 GHIM MOH ROAD #01-229 SINGAPORE 270019",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_37",
+    "operatorId": "kopitiam",
+    "label": "20 WOODLANDS LOOP",
+    "address": "20 WOODLANDS LOOP #01-35 GAMBAS INDUSTRIAL PARK SINGAPORE 738321",
+    "postal": "738321",
+    "lat": 1.44746460725196,
+    "lng": 103.8099074295037,
+    "sfa": {
+      "licenceNumber": "B97074K000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "20 WOODLANDS LOOP #01-35 GAMBAS INDUSTRIAL PARK SINGAPORE 738321",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_38",
+    "operatorId": "kopitiam",
+    "label": "628 SENJA ROAD",
+    "address": "628 SENJA ROAD #01-07 SINGAPORE 670628",
+    "postal": "670628",
+    "lat": 1.385128673830468,
+    "lng": 103.7604106178863,
+    "sfa": {
+      "licenceNumber": "B03097J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "628 SENJA ROAD #01-07 SINGAPORE 670628",
+      "grade": "not_applicable",
+      "demeritPoints": 0,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_39",
+    "operatorId": "kopitiam",
+    "label": "548 WOODLANDS DRIVE 44 VISTA POINT",
+    "address": "548 WOODLANDS DRIVE 44 VISTA POINT #01-20 SINGAPORE 730548",
+    "postal": "730548",
+    "lat": 1.430897146030165,
+    "lng": 103.7939274294759,
+    "sfa": {
+      "licenceNumber": "B00101J000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "548 WOODLANDS DRIVE 44 VISTA POINT #01-20 SINGAPORE 730548",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_40",
+    "operatorId": "kopitiam",
+    "label": "524A JELAPANG ROAD",
+    "address": "524A JELAPANG ROAD #01-03 GREENRIDGE SHOPPING CENTRE SINGAPORE 671524",
+    "postal": "671524",
+    "lat": 1.385405692832715,
+    "lng": 103.7662284681845,
+    "sfa": {
+      "licenceNumber": "B00062K000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "524A JELAPANG ROAD #01-03 GREENRIDGE SHOPPING CENTRE SINGAPORE 671524",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_41",
+    "operatorId": "kopitiam",
+    "label": "524A JELAPANG ROAD",
+    "address": "524A JELAPANG ROAD #01-01/02 GREENRIDGE SHOPPING CENTRE SINGAPORE 671524",
+    "postal": "671524",
+    "lat": 1.385405692832715,
+    "lng": 103.7662284681845,
+    "sfa": {
+      "licenceNumber": "B00052N000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "524A JELAPANG ROAD #01-01/02 GREENRIDGE SHOPPING CENTRE SINGAPORE 671524",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_42",
+    "operatorId": "kopitiam",
+    "label": "548 WOODLANDS DRIVE 44",
+    "address": "548 WOODLANDS DRIVE 44 #01-21 VISTA POINT SINGAPORE 730548",
+    "postal": "730548",
+    "lat": 1.430897146030165,
+    "lng": 103.7939274294759,
+    "sfa": {
+      "licenceNumber": "B00016A000",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "548 WOODLANDS DRIVE 44 #01-21 VISTA POINT SINGAPORE 730548",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_43",
+    "operatorId": "kopitiam",
+    "label": "18 RAFFLES QUAY LAU PA SAT FESTIVAL MARKET SINGAPORE 048582",
+    "address": "18 RAFFLES QUAY LAU PA SAT FESTIVAL MARKET SINGAPORE 048582",
+    "postal": "048582",
+    "lat": 1.28059421956057,
+    "lng": 103.8504083579583,
+    "sfa": {
+      "licenceNumber": "W91119C127",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "18 RAFFLES QUAY LAU PA SAT FESTIVAL MARKET SINGAPORE 048582",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_44",
+    "operatorId": "kopitiam",
+    "label": "27 WOODLANDS INDUSTRIAL PARK E1",
+    "address": "27 WOODLANDS INDUSTRIAL PARK E1 #01-03 HIANGKIE INDUSTRIAL BUILDING SINGAPORE 757718",
+    "postal": "757718",
+    "lat": 1.455236130254513,
+    "lng": 103.7980653281794,
+    "sfa": {
+      "licenceNumber": "NW07308N003",
+      "licenseeName": "REGENT KOPITIAM PTE. LTD.",
+      "premisesAddress": "27 WOODLANDS INDUSTRIAL PARK E1 #01-03 HIANGKIE INDUSTRIAL BUILDING SINGAPORE 757718",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_45",
+    "operatorId": "kopitiam",
+    "label": "10 SENGKANG SQUARE KOPITIAM SQUARE SINGAPORE 544829",
+    "address": "10 SENGKANG SQUARE KOPITIAM SQUARE SINGAPORE 544829",
+    "postal": "544829",
+    "lat": 1.391526514876943,
+    "lng": 103.8936571587299,
+    "sfa": {
+      "licenceNumber": "NE09395B059",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "10 SENGKANG SQUARE KOPITIAM SQUARE SINGAPORE 544829",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_46",
+    "operatorId": "kopitiam",
+    "label": "205 BEDOK NORTH STREET 1",
+    "address": "205 BEDOK NORTH STREET 1 #01-357 SINGAPORE 460205",
+    "postal": "460205",
+    "lat": 1.325926754346681,
+    "lng": 103.9308080826345,
+    "sfa": {
+      "licenceNumber": "E79156L001",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "205 BEDOK NORTH STREET 1 #01-357 SINGAPORE 460205",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_47",
+    "operatorId": "kopitiam",
+    "label": "45 SIMS DRIVE",
+    "address": "45 SIMS DRIVE #01-150 SINGAPORE 380045",
+    "postal": "380045",
+    "lat": 1.317337215054699,
+    "lng": 103.8784426741824,
+    "sfa": {
+      "licenceNumber": "E76106C008",
+      "licenseeName": "SH KOPITIAM PTE. LTD.",
+      "premisesAddress": "45 SIMS DRIVE #01-150 SINGAPORE 380045",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_kopitiam_48",
+    "operatorId": "kopitiam",
+    "label": "70 JELLICOE ROAD",
+    "address": "70 JELLICOE ROAD #01-03 V HOTEL @ LAVENDER SINGAPORE 208767",
+    "postal": "208767",
+    "lat": 1.307796802957081,
+    "lng": 103.8625350437399,
+    "sfa": {
+      "licenceNumber": "CE11433C011",
+      "licenseeName": "KOPITIAM INVESTMENT PTE LTD",
+      "premisesAddress": "70 JELLICOE ROAD #01-03 V HOTEL @ LAVENDER SINGAPORE 208767",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_1",
+    "operatorId": "koufu",
+    "label": "8 GRANGE ROAD",
+    "address": "8 GRANGE ROAD #B1-01 CINELEISURE ORCHARD SINGAPORE 239695",
+    "postal": "239695",
+    "lat": 1.30152101873534,
+    "lng": 103.8364296550156,
+    "sfa": {
+      "licenceNumber": "W97396E000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "8 GRANGE ROAD #B1-01 CINELEISURE ORCHARD SINGAPORE 239695",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_2",
+    "operatorId": "koufu",
+    "label": "57 DAWSON ROAD",
+    "address": "57 DAWSON ROAD #02-09 DAWSON PLACE SINGAPORE 142057",
+    "postal": "142057",
+    "lat": 1.292703398550616,
+    "lng": 103.810958956467,
+    "sfa": {
+      "licenceNumber": "W03535K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "57 DAWSON ROAD #02-09 DAWSON PLACE SINGAPORE 142057",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_3",
+    "operatorId": "koufu",
+    "label": "18 JALAN MEMBINA",
+    "address": "18 JALAN MEMBINA #01-01 SINGAPORE 164018",
+    "postal": "164018",
+    "lat": 1.285697428832258,
+    "lng": 103.8267854480945,
+    "sfa": {
+      "licenceNumber": "W02181J000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "18 JALAN MEMBINA #01-01 SINGAPORE 164018",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_4",
+    "operatorId": "koufu",
+    "label": "500 DOVER ROAD SINGAPORE POLYTECHNIC (KIOSK 4) SINGAPORE 139",
+    "address": "500 DOVER ROAD SINGAPORE POLYTECHNIC (KIOSK 4) SINGAPORE 139651",
+    "postal": "139651",
+    "lat": 1.30787792644497,
+    "lng": 103.7795746707994,
+    "sfa": {
+      "licenceNumber": "SW16780C000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "500 DOVER ROAD SINGAPORE POLYTECHNIC (KIOSK 4) SINGAPORE 139651",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_5",
+    "operatorId": "koufu",
+    "label": "500 DOVER ROAD SINGAPORE POLYTECHNIC FOOD COURT 4 @ AERO HUB",
+    "address": "500 DOVER ROAD SINGAPORE POLYTECHNIC FOOD COURT 4 @ AERO HUB SINGAPORE 139651",
+    "postal": "139651",
+    "lat": 1.30787792644497,
+    "lng": 103.7795746707994,
+    "sfa": {
+      "licenceNumber": "SW15B17B000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "500 DOVER ROAD SINGAPORE POLYTECHNIC FOOD COURT 4 @ AERO HUB SINGAPORE 139651",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_6",
+    "operatorId": "koufu",
+    "label": "204 CHOA CHU KANG AVENUE 1",
+    "address": "204 CHOA CHU KANG AVENUE 1 #01-29 SINGAPORE 680204",
+    "postal": "680204",
+    "lat": 1.380791256562476,
+    "lng": 103.7492266589656,
+    "sfa": {
+      "licenceNumber": "SW15336A000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "204 CHOA CHU KANG AVENUE 1 #01-29 SINGAPORE 680204",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_7",
+    "operatorId": "koufu",
+    "label": "500 DOVER ROAD SINGAPORE POLYTECHNIC - FOODCOURT 1 SINGAPORE",
+    "address": "500 DOVER ROAD SINGAPORE POLYTECHNIC - FOODCOURT 1 SINGAPORE 139651",
+    "postal": "139651",
+    "lat": 1.30787792644497,
+    "lng": 103.7795746707994,
+    "sfa": {
+      "licenceNumber": "SW14464P000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "500 DOVER ROAD SINGAPORE POLYTECHNIC - FOODCOURT 1 SINGAPORE 139651",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_8",
+    "operatorId": "koufu",
+    "label": "50 JURONG GATEWAY ROAD",
+    "address": "50 JURONG GATEWAY ROAD #05-01 JEM SINGAPORE 608549",
+    "postal": "608549",
+    "lat": 1.333293344734624,
+    "lng": 103.743278742341,
+    "sfa": {
+      "licenceNumber": "SW13Q69N000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "50 JURONG GATEWAY ROAD #05-01 JEM SINGAPORE 608549",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_9",
+    "operatorId": "koufu",
+    "label": "1 VISTA EXCHANGE GREEN",
+    "address": "1 VISTA EXCHANGE GREEN #02-25/26 THE STAR VISTA SINGAPORE 138617",
+    "postal": "138617",
+    "lat": 1.306871930089799,
+    "lng": 103.7884743980428,
+    "sfa": {
+      "licenceNumber": "SW12I11X000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "1 VISTA EXCHANGE GREEN #02-25/26 THE STAR VISTA SINGAPORE 138617",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_10",
+    "operatorId": "koufu",
+    "label": "1 CREATE WAY",
+    "address": "1 CREATE WAY #01-04 UNIVERSITY TOWN - NUS SINGAPORE 138602",
+    "postal": "138602",
+    "lat": 1.303996548779526,
+    "lng": 103.7740329404124,
+    "sfa": {
+      "licenceNumber": "SW11562P000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "1 CREATE WAY #01-04 UNIVERSITY TOWN - NUS SINGAPORE 138602",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_11",
+    "operatorId": "koufu",
+    "label": "26 SENTOSA GATEWAY",
+    "address": "26 SENTOSA GATEWAY #B1-208 RESORTS WORLD AT SENTOSA (SINGAPORE POOLS) SINGAPORE 098138",
+    "postal": "098138",
+    "lat": 1.257038644685504,
+    "lng": 103.8220387144045,
+    "sfa": {
+      "licenceNumber": "SW10305K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "26 SENTOSA GATEWAY #B1-208 RESORTS WORLD AT SENTOSA (SINGAPORE POOLS) SINGAPORE 098138",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_12",
+    "operatorId": "koufu",
+    "label": "21 CHOA CHU KANG NORTH 6",
+    "address": "21 CHOA CHU KANG NORTH 6 #B1-17/22 YEW TEE POINT SINGAPORE 689578",
+    "postal": "689578",
+    "lat": 1.396969922679733,
+    "lng": 103.7464431982236,
+    "sfa": {
+      "licenceNumber": "SW09209L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "21 CHOA CHU KANG NORTH 6 #B1-17/22 YEW TEE POINT SINGAPORE 689578",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_13",
+    "operatorId": "koufu",
+    "label": "762 JURONG WEST STREET 75",
+    "address": "762 JURONG WEST STREET 75 #01-300 GEK POH SHOPPING CENTRE SINGAPORE 640762",
+    "postal": "640762",
+    "lat": 1.348743571364091,
+    "lng": 103.6977320910003,
+    "sfa": {
+      "licenceNumber": "SW07282K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "762 JURONG WEST STREET 75 #01-300 GEK POH SHOPPING CENTRE SINGAPORE 640762",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_14",
+    "operatorId": "koufu",
+    "label": "638A JURONG WEST STREET 61",
+    "address": "638A JURONG WEST STREET 61 #01-K1 PIONEER MALL SINGAPORE 641638",
+    "postal": "641638",
+    "lat": 1.341958610167925,
+    "lng": 103.697593081001,
+    "sfa": {
+      "licenceNumber": "SW06701A000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "638A JURONG WEST STREET 61 #01-K1 PIONEER MALL SINGAPORE 641638",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_15",
+    "operatorId": "koufu",
+    "label": "399 YUNG SHENG ROAD",
+    "address": "399 YUNG SHENG ROAD #01-43 TAMAN JURONG SHOPPING CENTRE SINGAPORE 610399",
+    "postal": "610399",
+    "lat": 1.334844851992345,
+    "lng": 103.7204620142154,
+    "sfa": {
+      "licenceNumber": "SW05149L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "399 YUNG SHENG ROAD #01-43 TAMAN JURONG SHOPPING CENTRE SINGAPORE 610399",
+      "grade": "not_applicable",
+      "demeritPoints": 6,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_16",
+    "operatorId": "koufu",
+    "label": "638A JURONG WEST STREET 61",
+    "address": "638A JURONG WEST STREET 61 #01-22 PIONEER MALL SINGAPORE 641638",
+    "postal": "641638",
+    "lat": 1.341958610167925,
+    "lng": 103.697593081001,
+    "sfa": {
+      "licenceNumber": "SW04150L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "638A JURONG WEST STREET 61 #01-22 PIONEER MALL SINGAPORE 641638",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_17",
+    "operatorId": "koufu",
+    "label": "5 STADIUM WALK",
+    "address": "5 STADIUM WALK #03-01/02 LEISURE PARK KALLANG SINGAPORE 397693",
+    "postal": "397693",
+    "lat": 1.302301084052293,
+    "lng": 103.8764739758827,
+    "sfa": {
+      "licenceNumber": "SE14557L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "5 STADIUM WALK #03-01/02 LEISURE PARK KALLANG SINGAPORE 397693",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_18",
+    "operatorId": "koufu",
+    "label": "5 CHANGI BUSINESS PARK CENTRAL 1",
+    "address": "5 CHANGI BUSINESS PARK CENTRAL 1 #02-01 CHANGI CITY POINT SINGAPORE 486038",
+    "postal": "486038",
+    "lat": 1.334083593313743,
+    "lng": 103.962946083391,
+    "sfa": {
+      "licenceNumber": "SE11842K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "5 CHANGI BUSINESS PARK CENTRAL 1 #02-01 CHANGI CITY POINT SINGAPORE 486038",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_19",
+    "operatorId": "koufu",
+    "label": "180 ANG MO KIO AVENUE 8 NANYANG POLY BLK A LEVEL 2 CENTRAL S",
+    "address": "180 ANG MO KIO AVENUE 8 NANYANG POLY BLK A LEVEL 2 CENTRAL SOUTH CANTEEN SINGAPORE 569830",
+    "postal": "569830",
+    "lat": 1.37781903108959,
+    "lng": 103.8484234454028,
+    "sfa": {
+      "licenceNumber": "S98090N000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "180 ANG MO KIO AVENUE 8 NANYANG POLY BLK A LEVEL 2 CENTRAL SOUTH CANTEEN SINGAPORE 569830",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_20",
+    "operatorId": "koufu",
+    "label": "735 PASIR RIS STREET 72",
+    "address": "735 PASIR RIS STREET 72 #01-336 PASIR RIS WEST PLAZA SINGAPORE 510735",
+    "postal": "510735",
+    "lat": 1.379668120441751,
+    "lng": 103.9365746136632,
+    "sfa": {
+      "licenceNumber": "S97122X000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "735 PASIR RIS STREET 72 #01-336 PASIR RIS WEST PLAZA SINGAPORE 510735",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_21",
+    "operatorId": "koufu",
+    "label": "301 UPPER THOMSON ROAD",
+    "address": "301 UPPER THOMSON ROAD #01-113 THOMSON PLAZA SINGAPORE 574408",
+    "postal": "574408",
+    "lat": 1.354669024964243,
+    "lng": 103.830919782333,
+    "sfa": {
+      "licenceNumber": "S94029L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "301 UPPER THOMSON ROAD #01-113 THOMSON PLAZA SINGAPORE 574408",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_22",
+    "operatorId": "koufu",
+    "label": "478 TAMPINES STREET 44",
+    "address": "478 TAMPINES STREET 44 #01-221 SINGAPORE 520478",
+    "postal": "520478",
+    "lat": 1.361318946208297,
+    "lng": 103.9531258566039,
+    "sfa": {
+      "licenceNumber": "S91093P000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "478 TAMPINES STREET 44 #01-221 SINGAPORE 520478",
+      "grade": "not_applicable",
+      "demeritPoints": 0,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_23",
+    "operatorId": "koufu",
+    "label": "739 BEDOK RESERVOIR ROAD",
+    "address": "739 BEDOK RESERVOIR ROAD #01-3139 SINGAPORE 470739",
+    "postal": "470739",
+    "lat": 1.337886637354538,
+    "lng": 103.9226484077655,
+    "sfa": {
+      "licenceNumber": "S85216K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "739 BEDOK RESERVOIR ROAD #01-3139 SINGAPORE 470739",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_24",
+    "operatorId": "koufu",
+    "label": "531 ANG MO KIO AVENUE 10",
+    "address": "531 ANG MO KIO AVENUE 10 #01-2429 SINGAPORE 560531",
+    "postal": "560531",
+    "lat": 1.373327129669528,
+    "lng": 103.8543825726083,
+    "sfa": {
+      "licenceNumber": "S80167P000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "531 ANG MO KIO AVENUE 10 #01-2429 SINGAPORE 560531",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_25",
+    "operatorId": "koufu",
+    "label": "263 COMPASSVALE STREET",
+    "address": "263 COMPASSVALE STREET #01-09 SINGAPORE 540263",
+    "postal": "540263",
+    "lat": 1.394848165287756,
+    "lng": 103.8960422683849,
+    "sfa": {
+      "licenceNumber": "S02170A000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "263 COMPASSVALE STREET #01-09 SINGAPORE 540263",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_26",
+    "operatorId": "koufu",
+    "label": "470 LORONG 6 TOA PAYOH",
+    "address": "470 LORONG 6 TOA PAYOH #02-70 SINGAPORE 310470",
+    "postal": "310470",
+    "lat": 1.332034739289772,
+    "lng": 103.8493386644942,
+    "sfa": {
+      "licenceNumber": "S02095K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "470 LORONG 6 TOA PAYOH #02-70 SINGAPORE 310470",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_27",
+    "operatorId": "koufu",
+    "label": "500 LORONG 6 TOA PAYOH",
+    "address": "500 LORONG 6 TOA PAYOH #02-30 HDB CENTRE SINGAPORE 310500",
+    "postal": "310500",
+    "lat": 1.332855428846804,
+    "lng": 103.8470922843158,
+    "sfa": {
+      "licenceNumber": "S02080B000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "500 LORONG 6 TOA PAYOH #02-30 HDB CENTRE SINGAPORE 310500",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_28",
+    "operatorId": "koufu",
+    "label": "480 LORONG 6 TOA PAYOH",
+    "address": "480 LORONG 6 TOA PAYOH #B1-01 HDB HUB SINGAPORE 310480",
+    "postal": "310480",
+    "lat": 1.332054851904816,
+    "lng": 103.8485076430788,
+    "sfa": {
+      "licenceNumber": "S02077N000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "480 LORONG 6 TOA PAYOH #B1-01 HDB HUB SINGAPORE 310480",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_29",
+    "operatorId": "koufu",
+    "label": "501A WELLINGTON CIRCLE",
+    "address": "501A WELLINGTON CIRCLE #01-30 SINGAPORE 751501",
+    "postal": "751501",
+    "lat": 1.451769195657497,
+    "lng": 103.8207817140949,
+    "sfa": {
+      "licenceNumber": "NW15045E000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "501A WELLINGTON CIRCLE #01-30 SINGAPORE 751501",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_30",
+    "operatorId": "koufu",
+    "label": "535 CLEMENTI ROAD",
+    "address": "535 CLEMENTI ROAD #02-00 NGEE ANN POLYTECHNIC (BLK 51) SINGAPORE 599489",
+    "postal": "599489",
+    "lat": 1.333516160072476,
+    "lng": 103.7769766591915,
+    "sfa": {
+      "licenceNumber": "NW08480E000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "535 CLEMENTI ROAD #02-00 NGEE ANN POLYTECHNIC (BLK 51) SINGAPORE 599489",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_31",
+    "operatorId": "koufu",
+    "label": "9 WOODLANDS AVENUE 9 REPUBLIC POLYTECHNIC-CANTEEN A SINGAPOR",
+    "address": "9 WOODLANDS AVENUE 9 REPUBLIC POLYTECHNIC-CANTEEN A SINGAPORE 738964",
+    "postal": "738964",
+    "lat": 1.44556234107035,
+    "lng": 103.7856071701272,
+    "sfa": {
+      "licenceNumber": "NW06035L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "9 WOODLANDS AVENUE 9 REPUBLIC POLYTECHNIC-CANTEEN A SINGAPORE 738964",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_32",
+    "operatorId": "koufu",
+    "label": "511 CANBERRA ROAD",
+    "address": "511 CANBERRA ROAD #01-01 SEMBAWANG MART SINGAPORE 750511",
+    "postal": "750511",
+    "lat": 1.453793778401042,
+    "lng": 103.8196253838072,
+    "sfa": {
+      "licenceNumber": "NW04020V000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "511 CANBERRA ROAD #01-01 SEMBAWANG MART SINGAPORE 750511",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_33",
+    "operatorId": "koufu",
+    "label": "671 EDGEFIELD PLAINS",
+    "address": "671 EDGEFIELD PLAINS #01-01 SINGAPORE 820671",
+    "postal": "820671",
+    "lat": 1.405660480456043,
+    "lng": 103.9119912771535,
+    "sfa": {
+      "licenceNumber": "NE15769C000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "671 EDGEFIELD PLAINS #01-01 SINGAPORE 820671",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_34",
+    "operatorId": "koufu",
+    "label": "83 PUNGGOL CENTRAL",
+    "address": "83 PUNGGOL CENTRAL #02-20 WATERWAY POINT SINGAPORE 828761",
+    "postal": "828761",
+    "lat": 1.406484621320066,
+    "lng": 103.9021056807848,
+    "sfa": {
+      "licenceNumber": "NE15599C000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "83 PUNGGOL CENTRAL #02-20 WATERWAY POINT SINGAPORE 828761",
+      "grade": "not_applicable",
+      "demeritPoints": 8,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_35",
+    "operatorId": "koufu",
+    "label": "1 PASIR RIS CENTRAL STREET 3",
+    "address": "1 PASIR RIS CENTRAL STREET 3 #03-01/02 WHITE SANDS SINGAPORE 518457",
+    "postal": "518457",
+    "lat": 1.372449816635281,
+    "lng": 103.9497156947368,
+    "sfa": {
+      "licenceNumber": "NE15033C000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "1 PASIR RIS CENTRAL STREET 3 #03-01/02 WHITE SANDS SINGAPORE 518457",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_36",
+    "operatorId": "koufu",
+    "label": "622D PUNGGOL CENTRAL",
+    "address": "622D PUNGGOL CENTRAL #01-01 PUNGGOL SPECTRA SINGAPORE 824622",
+    "postal": "824622",
+    "lat": 1.400531149988224,
+    "lng": 103.9105369191338,
+    "sfa": {
+      "licenceNumber": "NE13O01B000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "622D PUNGGOL CENTRAL #01-01 PUNGGOL SPECTRA SINGAPORE 824622",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_37",
+    "operatorId": "koufu",
+    "label": "21 TAMPINES NORTH DRIVE 2",
+    "address": "21 TAMPINES NORTH DRIVE 2 #03-00 GIANT BUILDING SINGAPORE 528765",
+    "postal": "528765",
+    "lat": 1.372101698745392,
+    "lng": 103.9319998875424,
+    "sfa": {
+      "licenceNumber": "NE07513V000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "21 TAMPINES NORTH DRIVE 2 #03-00 GIANT BUILDING SINGAPORE 528765",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_38",
+    "operatorId": "koufu",
+    "label": "1 KAKI BUKIT ROAD 1",
+    "address": "1 KAKI BUKIT ROAD 1 #01-18 ENTERPRISE ONE SINGAPORE 415934",
+    "postal": "415934",
+    "lat": 1.332765271303135,
+    "lng": 103.9026757806407,
+    "sfa": {
+      "licenceNumber": "NE07496K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "1 KAKI BUKIT ROAD 1 #01-18 ENTERPRISE ONE SINGAPORE 415934",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_39",
+    "operatorId": "koufu",
+    "label": "168 PUNGGOL FIELD",
+    "address": "168 PUNGGOL FIELD #01-01 PUNGGOL PLAZA SINGAPORE 820168",
+    "postal": "820168",
+    "lat": 1.39423719717118,
+    "lng": 103.913047323223,
+    "sfa": {
+      "licenceNumber": "NE04128K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "168 PUNGGOL FIELD #01-01 PUNGGOL PLAZA SINGAPORE 820168",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_40",
+    "operatorId": "koufu",
+    "label": "258 PASIR RIS STREET 21",
+    "address": "258 PASIR RIS STREET 21 #02-313 LOYANG POINT SINGAPORE 510258",
+    "postal": "510258",
+    "lat": 1.367073575256231,
+    "lng": 103.964632225014,
+    "sfa": {
+      "licenceNumber": "NE04021J000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "258 PASIR RIS STREET 21 #02-313 LOYANG POINT SINGAPORE 510258",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_41",
+    "operatorId": "koufu",
+    "label": "50 NANYANG AVENUE NTU SOUTH SPINE ( CANTEEN B ) SINGAPORE 63",
+    "address": "50 NANYANG AVENUE NTU SOUTH SPINE ( CANTEEN B ) SINGAPORE 639798",
+    "postal": "639798",
+    "lat": 1.344483563067563,
+    "lng": 103.6810317408953,
+    "sfa": {
+      "licenceNumber": "J94046J000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "50 NANYANG AVENUE NTU SOUTH SPINE ( CANTEEN B ) SINGAPORE 639798",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_42",
+    "operatorId": "koufu",
+    "label": "433A SENGKANG WEST WAY",
+    "address": "433A SENGKANG WEST WAY #01-01 SINGAPORE 791433",
+    "postal": "791433",
+    "lat": 1.394949472981112,
+    "lng": 103.8775669612866,
+    "sfa": {
+      "licenceNumber": "CE14442A000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "433A SENGKANG WEST WAY #01-01 SINGAPORE 791433",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_43",
+    "operatorId": "koufu",
+    "label": "2 ANG MO KIO DRIVE",
+    "address": "2 ANG MO KIO DRIVE #01-14/29 ITE COLLEGE CENTRAL SINGAPORE 567720",
+    "postal": "567720",
+    "lat": 1.377892048699013,
+    "lng": 103.8564119820287,
+    "sfa": {
+      "licenceNumber": "CE12H53V000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "2 ANG MO KIO DRIVE #01-14/29 ITE COLLEGE CENTRAL SINGAPORE 567720",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_44",
+    "operatorId": "koufu",
+    "label": "100 TRAS STREET",
+    "address": "100 TRAS STREET #04-04/05 100 AM SINGAPORE 079027",
+    "postal": "079027",
+    "lat": 1.274934747509414,
+    "lng": 103.8435524129149,
+    "sfa": {
+      "licenceNumber": "CE12656N000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "100 TRAS STREET #04-04/05 100 AM SINGAPORE 079027",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_45",
+    "operatorId": "koufu",
+    "label": "2 BAYFRONT AVENUE",
+    "address": "2 BAYFRONT AVENUE #01-01 SINGAPORE 018972",
+    "postal": "018972",
+    "lat": 1.283322498573871,
+    "lng": 103.8576291111388,
+    "sfa": {
+      "licenceNumber": "CE10L76V000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "2 BAYFRONT AVENUE #01-01 SINGAPORE 018972",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_46",
+    "operatorId": "koufu",
+    "label": "2 BAYFRONT AVENUE",
+    "address": "2 BAYFRONT AVENUE #B2-49/53 THE SHOPPES AT MARINA BAY SANDS SINGAPORE 018972",
+    "postal": "018972",
+    "lat": 1.283322498573871,
+    "lng": 103.8576291111388,
+    "sfa": {
+      "licenceNumber": "CE10H74C000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "2 BAYFRONT AVENUE #B2-49/53 THE SHOPPES AT MARINA BAY SANDS SINGAPORE 018972",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_47",
+    "operatorId": "koufu",
+    "label": "10 SINARAN DRIVE",
+    "address": "10 SINARAN DRIVE #04-14/19 SQUARE 2 SINGAPORE 307506",
+    "postal": "307506",
+    "lat": 1.320705109568455,
+    "lng": 103.8441607096606,
+    "sfa": {
+      "licenceNumber": "CE07Q11A000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "10 SINARAN DRIVE #04-14/19 SQUARE 2 SINGAPORE 307506",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_48",
+    "operatorId": "koufu",
+    "label": "88 TANGLIN HALT ROAD",
+    "address": "88 TANGLIN HALT ROAD #01-08 MULTI STOREY CAR PARK SINGAPORE 141088",
+    "postal": "141088",
+    "lat": 1.301864727407015,
+    "lng": 103.7981743012854,
+    "sfa": {
+      "licenceNumber": "CE07944X000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "88 TANGLIN HALT ROAD #01-08 MULTI STOREY CAR PARK SINGAPORE 141088",
+      "grade": "not_applicable",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_49",
+    "operatorId": "koufu",
+    "label": "370 ALEXANDRA ROAD",
+    "address": "370 ALEXANDRA ROAD #B1-19 ANCHORPOINT SHOPPING CENTRE SINGAPORE 159953",
+    "postal": "159953",
+    "lat": 1.288614690305858,
+    "lng": 103.8050099645917,
+    "sfa": {
+      "licenceNumber": "CE07743K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "370 ALEXANDRA ROAD #B1-19 ANCHORPOINT SHOPPING CENTRE SINGAPORE 159953",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_50",
+    "operatorId": "koufu",
+    "label": "32 NEW MARKET ROAD",
+    "address": "32 NEW MARKET ROAD #02-1024 SINGAPORE 050032",
+    "postal": "050032",
+    "lat": 1.284858608026473,
+    "lng": 103.8425787710541,
+    "sfa": {
+      "licenceNumber": "CE06737N000",
+      "licenseeName": "KOUFU GOURMET PTE LTD",
+      "premisesAddress": "32 NEW MARKET ROAD #02-1024 SINGAPORE 050032",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_51",
+    "operatorId": "koufu",
+    "label": "470 LORONG 6 TOA PAYOH SINGAPORE 310470",
+    "address": "470 LORONG 6 TOA PAYOH SINGAPORE 310470",
+    "postal": "310470",
+    "lat": 1.332034739289772,
+    "lng": 103.8493386644942,
+    "sfa": {
+      "licenceNumber": "CE05687J000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "470 LORONG 6 TOA PAYOH SINGAPORE 310470",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_52",
+    "operatorId": "koufu",
+    "label": "6 RAFFLES BOULEVARD",
+    "address": "6 RAFFLES BOULEVARD #04-101 MARINA SQUARE SINGAPORE 039594",
+    "postal": "039594",
+    "lat": 1.291855332730248,
+    "lng": 103.8585780890598,
+    "sfa": {
+      "licenceNumber": "CE04580N000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "6 RAFFLES BOULEVARD #04-101 MARINA SQUARE SINGAPORE 039594",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_53",
+    "operatorId": "koufu",
+    "label": "1 BUKIT BATOK CENTRAL LINK",
+    "address": "1 BUKIT BATOK CENTRAL LINK #04-01 WEST MALL SINGAPORE 658713",
+    "postal": "658713",
+    "lat": 1.350021075943163,
+    "lng": 103.7492164938305,
+    "sfa": {
+      "licenceNumber": "C98085L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "1 BUKIT BATOK CENTRAL LINK #04-01 WEST MALL SINGAPORE 658713",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_54",
+    "operatorId": "koufu",
+    "label": "632 BUKIT BATOK CENTRAL",
+    "address": "632 BUKIT BATOK CENTRAL #01-134 SINGAPORE 650632",
+    "postal": "650632",
+    "lat": 1.349412183198476,
+    "lng": 103.750538659696,
+    "sfa": {
+      "licenceNumber": "C93245J000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "632 BUKIT BATOK CENTRAL #01-134 SINGAPORE 650632",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_55",
+    "operatorId": "koufu",
+    "label": "132 JURONG GATEWAY ROAD",
+    "address": "132 JURONG GATEWAY ROAD #01-271 SINGAPORE 600132",
+    "postal": "600132",
+    "lat": 1.334310178034222,
+    "lng": 103.7396366442426,
+    "sfa": {
+      "licenceNumber": "C85292K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "132 JURONG GATEWAY ROAD #01-271 SINGAPORE 600132",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_56",
+    "operatorId": "koufu",
+    "label": "406A SEMBAWANG DRIVE",
+    "address": "406A SEMBAWANG DRIVE #01-01 SINGAPORE 751406",
+    "postal": "751406",
+    "lat": 1.452387573199585,
+    "lng": 103.8174401008881,
+    "sfa": {
+      "licenceNumber": "B99085K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "406A SEMBAWANG DRIVE #01-01 SINGAPORE 751406",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_57",
+    "operatorId": "koufu",
+    "label": "768 WOODLANDS AVENUE 6",
+    "address": "768 WOODLANDS AVENUE 6 #01-30/32 WOODLANDS MART SINGAPORE 730768",
+    "postal": "730768",
+    "lat": 1.445622907202213,
+    "lng": 103.7981409938909,
+    "sfa": {
+      "licenceNumber": "B99033L000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "768 WOODLANDS AVENUE 6 #01-30/32 WOODLANDS MART SINGAPORE 730768",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_58",
+    "operatorId": "koufu",
+    "label": "445 FAJAR ROAD",
+    "address": "445 FAJAR ROAD #01-548 FAJAR SHOPPING CENTRE SINGAPORE 670445",
+    "postal": "670445",
+    "lat": 1.383580323626762,
+    "lng": 103.770768501474,
+    "sfa": {
+      "licenceNumber": "B96086K000",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "445 FAJAR ROAD #01-548 FAJAR SHOPPING CENTRE SINGAPORE 670445",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_59",
+    "operatorId": "koufu",
+    "label": "118 RIVERVALE DRIVE",
+    "address": "118 RIVERVALE DRIVE #02-15 RIVERVALE PLAZA SINGAPORE 540118",
+    "postal": "540118",
+    "lat": 1.385337361077732,
+    "lng": 103.9018410441215,
+    "sfa": {
+      "licenceNumber": "S99135N009",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "118 RIVERVALE DRIVE #02-15 RIVERVALE PLAZA SINGAPORE 540118",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_60",
+    "operatorId": "koufu",
+    "label": "267 COMPASSVALE LINK",
+    "address": "267 COMPASSVALE LINK #01-02 MULTI STOREY CAR PARK SINGAPORE 540267",
+    "postal": "540267",
+    "lat": 1.383744417485474,
+    "lng": 103.8970465572372,
+    "sfa": {
+      "licenceNumber": "NE05114N007",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "267 COMPASSVALE LINK #01-02 MULTI STOREY CAR PARK SINGAPORE 540267",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_61",
+    "operatorId": "koufu",
+    "label": "303 CHOA CHU KANG AVENUE 4",
+    "address": "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
+    "postal": "680303",
+    "lat": 1.382379,
+    "lng": 103.740186,
+    "sfa": {
+      "licenceNumber": "J97033P010",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_62",
+    "operatorId": "koufu",
+    "label": "53 ANG MO KIO AVENUE 3",
+    "address": "53 ANG MO KIO AVENUE 3 #03-12 AMK HUB SINGAPORE 569933",
+    "postal": "569933",
+    "lat": 1.369389226903445,
+    "lng": 103.8484779659393,
+    "sfa": {
+      "licenceNumber": "CE07U53A021",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "53 ANG MO KIO AVENUE 3 #03-12 AMK HUB SINGAPORE 569933",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_63",
+    "operatorId": "koufu",
+    "label": "70 STAMFORD ROAD",
+    "address": "70 STAMFORD ROAD #B1-26/28 SMU SINGAPORE 178901",
+    "postal": "178901",
+    "lat": 1.296656758186516,
+    "lng": 103.850105946307,
+    "sfa": {
+      "licenceNumber": "CE05412N014",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "70 STAMFORD ROAD #B1-26/28 SMU SINGAPORE 178901",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_64",
+    "operatorId": "koufu",
+    "label": "679 JURONG WEST CENTRAL 1",
+    "address": "679 JURONG WEST CENTRAL 1 #01-02 SINGAPORE 640679",
+    "postal": "640679",
+    "lat": 1.344594678794611,
+    "lng": 103.7060894277199,
+    "sfa": {
+      "licenceNumber": "C99045V010",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "679 JURONG WEST CENTRAL 1 #01-02 SINGAPORE 640679",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_koufu_65",
+    "operatorId": "koufu",
+    "label": "256 YISHUN RING ROAD",
+    "address": "256 YISHUN RING ROAD #01-1005 SINGAPORE 760256",
+    "postal": "760256",
+    "lat": 1.434093420982373,
+    "lng": 103.839979155802,
+    "sfa": {
+      "licenceNumber": "B85069J008",
+      "licenseeName": "KOUFU PTE LTD",
+      "premisesAddress": "256 YISHUN RING ROAD #01-1005 SINGAPORE 760256",
+      "grade": "B",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_1",
+    "operatorId": "foodfare",
+    "label": "1 ORCHID CLUB ROAD (HALAL BANQUET KITCHEN) ORCHID COUNTRY CL",
+    "address": "1 ORCHID CLUB ROAD (HALAL BANQUET KITCHEN) ORCHID COUNTRY CLUB SINGAPORE 769162",
+    "postal": "769162",
+    "lat": 1.411055347383793,
+    "lng": 103.8441861365592,
+    "sfa": {
+      "licenceNumber": "B95003L000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 ORCHID CLUB ROAD (HALAL BANQUET KITCHEN) ORCHID COUNTRY CLUB SINGAPORE 769162",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_2",
+    "operatorId": "foodfare",
+    "label": "1E KENT RIDGE ROAD",
+    "address": "1E KENT RIDGE ROAD #01-09 NUHS TOWER BLOCK SINGAPORE 119228",
+    "postal": "119228",
+    "lat": 1.292348981397991,
+    "lng": 103.783470532707,
+    "sfa": {
+      "licenceNumber": "SW10712K000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1E KENT RIDGE ROAD #01-09 NUHS TOWER BLOCK SINGAPORE 119228",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_3",
+    "operatorId": "foodfare",
+    "label": "180 ISLAND CLUB ROAD ISLAND GOLF CLUB SINGAPORE 578774",
+    "address": "180 ISLAND CLUB ROAD ISLAND GOLF CLUB SINGAPORE 578774",
+    "postal": "578774",
+    "lat": 1.359191899435661,
+    "lng": 103.8188663827615,
+    "sfa": {
+      "licenceNumber": "CE15D24J000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "180 ISLAND CLUB ROAD ISLAND GOLF CLUB SINGAPORE 578774",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_4",
+    "operatorId": "foodfare",
+    "label": "68 ORCHARD ROAD",
+    "address": "68 ORCHARD ROAD #B2-35/36 PLAZA SINGAPURA SINGAPORE 238839",
+    "postal": "238839",
+    "lat": 1.300747709639166,
+    "lng": 103.8450475734307,
+    "sfa": {
+      "licenceNumber": "W02503L000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "68 ORCHARD ROAD #B2-35/36 PLAZA SINGAPURA SINGAPORE 238839",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_5",
+    "operatorId": "foodfare",
+    "label": "24 RAFFLES PLACE",
+    "address": "24 RAFFLES PLACE #B1-01/10 CLIFFORD CENTRE SINGAPORE 048621",
+    "postal": "048621",
+    "lat": 1.283855284305002,
+    "lng": 103.8521396695031,
+    "sfa": {
+      "licenceNumber": "W02052B000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "24 RAFFLES PLACE #B1-01/10 CLIFFORD CENTRE SINGAPORE 048621",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_6",
+    "operatorId": "foodfare",
+    "label": "1 JURONG EAST STREET 21",
+    "address": "1 JURONG EAST STREET 21 #01-02 NG TENG FONG GENERAL HOSPITAL TOWER B SINGAPORE 609606",
+    "postal": "609606",
+    "lat": 1.333606191315339,
+    "lng": 103.7454483629276,
+    "sfa": {
+      "licenceNumber": "SW15E18C000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 JURONG EAST STREET 21 #01-02 NG TENG FONG GENERAL HOSPITAL TOWER B SINGAPORE 609606",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_7",
+    "operatorId": "foodfare",
+    "label": "1 JOO KOON CIRCLE",
+    "address": "1 JOO KOON CIRCLE #03-25 FAIRPRICE HUB SINGAPORE 629117",
+    "postal": "629117",
+    "lat": 1.325617677652046,
+    "lng": 103.6784097418965,
+    "sfa": {
+      "licenceNumber": "SW14775N000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 JOO KOON CIRCLE #03-25 FAIRPRICE HUB SINGAPORE 629117",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_8",
+    "operatorId": "foodfare",
+    "label": "460 ALEXANDRA ROAD",
+    "address": "460 ALEXANDRA ROAD #02-35 PSA BUILDING ALEXANDRA RETAIL CENTRE SINGAPORE 119963",
+    "postal": "119963",
+    "lat": 1.273986399882044,
+    "lng": 103.801264139551,
+    "sfa": {
+      "licenceNumber": "SW11B58P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "460 ALEXANDRA ROAD #02-35 PSA BUILDING ALEXANDRA RETAIL CENTRE SINGAPORE 119963",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_9",
+    "operatorId": "foodfare",
+    "label": "3155 COMMONWEALTH AVE WEST",
+    "address": "3155 COMMONWEALTH AVE WEST #04-20 THE CLEMENTI MALL SINGAPORE 129588",
+    "postal": "129588",
+    "lat": 1.314966522855597,
+    "lng": 103.7642704675928,
+    "sfa": {
+      "licenceNumber": "SW11234V000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "3155 COMMONWEALTH AVE WEST #04-20 THE CLEMENTI MALL SINGAPORE 129588",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_10",
+    "operatorId": "foodfare",
+    "label": "1 MARITIME SQUARE",
+    "address": "1 MARITIME SQUARE #01-83 HARBOURFRONT CENTRE SINGAPORE 099253",
+    "postal": "099253",
+    "lat": 1.263969911760048,
+    "lng": 103.8202433251803,
+    "sfa": {
+      "licenceNumber": "SW04161E000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 MARITIME SQUARE #01-83 HARBOURFRONT CENTRE SINGAPORE 099253",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_11",
+    "operatorId": "foodfare",
+    "label": "3 SIMEI STREET 6",
+    "address": "3 SIMEI STREET 6 #B1-K3 EASTPOINT MALL SINGAPORE 528833",
+    "postal": "528833",
+    "lat": 1.342705923555769,
+    "lng": 103.9530246182335,
+    "sfa": {
+      "licenceNumber": "SE14807N000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "3 SIMEI STREET 6 #B1-K3 EASTPOINT MALL SINGAPORE 528833",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_12",
+    "operatorId": "foodfare",
+    "label": "11 TANJONG KATONG ROAD",
+    "address": "11 TANJONG KATONG ROAD #B1-K2 ONE KM SINGAPORE 437157",
+    "postal": "437157",
+    "lat": 1.314618498892422,
+    "lng": 103.8947380047679,
+    "sfa": {
+      "licenceNumber": "SE14806P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "11 TANJONG KATONG ROAD #B1-K2 ONE KM SINGAPORE 437157",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_13",
+    "operatorId": "foodfare",
+    "label": "1 STADIUM PLACE",
+    "address": "1 STADIUM PLACE #02-16/K6 SPORTS HUB RETAIL MALL SINGAPORE 397628",
+    "postal": "397628",
+    "lat": 1.30307515150401,
+    "lng": 103.8731497075906,
+    "sfa": {
+      "licenceNumber": "SE14399C000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 STADIUM PLACE #02-16/K6 SPORTS HUB RETAIL MALL SINGAPORE 397628",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_14",
+    "operatorId": "foodfare",
+    "label": "8 CHANGI BUSINESS PARK AVENUE 1",
+    "address": "8 CHANGI BUSINESS PARK AVENUE 1 #01-51 UE BIZHUB EAST SINGAPORE 486018",
+    "postal": "486018",
+    "lat": 1.334822676679385,
+    "lng": 103.9639057613586,
+    "sfa": {
+      "licenceNumber": "SE12F86B000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "8 CHANGI BUSINESS PARK AVENUE 1 #01-51 UE BIZHUB EAST SINGAPORE 486018",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_15",
+    "operatorId": "foodfare",
+    "label": "AIRPORT BOULEVARD",
+    "address": "AIRPORT BOULEVARD #011-003 CHANGI AIRPORT T1-ARRIVAL HALL CENTRAL SINGAPORE 819642",
+    "postal": "819642",
+    "lat": 1.361708821292764,
+    "lng": 103.9903488237563,
+    "sfa": {
+      "licenceNumber": "SE11270P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "AIRPORT BOULEVARD #011-003 CHANGI AIRPORT T1-ARRIVAL HALL CENTRAL SINGAPORE 819642",
+      "grade": "A",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_16",
+    "operatorId": "foodfare",
+    "label": "30 SIMEI STREET 3",
+    "address": "30 SIMEI STREET 3 #01-01 SIMEI MRT STATION SINGAPORE 529888",
+    "postal": "529888",
+    "lat": 1.343197078518295,
+    "lng": 103.9533772143779,
+    "sfa": {
+      "licenceNumber": "SE08663K000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "30 SIMEI STREET 3 #01-01 SIMEI MRT STATION SINGAPORE 529888",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_17",
+    "operatorId": "foodfare",
+    "label": "65 AIRPORT BOULEVARD",
+    "address": "65 AIRPORT BOULEVARD #01-25 CHANGI AIRPORT T3-ARRIVAL MEETING HALL CENTRAL SINGAPORE 819663",
+    "postal": "819663",
+    "lat": 1.356626094134892,
+    "lng": 103.9865622084943,
+    "sfa": {
+      "licenceNumber": "SE07377B000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "65 AIRPORT BOULEVARD #01-25 CHANGI AIRPORT T3-ARRIVAL MEETING HALL CENTRAL SINGAPORE 819663",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_18",
+    "operatorId": "foodfare",
+    "label": "AIRPORT BOULEVARD (KIOSK B) CHANGI AIRPORT T2-DEPARTURE/TRAN",
+    "address": "AIRPORT BOULEVARD (KIOSK B) CHANGI AIRPORT T2-DEPARTURE/TRANSIT LOUNGE NORTH SINGAPORE 819643",
+    "postal": "819643",
+    "lat": 1.354969382268279,
+    "lng": 103.9890664895108,
+    "sfa": {
+      "licenceNumber": "SE06506E000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "AIRPORT BOULEVARD (KIOSK B) CHANGI AIRPORT T2-DEPARTURE/TRANSIT LOUNGE NORTH SINGAPORE 819643",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_19",
+    "operatorId": "foodfare",
+    "label": "8 SIMEI STREET 3 SAINT ANDREW'S HOSPITAL SINGAPORE 529895",
+    "address": "8 SIMEI STREET 3 SAINT ANDREW'S HOSPITAL SINGAPORE 529895",
+    "postal": "529895",
+    "lat": 1.341686506011464,
+    "lng": 103.9487994580778,
+    "sfa": {
+      "licenceNumber": "SE05150J000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "8 SIMEI STREET 3 SAINT ANDREW'S HOSPITAL SINGAPORE 529895",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_20",
+    "operatorId": "foodfare",
+    "label": "2 TAMPINES CENTRAL 5 (UNIT",
+    "address": "2 TAMPINES CENTRAL 5 (UNIT #B1-09A & 33-35) #B1-09A CENTURY SQUARE SHOPPING CENTRE SINGAPORE 529509",
+    "postal": "529509",
+    "lat": 1.35236829566862,
+    "lng": 103.9438123022526,
+    "sfa": {
+      "licenceNumber": "S95155P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "2 TAMPINES CENTRAL 5 (UNIT #B1-09A & 33-35) #B1-09A CENTURY SQUARE SHOPPING CENTRE SINGAPORE 529509",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_21",
+    "operatorId": "foodfare",
+    "label": "308 ANCHORVALE ROAD",
+    "address": "308 ANCHORVALE ROAD #01-07 SINGAPORE 540308",
+    "postal": "540308",
+    "lat": 1.389558485102357,
+    "lng": 103.8864266504915,
+    "sfa": {
+      "licenceNumber": "S00102X000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "308 ANCHORVALE ROAD #01-07 SINGAPORE 540308",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_22",
+    "operatorId": "foodfare",
+    "label": "90 YISHUN CENTRAL",
+    "address": "90 YISHUN CENTRAL #01-12 KHOO TECK PUAT HOSPITAL SINGAPORE 768828",
+    "postal": "768828",
+    "lat": 1.424081018718208,
+    "lng": 103.8385788886893,
+    "sfa": {
+      "licenceNumber": "NW10074N000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "90 YISHUN CENTRAL #01-12 KHOO TECK PUAT HOSPITAL SINGAPORE 768828",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_23",
+    "operatorId": "foodfare",
+    "label": "11 CANBERRA ROAD",
+    "address": "11 CANBERRA ROAD #01-05 SEMBAWANG MRT STATION SINGAPORE 759775",
+    "postal": "759775",
+    "lat": 1.449050821585015,
+    "lng": 103.8200461402103,
+    "sfa": {
+      "licenceNumber": "NW08431B000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "11 CANBERRA ROAD #01-05 SEMBAWANG MRT STATION SINGAPORE 759775",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_24",
+    "operatorId": "foodfare",
+    "label": "1 JELEBU ROAD",
+    "address": "1 JELEBU ROAD #01-53/54 BUKIT PANJANG PLAZA SINGAPORE 677743",
+    "postal": "677743",
+    "lat": 1.379920451762434,
+    "lng": 103.764357180314,
+    "sfa": {
+      "licenceNumber": "NW05082E000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 JELEBU ROAD #01-53/54 BUKIT PANJANG PLAZA SINGAPORE 677743",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_25",
+    "operatorId": "foodfare",
+    "label": "9 SENTUL CRESCENT",
+    "address": "9 SENTUL CRESCENT #03-04 SINGAPORE 828654",
+    "postal": "828654",
+    "lat": 1.410194888013412,
+    "lng": 103.9060722122786,
+    "sfa": {
+      "licenceNumber": "NE16284E000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "9 SENTUL CRESCENT #03-04 SINGAPORE 828654",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_26",
+    "operatorId": "foodfare",
+    "label": "476D UPPER SERANGOON VIEW",
+    "address": "476D UPPER SERANGOON VIEW #02-05 HOUGANG CAPEVIEW SINGAPORE 537476",
+    "postal": "537476",
+    "lat": 1.377915061381011,
+    "lng": 103.9036237961953,
+    "sfa": {
+      "licenceNumber": "NE15587L000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "476D UPPER SERANGOON VIEW #02-05 HOUGANG CAPEVIEW SINGAPORE 537476",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_27",
+    "operatorId": "foodfare",
+    "label": "527C PASIR RIS STREET 51",
+    "address": "527C PASIR RIS STREET 51 #01-01 SINGAPORE 513527",
+    "postal": "513527",
+    "lat": 1.369373299251103,
+    "lng": 103.9479702317123,
+    "sfa": {
+      "licenceNumber": "NE15111K000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "527C PASIR RIS STREET 51 #01-01 SINGAPORE 513527",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_28",
+    "operatorId": "foodfare",
+    "label": "118 RIVERVALE DRIVE",
+    "address": "118 RIVERVALE DRIVE #01-38 RIVERVALE PLAZA SINGAPORE 540118",
+    "postal": "540118",
+    "lat": 1.385337361077732,
+    "lng": 103.9018410441215,
+    "sfa": {
+      "licenceNumber": "NE13P52X000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "118 RIVERVALE DRIVE #01-38 RIVERVALE PLAZA SINGAPORE 540118",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_29",
+    "operatorId": "foodfare",
+    "label": "273C PUNGGOL PLACE",
+    "address": "273C PUNGGOL PLACE #01-882 PUNGGOL REGALIA SINGAPORE 823273",
+    "postal": "823273",
+    "lat": 1.402303013671673,
+    "lng": 103.9012623916979,
+    "sfa": {
+      "licenceNumber": "NE12F02X000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "273C PUNGGOL PLACE #01-882 PUNGGOL REGALIA SINGAPORE 823273",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_30",
+    "operatorId": "foodfare",
+    "label": "1 MAJU AVENUE",
+    "address": "1 MAJU AVENUE #B1-25 MY VILLAGE SINGAPORE 556679",
+    "postal": "556679",
+    "lat": 1.365114905727978,
+    "lng": 103.8651595014412,
+    "sfa": {
+      "licenceNumber": "NE10378A000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 MAJU AVENUE #B1-25 MY VILLAGE SINGAPORE 556679",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_31",
+    "operatorId": "foodfare",
+    "label": "11 RIVERVALE CRESCENT",
+    "address": "11 RIVERVALE CRESCENT #01-1/2/3 RIVERVALE MALL SINGAPORE 545082",
+    "postal": "545082",
+    "lat": 1.392504109948327,
+    "lng": 103.9044836683229,
+    "sfa": {
+      "licenceNumber": "NE09207X000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "11 RIVERVALE CRESCENT #01-1/2/3 RIVERVALE MALL SINGAPORE 545082",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_32",
+    "operatorId": "foodfare",
+    "label": "673B CHOA CHU KANG CRESCENT",
+    "address": "673B CHOA CHU KANG CRESCENT #01-01 SINGAPORE 682673",
+    "postal": "682673",
+    "lat": 1.400973181802876,
+    "lng": 103.7479612715192,
+    "sfa": {
+      "licenceNumber": "J99010N000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "673B CHOA CHU KANG CRESCENT #01-01 SINGAPORE 682673",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_33",
+    "operatorId": "foodfare",
+    "label": "303 CHOA CHU KANG AVENUE 4",
+    "address": "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
+    "postal": "680303",
+    "lat": 1.382379,
+    "lng": 103.740186,
+    "sfa": {
+      "licenceNumber": "J97033P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_34",
+    "operatorId": "foodfare",
+    "label": "70 JELLICOE ROAD",
+    "address": "70 JELLICOE ROAD #01-01A V HOTEL LAVENDER SINGAPORE 208767",
+    "postal": "208767",
+    "lat": 1.307796802957081,
+    "lng": 103.8625350437399,
+    "sfa": {
+      "licenceNumber": "CE15C70B000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "70 JELLICOE ROAD #01-01A V HOTEL LAVENDER SINGAPORE 208767",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_35",
+    "operatorId": "foodfare",
+    "label": "33 SENGKANG WEST AVENUE",
+    "address": "33 SENGKANG WEST AVENUE #03-37 THE SELETAR MALL SINGAPORE 797653",
+    "postal": "797653",
+    "lat": 1.391470153746278,
+    "lng": 103.876125507257,
+    "sfa": {
+      "licenceNumber": "CE14M87V000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "33 SENGKANG WEST AVENUE #03-37 THE SELETAR MALL SINGAPORE 797653",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_36",
+    "operatorId": "foodfare",
+    "label": "277 ORCHARD ROAD",
+    "address": "277 ORCHARD ROAD #B2-07/08 ORCHARD GATEWAY SINGAPORE 238858",
+    "postal": "238858",
+    "lat": 1.300489121147586,
+    "lng": 103.8393250983517,
+    "sfa": {
+      "licenceNumber": "CE14416C000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "277 ORCHARD ROAD #B2-07/08 ORCHARD GATEWAY SINGAPORE 238858",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_37",
+    "operatorId": "foodfare",
+    "label": "3 TEMASEK BOULEVARD",
+    "address": "3 TEMASEK BOULEVARD #01-329 SUNTEC CITY MALL SINGAPORE 038983",
+    "postal": "038983",
+    "lat": 1.295931894771942,
+    "lng": 103.8590144067362,
+    "sfa": {
+      "licenceNumber": "CE13W11J000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "3 TEMASEK BOULEVARD #01-329 SUNTEC CITY MALL SINGAPORE 038983",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_38",
+    "operatorId": "foodfare",
+    "label": "1 HOUGANG STREET 91",
+    "address": "1 HOUGANG STREET 91 #01-22 HOUGANG 1 SINGAPORE 538692",
+    "postal": "538692",
+    "lat": 1.37571530699876,
+    "lng": 103.879472337592,
+    "sfa": {
+      "licenceNumber": "CE12726V000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 HOUGANG STREET 91 #01-22 HOUGANG 1 SINGAPORE 538692",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_39",
+    "operatorId": "foodfare",
+    "label": "12 MARINA BOULEVARD",
+    "address": "12 MARINA BOULEVARD #02-01 SINGAPORE 018982",
+    "postal": "018982",
+    "lat": 1.279124934899132,
+    "lng": 103.8544576004321,
+    "sfa": {
+      "licenceNumber": "CE12592L000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "12 MARINA BOULEVARD #02-01 SINGAPORE 018982",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_40",
+    "operatorId": "foodfare",
+    "label": "301 UPPER THOMSON ROAD",
+    "address": "301 UPPER THOMSON ROAD #03-44A THOMSON PLAZA SINGAPORE 574408",
+    "postal": "574408",
+    "lat": 1.354669024964243,
+    "lng": 103.830919782333,
+    "sfa": {
+      "licenceNumber": "CE11J54N000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "301 UPPER THOMSON ROAD #03-44A THOMSON PLAZA SINGAPORE 574408",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_41",
+    "operatorId": "foodfare",
+    "label": "109 NORTH BRIDGE ROAD FUNAN (UNIT NO.",
+    "address": "109 NORTH BRIDGE ROAD FUNAN (UNIT NO. #05-K1/K2/K3) SINGAPORE 179097",
+    "postal": "179097",
+    "lat": 1.291119640281415,
+    "lng": 103.8498750388073,
+    "sfa": {
+      "licenceNumber": "CE10F20A000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "109 NORTH BRIDGE ROAD FUNAN (UNIT NO. #05-K1/K2/K3) SINGAPORE 179097",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_42",
+    "operatorId": "foodfare",
+    "label": "8 SHENTON WAY",
+    "address": "8 SHENTON WAY #B1-17 SINGAPORE 068811",
+    "postal": "068811",
+    "lat": 1.275722628094626,
+    "lng": 103.8472666125948,
+    "sfa": {
+      "licenceNumber": "CE08045X000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "8 SHENTON WAY #B1-17 SINGAPORE 068811",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_43",
+    "operatorId": "foodfare",
+    "label": "53 ANG MO KIO AVENUE 3",
+    "address": "53 ANG MO KIO AVENUE 3 #03-12 AMK HUB SINGAPORE 569933",
+    "postal": "569933",
+    "lat": 1.369389226903445,
+    "lng": 103.8484779659393,
+    "sfa": {
+      "licenceNumber": "CE07U53A000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "53 ANG MO KIO AVENUE 3 #03-12 AMK HUB SINGAPORE 569933",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_44",
+    "operatorId": "foodfare",
+    "label": "100 BUKIT TIMAH ROAD",
+    "address": "100 BUKIT TIMAH ROAD #01-33A KK WOMEN'S AND CHILDREN'S HOSPITAL SINGAPORE 229899",
+    "postal": "229899",
+    "lat": 1.310490074290648,
+    "lng": 103.8468133216193,
+    "sfa": {
+      "licenceNumber": "CE07120P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "100 BUKIT TIMAH ROAD #01-33A KK WOMEN'S AND CHILDREN'S HOSPITAL SINGAPORE 229899",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_45",
+    "operatorId": "foodfare",
+    "label": "1 MARINA BOULEVARD",
+    "address": "1 MARINA BOULEVARD #B1-02 NTUC CENTRE SINGAPORE 018989",
+    "postal": "018989",
+    "lat": 1.282255138284972,
+    "lng": 103.8526151421958,
+    "sfa": {
+      "licenceNumber": "CE04338J000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 MARINA BOULEVARD #B1-02 NTUC CENTRE SINGAPORE 018989",
+      "grade": "A",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_46",
+    "operatorId": "foodfare",
+    "label": "679 JURONG WEST CENTRAL 1",
+    "address": "679 JURONG WEST CENTRAL 1 #01-02 SINGAPORE 640679",
+    "postal": "640679",
+    "lat": 1.344594678794611,
+    "lng": 103.7060894277199,
+    "sfa": {
+      "licenceNumber": "C99045V000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "679 JURONG WEST CENTRAL 1 #01-02 SINGAPORE 640679",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_47",
+    "operatorId": "foodfare",
+    "label": "678A WOODLANDS AVENUE 6",
+    "address": "678A WOODLANDS AVENUE 6 #02-01 ADMIRALTY PLACE SINGAPORE 731678",
+    "postal": "731678",
+    "lat": 1.440545453563129,
+    "lng": 103.8017597232191,
+    "sfa": {
+      "licenceNumber": "B98073C000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "678A WOODLANDS AVENUE 6 #02-01 ADMIRALTY PLACE SINGAPORE 731678",
+      "grade": "not_applicable",
+      "demeritPoints": null,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_foodfare_48",
+    "operatorId": "foodfare",
+    "label": "1 ORCHID CLUB ROAD 1ST STOREY (GOLF CLUB HOUSE) ORCHID COUNT",
+    "address": "1 ORCHID CLUB ROAD 1ST STOREY (GOLF CLUB HOUSE) ORCHID COUNTRY CLUB SINGAPORE 769162",
+    "postal": "769162",
+    "lat": 1.411055347383793,
+    "lng": 103.8441861365592,
+    "sfa": {
+      "licenceNumber": "B93076P000",
+      "licenseeName": "NTUC FOODFARE CO-OPERATIVE LTD",
+      "premisesAddress": "1 ORCHID CLUB ROAD 1ST STOREY (GOLF CLUB HOUSE) ORCHID COUNTRY CLUB SINGAPORE 769162",
+      "grade": "A",
+      "demeritPoints": 4,
+      "licenceSuspended": false
+    },
+    "source": "sfa_licence_match",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_1",
+    "operatorId": "hawkers_street",
+    "label": "ION Orchard",
+    "address": "2 Orchard Turn, #B4-66, Singapore 238801",
+    "postal": "238801",
+    "lat": 1.303979741445055,
+    "lng": 103.832032328465,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_2",
+    "operatorId": "hawkers_street",
+    "label": "100AM Mall",
+    "address": "100 Tras St, #04-05/06, Singapore 079027",
+    "postal": "079027",
+    "lat": 1.274934747509414,
+    "lng": 103.8435524129149,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_3",
+    "operatorId": "hawkers_street",
+    "label": "Tampines 1",
+    "address": "Tampines Central 1, #05-05/06/07, Singapore 529536",
+    "postal": "529536",
+    "lat": 1.35425637962116,
+    "lng": 103.9450717480269,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_4",
+    "operatorId": "hawkers_street",
+    "label": "Bukit Panjang Plaza",
+    "address": "1 Jelebu Road, #03-08, Singapore 677743",
+    "postal": "677743",
+    "lat": 1.379920451762434,
+    "lng": 103.764357180314,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_5",
+    "operatorId": "hawkers_street",
+    "label": "EastPoint Mall",
+    "address": "3 Simei Street 6, #03-06-07, Singapore 528833",
+    "postal": "528833",
+    "lat": 1.342705923555769,
+    "lng": 103.9530246182335,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_6",
+    "operatorId": "hawkers_street",
+    "label": "Tang Plaza",
+    "address": "310 Orchard Rd, Basement 1 Tang Plaza, Singapore 238864",
+    "postal": "238864",
+    "lat": 1.30505783063002,
+    "lng": 103.8330606559494,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_7",
+    "operatorId": "hawkers_street",
+    "label": "Square 2",
+    "address": "10 Sinaran Dr, #04-14 to 16, #04-68 to 75, #04-76 to 80, Singapore 307606",
+    "postal": "307606",
+    "lat": 1.318123707211752,
+    "lng": 103.8438988849325,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_8",
+    "operatorId": "hawkers_street",
+    "label": "The Clementi Mall",
+    "address": "3155 Commonwealth Ave W, #04-20/21/22, Singapore 129588",
+    "postal": "129588",
+    "lat": 1.314966522855597,
+    "lng": 103.7642704675928,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  }
+]

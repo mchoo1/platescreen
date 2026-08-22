@@ -92,8 +92,8 @@ export const RESEARCH_QUEUE = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "researched",
-    notes: "Food Shop Licence (food court). Use HPB nutrient data for stall dishes."
+    status: "pending",
+    notes: "2026-08-22: Kopitiam is no longer a Brand — it was a single 'brand' row standing in for 48 different physical food-court buildings, each containing many unrelated stalls with completely different food, which never had a real menu and never rendered (buildScreenerRows joins off MenuItems). Restructured per the Operator design in types/db.ts: Kopitiam stays in operators.ts as the operating company; its 48 real SFA-sourced building addresses are preserved in reference/data/food-court-venues.json (operatorId: 'kopitiam') as research anchors. Real work item: visit each venue, identify NAMED concessions inside it (e.g. a Yakun or Ya Kun Kaya Toast stand, a specific fried rice stall with its own signage), and add each as its own Brand with operatorId: 'kopitiam' + its own Premises + MenuItems — exactly the pattern already done correctly for Hawkers' Street's 27 real stalls. Do not re-add Kopitiam itself as a Brand."
   },
   {
     id: "koufu",
@@ -104,8 +104,8 @@ export const RESEARCH_QUEUE = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "researched",
-    notes: "Food Shop Licence (food court). Use HPB nutrient data for stall dishes."
+    status: "pending",
+    notes: "2026-08-22: same restructure as Kopitiam (see that entry) — Koufu's 65 real venue addresses are preserved in reference/data/food-court-venues.json (operatorId: 'koufu'). Research named concessions per venue and add each as its own Brand with operatorId: 'koufu', not a rename of this entry."
   },
   {
     id: "foodfare",
@@ -117,8 +117,21 @@ export const RESEARCH_QUEUE = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "researched",
-    notes: "NTUC operator. Food Shop Licence (food court). Use HPB nutrient data. Researched 2026-08-12: 8 representative food-court dishes added (economy rice, chicken rice, laksa, mee siam, wonton noodle, carrot cake, curry chicken rice, tau huay), confidence 'estimated' from generic HPB/NutriKaki-style hawker dish nutrient estimation — same methodology as sibling operators Kopitiam/Koufu. No SFA lookup (operator brand, not tied to one premises)."
+    status: "pending",
+    notes: "2026-08-22: same restructure as Kopitiam (see that entry). The 8 'representative dishes' added 2026-08-12 (generic HPB/NutriKaki-style estimates not tied to any specific named stall) were exactly the kind of fabrication the project's 'never fabricate' rule targets, and are gone from the current dataset. Foodfare's 48 real venue addresses are preserved in reference/data/food-court-venues.json (operatorId: 'foodfare'). Research named concessions per venue and add each as its own Brand with operatorId: 'foodfare'."
+  },
+  {
+    id: "hawkers_street",
+    name: "Hawkers' Street",
+    aliases: [
+      "hawkers street",
+      "hawkers' street"
+    ],
+    type: "food_court",
+    cuisine: "Food Court",
+    priority: "medium",
+    status: "pending",
+    notes: "2026-08-22: Hawkers' Street's fake mega-Brand row (8 premises, 0 menu items) was removed for the same reason as Kopitiam/Koufu/Foodfare — see that entry. Unlike the other 3 operators, Hawkers' Street already has this fixed correctly for 4 of its 8 venues: 27 real named stalls exist as their own Brand rows with operatorId: 'hawkers_street' (e.g. tai_wah_pork_noodle, jason_penang_cuisine at Tampines 1; chef_wei_hk_cheong_fun at ION Orchard) — those needed no change. Remaining work: the other 4 venues (see reference/data/food-court-venues.json, operatorId: 'hawkers_street', concessionsResearched: false) still need their named concessions identified and added the same way. The 27 existing stalls also still need MenuItems researched (0 each currently) before they render."
   },
   {
     id: "banquet",
@@ -129,8 +142,8 @@ export const RESEARCH_QUEUE = [
     type: "food_court",
     cuisine: "Food Court",
     priority: "high",
-    status: "researched",
-    notes: "Food Shop Licence (food court). Use HPB nutrient data for stall dishes. Researched 2026-08-13: 9 representative dishes added (chicken rice, nasi lemak, mee rebus, chicken briyani, yong tau foo, chicken shawarma wrap, roti prata, ayam penyet, rojak), confidence 'estimated' via generic HPB/NutriKaki-style hawker dish nutrient estimation — same methodology as sibling operators Kopitiam/Koufu/Foodfare. Banquet is documented (Zabihah, operator listings) as an all-halal-certified food court chain (Jurong Point, Woodlands Square, VivoCity), so dietTags: ['halal'] set at outlet level and every dish tagged halal + no_pork — a step beyond the other operator entries, justified by that outlet-wide certification fact rather than guessed. No SFA lookup (operator brand, not tied to one premises)."
+    status: "pending",
+    notes: "2026-08-22: status corrected from 'researched' to 'pending' — the 9 'representative dishes' this entry claimed to have added 2026-08-13 (generic HPB/NutriKaki-style estimates not tied to any named stall, same fabrication pattern as Foodfare's) are not present in the current brands.ts (Banquet currently has no Brand row at all, i.e. they were already removed in an earlier cleanup). Real work needed: same Operator restructure as Kopitiam/Koufu/Foodfare — find Banquet's real venue addresses (Jurong Point, Woodlands Square, VivoCity per operator listings, not yet SFA-matched or added to food-court-venues.json), then find and add named concessions inside each as their own Brand with operatorId: 'banquet'. Do not add a single 'Banquet' mega-Brand."
   },
   {
     id: "ok_convenience",

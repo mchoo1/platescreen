@@ -2,15 +2,18 @@
 // and reference/migration-scripts/ for the restructure this replaced (Outlet -> Brand+Premises).
 // Untyped literal export (see Brand in types/db.ts) — screener.ts casts once at the boundary,
 // matching the outlets.ts/foodOptions.ts convention (avoids TS2590 on a large array literal).
-// 2026-08-22a: renamed 56 generic dish-type-placeholder brands to real, independently-verified
-// stall names across 9 hawker centres, added 2 new real stalls split from a single generic Tekka
-// prata slot. See reference/research-sessions/2026-08-22-generic-name-cleanup.md.
-// 2026-08-22b: removed 36 fully-empty Brand stubs (zero Premises AND zero MenuItems — auto-created
-// placeholders from SFA-licensee-name research queue processing that were never actually
-// completed). They contributed nothing to buildScreenerRows() (which joins off MENU_ITEMS, so
-// these never rendered) but were dead weight in the dataset. Each still has a live entry in
-// researchQueue.ts so a future research pass can properly add it back once real menu/macro data
-// exists. See reference/research-sessions/2026-08-22-database-usefulness-audit.md.
+// 2026-08-22a: renamed 56 generic dish-type-placeholder brands to real, verified stall names
+// across 9 hawker centres (see 2026-08-22-generic-name-cleanup.md).
+// 2026-08-22b: removed 36 fully-empty Brand stubs, zero Premises AND zero MenuItems
+// (see 2026-08-22-database-usefulness-audit.md).
+// 2026-08-22c: removed 4 food-court OPERATOR brands (kopitiam, koufu, foodfare, hawkers_street)
+// that were each modeled as a single Brand with 8-65 Premises and 0 MenuItems — per the Operator
+// design already specified in types/db.ts, an operator's building is not itself a screenable
+// "restaurant" (it has no single menu); only named concessions inside it should be a Brand
+// (operatorId set), which is exactly how Hawkers' Street's 27 real named stalls already work.
+// The 169 removed Premises rows (real SFA-sourced addresses) are preserved as future research
+// anchors in reference/data/food-court-venues.json, not lost.
+// See reference/research-sessions/2026-08-22-food-court-operator-restructure.md.
 
 export const BRANDS = [
   {
@@ -12026,68 +12029,6 @@ export const BRANDS = [
     platforms: [
       "dine_in",
       "grab_go"
-    ]
-  },
-  {
-    id: "kopitiam",
-    name: "Kopitiam",
-    emoji: "🍽️",
-    type: "food_court",
-    cuisine: "Food Court (multi-stall, operator-run)",
-    aliases: [
-      "kopitiam"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in"
-    ]
-  },
-  {
-    id: "koufu",
-    name: "Koufu",
-    emoji: "🍽️",
-    type: "food_court",
-    cuisine: "Food Court (multi-stall, operator-run)",
-    aliases: [
-      "koufu"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in"
-    ]
-  },
-  {
-    id: "foodfare",
-    name: "NTUC Foodfare",
-    emoji: "🍽️",
-    type: "food_court",
-    cuisine: "Food Court (multi-stall, operator-run)",
-    aliases: [
-      "ntuc foodfare"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in"
-    ]
-  },
-  {
-    id: "hawkers_street",
-    name: "Hawkers' Street",
-    emoji: "🍜",
-    type: "food_court",
-    cuisine: "Food Court (multi-stall, operator-run — Select Group)",
-    aliases: [
-      "hawkers street",
-      "hawkers' street",
-      "hawker street"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in"
     ]
   },
   {
