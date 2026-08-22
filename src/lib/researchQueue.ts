@@ -46,7 +46,7 @@ export const RESEARCH_QUEUE = [
     type: "grab_go",
     cuisine: "Milk Tea",
     priority: "low",
-    status: "pending"
+    status: "researched"
   },
   {
     id: "four_leaves",
@@ -57,7 +57,8 @@ export const RESEARCH_QUEUE = [
     type: "grab_go",
     cuisine: "Bakery",
     priority: "low",
-    status: "pending"
+    status: "researched",
+    notes: "Researched 2026-08-22: no official SG nutrition PDF or HPB entry found for this bakery chain (Four Leaves Pte Ltd, 30+ outlets, also operates St Leaven/Epi d'Or/Country Brot sub-brands). 6 MenuItems added across Buns/Cakes/Pastries/Bread categories (Hokkaido Dome, An Pan/Red Bean Bun, Tuna Bun, Strawberry Shortcake slice, Mille Feuille, Garlic Cream Cheese Bread) — prices cross-verified across multiple independent sources (islifearecipe.net Bedok Mall guide, Lemon8 review, bukitpanjangmall.com fan-site listing). Calories for the first 5 items sourced from islifearecipe.net (a third-party mall/bakery blog, not an official brand or HPB source); macro splits (protein/carbs/fat) are reasoned estimates from typical bakery-item composition since the source gave calories only. Garlic Cream Cheese Bread had no calorie figure anywhere — fully reasoned estimate from comparable garlic/cream-cheese bakery breads. All 6 items confidence 'estimated' (none qualify as 'verified' — no official brand SG source, HPB data, or Open Food Facts SG-scanned entry exists for this chain). Confirmed via two independent sources (a 2013 halalSG tweet response and thedurianbakery.com.sg/islifearecipe.net) that Four Leaves is NOT Muis halal-certified — dietTags left empty at Brand level and no halal tag applied to any item, per the never-guess rule. Skipped whole-cake SKUs (Black Forest Classic, Almond Fruits Top, etc. — priced $30-$86 by size) since no per-slice calorie/macro basis exists and a whole multi-kg cake doesn't fit MenuItem's one-serving shape; also skipped mini-bun variants and cartoon/custom cakes as near-duplicates or unpriced. No SFA lookup — type is 'grab_go' with existing Premises coverage assumed out of scope for this run (menu/macro research only, no new Premises added). NOTE: found unrelated site-integrity issue during research — sgeats.net/four-leave-menu-singapore, which appeared in search results as a Four Leaves price-list page, now resolves to an unrelated Indonesian gambling redirect (domain likely expired/hijacked); avoided as a source entirely, flagging here in case it resurfaces in a future run's search results."
   },
   {
     id: "bengawan_solo",

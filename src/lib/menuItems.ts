@@ -14412,5 +14412,367 @@ export const MENU_ITEMS = [
       "nut_free"
     ],
     confidence: "estimated"
+  },
+  {
+    id: "hollin_bubble_milk_tea",
+    brandId: "hollin",
+    name: "Bubble Milk Tea",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 4.7,
+    calories: 340,
+    protein: 3,
+    carbs: 62,
+    fat: 5,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hollin_oolong_milk_tea",
+    brandId: "hollin",
+    name: "Oolong Milk Tea",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 3.9,
+    calories: 210,
+    protein: 3,
+    carbs: 38,
+    fat: 4,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_earl_grey_milk_tea",
+    brandId: "hollin",
+    name: "Earl Grey Milk Tea",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 3.9,
+    calories: 200,
+    protein: 3,
+    carbs: 36,
+    fat: 4,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_honey_milk_tea",
+    brandId: "hollin",
+    name: "Honey Milk Tea",
+    emoji: "🍯",
+    category: "Milk Tea",
+    price: 4.3,
+    calories: 230,
+    protein: 3,
+    carbs: 42,
+    fat: 4,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_black_tea_rsm",
+    brandId: "hollin",
+    name: "Signature Black Tea Rock Salt Macchiato",
+    emoji: "🧂",
+    category: "Rock Salt Macchiato",
+    price: 4.0,
+    calories: 210,
+    protein: 3,
+    carbs: 30,
+    fat: 8,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hollin_matcha_rsm",
+    brandId: "hollin",
+    name: "Matcha Rock Salt Macchiato",
+    emoji: "🍵",
+    category: "Rock Salt Macchiato",
+    price: 5.0,
+    calories: 260,
+    protein: 4,
+    carbs: 34,
+    fat: 9,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hollin_yakult_green_tea",
+    brandId: "hollin",
+    name: "Yakult Green Tea",
+    emoji: "🥤",
+    category: "Yakult Series",
+    price: 4.7,
+    calories: 150,
+    protein: 1,
+    carbs: 34,
+    fat: 0,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_lychee_yakult",
+    brandId: "hollin",
+    name: "Lychee Yakult",
+    emoji: "🍈",
+    category: "Yakult Series",
+    price: 5.4,
+    calories: 180,
+    protein: 1,
+    carbs: 42,
+    fat: 0,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_mango_green_tea",
+    brandId: "hollin",
+    name: "Mango Green Tea",
+    emoji: "🥭",
+    category: "Refreshing & Fruity",
+    price: 4.2,
+    calories: 150,
+    protein: 0,
+    carbs: 37,
+    fat: 0,
+    compatibleWith: [
+      "halal",
+      "vegetarian",
+      "vegan"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_lychee_oolong_tea",
+    brandId: "hollin",
+    name: "Lychee Oolong Tea",
+    emoji: "🍵",
+    category: "Refreshing & Fruity",
+    price: 3.9,
+    calories: 140,
+    protein: 0,
+    carbs: 34,
+    fat: 0,
+    compatibleWith: [
+      "halal",
+      "vegetarian",
+      "vegan"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_black_tea_latte",
+    brandId: "hollin",
+    name: "Signature Black Tea Latte",
+    emoji: "☕",
+    category: "Tea Latte",
+    price: 4.1,
+    calories: 190,
+    protein: 4,
+    carbs: 28,
+    fat: 6,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_matcha_latte",
+    brandId: "hollin",
+    name: "Shizuoka Matcha Latte",
+    emoji: "🍵",
+    category: "Tea Latte",
+    price: 5.1,
+    calories: 260,
+    protein: 5,
+    carbs: 32,
+    fat: 9,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hollin_dirty_brown_sugar",
+    brandId: "hollin",
+    name: "Dirty Brown Sugar with Pearls",
+    emoji: "🍮",
+    category: "Dirty Drink Series",
+    price: 5.2,
+    calories: 400,
+    protein: 4,
+    carbs: 70,
+    fat: 8,
+    compatibleWith: [
+      "halal",
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hollin_signature_black_tea",
+    brandId: "hollin",
+    name: "Signature Black Tea",
+    emoji: "🍵",
+    category: "Refreshing Tea",
+    price: 3.0,
+    calories: 80,
+    protein: 0,
+    carbs: 20,
+    fat: 0,
+    compatibleWith: [
+      "halal",
+      "vegetarian",
+      "vegan"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hollin_honey_green_tea",
+    brandId: "hollin",
+    name: "Honey Green Tea",
+    emoji: "🍵",
+    category: "Refreshing Tea",
+    price: 3.8,
+    calories: 110,
+    protein: 0,
+    carbs: 27,
+    fat: 0,
+    compatibleWith: [
+      "halal",
+      "vegetarian",
+      "vegan"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "four_leaves_hokkaido_dome",
+    brandId: "four_leaves",
+    name: "Hokkaido Dome",
+    emoji: "🍞",
+    category: "Buns",
+    price: 2.5,
+    calories: 220,
+    protein: 5,
+    carbs: 34,
+    fat: 7,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "four_leaves_an_pan",
+    brandId: "four_leaves",
+    name: "An Pan (Red Bean Bun)",
+    emoji: "🍞",
+    category: "Buns",
+    price: 2.2,
+    calories: 210,
+    protein: 5,
+    carbs: 38,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "four_leaves_tuna_bun",
+    brandId: "four_leaves",
+    name: "Tuna Bun",
+    emoji: "🥪",
+    category: "Buns",
+    price: 2.8,
+    calories: 240,
+    protein: 9,
+    carbs: 28,
+    fat: 10,
+    compatibleWith: [
+      "pescatarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "four_leaves_strawberry_shortcake",
+    brandId: "four_leaves",
+    name: "Strawberry Shortcake (Slice)",
+    emoji: "🍰",
+    category: "Cakes",
+    price: 6.0,
+    calories: 280,
+    protein: 3,
+    carbs: 33,
+    fat: 15,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "four_leaves_mille_feuille",
+    brandId: "four_leaves",
+    name: "Mille Feuille",
+    emoji: "🥐",
+    category: "Pastries",
+    price: 5.5,
+    calories: 350,
+    protein: 5,
+    carbs: 37,
+    fat: 20,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "four_leaves_garlic_cream_cheese_bread",
+    brandId: "four_leaves",
+    name: "Garlic Cream Cheese Bread",
+    emoji: "🧄",
+    category: "Bread",
+    price: 2.4,
+    calories: 310,
+    protein: 7,
+    carbs: 37,
+    fat: 15,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
   }
 ];

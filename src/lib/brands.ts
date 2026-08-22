@@ -13053,5 +13053,40 @@ export const BRANDS = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "hollin",
+    name: "Hollin",
+    emoji: "🧋",
+    type: "grab_go",
+    cuisine: "Milk Tea",
+    aliases: [
+      "hollin"
+    ],
+    dietTags: [
+      "halal",
+      "vegetarian"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "four_leaves",
+    name: "Four Leaves",
+    emoji: "🍞",
+    type: "grab_go",
+    cuisine: "Bakery",
+    aliases: [
+      "four leaves",
+      "four leaves bakery"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "grab_go"
+    ]
   }
 ];
