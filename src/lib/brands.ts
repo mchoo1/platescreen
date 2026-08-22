@@ -12,14 +12,35 @@
 // NOT concessions inside a shared food-court building, so no operatorId; these are their own
 // storefronts): Happy Hawkers (21 outlets), Fork & Spoon (3), Grove (4), 1983 - Coffee & Toast (1),
 // 1983 - A Taste of Nanyang (1) — 30 real, address-verified premises total, all geocoded via OneMap.
-// Kopitiam's own outlet finder and Koufu's remaining sub-brands (R&B Tea, Dough Culture, Nine Fresh,
-// The Kitchen, The Green Hut, Rasapura Master) are JS-rendered map/SPA widgets that did not expose
-// their outlet data to static fetching or DOM inspection — not scraped this pass, left as a
-// follow-up (see reference/research-sessions/2026-08-22-food-court-website-research.md). NTUC
+// Kopitiam's own outlet finder was reported this pass as JS-locked with no discoverable data source —
+// superseded the same day, see 2026-08-22e below. Koufu's remaining sub-brands (R&B Tea, Dough
+// Culture, Nine Fresh, The Kitchen, The Green Hut, Rasapura Master) are still unresolved JS/SPA
+// widgets (see reference/research-sessions/2026-08-22-food-court-website-research.md). NTUC
 // Foodfare's own site now positions it purely as B2B institutional catering (childcare/healthcare/
 // government), not public food courts — flagged as a scope question rather than acted on.
+// 2026-08-22e: found Kopitiam's real data source — not the map widget (which is genuinely JS-only)
+// but a WordPress SEO sitemap (stall-sitemap.xml / stall-sitemap2.xml) listing 1,441 individual
+// stall detail pages, each with clean schema.org JSON-LD (name, dishes, full address+postal, phone,
+// hours, parent venue). Scraped all 1,441 via direct fetch (no browser needed — the block hit
+// earlier was Cloudflare on the /wp-admin/admin-ajax.php map endpoint specifically, not on these
+// public content pages). Deduplicated by stall name across venues, then filtered out 58 bare
+// cuisine/dish-category labels ("Chicken Rice", "Fish Soup", "Mala Xiang Guo", etc. — Kopitiam's own
+// placeholder naming for unbranded stalls, same non-value the generic-name audit flagged) — see
+// reference/data/kopitiam-generic-filter.md for the exact blocklist. Net: 839 real, distinctly-named
+// Kopitiam concessions (Heavenly Wang, HJH Maimunah, Ann Chin Popiah, Confirm & Chop, Kokoro Kiosuku,
+// Kopi Kiosk, and hundreds more) across ~90 venues, 1,183 premises, every one geocoded via OneMap
+// postal lookup. operatorId: "kopitiam" on all of them. 3 brand-new venues (504 Yishun, 542B
+// Serangoon North, Pasir Ris 735) have no address published on Kopitiam's site yet — their stalls
+// (8 brands, listed in researchQueue.ts) were left out entirely rather than guessed.
+// IMPORTANT GAP: these 839 brands have real names/addresses but NO MenuItems yet — the scraped data
+// only gives dish *names* (schema.org servesCuisine), never calories/protein/carbs/fat, and this
+// project never fabricates macros. Real dish names are preserved in
+// reference/data/kopitiam-stall-dishes.json for a future macro-research pass. Until MenuItems are
+// added, these brands are invisible in the calorie/protein screener (buildScreenerRows() joins off
+// MENU_ITEMS) even though they now exist for location/map purposes — flagged as a single queued item
+// in researchQueue.ts rather than 839 separate entries.
 
-export const BRANDS = [
+export const BRANDS_1 = [
   {
     id: "mcd",
     name: "McDonald's",
@@ -7090,7 +7111,10 @@ export const BRANDS = [
       "dine_in",
       "grab_go"
     ]
-  },
+  }
+];
+
+export const BRANDS_2 = [
   {
     id: "80_circuit_road_market_and_food_centre_lee_wai_ming",
     name: "Lee Wai Ming",
@@ -12666,5 +12690,13437 @@ export const BRANDS = [
       "grab_go",
       "delivery"
     ]
+  },
+  {
+    id: "kopitiam_kopi_kiosk",
+    name: "Kopi Kiosk",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "kopi kiosk"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_putian_street_food",
+    name: "Putian Street Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "putian street food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinatown_roasted",
+    name: "Chinatown Roasted",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chinatown roasted"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_haus_spinach_fish_soup",
+    name: "Haus Spinach Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "haus spinach fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pak_lum_local_delight",
+    name: "Pak Lum Local Delight",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pak lum local delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_saayah_sayang_nasi_padang",
+    name: "Saayah Sayang Nasi Padang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "saayah sayang nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beradik_western",
+    name: "Beradik Western",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "beradik western"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kim_dae_bak",
+    name: "Kim Dae Bak",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "kim dae bak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ayam_penyet",
+    name: "Ayam Penyet",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "ayam penyet"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_fan_ji_claypot_and_bak_kut_teh",
+    name: "Lao Fan Ji Claypot & Bak Kut Teh",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lao fan ji claypot & bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ampang_yong_tao_fu_and_beef_noodle",
+    name: "Ampang Yong Tao Fu & Beef Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ampang yong tao fu & beef noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yu_ni_xiang_yu_grilled_fish",
+    name: "Yu Ni Xiang Yu Grilled Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "yu ni xiang yu grilled fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_jia_mixed_veggie_rice",
+    name: "He Jia Mixed Veggie Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "he jia mixed veggie rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_taiwan_street_food",
+    name: "Taiwan Street Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Taiwanese",
+    aliases: [
+      "taiwan street food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_qiu_lian_ban_mian",
+    name: "Qiu Lian Ban Mian",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "qiu lian ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cinta_chicken_rice",
+    name: "Cinta Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "cinta chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chili_mala_hot_pot",
+    name: "Monster Chili Mala Hot Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "monster chili mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_braised_duck_and_kay_chap",
+    name: "Braised Duck & Kay Chap",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "braised duck & kay chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_egg_thai",
+    name: "Egg Thai",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "egg thai"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kubis_korean_food",
+    name: "Kubis Korean Food",
+    emoji: "🇰🇷",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "kubis korean food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_universal_economical_rice",
+    name: "Universal Economical Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "universal economical rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_home_wok",
+    name: "Home Wok",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "home wok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_heritage_tanglin_puff",
+    name: "Heritage Tanglin Puff",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "heritage tanglin puff"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bear_baby_spicy_fragrant_pot",
+    name: "Bear Baby Spicy Fragrant Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "bear baby spicy fragrant pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_kong_delights",
+    name: "Hong Kong Delights",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hong kong delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cik_lim_ytf",
+    name: "Cik Lim YTF",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "cik lim ytf"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kakhi_nang",
+    name: "Kakhi Nang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kakhi nang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinatown_roasted_delight",
+    name: "Chinatown Roasted Delight",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chinatown roasted delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_washouku_geon",
+    name: "Washouku Geon",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "washouku geon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kakak_handmade_noodle",
+    name: "Kakak Handmade Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "kakak handmade noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_soon_lee_fish_soup",
+    name: "Soon Lee Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "soon lee fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_majulah_penyet_and_bakar",
+    name: "Majulah Penyet & Bakar",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "majulah penyet & bakar"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_new_hokkien_mee",
+    name: "New HOKKIEN MEE",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "new hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seabay_mini_wok",
+    name: "Seabay Mini Wok",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "seabay mini wok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cinta_hainanese_chicken_rice",
+    name: "Cinta Hainanese Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "cinta hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_chew_yong_tao_foo",
+    name: "Ah Chew Yong Tao Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ah chew yong tao foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lau_di_fang_scissors_cut_curry_rice",
+    name: "Lau Di Fang Scissors-Cut Curry Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "lau di fang scissors-cut curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xiang_chi_mian",
+    name: "Xiang Chi Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "xiang chi mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_western_boy",
+    name: "Western Boy",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "western boy"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pin_wei_chee_cheong_fun",
+    name: "Pin Wei Chee Cheong Fun",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "pin wei chee cheong fun"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kallang_airport_wanton_mee",
+    name: "Kallang Airport Wanton Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "kallang airport wanton mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_dae_bak",
+    name: "King Dae Bak",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "king dae bak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pepper_kitchen",
+    name: "Pepper Kitchen",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pepper kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pepper_lunch",
+    name: "Pepper Lunch",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pepper lunch"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_riverside_indonesia_bbq",
+    name: "Riverside Indonesia BBQ",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "riverside indonesia bbq"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mala_hot_pot",
+    name: "Mala Hot Pot",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ayam_taliwang_nasi_lemak",
+    name: "Ayam Taliwang Nasi Lemak",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "ayam taliwang nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_er_herbal_soup",
+    name: "Ah Er Herbal Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ah er herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_origina_fish_soup",
+    name: "Origina Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "origina fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_royal_rojak",
+    name: "Royal Rojak",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "royal rojak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teohchew_cuisine",
+    name: "Teohchew Cuisine",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "teohchew cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kokoro_kiosuku",
+    name: "Kokoro Kiosuku",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "kokoro kiosuku"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_homewok",
+    name: "Homewok",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "homewok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
   }
 ];
+
+export const BRANDS_3 = [
+  {
+    id: "kopitiam_putien",
+    name: "Putien",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "putien"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_flint_specialty_grill",
+    name: "Flint Specialty Grill",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "flint specialty grill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hjh_maimunah",
+    name: "HJH Maimunah",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hjh maimunah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_grouper_fish_soup",
+    name: "King Grouper Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "king grouper fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_eco_rice",
+    name: "Eco Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "eco rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ampang_ytf",
+    name: "Ampang YTF",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ampang ytf"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fitra_chicken_rice",
+    name: "Fitra Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "fitra chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bu_tang_wang_pepper_soup",
+    name: "Bu Tang Wang Pepper Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "bu tang wang pepper soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinatown_hk_roast",
+    name: "Chinatown HK Roast",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chinatown hk roast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ann_chin_popiah",
+    name: "Ann Chin Popiah",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ann chin popiah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pepper_lunch_express",
+    name: "Pepper Lunch Express",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pepper lunch express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kallang_airport_wanton_noodle",
+    name: "Kallang Airport Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "kallang airport wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bread_junction",
+    name: "Bread Junction",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "bread junction"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_jia_bian_fan_porridge",
+    name: "He Jia Bian Fan Porridge",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "he jia bian fan porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kakak_handmade_noodles",
+    name: "Kakak Handmade Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "kakak handmade noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pak_lum_local_delights",
+    name: "Pak Lum Local Delights",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "pak lum local delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_y_and_h_ayam_penyet",
+    name: "Y&H Ayam Penyet",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "y&h ayam penyet"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wah_zai_ampang_yong_tau_foo_and_tangkak_beef_noodle",
+    name: "Wah Zai Ampang Yong Tau Foo & Tangkak Beef Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "wah zai ampang yong tau foo & tangkak beef noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_majulah_nasi_padang",
+    name: "Majulah Nasi Padang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "majulah nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ha_lou_hokkien_mee",
+    name: "Ha Lou Hokkien Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ha lou hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_dae_bak_korean",
+    name: "King Dae Bak Korean",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "king dae bak korean"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_what_the_fish",
+    name: "What The Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "what the fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bkt_and_claypot_rice",
+    name: "BKT & Claypot Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "bkt & claypot rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_riverside_bbq",
+    name: "Riverside BBQ",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "riverside bbq"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wen_xiang_yuan",
+    name: "Wen Xiang Yuan",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "wen xiang yuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_jia_mixed_veg_rice",
+    name: "He Jia Mixed Veg Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "he jia mixed veg rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_putian_food",
+    name: "Putian Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "putian food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teow_chew_cuisine",
+    name: "Teow Chew Cuisine",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "teow chew cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dan_lao",
+    name: "Dan Lao",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "dan lao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_express_teppanyaki",
+    name: "Express Teppanyaki",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "express teppanyaki"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pig_s_organ_soup",
+    name: "Pig’s Organ Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pig’s organ soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_na_na_homemade_curry",
+    name: "Na Na Homemade Curry",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "na na homemade curry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_ma_chi_mian",
+    name: "Ah Ma Chi Mian",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ah ma chi mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bali_bali_indonesian_bbq",
+    name: "Bali Bali Indonesian BBQ",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "bali bali indonesian bbq"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_guan_chee_hk_roast",
+    name: "Guan Chee HK Roast",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "guan chee hk roast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lam_s_noodle_and_chicken",
+    name: "Lam’s Noodle & Chicken",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "lam’s noodle & chicken"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lobster_king_pao_fan",
+    name: "Lobster King Pao Fan",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lobster king pao fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mian_mian_ju_dao",
+    name: "Mian Mian Ju Dao",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mian mian ju dao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seabay_wok_delight",
+    name: "Seabay Wok Delight",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "seabay wok delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_hup_kee",
+    name: "Old Hup Kee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "old hup kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fitra_hainanese_chicken_rice",
+    name: "Fitra Hainanese Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "fitra hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hjh_maimunah_mini",
+    name: "HJH Maimunah Mini",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "hjh maimunah mini"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_donburi_oyster_beer",
+    name: "Donburi. Oyster. Beer",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "donburi. oyster. beer"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xi_de_li",
+    name: "Xi De Li",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xi de li"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dapur_dapur_pisang",
+    name: "Dapur Dapur Pisang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "dapur dapur pisang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hk_chun_kee",
+    name: "HK Chun Kee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "hk chun kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ho_chiak_north",
+    name: "Ho Chiak North",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ho chiak north"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shuang_xing",
+    name: "Shuang Xing",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "shuang xing"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ak_sait_restaurant",
+    name: "Ak Sait Restaurant",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "ak sait restaurant"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kimly_dim_sum",
+    name: "Kimly Dim Sum",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "kimly dim sum"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_xiang_food",
+    name: "Ming Xiang Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ming xiang food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mini_wok",
+    name: "Mini Wok",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "mini wok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ri_ri_hong_mala_hot_pot",
+    name: "Ri Ri Hong Mala Hot Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "ri ri hong mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kimly_mixed_rice",
+    name: "Kimly Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kimly mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seafood_king_pao_fan",
+    name: "Seafood King Pao Fan",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "seafood king pao fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ju_bao_xuan_mala_hotpot",
+    name: "Ju Bao Xuan Mala Hotpot",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "ju bao xuan mala hotpot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nks_indian_muslim_food",
+    name: "NKS Indian Muslim Food",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "nks indian muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_heavenly_wang",
+    name: "Heavenly Wang",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "heavenly wang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_econ_bee_hoon",
+    name: "Econ Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "econ bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_liang_ji",
+    name: "Liang Ji",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "liang ji"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_popular_food",
+    name: "Popular Food",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "popular food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_new_hk_roast",
+    name: "New HK Roast",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "new hk roast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_master_crab",
+    name: "Master Crab",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "master crab"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_huo_tang",
+    name: "Lao Huo Tang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "lao huo tang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_confirm_chop",
+    name: "Confirm + Chop",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "confirm + chop"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chang_cheng",
+    name: "Chang Cheng",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "chang cheng"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xiao_mei_pork_noodle",
+    name: "Xiao Mei Pork Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "xiao mei pork noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_just_greens",
+    name: "Just Greens",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "just greens"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tian_tian_fa_hainanese_chicken_rice",
+    name: "Tian Tian Fa Hainanese Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "tian tian fa hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yb_fried_bee_hoon",
+    name: "YB Fried Bee Hoon",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "yb fried bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tai_pai_tong_seafood",
+    name: "Tai Pai Tong Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "tai pai tong seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_culiang_yufen",
+    name: "CuLiang YuFen",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "culiang yufen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_divine_chicken_pot",
+    name: "Divine Chicken Pot",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "divine chicken pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_singhk",
+    name: "SingHK",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "singhk"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chicken_rice_and_beef_noodles",
+    name: "Chicken Rice & Beef Noodles",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chicken rice & beef noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_feng_ji_chicken_rice",
+    name: "Yong Feng Ji Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "yong feng ji chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ubi_le_sheng_yong_tou_fu",
+    name: "Ubi Le Sheng Yong Tou Fu",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ubi le sheng yong tou fu"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_maxwell",
+    name: "老面檔街 Maxwell",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "老面檔街 maxwell"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_97_nasi_lemak",
+    name: "97 Nasi Lemak",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "97 nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_china_wampoa_home_made_noodle",
+    name: "China Wampoa Home Made Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "china wampoa home made noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wok_26",
+    name: "@Wok 26",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "@wok 26"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_heng_gi_goose_and_duck_rice",
+    name: "Heng Gi Goose and Duck Rice",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "heng gi goose and duck rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_heng_heng_noodle_house",
+    name: "Heng Heng Noodle House",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "heng heng noodle house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shi_nian",
+    name: "Shi Nian",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "shi nian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_di_claypot",
+    name: "Ah Di Claypot",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ah di claypot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_amk_711_hainan_western",
+    name: "Amk 711 Hainan Western",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "amk 711 hainan western"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tai_hao_chi_roasted_delights",
+    name: "Tai Hao Chi Roasted Delights",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "tai hao chi roasted delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_day_night_herbal_soup",
+    name: "Day Night Herbal Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "day night herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jiaocai_seafood",
+    name: "Jiaocai Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "jiaocai seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xuan_yuan_su_shi",
+    name: "Xuan Yuan Su Shi",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xuan yuan su shi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_fa_japanese_and_korean_cuisine",
+    name: "Hong Fa Japanese & Korean Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "hong fa japanese & korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_project_penyek",
+    name: "Project Penyek",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "project penyek"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_spicy_pot",
+    name: "Spicy Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "spicy pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mohamed_ayaan_rojak",
+    name: "Mohamed Ayaan Rojak",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "mohamed ayaan rojak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_arabica_kebab",
+    name: "Arabica Kebab",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "arabica kebab"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_d_ranum_nasi_padang",
+    name: "D’Ranum Nasi Padang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "d’ranum nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ntp_western_and_grill",
+    name: "NTP Western & Grill",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "ntp western & grill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yi_ding_hao_eating_house",
+    name: "Yi Ding Hao Eating House",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yi ding hao eating house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_pin_mixed_veg_rice",
+    name: "Hong Pin Mixed Veg Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hong pin mixed veg rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hainan_beef_noodle_and_claypot",
+    name: "Hainan Beef Noodle & Claypot",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hainan beef noodle & claypot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wonder_chicken_kitchen",
+    name: "Wonder Chicken Kitchen",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "wonder chicken kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tian_tian_nasi_lemak",
+    name: "Tian Tian Nasi Lemak",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "tian tian nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_green_tea_rice",
+    name: "Green Tea Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "green tea rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chye_lye_ah_ma_mee_sua",
+    name: "Chye Lye Ah Ma Mee Sua",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "chye lye ah ma mee sua"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kickstart_pancake",
+    name: "Kickstart Pancake",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "kickstart pancake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_like_pudding_hot_and_cold_dessert",
+    name: "Like Pudding Hot & Cold Dessert",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "like pudding hot & cold dessert"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_korean_japanese_cuisine",
+    name: "Korean . Japanese Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "korean . japanese cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_you_xiang_teochew_noodles",
+    name: "You Xiang Teochew Noodles",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "you xiang teochew noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_169_may_fish_soup",
+    name: "169 May Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "169 may fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yew_lee_wanton_noodle",
+    name: "Yew Lee Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "yew lee wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yu_kee_braised_duck",
+    name: "Yu Kee Braised Duck",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "yu kee braised duck"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chye_lye_bp_lor_mee_and_prawn_mee",
+    name: "Chye Lye BP Lor Mee/ Prawn Mee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "chye lye bp lor mee/ prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yuan_ji_handmade_pau_tim_sum",
+    name: "Yuan Ji Handmade Pau Tim Sum",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "yuan ji handmade pau tim sum"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_abang_teh_tarik",
+    name: "Abang Teh Tarik",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "abang teh tarik"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kashmir_indian_muslim_food",
+    name: "Kashmir Indian Muslim Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "kashmir indian muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dapur_seri_nasi_ayam",
+    name: "Dapur Seri Nasi Ayam",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "dapur seri nasi ayam"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_saamsudeen",
+    name: "Saamsudeen",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "saamsudeen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hainan_hometown_curry",
+    name: "Hainan Hometown Curry",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "hainan hometown curry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shi_song_vegetarian",
+    name: "Shi Song Vegetarian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "shi song vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jing_wang_handmade_dim_sum",
+    name: "Jing Wang Handmade Dim Sum",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "jing wang handmade dim sum"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_danlao_scrambled_egg_rice",
+    name: "Danlao Scrambled Egg Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "danlao scrambled egg rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chang_cheng_rice_garden",
+    name: "Chang Cheng (Rice Garden)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "chang cheng (rice garden)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yu_wei_ju_quan",
+    name: "Yu Wei Ju Quan",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "yu wei ju quan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_munchi_pancakes",
+    name: "Munchi Pancakes",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "munchi pancakes"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_steam_fish",
+    name: "Steam Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "steam fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_a_and_m_zaika_indian_muslim_food",
+    name: "A & M Zaika Indian Muslim Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "a & m zaika indian muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_telur_thai",
+    name: "Telur Thai",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "telur thai"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xin_hai_feast",
+    name: "Xin Hai Feast",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "xin hai feast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xi_an_cuisine",
+    name: "Xi An Cuisine",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "xi an cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_na_na_curry",
+    name: "Na Na Curry",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "na na curry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_gao_ji_yong_tau_foo",
+    name: "Gao Ji Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "gao ji yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hjh_maimunah_nasi_padang",
+    name: "HJH Maimunah Nasi Padang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "hjh maimunah nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hjh_maimunah_malay_snack",
+    name: "HJH Maimunah Malay Snack",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hjh maimunah malay snack"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_riverside_indonesian_grill",
+    name: "Riverside Indonesian Grill",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "riverside indonesian grill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_delibowl_rice_express",
+    name: "Delibowl Rice Express",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "delibowl rice express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_taiwan_dessert_and_milk_tea",
+    name: "Taiwan Dessert & Milk Tea",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Taiwanese",
+    aliases: [
+      "taiwan dessert & milk tea"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_western",
+    name: "Western",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "western"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_roasted",
+    name: "Roasted",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "roasted"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_soup_and_cheong_fun",
+    name: "Soup & Cheong Fun",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "soup & cheong fun"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fishball_noodle",
+    name: "Fishball Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fishball noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_super_nasi_lemak_club",
+    name: "Super Nasi Lemak Club",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "super nasi lemak club"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seng_heng_atas_roasted_delights_chinatown",
+    name: "Seng Heng Atas Roasted Delights Chinatown",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "seng heng atas roasted delights chinatown"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_emogi_yong_tau_foo",
+    name: "Emogi Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "emogi yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jom_chicken_rice",
+    name: "JOM Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "jom chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_rindu_rasa_western",
+    name: "Rindu Rasa Western",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "rindu rasa western"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_jia_huan_and_rice_garden",
+    name: "He Jia Huan / Rice Garden",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "he jia huan / rice garden"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_d_laila_cuisine",
+    name: "D Laila Cuisine",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "d laila cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jia_wei_lao_huo_bao_tang",
+    name: "Jia Wei Lao Huo Bao Tang",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "jia wei lao huo bao tang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ain_popiah_basah",
+    name: "Ain Popiah Basah",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ain popiah basah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_548_nonya_kueh",
+    name: "548 Nonya Kueh",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "548 nonya kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_rayeesa_s_malay_kitchen",
+    name: "Rayeesa’s Malay Kitchen",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "rayeesa’s malay kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chicken_rice_and_ytf",
+    name: "Chicken Rice/YTF",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "chicken rice/ytf"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_grouper",
+    name: "King Grouper",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "king grouper"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_master_tang",
+    name: "Master Tang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "master tang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teochew",
+    name: "Teochew",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "teochew"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_japanese",
+    name: "Japanese",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "japanese"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_japanese_and_korean_cuisine",
+    name: "Japanese & Korean Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "japanese & korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chendol",
+    name: "Chendol",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "chendol"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lau_huo_tang",
+    name: "Lau Huo Tang",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lau huo tang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_roasted_deligths",
+    name: "Roasted Deligths",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "roasted deligths"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mama_putien",
+    name: "Mama Putien",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mama putien"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_munchi_pancake",
+    name: "Munchi Pancake",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "munchi pancake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wanton_noodles",
+    name: "Wanton Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "wanton noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tiong_bahru_tian_bo_shui_kueh_pte_ltd",
+    name: "Tiong Bahru Tian Bo Shui Kueh Pte Ltd",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "tiong bahru tian bo shui kueh pte ltd"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seafood",
+    name: "Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_herbal_soup_northpoint_city",
+    name: "Herbal Soup (Northpoint City)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "herbal soup (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_japanese_food_northpoint_city",
+    name: "Japanese Food (Northpoint City)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "japanese food (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dao_xiao_mian_northpoint_city",
+    name: "Dao Xiao Mian (Northpoint City)",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "dao xiao mian (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_i_sel_fish_northpoint_city",
+    name: "I Sel Fish (Northpoint City)",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "i sel fish (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_tao_foo_northpoint_city",
+    name: "Yong Tao Foo (Northpoint City)",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yong tao foo (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thai_cuisine_northpoint_city",
+    name: "Thai Cuisine (Northpoint City)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "thai cuisine (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chicken_rice_northpoint_city",
+    name: "Chicken Rice (Northpoint City)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chicken rice (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fried_item_northpoint_city",
+    name: "Fried Item (Northpoint City)",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fried item (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_korean_food_northpoint_city",
+    name: "Korean Food (Northpoint City)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "korean food (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_economic_rice_northpoint_city",
+    name: "Economic Rice (Northpoint City)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "economic rice (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xiang_chi_mian_northpoint_city",
+    name: "Xiang Chi Mian (Northpoint City)",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "xiang chi mian (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kopi_kiosk_northpoint_city",
+    name: "Kopi Kiosk (Northpoint City)",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "kopi kiosk (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_rice_garden",
+    name: "Rice Garden",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "rice garden"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mings_kitchen",
+    name: "Mings Kitchen",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "mings kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_g_western",
+    name: "G Western",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "g western"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mr_prata",
+    name: "Mr. Prata",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mr. prata"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jue_shi_lor_mee",
+    name: "Jue Shi Lor Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "jue shi lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_roasted_item_and_herbal_soup",
+    name: "Roasted Item and Herbal Soup",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "roasted item and herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jin_kimchi_express",
+    name: "Jin Kimchi Express",
+    emoji: "🇰🇷",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jin kimchi express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seabay_delight",
+    name: "Seabay Delight",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "seabay delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indian_muslim_food",
+    name: "Indian Muslim Food",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "indian muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xing_long_fish_soup",
+    name: "Xing Long Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "xing long fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tenderbest",
+    name: "Tenderbest",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "tenderbest"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pepper_lunch_northpoint_city",
+    name: "Pepper Lunch (Northpoint City)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pepper lunch (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mini_wok_northpoint_city",
+    name: "Mini Wok (Northpoint City)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "mini wok (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hk_roasted_northpoint_city",
+    name: "HK Roasted (Northpoint City)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hk roasted (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indian_vegetarian_northpoint_city",
+    name: "Indian Vegetarian (Northpoint City)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "indian vegetarian (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hainan_beef_noodles_and_claypot",
+    name: "Hainan Beef Noodles & Claypot",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hainan beef noodles & claypot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_minum_minum_cold_and_hot_beverage_coffee_and_tea",
+    name: "Minum Minum (Cold/Hot Beverage . Coffee/Tea)",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "minum minum (cold/hot beverage . coffee/tea)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dessert",
+    name: "Dessert",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "dessert"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_just_greens_vegetarian",
+    name: "Just Greens vegetarian",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "just greens vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_lim_curry_puff",
+    name: "Hong Lim Curry Puff",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "hong lim curry puff"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_maxwell_hainanase_chicken_rice",
+    name: "Maxwell Hainanase Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "maxwell hainanase chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pang_pang_wanton_noodles",
+    name: "Pang Pang Wanton Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "pang pang wanton noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_seng_heng_prawn_noodles",
+    name: "Yong Seng Heng Prawn Noodles",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "yong seng heng prawn noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_i_m_thai_kitchen_premiumthai_mookata",
+    name: "I’m Thai Kitchen (Premiumthai Mookata)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "i’m thai kitchen (premiumthai mookata)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ofanz_rojak_popiah",
+    name: "Ofanz (Rojak Popiah)",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ofanz (rojak popiah)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_gong_homemade_ban_mian",
+    name: "Ah Gong Homemade Ban Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ah gong homemade ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_fat_braised_duck_kway_chap",
+    name: "Ah Fat Braised Duck . Kway Chap",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "ah fat braised duck . kway chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jia_le_yong_tau_foo",
+    name: "Jia Le Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jia le yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_juma_econ_bee_hoon",
+    name: "Ah Juma Econ Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "ah juma econ bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ka_ka_japanese_curry_house",
+    name: "Ka KA Japanese Curry House",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "ka ka japanese curry house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinatown_mala_hotpot",
+    name: "Chinatown Mala Hotpot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "chinatown mala hotpot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hk_roasted_delight",
+    name: "Hk Roasted Delight",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hk roasted delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mian_and_fish_soup",
+    name: "Ban Mian/fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mian/fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_tau_foo_and_mala",
+    name: "Yong Tau foo/Mala",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "yong tau foo/mala"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_day_and_night_herbal_soup",
+    name: "Day & Night Herbal Soup",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "day & night herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_rv_pancakes",
+    name: "RV Pancakes",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "rv pancakes"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_western_cuisine_northpoint_city",
+    name: "Western Cuisine (Northpoint City)",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "western cuisine (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fish_soup_northpoint_city",
+    name: "Fish Soup (Northpoint City)",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "fish soup (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_banana_leaf_briyani_northpoint_city",
+    name: "Banana Leaf Briyani (Northpoint City)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "banana leaf briyani (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nasi_padang_northpoint_city",
+    name: "Nasi Padang (Northpoint City)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "nasi padang (northpoint city)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_fa_fishball",
+    name: "Ming Fa Fishball",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ming fa fishball"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_like_pudding",
+    name: "Like Pudding",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "like pudding"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mengji_noodle_house",
+    name: "MengJi Noodle House",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mengji noodle house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pao_fan",
+    name: "Pao Fan",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "pao fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_gong_fu_yuan",
+    name: "Gong Fu Yuan",
+    emoji: "🥦",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "gong fu yuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_p_and_j_western_food",
+    name: "P&J Western Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "p&j western food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_greentea_rice",
+    name: "GreenTea Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "greentea rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pig_s_organ_soup_bak_kut_teh",
+    name: "Pig’s Organ Soup Bak Kut Teh",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "pig’s organ soup bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ippon_fusion_bowl",
+    name: "Ippon Fusion Bowl",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "ippon fusion bowl"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_a1_economic_beehoon_nasi_lemak",
+    name: "A1 Economic Beehoon. Nasi Lemak",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "a1 economic beehoon. nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_zhi_rong_korean_cuisine",
+    name: "He Zhi Rong Korean Cuisine",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "he zhi rong korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_social_bite",
+    name: "Social Bite",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "social bite"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mang_cheng_xiang_curry_rice",
+    name: "Mang Cheng Xiang Curry Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "mang cheng xiang curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fat_fat_food_carrot_cake_and_hokkien_mee",
+    name: "Fat Fat Food Carrot Cake & Hokkien Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fat fat food carrot cake & hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_man_na_la",
+    name: "Man Na La",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "man na la"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_botak_cantonese_porridge",
+    name: "Botak Cantonese Porridge",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Taiwanese",
+    aliases: [
+      "botak cantonese porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lobster_pao_fan",
+    name: "Lobster Pao Fan",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lobster pao fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_best_zaika",
+    name: "Best Zaika",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "best zaika"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jian_fa_bbq_seafood",
+    name: "Jian Fa BBQ Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "jian fa bbq seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mommy_rendang",
+    name: "Mommy Rendang",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "mommy rendang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_my_happy_belly",
+    name: "My Happy Belly",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "my happy belly"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_soon_kee_roasted_delights",
+    name: "Soon Kee Roasted Delights",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "soon kee roasted delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hj_salim",
+    name: "HJ Salim",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "hj salim"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mr_islamic_power_rojak",
+    name: "Mr. Islamic Power Rojak",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "mr. islamic power rojak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_san_yi_xuan",
+    name: "San Yi Xuan",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "san yi xuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_ma_mee_sua",
+    name: "Ah Ma Mee Sua",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ah ma mee sua"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yuan_he_mee_jian_keuh",
+    name: "Yuan He Mee Jian Keuh",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "yuan he mee jian keuh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_snek_ku_di_lorong_fatimah",
+    name: "Snek Ku Di Lorong Fatimah",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "snek ku di lorong fatimah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_traditional_lor_mee_prawn_noodle_laksa",
+    name: "Traditional Lor Mee Prawn Noodle Laksa",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "traditional lor mee prawn noodle laksa"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_cheng_kee_carrot_cake",
+    name: "Hao Cheng Kee Carrot cake",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "hao cheng kee carrot cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xi_wang_bak_kut_teh",
+    name: "Xi Wang Bak Kut Teh",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xi wang bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_fa_fishball_noodle",
+    name: "Ming Fa Fishball Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ming fa fishball noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yu_kee_braised_duck_kway_chap",
+    name: "Yu Kee Braised Duck . Kway Chap",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "yu kee braised duck . kway chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xian_fu_fish_soup",
+    name: "Xian Fu Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "xian fu fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fusion_nasi_briyani_chinese_rice",
+    name: "Fusion Nasi Briyani Chinese Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "fusion nasi briyani chinese rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_the_western_house",
+    name: "The Western House",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "the western house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_long_ding_seafood",
+    name: "Long Ding Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "long ding seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mr_sehu_food_palace",
+    name: "Mr. Sehu Food Palace",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "mr. sehu food palace"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinese_cuisine_sichuan",
+    name: "Chinese Cuisine Sichuan",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "chinese cuisine sichuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_bang_nasi_goreng",
+    name: "Ah Bang Nasi Goreng",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ah bang nasi goreng"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_my_kampung",
+    name: "My Kampung",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "my kampung"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_time",
+    name: "Old Time",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "old time"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_santapan_nadika",
+    name: "Santapan Nadika",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "santapan nadika"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_delicious_dim_sum",
+    name: "Delicious Dim Sum",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "delicious dim sum"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_le_rong_rojak_and_popiah_and_porridge",
+    name: "He Le Rong Rojak & Popiah & Porridge",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "he le rong rojak & popiah & porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kz_bakery",
+    name: "KZ Bakery",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kz bakery"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fruiteria",
+    name: "Fruiteria",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "fruiteria"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_the_tarik_drinks",
+    name: "The Tarik. Drinks",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "the tarik. drinks"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mian_and_congee",
+    name: "Ban Mian & Congee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mian & congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_malay_cuisine",
+    name: "Malay Cuisine",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "malay cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_swee_heng_bakery",
+    name: "Swee Heng Bakery",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "swee heng bakery"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ding_jian_hk_style_charcoal_roasted",
+    name: "Ding Jian HK Style Charcoal Roasted",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "ding jian hk style charcoal roasted"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_orh_kee_noodles_express",
+    name: "ORH-KEE Noodles Express",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "orh-kee noodles express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mian_and_spinach",
+    name: "Ban Mian & Spinach",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mian & spinach"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_braised_duck_and_noodle",
+    name: "Braised Duck & Noodle",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "braised duck & noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_head_chefz_western_food",
+    name: "Head Chefz Western Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "head chefz western food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinese_mixed_rice",
+    name: "Chinese Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "chinese mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_japanese_and_korean",
+    name: "Japanese & Korean",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "japanese & korean"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_px_chicken_rice",
+    name: "PX Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "px chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_amiba_mixed_rice",
+    name: "Amiba Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "amiba mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bake_inc",
+    name: "Bake Inc",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "bake inc"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_filipino_cuisine",
+    name: "Filipino Cuisine",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "filipino cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_crowded_salad_bowl",
+    name: "Crowded Salad Bowl",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "crowded salad bowl"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chili_nasi_lemak",
+    name: "Monster Chili Nasi Lemak",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "monster chili nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mian_and_fish_soup_2",
+    name: "Ban Mian & Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mian & fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_malay_kueh",
+    name: "Malay Kueh",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "malay kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_wei_rice_garden_mix_veg",
+    name: "Hao Wei Rice Garden Mix Veg.",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hao wei rice garden mix veg."
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_claypot_bak_kut_teh",
+    name: "Claypot Bak Kut Teh",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "claypot bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thailand_food",
+    name: "Thailand Food",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "thailand food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tek_tek",
+    name: "Tek Tek",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "tek tek"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_roasted_delights",
+    name: "Roasted Delights",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "roasted delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tenderfresh_western_cuisine",
+    name: "Tenderfresh Western Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "tenderfresh western cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_omar",
+    name: "King Omar",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "king omar"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_qin_tang",
+    name: "Qin Tang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "qin tang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bai_sheng_noodle",
+    name: "Bai Sheng Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "bai sheng noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jin_kimchi",
+    name: "Jin Kimchi",
+    emoji: "🇰🇷",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jin kimchi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thai_food",
+    name: "Thai Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "thai food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_takeway_kueh",
+    name: "Takeway Kueh",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "takeway kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_ji_traditional_roaster",
+    name: "Hao Ji Traditional Roaster",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hao ji traditional roaster"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_korean",
+    name: "Korean",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "korean"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mala_fu_wei",
+    name: "Mala Fu Wei",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "mala fu wei"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wkj_wanton_mee",
+    name: "WKJ Wanton Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "wkj wanton mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_jia_ban_mian",
+    name: "Hao Jia Ban Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hao jia ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indo_bbq",
+    name: "Indo BBQ",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "indo bbq"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_singa_wok",
+    name: "Singa Wok",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "singa wok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_curry_items",
+    name: "Curry Items",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "curry items"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ji_gong_bao",
+    name: "Ji Gong Bao",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "ji gong bao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cu_liang_yu_fen",
+    name: "Cu Liang Yu Fen",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "cu liang yu fen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yuen_kee_dumpling",
+    name: "Yuen Kee Dumpling",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yuen kee dumpling"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teochew_lao",
+    name: "Teochew Lao",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "teochew lao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_of_grouper",
+    name: "King of Grouper",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "king of grouper"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_jia_mixed_rice",
+    name: "He Jia Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "he jia mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_odeon_beef_noodles",
+    name: "Odeon Beef Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "odeon beef noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_don_oyster_bar",
+    name: "Don’ Oyster Bar",
+    emoji: "🍱",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "don’ oyster bar"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seng_heng_roasted_delight",
+    name: "Seng Heng Roasted Delight",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "seng heng roasted delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_le_le_chicken_rice",
+    name: "Le Le Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "le le chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tracy_s_sarawak_kolo_mee",
+    name: "Tracy’s Sarawak Kolo Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "tracy’s sarawak kolo mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fish_soup_ban_mian",
+    name: "Fish Soup Ban Mian",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fish soup ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_cheng_du_steamboat",
+    name: "Lao Cheng Du Steamboat",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "lao cheng du steamboat"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ampang_yong_tau_foo_and_wen_xiang_yuan",
+    name: "Ampang Yong Tau Foo/Wen Xiang Yuan",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ampang yong tau foo/wen xiang yuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_fan_ji",
+    name: "Lao Fan Ji",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lao fan ji"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jubilee_s_hainanese_chicken_rice",
+    name: "Jubilee’s Hainanese Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "jubilee’s hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sunbo_express_penyet_bbq",
+    name: "Sunbo Express Penyet + Bbq",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "sunbo express penyet + bbq"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kim_dae_bak_korean_cuisine",
+    name: "Kim Dae Bak Korean Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "kim dae bak korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xiao_la_jiao_mala_hot_pot",
+    name: "Xiao La Jiao Mala Hot Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "xiao la jiao mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_wei_mixed_rice",
+    name: "Hao Wei Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hao wei mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_korean_and_japanese",
+    name: "Korean & Japanese",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "korean & japanese"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fishball_noodles_and_homemade_curry",
+    name: "Fishball Noodles & Homemade Curry",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fishball noodles & homemade curry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kawan_bowl",
+    name: "Kawan Bowl",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "kawan bowl"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mala_and_seafood",
+    name: "Mala & Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "mala & seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_western_grill_and_japanese_fusion",
+    name: "Western Grill & Japanese Fusion",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "western grill & japanese fusion"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nene_chicken",
+    name: "Nene Chicken",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "nene chicken"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_heyya_duck_rice",
+    name: "Heyya Duck Rice",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "heyya duck rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_claypot_king",
+    name: "Claypot King",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "claypot king"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_taliwang_nasi_lemak",
+    name: "Taliwang Nasi Lemak",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "taliwang nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fishin_with_u",
+    name: "Fishin with u",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "fishin with u"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_qiu_lim_hakka_yong_tau_foo",
+    name: "Qiu Lim Hakka Yong Tau Foo",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "qiu lim hakka yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wang_wang_roasted",
+    name: "Wang Wang Roasted",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "wang wang roasted"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_kong_street_old_chun_kee",
+    name: "Hong Kong Street Old Chun Kee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hong kong street old chun kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yummy_pancake",
+    name: "Yummy Pancake",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "yummy pancake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mala_tang",
+    name: "Mala Tang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "mala tang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_steam_fish_and_soup",
+    name: "Steam Fish & Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "steam fish & soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_world_bak_kut_teh_and_fried_porridge",
+    name: "Old World Bak Kut Teh & Fried Porridge",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "old world bak kut teh & fried porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cui_liang_yu_fen",
+    name: "Cui Liang Yu Fen",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "cui liang yu fen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kfc",
+    name: "KFC",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kfc"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tanglin_halt_ban_mian_and_fish_soup",
+    name: "Tanglin Halt Ban Mian & Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "tanglin halt ban mian & fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seafood_zhi_char",
+    name: "Seafood Zhi Char",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "seafood zhi char"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_green_garden_vegetarian",
+    name: "Green Garden Vegetarian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "green garden vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beuaty_nutritious_soup",
+    name: "Beuaty Nutritious Soup",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "beuaty nutritious soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thumbupz_roasted_and_soup",
+    name: "THUMBUPZ Roasted & Soup",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "thumbupz roasted & soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mr_foods_indian_cuisine",
+    name: "MR Foods Indian Cuisine",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "mr foods indian cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_carrot_cake",
+    name: "Carrot Cake",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "carrot cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_snack",
+    name: "Snack",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "snack"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sh_indian_cuisine",
+    name: "SH Indian Cuisine",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "sh indian cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_texas_lone_star",
+    name: "Texas Lone Star",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "texas lone star"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_coffee_break",
+    name: "Coffee Break",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "coffee break"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mama_mee",
+    name: "Mama Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mama mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cantonese_seafood",
+    name: "Cantonese Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "cantonese seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beauty_nutritious_soup",
+    name: "Beauty Nutritious Soup",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "beauty nutritious soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tian_fu_yuan",
+    name: "Tian Fu Yuan",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "tian fu yuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_heng_teochew_porridge",
+    name: "Ban Heng Teochew Porridge",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ban heng teochew porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kueh_kueh",
+    name: "Kueh Kueh",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kueh kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jiesen_yang_tau_foo",
+    name: "Jiesen Yang Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jiesen yang tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_economy_bee_hoon",
+    name: "Economy Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "economy bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_johnson_duck",
+    name: "Johnson Duck",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "johnson duck"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_china_food",
+    name: "China Food",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "china food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_wai_mixed_rice",
+    name: "Hao Wai Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hao wai mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_curry_rice",
+    name: "Curry Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jocob_soup",
+    name: "Jocob Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jocob soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_mee_hoon_kueh",
+    name: "Uncle Mee Hoon Kueh",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "uncle mee hoon kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kueh",
+    name: "Kueh",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mian_fish_soup",
+    name: "Ban Mian Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mian fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_prata_alley",
+    name: "Prata Alley",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "prata alley"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thai_makan",
+    name: "Thai Makan",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "thai makan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indian_food",
+    name: "Indian Food",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "indian food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fishball_noodles",
+    name: "Fishball Noodles",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fishball noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wok_delight",
+    name: "Wok Delight",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "wok delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_local_delights",
+    name: "Local Delights",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "local delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_new_korean_cuisine",
+    name: "New Korean Cuisine",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "new korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ms_inasal_filipino_cuisine",
+    name: "Ms Inasal Filipino Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "ms inasal filipino cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_halim_s_fish_soup",
+    name: "Halim’s Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "halim’s fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_wei_econ_rice",
+    name: "Hao Wei Econ Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hao wei econ rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chili_mala",
+    name: "Monster Chili Mala",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "monster chili mala"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nasi_lemak_ayam_taliwang",
+    name: "Nasi Lemak Ayam Taliwang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "nasi lemak ayam taliwang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indian_stall",
+    name: "Indian Stall",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "indian stall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mala_claypot",
+    name: "Mala Claypot",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mala claypot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ju_bao_xuan_mala",
+    name: "Ju Bao Xuan Mala",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "ju bao xuan mala"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_huat_seafood",
+    name: "Huat Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "huat seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mexican_and_chinese_cuisine",
+    name: "Mexican/Chinese Cuisine",
+    emoji: "🍱",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "mexican/chinese cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_259_prawn_noodle",
+    name: "259 Prawn Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "259 prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_delhi_express_indian_cuisine",
+    name: "Delhi Express Indian Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "delhi express indian cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sing_hk",
+    name: "Sing HK",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "sing hk"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tender_fresh",
+    name: "Tender Fresh",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "tender fresh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_qiu_lian_ban_mee",
+    name: "Qiu Lian Ban Mee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "qiu lian ban mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thunder_tea_rice",
+    name: "Thunder Tea Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "thunder tea rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_golden_shoe_hokkien_mee",
+    name: "Golden Shoe Hokkien Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "golden shoe hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_al_mokial_indian_muslim",
+    name: "Al Mokial Indian Muslim",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "al mokial indian muslim"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beehoon_and_nasi_lemak",
+    name: "Beehoon & Nasi Lemak",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "beehoon & nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mix_veg",
+    name: "Mix Veg",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "mix veg"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_xiang",
+    name: "Ming Xiang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "ming xiang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kns_indian",
+    name: "KNS Indian",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "kns indian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_maru_japanese",
+    name: "Maru Japanese",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "maru japanese"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_butter_and_cream",
+    name: "Butter & Cream",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "butter & cream"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  }
+];
+
+export const BRANDS_4 = [
+  {
+    id: "kopitiam_fu_xiao_fish_soup",
+    name: "Fu Xiao Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "fu xiao fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_yen_halal_chicken_rice",
+    name: "Ming Yen Halal Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "ming yen halal chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fragrance_chicken_rice",
+    name: "Fragrance Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "fragrance chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_biryani_point",
+    name: "Biryani Point",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "biryani point"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_city_satay",
+    name: "City Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "city satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dim_sum_and_bak_kwa",
+    name: "Dim Sum & Bak Kwa",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "dim sum & bak kwa"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indian_and_chinese_vegetarian",
+    name: "Indian & Chinese Vegetarian",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "indian & chinese vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_best_satay",
+    name: "Best Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "best satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_china_cuisine",
+    name: "China Cuisine",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "china cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_archipelago",
+    name: "Archipelago",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "archipelago"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_spinach_soup",
+    name: "Spinach Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "spinach soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_kong_street",
+    name: "Hong Kong Street",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hong kong street"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_warong_pak_sapari",
+    name: "Warong Pak Sapari",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "warong pak sapari"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_partea_express",
+    name: "Partea Express",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "partea express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shanghai_fried_xiao_long_bao",
+    name: "Shanghai Fried Xiao Long Bao",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "shanghai fried xiao long bao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_yen_bbq_seafood",
+    name: "Ming Yen Bbq Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "ming yen bbq seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bbq_chicken_wings",
+    name: "Bbq Chicken Wings",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "bbq chicken wings"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_captain_satay",
+    name: "Captain Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "captain satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beer_and_drinks",
+    name: "Beer And Drinks",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "beer and drinks"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_power_satay",
+    name: "Power Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "power satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teh_tarik",
+    name: "Teh Tarik",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "teh tarik"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_geylang_serai_satay",
+    name: "Geylang Serai Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "geylang serai satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_satay_14",
+    name: "Satay 14",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "satay 14"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_satay_19",
+    name: "Satay 19",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "satay 19"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mee",
+    name: "Ban Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pancakes",
+    name: "Pancakes",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "pancakes"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_soup",
+    name: "Soup",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_al_rahim_sarbat_stall",
+    name: "Al-Rahim Sarbat Stall",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "al-rahim sarbat stall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_penyet",
+    name: "Uncle Penyet",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "uncle penyet"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_selera_timur",
+    name: "Selera Timur",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "selera timur"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mingfa_fishball_noodles",
+    name: "Mingfa Fishball Noodles",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mingfa fishball noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_lee_s_wanton_noodle",
+    name: "Uncle Lee’s Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "uncle lee’s wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ar_rahmaan",
+    name: "Ar-Rahmaan",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "ar-rahmaan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yon_ho_hainanese_cuisine",
+    name: "Yon Ho Hainanese cuisine",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yon ho hainanese cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xiang_rui_gourmet_congee",
+    name: "Xiang Rui Gourmet Congee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "xiang rui gourmet congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_lee_s_lor_mee",
+    name: "Uncle Lee’s Lor mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "uncle lee’s lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_gourmet_mixed_rice",
+    name: "Gourmet Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "gourmet mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wang_xiang_kitchen",
+    name: "WANG XIANG KITCHEN",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "wang xiang kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_jim_fresh_fruit_juice",
+    name: "Uncle Jim Fresh Fruit juice",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "uncle jim fresh fruit juice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jun_yuan_house_of_fish",
+    name: "Jun Yuan House Of Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "jun yuan house of fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hakka_yong_tau_foo",
+    name: "Hakka Yong Tau Foo",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hakka yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_feng_feng_boneless_chicken_rice",
+    name: "Feng Feng Boneless Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "feng feng boneless chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_wei_mala_hot_pot",
+    name: "Hao Wei Mala Hot Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "hao wei mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_supreme_gourmet",
+    name: "Supreme Gourmet",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "supreme gourmet"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_e_food_fun",
+    name: "E Food Fun",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "e food fun"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_wong",
+    name: "Uncle Wong",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "uncle wong"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_le_pantry",
+    name: "Le Pantry",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "le pantry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_yi_herbal_soup",
+    name: "AH YI HERBAL SOUP",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ah yi herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_divine_bites",
+    name: "Divine Bites",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "divine bites"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_flying_dragon_noodles",
+    name: "Flying Dragon Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "flying dragon noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wild_olives",
+    name: "Wild Olives",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "wild olives"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_simful_nasi_lemak",
+    name: "Simful Nasi Lemak",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "simful nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kin_khao_yang_thai_food",
+    name: "Kin Khao Yang Thai Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "kin khao yang thai food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nyonya_pok_pok_kay",
+    name: "Nyonya Pok Pok Kay",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "nyonya pok pok kay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wan_gui_beverages",
+    name: "Wan Gui Beverages",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "wan gui beverages"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yu_yi_teochew_fish_soup",
+    name: "Yu Yi Teochew Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "yu yi teochew fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tiong_fong_fatt_hainanese_boneless_chicken_rice",
+    name: "Tiong Fong Fatt Hainanese Boneless Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "tiong fong fatt hainanese boneless chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_su_yuan_vegetarian",
+    name: "Su Yuan Vegetarian",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "su yuan vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xin_kee_signature_curry_house",
+    name: "Xin Kee Signature Curry House",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "xin kee signature curry house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ping_xiang_chicken_rice",
+    name: "Ping Xiang Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "ping xiang chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_curry_mixed_veg_rice",
+    name: "Curry Mixed Veg Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "curry mixed veg rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mei_xiang_prawn_noodle_lor_mee",
+    name: "Mei Xiang Prawn Noodle Lor Mee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "mei xiang prawn noodle lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_li_coffee_station",
+    name: "Yong Li Coffee Station",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "yong li coffee station"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shun_heng_pig_trotter_rice",
+    name: "Shun Heng Pig Trotter Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "shun heng pig trotter rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pontian_wanton_noodles",
+    name: "Pontian Wanton Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "pontian wanton noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bedok_prawn_noodle",
+    name: "Bedok Prawn Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "bedok prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_renqi",
+    name: "Renqi",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "renqi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_freshly_roast_on_site",
+    name: "Freshly Roast On Site",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "freshly roast on site"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_meeting_point_cafe",
+    name: "Meeting Point Cafe",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "meeting point cafe"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bedok_chee_kuek",
+    name: "Bedok Chee Kuek",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "bedok chee kuek"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_happy_dessert",
+    name: "Happy Dessert",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "happy dessert"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fatt_soon_kuek",
+    name: "Fatt Soon Kuek",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "fatt soon kuek"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yang_sen_tung_dan",
+    name: "Yang Sen Tung Dan",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "yang sen tung dan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_new_world_mutton_soup",
+    name: "New World Mutton Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "new world mutton soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_poh_kee_traditional_wanton_noodle",
+    name: "Poh Kee Traditional Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "poh kee traditional wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pearl_rice_porridge",
+    name: "Pearl Rice Porridge",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "pearl rice porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shan_dong_dong_ji_la_mian_xiao_long_bao",
+    name: "Shan Dong Dong Ji La Mian Xiao Long Bao",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "shan dong dong ji la mian xiao long bao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sin_food_26",
+    name: "Sin Food 26",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "sin food 26"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_katong_liu_kee_fried_oyster",
+    name: "Katong Liu Kee Fried Oyster",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "katong liu kee fried oyster"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yu_kee_duck_rice",
+    name: "Yu Kee Duck Rice",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "yu kee duck rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_li_economical_bee_hoon_and_nasi_lemak",
+    name: "He Li Economical Bee Hoon & Nasi Lemak",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "he li economical bee hoon & nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xue_hua_fei_hot_and_cold_drinks",
+    name: "Xue Hua Fei Hot & Cold Drinks",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xue hua fei hot & cold drinks"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_long_xiang_hainanese_curry_rice",
+    name: "Long Xiang Hainanese Curry Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "long xiang hainanese curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kopi_meow",
+    name: "Kopi Meow",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "kopi meow"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_hua_delights",
+    name: "Yong Hua Delights",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "yong hua delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_feng_fried_rice",
+    name: "Feng Fried Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "feng fried rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_min_hui_nasi_lemak",
+    name: "Min Hui Nasi Lemak",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "min hui nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_song_zhou_fried_carrot_cake",
+    name: "Song Zhou Fried Carrot Cake",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "song zhou fried carrot cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dan_shi_fu_herbal_soup",
+    name: "Dan Shi Fu Herbal Soup",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "dan shi fu herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bedok_pau_dim_sum",
+    name: "Bedok Pau Dim Sum",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "bedok pau dim sum"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pin_wei_dessert",
+    name: "Pin Wei Dessert",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "pin wei dessert"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_g_meal",
+    name: "G Meal",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "g meal"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_quan_wei",
+    name: "Quan Wei",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "quan wei"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teochew_fish_porridge_da_pai_dang",
+    name: "Teochew Fish Porridge Da Pai Dang",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "teochew fish porridge da pai dang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_quan_ji_teochew_mee",
+    name: "Quan Ji Teochew Mee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "quan ji teochew mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wah_kee_coffee_shop",
+    name: "Wah Kee Coffee Shop",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "wah kee coffee shop"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_zhong_xin_ban_mian",
+    name: "Zhong Xin Ban Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "zhong xin ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jimmy_people_s_park_fried_kway_teow",
+    name: "Jimmy People’s Park Fried Kway Teow",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jimmy people’s park fried kway teow"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bai_nian_yong_tau_foo",
+    name: "Bai Nian Yong Tau Foo",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "bai nian yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_zai_vegetarian_food",
+    name: "Zai Vegetarian Food",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "zai vegetarian food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_gim_chew_fried_hokkien_noodle",
+    name: "Gim Chew Fried Hokkien Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "gim chew fried hokkien noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ma_la_xiang_guo",
+    name: "Ma La Xiang Guo",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "ma la xiang guo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tea_cafe",
+    name: "Tea Cafe",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "tea cafe"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shun_xing_braised_duck_rice_noodle_kway_chap",
+    name: "Shun Xing Braised Duck Rice Noodle Kway Chap",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "shun xing braised duck rice noodle kway chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_jie_spinach_soup",
+    name: "Lao Jie Spinach Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "lao jie spinach soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jit_sing_satay",
+    name: "Jit Sing Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jit sing satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ali_shan",
+    name: "Ali Shan",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ali shan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_guan_heng_cafe",
+    name: "Guan Heng Cafe",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "guan heng cafe"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bedok_western_food",
+    name: "Bedok Western Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "bedok western food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fu_cheng_homemade_spring_roll",
+    name: "Fu Cheng Homemade Spring Roll",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "fu cheng homemade spring roll"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hock_hai_hong_lim_curry_chicken_noodle",
+    name: "Hock Hai (Hong Lim) Curry Chicken Noodle",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hock hai (hong lim) curry chicken noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fruits_and_juice_bedok",
+    name: "Fruits & Juice @ Bedok",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "fruits & juice @ bedok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lee_kee",
+    name: "Lee Kee",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lee kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_99_dessert_in_cup",
+    name: "99 Dessert in Cup",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "99 dessert in cup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_alsalam_teh_tarik_corner",
+    name: "Alsalam Teh Tarik Corner",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "alsalam teh tarik corner"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_inspirasi",
+    name: "Inspirasi",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "inspirasi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_g_k_murthy",
+    name: "G K Murthy",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "g k murthy"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jefri",
+    name: "Jefri",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "jefri"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wak_din",
+    name: "Wak Din",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "wak din"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_merah_delimah_stall",
+    name: "Merah Delimah Stall",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "merah delimah stall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_salam_indian_muslim_food_corner",
+    name: "Salam Indian Muslim Food Corner",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "salam indian muslim food corner"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ban_mian_fish_soup_porridge",
+    name: "Ban Mian, Fish Soup, Porridge",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ban mian, fish soup, porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_man_tian",
+    name: "Hong Man Tian",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hong man tian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_econ_bee_hoon_nasi_lemak",
+    name: "Econ Bee Hoon, Nasi Lemak",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "econ bee hoon, nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_drink_counter",
+    name: "Drink Counter",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "drink counter"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chang_cheng_mixed_rice",
+    name: "Chang Cheng Mixed Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "chang cheng mixed rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king",
+    name: "煲仔 KING",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "煲仔 king"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_huay_kwang_thai_wanton_mee_ubi",
+    name: "Huay Kwang Thai Wanton Mee @Ubi",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "huay kwang thai wanton mee @ubi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_japanese_and_korean_cusine",
+    name: "Japanese & Korean Cusine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "japanese & korean cusine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sj_sickander_ammal_muslim_food",
+    name: "SJ Sickander Ammal Muslim Food",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "sj sickander ammal muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yummy_delights",
+    name: "Yummy Delights",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "yummy delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mama_fish_soup",
+    name: "Mama Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "mama fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_deen_mee_combo_house",
+    name: "Deen Mee Combo House",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "deen mee combo house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hee_hee_hee_steamed_fish_and_seafood",
+    name: "Hee Hee Hee Steamed Fish & Seafood",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "hee hee hee steamed fish & seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_south_buona_vista_braised_duck",
+    name: "South Buona Vista Braised Duck",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "south buona vista braised duck"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_you_fu_ban_mian_and_pao_fan",
+    name: "You Fu Ban Mian / Pao Fan",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "you fu ban mian / pao fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hock_hai_curry_chicken_noodle",
+    name: "Hock Hai Curry Chicken Noodle",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hock hai curry chicken noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chili_mala_hotpot",
+    name: "Monster Chili Mala Hotpot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "monster chili mala hotpot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kebabs_corner",
+    name: "Kebabs Corner",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "kebabs corner"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hakka_leipopo",
+    name: "Hakka Leipopo",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hakka leipopo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_12_roasted",
+    name: "12 Roasted",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "12 roasted"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_swee_traditional_prawn_noodle",
+    name: "Swee Traditional Prawn Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "swee traditional prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ubi_le_sheng_yong_tau_fu",
+    name: "Ubi Le Sheng Yong Tau Fu",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ubi le sheng yong tau fu"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chicky_papa",
+    name: "Chicky Papa",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "chicky papa"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_nyonya",
+    name: "Old Nyonya",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "old nyonya"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tidjai_thai_food",
+    name: "Tidjai Thai Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "tidjai thai food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dosa_delight",
+    name: "Dosa Delight",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "dosa delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_what_the_puff",
+    name: "What The Puff!",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "what the puff!"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jin_deng_pig_s_organ_soup",
+    name: "Jin Deng Pig’s Organ Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jin deng pig’s organ soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jade_s_chicken",
+    name: "Jade’s Chicken",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "jade’s chicken"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_grab_n_go",
+    name: "Grab N Go",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "grab n go"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_singapore_fried_hokkien_mee",
+    name: "Singapore Fried Hokkien Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "singapore fried hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_75_ah_balling_peanut_soup",
+    name: "75 Ah Balling Peanut Soup",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "75 ah balling peanut soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_black_and_white_rojak_and_popiah",
+    name: "Black & White Rojak and Popiah",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "black & white rojak and popiah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_one_soy",
+    name: "One Soy",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "one soy"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_feng_xiang_bak_kut_teh",
+    name: "Feng Xiang Bak Kut Teh",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "feng xiang bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_178_yi_qi_fa_econ_bee_hoon",
+    name: "178 Yi Qi Fa Econ Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "178 yi qi fa econ bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seng_hiang_bak_chor_mee",
+    name: "Seng Hiang Bak Chor Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "seng hiang bak chor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_zheng_ji_yong_tau_foo",
+    name: "Zheng Ji Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "zheng ji yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fin_and_feathers_thams_up",
+    name: "Fin & Feathers Thams Up",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "fin & feathers thams up"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_whitley_road_big_prawn_noodle",
+    name: "Whitley Road Big Prawn Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "whitley road big prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_al_hyzin_mee_delights_mutton_soup",
+    name: "Al-Hyzin Mee Delights Mutton Soup",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "al-hyzin mee delights mutton soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xin_xin_claypot_rice",
+    name: "Xin Xin Claypot Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xin xin claypot rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hock_hai_curry_chicken_noodles",
+    name: "Hock Hai Curry Chicken Noodles",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hock hai curry chicken noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_muhammad_danish_prata_paradise",
+    name: "Muhammad Danish Prata Paradise",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "muhammad danish prata paradise"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_san_yi_xuan_mala_hotpot_grilled_fish",
+    name: "San Yi Xuan Mala Hotpot Grilled Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "san yi xuan mala hotpot grilled fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tong_fong_fatt_hainanese_boneless_chicken_rice",
+    name: "Tong Fong Fatt Hainanese Boneless Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "tong fong fatt hainanese boneless chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_amoy_st_lor_mee",
+    name: "Amoy St Lor Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "amoy st lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_er_soup",
+    name: "Ah Er Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ah er soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_guan_chee_hongkong_roasted_duck",
+    name: "Guan Chee Hongkong Roasted Duck",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "guan chee hongkong roasted duck"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mala_version_2_by_xiao_man_niu",
+    name: "Mala Version 2 By Xiao Man Niu",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "mala version 2 by xiao man niu"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_su_man_yuan_vegetarian",
+    name: "Su Man Yuan Vegetarian",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "su man yuan vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kim_dae_bak_myeong_dong_street_food",
+    name: "Kim Dae Bak Myeong-Dong Street Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "kim dae bak myeong-dong street food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indian_vegetarian_green_leaf_cuisine",
+    name: "Indian Vegetarian Green Leaf Cuisine",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "indian vegetarian green leaf cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seng_kee_mixed_veg_rice_and_economic_bee_hoon",
+    name: "Seng Kee Mixed Veg Rice & Economic Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "seng kee mixed veg rice & economic bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_taiwan_cuisine_by_formosa_delights",
+    name: "Taiwan Cuisine by Formosa Delights",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Taiwanese",
+    aliases: [
+      "taiwan cuisine by formosa delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yummy_delights_nasi_lemak_and_econ_bee_hoon",
+    name: "Yummy Delights Nasi Lemak & Econ Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "yummy delights nasi lemak & econ bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chen_wanton_noodles",
+    name: "Chen Wanton Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "chen wanton noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hwa_heng_beef_noodle",
+    name: "Hwa Heng Beef Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hwa heng beef noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lee_wei_hainanese_chicken_rice_and_congee",
+    name: "Lee Wei Hainanese Chicken Rice & Congee",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "lee wei hainanese chicken rice & congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_guang_yuan_vegetarian",
+    name: "Guang Yuan Vegetarian",
+    emoji: "🥦",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "guang yuan vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lion_city_dim_sum",
+    name: "Lion City Dim Sum",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "lion city dim sum"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_bugis_kway_chap_since_1973",
+    name: "Old Bugis Kway Chap Since 1973",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "old bugis kway chap since 1973"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_roadside_stall_malaysia_curry_rice",
+    name: "Roadside Stall Malaysia Curry Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "roadside stall malaysia curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_house_of_mookata_and_tidjai_thai_food",
+    name: "House of Mookata/ TIDJAI Thai Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "house of mookata/ tidjai thai food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ngan_lee_amaranth_leaf_soup",
+    name: "Ngan Lee Amaranth Leaf Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ngan lee amaranth leaf soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ieat_miniwok",
+    name: "IEAT Miniwok",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ieat miniwok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_of_fried_rice",
+    name: "King Of Fried Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "king of fried rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xi_xiang_taste_of_hunan",
+    name: "Xi Xiang Taste Of Hunan",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xi xiang taste of hunan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jia_xiang_wei_braised_chicken_rice",
+    name: "Jia Xiang Wei Braised Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "jia xiang wei braised chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_vietsea_food_connection",
+    name: "Vietsea Food Connection",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "vietsea food connection"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_small_bites_indian_cuisine",
+    name: "Small Bites Indian Cuisine",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "small bites indian cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_freshly_steamed_and_served",
+    name: "Freshly Steamed And Served",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "freshly steamed and served"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seafood_zi_char_sea_cube",
+    name: "Seafood Zi Char Sea Cube",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "seafood zi char sea cube"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thai_khanom_banana",
+    name: "Thai Khanom Banana",
+    emoji: "🇹🇭",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "thai khanom banana"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fort_canning_prawn_noodle",
+    name: "Fort Canning Prawn Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fort canning prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hakka_lei_po_po",
+    name: "Hakka Lei Po Po",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hakka lei po po"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_original_simon_road_hokkien_mee",
+    name: "Original Simon Road Hokkien Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "original simon road hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_louis_famous_chicken_rice",
+    name: "Uncle Louis Famous Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "uncle louis famous chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_briyani_grill",
+    name: "Briyani Grill",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "briyani grill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jin_deng_pig_s_organ_soup_braised_pig_s_trotter",
+    name: "Jin Deng Pig’s Organ Soup . Braised Pig’s Trotter",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jin deng pig’s organ soup . braised pig’s trotter"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hainan_beef_noodle_and_claypot_rice",
+    name: "Hainan Beef Noodle & Claypot Rice",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hainan beef noodle & claypot rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lim_kee_yong_tau_foo",
+    name: "Lim Kee Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lim kee yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_you_fu_ban_mian_and_ramen",
+    name: "You Fu Ban Mian & Ramen",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "you fu ban mian & ramen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ah_tan_wings",
+    name: "Ah Tan WIngs",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "ah tan wings"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nanyang_curry",
+    name: "Nanyang Curry",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "nanyang curry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yuan_ting_congee",
+    name: "Yuan Ting Congee",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yuan ting congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_eng_kee_chicken_wings",
+    name: "Eng Kee Chicken Wings",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "eng kee chicken wings"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_arshad_khan_indian_muslim_food",
+    name: "Arshad Khan Indian Muslim Food",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "arshad khan indian muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ding_wang_bak_kut_teh",
+    name: "Ding Wang Bak Kut Teh",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ding wang bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_street_braised_duck_kway_chup",
+    name: "Old Street Braised Duck Kway Chup",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "old street braised duck kway chup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nakoko",
+    name: "Nakoko",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "nakoko"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sha_indian_rojak",
+    name: "Sha Indian Rojak",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "sha indian rojak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_creme_and_cone",
+    name: "Creme and Cone",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "creme and cone"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ai_ihshan_mee_combo_house_and_mutton_soup",
+    name: "Ai ihshan Mee Combo House & Mutton Soup",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ai ihshan mee combo house & mutton soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bao_tang_zhi_dao",
+    name: "Bao Tang Zhi Dao",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "bao tang zhi dao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ming_kitchen",
+    name: "Ming Kitchen",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ming kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chang_cheng_food_paradise_rice_garden",
+    name: "Chang Cheng Food Paradise (Rice Garden)",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "chang cheng food paradise (rice garden)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fatty_bom_bom",
+    name: "Fatty Bom Bom",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "fatty bom bom"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fu_wei_chicken_rice",
+    name: "Fu Wei Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "fu wei chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kowloon_roasted_delight",
+    name: "Kowloon Roasted Delight",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "kowloon roasted delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yes_japanese_korean_cuisine",
+    name: "Yes! Japanese Korean Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "yes! japanese korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sofnade",
+    name: "Sofnade",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Taiwanese",
+    aliases: [
+      "sofnade"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hook_coffee",
+    name: "Hook Coffee",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "hook coffee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bak_kut_teh",
+    name: "Bak Kut Teh",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "bak kut teh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_comfirm_chop",
+    name: "Comfirm + Chop",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "comfirm + chop"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seng_heng_roasted_delights",
+    name: "Seng Heng Roasted Delights",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "seng heng roasted delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_banmian",
+    name: "Banmian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "banmian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_abang_991_nasi_padang",
+    name: "Abang 991 Nasi Padang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "abang 991 nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_house_of_lemang",
+    name: "House of Lemang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "house of lemang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_crave",
+    name: "Crave",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "crave"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_toyomi_japanese_express",
+    name: "Toyomi Japanese Express",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "toyomi japanese express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_majulah",
+    name: "Majulah",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "majulah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shabu_days",
+    name: "Shabu Days",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "shabu days"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_uncle_john_s_makan_place",
+    name: "Uncle John’s Makan Place",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "uncle john’s makan place"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bara_penyet",
+    name: "Bara Penyet",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "bara penyet"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_new_jia_wei",
+    name: "New Jia Wei",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "new jia wei"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_traditional_snack",
+    name: "Traditional Snack",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "traditional snack"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sai_kitchen",
+    name: "Sai Kitchen",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "sai kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xin_mei_ban_mian_and_congee",
+    name: "Xin Mei Ban Mian/Congee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "xin mei ban mian/congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ampang_yong_tau_foo",
+    name: "Ampang Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ampang yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_western_beradik",
+    name: "Western Beradik",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "western beradik"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yong_tao_foo",
+    name: "Yong Tao Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yong tao foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_korean_and_japanese_food",
+    name: "Korean & Japanese Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "korean & japanese food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_western",
+    name: "Monster Western",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "monster western"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wok_qi_fried_rice",
+    name: "Wok Qi Fried Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "wok qi fried rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_halim_fish_soup",
+    name: "Halim Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "halim fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_omu_curry_rice_and_donburi",
+    name: "Omu Curry Rice & Donburi",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "omu curry rice & donburi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_haus_ban_mian",
+    name: "Haus Ban Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "haus ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_le_korean_cuisine",
+    name: "Hong Le Korean Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "hong le korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cintaan_chicken_rice",
+    name: "Cintaan Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "cintaan chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chilli",
+    name: "Monster Chilli",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "monster chilli"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kawan_bowl_scrambled_egg",
+    name: "Kawan Bowl Scrambled Egg",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kawan bowl scrambled egg"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_flips_and_dips",
+    name: "Flips & Dips",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "flips & dips"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_banana_fritters_and_snacks",
+    name: "Banana Fritters & Snacks",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "banana fritters & snacks"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pepper_plus_rice",
+    name: "Pepper Plus Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "pepper plus rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pak_lum_malaysian_cuisine",
+    name: "Pak Lum Malaysian Cuisine",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "pak lum malaysian cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jj_chicken_rice",
+    name: "JJ Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "jj chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chilli_mala_hot_pot",
+    name: "Monster Chilli Mala Hot Pot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "monster chilli mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_penyet_king",
+    name: "Penyet King",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "penyet king"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tornado_egg_curry_rice_and_donburi",
+    name: "Tornado Egg Curry Rice & Donburi",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "tornado egg curry rice & donburi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_handmade_noodle",
+    name: "Handmade Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "handmade noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_haji_karim_indian_muslim_food",
+    name: "Haji Karim Indian  Muslim Food",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "haji karim indian  muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_le_japanese_and_korean",
+    name: "Hong Le Japanese & Korean",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "hong le japanese & korean"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_the_kiosk",
+    name: "The Kiosk",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "the kiosk"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cafe_lodge",
+    name: "Cafe Lodge",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "cafe lodge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fried_item",
+    name: "Fried Item",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "fried item"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_steam_fish_delight",
+    name: "Steam Fish Delight",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "steam fish delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fat_baby_rotisserie_and_western_cuisine",
+    name: "Fat Baby Rotisserie & Western Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "fat baby rotisserie & western cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_makan_west_hot",
+    name: "Makan West Hot",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "makan west hot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pho_vietnam",
+    name: "Pho Vietnam",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Vietnamese",
+    aliases: [
+      "pho vietnam"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ahjuma_korean_and_japanese_cuisine",
+    name: "Ahjuma Korean/Japanese Cuisine",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "ahjuma korean/japanese cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_monster_chilli_mala_xiang_guo",
+    name: "Monster Chilli Mala Xiang Guo",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "monster chilli mala xiang guo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sedap_kitchen",
+    name: "Sedap Kitchen",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "sedap kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jia_pa_pa_ban_mian",
+    name: "Jia Pa Pa Ban Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "jia pa pa ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_tang_tea_house",
+    name: "Tang Tea House",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "tang tea house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_krispi",
+    name: "Krispi",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "krispi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ani_yong_tau_foo",
+    name: "ANI Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "ani yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xiang_lian_korean_and_japanese",
+    name: "Xiang Lian Korean and Japanese",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "xiang lian korean and japanese"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_makan_west",
+    name: "Makan West",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "makan west"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_al_ameen",
+    name: "Al Ameen",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "al ameen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ba_xian_vegetarian",
+    name: "Ba Xian Vegetarian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ba xian vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_a_po",
+    name: "A-Po",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "a-po"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kubis",
+    name: "Kubis",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "kubis"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_i_sel_fish",
+    name: "I Sel-Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "i sel-fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_koo_kee",
+    name: "Koo Kee",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "koo kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jj_food",
+    name: "JJ Food",
+    emoji: "🍱",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "jj food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nasi_campur",
+    name: "Nasi Campur",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "nasi campur"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cik_lim_yong_tau_foo",
+    name: "Cik Lim Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "cik lim yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_soup_lodge",
+    name: "Soup Lodge",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "soup lodge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_kong",
+    name: "Hong Kong",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "hong kong"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cha_mu_lan_x",
+    name: "Cha Mu Lan X",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "cha mu lan x"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chef_lup_roasted_delight",
+    name: "Chef Lup Roasted Delight",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chef lup roasted delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_moon_chay",
+    name: "Moon Chay",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "moon chay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_satay_noodz",
+    name: "Satay Noodz",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "satay noodz"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_omega_pork_noodle",
+    name: "Omega Pork Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "omega pork noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_turkish_lezzet",
+    name: "Turkish Lezzet",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "turkish lezzet"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_gerry_express",
+    name: "Gerry Express",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "gerry express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_gold_xiang_curry_puff",
+    name: "Gold Xiang Curry Puff",
+    emoji: "🥮",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "gold xiang curry puff"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_warisan_satay",
+    name: "Warisan Satay",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "warisan satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_heyya_braised_duck_and_kway_chap",
+    name: "Heyya Braised Duck and Kway Chap",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "heyya braised duck and kway chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_vietsea_banh_mi_express_kopitiam_square",
+    name: "Vietsea Banh Mi Express (Kopitiam Square)",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "vietsea banh mi express (kopitiam square)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sengkang_square_oyster_omelette",
+    name: "Sengkang Square Oyster Omelette",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "sengkang square oyster omelette"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nur_tandoor_and_briyani",
+    name: "Nur Tandoor & Briyani",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "nur tandoor & briyani"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_old_street_braised_duck",
+    name: "Old Street Braised Duck",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "old street braised duck"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_penyet_kartini",
+    name: "Penyet Kartini",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "penyet kartini"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_texas_lone_star_western",
+    name: "Texas Lone Star (western)",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "texas lone star (western)"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bedok_one_hokkien_prawn_mee",
+    name: "Bedok One Hokkien Prawn Mee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "bedok one hokkien prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_steven_fried_rice",
+    name: "Steven Fried Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "steven fried rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_umi_s_spices",
+    name: "Umi’s Spices",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "umi’s spices"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_foo_hing_laksa_yong_tau_foo",
+    name: "Foo Hing Laksa Yong Tau Foo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "foo hing laksa yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_zhao_zhou_fish_porridge_daipadang",
+    name: "Zhao Zhou Fish Porridge Daipadang",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "zhao zhou fish porridge daipadang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_bedok_chwee_kuek",
+    name: "Bedok Chwee Kuek",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "bedok chwee kuek"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_indo_6_express",
+    name: "Indo 6 Express",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "indo 6 express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_saudagar_penyek",
+    name: "Saudagar Penyek",
+    emoji: "🇮🇩",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "saudagar penyek"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_dapur_abang",
+    name: "Dapur Abang",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "dapur abang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_krispi_roti",
+    name: "Krispi Roti",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "krispi roti"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_local_snack",
+    name: "Local Snack",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "local snack"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hk_style_steamed_fish_and_braised_meat",
+    name: "HK Style Steamed Fish & Braised Meat",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "hk style steamed fish & braised meat"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_dae_bak_korean_and_japanese",
+    name: "King Dae Bak Korean & Japanese",
+    emoji: "🇰🇷",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "king dae bak korean & japanese"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_panini_and_pizza",
+    name: "Panini & Pizza",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "panini & pizza"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jingdong_roti",
+    name: "JingDong Roti",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "jingdong roti"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chicky_fun_chicken_rice",
+    name: "Chicky Fun Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chicky fun chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pak_wee_chicken_rice",
+    name: "Pak Wee Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "pak wee chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_a_bowl_of_noodle",
+    name: "A Bowl of Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "a bowl of noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beautea",
+    name: "Beautea",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "beautea"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beradik_by_western_boy",
+    name: "Beradik by Western Boy",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "beradik by western boy"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_yuen_kee",
+    name: "Yuen Kee",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "yuen kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinatown_hk_roasted",
+    name: "Chinatown HK Roasted",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chinatown hk roasted"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_singa_mini_wok",
+    name: "Singa Mini Wok",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "singa mini wok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hadramawt_kitchen",
+    name: "Hadramawt Kitchen",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "hadramawt kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hai_ge_ji_beef_noodle",
+    name: "Hai Ge Ji Beef Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hai ge ji beef noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_belly_belly_good_cai_fan",
+    name: "Belly Belly Good Cai Fan",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "belly belly good cai fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hong_hu_la_mian",
+    name: "Hong Hu La Mian",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "hong hu la mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nanyang_san_bao",
+    name: "Nanyang San Bao",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "nanyang san bao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sing_hi_fry",
+    name: "Sing Hi Fry",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "sing hi fry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_new_hong_kong_roast",
+    name: "New Hong Kong Roast",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "new hong kong roast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_mini_hot_pot",
+    name: "Mini Hot Pot",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "mini hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lei_popo",
+    name: "Lei PoPo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lei popo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kong_wan_roast",
+    name: "Kong Wan Roast",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "kong wan roast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_sheng_tang_chinese_beef_roti",
+    name: "Sheng Tang Chinese Beef Roti",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "sheng tang chinese beef roti"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_blanco_court_beef_noodle",
+    name: "Blanco Court Beef Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "blanco court beef noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fuzhou_yan_dumpling_and_jian_bo",
+    name: "Fuzhou Yan Dumpling & Jian Bo",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "fuzhou yan dumpling & jian bo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_steam_house",
+    name: "Steam House",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "steam house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_briyani_express",
+    name: "Briyani Express",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "briyani express"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_shang_ke_pte_ltd",
+    name: "Shang Ke Pte Ltd",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "shang ke pte ltd"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nj_indian_classic_cuisine",
+    name: "NJ Indian Classic Cuisine",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "nj indian classic cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_he_jia_food",
+    name: "He Jia Food",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "he jia food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_the_bait_kitchen",
+    name: "The Bait Kitchen",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "the bait kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_dae_bak_korean_cuisine",
+    name: "King Dae Bak Korean Cuisine",
+    emoji: "🇰🇷",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "king dae bak korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_butter_and_cream_bakery",
+    name: "Butter & Cream Bakery",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "butter & cream bakery"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_cheers",
+    name: "Cheers",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "cheers"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_satay_one",
+    name: "Satay One",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "satay one"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nana_currry",
+    name: "Nana Currry",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "nana currry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_fu_zi_fried_kway_teow",
+    name: "Lao Fu Zi Fried Kway Teow",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lao fu zi fried kway teow"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_delhi_kitchen_indian_vegetarian_cuisine",
+    name: "Delhi Kitchen Indian Vegetarian Cuisine",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "delhi kitchen indian vegetarian cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_putian_heng_hwa_cuisine",
+    name: "Putian Heng Hwa Cuisine",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "putian heng hwa cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_ampang_yong_tau_foo_and_odeon_beef_noodle",
+    name: "Ampang Yong Tau Foo & Odeon Beef Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "ampang yong tau foo & odeon beef noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_zai_lai_teochew_porridge",
+    name: "Hao Zai Lai Teochew Porridge",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hao zai lai teochew porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_jiao_tai_yuan",
+    name: "Jiao Tai Yuan",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "jiao tai yuan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_pu_tian_xing_hua_food",
+    name: "Pu Tian (Xing Hua) Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "pu tian (xing hua) food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chinatown_dangui_duck",
+    name: "Chinatown Dangui Duck",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "chinatown dangui duck"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fu_zhou_oyster_cake",
+    name: "Fu Zhou Oyster Cake",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Bakery/Dessert",
+    aliases: [
+      "fu zhou oyster cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_nana_curry",
+    name: "Nana Curry",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "nana curry"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_beef_roti",
+    name: "Beef Roti",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice/Poultry",
+    aliases: [
+      "beef roti"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_claypot_and_herbal_soup",
+    name: "Claypot & Herbal Soup",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "claypot & herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_chicken_pot_king",
+    name: "Chicken Pot King",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "chicken pot king"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_damok",
+    name: "Damok",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Korean",
+    aliases: [
+      "damok"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_this_and_that",
+    name: "This & That",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "this & that"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_king_of_pao_fan",
+    name: "King of Pao Fan",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "king of pao fan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kokoro_izakaya",
+    name: "Kokoro Izakaya",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Japanese",
+    aliases: [
+      "kokoro izakaya"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_xi_xiang",
+    name: "Xi Xiang",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "xi xiang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kinaroy_thai_cuisine",
+    name: "Kinaroy Thai Cuisine",
+    emoji: "🇹🇭",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "kinaroy thai cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hao_jia_ji",
+    name: "Hao Jia Ji",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "hao jia ji"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lao_fan_ji_bak_kut_teh_and_claypot",
+    name: "Lao Fan Ji Bak Kut Teh & Claypot",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "lao fan ji bak kut teh & claypot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_fish_ball_noodles",
+    name: "Fish Ball Noodles",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "fish ball noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_teochew_porridge_and_mixed_veg_rice",
+    name: "Teochew Porridge & Mixed Veg Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "teochew porridge & mixed veg rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kallang_wanton_noodle",
+    name: "Kallang Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "kallang wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_wah_kee_fishball_noodle",
+    name: "Wah Kee Fishball Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "wah kee fishball noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_hello_fish",
+    name: "Hello Fish",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Seafood",
+    aliases: [
+      "hello fish"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_seabay",
+    name: "Seabay",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker",
+    aliases: [
+      "seabay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_taibah",
+    name: "Taibah",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian",
+    aliases: [
+      "taibah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_char_meat",
+    name: "Char Meat",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Chinese Roast",
+    aliases: [
+      "char meat"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_kuchina_kiosko",
+    name: "Kuchina Kiosko",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "kuchina kiosko"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_thai_lamoon_signature",
+    name: "Thai Lamoon Signature",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Thai",
+    aliases: [
+      "thai lamoon signature"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  },
+  {
+    id: "kopitiam_lixin_fish_ball_noodle",
+    name: "Lixin Fish Ball Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Noodles",
+    aliases: [
+      "lixin fish ball noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "kopitiam"
+  }
+];
+
+export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

@@ -1,0 +1,3551 @@
+{
+  "12 Roasted": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "169 May Fish Soup": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "178 Yi Qi Fa Econ Bee Hoon": [
+    "Economic Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "259 Prawn Noodle": [
+    "Fried Carrot Cake",
+    "Fried Hokkien Mee",
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "548 Nonya Kueh": [
+    "Kueh"
+  ],
+  "75 Ah Balling Peanut Soup": [
+    "Glutinous Rice Ball Dessert"
+  ],
+  "97 Nasi Lemak": [
+    "Econ Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "99 Dessert in Cup": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "@Wok 26": [
+    "Fried Hokkien Mee"
+  ],
+  "A & M Zaika Indian Muslim Food": [
+    "Nann",
+    "Tandoori Chicken"
+  ],
+  "A Bowl of Noodle": [
+    "Laksa",
+    "Minced Meat Noodle"
+  ],
+  "A-Po": [
+    "Fried Hokkien Mee"
+  ],
+  "A1 Economic Beehoon. Nasi Lemak": [
+    "Beehoon",
+    "Nasi Lemak"
+  ],
+  "AH YI HERBAL SOUP": [
+    "Watercress Pork Ribs Soup"
+  ],
+  "ANI Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Abang 991 Nasi Padang": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Abang Teh Tarik": [
+    "Dough Fitters",
+    "Drinks",
+    "Fried Fritters",
+    "Hot & Cold Beverages",
+    "Teh Tarik"
+  ],
+  "Ah Bang Nasi Goreng": [
+    "Nasi Goreng"
+  ],
+  "Ah Chew Yong Tao Foo": [
+    "Yong Tau Foo"
+  ],
+  "Ah Di Claypot": [
+    "Claypot items"
+  ],
+  "Ah Er Herbal Soup": [
+    "Mini Buddha Jumps Over The Wall"
+  ],
+  "Ah Er Soup": [
+    "Lotus Root Peanut Pork Rib Soup",
+    "Old Cucumber Pork Rib Soup"
+  ],
+  "Ah Fat Braised Duck . Kway Chap": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Ah Gong Homemade Ban Mian": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Ah Juma Econ Bee Hoon": [
+    "Economical Bee Hoon & Nasi Lemak"
+  ],
+  "Ah Ma Chi Mian": [
+    "Handmade Fishball Noodle",
+    "Handmade Fishball Noodles",
+    "Teochew Fish Ball Noodle"
+  ],
+  "Ah Ma Mee Sua": [
+    "Mee Sua"
+  ],
+  "Ah Tan WIngs": [
+    "Chicken Wings"
+  ],
+  "Ahjuma Korean/Japanese Cuisine": [
+    "Teriyaki Salmon & Teriyaki Chicken Bento"
+  ],
+  "Ai ihshan Mee Combo House & Mutton Soup": [
+    "Mee Goreng",
+    "Mutton Soup"
+  ],
+  "Ain Popiah Basah": [
+    "Mua Chee",
+    "Rojak"
+  ],
+  "Ak Sait Restaurant": [
+    "Briyani",
+    "Nasi Briyani"
+  ],
+  "Al Ameen": [
+    "Plain Prata",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Al Mokial Indian Muslim": [
+    "Chicken Biryani"
+  ],
+  "Al-Hyzin Mee Delights Mutton Soup": [
+    "Bee Hoon Goreng",
+    "Mutton Soup"
+  ],
+  "Al-Rahim Sarbat Stall": [
+    "Teh Tarik"
+  ],
+  "Ali Shan": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Alsalam Teh Tarik Corner": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Amiba Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Amk 711 Hainan Western": [
+    "Western"
+  ],
+  "Amoy St Lor Mee": [
+    "Jumbo Lor Mee"
+  ],
+  "Ampang YTF": [
+    "Ampang Yong Tau Foo",
+    "Yong Tau Foo"
+  ],
+  "Ampang Yong Tao Fu & Beef Noodle": [
+    "Ampang Yong Tau Foo",
+    "Beef Noodle",
+    "Yong Tau Foo"
+  ],
+  "Ampang Yong Tau Foo": [
+    "Ampang Yong Tau Foo",
+    "Yong Tau Foo"
+  ],
+  "Ampang Yong Tau Foo & Odeon Beef Noodle": [
+    "Beef Noodle",
+    "Yong Tau Foo"
+  ],
+  "Ampang Yong Tau Foo/Wen Xiang Yuan": [
+    "Ampang Yong Tau Foo",
+    "Mummy Pork Ribs La Mian",
+    "Yong Tau Foo"
+  ],
+  "Ann Chin Popiah": [
+    "Popiah",
+    "Rojak & Popiah",
+    "Signature Popiah"
+  ],
+  "Ar-Rahmaan": [
+    "Indian Muslim Rojak"
+  ],
+  "Arabica Kebab": [
+    "Kebab",
+    "Mee Goreng"
+  ],
+  "Archipelago": [
+    "Beer",
+    "Cold Beverages"
+  ],
+  "Arshad Khan Indian Muslim Food": [
+    "Prata",
+    "Roti Prata"
+  ],
+  "Ayam Penyet": [
+    "Ayam Penyet"
+  ],
+  "Ayam Taliwang Nasi Lemak": [
+    "Nasi Lemak Ayam Taliwang"
+  ],
+  "BKT & Claypot Rice": [
+    "Claypot Herbal Bak Kut Teh"
+  ],
+  "Ba Xian Vegetarian": [
+    "Econ Bee Hoon",
+    "Veg Mock mutton Herbal Soup with Rice / Noodle"
+  ],
+  "Bai Nian Yong Tau Foo": [
+    "Chicken Wing Set",
+    "Yong Tau Foo"
+  ],
+  "Bai Sheng Noodle": [
+    "Meatball Noodles"
+  ],
+  "Bak Kut Teh": [
+    "Signature Bak Kut Teh",
+    "Steamed Fish"
+  ],
+  "Bake Inc": [
+    "Bread",
+    "Waffles"
+  ],
+  "Bali Bali Indonesian BBQ": [
+    "Ayam Panggang"
+  ],
+  "Ban Heng Teochew Porridge": [
+    "Teochew Porridge"
+  ],
+  "Ban Mee": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Ban Mian & Congee": [
+    "Ban Mian",
+    "Double Fish Bee Hoon (Soup/Dry)",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Ban Mian & Fish Soup": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Mee Hoon Kueh",
+    "Sliced Fish Soup",
+    "U-Mian"
+  ],
+  "Ban Mian & Spinach": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "Spinach Soup",
+    "U-Mian"
+  ],
+  "Ban Mian Fish Soup": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Mee Hoon Kueh",
+    "Sliced Fish Soup",
+    "U-Mian"
+  ],
+  "Ban Mian, Fish Soup, Porridge": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Porridge",
+    "Sliced Fish Soup"
+  ],
+  "Ban Mian/fish Soup": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Mee Hoon Kueh",
+    "Sliced Fish Soup",
+    "U-Mian"
+  ],
+  "Banana Fritters & Snacks": [
+    "Banana Fritters"
+  ],
+  "Banana Leaf Briyani (Northpoint City)": [
+    "Nasi Briyani"
+  ],
+  "Banmian": [
+    "Handmade Banmian"
+  ],
+  "Bao Tang Zhi Dao": [
+    "Herbal Soup"
+  ],
+  "Bara Penyet": [
+    "Ayam Bakar Penyet Set",
+    "Ayam Penyet",
+    "Salmon Bakar Set"
+  ],
+  "Bbq Chicken Wings": [
+    "Fried Spring Chicken",
+    "Seafood Platter"
+  ],
+  "Bear Baby Spicy Fragrant Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Beautea": [
+    "Bitter Melon Apple Tea",
+    "Jasmine Grape Tea",
+    "White Peach Oolong Milk Tea"
+  ],
+  "Beauty Nutritious Soup": [
+    "Emperor Herbal Chicken"
+  ],
+  "Bedok Chee Kuek": [
+    "Chwee Kueh"
+  ],
+  "Bedok Chwee Kuek": [
+    "Chwee Kueh"
+  ],
+  "Bedok One Hokkien Prawn Mee": [
+    "Carrot Cake",
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "Bedok Pau Dim Sum": [
+    "BBQ Pork Bun",
+    "Fun Choy"
+  ],
+  "Bedok Prawn Noodle": [
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "Bedok Western Food": [
+    "Chicken Chop",
+    "Pork Chop"
+  ],
+  "Beef Roti": [
+    "Beef/Chicken Roti"
+  ],
+  "Beehoon & Nasi Lemak": [
+    "Economic Bee Hoon Set",
+    "Nasi Lemak Set"
+  ],
+  "Beer And Drinks": [
+    "Beer",
+    "Cold Beverages"
+  ],
+  "Belly Belly Good Cai Fan": [
+    "Curry Chicken + 1 Braised Pork Belly + 1 Fried Egg"
+  ],
+  "Beradik Western": [
+    "Chicken Bolognese",
+    "Chicken Chop",
+    "Chicken Chop Aglio Olio",
+    "Crispy Chicken Cutlet With Rice",
+    "Fish & Chips",
+    "Fish and Chip",
+    "Grilled Chicken Steak"
+  ],
+  "Beradik by Western Boy": [
+    "Grilled Chicken Steak",
+    "Mixed Grill"
+  ],
+  "Best Satay": [
+    "Satay"
+  ],
+  "Best Zaika": [
+    "Naan"
+  ],
+  "Beuaty Nutritious Soup": [
+    "Emperor Herbal Chicken"
+  ],
+  "Biryani Point": [
+    "Nasi Briyani"
+  ],
+  "Black & White Rojak and Popiah": [
+    "Popiah",
+    "Rojak"
+  ],
+  "Blanco Court Beef Noodle": [
+    "Beef Noodle"
+  ],
+  "Botak Cantonese Porridge": [
+    "Porridge",
+    "Taiwan Braised Rice"
+  ],
+  "Braised Duck & Kay Chap": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Braised Duck & Noodle": [
+    "Duck Rice"
+  ],
+  "Bread Junction": [
+    "Bakery",
+    "Bread"
+  ],
+  "Briyani Express": [
+    "Briyani"
+  ],
+  "Briyani Grill": [
+    "Grilled Chicken"
+  ],
+  "Bu Tang Wang Pepper Soup": [
+    "Signature Pork Trotter with Vinegar"
+  ],
+  "Butter & Cream": [
+    "Berries Muffin",
+    "Blueberry Muffin",
+    "Hokkaido Cream Muffin",
+    "Salted Egg Lava tart"
+  ],
+  "Butter & Cream Bakery": [
+    "Gochujang Burger",
+    "Mentaiko Ribeye Rice Bowl"
+  ],
+  "Cafe Lodge": [
+    "Chicken Rice",
+    "Mala",
+    "Nasi Padang",
+    "Western",
+    "Yong Tau Foo"
+  ],
+  "Cantonese Seafood": [
+    "Curry Fish Head &  Assam Nyonya Fish Head",
+    "Fish Head Steamboat"
+  ],
+  "Captain Satay": [
+    "Satay"
+  ],
+  "Carrot Cake": [
+    "Black Carrot Cake",
+    "Carrot Cake",
+    "Popiah",
+    "Rojak",
+    "White Carrot Cake"
+  ],
+  "Cha Mu Lan X": [],
+  "Chang Cheng": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice",
+    "Mixed Veg Rice"
+  ],
+  "Chang Cheng (Rice Garden)": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Chang Cheng Food Paradise (Rice Garden)": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Chang Cheng Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Char Meat": [
+    "Char Siew Rice",
+    "Roasted Duck Rice"
+  ],
+  "Cheers": [],
+  "Chef Lup Roasted Delight": [
+    "Char Siew",
+    "Roast Duck",
+    "Roast Pork"
+  ],
+  "Chen Wanton Noodles": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Chendol": [
+    "Chendol"
+  ],
+  "Chicken Pot King": [
+    "Chicken Hotpot"
+  ],
+  "Chicken Rice & Beef Noodles": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Chicken Rice (Northpoint City)": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Chicken Rice/YTF": [
+    "Chicken Rice",
+    "Yong Tau Foo"
+  ],
+  "Chicky Fun Chicken Rice": [
+    "Roasted Chicken Rice"
+  ],
+  "Chicky Papa": [
+    "Western"
+  ],
+  "China Cuisine": [
+    "Beef Noodles",
+    "Fried Sliced Pork"
+  ],
+  "China Food": [
+    "Cold dishes"
+  ],
+  "China Wampoa Home Made Noodle": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Chinatown Dangui Duck": [
+    "Signature Char Siew Rice with Dumpling"
+  ],
+  "Chinatown HK Roast": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Chinatown HK Roasted": [
+    "Trio Roasted Platter"
+  ],
+  "Chinatown Mala Hotpot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Chinatown Roasted": [
+    "Char Siew Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Chinatown Roasted Delight": [
+    "Char Siew Rice",
+    "Dang Gui Roasted Duck Noodle",
+    "Roasted Chicken Rice"
+  ],
+  "Chinese Cuisine Sichuan": [
+    "Grilled Fish",
+    "Noodles"
+  ],
+  "Chinese Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Chye Lye Ah Ma Mee Sua": [
+    "Bee Hoon",
+    "Mee Sua"
+  ],
+  "Chye Lye BP Lor Mee/ Prawn Mee": [
+    "Lor Mee",
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "Cik Lim YTF": [
+    "Yong Tau Foo"
+  ],
+  "Cik Lim Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Cinta Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Cinta Hainanese Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Cintaan Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "City Satay": [
+    "Pork Belly",
+    "Pork Satay"
+  ],
+  "Claypot & Herbal Soup": [
+    "Claypot & Herbal Soup"
+  ],
+  "Claypot Bak Kut Teh": [
+    "Salt Baked Chicken Rice"
+  ],
+  "Claypot King": [
+    "Claypot Rice"
+  ],
+  "Coffee Break": [
+    "Coffee",
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Comfirm + Chop": [
+    "Chicken Chop"
+  ],
+  "Confirm + Chop": [
+    "Chicken Chop",
+    "Chicken Cutlet",
+    "Chicken Cutlet Set",
+    "Fish and Chip",
+    "Mixed Grill Set",
+    "Western Cuisine"
+  ],
+  "Crave": [
+    "Nasi Lemak"
+  ],
+  "Creme and Cone": [
+    "Gelato",
+    "Ice Cream",
+    "Ice Cream and Waffles",
+    "Waffles"
+  ],
+  "Crowded Salad Bowl": [
+    "Salad"
+  ],
+  "Cu Liang Yu Fen": [
+    "Chinese Cuisine",
+    "Chinese Noodles",
+    "Golden Soup Sliced Fish Rice Noodle",
+    "Sauerkraut Sliced Fish Soup with Rice",
+    "Signature Luncheon Meat Fish Noodles",
+    "Signature Sliced Fish Bee Hoon",
+    "Signature Sliced Rice Noodle"
+  ],
+  "CuLiang YuFen": [
+    "CuLiang YuFen"
+  ],
+  "Cui Liang Yu Fen": [
+    "Sauerkraut Sliced Fish Soup with Rice"
+  ],
+  "Curry Items": [
+    "Curry"
+  ],
+  "Curry Mixed Veg Rice": [
+    "Curry Chicken Rice"
+  ],
+  "Curry Rice": [
+    "Curry Rice"
+  ],
+  "D Laila Cuisine": [
+    "Nasi Padang"
+  ],
+  "Damok": [
+    "Korean Soup"
+  ],
+  "Dan Lao": [
+    "Char Siew",
+    "Chicken Cutlet",
+    "Scramble egg",
+    "Scrambled Egg Rice",
+    "Signature Spicy Chicken"
+  ],
+  "Dan Shi Fu Herbal Soup": [
+    "Black Chicken Soup",
+    "Du Zhong Pig’s Tail Soup"
+  ],
+  "Danlao Scrambled Egg Rice": [
+    "Scrambled Egg Rice"
+  ],
+  "Dao Xiao Mian (Northpoint City)": [
+    "Knife Shaven Noodle Soup"
+  ],
+  "Dapur Abang": [
+    "Lontong",
+    "Mee Rubus",
+    "Nasi Lemak"
+  ],
+  "Dapur Dapur Pisang": [
+    "Nasi Sambal Goreng"
+  ],
+  "Dapur Seri Nasi Ayam": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Day & Night Herbal Soup": [
+    "Herbal Soup & Steam Rice"
+  ],
+  "Day Night Herbal Soup": [
+    "ABC Soup",
+    "Herbal Chicken Soup",
+    "Herbal Soup"
+  ],
+  "Deen Mee Combo House": [
+    "Indian Goreng",
+    "Mutton Soup"
+  ],
+  "Delhi Express Indian Cuisine": [
+    "Butter Chicken",
+    "Naan"
+  ],
+  "Delhi Kitchen Indian Vegetarian Cuisine": [
+    "Shreebhaavan Special Meals",
+    "Vegetarian Biryani"
+  ],
+  "Delibowl Rice Express": [
+    "Cumin Beef",
+    "Honey Chicken"
+  ],
+  "Delicious Dim Sum": [
+    "Buns",
+    "Porridge"
+  ],
+  "Dessert": [
+    "Dessert",
+    "Green Bean Soup",
+    "Ice Kacang",
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Red Bean Soup",
+    "Signature Breakfast Set",
+    "Tau Suan",
+    "Teh"
+  ],
+  "Dim Sum & Bak Kwa": [
+    "Bak Kwa Bao",
+    "Har Gao Prawn Dumpling"
+  ],
+  "Ding Jian HK Style Charcoal Roasted": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Ding Wang Bak Kut Teh": [
+    "Bak Kut Teh"
+  ],
+  "Divine Bites": [
+    "Cheese & Herbs Scone",
+    "Longan Walnut Muffin"
+  ],
+  "Divine Chicken Pot": [
+    "Chicken Pot"
+  ],
+  "Donburi. Oyster. Beer": [
+    "Donburi",
+    "Fresh Oysters"
+  ],
+  "Don’ Oyster Bar": [
+    "Japanese cuisine"
+  ],
+  "Dosa Delight": [
+    "Indian Vegetarian"
+  ],
+  "Drink Counter": [
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Signature Breakfast Set",
+    "Teh"
+  ],
+  "D’Ranum Nasi Padang": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "E Food Fun": [
+    "Popiah"
+  ],
+  "Eco Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice",
+    "Saulted Egg Fried Chicken"
+  ],
+  "Econ Bee Hoon": [
+    "Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "Econ Bee Hoon, Nasi Lemak": [
+    "Nasi Lemak"
+  ],
+  "Economic Rice (Northpoint City)": [
+    "Teochew Porridge"
+  ],
+  "Economy Bee Hoon": [
+    "Econ Bee Hoon",
+    "Economy Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "Egg Thai": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Emogi Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Eng Kee Chicken Wings": [
+    "Chicken Wing",
+    "Economic Bee Hoon"
+  ],
+  "Express Teppanyaki": [
+    "Teppanyaki Garlic Chicken"
+  ],
+  "Fat Baby Rotisserie & Western Cuisine": [
+    "Chicken Chop & Fries",
+    "Hawaiian Pizza"
+  ],
+  "Fat Fat Food Carrot Cake & Hokkien Mee": [
+    "Black Carrot Cake",
+    "Carrot Cake",
+    "Fried Hokkien Mee",
+    "White Carrot Cake"
+  ],
+  "Fatt Soon Kuek": [
+    "Peng Kueh",
+    "Soon Kueh"
+  ],
+  "Fatty Bom Bom": [
+    "Black Pepper Chicken Set",
+    "Chicken Cutlet Rice"
+  ],
+  "Feng Feng Boneless Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Feng Fried Rice": [
+    "Kampung Suasage Egg Fried Rice",
+    "Plain Egg Fried Rice"
+  ],
+  "Feng Xiang Bak Kut Teh": [
+    "Herbal Bak Kut Teh",
+    "Mixed Pork Organ Fried Porridge"
+  ],
+  "Filipino Cuisine": [
+    "Bulalo Soup",
+    "Lechon Kawali",
+    "Pritong Tilapia",
+    "Sizzling Gambas with Rice"
+  ],
+  "Fin & Feathers Thams Up": [
+    "Crispy Chicken",
+    "Fried Dory Fish"
+  ],
+  "Fish Ball Noodles": [
+    "Fishball Noodle"
+  ],
+  "Fish Soup (Northpoint City)": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup",
+    "Teochew Style Sliced Red Grouper Fish"
+  ],
+  "Fish Soup Ban Mian": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Mee Hoon Kueh",
+    "Sliced Fish Soup",
+    "U-Mian"
+  ],
+  "Fishball Noodle": [
+    "Fishball Noodle",
+    "Fishball Noodles",
+    "Laksa",
+    "Mushroom Minced Meat Noodle"
+  ],
+  "Fishball Noodles": [
+    "Fishball Noodles Dry"
+  ],
+  "Fishball Noodles & Homemade Curry": [
+    "Fishball Noodle",
+    "Laksa",
+    "Mushroom Minced Meat Noodle"
+  ],
+  "Fishin with u": [
+    "Steamed Fish"
+  ],
+  "Fitra Chicken Rice": [
+    "Chicken Rice Set",
+    "Curry Chicken Noodles",
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice",
+    "Three Treasure Rice"
+  ],
+  "Fitra Hainanese Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Flint Specialty Grill": [
+    "Chicken Chop",
+    "Grilled Chicken Chop with Brown Sauce",
+    "Grilled Pork Chop",
+    "Grilled USA Pork Loin with Homemade Apple Sauce",
+    "Pasta"
+  ],
+  "Flips & Dips": [
+    "Indo Mie Chicken Cutlet"
+  ],
+  "Flying Dragon Noodles": [
+    "Flying Dragon Noodles"
+  ],
+  "Foo Hing Laksa Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Fort Canning Prawn Noodle": [
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "Fragrance Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Freshly Roast On Site": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Freshly Steamed And Served": [
+    "HK Steamed Golden Pomfret Set",
+    "HK Steamed Mangrove Jack Set"
+  ],
+  "Fried Item": [
+    "Signature Fried Kuay Teow"
+  ],
+  "Fried Item (Northpoint City)": [
+    "Fried Hokkien Mee"
+  ],
+  "Fruiteria": [
+    "Cut Fruits",
+    "Fruit juice"
+  ],
+  "Fruits & Juice @ Bedok": [
+    "Fruit juice"
+  ],
+  "Fu Cheng Homemade Spring Roll": [
+    "Rojak",
+    "Spring Roll"
+  ],
+  "Fu Wei Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Fu Xiao Fish Soup": [
+    "Double Fish Soup",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Fu Zhou Oyster Cake": [
+    "Oyster",
+    "Scallop Cake",
+    "Tempura Prawn"
+  ],
+  "Fusion Nasi Briyani Chinese Rice": [
+    "Chicken Rice",
+    "Nasi Briyani"
+  ],
+  "Fuzhou Yan Dumpling & Jian Bo": [
+    "Dumplings",
+    "Putian Cuisine"
+  ],
+  "G K Murthy": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "G Meal": [
+    "Spring Chicken w Fries / Rice"
+  ],
+  "G Western": [
+    "Chicken Chop",
+    "Chicken Cutlet"
+  ],
+  "Gao Ji Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Gerry Express": [
+    "Fried Fish"
+  ],
+  "Geylang Serai Satay": [
+    "Satay"
+  ],
+  "Gim Chew Fried Hokkien Noodle": [
+    "Fried Hokkien Mee"
+  ],
+  "Gold Xiang Curry Puff": [
+    "Curry Puff"
+  ],
+  "Golden Shoe Hokkien Mee": [
+    "Fried Hokkien Mee",
+    "Fried Kway Tiao"
+  ],
+  "Gong Fu Yuan": [
+    "Vegetarian"
+  ],
+  "Gourmet Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Grab N Go": [
+    "Satay",
+    "Wu Xiang"
+  ],
+  "Green Garden Vegetarian": [
+    "Char Kway Teow",
+    "Fried Kway Teow",
+    "Mee Jawa",
+    "Penang Fried Kway teow"
+  ],
+  "Green Tea Rice": [
+    "Thunder Tea Rice (Halal)"
+  ],
+  "GreenTea Rice": [
+    "Thunder Tea Rice"
+  ],
+  "Guan Chee HK Roast": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Hong Kong Roast",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Guan Chee Hongkong Roasted Duck": [
+    "Roasted Duck",
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Guan Heng Cafe": [
+    "Sugar Cane Juice"
+  ],
+  "Guang Yuan Vegetarian": [
+    "Vegetarian"
+  ],
+  "HJ Salim": [
+    "Nasi Padang"
+  ],
+  "HJH Maimunah": [
+    "Nasi Sambal Goreng Set"
+  ],
+  "HJH Maimunah Malay Snack": [
+    "Lotong",
+    "Mee Soto"
+  ],
+  "HJH Maimunah Mini": [
+    "Nasi Padang"
+  ],
+  "HJH Maimunah Nasi Padang": [
+    "Original Nasi Ambeng"
+  ],
+  "HK Chun Kee": [
+    "Asam Steamed Fish"
+  ],
+  "HK Roasted (Northpoint City)": [
+    "3 Mix Signature Roast",
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "HK Style Steamed Fish & Braised Meat": [
+    "HK Style Bean Sauce Steamed Seabass Set"
+  ],
+  "Ha Lou Hokkien Mee": [
+    "Fried Hokkien Mee"
+  ],
+  "Hadramawt Kitchen": [
+    "Mutton Briyani",
+    "Nasi Briyani"
+  ],
+  "Hai Ge Ji Beef Noodle": [
+    "Beef Noodle"
+  ],
+  "Hainan Beef Noodle & Claypot": [
+    "Beef Noodle",
+    "Claypot Rice"
+  ],
+  "Hainan Beef Noodle & Claypot Rice": [
+    "Beef Noodle",
+    "Clapypot Rice"
+  ],
+  "Hainan Beef Noodles & Claypot": [
+    "Beef Noodles and Claypot"
+  ],
+  "Hainan Hometown Curry": [
+    "Curry Chicken",
+    "Curry Vegetable"
+  ],
+  "Haji Karim Indian  Muslim Food": [
+    "Prata",
+    "Rojak",
+    "Roti Prata"
+  ],
+  "Hakka Lei Po Po": [
+    "Thunder Tea",
+    "Thunder Tea Rice"
+  ],
+  "Hakka Leipopo": [
+    "Thunder Tea Rice"
+  ],
+  "Hakka Yong Tau Foo": [
+    "Hakka Yong Tau Foo",
+    "Yong Tau Fu with Hakka Noodles"
+  ],
+  "Halim Fish Soup": [
+    "Sliced Fish Soup"
+  ],
+  "Halim’s Fish Soup": [
+    "Double Fish Steamboat",
+    "Double Fish soup with Thick Beehoon"
+  ],
+  "Handmade Noodle": [
+    "Ban Mian",
+    "Knife Shaven Noodle with Special Broth",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Hao Cheng Kee Carrot cake": [
+    "Black Carrot Cake",
+    "Fried Carrot Cake",
+    "White Carrot Cake"
+  ],
+  "Hao Ji Traditional Roaster": [
+    "Hor Fun"
+  ],
+  "Hao Jia Ban Mian": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Hao Jia Ji": [
+    "Mini Wok"
+  ],
+  "Hao Wai Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Hao Wei Econ Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Hao Wei Mala Hot Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Hao Wei Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Hao Wei Rice Garden Mix Veg.": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Hao Zai Lai Teochew Porridge": [
+    "Teochew Porridge"
+  ],
+  "Happy Dessert": [
+    "Black Glutinous Rice",
+    "Tau Suan"
+  ],
+  "Haus Ban Mian": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Mee Hoon Kueh",
+    "Signature Dried Chili La Mian",
+    "Sliced Fish Soup",
+    "U-Mian"
+  ],
+  "Haus Spinach Fish Soup": [
+    "Fried Fish Soup",
+    "Sliced Fish Soup",
+    "Spinach Soup"
+  ],
+  "He Jia Bian Fan Porridge": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "He Jia Food": [
+    "Salted Egg Fried Chicken"
+  ],
+  "He Jia Huan / Rice Garden": [
+    "Zi Char / Mixed Vege"
+  ],
+  "He Jia Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "He Jia Mixed Veg Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice",
+    "Mixed Vegetable Rice",
+    "Salted Egg Fried Chicken"
+  ],
+  "He Jia Mixed Veggie Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "He Le Rong Rojak & Popiah & Porridge": [
+    "Rojah",
+    "Signature Porridge"
+  ],
+  "He Li Economical Bee Hoon & Nasi Lemak": [
+    "Fried Bee Hoon",
+    "Fried Mee"
+  ],
+  "He Zhi Rong Korean Cuisine": [
+    "Army stew",
+    "Sambal fish"
+  ],
+  "Head Chefz Western Food": [
+    "Grill Chicken Pasta with Aglio Olgio"
+  ],
+  "Heavenly Wang": [
+    "Kaya Butter Set Meal"
+  ],
+  "Hee Hee Hee Steamed Fish & Seafood": [
+    "Seafood",
+    "Steamed Fish"
+  ],
+  "Hello Fish": [
+    "Steam Fish"
+  ],
+  "Heng Gi Goose and Duck Rice": [
+    "Duck Rice"
+  ],
+  "Heng Heng Noodle House": [
+    "Bah Chor Mee",
+    "Fishball Noodles",
+    "Laksa"
+  ],
+  "Herbal Soup (Northpoint City)": [
+    "White Pepper Fish Maw Pig Stomach Chicken Soup"
+  ],
+  "Heritage Tanglin Puff": [
+    "Chicken & Egg Curry Puff"
+  ],
+  "HeyYa Duck Rice": [
+    "Braised Duck Rice",
+    "Kway Chap",
+    "Noodles",
+    "Porridge"
+  ],
+  "Heyya Braised Duck and Kway Chap": [
+    "Duck Rice",
+    "Duck Set Kway Chap"
+  ],
+  "Heyya Duck Rice": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Hk Roasted Delight": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Ho Chiak North": [
+    "Yong Tau Foo"
+  ],
+  "Hock Hai (Hong Lim) Curry Chicken Noodle": [
+    "Curry Chicken Noodles"
+  ],
+  "Hock Hai Curry Chicken Noodle": [
+    "Curry Noodle"
+  ],
+  "Hock Hai Curry Chicken Noodles": [
+    "Curry Chicken Noodle",
+    "Satay Bee Hoon"
+  ],
+  "Home Wok": [
+    "Stir Fry Long Chilli Pepper with Pork Rice"
+  ],
+  "Homewok": [
+    "Double Chili Chicken",
+    "Long Pepper Fried Pork Rice"
+  ],
+  "Hong Fa Japanese & Korean Cuisine": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Hong Hu La Mian": [
+    "La Mian"
+  ],
+  "Hong Kong": [
+    "Hong Kong Roast",
+    "Mini Wok"
+  ],
+  "Hong Kong Delights": [
+    "Char Siew Rice",
+    "Roasted Chicken Rice",
+    "Roasted Duck Rice",
+    "Sweet and Sour Pork Rice Set"
+  ],
+  "Hong Kong Street": [
+    "Black Pepper Crab",
+    "Chilli Crab"
+  ],
+  "Hong Kong Street Old Chun Kee": [
+    "Curry Fish head",
+    "Tze Char",
+    "White Bee Hoon"
+  ],
+  "Hong Le Japanese & Korean": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Hong Le Korean Cuisine": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Hong Lim Curry Puff": [
+    "Curry Puff"
+  ],
+  "Hong Man Tian": [
+    "Roasted Duck"
+  ],
+  "Hong Pin Mixed Veg Rice": [
+    "Econ Mixed Veg Rice"
+  ],
+  "Hook Coffee": [
+    "Coffee",
+    "Specialty Coffee",
+    "Tea"
+  ],
+  "House of Lemang": [
+    "Chicken Wing",
+    "Nasi Lemak"
+  ],
+  "House of Mookata/ TIDJAI Thai Food": [
+    "Basil Chicken Rice",
+    "Mookata",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Huat Seafood": [
+    "Yang Zhou Fried Rice"
+  ],
+  "Huay Kwang Thai Wanton Mee @Ubi": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Hwa Heng Beef Noodle": [
+    "Signature Mixed Beef Noodle with Tendon",
+    "Sliced Beed Noodle with Beef Balls"
+  ],
+  "I Sel Fish (Northpoint City)": [
+    "Spicy Fragrant Grilled Fish"
+  ],
+  "I Sel-Fish": [
+    "Grilled Fish"
+  ],
+  "IEAT Miniwok": [
+    "Hor Fun"
+  ],
+  "Indian & Chinese Vegetarian": [
+    "Olive Fried Rice",
+    "Vegetarian Biryani"
+  ],
+  "Indian Food": [
+    "Nasi Briyani"
+  ],
+  "Indian Muslim Food": [
+    "Egg Prata",
+    "Fish Head Curry",
+    "Maggi Goreng",
+    "Masala Dosai",
+    "Nasi Briyani",
+    "Roti Prata"
+  ],
+  "Indian Stall": [
+    "Mee Goreng",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Indian Vegetarian (Northpoint City)": [
+    "Nasi Briyani"
+  ],
+  "Indian Vegetarian Green Leaf Cuisine": [
+    "North Indian Veg Set",
+    "Onion Podi Uttapam"
+  ],
+  "Indo 6 Express": [
+    "Bakso",
+    "Gudeg",
+    "Ketoprak"
+  ],
+  "Indo BBQ": [
+    "Indonesia cuisine"
+  ],
+  "Inspirasi": [
+    "Mee Rebus",
+    "Mee Soto"
+  ],
+  "Ippon Fusion Bowl": [
+    "Chicken Bowl"
+  ],
+  "I’m Thai Kitchen (Premiumthai Mookata)": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "JIN Kimchi": [
+    "Kimchi Firend Rice",
+    "Marinated Pork Belly w/Rice"
+  ],
+  "JJ Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "JJ Food": [
+    "Japanese cuisine"
+  ],
+  "JOM Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Jade’s Chicken": [
+    "Korean Fried Chicken"
+  ],
+  "Japanese": [
+    "Chicken Karaage  Omu Curry Rice",
+    "Saba Fish",
+    "Salmon Teriyaki",
+    "Teppan Omu Teriyaki Beef",
+    "Teriyaki Chicken"
+  ],
+  "Japanese & Korean": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Japanese & Korean Cuisine": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Japanese & Korean Cusine": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Japanese Food (Northpoint City)": [
+    "Chicken Teriyaki & Salmon Teriyaki Bento",
+    "Saba Fish"
+  ],
+  "Jefri": [
+    "Nasi Ayam",
+    "Nasi Goreng Ayam"
+  ],
+  "Ji Gong Bao": [
+    "Chicken Pot"
+  ],
+  "Jia Le Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Jia Pa Pa Ban Mian": [
+    "Ban Mian"
+  ],
+  "Jia Wei Lao Huo Bao Tang": [
+    "Herbal Soup"
+  ],
+  "Jia Xiang Wei Braised Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Jian Fa BBQ Seafood": [
+    "Chili Crab"
+  ],
+  "Jiao Tai Yuan": [
+    "Handmade Dumpling"
+  ],
+  "Jiaocai Seafood": [
+    "Curry Fish head",
+    "Sambal Singray",
+    "Tze Char"
+  ],
+  "Jiesen Yang Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Jimmy People’s Park Fried Kway Teow": [
+    "Char Kway Teow",
+    "Fried Kway Teow"
+  ],
+  "Jin Deng Pig’s Organ Soup": [
+    "Pig Organ Soup"
+  ],
+  "Jin Deng Pig’s Organ Soup . Braised Pig’s Trotter": [
+    "Braised Pig Trotter",
+    "Pig Organ Soup"
+  ],
+  "Jin Kimchi": [
+    "Galbi Pork Belly Set"
+  ],
+  "Jin Kimchi Express": [
+    "Grilled Galbi Pork Belly",
+    "Grilled Galbi Pork Belly Meat Set",
+    "Julienne radish Bibimbap",
+    "Samyaetang Chicken"
+  ],
+  "Jing Wang Handmade Dim Sum": [
+    "Dim Sum",
+    "Har Gow",
+    "Siew Mai"
+  ],
+  "JingDong Roti": [
+    "Royal Beef Roti",
+    "Royal Chicken Roti"
+  ],
+  "Jit Sing Satay": [
+    "Satay"
+  ],
+  "Jocob Soup": [
+    "ABC Soup"
+  ],
+  "Johnson Duck": [
+    "Duck Rice"
+  ],
+  "Ju Bao Xuan Mala": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Ju Bao Xuan Mala Hotpot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Jubilee’s Hainanese Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Jue Shi Lor Mee": [
+    "Lor Mee"
+  ],
+  "Jun Yuan House Of Fish": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Batang Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Just Greens": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Just Greens vegetarian": [
+    "Vegetarian Rice"
+  ],
+  "KFC": [
+    "American Twister",
+    "Brioche Riser & Egg"
+  ],
+  "KNS Indian": [
+    "Chicken Briyani"
+  ],
+  "KZ Bakery": [
+    "Bread"
+  ],
+  "Ka KA Japanese Curry House": [
+    "Japanese Curry Rice"
+  ],
+  "Kakak Handmade Noodle": [
+    "Dry Handmade Noodle"
+  ],
+  "Kakak Handmade Noodles": [
+    "Signture Dry Handmade Noodle"
+  ],
+  "Kakhi Nang": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice",
+    "Mixed Veg Rice",
+    "Teochew Porridge"
+  ],
+  "Kallang Airport Wanton Mee": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Kallang Airport Wanton Noodle": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Kallang Wanton Noodle": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Kashmir Indian Muslim Food": [
+    "Mee Goreng",
+    "Soup Kambing"
+  ],
+  "Katong Liu Kee Fried Oyster": [
+    "Black Carrot Cake",
+    "Fried Carrot Cake",
+    "Fried Osyter",
+    "White Carrot Cake"
+  ],
+  "Kawan Bowl": [
+    "Curry Chicken"
+  ],
+  "Kawan Bowl Scrambled Egg": [
+    "Scrambled Egg Rice"
+  ],
+  "Kebabs Corner": [
+    "Indian Biryani",
+    "Turkish Fusion"
+  ],
+  "Kickstart Pancake": [
+    "Egg Tart",
+    "Mee Jiang Kueh",
+    "Min Jiang Kueh"
+  ],
+  "Kim Dae Bak": [
+    "Beef Bulgogi",
+    "Chicken Sundubu Jigae",
+    "Kim Dae Bak Army Stew (Chicken)",
+    "Saba Fish"
+  ],
+  "Kim Dae Bak Korean Cuisine": [
+    "Beef Bulgogi",
+    "Chicken Sundubu Jigae",
+    "Kim Dae Bak Army Stew (Chicken)",
+    "Saba Fish"
+  ],
+  "Kim Dae Bak Myeong-Dong Street Food": [
+    "Beef Bulgogi",
+    "Chicken Sundubu Jigae",
+    "Kim Dae Bak Army Stew (Chicken)",
+    "Saba Fish"
+  ],
+  "Kimly Dim Sum": [
+    "Dim Sum",
+    "Loh Mai Kai",
+    "Nanyang Curry Chee Cheong Fun",
+    "Siew Mai"
+  ],
+  "Kimly Mixed Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Kin Khao Yang Thai Food": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Kinaroy Thai Cuisine": [
+    "Thai Zha Chai"
+  ],
+  "King Dae Bak": [
+    "Beef Bulgogi",
+    "Chicken Sundubu Jigae",
+    "Kim Dae Bak Army Stew (Chicken)",
+    "Saba Fish"
+  ],
+  "King Dae Bak Korean": [
+    "Beef Bulgogi",
+    "Chicken Sundubu Jigae",
+    "Kim Dae Bak Army Stew (Chicken)",
+    "Saba Fish"
+  ],
+  "King Dae Bak Korean & Japanese": [
+    "Beef Bulgogi"
+  ],
+  "King Dae Bak Korean Cuisine": [
+    "Beef Bulgogi"
+  ],
+  "King Grouper": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "King Grouper Fish Soup": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Grouper Fish Head",
+    "Sliced Fish Soup"
+  ],
+  "King Of Fried Rice": [
+    "Egg Fried Rice w Pork Cutlet",
+    "X.O Fired Rice w Pork Cutlet"
+  ],
+  "King Omar": [
+    "Dosai",
+    "Nasi Briyani"
+  ],
+  "King of Grouper": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "King of Pao Fan": [
+    "Pao Fan"
+  ],
+  "Kokoro Izakaya": [
+    "Japanese cuisine"
+  ],
+  "Kokoro Kiosuku": [
+    "Tonkotsu Chashu Ramen"
+  ],
+  "Kong Wan Roast": [
+    "Roast Duck Rice"
+  ],
+  "Koo Kee": [
+    "Yong Tow Foo Soup"
+  ],
+  "Kopi Kiosk": [
+    "Ice Kacang",
+    "Kaya Butter Set Meal",
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Signature Breakfast Set",
+    "Teh"
+  ],
+  "Kopi Kiosk (Northpoint City)": [
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Signature Breakfast Set",
+    "Teh"
+  ],
+  "Kopi Meow": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Korean": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Korean & Japanese": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Korean & Japanese Food": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Korean . Japanese Cuisine": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Korean Food (Northpoint City)": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Kowloon Roasted Delight": [
+    "Chicken Rice",
+    "Sausage Rice With Honey Sauce"
+  ],
+  "Krispi": [
+    "Jiao Zi (Chinese burger)",
+    "Rou Jia Mo (Chinese burger)"
+  ],
+  "Krispi Roti": [
+    "Beef Roti",
+    "Chicken Roti"
+  ],
+  "Kubis": [
+    "Bimbimbap"
+  ],
+  "Kubis Korean Food": [
+    "Saba Set"
+  ],
+  "Kuchina Kiosko": [
+    "Pasta"
+  ],
+  "Kueh": [
+    "Chee Chong Fan"
+  ],
+  "Kueh Kueh": [
+    "Chwee Kueh"
+  ],
+  "Lam’s Noodle & Chicken": [
+    "Salted Baked Chicken"
+  ],
+  "Lao Cheng Du Steamboat": [
+    "Steamboat"
+  ],
+  "Lao Fan Ji": [
+    "Sorrowful Romance Claypot Rice"
+  ],
+  "Lao Fan Ji Bak Kut Teh & Claypot": [
+    "Bak Kut Teh",
+    "Claypot Rice"
+  ],
+  "Lao Fan Ji Claypot & Bak Kut Teh": [
+    "Bak Kut Teh"
+  ],
+  "Lao Fu Zi Fried Kway Teow": [
+    "Black Char Kway Teow",
+    "White Char Kway Teow"
+  ],
+  "Lao Huo Tang": [
+    "ABC Pork Rib Soup",
+    "ABC Soup",
+    "Bak Kut Teh",
+    "Ten Tonic Black Chicken Soup"
+  ],
+  "Lao Jie Spinach Soup": [
+    "Spinach Seafood Soup"
+  ],
+  "Lau Di Fang Scissors-Cut Curry Rice": [
+    "Cabbage and Rice",
+    "Chicken/Pork Chop with Fried Egg",
+    "Curry Rice"
+  ],
+  "Lau Huo Tang": [
+    "Lotus Root Pork Ribs Soup"
+  ],
+  "Le Le Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Le Pantry": [
+    "Cafe Latte"
+  ],
+  "Lee Kee": [
+    "Banana Fritter",
+    "Sweet Potato"
+  ],
+  "Lee Wei Hainanese Chicken Rice & Congee": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Lei PoPo": [
+    "Hakka Leicha + Yong Tau Foo"
+  ],
+  "Liang Ji": [
+    "Seafood Fried Rice",
+    "Steamed Silver Promfret"
+  ],
+  "Like Pudding": [
+    "Chendol",
+    "Desserts",
+    "Ice Kacang",
+    "Puddings"
+  ],
+  "Like Pudding Hot & Cold Dessert": [
+    "Bing Su"
+  ],
+  "Lim Kee Yong Tau Foo": [
+    "Laksa",
+    "Yong Tau Foo"
+  ],
+  "Lion City Dim Sum": [
+    "Pork Bao",
+    "Traditional Curry Bao"
+  ],
+  "Lixin Fish Ball Noodle": [
+    "Fishball Noodles"
+  ],
+  "Lobster King Pao Fan": [
+    "Pao Fan",
+    "Poached Rice"
+  ],
+  "Lobster Pao Fan": [
+    "Lobster King Pao Fan"
+  ],
+  "Local Delights": [
+    "Rojak"
+  ],
+  "Local Snack": [
+    "Goreng Pisang"
+  ],
+  "Long Ding Seafood": [
+    "Curry Fish head",
+    "Fried Rice",
+    "Tze Char"
+  ],
+  "Long Xiang Hainanese Curry Rice": [
+    "Curry Chicken Set",
+    "Pork Chop Set"
+  ],
+  "MR Foods Indian Cuisine": [
+    "Prata",
+    "Roti Prata"
+  ],
+  "Ma La Xiang Guo": [
+    "Chongqing Grilled Fish"
+  ],
+  "MaMa Fish Soup": [
+    "Red Grouper Sliced Fish Soup"
+  ],
+  "Majulah": [
+    "Nasi Padang"
+  ],
+  "Majulah Nasi Padang": [
+    "Ayam Lemak Chilli Padi Set",
+    "Beef Rendang Set",
+    "Chicken Drumstick (Curry/Rendong/Fried)",
+    "Mee Siam",
+    "Nasi Kuning Set"
+  ],
+  "Majulah Penyet & Bakar": [
+    "Ayam Penyet"
+  ],
+  "Makan West": [
+    "Chicken Chop",
+    "Fish & Chips"
+  ],
+  "Makan West Hot": [
+    "Steamboat"
+  ],
+  "Mala & Seafood": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Mala Claypot": [
+    "Garlic Prawn w/ Glass Noodles",
+    "Mala Fragrance Chicken",
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Mala Fu Wei": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Mala Hot Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo",
+    "Sauerkraut Soup Sliced Fish"
+  ],
+  "Mala Tang": [
+    "Golden Broth Ramen with Chicken/Pork"
+  ],
+  "Mala Version 2 By Xiao Man Niu": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Malay Cuisine": [
+    "Ayam Penyet"
+  ],
+  "Malay Kueh": [
+    "Epok-Epok (Potato/Sardine)",
+    "Kueh Lopis"
+  ],
+  "Mama Fish Soup": [
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Mama Mee": [
+    "Lor Mee Combo"
+  ],
+  "Mama Putien": [
+    "Putien Lor Mee"
+  ],
+  "Man Na La": [
+    "Saba Fish"
+  ],
+  "Mang Cheng Xiang Curry Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Maru Japanese": [
+    "BBQ Chicken Set",
+    "BBQ Saba Set"
+  ],
+  "Master Crab": [
+    "Chilli Crab",
+    "Crispy Roll"
+  ],
+  "Master Tang": [
+    "ABC Pork Rib Soup with Rice",
+    "Ginseng Chicken Classic",
+    "Herbal Soup",
+    "Lotus Root Pork Rib Soup"
+  ],
+  "Maxwell Hainanase Chicken Rice": [
+    "Chicken Rice"
+  ],
+  "Meeting Point Cafe": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Mei Xiang Prawn Noodle Lor Mee": [
+    "Lor Mee",
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "MengJi Noodle House": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Merah Delimah Stall": [
+    "Ayam Masak Merah"
+  ],
+  "Mexican/Chinese Cuisine": [
+    "Japanese Taco",
+    "Singapore Taco"
+  ],
+  "Mian Mian Ju Dao": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Min Hui Nasi Lemak": [
+    "Nasi Lemak Set"
+  ],
+  "Ming Fa Fishball": [
+    "Fishball Noodles"
+  ],
+  "Ming Fa Fishball Noodle": [
+    "Fishball Noodles",
+    "Mee Kia",
+    "Mee Poh"
+  ],
+  "Ming Kitchen": [
+    "Hor Fun"
+  ],
+  "Ming Xiang": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Ming Xiang Food": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Ming Yen Bbq Seafood": [
+    "Black Pepper Crab",
+    "Chilli Crab"
+  ],
+  "Ming Yen Halal Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Mingfa Fishball Noodles": [
+    "Fishball Noodles"
+  ],
+  "Mings Kitchen": [
+    "Chilli Crab",
+    "Curry Fish head",
+    "Fish Head Steamboat",
+    "Prawn Chicken wings",
+    "Sweet & Sour Pork"
+  ],
+  "Mini Hot Pot": [
+    "Pickle Sour Slice Meat Pot"
+  ],
+  "Mini Wok": [
+    "Char Kway Teow",
+    "Fried Kway Teow",
+    "Mini Wok",
+    "Salted Egg Creamy Chicken",
+    "Sambal Fried Rice",
+    "Seabay Nasi Goreng",
+    "Signature Fried Kway Teow",
+    "Singature Fried Kway Teow",
+    "White Bee Hoon"
+  ],
+  "Mini Wok (Northpoint City)": [
+    "Sweet & Sour Pork Rice Set"
+  ],
+  "Minum Minum (Cold/Hot Beverage . Coffee/Tea)": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Mix Veg": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Mohamed Ayaan Rojak": [
+    "Indian Rojak",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Mommy Rendang": [
+    "Rendang Dishes"
+  ],
+  "Monster Chili Mala": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Monster Chili Mala Hot Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Monster Chili Mala Hotpot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Monster Chili Nasi Lemak": [
+    "Indomee Shredded Chicken",
+    "Nasi Lemak Set"
+  ],
+  "Monster Chilli": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Monster Chilli Mala Hot Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Monster Chilli Mala Xiang Guo": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Monster Western": [
+    "Chicken Steak Aglio Olio",
+    "Western Food"
+  ],
+  "Moon Chay": [
+    "Signature Vegan BBQ Pork & Patties",
+    "Vegan Bun Bo Hu",
+    "Vegan Noodles",
+    "Vegan Pate Banmi"
+  ],
+  "Mr. Islamic Power Rojak": [
+    "Indian Muslim Rojak"
+  ],
+  "Mr. Prata": [
+    "Mee Goreng",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Mr. Sehu Food Palace": [
+    "Indian Rojak",
+    "Mutton Soup"
+  ],
+  "Ms Inasal Filipino Cuisine": [
+    "Chicken Inasal"
+  ],
+  "Muhammad Danish Prata Paradise": [
+    "Indian Rojak",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Munchi Pancake": [
+    "Mee Jiang Kueh",
+    "Min Jiang Kueh",
+    "Peanut Pancake"
+  ],
+  "Munchi Pancakes": [
+    "Mee Jiang Kueh",
+    "Min Jiang Kueh",
+    "Peanut Pancake"
+  ],
+  "My Happy Belly": [
+    "Indian Punjab"
+  ],
+  "My Kampung": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "NJ Indian Classic Cuisine": [
+    "Nasi Briyani"
+  ],
+  "NKS Indian Muslim Food": [
+    "Briyani",
+    "Dosai",
+    "Egg Prata",
+    "Maggi Goreng",
+    "Nasi Briyani",
+    "Prata",
+    "Roti Prata"
+  ],
+  "NTP Western & Grill": [
+    "Pasta",
+    "Western"
+  ],
+  "Na Na Curry": [
+    "Curry Chicken Set"
+  ],
+  "Na Na Homemade Curry": [
+    "Curry Chicken"
+  ],
+  "Nakoko": [
+    "Acai Soft Serve",
+    "Yoghurt"
+  ],
+  "Nana Currry": [
+    "Curry"
+  ],
+  "Nana Curry": [
+    "Curry Chicken"
+  ],
+  "Nanyang Curry": [
+    "Curry Chicken"
+  ],
+  "Nanyang San Bao": [
+    "Bak Kut Teh"
+  ],
+  "Nasi Campur": [
+    "1 Meat + 2 Veg",
+    "Ayam Lemak Chilli Padi Set",
+    "Beef Rendang",
+    "Nasi Campur"
+  ],
+  "Nasi Lemak Ayam Taliwang": [
+    "Indomie Ayam",
+    "Nasi Lemak",
+    "Nasi Lemak Ayam Balada",
+    "Nasi Lemak Ayam Tailwang",
+    "Nasi Lemak Ayam Taliwang",
+    "Nasi Lemak Ayam Taliwang Set"
+  ],
+  "Nasi Padang (Northpoint City)": [
+    "Beef Rendang Set"
+  ],
+  "Nene Chicken": [
+    "2pcs Spicy Chicken",
+    "4pcs Tenders Soy"
+  ],
+  "New HK Roast": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice",
+    "Trio Combo"
+  ],
+  "New HOKKIEN MEE": [
+    "Fried Hokkien Mee"
+  ],
+  "New Hong Kong Roast": [
+    "Soya Sauce Chicken Rice"
+  ],
+  "New Jia Wei": [
+    "Herbal Soup"
+  ],
+  "New Korean Cuisine": [
+    "Saba Fish"
+  ],
+  "New World Mutton Soup": [
+    "Mutton Mixture",
+    "Mutton Soup"
+  ],
+  "Ngan Lee Amaranth Leaf Soup": [
+    "Yong Tau Foo"
+  ],
+  "Nur Tandoor & Briyani": [
+    "Nasi Briyani"
+  ],
+  "Nyonya Pok Pok Kay": [
+    "Ayam Curry Kapitan Set"
+  ],
+  "ORH-KEE Noodles Express": [
+    "Signature Mee Sua"
+  ],
+  "Odeon Beef Noodles": [
+    "Beef Noodles"
+  ],
+  "Ofanz (Rojak Popiah)": [
+    "Rojak & Popiah"
+  ],
+  "Old Bugis Kway Chap Since 1973": [
+    "Kway Chap"
+  ],
+  "Old Hup Kee": [
+    "Black Carrot Cake",
+    "Carrot Cake",
+    "Char Kway Teow",
+    "Fried Hokkien Mee",
+    "Fried Kway Teow",
+    "White Carrot Cake"
+  ],
+  "Old Nyonya": [
+    "Laksa"
+  ],
+  "Old Street Braised Duck": [
+    "Braised Duck",
+    "Kway Chap"
+  ],
+  "Old Street Braised Duck Kway Chup": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Old Time": [
+    "Curry Puff",
+    "Mee Siam"
+  ],
+  "Old World Bak Kut Teh & Fried Porridge": [
+    "Bak Kut Teh"
+  ],
+  "Omega Pork Noodle": [],
+  "Omu Curry Rice & Donburi": [
+    "Teppanyaki Chicken Omu Curry Rice"
+  ],
+  "One Soy": [
+    "Grass Jelly Dessert",
+    "Soya Bean"
+  ],
+  "Origina Fish Soup": [
+    "Sliced Fish Soup"
+  ],
+  "Original Simon Road Hokkien Mee": [
+    "Fried Hokkien Mee"
+  ],
+  "P&J Western Food": [
+    "Chicken Chop"
+  ],
+  "PX Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Pak Lum Local Delight": [
+    "Char Kway Teow",
+    "Fried Kway Teow"
+  ],
+  "Pak Lum Local Delights": [
+    "Fried Hokkien Mee"
+  ],
+  "Pak Lum Malaysian Cuisine": [
+    "Black Carrot Cake",
+    "Carrot Cake",
+    "Char Kway Teow",
+    "Fried Kway Teow",
+    "White Carrot Cake"
+  ],
+  "Pak Wee Chicken Rice": [
+    "Ayam Bakar Penyet Set",
+    "Roasted Chicken Noodle"
+  ],
+  "Pancakes": [
+    "Mee Jiang Kueh",
+    "Min Jiang Kueh",
+    "Peanut Pancake"
+  ],
+  "Pang Pang Wanton Noodles": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Panini & Pizza": [
+    "Pepperoni Pizza"
+  ],
+  "Pao Fan": [
+    "Prawn Paste Paofan",
+    "Seafood Pao Fan"
+  ],
+  "Partea Express": [
+    "Amber Pearl Milk Tea",
+    "Mango Green Tea"
+  ],
+  "Pearl Rice Porridge": [
+    "Fish Congee",
+    "Pork Congee"
+  ],
+  "Penyet Kartini": [
+    "Ayam Penyet"
+  ],
+  "Penyet King": [
+    "Ayam Penyet"
+  ],
+  "Pepper Kitchen": [
+    "Pepper Rice"
+  ],
+  "Pepper Lunch": [
+    "Pepper Rice"
+  ],
+  "Pepper Lunch (Northpoint City)": [
+    "Pepper Rice"
+  ],
+  "Pepper Lunch Express": [
+    "Pepper Rice"
+  ],
+  "Pepper Plus Rice": [
+    "Hey! Augus Sirloin Steak",
+    "Hey! Pepper Beef"
+  ],
+  "Pho Vietnam": [
+    "Beef Pho"
+  ],
+  "Pig’s Organ Soup": [
+    "Pig Organ Soup"
+  ],
+  "Pig’s Organ Soup Bak Kut Teh": [
+    "Bak Kut Teh"
+  ],
+  "Pin Wei Chee Cheong Fun": [
+    "Chee Cheong Fun"
+  ],
+  "Pin Wei Dessert": [
+    "Cheng Teng",
+    "Ice Kachang"
+  ],
+  "Ping Xiang Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Signature Tofu",
+    "Steamed Chicken Rice"
+  ],
+  "Poh Kee Traditional Wanton Noodle": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Pontian Wanton Noodles": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Popular Food": [
+    "Saba Fish"
+  ],
+  "Power Satay": [
+    "Satay"
+  ],
+  "Prata Alley": [
+    "Prata",
+    "Roti Prata"
+  ],
+  "Project Penyek": [
+    "Ayam Penyet"
+  ],
+  "Pu Tian (Xing Hua) Food": [
+    "Putian Lor Mee"
+  ],
+  "Putian Food": [
+    "Putian Lor Mee"
+  ],
+  "Putian Heng Hwa Cuisine": [
+    "Heng Hwa Fried Bee Hoon",
+    "Pu Tian Lo Mee"
+  ],
+  "Putian Street Food": [
+    "Putian Fried Bee Hoon",
+    "Red Wine Chicken Mee Sua"
+  ],
+  "Putien": [
+    "Putian Lor Mee"
+  ],
+  "Qin Tang": [
+    "Sesame Oil Mee Sua with Braised Egg & Chicken",
+    "Taiwanese Cuisine"
+  ],
+  "Qiu Lian Ban Mee": [
+    "Ban Mian",
+    "Big Prawn U-Mee",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Qiu Lian Ban Mian": [
+    "Ban Mian",
+    "Big Prawn U-Mee",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Qiu Lim Hakka Yong Tau Foo": [
+    "Hakka Mee",
+    "Yong Tau Foo"
+  ],
+  "Quan Ji Teochew Mee": [
+    "Fishball Noodles"
+  ],
+  "Quan Wei": [
+    "Hor Fun"
+  ],
+  "RV Pancakes": [
+    "Mee Jiang Kueh",
+    "Min Jiang Kueh",
+    "Peanut Pancake"
+  ],
+  "Rayeesa’s Malay Kitchen": [
+    "Nasi Sambal Goreng"
+  ],
+  "Renqi": [
+    "Cheng Tng",
+    "Tau Suan"
+  ],
+  "Ri Ri Hong Mala Hot Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Rice Garden": [
+    "Cai Fan",
+    "Curry Chicken",
+    "Econ Rice",
+    "Economical Rice",
+    "Fried Drumstick",
+    "Mixed Rice",
+    "Mixed Vegetable Dishes"
+  ],
+  "Rindu Rasa Western": [
+    "Western Cuisine"
+  ],
+  "Riverside BBQ": [
+    "Ayam Panggang Set"
+  ],
+  "Riverside Indonesia BBQ": [
+    "Ayam Panggang Set"
+  ],
+  "Riverside Indonesian Grill": [
+    "Grilled Chicken Set"
+  ],
+  "Roadside Stall Malaysia Curry Rice": [
+    "Chicken Chop Curry Rice Set",
+    "Signature Curry Rice Set"
+  ],
+  "Roasted": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice",
+    "Roasted Duck"
+  ],
+  "Roasted Delights": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice",
+    "Treasure Signature Combo Set"
+  ],
+  "Roasted Deligths": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice",
+    "Signature Curry Chicken Noodle"
+  ],
+  "Roasted Item and Herbal Soup": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Herbal Soup",
+    "Roast Duck",
+    "Roasted Chicken Rice",
+    "Three Combination Rice"
+  ],
+  "Royal Rojak": [
+    "Kueh Pie Pie",
+    "Rojak",
+    "Rojak/Popiah",
+    "Signature Rojak",
+    "Traditional Popiah"
+  ],
+  "SH Indian Cuisine": [
+    "Mee Goreng Combo"
+  ],
+  "SJ Sickander Ammal Muslim Food": [
+    "Indian Prata",
+    "Prata",
+    "Rojak",
+    "Roti Prata"
+  ],
+  "Saamsudeen": [
+    "Nasi Briyani",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Saayah Sayang Nasi Padang": [
+    "Chicken Set",
+    "Classic Ambeng Set",
+    "Nasi Padang"
+  ],
+  "Sai Kitchen": [
+    "Cheese Naan",
+    "Masala Chicken",
+    "Plain Prata",
+    "Roti Prata"
+  ],
+  "Salam Indian Muslim Food Corner": [
+    "Chicken Bryani",
+    "Egg Prata",
+    "Roti Prata"
+  ],
+  "San Yi Xuan": [
+    "Grilled Fish"
+  ],
+  "San Yi Xuan Mala Hotpot Grilled Fish": [
+    "Mala Xiang Guo"
+  ],
+  "Santapan Nadika": [
+    "Assam Fish",
+    "Nasi Lemak"
+  ],
+  "Satay 14": [
+    "Satay"
+  ],
+  "Satay 19": [
+    "Satay"
+  ],
+  "Satay Noodz": [],
+  "Satay One": [
+    "Satay"
+  ],
+  "Saudagar Penyek": [
+    "Ayam Penyet"
+  ],
+  "Seabay": [
+    "Signature Fried Kway Teow"
+  ],
+  "Seabay Delight": [
+    "Char Kway Teow",
+    "Fried Hokkien Mee",
+    "Fried Rice",
+    "Hokkien Mee",
+    "Hokkien Prawn Mee",
+    "Mini Wok",
+    "Seabay Nasi Goreng",
+    "Signature Fried Kway Teow",
+    "Wok Fried Salted Egg Chicken w Rice"
+  ],
+  "Seabay Mini Wok": [
+    "Fried Rice",
+    "Mini Wok",
+    "Seabay Nasi Goreng",
+    "Signature Fried Kway Teow",
+    "Wok Fried Salted Egg Chicken w Rice"
+  ],
+  "Seabay Wok Delight": [
+    "Char Kway Teow",
+    "Fried Rice",
+    "Mini Wok",
+    "Seabay Nasi Goreng",
+    "Signature Fried Kway Teow",
+    "Wok Fried Salted Egg Chicken w Rice"
+  ],
+  "Seafood": [
+    "Chilli Crab",
+    "Claypot Curry Fish Head",
+    "Claypot Fish Head",
+    "Curry Fish head",
+    "Fish Head Steamboat",
+    "Putian Braised Noodles",
+    "Signature Chilli Crab"
+  ],
+  "Seafood King Pao Fan": [
+    "Chili Oil Dumplings",
+    "Lobster King Pao Fan",
+    "Pao Fan"
+  ],
+  "Seafood Zhi Char": [
+    "Chilli Crab",
+    "Fried Hokkien Mee"
+  ],
+  "Seafood Zi Char Sea Cube": [
+    "Pig’s Trotter Bee Hoon",
+    "Seafood White Bee Hoon"
+  ],
+  "Sedap Kitchen": [
+    "Beef Rendang",
+    "Nasi Padang"
+  ],
+  "Selera Timur": [
+    "Nasi Sambal Goreng Set"
+  ],
+  "Seng Heng Atas Roasted Delights Chinatown": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice",
+    "Roasted Delights"
+  ],
+  "Seng Heng Roasted Delight": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Seng Heng Roasted Delights": [
+    "Roasted Chicken Rice",
+    "Roasted Delights",
+    "Roasted Meat Rice"
+  ],
+  "Seng Hiang Bak Chor Mee": [
+    "Ba Chor Mee",
+    "Bak Chor Mee",
+    "Laksa",
+    "Minced Meat Noodles"
+  ],
+  "Seng Kee Mixed Veg Rice & Economic Bee Hoon": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Sengkang Square Oyster Omelette": [
+    "Black Carrot Cake",
+    "Carrot Cake",
+    "Char Kway Teow",
+    "Fried Hokkien Mee",
+    "Fried Kway Teow",
+    "Oyster Omelette",
+    "White Carrot Cake"
+  ],
+  "Sha Indian Rojak": [
+    "Indian Rojak"
+  ],
+  "Shabu Days": [
+    "Hotpot",
+    "Steamboat"
+  ],
+  "Shan Dong Dong Ji La Mian Xiao Long Bao": [
+    "Beef Noodles",
+    "Pork Ribs Noodles"
+  ],
+  "Shang Ke Pte Ltd": [
+    "Seafood White Bee Hoon"
+  ],
+  "Shanghai Fried Xiao Long Bao": [
+    "Sheng Jian Bao",
+    "Xiao Long Bao"
+  ],
+  "Sheng Tang Chinese Beef Roti": [
+    "Beef Roti"
+  ],
+  "Shi Nian": [
+    "Pig Trotters"
+  ],
+  "Shi Song Vegetarian": [
+    "Olive Fried Rice",
+    "Vegetarian Bee Hoon"
+  ],
+  "Shuang Xing": [
+    "Salted Egg Yolk Cutlet"
+  ],
+  "Shun Heng Pig Trotter Rice": [
+    "Pig Trotter Rice",
+    "Pork Belly rice"
+  ],
+  "Shun Xing Braised Duck Rice Noodle Kway Chap": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Simful Nasi Lemak": [
+    "Nasi Lemak with Chicken Wing Set",
+    "Nasi Lemak with Otah Set"
+  ],
+  "Sin Food 26": [
+    "Spring Onion Diced Chicken Set Meal",
+    "Sweet & Sour Pork Set Meal"
+  ],
+  "Sing HK": [
+    "Braised Pork Belly Noodle",
+    "Signature Scramble Egg with Pork Chop Rice"
+  ],
+  "Sing Hi Fry": [
+    "Fishball Noodle"
+  ],
+  "SingHK": [
+    "Scrambled Egg w Garlic Park Chop"
+  ],
+  "Singa Mini Wok": [
+    "Char Kway Teow"
+  ],
+  "Singa Wok": [
+    "Fried items"
+  ],
+  "Singapore Fried Hokkien Mee": [
+    "Fried Hokkien Mee"
+  ],
+  "Small Bites Indian Cuisine": [
+    "Biryani",
+    "Prata",
+    "Roti Prata"
+  ],
+  "Snack": [
+    "Chee Cheong Fun",
+    "Glutinous Rice",
+    "Yam Cake"
+  ],
+  "Snek Ku Di Lorong Fatimah": [
+    "Malay snacks"
+  ],
+  "Social Bite": [
+    "Mee Siam & Laksa"
+  ],
+  "Sofnade": [
+    "Bubble Tea",
+    "Dessert Bowls",
+    "Milk Tea",
+    "Taiwanese Dessert",
+    "Waffles"
+  ],
+  "Song Zhou Fried Carrot Cake": [
+    "Black Carrot Cake",
+    "Fried Carrot Cake",
+    "White Carrot Cake"
+  ],
+  "Soon Kee Roasted Delights": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Soon Lee Fish Soup": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup",
+    "Sliced Pomfret Fish Soup",
+    "Teochew Style Red Grouper"
+  ],
+  "Soup": [
+    "Special Herbal Chicken Soup"
+  ],
+  "Soup & Cheong Fun": [
+    "Soup & Cheong Fun"
+  ],
+  "Soup Lodge": [
+    "Herbal Soup"
+  ],
+  "South Buona Vista Braised Duck": [
+    "Braised Duck"
+  ],
+  "Spicy Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Spinach Soup": [
+    "Grilled Tiger Prawn",
+    "Spinach Seafood Soup"
+  ],
+  "Steam Fish": [
+    "HK Steam Seabass Head",
+    "Steam Fish"
+  ],
+  "Steam Fish & Soup": [
+    "Black Monster Steamed Fish"
+  ],
+  "Steam Fish Delight": [
+    "Steamed Fish"
+  ],
+  "Steam House": [
+    "Hangzhou Steam Cuisine"
+  ],
+  "Steven Fried Rice": [
+    "Kampung Suasage Egg Fried Rice",
+    "Plain Egg Fried Rice"
+  ],
+  "Su Man Yuan Vegetarian": [
+    "Olive Fried Rice"
+  ],
+  "Su Yuan Vegetarian": [
+    "Suyuan Set (2 Veg Meat + 1 Veg)",
+    "Veg Mixed Rice"
+  ],
+  "Sunbo Express Penyet + Bbq": [
+    "Ayam Penyet"
+  ],
+  "Super Nasi Lemak Club": [
+    "Econ Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "Supreme Gourmet": [
+    "Signature Braised Pork Rice Combo"
+  ],
+  "Swee Heng Bakery": [
+    "Bread"
+  ],
+  "Swee Traditional Prawn Noodle": [
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "THUMBUPZ Roasted & Soup": [
+    "Char Siew Rice",
+    "Duck Rice",
+    "Herbal Soup",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Tai Hao Chi Roasted Delights": [
+    "Char Siew",
+    "Char Siew Rice",
+    "Crystal Char Siew",
+    "Duck Rice",
+    "Roast Duck",
+    "Roast Pork",
+    "Roasted Chicken Rice",
+    "Roasted Duck"
+  ],
+  "Tai Pai Tong Seafood": [
+    "Curry Fish head",
+    "Tze Char"
+  ],
+  "Taibah": [
+    "Indian Mediterranean Fusion"
+  ],
+  "Taiwan Cuisine by Formosa Delights": [
+    "Beef Noodle",
+    "Formosa Meat Bun"
+  ],
+  "Taiwan Dessert & Milk Tea": [
+    "Taiwan Dessert & Milk Tea"
+  ],
+  "Taiwan Street Food": [
+    "Taiwan Slice Cucumber Stewed Pork Rice with Egg",
+    "Taiwanese Yangchun Noodles"
+  ],
+  "Takeway Kueh": [
+    "Chwee Kway w Salted Radish"
+  ],
+  "Taliwang Nasi Lemak": [
+    "Nasi Lemak"
+  ],
+  "Tang Tea House": [
+    "Dim Sum",
+    "Roasted Chicken Rice",
+    "Rojak",
+    "Steamed Chicken Rice"
+  ],
+  "Tanglin Halt Ban Mian & Fish Soup": [
+    "Ban Mian",
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Tea Cafe": [
+    "Coffee",
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Teh Tarik": [
+    "Sugarcane",
+    "Teh Tarik"
+  ],
+  "Tek Tek": [
+    "Indomie with Minced Chicken & Vegetables"
+  ],
+  "Telur Thai": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Thai Basil Chicken",
+    "Thai Basil Minced Chicken",
+    "Thai Honey Chicken",
+    "Thai Stir-Fried Glass Noodles",
+    "Tom Yum Soup"
+  ],
+  "Tender Fresh": [
+    "Chicken Bolognese",
+    "Chicken Chop Rice"
+  ],
+  "Tenderbest": [
+    "Chicken Bolognese",
+    "Turkey Bacon Aglio Olio"
+  ],
+  "Tenderfresh Western Cuisine": [
+    "Chicken Chop",
+    "Pasta"
+  ],
+  "Teochew": [
+    "Pig Organ Kway Teow Soup",
+    "Pig Organ Soup"
+  ],
+  "Teochew Fish Porridge Da Pai Dang": [
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Teochew Lao": [
+    "ABC Soup",
+    "Porridge",
+    "Signature Teocheow Salted Vegetable Soup",
+    "Teochew cuisine"
+  ],
+  "Teochew Porridge & Mixed Veg Rice": [
+    "Teochew Porridge"
+  ],
+  "Teohchew Cuisine": [
+    "Pig Organ Kway Teow Soup",
+    "Pig Organ Soup",
+    "Signature Teochew Salted Veg Soup"
+  ],
+  "Teow Chew Cuisine": [
+    "Signature Teochew Salted Veg Soup"
+  ],
+  "Texas Lone Star": [
+    "Chicken Chop",
+    "Fish & Chips"
+  ],
+  "Texas Lone Star (western)": [
+    "Grilled Chicken Chop w Mushroom Cream",
+    "Grilled White Fish w Garlic Butter"
+  ],
+  "Thai Cuisine (Northpoint City)": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Thai Food": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Thai Khanom Banana": [
+    "Fried Banana"
+  ],
+  "Thai Lamoon Signature": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Thai Makan": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Thai Stir-Fried Glass Noodles",
+    "Tom Yum Soup"
+  ],
+  "Thailand Food": [
+    "Thai Nasi Lemak with Fish Filet & Fried Egg"
+  ],
+  "The Bait Kitchen": [
+    "Egg Fried Rice"
+  ],
+  "The Kiosk": [
+    "Kaya Butter Toast",
+    "Kaya Toast",
+    "Kopi",
+    "Signature Breakfast Set",
+    "Teh"
+  ],
+  "The Tarik. Drinks": [
+    "Kopi",
+    "Teh"
+  ],
+  "The Western House": [
+    "Chicken Chop"
+  ],
+  "This & That": [
+    "Rice Table"
+  ],
+  "Thunder Tea Rice": [
+    "Green Tea Rice",
+    "Thunder Tea Rice",
+    "Thunder Tea Special"
+  ],
+  "Tian Fu Yuan": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Tian Tian Fa Hainanese Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Tian Tian Nasi Lemak": [
+    "Econ Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "Tidjai Thai Food": [
+    "Basil Chicken Rice",
+    "Pad Thai",
+    "Pineapple Fried Rice",
+    "Tom Yum Soup"
+  ],
+  "Tiong Bahru Tian Bo Shui Kueh Pte Ltd": [
+    "Signature Jian Bo Shui Kueh"
+  ],
+  "Tiong Fong Fatt Hainanese Boneless Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Tong Fong Fatt Hainanese Boneless Chicken Rice": [
+    "Chicken Rice",
+    "Roasted Chicken Rice",
+    "Signature Boneless Chicken Rice(White)",
+    "Steamed Chicken Rice"
+  ],
+  "Tornado Egg Curry Rice & Donburi": [
+    "Teppanyaki Beef Patty Omu Curry Rice",
+    "Teppanyaki Chicken Omu Curry Rice"
+  ],
+  "Toyomi Japanese Express": [
+    "Japanese Curry Rice",
+    "Japanese cuisine"
+  ],
+  "Tracy’s Sarawak Kolo Mee": [
+    "Char Seow Kolomee"
+  ],
+  "Traditional Lor Mee Prawn Noodle Laksa": [
+    "Laksa",
+    "Lor Mee",
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "Traditional Snack": [
+    "Banana Ball",
+    "Cara Berlauk",
+    "Fried Banana",
+    "Kaswi"
+  ],
+  "Turkish Lezzet": [
+    "Doner Roll",
+    "Iskender",
+    "Kunefe"
+  ],
+  "Ubi Le Sheng Yong Tau Fu": [
+    "Yong Tau Foo"
+  ],
+  "Ubi Le Sheng Yong Tou Fu": [
+    "Yong Tau Foo"
+  ],
+  "Umi’s Spices": [
+    "Nasi Padang"
+  ],
+  "Uncle Jim Fresh Fruit Juice": [
+    "Cut Fruits",
+    "Fruits Juices"
+  ],
+  "Uncle Jim Fresh Fruit juice": [
+    "Sugar Cane Juice"
+  ],
+  "Uncle John’s Makan Place": [
+    "Ampang Yong Tau Foo",
+    "Steamed Fish"
+  ],
+  "Uncle Lee’s Lor mee": [
+    "Traditional Lor Mee"
+  ],
+  "Uncle Lee’s Wanton Noodle": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Uncle Louis Famous Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Uncle Mee Hoon Kueh": [
+    "Abalone Mee Hoon Kueh"
+  ],
+  "Uncle Penyet": [
+    "Ayam Penyet"
+  ],
+  "Uncle Wong": [
+    "Chicken Cutlet"
+  ],
+  "Universal Economical Rice": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Vietsea Banh Mi Express (Kopitiam Square)": [
+    "Viet Baguette"
+  ],
+  "Vietsea Food Connection": [
+    "BBQ Pork Chop Rice",
+    "Viet Baguette"
+  ],
+  "WANG XIANG KITCHEN": [
+    "Fried Hokkien Mee"
+  ],
+  "WKJ Wanton Mee": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Wah Kee Coffee Shop": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Wah Kee Fishball Noodle": [
+    "Fishball Noodles"
+  ],
+  "Wah Zai Ampang Yong Tau Foo & Tangkak Beef Noodle": [
+    "Ampang Yong Tau Foo",
+    "Beef Noodle",
+    "Yong Tau Foo"
+  ],
+  "Wak Din": [
+    "Mee Hoon Soto",
+    "Mee Soto"
+  ],
+  "Wan Gui Beverages": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Wang Wang Roasted": [
+    "Char Siew Rice",
+    "Chicken Rice",
+    "Duck Rice",
+    "Roast Duck",
+    "Roasted Chicken Rice"
+  ],
+  "Wanton Noodles": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Warisan Satay": [
+    "Barbecue Prawn",
+    "Barbecue Squid",
+    "Satay"
+  ],
+  "Warong Pak Sapari": [
+    "Mee Rebus",
+    "Mee Soto"
+  ],
+  "Washouku Geon": [
+    "Chicken Katsu Curry Rice"
+  ],
+  "Wen Xiang Yuan": [
+    "Shanghai Pan Fried Bao"
+  ],
+  "Western": [
+    "Chicken Chop",
+    "Chicken Chop Set",
+    "Chicken Cutlet",
+    "Fish N Chip",
+    "Western Cuisine"
+  ],
+  "Western Beradik": [
+    "Chicken Bolognese",
+    "Chicken Chop Aglio Olio",
+    "Crispy Chicken Cutlet With Rice",
+    "Fish & Chips",
+    "Grilled Chicken Steak"
+  ],
+  "Western Boy": [
+    "Chicken Chop",
+    "Chicken Steak Aglio Olio",
+    "Mexican Grilled Chicken Steak",
+    "Western Food"
+  ],
+  "Western Cuisine (Northpoint City)": [
+    "Grilled Salmon with Aglio Olio"
+  ],
+  "Western Grill & Japanese Fusion": [
+    "Shabu Shabu Beef Stew Omelette Garlic Rice"
+  ],
+  "What The Fish": [
+    "Grilled Fish"
+  ],
+  "What The Puff!": [
+    "Curry Puff"
+  ],
+  "What the Fish": [
+    "Grilled Fish Set"
+  ],
+  "Whitley Road Big Prawn Noodle": [
+    "Prawn Mee",
+    "Prawn Noodle",
+    "Prawn Pork Ribs Pig Liver Pig Tail Noodle"
+  ],
+  "Wild Olives": [
+    "Grilled Chicken with Mushroom Sauce"
+  ],
+  "Wok Delight": [
+    "Fried Hokkien Mee",
+    "Fried Kuay Teow"
+  ],
+  "Wok Qi Fried Rice": [
+    "Prawn Paste Chicken Cutlet Fried Rice"
+  ],
+  "Wonder Chicken Kitchen": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Xi An Cuisine": [
+    "Signature Biang Biang Noodle"
+  ],
+  "Xi De LI": [
+    "Soya Bean Milk",
+    "You Tiao"
+  ],
+  "Xi De Li": [
+    "Fried Fritters"
+  ],
+  "Xi Wang Bak Kut Teh": [
+    "Bak Kut Teh",
+    "Braised Pork Rice"
+  ],
+  "Xi Xiang": [
+    "Hunan Cuisine"
+  ],
+  "Xi Xiang Taste Of Hunan": [
+    "Fried Pork Intestines with Pickled Cabbage",
+    "Stir-Fried Pork with Chillies"
+  ],
+  "Xi Xiang Taste of Hunan": [
+    "Chopped Chillies Steamed Seabass (Whole)",
+    "Golden Broth Pickled Fish",
+    "Stir-Fried Pork with Chillies"
+  ],
+  "Xian Fu Fish Soup": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Xiang Chi Mian": [
+    "Ba Chor Mee",
+    "Bak Chor Mee",
+    "Laksa",
+    "Minced Meat Noodles",
+    "Signature Minced Meat Noodle"
+  ],
+  "Xiang Chi Mian (Northpoint City)": [
+    "Ba Chor Mee",
+    "Bak Chor Mee",
+    "Minced Meat Noodles"
+  ],
+  "Xiang Lian Korean and Japanese": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Xiang Rui Gourmet Congee": [
+    "Cuttlefish",
+    "Lean Meat & Century Egg",
+    "Liver",
+    "Signature Congee (Peanuts"
+  ],
+  "Xiao La Jiao Mala Hot Pot": [
+    "Mala Hotpot",
+    "Mala Xiang Guo"
+  ],
+  "Xiao Mei Pork Noodle": [
+    "Fishall Noodle"
+  ],
+  "Xin Hai Feast": [
+    "Live Seafood",
+    "Zi Char"
+  ],
+  "Xin Kee Signature Curry House": [
+    "Curry Chicken Cutlet Rice",
+    "Curry Fish Cutlet Rice"
+  ],
+  "Xin Mei Ban Mian/Congee": [
+    "Ban Mian",
+    "Congee",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "Xin Xin Claypot Rice": [
+    "Signature Claypot Rice"
+  ],
+  "Xing Long Fish Soup": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Xuan Yuan Su Shi": [
+    "Olive Fried Rice"
+  ],
+  "Xue Hua Fei Hot & Cold Drinks": [
+    "Ice Kachang",
+    "Watermelon Fruit Cocktail"
+  ],
+  "Y&H Ayam Penyet": [
+    "Ayam Penyet"
+  ],
+  "YB Fried Bee Hoon": [
+    "Bee Hoon",
+    "Chicken Wing",
+    "Economical Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "Yang Sen Tung Dan": [
+    "ABC Chicken Soup",
+    "Peanut Chicken Feet Soup"
+  ],
+  "Yes! Japanese Korean Cuisine": [
+    "Bimbimbap",
+    "Hotplate Chicken",
+    "Kimchi Soup",
+    "Saba Fish"
+  ],
+  "Yew Lee Wanton Noodle": [
+    "Wanton Mee",
+    "Wanton Noodle"
+  ],
+  "Yi Ding Hao Eating House": [
+    "Mookata"
+  ],
+  "Yon Ho Hainanese cuisine": [
+    "Signature Claypot Herbal Mutton Soup"
+  ],
+  "Yong Feng Ji Chicken Rice": [
+    "Roasted Chicken Rice",
+    "Steamed Chicken Rice"
+  ],
+  "Yong Hua Delights": [
+    "Fishball Noodles"
+  ],
+  "Yong Li Coffee Station": [
+    "Coffee",
+    "Kopi",
+    "Tea",
+    "Teh"
+  ],
+  "Yong Seng Heng Prawn Noodles": [
+    "Prawn Mee",
+    "Prawn Noodles"
+  ],
+  "Yong Tao Foo": [
+    "Yong Tau Foo"
+  ],
+  "Yong Tao Foo (Northpoint City)": [
+    "Yong Tau Foo"
+  ],
+  "Yong Tau foo/Mala": [
+    "Mala Hotpot",
+    "Mala Xiang Guo",
+    "Yong Tau Foo"
+  ],
+  "You Fu Ban Mian & Ramen": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "You Fu Ban Mian / Pao Fan": [
+    "Ban Mian",
+    "Pao Fan"
+  ],
+  "You Xiang Teochew Noodles": [
+    "Ba Chor Mee",
+    "Bak Chor Mee",
+    "Fishball Noodles",
+    "Minced Meat Noodles"
+  ],
+  "Yu Kee Braised Duck": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Yu Kee Braised Duck . Kway Chap": [
+    "Duck Rice",
+    "Kway Chap"
+  ],
+  "Yu Kee Duck Rice": [
+    "Duck Rice"
+  ],
+  "Yu Ni Xiang Yu Grilled Fish": [
+    "Grilled Fish",
+    "Mala Hotpot",
+    "Mala Xiang Guo",
+    "Qing Jiang Fish"
+  ],
+  "Yu Wei Ju Quan": [
+    "Fish Soup",
+    "Fried Fish Soup",
+    "Sliced Fish Soup"
+  ],
+  "Yu Yi Teochew Fish Soup": [
+    "Fried Fish Soup",
+    "Seafood Soup",
+    "Sliced Fish Soup"
+  ],
+  "Yuan He Mee Jian Keuh": [
+    "Mee Jiang Kueh"
+  ],
+  "Yuan Ji Handmade Pau Tim Sum": [
+    "Bao",
+    "Dim Sum"
+  ],
+  "Yuan Ting Congee": [
+    "Congee"
+  ],
+  "Yuen Kee": [
+    "Dumpling Noodle",
+    "Dumplings"
+  ],
+  "Yuen Kee Dumpling": [
+    "Dumplings"
+  ],
+  "Yummy Delights": [
+    "Econ Bee Hoon"
+  ],
+  "Yummy Delights Nasi Lemak & Econ Bee Hoon": [
+    "Econ Bee Hoon",
+    "Nasi Lemak"
+  ],
+  "Yummy Pancake": [
+    "Mee Jiang Kueh",
+    "Min Jiang Kueh",
+    "Peanut Pancake"
+  ],
+  "Zai Vegetarian Food": [
+    "Cai Fan",
+    "Econ Rice",
+    "Economical Rice",
+    "Mixed Rice"
+  ],
+  "Zhao Zhou Fish Porridge Daipadang": [
+    "Sliced Fish Soup",
+    "Teochew Sliced Fish Porridge"
+  ],
+  "Zheng Ji Yong Tau Foo": [
+    "Yong Tau Foo"
+  ],
+  "Zhong Xin Ban Mian": [
+    "Ban Mian",
+    "Mee Hoon Kueh",
+    "U-Mian"
+  ],
+  "煲仔 KING": [
+    "Claypot Bak Kut Teh"
+  ],
+  "老面檔街 Maxwell": [
+    "Lor Mee",
+    "Prawn Mee",
+    "Prawn Noodle"
+  ]
+}
