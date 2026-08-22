@@ -84,6 +84,30 @@
 // not one orderable thing) - the addresses are real but adding them as a Brand would repeat a known
 // mistake. Elemen (elemengroup.com.sg) is genuinely JS-rendered (Squarespace) with no static address
 // data on its /locations page - left unresolved.
+// 2026-08-23 (3rd pass): applied the same sitemap-discovery technique to independent NEA hawker
+// centres, per direct user request ("do the same for hawker centers in singapore"). Most of the
+// ~114 NEA hawker centres have no dedicated website (already covered generically via the 2026-08-20
+// SFA-licensee restructure, 6 real stall names each), but newer NEA "Hawker Centre 3.0" venues run
+// by a private operator often DO have one. Found and added 2: Bukit Canberra Hawker Centre (run by
+// Canopy Hawkers Group, new Operator `canopy_hawkers`) - its WordPress "portfolio_page" custom-post
+// sitemap lists 44 stall pages; each page's <title> holds the real trading name (the URL slug is a
+// stale cuisine-category label assigned when the post was first created and often no longer matches
+// the current tenant - e.g. slug "porridge" is now "Teochew Fish Soup" - so cuisine text was derived
+// from the stall's own name wherever the slug conflicted with it, not blindly trusted). 41 real
+// named brands (2 "Coming Soon" units excluded), 42 premises (Kopi Tan runs 2 adjacent units).
+// Yishun Park Hawker Centre (yishunparkhc.sg) - own "hawkers" custom-post sitemap lists 34 stall
+// pages; 9 of those slugs now 302-redirect to the homepage (cleanly, unlike Bukit Canberra's stale-
+// but-still-live pages) - read as retired/renamed stalls and excluded rather than guessed. 25 real
+// named brands from the remaining pages, 27 premises (XinLongXing Modern Tze Char spans 3 adjacent
+// units). New Operator `timbre_plus_hawkers` - the site's own branding is Timbre+ Hawkers Pte Ltd
+// throughout, even though press coverage reports Canopy Hawkers Group taking over operations from
+// Jul 2026; the operator here reflects what the source site says, not the reported handover (see
+// reference/research-sessions/2026-08-23-bukit-canberra-yishun-park-hawker-centres.md). One Punggol
+// Hawker Centre (onepunggolhc.sg, also ex-Timbre+) has the same sitemap pattern (31 stall slugs) but
+// every individual stall page 302-redirects to the homepage inconsistently regardless of headers/
+// cookies tried - blocked, not attempted further this pass. Buangkok Hawker Centre retried again,
+// still HTTP 500. Pasir Ris Central, Anchorvale Village, Jurong West, Bukit Panjang, Margaret Drive,
+// and Market Street hawker centres have no dedicated website found (checked common domain patterns).
 
 export const BRANDS_1 = [
   {
@@ -26918,6 +26942,1068 @@ export const BRANDS_4 = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "canopy_bukit_canberra_haha_family",
+    name: "Haha Family",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Hainan / Harbin Cuisine",
+    aliases: [
+      "haha family"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_shi_nian",
+    name: "Shi Nian",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Thai Mookata",
+    aliases: [
+      "shi nian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_changi_village_fried_hokkien_mee",
+    name: "Changi Village Fried Hokkien Mee",
+    emoji: "🍳",
+    type: "food_court_stall",
+    cuisine: "Fried Hokkien Mee & Carrot Cake",
+    aliases: [
+      "changi village fried hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_the_cheeky_chick",
+    name: "The Cheeky Chick",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Local Hawker Food",
+    aliases: [
+      "the cheeky chick"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_lao_guang_ji_claypot_rice",
+    name: "Lao Guang Ji Claypot Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Claypot Rice",
+    aliases: [
+      "lao guang ji claypot rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_pangkor_island_nasi_lemak",
+    name: "Pangkor Island Nasi Lemak",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Nyonya Nasi Lemak",
+    aliases: [
+      "pangkor island nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_xin_fa_melaka_bbq_seafood",
+    name: "Xin Fa Melaka BBQ Seafood",
+    emoji: "🦐",
+    type: "food_court_stall",
+    cuisine: "Melaka BBQ Seafood",
+    aliases: [
+      "xin fa melaka bbq seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_king_grouper_fish_soup",
+    name: "King Grouper Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Fish Soup",
+    aliases: [
+      "king grouper fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_hock_gooi",
+    name: "Hock Gooi",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Hainanese Curry Rice",
+    aliases: [
+      "hock gooi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_zhen_de_bbq_le",
+    name: "Zhen De BBQ Le",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Satay & BBQ Chicken Wings",
+    aliases: [
+      "zhen de bbq le"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_kopi_tan",
+    name: "Kopi Tan",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Hot & Cold Beverages",
+    aliases: [
+      "kopi tan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_lau_pa_sat_congee",
+    name: "Lau Pa Sat Congee",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Congee",
+    aliases: [
+      "lau pa sat congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_berempah_bros",
+    name: "Berempah Bros",
+    emoji: "🍤",
+    type: "food_court_stall",
+    cuisine: "Berempah (Fried Snacks)",
+    aliases: [
+      "berempah bros"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_twenty6_gusto_house",
+    name: "Twenty6 Gusto House",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western Food (Meats & Pasta)",
+    aliases: [
+      "twenty6 gusto house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_hock_kee_teochew_noodle",
+    name: "Hock Kee Teochew Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Teochew Noodles",
+    aliases: [
+      "hock kee teochew noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_liu_kou_shui",
+    name: "Liu Kou Shui",
+    emoji: "🍱",
+    type: "food_court_stall",
+    cuisine: "Fusion Donburi",
+    aliases: [
+      "liu kou shui"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_pinky_s_kitchen_nakhon_si",
+    name: "Pinky's Kitchen Nakhon Si",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Thai Food",
+    aliases: [
+      "pinky's kitchen nakhon si"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_lixin_fish_ball_noodles",
+    name: "Lixin Fish Ball Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Fish Ball Noodles",
+    aliases: [
+      "lixin fish ball noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_arabest_halal",
+    name: "Arabest (Halal)",
+    emoji: "🥙",
+    type: "food_court_stall",
+    cuisine: "Middle Eastern Food",
+    aliases: [
+      "arabest (halal)"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_mr_ab_prata_and_mee_goreng",
+    name: "Mr. AB Prata & Mee Goreng",
+    emoji: "🫓",
+    type: "food_court_stall",
+    cuisine: "Indian Food (Prata & Mee Goreng)",
+    aliases: [
+      "mr. ab prata & mee goreng"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_teochew_fish_soup",
+    name: "Teochew Fish Soup",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Fish Soup",
+    aliases: [
+      "teochew fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_zhong_guo_la_mian_xiao_long_bao",
+    name: "Zhong Guo La Mian Xiao Long Bao",
+    emoji: "🥟",
+    type: "food_court_stall",
+    cuisine: "China Cuisine (La Mian & Xiao Long Bao)",
+    aliases: [
+      "zhong guo la mian xiao long bao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_ah_heng_char_kway_teow",
+    name: "AH Heng Char Kway Teow",
+    emoji: "🍳",
+    type: "food_court_stall",
+    cuisine: "Fried Kway Teow",
+    aliases: [
+      "ah heng char kway teow"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_xing_yu_korean_cuisine",
+    name: "Xing Yu Korean Cuisine",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Korean Cuisine",
+    aliases: [
+      "xing yu korean cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_maxwell_chicken_rice",
+    name: "Maxwell Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice",
+    aliases: [
+      "maxwell chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_golden_boat",
+    name: "Golden Boat",
+    emoji: "🥪",
+    type: "food_court_stall",
+    cuisine: "Roti John",
+    aliases: [
+      "golden boat"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_jia_le_yong_tau_foo",
+    name: "Jia Le Yong Tau Foo",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Yong Tau Foo",
+    aliases: [
+      "jia le yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_2112_snack_delight",
+    name: "2112 Snack Delight",
+    emoji: "🥨",
+    type: "food_court_stall",
+    cuisine: "You Tiao & Snacks",
+    aliases: [
+      "2112 snack delight"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_la_kopi",
+    name: "La Kopi",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Hot & Cold Beverages",
+    aliases: [
+      "la kopi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_le_man_seafood",
+    name: "Le Man Seafood",
+    emoji: "🦞",
+    type: "food_court_stall",
+    cuisine: "Zi Char / Seafood",
+    aliases: [
+      "le man seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_le_man_econ_bee_hoon",
+    name: "Le Man Econ Bee Hoon",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Economic Bee Hoon",
+    aliases: [
+      "le man econ bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_yew_kee_duck_rice",
+    name: "Yew Kee Duck Rice",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Braised Duck Rice",
+    aliases: [
+      "yew kee duck rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_snack_that_food_up",
+    name: "Snack That Food Up",
+    emoji: "🌮",
+    type: "food_court_stall",
+    cuisine: "Mexican-Indian Fusion",
+    aliases: [
+      "snack that food up"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_muffin_homme",
+    name: "Muffin Homme",
+    emoji: "🧁",
+    type: "food_court_stall",
+    cuisine: "Pastries & Bakery",
+    aliases: [
+      "muffin homme"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_add_more_mala_hot_pot",
+    name: "Add More Mala Hot Pot",
+    emoji: "🌶️",
+    type: "food_court_stall",
+    cuisine: "Mala Hot Pot",
+    aliases: [
+      "add more mala hot pot"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_tanjong_rhu_wanton_noodle",
+    name: "Tanjong Rhu Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Wanton Noodles",
+    aliases: [
+      "tanjong rhu wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_day_night_herbal_soup",
+    name: "Day Night Herbal Soup",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Double-Boiled Herbal Soup",
+    aliases: [
+      "day night herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_al_usroh",
+    name: "Al-usroh",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Local Hawker Food",
+    aliases: [
+      "al-usroh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_scissors_paper_stone",
+    name: "Scissors Paper Stone",
+    emoji: "🍺",
+    type: "food_court_stall",
+    cuisine: "Hot & Cold Beverages / Draught Beer",
+    aliases: [
+      "scissors paper stone"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_tong_xin_vegetarian",
+    name: "Tong Xin Vegetarian",
+    emoji: "🥬",
+    type: "food_court_stall",
+    cuisine: "Vegetarian Noodles & Rice",
+    aliases: [
+      "tong xin vegetarian"
+    ],
+    dietTags: [
+      "vegetarian"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "canopy_bukit_canberra_danlao_scrambled_egg_rice",
+    name: "Danlao Scrambled Egg Rice",
+    emoji: "🍳",
+    type: "food_court_stall",
+    cuisine: "Scrambled Egg Rice",
+    aliases: [
+      "danlao scrambled egg rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "canopy_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_kak_nur_and_meera",
+    name: "Kak Nur & Meera",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Malay Cuisine",
+    aliases: [
+      "kak nur & meera"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_mingsu_vegetarian",
+    name: "Mingsu Vegetarian",
+    emoji: "🥬",
+    type: "food_court_stall",
+    cuisine: "Vegetarian",
+    aliases: [
+      "mingsu vegetarian"
+    ],
+    dietTags: [
+      "vegetarian"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_bismi_briyani",
+    name: "Bismi Briyani",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Briyani",
+    aliases: [
+      "bismi briyani"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_shahstri_kitchenette",
+    name: "Shahstri Kitchenette",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indian Nasi Kandar",
+    aliases: [
+      "shahstri kitchenette"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_ah_lock_hakka_tofu_bowl",
+    name: "Ah Lock Hakka Tofu Bowl",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Hakka Tofu Rice Bowls",
+    aliases: [
+      "ah lock hakka tofu bowl"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_sj_from_eunos",
+    name: "SJ From Eunos",
+    emoji: "🫓",
+    type: "food_court_stall",
+    cuisine: "Roti Prata & Indian Rojak, Mee Goreng",
+    aliases: [
+      "sj from eunos"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_68_spinach_soup_and_fried_rice",
+    name: "68 Spinach Soup & Fried Rice",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Spinach Soup & Yong Tau Foo",
+    aliases: [
+      "68 spinach soup & fried rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_one_mouth_noodles",
+    name: "One Mouth Noodles 一口面",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Handmade Wanton Noodles",
+    aliases: [
+      "one mouth noodles 一口面"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_da_san_yuan",
+    name: "Da San Yuan 大三圆",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Fishball Minced Meat Noodle & Laksa",
+    aliases: [
+      "da san yuan 大三圆"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_japanese_teppan_donburi",
+    name: "Japanese Teppan Donburi",
+    emoji: "🍱",
+    type: "food_court_stall",
+    cuisine: "Japanese Fusion",
+    aliases: [
+      "japanese teppan donburi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_yew_s_noodle",
+    name: "Yew's Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Malaysian Noodles",
+    aliases: [
+      "yew's noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_salad_and_cream",
+    name: "Salad & Cream",
+    emoji: "🥗",
+    type: "food_court_stall",
+    cuisine: "Salad",
+    aliases: [
+      "salad & cream"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_lao_fu_jia",
+    name: "Lao Fu Jia",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Soup",
+    aliases: [
+      "lao fu jia"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_jj_prawn_noodles",
+    name: "JJ Prawn Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Prawn Noodles",
+    aliases: [
+      "jj prawn noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_li_fang_congee",
+    name: "Li Fang Congee",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Congee",
+    aliases: [
+      "li fang congee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_xinlongxing_modern_tze_char",
+    name: "XinLongXing Modern Tze Char",
+    emoji: "🦞",
+    type: "food_court_stall",
+    cuisine: "Modern Tze Char, Live Seafood Tze Char",
+    aliases: [
+      "xinlongxing modern tze char"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_phawo_thai_food",
+    name: "Phawo Thai Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Thai Food",
+    aliases: [
+      "phawo thai food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_taliwang",
+    name: "Taliwang",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Nasi Lemak",
+    aliases: [
+      "taliwang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_smokin_joe",
+    name: "Smokin' Joe",
+    emoji: "🍖",
+    type: "food_court_stall",
+    cuisine: "Western BBQ",
+    aliases: [
+      "smokin' joe"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_yong_tau_foo",
+    name: "Yong Tau Foo",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Yong Tau Foo",
+    aliases: [
+      "yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_jiao_cai_hotplate_bbq",
+    name: "Jiao Cai Hotplate BBQ",
+    emoji: "🦐",
+    type: "food_court_stall",
+    cuisine: "Hotplate BBQ Seafood",
+    aliases: [
+      "jiao cai hotplate bbq"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_ah_tan_crispy_chicken_har_cheong_gai",
+    name: "Ah Tan Crispy Chicken Har Cheong Gai",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Har Cheong Gai",
+    aliases: [
+      "ah tan crispy chicken har cheong gai"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_hua_hua_cooking_and_eating",
+    name: "Hua Hua Cooking & Eating",
+    emoji: "🍳",
+    type: "food_court_stall",
+    cuisine: "Hokkien Mee & Char Kway Teow",
+    aliases: [
+      "hua hua cooking & eating"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_munchi",
+    name: "Munchi",
+    emoji: "🥞",
+    type: "food_court_stall",
+    cuisine: "Pancakes",
+    aliases: [
+      "munchi"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "timbre_yishun_park_tuck_shop",
+    name: "Tuck Shop",
+    emoji: "🥤",
+    type: "food_court_stall",
+    cuisine: "Drinks Stall",
+    aliases: [
+      "tuck shop"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "timbre_plus_hawkers"
   }
 ];
 

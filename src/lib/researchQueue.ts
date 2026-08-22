@@ -7099,5 +7099,31 @@ export const RESEARCH_QUEUE = [
     priority: "medium",
     status: "pending",
     notes: "2026-08-23: new Operator added per user request. Fei Siong Group (feisionggroup.com.sg) turns out to also be the operator behind Hawkers' Street (already in this database as its own operator — not merged, since Hawkers' Street already has an established brand identity and 27 correctly-modeled stalls; treat as a sibling operator, not a rename). Fei Siong runs 3 more hawker centres, each with its own dedicated site: Ci Yuan Hawker Centre (ciyuanhawker.com.sg) — real success: its /our-stalls/ page is a plain Elementor-built list of all 38 stalls with unit number, English/Chinese name, cuisine tag, and hours; added 37 as Brand rows with operatorId: 'fei_siong' (dropped one bare 'Hot & Cold Drink Stall' generic per the same no-value-generic rule used for Kopitiam), all at the single Ci Yuan address (51 Hougang Ave 9, Singapore 538776) with per-unit addresses, geocoded once for the building. Woodleigh Village Hawker Centre (woodleighhawker.com.sg) — checked, genuinely nothing to add: the site itself says 'Our stall application period has closed. We will post future stall availability information here' — it hasn't opened yet, not a research gap. Buangkok Hawker Centre (buangkokhawker.com.sg) — returned a consistent HTTP 500 (empty body) across multiple retries with different headers; doesn't look like a WAF block (no challenge page), more likely a real server-side issue on their end — worth a retry in a future session rather than guessing content. Same macro gap as Kopitiam/Koufu applies — no MenuItems added for Ci Yuan's 37 stalls yet."
+  },
+  {
+    id: "bukit_canberra_hawker_centre",
+    name: "Bukit Canberra Hawker Centre",
+    aliases: [
+      "bukit canberra hawker centre",
+      "bukit canberra"
+    ],
+    type: "hawker",
+    cuisine: "Hawker Centre",
+    priority: "medium",
+    status: "pending",
+    notes: "2026-08-23: added per direct user request to apply the sitemap-discovery technique to independent NEA hawker centres, not just food-court chains. This venue already existed in premises.ts with 6 generic SFA-sourced stalls; its operator, Canopy Hawkers Group, runs its own site (bukitcanberrahc.sg, WordPress) whose 'portfolio_page' custom-post sitemap lists all 44 stalls as individual pages. Each page's <title> tag carries the real trading name; the URL slug is a stale cuisine-category label from when the post was first created and several no longer match the current tenant (e.g. slug 'porridge' -> title 'Teochew Fish Soup', slug 'indian-rojak' -> title 'Hock Kee Teochew Noodle', slug 'mixed-vegetarian-rice' -> title 'Al-usroh') — cuisine text and dietTags (halal/vegetarian) were derived from the stall's own name/title where the slug conflicted, not blindly trusted from the slug, to avoid mislabeling (especially diet claims). New Operator 'canopy_hawkers' added. 41 real Brand rows (2 'Coming Soon' units excluded), 42 Premises rows (Kopi Tan runs 2 adjacent units, #01-22 and #01-23) — all at 21 Canberra Link, Singapore 756973, geocoded once for the building with per-unit addresses. Same macro gap as every other batch — no MenuItems added yet."
+  },
+  {
+    id: "yishun_park_hawker_centre",
+    name: "Yishun Park Hawker Centre",
+    aliases: [
+      "yishun park hawker centre",
+      "yishun park"
+    ],
+    type: "hawker",
+    cuisine: "Hawker Centre",
+    priority: "medium",
+    status: "pending",
+    notes: "2026-08-23: same pass as Bukit Canberra. This venue already existed in premises.ts with 6 generic SFA-sourced stalls; its own site (yishunparkhc.sg, WordPress) has a 'hawkers' custom-post sitemap listing 34 stall pages. Unlike Bukit Canberra, 9 of those slugs cleanly 302-redirect to the homepage instead of serving stale content — read as retired/renamed stalls and excluded rather than guessed (no content-mismatch risk here, WordPress is doing the right thing by redirecting unpublished posts). The remaining 25 pages each have a real trading name plus a 'name / cuisine / #unit' block in the page body (cuisine phrasing here is the operator's own, not slug-derived, so trusted directly — no equivalent mismatch problem as Bukit Canberra). New Operator 'timbre_plus_hawkers' added rather than reusing 'canopy_hawkers': the site's own branding throughout is Timbre+ Hawkers Pte Ltd (nav says 'Timbre App', footer contact is @timbregroup.asia) even though news coverage reports Canopy Hawkers Group taking over operations from Jul 2026 — sourced what the site itself says rather than the reported handover; worth revisiting if/when the site itself updates. 25 real Brand rows, 27 Premises rows (XinLongXing Modern Tze Char spans 3 adjacent units, #01-28/29/30) — all at 51 Yishun Avenue 11, Singapore 768867, geocoded once for the building with per-unit addresses. One Punggol Hawker Centre (onepunggolhc.sg), also ex-Timbre+ with the same sitemap pattern (31 stall slugs), was NOT completed — every individual stall page inconsistently 302-redirects to its homepage regardless of headers/cookies/referer tried (one attempt with a test cookie returned 200 once, but was not reproducible on retry) — flagged for a future attempt, possibly via browser automation instead of raw curl. Same macro gap as every other batch — no MenuItems added yet."
   }
 ];
