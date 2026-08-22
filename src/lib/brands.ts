@@ -70,6 +70,20 @@
 // a consistent HTTP 500 across retries - not a WAF block, likely a real outage on their end - revisit
 // later. Banquet (the old halal food-court chain) was confirmed defunct/absorbed into Kopitiam's
 // "Bagus" format - see reference/research-sessions/2026-08-23-other-food-court-operators.md.
+// 2026-08-23 (2nd pass): went back to Koufu's remaining sub-brands by following real links from
+// koufu.com.sg/our-brands/food-halls/ instead of guessing URL slugs. Confirmed The Kitchen / The
+// Green Hut do not exist anywhere in Koufu's current official brand taxonomy (checked all 4
+// categories: food-halls, concept-stores, cafe-restaurants, shopping-mall) - not added, likely a
+// mistaken assumption from an earlier pass. Found and added 3 more real standalone Koufu Group
+// food-hall concepts, each server-rendered with a real "Our Outlet" address list, same no-operatorId
+// pattern as the earlier 8: koufu_cookhouse (4 outlets), koufu_rasapura_masters (1 outlet, Marina Bay
+// Sands), koufu_gourmet_paradise (4 outlets) - 9 more geocoded premises. Deliberately did NOT add the
+// flagship "Koufu" brand itself (36 addresses found on its own /our-brands/food-halls/koufu/ page) -
+// that's the same generic food-court-venue-as-mega-brand shape already tried and reverted for
+// Kopitiam/Koufu/Foodfare in the 2026-08-22c restructure (one venue, many unrelated stalls inside,
+// not one orderable thing) - the addresses are real but adding them as a Brand would repeat a known
+// mistake. Elemen (elemengroup.com.sg) is genuinely JS-rendered (Squarespace) with no static address
+// data on its /locations page - left unresolved.
 
 export const BRANDS_1 = [
   {
@@ -26856,6 +26870,54 @@ export const BRANDS_4 = [
       "dine_in"
     ],
     operatorId: "fei_siong"
+  },
+  {
+    id: "koufu_cookhouse",
+    name: "Cookhouse",
+    emoji: "🍛",
+    type: "restaurant",
+    cuisine: "Local Food Hall",
+    aliases: [
+      "cookhouse"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_rasapura_masters",
+    name: "Rasapura Masters",
+    emoji: "🍢",
+    type: "restaurant",
+    cuisine: "Hawker Food Hall",
+    aliases: [
+      "rasapura masters",
+      "rasapura master"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "koufu_gourmet_paradise",
+    name: "Gourmet Paradise",
+    emoji: "🍲",
+    type: "restaurant",
+    cuisine: "Local Food Hall",
+    aliases: [
+      "gourmet paradise"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
   }
 ];
 
