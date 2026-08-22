@@ -14776,5 +14776,119 @@ export const MENU_ITEMS = [
     ],
     confidence: "estimated",
     isPopular: true
+  },
+  {
+    id: "bengawan_solo_kueh_salat",
+    brandId: "bengawan_solo",
+    name: "Kueh Salat",
+    emoji: "🍡",
+    category: "Kueh",
+    price: 1.6,
+    calories: 171,
+    protein: 3,
+    carbs: 26,
+    fat: 6,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "community",
+    isPopular: true
+  },
+  {
+    id: "bengawan_solo_lapis_sagu",
+    brandId: "bengawan_solo",
+    name: "Lapis Sagu",
+    emoji: "🍮",
+    category: "Kueh",
+    price: 1.5,
+    calories: 40,
+    protein: 0,
+    carbs: 8,
+    fat: 1,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "bengawan_solo_ondeh_ondeh",
+    brandId: "bengawan_solo",
+    name: "Ondeh-Ondeh",
+    emoji: "🟢",
+    category: "Kueh",
+    price: 0.7,
+    calories: 60,
+    protein: 1,
+    carbs: 10,
+    fat: 2,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "community"
+  },
+  {
+    id: "bengawan_solo_kueh_kosui",
+    brandId: "bengawan_solo",
+    name: "Kueh Kosui",
+    emoji: "🍥",
+    category: "Kueh",
+    price: 0.6,
+    calories: 91,
+    protein: 0,
+    carbs: 20,
+    fat: 1,
+    compatibleWith: [
+      "vegetarian",
+      "vegan"
+    ],
+    confidence: "community"
+  },
+  {
+    id: "bengawan_solo_egg_tart",
+    brandId: "bengawan_solo",
+    name: "Egg Tart",
+    emoji: "🥧",
+    category: "Tarts",
+    price: 1.8,
+    calories: 193,
+    protein: 4,
+    carbs: 18,
+    fat: 12,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "community"
+  },
+  {
+    id: "bengawan_solo_kueh_angku_mung_bean",
+    brandId: "bengawan_solo",
+    name: "Kueh Angku (Mung Bean)",
+    emoji: "🟥",
+    category: "Kueh",
+    price: 1.5,
+    calories: 156,
+    protein: 3,
+    carbs: 28,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian",
+      "vegan"
+    ],
+    confidence: "community"
+  },
+  {
+    id: "bengawan_solo_lemper_udang",
+    brandId: "bengawan_solo",
+    name: "Lemper Udang",
+    emoji: "🍙",
+    category: "Savoury Kueh",
+    price: 1.9,
+    calories: 100,
+    protein: 3,
+    carbs: 15,
+    fat: 3,
+    compatibleWith: [],
+    confidence: "estimated"
   }
 ];

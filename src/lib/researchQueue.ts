@@ -69,7 +69,7 @@ export const RESEARCH_QUEUE = [
     type: "grab_go",
     cuisine: "Nyonya Kueh",
     priority: "low",
-    status: "pending"
+    status: "researched"
   },
   {
     id: "swensen_s",

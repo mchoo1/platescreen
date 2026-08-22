@@ -12650,5 +12650,21 @@ export const BRANDS = [
       "dine_in",
       "grab_go"
     ]
+  },
+  {
+    id: "bengawan_solo",
+    name: "Bengawan Solo",
+    emoji: "🍰",
+    type: "grab_go",
+    cuisine: "Nyonya Kueh",
+    aliases: [
+      "bengawan solo"
+    ],
+    dietTags: [],
+    priceRange: "$$",
+    platforms: [
+      "grab_go",
+      "delivery"
+    ]
   }
 ];
