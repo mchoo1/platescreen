@@ -141,9 +141,9 @@ export const RESEARCH_QUEUE = [
     ],
     type: "food_court",
     cuisine: "Food Court",
-    priority: "high",
+    priority: "low",
     status: "pending",
-    notes: "2026-08-22: status corrected from 'researched' to 'pending' — the 9 'representative dishes' this entry claimed to have added 2026-08-13 (generic HPB/NutriKaki-style estimates not tied to any named stall, same fabrication pattern as Foodfare's) are not present in the current brands.ts (Banquet currently has no Brand row at all, i.e. they were already removed in an earlier cleanup). Real work needed: same Operator restructure as Kopitiam/Koufu/Foodfare — find Banquet's real venue addresses (Jurong Point, Woodlands Square, VivoCity per operator listings, not yet SFA-matched or added to food-court-venues.json), then find and add named concessions inside each as their own Brand with operatorId: 'banquet'. Do not add a single 'Banquet' mega-Brand."
+    notes: "2026-08-22: status corrected from 'researched' to 'pending' — the 9 'representative dishes' this entry claimed to have added 2026-08-13 (generic HPB/NutriKaki-style estimates not tied to any named stall, same fabrication pattern as Foodfare's) are not present in the current brands.ts (Banquet currently has no Brand row at all, i.e. they were already removed in an earlier cleanup). Real work needed: same Operator restructure as Kopitiam/Koufu/Foodfare — find Banquet's real venue addresses (Jurong Point, Woodlands Square, VivoCity per operator listings, not yet SFA-matched or added to food-court-venues.json), then find and add named concessions inside each as their own Brand with operatorId: 'banquet'. Do not add a single 'Banquet' mega-Brand. UPDATE 2026-08-23: web search confirms Banquet is a defunct halal food-court chain (widely reported bankrupt/closed years ago) — several of its former locations (e.g. the VivoCity #B2-39 unit referenced here) are now operating as 'Bagus' / 'Bagus Food Hall', which is a Kopitiam house-brand format already captured as part of the 839-stall Kopitiam scrape (see brands.ts 2026-08-22e/f notes) under venue names like 'Bagus Food Hall @ Northpoint City'. Priority dropped to low — this is very likely fully superseded by the Kopitiam data rather than a real gap; only worth revisiting if a specific still-independent Banquet-branded location turns up."
   },
   {
     id: "ok_convenience",
@@ -7070,5 +7070,34 @@ export const RESEARCH_QUEUE = [
     priority: "medium",
     status: "pending",
     notes: "Outlet row already exists (Brand + 1 Premises added from hawkersstreet.com.sg/brands/, 2026-08-21) — only menu items/macros (MenuItem records) are needed. hawkersstreet.com.sg's own brand page has a description and signature-dish mentions that can anchor research, but no prices/macros — verify independently, don't infer macros from the marketing copy alone."
+  },
+  {
+    id: "food_junction",
+    name: "Food Junction",
+    aliases: [
+      "food junction",
+      "the food market",
+      "the food place"
+    ],
+    type: "food_court",
+    cuisine: "Food Court",
+    priority: "medium",
+    status: "pending",
+    notes: "2026-08-23: new Operator (BreadTalk Group's food-court chain, foodjunction.com) added per user request to cover food-court operators beyond Kopitiam/Koufu/Foodfare/Hawkers' Street. Its /outlets/ page is a plain static list of 8 Singapore venues (Labrador Tower, Century Square [as 'The Food Market'], Great World, Junction 8, Lot One, NEX, Rivervale Mall, Westgate) plus 1 in Malaysia (excluded). Its /our-brands/ page directly names 4 house-brand concessions with their dish highlights AND which specific venues each is at: Go Teppan Go (NEX, Junction 8, Century Square, Raffles City — this last venue isn't on the /outlets/ list at all, a gap in their own site), Toast Junction (NEX, Rivervale Mall, Great World, Century Square), Ke/Quench (Junction 8), Fireyaki (venue tag missing from the source page for this one brand only — confirmed via foodpanda instead: Junction 8). Added all 4 as Brand rows with operatorId: 'food_junction', 10 premises total, real addresses geocoded via OneMap ('Raffles City' used the mall's general address since no specific unit was published). Remaining work: the site's own outlets almost certainly have other, non-house-brand named concessions inside them (same situation as Kopitiam before its stall-sitemap breakthrough) — no equivalent bulk data source found yet for Food Junction; would need per-venue research (Google Maps/on-site) rather than another lucky sitemap. Same macro gap as Kopitiam/Koufu applies — no MenuItems added."
+  },
+  {
+    id: "fei_siong",
+    name: "Fei Siong Group",
+    aliases: [
+      "fei siong",
+      "fei siong group",
+      "fei siong social enterprise",
+      "fsse"
+    ],
+    type: "food_court",
+    cuisine: "Hawker Centre",
+    priority: "medium",
+    status: "pending",
+    notes: "2026-08-23: new Operator added per user request. Fei Siong Group (feisionggroup.com.sg) turns out to also be the operator behind Hawkers' Street (already in this database as its own operator — not merged, since Hawkers' Street already has an established brand identity and 27 correctly-modeled stalls; treat as a sibling operator, not a rename). Fei Siong runs 3 more hawker centres, each with its own dedicated site: Ci Yuan Hawker Centre (ciyuanhawker.com.sg) — real success: its /our-stalls/ page is a plain Elementor-built list of all 38 stalls with unit number, English/Chinese name, cuisine tag, and hours; added 37 as Brand rows with operatorId: 'fei_siong' (dropped one bare 'Hot & Cold Drink Stall' generic per the same no-value-generic rule used for Kopitiam), all at the single Ci Yuan address (51 Hougang Ave 9, Singapore 538776) with per-unit addresses, geocoded once for the building. Woodleigh Village Hawker Centre (woodleighhawker.com.sg) — checked, genuinely nothing to add: the site itself says 'Our stall application period has closed. We will post future stall availability information here' — it hasn't opened yet, not a research gap. Buangkok Hawker Centre (buangkokhawker.com.sg) — returned a consistent HTTP 500 (empty body) across multiple retries with different headers; doesn't look like a WAF block (no challenge page), more likely a real server-side issue on their end — worth a retry in a future session rather than guessing content. Same macro gap as Kopitiam/Koufu applies — no MenuItems added for Ci Yuan's 37 stalls yet."
   }
 ];

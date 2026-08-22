@@ -55,6 +55,21 @@
 // real storefront with real prices — captured in reference/data/koufu-family-dishes.json (24 items,
 // no macros, same gap as Kopitiam) for a future research pass. The Kitchen / The Green Hut /
 // Rasapura Master still need their real koufu.com.sg URLs (guessed slugs 404'd) — not attempted here.
+// 2026-08-23: expanded beyond Kopitiam/Koufu/Foodfare/Hawkers' Street per user request to cover
+// other major SG food-court/hawker-centre operators. Added new Operator `food_junction` (BreadTalk
+// Group's food-court chain - 4 named house-brand concessions found on its own "Our Brands" page:
+// Go Teppan Go, Toast Junction, Ke/Quench, Fireyaki - 10 premises across its Singapore venues,
+// Fireyaki's specific venue confirmed via foodpanda since the source page's own venue tag was
+// missing for that one brand). Added new Operator `fei_siong` (Fei Siong Group, which also turns
+// out to be the operator behind Hawkers' Street) - found real per-stall data for one of its 3
+// hawker-centre sub-sites: Ci Yuan Hawker Centre (ciyuanhawker.com.sg) has a plain "Our Stalls" page
+// with 38 real named stalls (unit, name, cuisine, hours) - 37 added after dropping one bare "Hot &
+// Cold Drink Stall" generic. Woodleigh Village Hawker Centre's site confirms it hasn't opened yet
+// ("stall application period has closed... will post future stall availability") - correctly
+// nothing to add, not a research gap. Buangkok Hawker Centre's site (buangkokhawker.com.sg) returned
+// a consistent HTTP 500 across retries - not a WAF block, likely a real outage on their end - revisit
+// later. Banquet (the old halal food-court chain) was confirmed defunct/absorbed into Kopitiam's
+// "Bagus" format - see reference/research-sessions/2026-08-23-other-food-court-operators.md.
 
 export const BRANDS_1 = [
   {
@@ -26185,6 +26200,662 @@ export const BRANDS_4 = [
     platforms: [
       "grab_go"
     ]
+  },
+  {
+    id: "food_junction_go_teppan_go",
+    name: "Go Teppan Go",
+    emoji: "🍳",
+    type: "food_court_stall",
+    cuisine: "Teppanyaki",
+    aliases: [
+      "go teppan go"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "food_junction"
+  },
+  {
+    id: "food_junction_toast_junction",
+    name: "Toast Junction",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffeeshop Fare",
+    aliases: [
+      "toast junction"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "food_junction"
+  },
+  {
+    id: "food_junction_ke_quench",
+    name: "Ke/Quench",
+    emoji: "🥤",
+    type: "food_court_stall",
+    cuisine: "Drinks/Dessert",
+    aliases: [
+      "ke/quench"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "food_junction"
+  },
+  {
+    id: "food_junction_fireyaki",
+    name: "Fireyaki",
+    emoji: "🍳",
+    type: "food_court_stall",
+    cuisine: "Teppanyaki",
+    aliases: [
+      "fireyaki"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "food_junction"
+  },
+  {
+    id: "fei_siong_mei_shi_quan",
+    name: "Mei Shi Quan",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Fried Kway Teow / Carrot Cake",
+    aliases: [
+      "mei shi quan"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_ah_koon_authentic_hainanese_chicken_rice",
+    name: "Ah Koon Authentic Hainanese Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice",
+    aliases: [
+      "ah koon authentic hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_hk_wanton_noodle",
+    name: "HK Wanton Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Wanton Noodle",
+    aliases: [
+      "hk wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_teochew_handmade_fishball_noodle",
+    name: "Teochew Handmade Fishball Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Fishball Noodle",
+    aliases: [
+      "teochew handmade fishball noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_yi_mee_hoon_kueh",
+    name: "Yi Mee Hoon Kueh",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Handmade Noodle",
+    aliases: [
+      "yi mee hoon kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_nam_kee_pau",
+    name: "Nam Kee Pau",
+    emoji: "🥟",
+    type: "food_court_stall",
+    cuisine: "Traditional Handmade Pau",
+    aliases: [
+      "nam kee pau"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_yi_wang_herbal_soup",
+    name: "Yi Wang Herbal Soup",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Herbal Soup / Steam Rice",
+    aliases: [
+      "yi wang herbal soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_chang_cheng",
+    name: "Chang Cheng",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Mixed Veg Rice",
+    aliases: [
+      "chang cheng"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_yew_kee_duck_rice",
+    name: "Yew Kee Duck Rice",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Braised Duck Rice",
+    aliases: [
+      "yew kee duck rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_jue_dai_lor_mee",
+    name: "Jue Dai Lor Mee",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Lor Mee",
+    aliases: [
+      "jue dai lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_indo_rampai",
+    name: "Indo Rampai",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indonesian Cuisine / Indian Fusion",
+    aliases: [
+      "indo rampai"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_teochew_fish_soup_fish_porridge",
+    name: "Teochew Fish Soup Fish Porridge",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Fish Soup / Fish Porridge",
+    aliases: [
+      "teochew fish soup fish porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_changi_village_fried_hokkien_mee",
+    name: "Changi Village Fried Hokkien Mee",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Fried Prawn Mee",
+    aliases: [
+      "changi village fried hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_unnamed",
+    name: "文冬口茶餐室",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Ipoh Buntong Tea House Yong Tau Foo",
+    aliases: [
+      "文冬口茶餐室"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_jade_s_kitchen",
+    name: "Jade's Kitchen",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Korean Fried Chicken",
+    aliases: [
+      "jade's kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_soya_bean_you_tiao",
+    name: "Soya Bean You Tiao",
+    emoji: "🥯",
+    type: "food_court_stall",
+    cuisine: "You Tiao / Soya Bean",
+    aliases: [
+      "soya bean you tiao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_xing_zai_mushroom_minced_meat_noodle",
+    name: "Xing Zai Mushroom Minced Meat Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Minced Meat Noodle",
+    aliases: [
+      "xing zai mushroom minced meat noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_yong_hk_roasted_meat",
+    name: "Yong HK Roasted Meat",
+    emoji: "🦆",
+    type: "food_court_stall",
+    cuisine: "Roast Duck / Pork / Char Siew",
+    aliases: [
+      "yong hk roasted meat"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_hong_kong_chef_s_kitchen",
+    name: "Hong Kong Chef's Kitchen",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Zi Char",
+    aliases: [
+      "hong kong chef's kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_kismet_dessert",
+    name: "Kismet Dessert",
+    emoji: "🍧",
+    type: "food_court_stall",
+    cuisine: "Cendol / Ice Kacang / Tau Suan",
+    aliases: [
+      "kismet dessert"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_xiang_guo_shi_dai",
+    name: "Xiang Guo Shi Dai",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Mala / Grilled Fish",
+    aliases: [
+      "xiang guo shi dai"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_next_western_station",
+    name: "Next Western Station",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western cuisine",
+    aliases: [
+      "next western station"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_hainanese_curry_rice",
+    name: "Hainanese Curry Rice",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Curry Rice",
+    aliases: [
+      "hainanese curry rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_traditional_prawn_noodle",
+    name: "Traditional Prawn Noodle",
+    emoji: "🐟",
+    type: "food_court_stall",
+    cuisine: "Prawn Noodle / Pork Ribs Noodle",
+    aliases: [
+      "traditional prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_hong_kong_cheong_fun_sha_tin_chicken_porridge",
+    name: "Hong Kong Cheong Fun Sha Tin Chicken Porridge",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chee Cheong Fun / Porridge",
+    aliases: [
+      "hong kong cheong fun sha tin chicken porridge"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_leo_satay",
+    name: "Leo Satay",
+    emoji: "🍢",
+    type: "food_court_stall",
+    cuisine: "Satay",
+    aliases: [
+      "leo satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_culture_juicing",
+    name: "Culture Juicing",
+    emoji: "🍽️",
+    type: "food_court_stall",
+    cuisine: "Cut Fruits / Fruit Juice",
+    aliases: [
+      "culture juicing"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_shu_shi_piao_xiang_vegetarian",
+    name: "Shu Shi Piao Xiang Vegetarian",
+    emoji: "🥦",
+    type: "food_court_stall",
+    cuisine: "Vegetarian Food",
+    aliases: [
+      "shu shi piao xiang vegetarian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_traditional_coffee_and_toast",
+    name: "Traditional Coffee & Toast",
+    emoji: "☕",
+    type: "food_court_stall",
+    cuisine: "Coffee / Tea / Toast Bread",
+    aliases: [
+      "traditional coffee & toast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_kitchen_work",
+    name: "Kitchen@Work",
+    emoji: "🍱",
+    type: "food_court_stall",
+    cuisine: "Japanese Cuisine",
+    aliases: [
+      "kitchen@work"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_alishan_nasi_lemak",
+    name: "Alishan Nasi Lemak",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Nasi Lemak",
+    aliases: [
+      "alishan nasi lemak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_shu_xiang_kitchen",
+    name: "Shu Xiang Kitchen",
+    emoji: "🥟",
+    type: "food_court_stall",
+    cuisine: "Xiao Long Bao / Fried Dumpling",
+    aliases: [
+      "shu xiang kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_ipoh_cuisine",
+    name: "Ipoh Cuisine",
+    emoji: "🥟",
+    type: "food_court_stall",
+    cuisine: "Dim Sum",
+    aliases: [
+      "ipoh cuisine"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_munchies_pancake",
+    name: "Munchies Pancake",
+    emoji: "🍧",
+    type: "food_court_stall",
+    cuisine: "Pancake",
+    aliases: [
+      "munchies pancake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_nasi_lemak_ayam_taliwang",
+    name: "Nasi Lemak Ayam Taliwang",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Fried Chicken Nasi Lemak",
+    aliases: [
+      "nasi lemak ayam taliwang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_daun_pisang",
+    name: "Daun Pisang",
+    emoji: "🍚",
+    type: "food_court_stall",
+    cuisine: "Nasi Padang",
+    aliases: [
+      "daun pisang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
+  },
+  {
+    id: "fei_siong_dharsha_indian_food",
+    name: "Dharsha Indian Food",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Roti Prata / Mee Goreng",
+    aliases: [
+      "dharsha indian food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ],
+    operatorId: "fei_siong"
   }
 ];
 
