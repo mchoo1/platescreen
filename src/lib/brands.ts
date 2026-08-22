@@ -2,6 +2,12 @@
 // and reference/migration-scripts/ for the restructure this replaced (Outlet -> Brand+Premises).
 // Untyped literal export (see Brand in types/db.ts) — screener.ts casts once at the boundary,
 // matching the outlets.ts/foodOptions.ts convention (avoids TS2590 on a large array literal).
+// 2026-08-22: renamed 56 generic dish-type-placeholder brands (e.g. "Roti Prata Stall (Tekka
+// Market)") to real, independently-verified stall names across 9 hawker centres, and added 2 new
+// real stalls (split from a single generic Tekka prata slot into its 3 actual named vendors,
+// matching the worked example the user supplied). See
+// reference/research-sessions/2026-08-22-generic-name-cleanup.md for sourcing and the still-open
+// list of entries not yet resolved to a specific real stall.
 
 export const BRANDS = [
   {
@@ -1203,13 +1209,14 @@ export const BRANDS = [
   },
   {
     id: "maxwell_wonton_mee",
-    name: "Wonton Mee (Maxwell FC)",
+    name: "Fu Ji Fuzhou Fish Ball Wanton Noodles",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "maxwell wonton mee",
-      "wonton mee maxwell"
+      "wonton mee maxwell",
+      "fu ji fuzhou fish ball wanton noodles"
     ],
     dietTags: [
       "lactose_free"
@@ -1222,12 +1229,13 @@ export const BRANDS = [
   },
   {
     id: "maxwell_laksa",
-    name: "Laksa Stall (Maxwell FC)",
+    name: "Sungei Road Laksa",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
-      "maxwell laksa"
+      "maxwell laksa",
+      "sungei road laksa"
     ],
     dietTags: [
       "lactose_free"
@@ -1240,13 +1248,14 @@ export const BRANDS = [
   },
   {
     id: "maxwell_char_kway_teow",
-    name: "Char Kway Teow (Maxwell FC)",
+    name: "Marina South Delicious Food",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "maxwell char kway teow",
-      "maxwell ckt"
+      "maxwell ckt",
+      "marina south delicious food"
     ],
     dietTags: [
       "lactose_free"
@@ -1259,12 +1268,13 @@ export const BRANDS = [
   },
   {
     id: "maxwell_popiah",
-    name: "Popiah Stall (Maxwell FC)",
+    name: "Rojak, Popiah & Cockle",
     emoji: "🌯",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
-      "maxwell popiah"
+      "maxwell popiah",
+      "rojak, popiah & cockle"
     ],
     dietTags: [
       "vegetarian",
@@ -1297,13 +1307,14 @@ export const BRANDS = [
   },
   {
     id: "maxwell_oyster_omelette",
-    name: "Oyster Omelette (Maxwell FC)",
+    name: "Marina South Delicious Food",
     emoji: "🦪",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "maxwell oyster omelette",
-      "maxwell orh luak"
+      "maxwell orh luak",
+      "marina south delicious food"
     ],
     dietTags: [
       "lactose_free"
@@ -1316,12 +1327,13 @@ export const BRANDS = [
   },
   {
     id: "maxwell_rojak",
-    name: "Rojak (Maxwell FC)",
+    name: "Rojak, Popiah & Cockle",
     emoji: "🥗",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
-      "maxwell rojak"
+      "maxwell rojak",
+      "rojak, popiah & cockle"
     ],
     dietTags: [
       "vegetarian",
@@ -1336,14 +1348,15 @@ export const BRANDS = [
   },
   {
     id: "maxwell_drinks_desserts",
-    name: "Desserts & Drinks (Maxwell FC)",
+    name: "Lao Ban Soya Beancurd",
     emoji: "☕",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "maxwell kopi",
       "maxwell drinks",
-      "maxwell tau huay"
+      "maxwell tau huay",
+      "lao ban soya beancurd"
     ],
     dietTags: [
       "vegetarian",
@@ -1357,14 +1370,15 @@ export const BRANDS = [
   },
   {
     id: "lau_pa_sat_satay_street",
-    name: "Satay Street (Lau Pa Sat)",
+    name: "Best Satay 7 & 8",
     emoji: "🍢",
     type: "hawker",
     cuisine: "Satay",
     aliases: [
       "lau pa sat satay",
       "satay street",
-      "lps satay"
+      "lps satay",
+      "best satay 7 & 8"
     ],
     dietTags: [
       "halal",
@@ -1379,13 +1393,14 @@ export const BRANDS = [
   },
   {
     id: "lau_pa_sat_oyster_omelette",
-    name: "Oyster Omelette (Lau Pa Sat)",
+    name: "Golden Shoe Hokkien Mee",
     emoji: "🦪",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "lau pa sat oyster omelette",
-      "lps orh luak"
+      "lps orh luak",
+      "golden shoe hokkien mee"
     ],
     dietTags: [
       "lactose_free"
@@ -1441,13 +1456,14 @@ export const BRANDS = [
   },
   {
     id: "lau_pa_sat_prawn_noodles",
-    name: "Prawn Noodles (Lau Pa Sat)",
+    name: "Seng Kee Local Delights",
     emoji: "🦐",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "lau pa sat prawn noodles",
-      "lps prawn mee"
+      "lps prawn mee",
+      "seng kee local delights"
     ],
     dietTags: [
       "lactose_free"
@@ -1460,13 +1476,14 @@ export const BRANDS = [
   },
   {
     id: "lau_pa_sat_bak_chor_mee",
-    name: "Bak Chor Mee (Lau Pa Sat)",
+    name: "LiXin Teochew Fishball Noodles",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "lau pa sat bak chor mee",
-      "lps bcm"
+      "lps bcm",
+      "lixin teochew fishball noodles"
     ],
     dietTags: [
       "lactose_free"
@@ -1502,13 +1519,14 @@ export const BRANDS = [
   },
   {
     id: "lau_pa_sat_rojak",
-    name: "Rojak (Lau Pa Sat)",
+    name: "Sister's Rojak",
     emoji: "🥗",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "lau pa sat rojak",
-      "lps rojak"
+      "lps rojak",
+      "sister's rojak"
     ],
     dietTags: [
       "vegetarian",
@@ -1681,13 +1699,14 @@ export const BRANDS = [
   },
   {
     id: "newton_satay_stall",
-    name: "Satay Stall (Newton FC)",
+    name: "TKR Satay",
     emoji: "🍢",
     type: "hawker",
     cuisine: "Satay",
     aliases: [
       "newton satay",
-      "newton food centre satay"
+      "newton food centre satay",
+      "tkr satay"
     ],
     dietTags: [
       "halal",
@@ -1702,7 +1721,7 @@ export const BRANDS = [
   },
   {
     id: "newton_bbq_seafood",
-    name: "BBQ Seafood (Newton FC)",
+    name: "Alliance Seafood",
     emoji: "🐟",
     type: "hawker",
     cuisine: "Seafood",
@@ -1710,7 +1729,8 @@ export const BRANDS = [
       "newton bbq",
       "newton stingray",
       "newton seafood",
-      "newton bbq wings"
+      "newton bbq wings",
+      "alliance seafood"
     ],
     dietTags: [
       "lactose_free"
@@ -1723,13 +1743,14 @@ export const BRANDS = [
   },
   {
     id: "newton_hokkien_mee",
-    name: "Hokkien Mee (Newton FC)",
+    name: "Newton Old Signboard 25",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "newton hokkien mee",
-      "newton fc hokkien"
+      "newton fc hokkien",
+      "newton old signboard 25"
     ],
     dietTags: [
       "lactose_free"
@@ -1742,13 +1763,14 @@ export const BRANDS = [
   },
   {
     id: "newton_prawn_noodles",
-    name: "Prawn Noodles (Newton FC)",
+    name: "Newton Tian Xiang Big Prawn Noodle",
     emoji: "🦐",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "newton prawn noodles",
-      "newton prawn mee"
+      "newton prawn mee",
+      "newton tian xiang big prawn noodle"
     ],
     dietTags: [
       "lactose_free"
@@ -1761,13 +1783,14 @@ export const BRANDS = [
   },
   {
     id: "newton_oyster_omelette",
-    name: "Oyster Omelette (Newton FC)",
+    name: "Hai Yan BBQ Seafood",
     emoji: "🦪",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "newton oyster omelette",
-      "newton orh luak"
+      "newton orh luak",
+      "hai yan bbq seafood"
     ],
     dietTags: [
       "lactose_free"
@@ -1780,12 +1803,13 @@ export const BRANDS = [
   },
   {
     id: "newton_carrot_cake",
-    name: "Carrot Cake (Newton FC)",
+    name: "Heng Carrot Cake",
     emoji: "🍳",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
-      "newton carrot cake"
+      "newton carrot cake",
+      "heng carrot cake"
     ],
     dietTags: [
       "vegetarian",
@@ -1818,13 +1842,14 @@ export const BRANDS = [
   },
   {
     id: "newton_drinks_stall",
-    name: "Drinks Stall (Newton FC)",
+    name: "88 San Ren Cold & Hot Dessert",
     emoji: "☕",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "newton kopi",
-      "newton drinks"
+      "newton drinks",
+      "88 san ren cold & hot dessert"
     ],
     dietTags: [
       "halal",
@@ -1839,14 +1864,15 @@ export const BRANDS = [
   },
   {
     id: "cc_roast_meats_stall",
-    name: "Roast Meats (Chinatown Complex)",
+    name: "Hawker Chan (Liao Fan Hong Kong Soya Sauce Chicken Rice & Noodle)",
     emoji: "🦆",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "chinatown roast duck",
       "chinatown complex roast",
-      "cc roast meats"
+      "cc roast meats",
+      "hawker chan (liao fan hong kong soya sauce chicken rice & noodle)"
     ],
     dietTags: [
       "lactose_free"
@@ -1859,13 +1885,14 @@ export const BRANDS = [
   },
   {
     id: "cc_claypot_rice_stall",
-    name: "Claypot Rice (Chinatown Complex)",
+    name: "Lian He Ben Ji Claypot Rice",
     emoji: "🍚",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "chinatown claypot rice",
-      "cc claypot"
+      "cc claypot",
+      "lian he ben ji claypot rice"
     ],
     dietTags: [
       "lactose_free"
@@ -1878,13 +1905,14 @@ export const BRANDS = [
   },
   {
     id: "cc_kway_chap_stall",
-    name: "Kway Chap (Chinatown Complex)",
+    name: "Jin Ji Teochew Braised Duck & Kway Chap",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "chinatown kway chap",
-      "cc kway chap"
+      "cc kway chap",
+      "jin ji teochew braised duck & kway chap"
     ],
     dietTags: [
       "lactose_free"
@@ -1897,13 +1925,14 @@ export const BRANDS = [
   },
   {
     id: "cc_wonton_mee_stall",
-    name: "Wonton Mee (Chinatown Complex)",
+    name: "Zhong Guo La Mian Xiao Long Bao",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "chinatown wonton mee",
-      "cc wonton mee"
+      "cc wonton mee",
+      "zhong guo la mian xiao long bao"
     ],
     dietTags: [
       "lactose_free"
@@ -2017,13 +2046,14 @@ export const BRANDS = [
   },
   {
     id: "cc_kopi_stall",
-    name: "Kopi Stall (Chinatown Complex)",
+    name: "The 1950's Coffee",
     emoji: "☕",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "chinatown complex kopi",
-      "cc kopi"
+      "cc kopi",
+      "the 1950's coffee"
     ],
     dietTags: [
       "halal",
@@ -2038,14 +2068,15 @@ export const BRANDS = [
   },
   {
     id: "tekka_prata_stall",
-    name: "Roti Prata Stall (Tekka Market)",
+    name: "Syed Mee & Prata Place",
     emoji: "🫓",
     type: "hawker",
     cuisine: "Indian",
     aliases: [
       "tekka prata",
       "tekka roti prata",
-      "little india prata"
+      "little india prata",
+      "syed mee & prata place"
     ],
     dietTags: [
       "halal",
@@ -2059,14 +2090,15 @@ export const BRANDS = [
   },
   {
     id: "tekka_thosai_stall",
-    name: "Thosai & Vadai Stall (Tekka)",
+    name: "Zam Zam Muslim Food",
     emoji: "🫓",
     type: "hawker",
     cuisine: "Indian",
     aliases: [
       "tekka thosai",
       "tekka vadai",
-      "little india thosai"
+      "little india thosai",
+      "zam zam muslim food"
     ],
     dietTags: [
       "halal",
@@ -2082,13 +2114,14 @@ export const BRANDS = [
   },
   {
     id: "tekka_murtabak_stall",
-    name: "Murtabak Stall (Tekka Market)",
+    name: "Allauddin's (Prata & Murtabak Stall)",
     emoji: "🫓",
     type: "hawker",
     cuisine: "Indian",
     aliases: [
       "tekka murtabak",
-      "little india murtabak"
+      "little india murtabak",
+      "allauddin's (prata & murtabak stall)"
     ],
     dietTags: [
       "halal"
@@ -2101,14 +2134,15 @@ export const BRANDS = [
   },
   {
     id: "tekka_briyani_stall",
-    name: "Nasi Briyani (Tekka Market)",
+    name: "Allauddin's Briyani",
     emoji: "🍛",
     type: "hawker",
     cuisine: "Indian",
     aliases: [
       "tekka briyani",
       "tekka nasi briyani",
-      "little india briyani"
+      "little india briyani",
+      "allauddin's briyani"
     ],
     dietTags: [
       "halal",
@@ -2123,14 +2157,15 @@ export const BRANDS = [
   },
   {
     id: "tekka_nasi_lemak_stall",
-    name: "Nasi Lemak & Lontong (Tekka)",
+    name: "Siti Rodiah Nasi Padang",
     emoji: "🍛",
     type: "hawker",
     cuisine: "Malay",
     aliases: [
       "tekka nasi lemak",
       "tekka lontong",
-      "little india nasi lemak"
+      "little india nasi lemak",
+      "siti rodiah nasi padang"
     ],
     dietTags: [
       "halal",
@@ -2164,12 +2199,13 @@ export const BRANDS = [
   },
   {
     id: "tekka_rojak_stall",
-    name: "Rojak (Tekka Market)",
+    name: "Temasek Indian Rojak",
     emoji: "🥗",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
-      "tekka rojak"
+      "tekka rojak",
+      "temasek indian rojak"
     ],
     dietTags: [
       "vegetarian",
@@ -2184,14 +2220,15 @@ export const BRANDS = [
   },
   {
     id: "tekka_drinks_stall",
-    name: "Drinks Stall (Tekka Market)",
+    name: "Generation Coffee",
     emoji: "🍵",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "tekka teh tarik",
       "tekka drinks",
-      "little india drinks"
+      "little india drinks",
+      "generation coffee"
     ],
     dietTags: [
       "halal",
@@ -2206,13 +2243,14 @@ export const BRANDS = [
   },
   {
     id: "oar_char_kway_teow",
-    name: "Char Kway Teow (Old Airport Rd)",
+    name: "Lao Fu Zi",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "old airport road char kway teow",
-      "oar ckt"
+      "oar ckt",
+      "lao fu zi"
     ],
     dietTags: [
       "lactose_free"
@@ -2225,13 +2263,14 @@ export const BRANDS = [
   },
   {
     id: "oar_hokkien_mee",
-    name: "Hokkien Mee (Old Airport Rd)",
+    name: "Nam Sing Hokkien Fried Mee",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "old airport road hokkien mee",
-      "oar hokkien"
+      "oar hokkien",
+      "nam sing hokkien fried mee"
     ],
     dietTags: [
       "lactose_free"
@@ -2244,13 +2283,14 @@ export const BRANDS = [
   },
   {
     id: "oar_prawn_noodles",
-    name: "Prawn Noodles (Old Airport Rd)",
+    name: "Albert Street Prawn Noodles",
     emoji: "🦐",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "old airport road prawn noodles",
-      "oar prawn mee"
+      "oar prawn mee",
+      "albert street prawn noodles"
     ],
     dietTags: [
       "lactose_free"
@@ -2263,13 +2303,14 @@ export const BRANDS = [
   },
   {
     id: "oar_bak_chor_mee",
-    name: "Bak Chor Mee (Old Airport Rd)",
+    name: "Minced Pork Bros",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "old airport road bak chor mee",
-      "oar bcm"
+      "oar bcm",
+      "minced pork bros"
     ],
     dietTags: [
       "lactose_free"
@@ -2282,13 +2323,14 @@ export const BRANDS = [
   },
   {
     id: "oar_roast_duck_rice",
-    name: "Roast Duck Rice (Old Airport Rd)",
+    name: "Roast Paradise",
     emoji: "🦆",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "old airport road roast duck",
-      "oar duck rice"
+      "oar duck rice",
+      "roast paradise"
     ],
     dietTags: [
       "lactose_free"
@@ -2301,13 +2343,14 @@ export const BRANDS = [
   },
   {
     id: "oar_economic_rice",
-    name: "Economic Rice (Old Airport Rd)",
+    name: "Soon Kee Curry Rice",
     emoji: "🍱",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "old airport road economy rice",
-      "oar economic rice"
+      "oar economic rice",
+      "soon kee curry rice"
     ],
     dietTags: [
       "halal",
@@ -2340,13 +2383,14 @@ export const BRANDS = [
   },
   {
     id: "oar_wonton_mee",
-    name: "Wonton Mee (Old Airport Rd)",
+    name: "Hua Kee Hougang Famous Wanton Mee",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "old airport road wonton mee",
-      "oar wonton"
+      "oar wonton",
+      "hua kee hougang famous wanton mee"
     ],
     dietTags: [
       "lactose_free"
@@ -2359,13 +2403,14 @@ export const BRANDS = [
   },
   {
     id: "oar_popiah",
-    name: "Popiah (Old Airport Rd)",
+    name: "Hock Guan Popiah Rojak",
     emoji: "🌯",
     type: "hawker",
     cuisine: "Snacks",
     aliases: [
       "old airport road popiah",
-      "oar popiah"
+      "oar popiah",
+      "hock guan popiah rojak"
     ],
     dietTags: [
       "vegetarian",
@@ -2379,13 +2424,14 @@ export const BRANDS = [
   },
   {
     id: "oar_oyster_omelette",
-    name: "Oyster Omelette (Old Airport Rd)",
+    name: "Famous Old Airport Fried Oyster",
     emoji: "🦪",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "old airport road oyster omelette",
-      "oar orh luak"
+      "oar orh luak",
+      "famous old airport fried oyster"
     ],
     dietTags: [
       "lactose_free"
@@ -2477,13 +2523,14 @@ export const BRANDS = [
   },
   {
     id: "gmfc_hokkien_mee",
-    name: "Hokkien Mee (Golden Mile FC)",
+    name: "Shiok Hokkien Mee",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "golden mile hokkien mee",
-      "gmfc hokkien"
+      "gmfc hokkien",
+      "shiok hokkien mee"
     ],
     dietTags: [
       "lactose_free"
@@ -2496,13 +2543,14 @@ export const BRANDS = [
   },
   {
     id: "gmfc_laksa",
-    name: "Laksa (Golden Mile FC)",
+    name: "Chung Cheng Chilli Prawn Noodles",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "golden mile laksa",
-      "gmfc laksa"
+      "gmfc laksa",
+      "chung cheng chilli prawn noodles"
     ],
     dietTags: [
       "lactose_free"
@@ -2515,13 +2563,14 @@ export const BRANDS = [
   },
   {
     id: "gmfc_prawn_noodles",
-    name: "Prawn Noodles (Golden Mile FC)",
+    name: "Hainan Fried Hokkien Prawn Mee",
     emoji: "🦐",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "golden mile prawn noodles",
-      "gmfc prawn mee"
+      "gmfc prawn mee",
+      "hainan fried hokkien prawn mee"
     ],
     dietTags: [
       "lactose_free"
@@ -2534,13 +2583,14 @@ export const BRANDS = [
   },
   {
     id: "gmfc_satay_stall",
-    name: "Satay (Golden Mile FC)",
+    name: "Charlie's Peranakan Food",
     emoji: "🍢",
     type: "hawker",
     cuisine: "Satay",
     aliases: [
       "golden mile satay",
-      "gmfc satay"
+      "gmfc satay",
+      "charlie's peranakan food"
     ],
     dietTags: [
       "halal",
@@ -2555,14 +2605,15 @@ export const BRANDS = [
   },
   {
     id: "gmfc_snacks_stall",
-    name: "Oyster Cake & Carrot Cake (Golden Mile)",
+    name: "Oyster Boy",
     emoji: "🦪",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "golden mile oyster cake",
       "golden mile carrot cake",
-      "gmfc snacks"
+      "gmfc snacks",
+      "oyster boy"
     ],
     dietTags: [
       "lactose_free"
@@ -2617,13 +2668,14 @@ export const BRANDS = [
   },
   {
     id: "gsm_briyani_stall",
-    name: "Nasi Briyani (Geylang Serai)",
+    name: "Geylang Briyani Stall",
     emoji: "🍛",
     type: "hawker",
     cuisine: "Indian/Malay",
     aliases: [
       "geylang serai briyani",
-      "gsm briyani"
+      "gsm briyani",
+      "geylang briyani stall"
     ],
     dietTags: [
       "halal",
@@ -2638,13 +2690,14 @@ export const BRANDS = [
   },
   {
     id: "gsm_nasi_padang_stall",
-    name: "Nasi Padang (Geylang Serai)",
+    name: "Sinar Pagi Nasi Padang",
     emoji: "🍛",
     type: "hawker",
     cuisine: "Malay",
     aliases: [
       "geylang serai nasi padang",
-      "gsm nasi padang"
+      "gsm nasi padang",
+      "sinar pagi nasi padang"
     ],
     dietTags: [
       "halal",
@@ -2658,13 +2711,14 @@ export const BRANDS = [
   },
   {
     id: "gsm_ayam_penyet_stall",
-    name: "Ayam Penyet (Geylang Serai)",
+    name: "Warung Solo",
     emoji: "🍗",
     type: "hawker",
     cuisine: "Malay",
     aliases: [
       "geylang serai ayam penyet",
-      "gsm ayam penyet"
+      "gsm ayam penyet",
+      "warung solo"
     ],
     dietTags: [
       "halal",
@@ -2678,13 +2732,14 @@ export const BRANDS = [
   },
   {
     id: "gsm_lontong_stall",
-    name: "Lontong (Geylang Serai)",
+    name: "Warong Solo",
     emoji: "🍲",
     type: "hawker",
     cuisine: "Malay",
     aliases: [
       "geylang serai lontong",
-      "gsm lontong"
+      "gsm lontong",
+      "warong solo"
     ],
     dietTags: [
       "halal",
@@ -2719,14 +2774,15 @@ export const BRANDS = [
   },
   {
     id: "gsm_mee_stall",
-    name: "Mee Goreng & Mee Siam (Geylang Serai)",
+    name: "Pak Din Mee Soto & Mee Rebus",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Malay",
     aliases: [
       "geylang serai mee goreng",
       "gsm mee goreng",
-      "geylang serai mee siam"
+      "geylang serai mee siam",
+      "pak din mee soto & mee rebus"
     ],
     dietTags: [
       "halal",
@@ -2761,13 +2817,14 @@ export const BRANDS = [
   },
   {
     id: "gsm_rojak_stall",
-    name: "Rojak (Geylang Serai)",
+    name: "Rojak & Mee Siam",
     emoji: "🥗",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "geylang serai rojak",
-      "gsm rojak"
+      "gsm rojak",
+      "rojak & mee siam"
     ],
     dietTags: [
       "vegetarian",
@@ -2804,13 +2861,14 @@ export const BRANDS = [
   },
   {
     id: "whampoa_chicken_rice",
-    name: "Chicken Rice (Whampoa)",
+    name: "Loy Kee Chicken Rice",
     emoji: "🍗",
     type: "hawker",
     cuisine: "Hawker",
     aliases: [
       "whampoa chicken rice",
-      "whampoa makan chicken rice"
+      "whampoa makan chicken rice",
+      "loy kee chicken rice"
     ],
     dietTags: [
       "lactose_free"
@@ -2862,13 +2920,14 @@ export const BRANDS = [
   },
   {
     id: "whampoa_bak_chor_mee",
-    name: "Bak Chor Mee (Whampoa)",
+    name: "Teochew Kway Tiao Mee",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "whampoa bak chor mee",
-      "whampoa bcm"
+      "whampoa bcm",
+      "teochew kway tiao mee"
     ],
     dietTags: [
       "lactose_free"
@@ -2881,12 +2940,13 @@ export const BRANDS = [
   },
   {
     id: "whampoa_ban_mian",
-    name: "Ban Mian (Whampoa)",
+    name: "China Whampoa Home Made Noodles",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
-      "whampoa ban mian"
+      "whampoa ban mian",
+      "china whampoa home made noodles"
     ],
     dietTags: [
       "lactose_free"
@@ -2917,13 +2977,14 @@ export const BRANDS = [
   },
   {
     id: "whampoa_char_kway_teow",
-    name: "Char Kway Teow (Whampoa)",
+    name: "Chuan Kee Fried Kway Teow",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
       "whampoa char kway teow",
-      "whampoa ckt"
+      "whampoa ckt",
+      "chuan kee fried kway teow"
     ],
     dietTags: [
       "lactose_free"
@@ -2936,12 +2997,13 @@ export const BRANDS = [
   },
   {
     id: "whampoa_hokkien_mee",
-    name: "Hokkien Mee (Whampoa)",
+    name: "Singapore Fried Hokkien Mee",
     emoji: "🍜",
     type: "hawker",
     cuisine: "Noodles",
     aliases: [
-      "whampoa hokkien mee"
+      "whampoa hokkien mee",
+      "singapore fried hokkien mee"
     ],
     dietTags: [
       "lactose_free"
@@ -13086,6 +13148,47 @@ export const BRANDS = [
     dietTags: [],
     priceRange: "$",
     platforms: [
+      "grab_go"
+    ]
+  },
+  {
+    id: "tekka_jom_makan_prata",
+    name: "Jom Makan (Prata Saga Sambal Berlada)",
+    emoji: "🫓",
+    type: "hawker",
+    cuisine: "Indian Muslim",
+    aliases: [
+      "jom makan",
+      "prata saga sambal berlada",
+      "tekka jom makan"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "tekka_ar_rahman_cafe",
+    name: "Ar-Rahman Cafe & Royal Prata",
+    emoji: "🫓",
+    type: "hawker",
+    cuisine: "Indian Muslim",
+    aliases: [
+      "ar-rahman cafe",
+      "ar rahman cafe",
+      "royal prata",
+      "tekka ar rahman"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
       "grab_go"
     ]
   }

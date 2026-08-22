@@ -1,24 +1,15 @@
-// Generated 2026-08-20, enhanced 2026-08-21 — one row per real physical location a Brand can be found at.
-// 1,041 premises were sourced 2026-08-20 from the SFA/data.gov.sg licensed-establishment dataset
-// (licensee-name matching). On 2026-08-21, SFA's own "Track Records" tool (xlsx exports covering
-// 52,101 licensed establishments, including a Business Name field the earlier dataset lacked)
-// resolved ~39 previously zero-coverage brands (incl. giant/cold_storage, whose shared Dairy
-// Farm licensee had blocked matching until Business Name disambiguated the banners) and expanded
-// subway/sheng_siong/fairprice/7eleven — 1,660 new premises added, 44 removed (29 stale
-// single-point "legacy_static_coordinate" placeholders superseded by real data, 4 fairprice
-// rows confirmed mislabeled Cheers/7-Eleven banners via Business Name cross-check, 11 fairprice
-// rows at petrol-station addresses sharing NTUC's licensee entity with Cheers that couldn't be
-// confirmed as genuine FairPrice banner — see
-// reference/research-sessions/2026-08-21-sfa-track-records.md for full detail).
-// A handful couldn't be geocoded — lat/lng left null rather than guessed.
-//
-// 2026-08-22: removed the "gong_cha_p2" legacy_static_coordinate placeholder — confirmed via
-// web research that Gong Cha closed every Singapore outlet on 2026-10-02 in a complete
-// franchisee exit (site/socials wiped) and has not reopened as of this date; the vacated
-// outlets are now trading as a different brand, Cai Ca. Zero real gong_cha premises exist in
-// Singapore right now, so the vague "multiple outlets islandwide" placeholder was actively
-// misleading rather than merely unresearched. See
-// reference/research-sessions/2026-08-22-branches-gong_cha.md.
+// Generated 2026-08-20, enhanced 2026-08-21/22 — one row per real physical location a Brand can be found at.
+// 2026-08-22a: geocoded the remaining 18 premises that had null lat/lng after the 2026-08-21 SFA
+// enhancement pass (mostly complex mall/food-court addresses like Liang Court, Bedok Point, Changi
+// Terminal 3, and Rochor Centre — resolved via alternate query phrasing: mall name alone, brand+area,
+// or a landmark name instead of the raw SFA address string, since OneMap's search sometimes fails on
+// heavily unit-numbered addresses but succeeds on a simpler place-name query for the same building).
+// 2026-08-22b: updated address/postal/source for 56 premises whose Brand was a generic dish-type
+// placeholder (source: legacy_static_coordinate) and has now been renamed to a real, verified stall
+// (source: hawker_directory_named) — see brands.ts header and
+// reference/research-sessions/2026-08-22-generic-name-cleanup.md. Added 2 new premises for the
+// Tekka prata stall split (tekka_jom_makan_prata, tekka_ar_rahman_cafe).
+// See reference/planning/ for the broader 2026-08-22 database-completeness push this was part of.
 //
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
@@ -105,12 +96,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street #01-08, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "maxwell_laksa_p37",
@@ -118,12 +109,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street #01-27, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "maxwell_char_kway_teow_p38",
@@ -131,12 +122,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street #01-35, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "maxwell_popiah_p39",
@@ -144,12 +135,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street #01-56, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "maxwell_carrot_cake_p40",
@@ -177,12 +168,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street #01-35, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "maxwell_rojak_p42",
@@ -190,12 +181,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street #01-56, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "maxwell_drinks_desserts_p43",
@@ -203,12 +194,12 @@ const PREMISES_1 = [
     label: "Maxwell Food Centre",
     locationType: "hawker_centre",
     locationContext: "Maxwell Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Kadayanallur Street, Maxwell Food Centre",
+    postal: "069184",
     lat: 1.28,
     lng: 103.845,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "lau_pa_sat_satay_street_p44",
@@ -216,12 +207,12 @@ const PREMISES_1 = [
     label: "Lau Pa Sat Festival Market",
     locationType: "hawker_centre",
     locationContext: "Lau Pa Sat Festival Market",
-    address: null,
-    postal: null,
+    address: "18 Raffles Quay, Stall 7 & 8 Satay Street, Lau Pa Sat",
+    postal: "048582",
     lat: 1.2802,
     lng: 103.8502,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "lau_pa_sat_oyster_omelette_p45",
@@ -229,12 +220,12 @@ const PREMISES_1 = [
     label: "Lau Pa Sat Festival Market",
     locationType: "hawker_centre",
     locationContext: "Lau Pa Sat Festival Market",
-    address: null,
-    postal: null,
+    address: "18 Raffles Quay, Lau Pa Sat",
+    postal: "048582",
     lat: 1.2802,
     lng: 103.8502,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "lau_pa_sat_seng_kee_p46",
@@ -268,12 +259,12 @@ const PREMISES_1 = [
     label: "Lau Pa Sat Festival Market",
     locationType: "hawker_centre",
     locationContext: "Lau Pa Sat Festival Market",
-    address: null,
-    postal: null,
+    address: "18 Raffles Quay, Lau Pa Sat",
+    postal: "048582",
     lat: 1.2802,
     lng: 103.8502,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "lau_pa_sat_bak_chor_mee_p49",
@@ -281,12 +272,12 @@ const PREMISES_1 = [
     label: "Lau Pa Sat Festival Market",
     locationType: "hawker_centre",
     locationContext: "Lau Pa Sat Festival Market",
-    address: null,
-    postal: null,
+    address: "18 Raffles Quay, Lau Pa Sat",
+    postal: "048582",
     lat: 1.2802,
     lng: 103.8502,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "lau_pa_sat_chicken_rice_p50",
@@ -307,12 +298,12 @@ const PREMISES_1 = [
     label: "Lau Pa Sat Festival Market",
     locationType: "hawker_centre",
     locationContext: "Lau Pa Sat Festival Market",
-    address: null,
-    postal: null,
+    address: "18 Raffles Quay, Stall 34, Lau Pa Sat",
+    postal: "048582",
     lat: 1.2802,
     lng: 103.8502,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "lau_pa_sat_butter_cream_p52",
@@ -418,12 +409,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North #01-33, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "newton_bbq_seafood_p60",
@@ -431,12 +422,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North #01-27, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "newton_hokkien_mee_p61",
@@ -444,12 +435,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North #01-25, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "newton_prawn_noodles_p62",
@@ -457,12 +448,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "newton_oyster_omelette_p63",
@@ -470,12 +461,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "newton_carrot_cake_p64",
@@ -483,12 +474,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North #01-28, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "newton_char_kway_teow_p65",
@@ -509,12 +500,12 @@ const PREMISES_1 = [
     label: "Newton Food Centre",
     locationType: "hawker_centre",
     locationContext: "Newton Food Centre",
-    address: null,
-    postal: null,
+    address: "500 Clemenceau Avenue North #01-05, Newton Food Centre",
+    postal: "229495",
     lat: 1.3127,
     lng: 103.8383,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "cc_roast_meats_stall_p67",
@@ -522,12 +513,12 @@ const PREMISES_1 = [
     label: "Chinatown Complex Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chinatown Complex Food Centre",
-    address: null,
-    postal: null,
+    address: "335 Smith Street #02-126, Chinatown Complex",
+    postal: "050335",
     lat: 1.2826,
     lng: 103.8441,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "cc_claypot_rice_stall_p68",
@@ -535,12 +526,12 @@ const PREMISES_1 = [
     label: "Chinatown Complex Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chinatown Complex Food Centre",
-    address: null,
-    postal: null,
+    address: "335 Smith Street, Chinatown Complex",
+    postal: "050335",
     lat: 1.2826,
     lng: 103.8441,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "cc_kway_chap_stall_p69",
@@ -548,12 +539,12 @@ const PREMISES_1 = [
     label: "Chinatown Complex Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chinatown Complex Food Centre",
-    address: null,
-    postal: null,
+    address: "335 Smith Street #02-156, Chinatown Complex",
+    postal: "050335",
     lat: 1.2826,
     lng: 103.8441,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "cc_wonton_mee_stall_p70",
@@ -561,12 +552,12 @@ const PREMISES_1 = [
     label: "Chinatown Complex Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chinatown Complex Food Centre",
-    address: null,
-    postal: null,
+    address: "335 Smith Street, Chinatown Complex",
+    postal: "050335",
     lat: 1.2826,
     lng: 103.8441,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "cc_ban_mian_stall_p71",
@@ -646,12 +637,12 @@ const PREMISES_1 = [
     label: "Chinatown Complex Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chinatown Complex Food Centre",
-    address: null,
-    postal: null,
+    address: "335 Smith Street #02-048, Chinatown Complex",
+    postal: "050335",
     lat: 1.2826,
     lng: 103.8441,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_prata_stall_p77",
@@ -659,12 +650,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road #01-265, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_thosai_stall_p78",
@@ -672,12 +663,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road #01-244, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_murtabak_stall_p79",
@@ -685,12 +676,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_briyani_stall_p80",
@@ -698,12 +689,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road #01-232, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_nasi_lemak_stall_p81",
@@ -711,12 +702,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_mee_goreng_stall_p82",
@@ -744,12 +735,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road #01-254, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "tekka_drinks_stall_p84",
@@ -757,12 +748,12 @@ const PREMISES_1 = [
     label: "Tekka Market",
     locationType: "hawker_centre",
     locationContext: "Tekka Market",
-    address: null,
-    postal: null,
+    address: "665 Buffalo Road #01-321, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
     lat: 1.3065,
     lng: 103.8509,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_char_kway_teow_p85",
@@ -770,12 +761,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-12, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_hokkien_mee_p86",
@@ -783,12 +774,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-32, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_prawn_noodles_p87",
@@ -796,12 +787,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-10, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_bak_chor_mee_p88",
@@ -809,12 +800,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_roast_duck_rice_p89",
@@ -822,12 +813,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-121, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_economic_rice_p90",
@@ -835,12 +826,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_laksa_p91",
@@ -861,12 +852,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-119, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_popiah_p93",
@@ -874,12 +865,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-93, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_oyster_omelette_p94",
@@ -887,12 +878,12 @@ const PREMISES_1 = [
     label: "Old Airport Road Food Centre",
     locationType: "hawker_centre",
     locationContext: "Old Airport Road Food Centre",
-    address: null,
-    postal: null,
+    address: "51 Old Airport Road #01-101, Old Airport Road Food Centre",
+    postal: "390051",
     lat: 1.3149,
     lng: 103.8896,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "oar_desserts_drinks_p95",
@@ -966,12 +957,12 @@ const PREMISES_1 = [
     label: "Golden Mile Food Centre",
     locationType: "hawker_centre",
     locationContext: "Golden Mile Food Centre",
-    address: null,
-    postal: null,
+    address: "505 Beach Road #01-57, Golden Mile Food Centre",
+    postal: "199583",
     lat: 1.3071,
     lng: 103.8649,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gmfc_laksa_p100",
@@ -979,12 +970,12 @@ const PREMISES_1 = [
     label: "Golden Mile Food Centre",
     locationType: "hawker_centre",
     locationContext: "Golden Mile Food Centre",
-    address: null,
-    postal: null,
+    address: "505 Beach Road #01-59, Golden Mile Food Centre",
+    postal: "199583",
     lat: 1.3071,
     lng: 103.8649,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gmfc_prawn_noodles_p101",
@@ -992,12 +983,12 @@ const PREMISES_1 = [
     label: "Golden Mile Food Centre",
     locationType: "hawker_centre",
     locationContext: "Golden Mile Food Centre",
-    address: null,
-    postal: null,
+    address: "505 Beach Road #B1-34, Golden Mile Food Centre",
+    postal: "199583",
     lat: 1.3071,
     lng: 103.8649,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gmfc_satay_stall_p102",
@@ -1005,12 +996,12 @@ const PREMISES_1 = [
     label: "Golden Mile Food Centre",
     locationType: "hawker_centre",
     locationContext: "Golden Mile Food Centre",
-    address: null,
-    postal: null,
+    address: "505 Beach Road #B1-30, Golden Mile Food Centre",
+    postal: "199583",
     lat: 1.3071,
     lng: 103.8649,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gmfc_snacks_stall_p103",
@@ -1018,12 +1009,12 @@ const PREMISES_1 = [
     label: "Golden Mile Food Centre",
     locationType: "hawker_centre",
     locationContext: "Golden Mile Food Centre",
-    address: null,
-    postal: null,
+    address: "505 Beach Road #01-111, Golden Mile Food Centre",
+    postal: "199583",
     lat: 1.3071,
     lng: 103.8649,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gmfc_desserts_drinks_p104",
@@ -1064,12 +1055,12 @@ const PREMISES_1 = [
     label: "Geylang Serai Market & Food Centre",
     locationType: "hawker_centre",
     locationContext: "Geylang Serai Market & Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Geylang Serai, Geylang Serai Market",
+    postal: "402001",
     lat: 1.3189,
     lng: 103.8924,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gsm_nasi_padang_stall_p107",
@@ -1077,12 +1068,12 @@ const PREMISES_1 = [
     label: "Geylang Serai Market & Food Centre",
     locationType: "hawker_centre",
     locationContext: "Geylang Serai Market & Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Geylang Serai #02-137, Geylang Serai Market",
+    postal: "402001",
     lat: 1.3189,
     lng: 103.8924,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gsm_ayam_penyet_stall_p108",
@@ -1090,12 +1081,12 @@ const PREMISES_1 = [
     label: "Geylang Serai Market & Food Centre",
     locationType: "hawker_centre",
     locationContext: "Geylang Serai Market & Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Geylang Serai, Geylang Serai Market",
+    postal: "402001",
     lat: 1.3189,
     lng: 103.8924,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gsm_lontong_stall_p109",
@@ -1103,12 +1094,12 @@ const PREMISES_1 = [
     label: "Geylang Serai Market & Food Centre",
     locationType: "hawker_centre",
     locationContext: "Geylang Serai Market & Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Geylang Serai, Geylang Serai Market",
+    postal: "402001",
     lat: 1.3189,
     lng: 103.8924,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gsm_murtabak_stall_p110",
@@ -1129,12 +1120,12 @@ const PREMISES_1 = [
     label: "Geylang Serai Market & Food Centre",
     locationType: "hawker_centre",
     locationContext: "Geylang Serai Market & Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Geylang Serai, Geylang Serai Market",
+    postal: "402001",
     lat: 1.3189,
     lng: 103.8924,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gsm_beehoon_stall_p112",
@@ -1155,12 +1146,12 @@ const PREMISES_1 = [
     label: "Geylang Serai Market & Food Centre",
     locationType: "hawker_centre",
     locationContext: "Geylang Serai Market & Food Centre",
-    address: null,
-    postal: null,
+    address: "1 Geylang Serai #02-126, Geylang Serai Market",
+    postal: "402001",
     lat: 1.3189,
     lng: 103.8924,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "gsm_desserts_drinks_p114",
@@ -1188,12 +1179,12 @@ const PREMISES_1 = [
     label: "Whampoa Makan Place",
     locationType: "hawker_centre",
     locationContext: "Whampoa Makan Place",
-    address: null,
-    postal: null,
+    address: "90 Whampoa Drive, Whampoa Makan Place",
+    postal: "320090",
     lat: 1.3177,
     lng: 103.8563,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "whampoa_economic_rice_p116",
@@ -1227,12 +1218,12 @@ const PREMISES_1 = [
     label: "Whampoa Makan Place",
     locationType: "hawker_centre",
     locationContext: "Whampoa Makan Place",
-    address: null,
-    postal: null,
+    address: "90 Whampoa Drive #01-07, Whampoa Makan Place",
+    postal: "320090",
     lat: 1.3177,
     lng: 103.8563,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "whampoa_ban_mian_p119",
@@ -1240,12 +1231,12 @@ const PREMISES_1 = [
     label: "Whampoa Makan Place",
     locationType: "hawker_centre",
     locationContext: "Whampoa Makan Place",
-    address: null,
-    postal: null,
+    address: "90 Whampoa Drive #01-24, Whampoa Makan Place",
+    postal: "320090",
     lat: 1.3177,
     lng: 103.8563,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "whampoa_wonton_mee_p120",
@@ -1266,12 +1257,12 @@ const PREMISES_1 = [
     label: "Whampoa Makan Place",
     locationType: "hawker_centre",
     locationContext: "Whampoa Makan Place",
-    address: null,
-    postal: null,
+    address: "90 Whampoa Drive #01-41, Whampoa Makan Place",
+    postal: "320090",
     lat: 1.3177,
     lng: 103.8563,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "whampoa_hokkien_mee_p122",
@@ -1279,12 +1270,12 @@ const PREMISES_1 = [
     label: "Whampoa Makan Place",
     locationType: "hawker_centre",
     locationContext: "Whampoa Makan Place",
-    address: null,
-    postal: null,
+    address: "90 Whampoa Drive #01-32, Whampoa Makan Place",
+    postal: "320090",
     lat: 1.3177,
     lng: 103.8563,
     sfa: null,
-    source: "legacy_static_coordinate"
+    source: "hawker_directory_named"
   },
   {
     id: "whampoa_prata_stall_p123",
@@ -7404,10 +7395,7 @@ const PREMISES_1 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_2 = [
+  },
   {
     id: "marsiling_lane_blk_20_21_chiang_poh_nai_p431",
     brandId: "marsiling_lane_blk_20_21_chiang_poh_nai",
@@ -7427,7 +7415,10 @@ const PREMISES_2 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_2 = [
   {
     id: "marsiling_lane_blk_20_21_chin_lee_fung_p432",
     brandId: "marsiling_lane_blk_20_21_chin_lee_fung",
@@ -12456,8 +12447,8 @@ const PREMISES_2 = [
     locationContext: null,
     address: "177 RIVER VALLEY ROAD #01-01/06 LIANG COURT SINGAPORE 179030",
     postal: "179030",
-    lat: null,
-    lng: null,
+    lat: 1.290659,
+    lng: 103.844547,
     sfa: {
       licenceNumber: "W98221V000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -12716,8 +12707,8 @@ const PREMISES_2 = [
     locationContext: null,
     address: "580 QUEENSWAY RIDOUT PARK",
     postal: "",
-    lat: null,
-    lng: null,
+    lat: 1.304062,
+    lng: 103.80211,
     sfa: {
       licenceNumber: "W81162L000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -13316,8 +13307,8 @@ const PREMISES_2 = [
     locationContext: null,
     address: "65 AIRPORT BOULEVARD #L1-LF3 ARRIVAL MEETING HALL CHANGI AIRPORT T3 SINGAPORE 819648",
     postal: "819648",
-    lat: null,
-    lng: null,
+    lat: 1.356626,
+    lng: 103.986562,
     sfa: {
       licenceNumber: "SE07287C000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -14216,8 +14207,8 @@ const PREMISES_2 = [
     locationContext: null,
     address: "200 STADIUM ROAD SINGAPORE 397726",
     postal: "397726",
-    lat: null,
-    lng: null,
+    lat: 1.302812,
+    lng: 103.875338,
     sfa: {
       licenceNumber: "E78064X000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -14956,8 +14947,8 @@ const PREMISES_2 = [
     locationContext: null,
     address: "268 WOODLANDS CENTRE ROAD #01-01 SINGAPORE 738931",
     postal: "738931",
-    lat: null,
-    lng: null,
+    lat: 1.441662,
+    lng: 103.768939,
     sfa: {
       licenceNumber: "B98061L000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -15407,10 +15398,7 @@ const PREMISES_2 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_3 = [
+  },
   {
     id: "starbucks_sg_p831",
     brandId: "starbucks_sg",
@@ -15430,7 +15418,10 @@ const PREMISES_3 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_3 = [
   {
     id: "starbucks_sg_p832",
     brandId: "starbucks_sg",
@@ -15539,8 +15530,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "36 ROBINSON ROAD #01-02 CITY HOUSE SINGAPORE 188350",
     postal: "188350",
-    lat: null,
-    lng: null,
+    lat: 1.28122,
+    lng: 103.849798,
     sfa: {
       licenceNumber: "W01056B000",
       licenseeName: "STARBUCKS COFFEE SINGAPORE PTE. LTD.",
@@ -16319,8 +16310,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "799 NEW UPPER CHANGI ROAD #01-09 BEDOK POINT - #01-K2 #01-K3 #01-K4 SINGAPORE 467351",
     postal: "467351",
-    lat: null,
-    lng: null,
+    lat: 1.330548,
+    lng: 103.947778,
     sfa: {
       licenceNumber: "SE10481E000",
       licenseeName: "STARBUCKS COFFEE SINGAPORE PTE. LTD.",
@@ -17359,8 +17350,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "177 RIVER VALLEY ROAD #01-13 LIANG COURT SHOPPING CENTRE SINGAPORE 179030",
     postal: "179030",
-    lat: null,
-    lng: null,
+    lat: 1.290659,
+    lng: 103.844547,
     sfa: {
       licenceNumber: "CE08568X000",
       licenseeName: "STARBUCKS COFFEE SINGAPORE PTE. LTD.",
@@ -18379,8 +18370,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "3551 ANG MO KIO AVENUE 3 SINGAPORE 569927",
     postal: "569927",
-    lat: null,
-    lng: null,
+    lat: 1.369306,
+    lng: 103.856036,
     sfa: {
       licenceNumber: "S97092X000",
       licenseeName: "CHEERS HOLDINGS (2004) PTE. LTD.",
@@ -18839,8 +18830,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
     postal: "680303",
-    lat: null,
-    lng: null,
+    lat: 1.382379,
+    lng: 103.740186,
     sfa: {
       licenceNumber: "J99036P000",
       licenseeName: "CHEERS HOLDINGS (2004) PTE. LTD.",
@@ -19039,8 +19030,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "630 ALJUNIED ROAD ESSO SERVICE STATION SINGAPORE 389839",
     postal: "389839",
-    lat: null,
-    lng: null,
+    lat: 1.324336,
+    lng: 103.880716,
     sfa: {
       licenceNumber: "E91135X000",
       licenseeName: "CHEERS HOLDINGS (2004) PTE. LTD.",
@@ -23099,8 +23090,8 @@ const PREMISES_3 = [
     locationContext: null,
     address: "190 STADIUM ROAD KALLANG PARK SINGAPORE 397725",
     postal: "397725",
-    lat: null,
-    lng: null,
+    lat: 1.302812,
+    lng: 103.875338,
     sfa: {
       licenceNumber: "E79124V000",
       licenseeName: "KENTUCKY FRIED CHICKEN MANAGEMENT PTE LTD",
@@ -23410,10 +23401,7 @@ const PREMISES_3 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_4 = [
+  },
   {
     id: "kfc_p1231",
     brandId: "kfc",
@@ -23422,8 +23410,8 @@ const PREMISES_4 = [
     locationContext: null,
     address: "5A WOODLANDS CENTRE ROAD #02-184 SINGAPORE 731005",
     postal: "731005",
-    lat: null,
-    lng: null,
+    lat: 1.441662,
+    lng: 103.768939,
     sfa: {
       licenceNumber: "B81031B000",
       licenseeName: "KENTUCKY FRIED CHICKEN MANAGEMENT PTE LTD",
@@ -23433,7 +23421,10 @@ const PREMISES_4 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_4 = [
   {
     id: "kfc_p1232",
     brandId: "kfc",
@@ -27982,8 +27973,8 @@ const PREMISES_4 = [
     locationContext: null,
     address: "799 NEW UPPER CHANGI ROAD #02-07/09 BEDOK POINT SINGAPORE 467351",
     postal: "467351",
-    lat: null,
-    lng: null,
+    lat: 1.330548,
+    lng: 103.947778,
     sfa: {
       licenceNumber: "SE10784C000",
       licenseeName: "SINGAPORE SAIZERIYA PTE. LTD.",
@@ -28142,8 +28133,8 @@ const PREMISES_4 = [
     locationContext: null,
     address: "177 RIVER VALLEY ROAD #02-22 LIANG COURT SHOPPING CENTRE SINGAPORE 179030",
     postal: "179030",
-    lat: null,
-    lng: null,
+    lat: 1.290659,
+    lng: 103.844547,
     sfa: {
       licenceNumber: "CE08I74K000",
       licenseeName: "SINGAPORE SAIZERIYA PTE. LTD.",
@@ -29802,8 +29793,8 @@ const PREMISES_4 = [
     locationContext: null,
     address: "1 ROCHOR ROAD #01-506 ROCHOR CENTRE SINGAPORE 180001",
     postal: "180001",
-    lat: null,
-    lng: null,
+    lat: 1.307619,
+    lng: 103.854219,
     sfa: {
       licenceNumber: "W77119C000",
       licenseeName: "KOPITIAM INVESTMENT PTE LTD",
@@ -31413,10 +31404,7 @@ const PREMISES_4 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_5 = [
+  },
   {
     id: "koufu_p1645",
     brandId: "koufu",
@@ -31436,7 +31424,10 @@ const PREMISES_5 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_5 = [
   {
     id: "koufu_p1646",
     brandId: "koufu",
@@ -31905,8 +31896,8 @@ const PREMISES_5 = [
     locationContext: null,
     address: "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
     postal: "680303",
-    lat: null,
-    lng: null,
+    lat: 1.382379,
+    lng: 103.740186,
     sfa: {
       licenceNumber: "J97033P010",
       licenseeName: "KOUFU PTE LTD",
@@ -32645,8 +32636,8 @@ const PREMISES_5 = [
     locationContext: null,
     address: "303 CHOA CHU KANG AVENUE 4 #01-723 SINGAPORE 680303",
     postal: "680303",
-    lat: null,
-    lng: null,
+    lat: 1.382379,
+    lng: 103.740186,
     sfa: {
       licenceNumber: "J97033P000",
       licenseeName: "NTUC FOODFARE CO-OPERATIVE LTD",
@@ -38947,10 +38938,7 @@ const PREMISES_5 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_6 = [
+  },
   {
     id: "mixue_p52",
     brandId: "mixue",
@@ -38970,7 +38958,10 @@ const PREMISES_6 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_6 = [
   {
     id: "mixue_p53",
     brandId: "mixue",
@@ -46950,10 +46941,7 @@ const PREMISES_6 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_7 = [
+  },
   {
     id: "llaollao_p126",
     brandId: "llaollao",
@@ -46973,7 +46961,10 @@ const PREMISES_7 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_7 = [
   {
     id: "llaollao_p127",
     brandId: "llaollao",
@@ -54953,10 +54944,7 @@ const PREMISES_7 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_8 = [
+  },
   {
     id: "sheng_siong_p1643",
     brandId: "sheng_siong",
@@ -54976,7 +54964,10 @@ const PREMISES_8 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_8 = [
   {
     id: "sheng_siong_p1644",
     brandId: "sheng_siong",
@@ -62956,10 +62947,7 @@ const PREMISES_8 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  }
-];
-
-const PREMISES_9 = [
+  },
   {
     id: "7eleven_p250",
     brandId: "7eleven",
@@ -62979,7 +62967,10 @@ const PREMISES_9 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
+  }
+];
+
+const PREMISES_9 = [
   {
     id: "7eleven_p251",
     brandId: "7eleven",
@@ -67039,6 +67030,32 @@ const PREMISES_9 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
+  },
+  {
+    id: "tekka_jom_makan_prata_p1",
+    brandId: "tekka_jom_makan_prata",
+    label: "665 Buffalo Road, Zhujiao Centre (Tekka Market)",
+    locationType: "hawker_centre",
+    locationContext: "Tekka Market",
+    address: "665 Buffalo Road, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
+    lat: 1.3065,
+    lng: 103.8509,
+    sfa: null,
+    source: "hawker_directory_named"
+  },
+  {
+    id: "tekka_ar_rahman_cafe_p1",
+    brandId: "tekka_ar_rahman_cafe",
+    label: "665 Buffalo Road #01-247, Zhujiao Centre (Tekka Market)",
+    locationType: "hawker_centre",
+    locationContext: "Tekka Market",
+    address: "665 Buffalo Road #01-247, Zhujiao Centre (Tekka Market)",
+    postal: "210665",
+    lat: 1.3065,
+    lng: 103.8509,
+    sfa: null,
+    source: "hawker_directory_named"
   }
 ];
 

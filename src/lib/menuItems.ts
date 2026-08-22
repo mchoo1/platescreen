@@ -1,5 +1,7 @@
 // Generated 2026-08-20 — one row per dish, FK to Brand.id (renamed from FoodOption/outletId).
 // Untyped literal export (see MenuItem in types/db.ts) — screener.ts casts at the boundary.
+// 2026-08-22: reassigned 2 items (tekka_roti_prata_egg, tekka_masala_prata) to the 2 new real
+// Tekka prata brands split out during the generic-name cleanup (see brands.ts header note).
 
 export const MENU_ITEMS = [
   {
@@ -12027,7 +12029,7 @@ export const MENU_ITEMS = [
   },
   {
     id: "tekka_roti_prata_egg",
-    brandId: "tekka_prata_stall",
+    brandId: "tekka_jom_makan_prata",
     name: "Roti Prata (Egg)",
     emoji: "🫓",
     category: "Indian Breads",
@@ -12045,7 +12047,7 @@ export const MENU_ITEMS = [
   },
   {
     id: "tekka_masala_prata",
-    brandId: "tekka_prata_stall",
+    brandId: "tekka_ar_rahman_cafe",
     name: "Masala Prata",
     emoji: "🫓",
     category: "Indian Breads",
@@ -14488,7 +14490,7 @@ export const MENU_ITEMS = [
     name: "Signature Black Tea Rock Salt Macchiato",
     emoji: "🧂",
     category: "Rock Salt Macchiato",
-    price: 4.0,
+    price: 4,
     calories: 210,
     protein: 3,
     carbs: 30,
@@ -14506,7 +14508,7 @@ export const MENU_ITEMS = [
     name: "Matcha Rock Salt Macchiato",
     emoji: "🍵",
     category: "Rock Salt Macchiato",
-    price: 5.0,
+    price: 5,
     calories: 260,
     protein: 4,
     carbs: 34,
@@ -14647,7 +14649,7 @@ export const MENU_ITEMS = [
     name: "Signature Black Tea",
     emoji: "🍵",
     category: "Refreshing Tea",
-    price: 3.0,
+    price: 3,
     calories: 80,
     protein: 0,
     carbs: 20,
@@ -14731,7 +14733,7 @@ export const MENU_ITEMS = [
     name: "Strawberry Shortcake (Slice)",
     emoji: "🍰",
     category: "Cakes",
-    price: 6.0,
+    price: 6,
     calories: 280,
     protein: 3,
     carbs: 33,

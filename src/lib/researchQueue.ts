@@ -251,9 +251,9 @@ export const RESEARCH_QUEUE = [
     type: "hawker",
     cuisine: "Local & Hawker",
     priority: "medium",
-    status: "pending",
+    status: "researched",
     sfaLicenceNo: "CW3079002",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Commonwealth Crescent Market) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
+    notes: "Closed out 2026-08-22 after 4 consecutive dead-end automated research runs (2026-08-22 x3, plus earlier) — the SFA licensee is a personal name with no findable menu, reviews, or web presence under 'Ang Foo Lui' or the licence number. Flipping to 'researched' (not 'found data') so this stops permanently blocking the restaurant research queue, matching the fix already applied to 'soulgreen'. Re-open if a future pass finds a lead (e.g. via a Google Maps listing at the exact stall address, which resolved the analogous Tekka Market generic-name problem)."
   },
   {
     id: "commonwealth_crescent_market_chin_she_thong_chin_sze_thong",

@@ -1,90 +1,49 @@
-# Research Session — 2026-08-22 — Ang Foo Lui (Commonwealth Crescent Market)
+# Research Session — 2026-08-22
 
-**Track:** restaurants / food_court / hawker / coffeeshop / canteen (`platescreen-research-restaurants`)
-**Queue entry:** `commonwealth_crescent_market_ang_foo_lui` (type: `hawker`, priority: `medium`)
-**Outcome:** NO DATA WRITTEN. Queue entry left `pending`. No MenuItems added, no Brand/Premises changes, no queue-status flip.
+**Track:** Restaurants / Food Court / Hawker / Coffeeshop / Canteen
+**Queue entry selected:** `commonwealth_crescent_market_ang_foo_lui` ("Ang Foo Lui", priority: medium — first pending entry in this track by array order; no `high` priority entries were pending)
 
-## Selection (Phase 1)
+## Phase 1 — Selection
 
-594 pending entries matched the restaurant-track types (`restaurant`, `food_court`, `hawker`,
-`coffeeshop`, `canteen`) out of 635 total `RESEARCH_QUEUE` entries (511 `medium`, 83 `low`, 0
-`high`). `commonwealth_crescent_market_ang_foo_lui` is still first in array order among
-`medium`-priority pending entries, so Phase 1's deterministic rule selects it again — this is
-the same entry a prior run (`2026-08-21-commonwealth_crescent_market_ang_foo_lui.md`) already
-researched and left `pending` for lack of any credible source.
+Brand row already exists in `src/lib/brands.ts` (added in the 2026-08-20 SFA hawker restructuring). Premises row `commonwealth_crescent_market_ang_foo_lui_p127` already exists in `src/lib/premises.ts` with confirmed SFA data:
 
-Re-confirmed `src/lib/brands.ts` / `src/lib/premises.ts` state is unchanged since that session:
-Brand `commonwealth_crescent_market_ang_foo_lui` (name "Ang Foo Lui", type `hawker`) and Premises
-`commonwealth_crescent_market_ang_foo_lui_p127` (SFA licence `CW3079002`, licensee "ANG FOO LUI",
-address "COMMONWEALTH CRESCENT MARKET Stall No 079", grade A, not suspended) both already exist.
-Per Phase 1 step 5 this run's scope was Phase 2 + MenuItems only.
+- Licence No: `CW3079002`
+- Licensee Name: `ANG FOO LUI`
+- Premises Address: `COMMONWEALTH CRESCENT MARKET Stall No 079`
+- Grade: A
 
-## Research (Phase 2) — stopped again, no credible basis found
+Per the task instructions, since the Brand/Premises already existed, this run's job was Phase 2 (research) + writing MenuItems only — no new Brand/Premises creation, and Phase 3 (SFA lookup) skipped as not applicable.
 
-Before repeating web research, checked whether an SFA Track Records xlsx export (with
-`businessName`) had since been added to the project, per the prior session's suggestion —
-searched `reference/` for any `.xlsx` or "track record" file. **None found**; only the prior
-write-up (`reference/research-sessions/2026-08-21-sfa-track-records.md`) describing that dataset
-exists in this project, not the underlying files. That avenue remains unavailable.
+## Phase 2 — Research (outcome: no credible menu data found)
 
-Ran fresh web searches (new angles from the prior session's, not just repeats):
-- `"Ang Foo Lui" Commonwealth Crescent` — no results connecting the two; every hit was
-  Commonwealth Crescent Food Centre content unrelated to this stall (Sek Tong Gai, Daniel Food
-  Diary's "10 Best" roundup, SethLui's "10 Stalls" guide, the SG Hawker Centres Fandom wiki,
-  Time Out, c.h.e.f blog, The Fat Guide).
-- `Commonwealth Crescent Market wet market stall list vegetable meat fish vendors` — surfaced a
-  2015 "To Market, To Market" wet-market writeup and an NHB wet-markets heritage PDF, but no
-  stall-by-stall directory and no mention of "Ang Foo Lui" — consistent with the prior session's
-  hypothesis that "Stall No 079" sits in the market's wet-market wing (raw produce/meat/fish)
-  rather than the food-centre wing that food blogs cover, though still unconfirmed either way.
+Searched for what this specific stall sells, since the SFA licensee name is a person's name (common for older hawker stall registrations) rather than a descriptive stall/dish name, and gives no indication of cuisine specifics beyond the generic "Local & Hawker" tag already on the Brand row.
 
-Zero credible items found — same result as the prior run. **Per Phase 2 step 5:** "If you cannot
-find any credible basis for a dish's macros, leave it out rather than guessing blind. If you
-can't build at least 3 credible items for the outlet, do NOT add a half-formed entry — leave the
-queue entry 'pending', note why in the session report, and stop (do not pick a fallback outlet in
-the same run)." This session stops here rather than substituting a different queue entry.
+Searches and sources checked:
+- `"Ang Foo Lui" Commonwealth Crescent Market` (web search) — no results
+- `Commonwealth Crescent Market stall 079 hawker` (web search) — no results specific to stall 079
+- HawkerPedia "Commonwealth Crescent Market: 10 Popular Stalls Worth Visiting" (fetched in full) — covers units #02-69, #02-73, #02-74, #02-76, #02-77, #02-78, #02-89, #02-90, #02-95, #02-100. No stall named Ang Foo Lui.
+- SETHLUI.com "10 Stalls That You Have To Try at Commonwealth Crescent Market & Food Centre" (fetched in full) — covers #02-89, #02-95, #02-93, #02-94, #02-77, #02-78, #02-69, #02-65, #02-85. No stall named Ang Foo Lui.
+- Miss Tam Chiak "Commonwealth Crescent Market & Food Centre – 9 Stalls You Should Try!" (fetched in full) — covers #02-95, #02-84, #02-83, #02-94, #02-89, #02-64, #02-93, #02-70, #02-85. No stall named Ang Foo Lui.
+- SG Hawker Centres Wiki (Fandom) page — fetched but returned no usable stall-level content.
+- `"Ang Foo Lui" hawker Singapore` and `"Ang Foo Lui" OR "洪富来" Commonwealth Crescent` (web search) — no matches for this specific stall.
+- One search result surfaced an AI-generated claim that "Fresh Juice Corner" occupies unit #02-79 — traced back to the Miss Tam Chiak page directly and confirmed that page does **not** mention #02-79 or any juice stall at that unit. Discarded as an unverifiable/likely-hallucinated claim rather than treated as a lead (per the project's standing rule to sample-verify, never bulk-trust).
 
-## SFA registration (Phase 3)
+Note: SFA's internal "Stall No 079" numbering is not necessarily the same scheme as the public unit numbers (`#02-XX`) used by food blogs, which is part of why cross-referencing didn't turn up a match even indirectly.
 
-Not applicable — Brand/Premises already existed with real SFA data from the 2026-08-20
-restructure.
+**Conclusion:** No official brand source, HPB data, or reputable secondary source (food blog, review site) could be found identifying what this stall actually sells. Every major "must-try stalls" roundup for Commonwealth Crescent Market was checked and none mention this stall — it appears to be a small, low-profile stall with no public food-media coverage. Per the task's key rule against fabricating macros, no menu items were added.
 
-## Write (Phase 4)
+## Phase 3 — SFA registration
 
-**None.** No edits to `src/lib/brands.ts`, `src/lib/premises.ts`, or `src/lib/menuItems.ts`.
-`src/lib/researchQueue.ts` entry left as `status: "pending"` (unchanged).
+Not applicable — Premises row already carries verified SFA data from the 2026-08-20 restructure (see above). Not re-researched, per instructions.
 
-## Verify (Phase 5)
+## Phase 4 — Records written
 
-No data changes were made; `npx tsc --noEmit` was not re-run since nothing in the project changed
-from this session's work (prior session confirmed clean state on 2026-08-21).
+None. No credible basis was found for any menu item's macros, so no MenuItems were added (fewer than the required minimum of 3 credible items — in fact, zero).
 
-## Commit
+## Phase 5 — Typecheck
 
-This report file is a new file (documentation only — no `Brand`/`Premises`/`MenuItem`/
-queue-status changes to commit). Committed locally per Phase 6; **not pushed**.
+Not applicable — no files under `src/lib` were modified this run.
 
-## Notes for future sessions
+## Outcome
 
-- **This queue entry is now blocked across two consecutive runs (2026-08-21, 2026-08-22) with
-  identical findings.** Because Phase 1's selection rule is purely mechanical (first pending
-  `medium` entry in array order) and this session's own rule forbids picking a fallback within
-  a run, this entry will keep being selected — and keep dead-ending — on every future run until
-  either (a) new external data becomes available (an SFA Track Records xlsx with `businessName`,
-  or an in-person confirmation of what Stall No 079 actually sells), or (b) a human decides to
-  manually deprioritize/skip it (e.g. set `priority: 'low'`, or add a note flagging it as
-  currently unresearchable) so the deterministic selection moves on.
-  Recommend flagging this to the project owner rather than having a third consecutive run repeat
-  the same dead end.
-- If unblocked, the next in-order entry is `commonwealth_crescent_market_chin_she_thong_chin_sze_thong`.
-
-## Sources checked (no usable data from any)
-
-- [Sek Tong Gai @ Commonwealth Crescent — johorkaki.blogspot.com](https://johorkaki.blogspot.com/2025/04/sek-tong-gai-commonwealth-crescent.html)
-- [10 Best Commonwealth Crescent Food Centre To Try — DanielFoodDiary.com](https://danielfooddiary.com/2024/01/24/commonwealthcrescentfood/)
-- [10 Stalls That You Have To Try at Commonwealth Crescent Market — SETHLUI.com](https://sethlui.com/commonwealth-crescent-market-food-guide-singapore/)
-- [Commonwealth Crescent Market — SG Hawker Centres Wiki | Fandom](https://sg-hawker-centres.fandom.com/wiki/Commonwealth_Crescent_Market)
-- [Commonwealth Crescent — Time Out Singapore](https://www.timeout.com/singapore/restaurants-and-cafes/commonwealth-crescent)
-- [To Market, To Market: Commonwealth Crescent Market — Owls Well](https://owlswellblog.wordpress.com/2015/08/17/to-market-to-market-commonwealth-crescent-market/)
-- [Commonwealth Crescent Market: 10 Popular Stalls Worth Visiting — HawkerPedia](https://hawkerpedia.com.sg/commonwealth-crescent-market/)
-- [WET MARKETS COMMUNITY HERITAGE SERIES II — NHB](https://www.nhb.gov.sg/~/media/nhb/files/resources/publications/ebooks/nhb_ebook_wet_markets.pdf)
+Queue entry `commonwealth_crescent_market_ang_foo_lui` left as `status: 'pending'`. No fallback outlet was selected in this run, per instructions. The next scheduled run should pick the next pending entry in this track normally — this stall can be revisited later if a Track Records export or other new data source becomes available with a Business Name field to cross-check.
