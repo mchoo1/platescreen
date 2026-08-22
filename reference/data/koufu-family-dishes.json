@@ -1,0 +1,100 @@
+{
+  "Dough Culture": [
+    {
+      "name": "You Tiao",
+      "price": 1.1
+    },
+    {
+      "name": "Butterfly Bun",
+      "price": 1.1
+    },
+    {
+      "name": "Salted Bun",
+      "price": 1.1
+    },
+    {
+      "name": "Red Bean Bun",
+      "price": 1.2
+    },
+    {
+      "name": "Sesame Ball Yellow Bean",
+      "price": 1.1
+    },
+    {
+      "name": "Sesame Ball Peanut",
+      "price": 1.1
+    },
+    {
+      "name": "Carrot Cake",
+      "price": 1.1
+    },
+    {
+      "name": "Yam Cake",
+      "price": 1.3
+    },
+    {
+      "name": "Spring Roll",
+      "price": 1.4
+    },
+    {
+      "name": "Curry Puff",
+      "price": 1.5
+    },
+    {
+      "name": "Samosa",
+      "price": 1.5
+    },
+    {
+      "name": "Veggie Ball 5Pcs",
+      "price": 2.0
+    },
+    {
+      "name": "Green Bean Cake",
+      "price": 1.0
+    },
+    {
+      "name": "Tapioca Cake",
+      "price": 1.1
+    },
+    {
+      "name": "Sweet Potato Slice",
+      "price": 1.3
+    },
+    {
+      "name": "Sweet Potato Sweet Cake",
+      "price": 1.3
+    },
+    {
+      "name": "In-1 Sweet Cake",
+      "price": 1.3
+    },
+    {
+      "name": "Banana Fritters",
+      "price": 1.5
+    },
+    {
+      "name": "Banana Ball 5Pcs",
+      "price": 2.0
+    },
+    {
+      "name": "Rojak Youtiao",
+      "price": 2.5
+    },
+    {
+      "name": "Tau Suan",
+      "price": 2.0
+    },
+    {
+      "name": "Vegetarian Porridge",
+      "price": 2.8
+    },
+    {
+      "name": "Mini Spring Roll",
+      "price": 1.1
+    },
+    {
+      "name": "Crispy Soya Skin",
+      "price": 1.1
+    }
+  ]
+}

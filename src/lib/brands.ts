@@ -39,6 +39,22 @@
 // added, these brands are invisible in the calorie/protein screener (buildScreenerRows() joins off
 // MENU_ITEMS) even though they now exist for location/map purposes — flagged as a single queued item
 // in researchQueue.ts rather than 839 separate entries.
+// 2026-08-22f: found Koufu's 3 remaining standalone sub-brands the same way — not through their
+// JS/SPA "store locator" widgets (still genuinely dead ends), but through other static data sources
+// on each site. R&B Tea (rbtea.com.sg, WordPress) exposes a "stores" custom-post-type sitemap
+// (wp-sitemap-posts-stores-1.xml) whose individual pages are empty, but its store-locator page loads
+// data from a plain `get_regions_action` admin-ajax.php call that returns full JSON (name, address,
+// hours) for all 14 outlets directly — no scraping of rendered HTML needed. Nine Fresh
+// (ninefresh.com, plain static HTML) and Dough Culture (doughculture.com, OpenCart) both just list
+// every outlet as plain text on a "Locate Us" page — no JS, no API, just careful HTML-comment-aware
+// parsing (Nine Fresh's page has 3 outlets deliberately commented out — White Sands, NTU, SMU — that
+// must NOT be included; Dough Culture's address and hours share the same CSS class, easy to
+// mis-pair if you don't scope by outlet block). Added `koufu_rb_tea` (14 premises), `koufu_nine_fresh`
+// (25 premises), `koufu_dough_culture` (18 premises) — 57 more geocoded premises, no operatorId
+// (standalone Koufu Group storefronts, same as the earlier 5). Dough Culture's product page is a
+// real storefront with real prices — captured in reference/data/koufu-family-dishes.json (24 items,
+// no macros, same gap as Kopitiam) for a future research pass. The Kitchen / The Green Hut /
+// Rasapura Master still need their real koufu.com.sg URLs (guessed slugs 404'd) — not attempted here.
 
 export const BRANDS_1 = [
   {
@@ -26120,6 +26136,55 @@ export const BRANDS_4 = [
       "dine_in"
     ],
     operatorId: "kopitiam"
+  },
+  {
+    id: "koufu_rb_tea",
+    name: "R&B Tea",
+    emoji: "🧋",
+    type: "grab_go",
+    cuisine: "Bubble Tea",
+    aliases: [
+      "r&b tea",
+      "rnb tea"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_nine_fresh",
+    name: "Nine Fresh",
+    emoji: "🍧",
+    type: "grab_go",
+    cuisine: "Taiwanese Dessert",
+    aliases: [
+      "nine fresh",
+      "nine fresh desserts"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_dough_culture",
+    name: "Dough Culture",
+    emoji: "🥟",
+    type: "grab_go",
+    cuisine: "Local Fried Snacks",
+    aliases: [
+      "dough culture"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "grab_go"
+    ]
   }
 ];
 
