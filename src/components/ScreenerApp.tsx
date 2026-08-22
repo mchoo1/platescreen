@@ -18,7 +18,13 @@ import type { DietaryFlag, OutletType } from '@/types';
 const ALL_ROWS = buildScreenerRows();
 const OUTLET_COUNT = new Set(ALL_ROWS.map((r) => r.restaurantId)).size;
 const VERIFIED_COUNT = ALL_ROWS.filter((r) => r.confidence === 'verified').length;
-const TOP_VALUE_PICKS = [...ALL_ROWS].sort((a, b) => b.ppd - a.ppd).slice(0, 10);
+// Ready-to-eat outlet types only — excludes 'supermarket' so raw ingredients (chicken breast,
+// eggs, dry rice) don't dominate "Top picks" ahead of actual meals someone can walk in and order.
+// See reference/research-sessions/2026-08-22-database-usefulness-audit.md.
+const TOP_VALUE_PICKS = [...ALL_ROWS]
+  .filter((r) => r.outletType !== 'supermarket')
+  .sort((a, b) => b.ppd - a.ppd)
+  .slice(0, 10);
 
 // ── URL <-> filters ───────────────────────────────────────────────────────────
 function filtersFromParams(params: URLSearchParams): { filters: ScreenerFilters; sortKey: SortKey; sortDir: SortDir; preset: string | null } {
