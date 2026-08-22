@@ -3153,5 +3153,29 @@
     "sfa": null,
     "source": "operator_official_site",
     "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_9",
+    "operatorId": "hawkers_street",
+    "label": "Square 2",
+    "address": "10 Sinaran Dr, #04-14 to 16, #04-68 to 75, #04-76 to 80, Singapore 307606",
+    "postal": "307606",
+    "lat": null,
+    "lng": null,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
+  },
+  {
+    "id": "venue_hawkers_street_10",
+    "operatorId": "hawkers_street",
+    "label": "The Clementi Mall",
+    "address": "3155 Commonwealth Ave W, #04-20/21/22 The Clementi Mall, Singapore 129588",
+    "postal": "129588",
+    "lat": null,
+    "lng": null,
+    "sfa": null,
+    "source": "operator_official_site",
+    "concessionsResearched": false
   }
 ]

@@ -2,18 +2,22 @@
 // and reference/migration-scripts/ for the restructure this replaced (Outlet -> Brand+Premises).
 // Untyped literal export (see Brand in types/db.ts) — screener.ts casts once at the boundary,
 // matching the outlets.ts/foodOptions.ts convention (avoids TS2590 on a large array literal).
-// 2026-08-22a: renamed 56 generic dish-type-placeholder brands to real, verified stall names
-// across 9 hawker centres (see 2026-08-22-generic-name-cleanup.md).
-// 2026-08-22b: removed 36 fully-empty Brand stubs, zero Premises AND zero MenuItems
-// (see 2026-08-22-database-usefulness-audit.md).
-// 2026-08-22c: removed 4 food-court OPERATOR brands (kopitiam, koufu, foodfare, hawkers_street)
-// that were each modeled as a single Brand with 8-65 Premises and 0 MenuItems — per the Operator
-// design already specified in types/db.ts, an operator's building is not itself a screenable
-// "restaurant" (it has no single menu); only named concessions inside it should be a Brand
-// (operatorId set), which is exactly how Hawkers' Street's 27 real named stalls already work.
-// The 169 removed Premises rows (real SFA-sourced addresses) are preserved as future research
-// anchors in reference/data/food-court-venues.json, not lost.
-// See reference/research-sessions/2026-08-22-food-court-operator-restructure.md.
+// 2026-08-22a: renamed 56 generic dish-type-placeholder brands to real, verified stall names.
+// 2026-08-22b: removed 36 fully-empty Brand stubs.
+// 2026-08-22c: removed 4 food-court OPERATOR mega-brands (kopitiam/koufu/foodfare/hawkers_street),
+// preserved as reference/data/food-court-venues.json (see that commit).
+// 2026-08-22d: researched Kopitiam/Koufu/Foodfare/Hawkers' Street's own official websites per user
+// request to add their real stores. Added 5 real standalone Koufu Group in-house F&B chains, each
+// with its own consistent single menu across all locations (found via koufu.com.sg/our-brands/ —
+// NOT concessions inside a shared food-court building, so no operatorId; these are their own
+// storefronts): Happy Hawkers (21 outlets), Fork & Spoon (3), Grove (4), 1983 - Coffee & Toast (1),
+// 1983 - A Taste of Nanyang (1) — 30 real, address-verified premises total, all geocoded via OneMap.
+// Kopitiam's own outlet finder and Koufu's remaining sub-brands (R&B Tea, Dough Culture, Nine Fresh,
+// The Kitchen, The Green Hut, Rasapura Master) are JS-rendered map/SPA widgets that did not expose
+// their outlet data to static fetching or DOM inspection — not scraped this pass, left as a
+// follow-up (see reference/research-sessions/2026-08-22-food-court-website-research.md). NTUC
+// Foodfare's own site now positions it purely as B2B institutional catering (childcare/healthcare/
+// government), not public food courts — flagged as a scope question rather than acted on.
 
 export const BRANDS = [
   {
@@ -12554,6 +12558,93 @@ export const BRANDS = [
     dietTags: [
       "halal"
     ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_happy_hawkers",
+    name: "Happy Hawkers",
+    emoji: "🍚",
+    type: "restaurant",
+    cuisine: "Local Coffeeshop",
+    aliases: [
+      "happy hawkers"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_fork_spoon",
+    name: "Fork & Spoon",
+    emoji: "🍜",
+    type: "restaurant",
+    cuisine: "Local (No Pork, No Lard)",
+    aliases: [
+      "fork and spoon",
+      "fork & spoon"
+    ],
+    dietTags: [
+      "no_pork"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_grove",
+    name: "Grove",
+    emoji: "🥗",
+    type: "restaurant",
+    cuisine: "Vegetarian",
+    aliases: [
+      "grove"
+    ],
+    dietTags: [
+      "vegetarian"
+    ],
+    priceRange: "$$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_1983_coffee_toast",
+    name: "1983 - Coffee & Toast",
+    emoji: "☕",
+    type: "restaurant",
+    cuisine: "Local Coffeeshop",
+    aliases: [
+      "1983 coffee and toast",
+      "1983 coffee & toast"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ]
+  },
+  {
+    id: "koufu_1983_taste_of_nanyang",
+    name: "1983 - A Taste of Nanyang",
+    emoji: "☕",
+    type: "restaurant",
+    cuisine: "Local Coffeeshop",
+    aliases: [
+      "1983 a taste of nanyang",
+      "1983 taste of nanyang"
+    ],
+    dietTags: [],
     priceRange: "$",
     platforms: [
       "dine_in",
