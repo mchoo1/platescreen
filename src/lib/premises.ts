@@ -1369,66 +1369,9 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-        {
-    id: "bukit_panjang_hawker_centre_khor_lye_hong_p197",
-    brandId: "bukit_panjang_hawker_centre_khor_lye_hong",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "BUKIT PANJANG HAWKER CENTRE Stall No 01-18",
-    postal: null,
-    lat: 1.3807,
-    lng: 103.763,
-    sfa: {
-      licenceNumber: "BPH0118001",
-      licenseeName: "KHOR LYE HONG",
-      premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-18",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_koh_heong_choo_p198",
-    brandId: "bukit_panjang_hawker_centre_koh_heong_choo",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "BUKIT PANJANG HAWKER CENTRE Stall No 01-02",
-    postal: null,
-    lat: 1.3807,
-    lng: 103.763,
-    sfa: {
-      licenceNumber: "BPH0102001",
-      licenseeName: "KOH HEONG CHOO",
-      premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-02",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_kok_kuan_yen_p199",
-    brandId: "bukit_panjang_hawker_centre_kok_kuan_yen",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "BUKIT PANJANG HAWKER CENTRE Stall No 01-14",
-    postal: null,
-    lat: 1.3807,
-    lng: 103.763,
-    sfa: {
-      licenceNumber: "BPH0114001",
-      licenseeName: "KOK KUAN YEN",
-      premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+        
+  
+  
                       {
     id: "clementi_ave_3_blk_448_lee_guat_hoon_p216",
     brandId: "clementi_ave_3_blk_448_lee_guat_hoon",
@@ -2352,56 +2295,18 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-          {
-    id: "chong_boon_market_and_food_centre_amk443_eating_house_pte_ltd_p531",
-    brandId: "chong_boon_market_and_food_centre_amk443_eating_house_pte_ltd",
-    label: "Chong Boon Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Boon Market and Food Centre",
-    address: "443 ANG MO KIO AVENUE 10 #01-1221 SINGAPORE 560443",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8542,
-    sfa: {
-      licenceNumber: "S79143A007",
-      licenseeName: "AMK443 EATING HOUSE PTE.LTD.",
-      premisesAddress: "443 ANG MO KIO AVENUE 10 #01-1221 SINGAPORE 560443",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chong_boon_market_and_food_centre_chee_kiat_hoe_xu_jiehe_p532",
-    brandId: "chong_boon_market_and_food_centre_chee_kiat_hoe_xu_jiehe",
-    label: "Chong Boon Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Boon Market and Food Centre",
-    address: "443 ANG MO KIO AVENUE 10 #01-1229 SINGAPORE 560443",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8542,
-    sfa: {
-      licenceNumber: "CE15121V000",
-      licenseeName: "CHEE KIAT HOE (XU JIEHE)",
-      premisesAddress: "443 ANG MO KIO AVENUE 10 #01-1229 SINGAPORE 560443",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+          
+  
   {
     id: "chong_boon_market_and_food_centre_cheers_holdings_2004_pte_ltd_p533",
     brandId: "chong_boon_market_and_food_centre_cheers_holdings_2004_pte_ltd",
     label: "Chong Boon Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chong Boon Market and Food Centre",
-    address: "407 ANG MO KIO AVENUE 10 #01-741 SINGAPORE 560407",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8542,
+    address: "453A Ang Mo Kio Avenue 10, Singapore 561453",
+    postal: "561453",
+    lat: 1.3682477887765,
+    lng: 103.856361649863,
     sfa: {
       licenceNumber: "B01026K000",
       licenseeName: "CHEERS HOLDINGS (2004) PTE. LTD.",
@@ -2412,36 +2317,17 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "chong_boon_market_and_food_centre_chow_chee_peng_jason_zou_zhiping_p534",
-    brandId: "chong_boon_market_and_food_centre_chow_chee_peng_jason_zou_zhiping",
-    label: "Chong Boon Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Boon Market and Food Centre",
-    address: "452 ANG MO KIO AVENUE 10 #01-1777 SINGAPORE 560452",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8542,
-    sfa: {
-      licenceNumber: "CE15285C000",
-      licenseeName: "CHOW CHEE PENG JASON (ZOU ZHIPING)",
-      premisesAddress: "452 ANG MO KIO AVENUE 10 #01-1777 SINGAPORE 560452",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
   {
     id: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p535",
     brandId: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
     label: "Chong Boon Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chong Boon Market and Food Centre",
-    address: "BLK 532 ANG MO KIO AVENUE 10 #01-2455 SINGAPORE 560532",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8542,
+    address: "453A Ang Mo Kio Avenue 10, Singapore 561453",
+    postal: "561453",
+    lat: 1.3682477887765,
+    lng: 103.856361649863,
     sfa: {
       licenceNumber: "S84202V000",
       licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
@@ -2452,75 +2338,18 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_2_p536",
-    brandId: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_2",
-    label: "Chong Boon Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Boon Market and Food Centre",
-    address: "452 ANG MO KIO AVENUE 10 #01-1775 SINGAPORE 560452",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8542,
-    sfa: {
-      licenceNumber: "S01033B000",
-      licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
-      premisesAddress: "452 ANG MO KIO AVENUE 10 #01-1775 SINGAPORE 560452",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_amk443_eating_house_pte_ltd_p537",
-    brandId: "cheng_san_market_and_cooked_food_centre_amk443_eating_house_pte_ltd",
-    label: "Cheng San Market and Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Cheng San Market and Cooked Food Centre",
-    address: "443 ANG MO KIO AVENUE 10 #01-1221 SINGAPORE 560443",
-    postal: null,
-    lat: 1.372772093027544,
-    lng: 103.854457955288,
-    sfa: {
-      licenceNumber: "S79143A007",
-      licenseeName: "AMK443 EATING HOUSE PTE.LTD.",
-      premisesAddress: "443 ANG MO KIO AVENUE 10 #01-1221 SINGAPORE 560443",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_chee_kiat_hoe_xu_jiehe_p538",
-    brandId: "cheng_san_market_and_cooked_food_centre_chee_kiat_hoe_xu_jiehe",
-    label: "Cheng San Market and Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Cheng San Market and Cooked Food Centre",
-    address: "443 ANG MO KIO AVENUE 10 #01-1229 SINGAPORE 560443",
-    postal: null,
-    lat: 1.372772093027544,
-    lng: 103.854457955288,
-    sfa: {
-      licenceNumber: "CE15121V000",
-      licenseeName: "CHEE KIAT HOE (XU JIEHE)",
-      premisesAddress: "443 ANG MO KIO AVENUE 10 #01-1229 SINGAPORE 560443",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
+  
+  
   {
     id: "cheng_san_market_and_cooked_food_centre_cheers_holdings_2004_pte_ltd_p539",
     brandId: "cheng_san_market_and_cooked_food_centre_cheers_holdings_2004_pte_ltd",
     label: "Cheng San Market and Cooked Food Centre",
     locationType: "hawker_centre",
     locationContext: "Cheng San Market and Cooked Food Centre",
-    address: "407 ANG MO KIO AVENUE 10 #01-741 SINGAPORE 560407",
-    postal: null,
-    lat: 1.372772093027544,
+    address: "527 Ang Mo Kio Avenue 10, Singapore 560527",
+    postal: "560527",
+    lat: 1.37277209302753,
     lng: 103.854457955288,
     sfa: {
       licenceNumber: "B01026K000",
@@ -2532,35 +2361,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_chow_chee_peng_jason_zou_zhiping_p540",
-    brandId: "cheng_san_market_and_cooked_food_centre_chow_chee_peng_jason_zou_zhiping",
-    label: "Cheng San Market and Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Cheng San Market and Cooked Food Centre",
-    address: "452 ANG MO KIO AVENUE 10 #01-1777 SINGAPORE 560452",
-    postal: null,
-    lat: 1.372772093027544,
-    lng: 103.854457955288,
-    sfa: {
-      licenceNumber: "CE15285C000",
-      licenseeName: "CHOW CHEE PENG JASON (ZOU ZHIPING)",
-      premisesAddress: "452 ANG MO KIO AVENUE 10 #01-1777 SINGAPORE 560452",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
   {
     id: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd_p541",
     brandId: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd",
     label: "Cheng San Market and Cooked Food Centre",
     locationType: "hawker_centre",
     locationContext: "Cheng San Market and Cooked Food Centre",
-    address: "BLK 532 ANG MO KIO AVENUE 10 #01-2455 SINGAPORE 560532",
-    postal: null,
-    lat: 1.372772093027544,
+    address: "527 Ang Mo Kio Avenue 10, Singapore 560527",
+    postal: "560527",
+    lat: 1.37277209302753,
     lng: 103.854457955288,
     sfa: {
       licenceNumber: "S84202V000",
@@ -2572,26 +2382,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd_2_p542",
-    brandId: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd_2",
-    label: "Cheng San Market and Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Cheng San Market and Cooked Food Centre",
-    address: "452 ANG MO KIO AVENUE 10 #01-1775 SINGAPORE 560452",
-    postal: null,
-    lat: 1.372772093027544,
-    lng: 103.854457955288,
-    sfa: {
-      licenceNumber: "S01033B000",
-      licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
-      premisesAddress: "452 ANG MO KIO AVENUE 10 #01-1775 SINGAPORE 560452",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
     {
     id: "mayflower_market_cold_storage_singapore_1983_pte_ltd_p544",
     brandId: "mayflower_market_cold_storage_singapore_1983_pte_ltd",
@@ -2672,116 +2463,21 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-    {
-    id: "blk_724_ang_mo_kio_market_alvin_sabai_p555",
-    brandId: "blk_724_ang_mo_kio_market_alvin_sabai",
-    label: "Blk 724 Ang Mo Kio Market",
-    locationType: "hawker_centre",
-    locationContext: "Blk 724 Ang Mo Kio Market",
-    address: "4500 ANG MO KIO AVENUE 6 ANDERSON JUNIOR COLLEGE SINGAPORE 569843",
-    postal: null,
-    lat: 1.372172585451713,
-    lng: 103.8465103102021,
-    sfa: {
-      licenceNumber: "CE13881N000",
-      licenseeName: "ALVIN SABAI",
-      premisesAddress: "4500 ANG MO KIO AVENUE 6 ANDERSON JUNIOR COLLEGE SINGAPORE 569843",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_ang_hwei_ling_hong_huiling_p556",
-    brandId: "blk_724_ang_mo_kio_market_ang_hwei_ling_hong_huiling",
-    label: "Blk 724 Ang Mo Kio Market",
-    locationType: "hawker_centre",
-    locationContext: "Blk 724 Ang Mo Kio Market",
-    address: "5209 ANG MO KIO AVENUE 6 PRESBYTERIAN HIGH SCHOOL SINGAPORE 569845",
-    postal: null,
-    lat: 1.372172585451713,
-    lng: 103.8465103102021,
-    sfa: {
-      licenceNumber: "B02047N002",
-      licenseeName: "ANG HWEI LING ( HONG HUILING )",
-      premisesAddress: "5209 ANG MO KIO AVENUE 6 PRESBYTERIAN HIGH SCHOOL SINGAPORE 569845",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_cafe_galilee_pte_ltd_p557",
-    brandId: "blk_724_ang_mo_kio_market_cafe_galilee_pte_ltd",
-    label: "Blk 724 Ang Mo Kio Market",
-    locationType: "hawker_centre",
-    locationContext: "Blk 724 Ang Mo Kio Market",
-    address: "4300 ANG MO KIO AVENUE 6 ANG MO KIO COMMUNITY LIBRARY SINGAPORE 569842",
-    postal: null,
-    lat: 1.372172585451713,
-    lng: 103.8465103102021,
-    sfa: {
-      licenceNumber: "B03003J000",
-      licenseeName: "CAFE GALILEE PTE. LTD.",
-      premisesAddress: "4300 ANG MO KIO AVENUE 6 ANG MO KIO COMMUNITY LIBRARY SINGAPORE 569842",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_choo_siew_ping_p558",
-    brandId: "blk_724_ang_mo_kio_market_choo_siew_ping",
-    label: "Blk 724 Ang Mo Kio Market",
-    locationType: "hawker_centre",
-    locationContext: "Blk 724 Ang Mo Kio Market",
-    address: "5209 ANG MO KIO AVENUE 6 PRESBYTERIAN HIGH SCHOOL SINGAPORE 569845",
-    postal: null,
-    lat: 1.372172585451713,
-    lng: 103.8465103102021,
-    sfa: {
-      licenceNumber: "B02047N007",
-      licenseeName: "CHOO SIEW PING",
-      premisesAddress: "5209 ANG MO KIO AVENUE 6 PRESBYTERIAN HIGH SCHOOL SINGAPORE 569845",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "blk_724_ang_mo_kio_market_chu_sing_kuang_p559",
-    brandId: "blk_724_ang_mo_kio_market_chu_sing_kuang",
-    label: "Blk 724 Ang Mo Kio Market",
-    locationType: "hawker_centre",
-    locationContext: "Blk 724 Ang Mo Kio Market",
-    address: "5209 ANG MO KIO AVENUE 6 PRESBYTERIAN HIGH SCHOOL SINGAPORE 569845",
-    postal: null,
-    lat: 1.372172585451713,
-    lng: 103.8465103102021,
-    sfa: {
-      licenceNumber: "B02047N008",
-      licenseeName: "CHU SING KUANG",
-      premisesAddress: "5209 ANG MO KIO AVENUE 6 PRESBYTERIAN HIGH SCHOOL SINGAPORE 569845",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+    
+  
+  
+  
+  
   {
     id: "blk_724_ang_mo_kio_market_cold_storage_singapore_1983_pte_ltd_p560",
     brandId: "blk_724_ang_mo_kio_market_cold_storage_singapore_1983_pte_ltd",
     label: "Blk 724 Ang Mo Kio Market",
     locationType: "hawker_centre",
     locationContext: "Blk 724 Ang Mo Kio Market",
-    address: "3535 ANG MO KIO AVENUE 6 SHELL SERVICE STATION SINGAPORE 569839",
-    postal: null,
-    lat: 1.372172585451713,
-    lng: 103.8465103102021,
+    address: "724 Ang Mo Kio Avenue 6, Singapore 560724",
+    postal: "560724",
+    lat: 1.37217258545171,
+    lng: 103.846510310202,
     sfa: {
       licenceNumber: "CE06785V000",
       licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
@@ -80052,6 +79748,214 @@ export const PREMISES_12 = [
     postal: "120353",
     lat: 1.3141709,
     lng: 103.7707776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_boon_market_and_food_centre_yong_xin_batchr1",
+    brandId: "chong_boon_market_and_food_centre_yong_xin",
+    label: "Chong Boon Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Boon Market & Food Centre",
+    address: "453A Ang Mo Kio Avenue 10 #01-39, Singapore 561453",
+    postal: "561453",
+    lat: 1.3682477887765,
+    lng: 103.856361649863,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_boon_market_and_food_centre_ang_mo_kio_loh_mee_laksa_batchr2",
+    brandId: "chong_boon_market_and_food_centre_ang_mo_kio_loh_mee_laksa",
+    label: "Chong Boon Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Boon Market & Food Centre",
+    address: "453A Ang Mo Kio Avenue 10 #01-17, Singapore 561453",
+    postal: "561453",
+    lat: 1.3682477887765,
+    lng: 103.856361649863,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_boon_market_and_food_centre_bin_fen_economic_bee_hoon_batchr3",
+    brandId: "chong_boon_market_and_food_centre_bin_fen_economic_bee_hoon",
+    label: "Chong Boon Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Boon Market & Food Centre",
+    address: "453A Ang Mo Kio Avenue 10 #01-03, Singapore 561453",
+    postal: "561453",
+    lat: 1.3682477887765,
+    lng: 103.856361649863,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_boon_market_and_food_centre_cai_ji_fried_fish_soup_batchr4",
+    brandId: "chong_boon_market_and_food_centre_cai_ji_fried_fish_soup",
+    label: "Chong Boon Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Boon Market & Food Centre",
+    address: "453A Ang Mo Kio Avenue 10 #01-10, Singapore 561453",
+    postal: "561453",
+    lat: 1.3682477887765,
+    lng: 103.856361649863,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "cheng_san_market_and_cooked_food_centre_tian_yi_vegetarian_food_batchr1",
+    brandId: "cheng_san_market_and_cooked_food_centre_tian_yi_vegetarian_food",
+    label: "Cheng San Market & Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Cheng San Market & Cooked Food Centre",
+    address: "527 Ang Mo Kio Avenue 10 #01-143, Singapore 560527",
+    postal: "560527",
+    lat: 1.37277209302753,
+    lng: 103.854457955288,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "cheng_san_market_and_cooked_food_centre_mei_ji_niang_dou_foo_batchr2",
+    brandId: "cheng_san_market_and_cooked_food_centre_mei_ji_niang_dou_foo",
+    label: "Cheng San Market & Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Cheng San Market & Cooked Food Centre",
+    address: "527 Ang Mo Kio Avenue 10 #01-149, Singapore 560527",
+    postal: "560527",
+    lat: 1.37277209302753,
+    lng: 103.854457955288,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "cheng_san_market_and_cooked_food_centre_shui_guo_batchr3",
+    brandId: "cheng_san_market_and_cooked_food_centre_shui_guo",
+    label: "Cheng San Market & Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Cheng San Market & Cooked Food Centre",
+    address: "527 Ang Mo Kio Avenue 10 #01-136, Singapore 560527",
+    postal: "560527",
+    lat: 1.37277209302753,
+    lng: 103.854457955288,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "cheng_san_market_and_cooked_food_centre_xiang_kee_yu_yuan_mian_tang_batchr4",
+    brandId: "cheng_san_market_and_cooked_food_centre_xiang_kee_yu_yuan_mian_tang",
+    label: "Cheng San Market & Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Cheng San Market & Cooked Food Centre",
+    address: "527 Ang Mo Kio Avenue 10 #01-130, Singapore 560527",
+    postal: "560527",
+    lat: 1.37277209302753,
+    lng: 103.854457955288,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_724_ang_mo_kio_market_xi_xiang_feng_batchr1",
+    brandId: "blk_724_ang_mo_kio_market_xi_xiang_feng",
+    label: "Ang Mo Kio Central Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio Central Market & Food Centre",
+    address: "724 Ang Mo Kio Avenue 6 #01-23, Singapore 560724",
+    postal: "560724",
+    lat: 1.37217258545171,
+    lng: 103.846510310202,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_724_ang_mo_kio_market_lim_hai_sheng_cooked_food_batchr2",
+    brandId: "blk_724_ang_mo_kio_market_lim_hai_sheng_cooked_food",
+    label: "Ang Mo Kio Central Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio Central Market & Food Centre",
+    address: "724 Ang Mo Kio Avenue 6 #01-09, Singapore 560724",
+    postal: "560724",
+    lat: 1.37217258545171,
+    lng: 103.846510310202,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_724_ang_mo_kio_market_hup_hup_minced_meat_noodle_batchr3",
+    brandId: "blk_724_ang_mo_kio_market_hup_hup_minced_meat_noodle",
+    label: "Ang Mo Kio Central Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio Central Market & Food Centre",
+    address: "724 Ang Mo Kio Avenue 6 #01-39, Singapore 560724",
+    postal: "560724",
+    lat: 1.37217258545171,
+    lng: 103.846510310202,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_724_ang_mo_kio_market_fried_hokkien_prawn_noodle_batchr4",
+    brandId: "blk_724_ang_mo_kio_market_fried_hokkien_prawn_noodle",
+    label: "Ang Mo Kio Central Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio Central Market & Food Centre",
+    address: "724 Ang Mo Kio Avenue 6 #01-38, Singapore 560724",
+    postal: "560724",
+    lat: 1.37217258545171,
+    lng: 103.846510310202,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_724_ang_mo_kio_market_seng_bee_hainanese_chicken_rice_batchr5",
+    brandId: "blk_724_ang_mo_kio_market_seng_bee_hainanese_chicken_rice",
+    label: "Ang Mo Kio Central Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio Central Market & Food Centre",
+    address: "724 Ang Mo Kio Avenue 6 #01-31, Singapore 560724",
+    postal: "560724",
+    lat: 1.37217258545171,
+    lng: 103.846510310202,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_panjang_hawker_centre_hai_nan_hometown_curry_batchr1",
+    brandId: "bukit_panjang_hawker_centre_hai_nan_hometown_curry",
+    label: "Bukit Panjang Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Panjang Hawker Centre",
+    address: "2 Bukit Panjang Ring Road #01-01, Singapore 679947",
+    postal: "679947",
+    lat: 1.37759742308947,
+    lng: 103.772491526747,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_panjang_hawker_centre_tong_fong_fatt_hainanese_boneless_chicken_rice_batchr2",
+    brandId: "bukit_panjang_hawker_centre_tong_fong_fatt_hainanese_boneless_chicken_rice",
+    label: "Bukit Panjang Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Panjang Hawker Centre",
+    address: "2 Bukit Panjang Ring Road #01-24, Singapore 679947",
+    postal: "679947",
+    lat: 1.37759742308947,
+    lng: 103.772491526747,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_panjang_hawker_centre_yu_kee_duck_rice_batchr3",
+    brandId: "bukit_panjang_hawker_centre_yu_kee_duck_rice",
+    label: "Bukit Panjang Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Panjang Hawker Centre",
+    address: "2 Bukit Panjang Ring Road #01-10, Singapore 679947",
+    postal: "679947",
+    lat: 1.37759742308947,
+    lng: 103.772491526747,
     sfa: null,
     source: "web_research"
   },
