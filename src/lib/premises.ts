@@ -1636,106 +1636,11 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   
-              {
-    id: "bukit_merah_central_food_centre_creme_works_private_limited_p357",
-    brandId: "bukit_merah_central_food_centre_creme_works_private_limited",
-    label: "Bukit Merah Central Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Merah Central Food Centre",
-    address: "163 BUKIT MERAH CENTRAL #02-3605 SINGAPORE 150163",
-    postal: null,
-    lat: 1.2828,
-    lng: 103.8224,
-    sfa: {
-      licenceNumber: "CE05365P000",
-      licenseeName: "CREME WORKS PRIVATE LIMITED",
-      premisesAddress: "163 BUKIT MERAH CENTRAL #02-3605 SINGAPORE 150163",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-            {
-    id: "80_circuit_road_market_and_food_centre_low_hua_boon_p374",
-    brandId: "80_circuit_road_market_and_food_centre_low_hua_boon",
-    label: "80 Circuit Road Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "80 Circuit Road Market and Food Centre",
-    address: "CIRCUIT ROAD BLK 80 Stall No 02-02",
-    postal: null,
-    lat: 1.3355,
-    lng: 103.8735,
-    sfa: {
-      licenceNumber: "CI50202002",
-      licenseeName: "LOW HUA BOON",
-      premisesAddress: "CIRCUIT ROAD BLK 80 Stall No 02-02",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_chia_hung_yong_p396",
-    brandId: "havelock_road_cooked_food_centre_chia_hung_yong",
-    label: "Havelock Road Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Havelock Road Cooked Food Centre",
-    address: "HAVELOCK ROAD BLK 22A Stall No 01-09",
-    postal: null,
-    lat: 1.2913,
-    lng: 103.8361,
-    sfa: {
-      licenceNumber: "HL10109001",
-      licenseeName: "CHIA HUNG YONG",
-      premisesAddress: "HAVELOCK ROAD BLK 22A Stall No 01-09",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_chin_tchin_moi_chin_chin_moi_p397",
-    brandId: "havelock_road_cooked_food_centre_chin_tchin_moi_chin_chin_moi",
-    label: "Havelock Road Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Havelock Road Cooked Food Centre",
-    address: "HAVELOCK ROAD BLK 22A Stall No 01-11",
-    postal: null,
-    lat: 1.2913,
-    lng: 103.8361,
-    sfa: {
-      licenceNumber: "HL10111001",
-      licenseeName: "CHIN TCHIN MOI @ CHIN CHIN MOI",
-      premisesAddress: "HAVELOCK ROAD BLK 22A Stall No 01-11",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "havelock_road_cooked_food_centre_chua_meow_ching_p398",
-    brandId: "havelock_road_cooked_food_centre_chua_meow_ching",
-    label: "Havelock Road Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Havelock Road Cooked Food Centre",
-    address: "HAVELOCK ROAD BLK 22A Stall No 01-05",
-    postal: null,
-    lat: 1.2913,
-    lng: 103.8361,
-    sfa: {
-      licenceNumber: "HL10105001",
-      licenseeName: "CHUA MEOW CHING",
-      premisesAddress: "HAVELOCK ROAD BLK 22A Stall No 01-05",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+              
+            
+  
+  
+  
   {
     id: "kukoh_21_food_centre_ntuc_foodfare_co_operative_ltd_p411",
     brandId: "kukoh_21_food_centre_ntuc_foodfare_co_operative_ltd",
@@ -1801,66 +1706,9 @@ const PREMISES_1 = [
 
 const PREMISES_2 = [
       
-  {
-    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_chen_kin_fatt_p440",
-    brandId: "blk_6_tanjong_pagar_plaza_market_and_food_centre_chen_kin_fatt",
-    label: "Blk 6 Tanjong Pagar Plaza Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Blk 6 Tanjong Pagar Plaza Market and Food Centre",
-    address: "TANJONG PAGAR PLAZA BLK 6 Stall No 02-38",
-    postal: null,
-    lat: 1.2774,
-    lng: 103.8427,
-    sfa: {
-      licenceNumber: "TJ20238002",
-      licenseeName: "CHEN KIN FATT",
-      premisesAddress: "TANJONG PAGAR PLAZA BLK 6 Stall No 02-38",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-            {
-    id: "changi_village_blk_2_and_3_eng_kow_muay_p452",
-    brandId: "changi_village_blk_2_and_3_eng_kow_muay",
-    label: "Changi Village Blk 2 and 3",
-    locationType: "hawker_centre",
-    locationContext: "Changi Village Blk 2 and 3",
-    address: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-35",
-    postal: null,
-    lat: 1.3897,
-    lng: 103.9882,
-    sfa: {
-      licenceNumber: "CV10135003",
-      licenseeName: "ENG KOW MUAY",
-      premisesAddress: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-35",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-              {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_kok_fu_chuen_p470",
-    brandId: "blk_17_upper_boon_keng_market_and_food_centre_kok_fu_chuen",
-    label: "Blk 17 Upper Boon Keng Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Blk 17 Upper Boon Keng Market and Food Centre",
-    address: "UPPER BOON KENG ROAD BLK 17 Stall No 01-78",
-    postal: null,
-    lat: 1.3178,
-    lng: 103.8706,
-    sfa: {
-      licenceNumber: "UB10178001",
-      licenseeName: "KOK FU CHUEN",
-      premisesAddress: "UPPER BOON KENG ROAD BLK 17 Stall No 01-78",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
+            
+              
   {
     id: "yuhua_village_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p471",
     brandId: "yuhua_village_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
@@ -1881,46 +1729,8 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-                    {
-    id: "jurong_west_street_52_blk_505_hap_ah_lam_p481",
-    brandId: "jurong_west_street_52_blk_505_hap_ah_lam",
-    label: "Jurong West Street 52 Blk 505",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Street 52 Blk 505",
-    address: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "J85109N003",
-      licenseeName: "HAP AH LAM",
-      premisesAddress: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_julaiah_binte_samin_p482",
-    brandId: "jurong_west_street_52_blk_505_julaiah_binte_samin",
-    label: "Jurong West Street 52 Blk 505",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Street 52 Blk 505",
-    address: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "J85109N007",
-      licenseeName: "JULAIAH BINTE SAMIN",
-      premisesAddress: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+                    
+  
         {
     id: "pasir_ris_central_hawker_centre_bee_cheng_hiang_concept_pte_ltd_p492",
     brandId: "pasir_ris_central_hawker_centre_bee_cheng_hiang_concept_pte_ltd",
@@ -2980,46 +2790,8 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-    {
-    id: "margaret_drive_hawker_centre_cafe_galilee_pte_ltd_p640",
-    brandId: "margaret_drive_hawker_centre_cafe_galilee_pte_ltd",
-    label: "Margaret Drive Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Margaret Drive Hawker Centre",
-    address: "53 MARGARET DRIVE QUEENSTOWN COMMUNITY LIBRARY SINGAPORE 149297",
-    postal: null,
-    lat: 1.2931,
-    lng: 103.8124,
-    sfa: {
-      licenceNumber: "W03490B000",
-      licenseeName: "CAFE GALILEE PTE. LTD.",
-      premisesAddress: "53 MARGARET DRIVE QUEENSTOWN COMMUNITY LIBRARY SINGAPORE 149297",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-        {
-    id: "margaret_drive_hawker_centre_goh_hin_chiang_p644",
-    brandId: "margaret_drive_hawker_centre_goh_hin_chiang",
-    label: "Margaret Drive Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Margaret Drive Hawker Centre",
-    address: "2A MARGARET DRIVE QUEENSWAY SECONDARY SCHOOL SINGAPORE 149295",
-    postal: null,
-    lat: 1.2931,
-    lng: 103.8124,
-    sfa: {
-      licenceNumber: "W01466X003",
-      licenseeName: "GOH HIN CHIANG",
-      premisesAddress: "2A MARGARET DRIVE QUEENSWAY SECONDARY SCHOOL SINGAPORE 149295",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+    
+        
     {
     id: "anchorvale_village_hawker_centre_commonwealth_retail_concepts_pte_ltd_p646",
     brandId: "anchorvale_village_hawker_centre_commonwealth_retail_concepts_pte_ltd",
@@ -3140,26 +2912,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "taman_jurong_market_and_food_centre_chan_chee_chung_p674",
-    brandId: "taman_jurong_market_and_food_centre_chan_chee_chung",
-    label: "Taman Jurong Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Taman Jurong Market and Food Centre",
-    address: "TAMAN JURONG MARKET & FOOD CENTRE Stall No 03-172",
-    postal: null,
-    lat: 1.3356,
-    lng: 103.7205,
-    sfa: {
-      licenceNumber: "TJF03172001",
-      licenseeName: "CHAN CHEE CHUNG",
-      premisesAddress: "TAMAN JURONG MARKET & FOOD CENTRE Stall No 03-172",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
               {
     id: "mcd_p681",
     brandId: "mcd",
@@ -79920,6 +79673,175 @@ export const PREMISES_12 = [
     postal: "730020",
     lat: 1.44344416787521,
     lng: 103.776989477833,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_merah_central_food_centre_heng_chai_chicken_rice_batcht1",
+    brandId: "bukit_merah_central_food_centre_heng_chai_chicken_rice",
+    label: "Bukit Merah Central Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Merah Central Food Centre",
+    address: "163 Bukit Merah Central #02-44, Singapore 150163",
+    postal: "150163",
+    lat: 1.28797051657173,
+    lng: 103.829623413554,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "80_circuit_road_market_and_food_centre_tuck_bee_batcht1",
+    brandId: "80_circuit_road_market_and_food_centre_tuck_bee",
+    label: "Block 80 Circuit Road Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Block 80 Circuit Road Market & Food Centre",
+    address: "80 Circuit Road #02-02, Singapore 370080",
+    postal: "370080",
+    lat: 1.32783414615937,
+    lng: 103.873,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "havelock_road_cooked_food_centre_86_indian_vegetarian_batcht1",
+    brandId: "havelock_road_cooked_food_centre_86_indian_vegetarian",
+    label: "Havelock Road Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Havelock Road Cooked Food Centre",
+    address: "22A Havelock Road #01-21, Singapore 161022",
+    postal: "161022",
+    lat: 1.28797051657173,
+    lng: 103.829623413554,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "havelock_road_cooked_food_centre_you_yi_jia_la_mian_xiao_long_bao_batcht2",
+    brandId: "havelock_road_cooked_food_centre_you_yi_jia_la_mian_xiao_long_bao",
+    label: "Havelock Road Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Havelock Road Cooked Food Centre",
+    address: "22A Havelock Road #01-22, Singapore 161022",
+    postal: "161022",
+    lat: 1.28797051657173,
+    lng: 103.829623413554,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "havelock_road_cooked_food_centre_guang_fa_laksa_batcht3",
+    brandId: "havelock_road_cooked_food_centre_guang_fa_laksa",
+    label: "Havelock Road Cooked Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Havelock Road Cooked Food Centre",
+    address: "22A Havelock Road #01-08, Singapore 161022",
+    postal: "161022",
+    lat: 1.28797051657173,
+    lng: 103.829623413554,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_traditional_hakka_rice_batcht1",
+    brandId: "blk_6_tanjong_pagar_plaza_market_and_food_centre_traditional_hakka_rice",
+    label: "Tanjong Pagar Plaza Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Tanjong Pagar Plaza Market & Food Centre",
+    address: "6 Tanjong Pagar Plaza #02-21, Singapore 081006",
+    postal: "081006",
+    lat: 1.27661366983388,
+    lng: 103.8427,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "changi_village_blk_2_and_3_kun_kee_fried_oyster_batcht1",
+    brandId: "changi_village_blk_2_and_3_kun_kee_fried_oyster",
+    label: "Changi Village Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Changi Village Hawker Centre",
+    address: "2 Changi Village Road #01-47, Singapore 500002",
+    postal: "500002",
+    lat: 1.3891516485857,
+    lng: 103.9882,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "blk_17_upper_boon_keng_market_and_food_centre_rotitiam_batcht1",
+    brandId: "blk_17_upper_boon_keng_market_and_food_centre_rotitiam",
+    label: "Upper Boon Keng Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Upper Boon Keng Market & Food Centre",
+    address: "17 Upper Boon Keng Road #01-16, Singapore 380017",
+    postal: "380017",
+    lat: 1.31502841514731,
+    lng: 103.8706,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_street_52_blk_505_37_porridge_batcht1",
+    brandId: "jurong_west_street_52_blk_505_37_porridge",
+    label: "505 Jurong West Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "505 Jurong West Market & Food Centre",
+    address: "505 Jurong West Street 52 #01-37, Singapore 640505",
+    postal: "640505",
+    lat: 1.34965729130746,
+    lng: 103.718443677825,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_street_52_blk_505_traditional_hakka_lui_cha_batcht2",
+    brandId: "jurong_west_street_52_blk_505_traditional_hakka_lui_cha",
+    label: "505 Jurong West Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "505 Jurong West Market & Food Centre",
+    address: "505 Jurong West Street 52 #01-12, Singapore 640505",
+    postal: "640505",
+    lat: 1.34965729130746,
+    lng: 103.718443677825,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "margaret_drive_hawker_centre_yu_mi_xiang_batcht1",
+    brandId: "margaret_drive_hawker_centre_yu_mi_xiang",
+    label: "Margaret Drive Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Margaret Drive Hawker Centre",
+    address: "38A Margaret Drive #01-29, Singapore 142038",
+    postal: "142038",
+    lat: 1.29742585102203,
+    lng: 103.804710471304,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "margaret_drive_hawker_centre_xins_tzechar_batcht2",
+    brandId: "margaret_drive_hawker_centre_xins_tzechar",
+    label: "Margaret Drive Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Margaret Drive Hawker Centre",
+    address: "38A Margaret Drive #01-31, Singapore 142038",
+    postal: "142038",
+    lat: 1.29742585102203,
+    lng: 103.804710471304,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "taman_jurong_market_and_food_centre_feng_zhen_lor_mee_batcht1",
+    brandId: "taman_jurong_market_and_food_centre_feng_zhen_lor_mee",
+    label: "Taman Jurong Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Taman Jurong Market & Food Centre",
+    address: "3 Yung Sheng Road #03-146, Singapore 618499",
+    postal: "618499",
+    lat: 1.3347210661928,
+    lng: 103.721583797451,
     sfa: null,
     source: "web_research"
   },
