@@ -108,6 +108,37 @@
 // cookies tried - blocked, not attempted further this pass. Buangkok Hawker Centre retried again,
 // still HTTP 500. Pasir Ris Central, Anchorvale Village, Jurong West, Bukit Panjang, Margaret Drive,
 // and Market Street hawker centres have no dedicated website found (checked common domain patterns).
+// 2026-08-23 (4th pass): direct user instruction to use Google Maps + the SFA licence database to
+// find real named stalls, and to stop using generic placeholder entries since they "add 0 value."
+// This surfaced a real problem in the existing data: the 2026-08-20 SFA-licensee restructure had
+// populated ~103 independent hawker centres with exactly 6 sample stalls each, using the SFA
+// dataset's raw `licensee_name` field (a personal/legal name, e.g. "Chew Boon Teck") directly as
+// the Brand's display name - these are licence-holder names, not real trading/signboard names, and
+// tell a user nothing about what food is sold (the same zero-value problem already fixed for bare
+// cuisine-category labels in the 2026-08-22a/2026-08-22e passes, just a different flavor of it).
+// Live Google Maps UI automation (screenshot/zoom/click on the "Directory" panel) was blocked by a
+// hard environment limitation (browser viewport reporting 0x0, breaking every click/zoom action) -
+// pivoted to WebSearch + food-blog sources (danielfooddiary.com, sethlui.com, eatbook.sg) for real
+// stall rosters, cross-referenced against reference/migration-scripts/sfa-discovery-log.json (the
+// full per-venue SFA licensee dataset, not just the 6 promoted to premises.ts) for grade
+// confirmation wherever the venue's unit-numbering convention allowed a match. Discovered and
+// worked around a renovation-staleness risk: hawker centres undergo periodic renovations causing
+// real stall turnover, so a source's publish date was always checked against known closure/reopen
+// history before trusting it (Chomp Chomp: 2018 eatbook.sg article rejected after confirming only
+// 1/10 of its stalls still matched the live Google Maps directory post a "late 2025 - Mar 2026"
+// renovation, used a mid/late-2025 sethlui.com article instead; Berseh: used a 7 Jan 2026
+// danielfooddiary.com article published after its Sep-Dec 2025 renovation closure, explicitly
+// excluding a stall the article itself marked "[Closed]"; Alexandra Village: used a 1 Jul 2025
+// danielfooddiary.com article published the same day as its post-renovation reopening).
+// First installment of this cleanup: removed all 18 generic licensee-name Brand+Premises entries
+// across 3 venues (Chomp Chomp Food Centre, Berseh Food Centre, Alexandra Village Food Centre) and
+// replaced them with 45 real, distinctly-named stalls (12 + 9 + 24) with real unit numbers - SFA
+// grade cross-referenced for Chomp Chomp and all 24 Alexandra Village stalls (unit format matched),
+// Berseh left with sfa: null (its SFA records use flat 3-digit stall numbers incompatible with the
+// blog sources' floor-prefixed units, no reliable cross-match possible). IMPORTANT SCOPE NOTE: this
+// is only 3 of the ~103 venues affected by the generic-licensee-name problem - roughly 90+ hawker
+// centres still have the same zero-value placeholder entries and need the same treatment in future
+// passes. See reference/research-sessions/2026-08-23-chomp-chomp-berseh-alexandra-village.md.
 
 export const BRANDS_1 = [
   {
@@ -3837,103 +3868,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-  {
-    id: "chomp_chomp_food_centre_chew_boon_teck",
-    name: "Chew Boon Teck",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chew boon teck"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "chomp_chomp_food_centre_goh_chye_lee",
-    name: "Goh Chye Lee",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "goh chye lee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "chomp_chomp_food_centre_goh_yeow_seng",
-    name: "Goh Yeow Seng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "goh yeow seng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "chomp_chomp_food_centre_ho_chew_teck_vincent",
-    name: "Ho Chew Teck Vincent",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ho chew teck vincent"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "chomp_chomp_food_centre_jenny_wen_chang",
-    name: "Jenny Wen Chang",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "jenny wen chang"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "chomp_chomp_food_centre_kang_leang_chua",
-    name: "Kang Leang Chua",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "kang leang chua"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+              {
     id: "new_upper_changi_road_blk_58_choo_siew_luan",
     name: "Choo Siew Luan",
     emoji: "🍜",
@@ -5485,103 +5420,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-  {
-    id: "berseh_food_centre_chua_chow_yong",
-    name: "Chua Chow Yong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chua chow yong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "berseh_food_centre_ee_hoe_soon",
-    name: "Ee Hoe Soon",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ee hoe soon"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "berseh_food_centre_foo_see_tong",
-    name: "Foo See Tong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "foo see tong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie",
-    name: "Goh Rong Jie, Billy (Wu Rongjie)",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "goh rong jie, billy (wu rongjie)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie_2",
-    name: "Goh Rong Jie, Billy (Wu Rongjie)",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "goh rong jie, billy (wu rongjie)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "berseh_food_centre_kong_kam_yau",
-    name: "Kong Kam Yau",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "kong kam yau"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+              {
     id: "peoples_park_food_centre_chan_sook_kheng",
     name: "Chan Sook Kheng",
     emoji: "🍜",
@@ -7037,103 +6876,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-  {
-    id: "alexandra_village_food_centre_ahmad_tarmizi_bin_masderbari",
-    name: "Ahmad Tarmizi Bin Masderbari",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ahmad tarmizi bin masderbari"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "alexandra_village_food_centre_cai_jiaming",
-    name: "Cai Jiaming",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cai jiaming"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "alexandra_village_food_centre_chan_chu_kwang",
-    name: "Chan Chu Kwang",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chan chu kwang"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "alexandra_village_food_centre_chng_eng_pin",
-    name: "Chng Eng Pin",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chng eng pin"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "alexandra_village_food_centre_chng_siew_leng",
-    name: "Chng Siew Leng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chng siew leng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "alexandra_village_food_centre_erh_chiang_ngiap",
-    name: "Erh Chiang Ngiap",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "erh chiang ngiap"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+              {
     id: "80_circuit_road_market_and_food_centre_choy_mee_leng",
     name: "Choy Mee Leng",
     emoji: "🍜",
@@ -28004,6 +27747,691 @@ export const BRANDS_4 = [
       "dine_in"
     ],
     operatorId: "timbre_plus_hawkers"
+  },
+  {
+    id: "chomp_chomp_food_centre_ah_hock_fried_hokkien_noodles",
+    name: "Ah Hock Fried Hokkien Noodles",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Hokkien Mee",
+    aliases: [
+      "ah hock fried hokkien noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_swee_heng_wanton_noodle",
+    name: "Swee Heng Wanton Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Wanton Noodle",
+    aliases: [
+      "swee heng wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_ang_sar_lee_satay_bee_hoon",
+    name: "Ang Sar Lee Satay Bee Hoon",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Satay Bee Hoon / Hainan Beef Noodle",
+    aliases: [
+      "ang sar lee satay bee hoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_carrot_cake",
+    name: "Carrot Cake",
+    emoji: "🥕",
+    type: "hawker",
+    cuisine: "Fried Carrot Cake (Chai Tow Kway)",
+    aliases: [
+      "carrot cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_the_warung",
+    name: "The Warung",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Malay / Satay",
+    aliases: [
+      "the warung"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_bbq_seafood",
+    name: "(忠邦) 福烧烤海鲜 BBQ Seafood",
+    emoji: "🦞",
+    type: "hawker",
+    cuisine: "BBQ Seafood / Zi Char",
+    aliases: [
+      "忠邦 福烧烤海鲜 bbq seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_wang_bbq_and_grill",
+    name: "Wang BBQ & Grill",
+    emoji: "🍡",
+    type: "hawker",
+    cuisine: "Lok Lok BBQ Skewers",
+    aliases: [
+      "wang bbq & grill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_wang_da_shen_chicken_wing_and_satay",
+    name: "Wang Da Shen Chicken Wing & Satay",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "BBQ Chicken Wings & Satay",
+    aliases: [
+      "wang da shen chicken wing & satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_chomp_chomp_fried_oyster",
+    name: "Chomp Chomp Fried Oyster",
+    emoji: "🦪",
+    type: "hawker",
+    cuisine: "Oyster Omelette / Fried Oyster",
+    aliases: [
+      "chomp chomp fried oyster"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_chomp_chomp_rojak_popiah",
+    name: "Chomp Chomp Rojak - Popiah",
+    emoji: "🥗",
+    type: "hawker",
+    cuisine: "Rojak & Popiah",
+    aliases: [
+      "chomp chomp rojak - popiah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_chia_keng_fried_hokkien_prawn_noodle",
+    name: "Chia Keng Fried Hokkien Prawn Noodle",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Hokkien Prawn Noodle",
+    aliases: [
+      "chia keng fried hokkien prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "chomp_chomp_food_centre_lucy_bbq_seafood",
+    name: "Lucy BBQ Seafood",
+    emoji: "🦐",
+    type: "hawker",
+    cuisine: "BBQ Seafood",
+    aliases: [
+      "lucy bbq seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_fu_zhou_poh_hwa_oyster_cake",
+    name: "Fu Zhou Poh Hwa Oyster Cake",
+    emoji: "🥮",
+    type: "hawker",
+    cuisine: "Fuzhou Oyster Cake",
+    aliases: [
+      "fu zhou poh hwa oyster cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_mei_xiang_black_and_white_fish_soup",
+    name: "Mei Xiang Black and White Fish Soup",
+    emoji: "🐟",
+    type: "hawker",
+    cuisine: "Fish Soup",
+    aliases: [
+      "mei xiang black and white fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_northern_thai_tomyam",
+    name: "Northern Thai Tomyam",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Thai Tom Yum",
+    aliases: [
+      "northern thai tomyam"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_kelantan_kway_chap_pig_s_organ_soup",
+    name: "Kelantan Kway Chap - Pig's Organ Soup",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Kway Chap / Pig's Organ Soup",
+    aliases: [
+      "kelantan kway chap - pig's organ soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_fu_he_delights",
+    name: "Fu He Delights 福和",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Turtle Soup & Claypot Rice",
+    aliases: [
+      "fu he delights 福和"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_sheng_kee_curry_chicken_noodle",
+    name: "Sheng Kee Curry Chicken Noodle",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Curry Chicken Noodle",
+    aliases: [
+      "sheng kee curry chicken noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_coffee_hut",
+    name: "Coffee Hut",
+    emoji: "☕",
+    type: "hawker",
+    cuisine: "Kopi & Toast",
+    aliases: [
+      "coffee hut"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_special_chilli_yong_tau_foo",
+    name: "Special Chilli Yong Tau Foo",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Yong Tau Foo",
+    aliases: [
+      "special chilli yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "berseh_food_centre_epok_epok_story",
+    name: "Epok Epok Story",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Malay Curry Puffs (Epok Epok)",
+    aliases: [
+      "epok epok story"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_xiang_jiang_soya_sauce_chicken",
+    name: "Xiang Jiang Soya Sauce Chicken",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Soya Sauce Chicken Rice / Noodles",
+    aliases: [
+      "xiang jiang soya sauce chicken"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_depot_road_zhen_shan_mei_laksa",
+    name: "Depot Road Zhen Shan Mei Laksa",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Claypot Laksa",
+    aliases: [
+      "depot road zhen shan mei laksa"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_the_old_stall_hokkien_street_famous_prawn_mee",
+    name: "The Old Stall Hokkien Street Famous Prawn Mee",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Prawn Mee (Hae Mee)",
+    aliases: [
+      "the old stall hokkien street famous prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_dover_road_kai_kee_wanton_noodles",
+    name: "Dover Road Kai Kee Wanton Noodles",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Wanton Noodles",
+    aliases: [
+      "dover road kai kee wanton noodles"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_zhang_ji_shanghai_la_mian_xiao_long_bao",
+    name: "Zhang Ji Shanghai La Mian Xiao Long Bao",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Shanghai La Mian & Xiao Long Bao",
+    aliases: [
+      "zhang ji shanghai la mian xiao long bao"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_tong_le_wanton_mee",
+    name: "Tong Le Wanton Mee",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Wanton Mee",
+    aliases: [
+      "tong le wanton mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_hor_fun_premium",
+    name: "Hor Fun Premium",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Hor Fun",
+    aliases: [
+      "hor fun premium"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_ding_sheng",
+    name: "Ding Sheng 鼎升",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Hor Fun & Rice Dishes",
+    aliases: [
+      "ding sheng 鼎升"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_zi_jin_cheng_hainanese_boneless_chicken_rice",
+    name: "Zi Jin Cheng Hainanese Boneless Chicken Rice",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Hainanese Chicken Rice",
+    aliases: [
+      "zi jin cheng hainanese boneless chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_the_thunder_tea_story",
+    name: "The Thunder Tea Story 擂茶物语",
+    emoji: "🍵",
+    type: "hawker",
+    cuisine: "Thunder Tea Rice (Lei Cha)",
+    aliases: [
+      "the thunder tea story 擂茶物语"
+    ],
+    dietTags: [
+      "vegetarian"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_hong_kong_yummy_soup",
+    name: "Hong Kong Yummy Soup 香港靚湯",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Double-Boiled Soup",
+    aliases: [
+      "hong kong yummy soup 香港靚湯"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_ma_la_xiang_guo",
+    name: "Ma La Xiang Guo 麻辣香锅",
+    emoji: "🌶️",
+    type: "hawker",
+    cuisine: "Mala Xiang Guo",
+    aliases: [
+      "ma la xiang guo 麻辣香锅"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_xiao_gang_western_food",
+    name: "Xiao Gang Western Food",
+    emoji: "🍽️",
+    type: "hawker",
+    cuisine: "Western Food",
+    aliases: [
+      "xiao gang western food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_lye_bo_toss_noodle",
+    name: "Lye Bo Toss Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Honey Glazed BBQ Pork Noodle",
+    aliases: [
+      "lye bo toss noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_pu_tian_delights",
+    name: "Pu Tian Delights 莆田美食",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Putian Cuisine",
+    aliases: [
+      "pu tian delights 莆田美食"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_lau_phua_chay_authentic_roasted_delicacies",
+    name: "Lau Phua Chay Authentic Roasted Delicacies",
+    emoji: "🍖",
+    type: "hawker",
+    cuisine: "Teochew Roast Meats",
+    aliases: [
+      "lau phua chay authentic roasted delicacies"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_tai_liok_claypot_chicken_rice",
+    name: "Tai Liok Claypot Chicken Rice",
+    emoji: "🍚",
+    type: "hawker",
+    cuisine: "Claypot Chicken Rice",
+    aliases: [
+      "tai liok claypot chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_tiong_bahru_lien_fa_shui_jing_pau",
+    name: "Tiong Bahru Lien Fa Shui Jing Pau",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Teochew Crystal Dumplings",
+    aliases: [
+      "tiong bahru lien fa shui jing pau"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_star_yong_kwang_bbq_seafood",
+    name: "Star Yong Kwang BBQ Seafood",
+    emoji: "🦞",
+    type: "hawker",
+    cuisine: "BBQ Seafood / Sambal Stingray",
+    aliases: [
+      "star yong kwang bbq seafood"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_old_punggol_satay",
+    name: "Old Punggol Satay",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Satay",
+    aliases: [
+      "old punggol satay"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_mr_avocado_exotic_juice",
+    name: "Mr Avocado Exotic Juice",
+    emoji: "🥑",
+    type: "hawker",
+    cuisine: "Fruit Juice",
+    aliases: [
+      "mr avocado exotic juice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_desserts_pavilion",
+    name: "Desserts Pavilion 糖水亭",
+    emoji: "🍮",
+    type: "hawker",
+    cuisine: "Chinese Dessert Soup",
+    aliases: [
+      "desserts pavilion 糖水亭"
+    ],
+    dietTags: [
+      "vegetarian"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_aj_delights",
+    name: "AJ Delights",
+    emoji: "🧁",
+    type: "hawker",
+    cuisine: "Muffins & Bakes",
+    aliases: [
+      "aj delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "alexandra_village_food_centre_ah_b_bakery",
+    name: "Ah B Bakery",
+    emoji: "🥐",
+    type: "hawker",
+    cuisine: "Halal Bakery",
+    aliases: [
+      "ah b bakery"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
   }
 ];
 

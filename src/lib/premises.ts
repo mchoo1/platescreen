@@ -2029,127 +2029,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "chomp_chomp_food_centre_chew_boon_teck_p163",
-    brandId: "chomp_chomp_food_centre_chew_boon_teck",
-    label: "Chomp Chomp Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chomp Chomp Food Centre",
-    address: "CHOMP CHOMP FOOD CENTRE Stall No 01-35",
-    postal: null,
-    lat: 1.3693,
-    lng: 103.872,
-    sfa: {
-      licenceNumber: "CCF0135001",
-      licenseeName: "CHEW BOON TECK",
-      premisesAddress: "CHOMP CHOMP FOOD CENTRE Stall No 01-35",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chomp_chomp_food_centre_goh_chye_lee_p164",
-    brandId: "chomp_chomp_food_centre_goh_chye_lee",
-    label: "Chomp Chomp Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chomp Chomp Food Centre",
-    address: "CHOMP CHOMP FOOD CENTRE Stall No 01-14",
-    postal: null,
-    lat: 1.3693,
-    lng: 103.872,
-    sfa: {
-      licenceNumber: "CCF0114001",
-      licenseeName: "GOH CHYE LEE",
-      premisesAddress: "CHOMP CHOMP FOOD CENTRE Stall No 01-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chomp_chomp_food_centre_goh_yeow_seng_p165",
-    brandId: "chomp_chomp_food_centre_goh_yeow_seng",
-    label: "Chomp Chomp Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chomp Chomp Food Centre",
-    address: "CHOMP CHOMP FOOD CENTRE Stall No 01-01",
-    postal: null,
-    lat: 1.3693,
-    lng: 103.872,
-    sfa: {
-      licenceNumber: "CCF0101002",
-      licenseeName: "GOH YEOW SENG",
-      premisesAddress: "CHOMP CHOMP FOOD CENTRE Stall No 01-01",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chomp_chomp_food_centre_ho_chew_teck_vincent_p166",
-    brandId: "chomp_chomp_food_centre_ho_chew_teck_vincent",
-    label: "Chomp Chomp Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chomp Chomp Food Centre",
-    address: "CHOMP CHOMP FOOD CENTRE Stall No 01-28",
-    postal: null,
-    lat: 1.3693,
-    lng: 103.872,
-    sfa: {
-      licenceNumber: "CCF0128006",
-      licenseeName: "HO CHEW TECK VINCENT",
-      premisesAddress: "CHOMP CHOMP FOOD CENTRE Stall No 01-28",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chomp_chomp_food_centre_jenny_wen_chang_p167",
-    brandId: "chomp_chomp_food_centre_jenny_wen_chang",
-    label: "Chomp Chomp Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chomp Chomp Food Centre",
-    address: "CHOMP CHOMP FOOD CENTRE Stall No 01-04",
-    postal: null,
-    lat: 1.3693,
-    lng: 103.872,
-    sfa: {
-      licenceNumber: "CCF0104004",
-      licenseeName: "JENNY WEN CHANG",
-      premisesAddress: "CHOMP CHOMP FOOD CENTRE Stall No 01-04",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chomp_chomp_food_centre_kang_leang_chua_p168",
-    brandId: "chomp_chomp_food_centre_kang_leang_chua",
-    label: "Chomp Chomp Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chomp Chomp Food Centre",
-    address: "CHOMP CHOMP FOOD CENTRE Stall No 01-12",
-    postal: null,
-    lat: 1.3693,
-    lng: 103.872,
-    sfa: {
-      licenceNumber: "CCF0112002",
-      licenseeName: "KANG LEANG CHUA",
-      premisesAddress: "CHOMP CHOMP FOOD CENTRE Stall No 01-12",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+              {
     id: "new_upper_changi_road_blk_58_choo_siew_luan_p169",
     brandId: "new_upper_changi_road_blk_58_choo_siew_luan",
     label: "New Upper Changi Road Blk 58",
@@ -4089,127 +3969,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "berseh_food_centre_chua_chow_yong_p266",
-    brandId: "berseh_food_centre_chua_chow_yong",
-    label: "Berseh Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Berseh Food Centre",
-    address: "BERSEH FOOD CENTRE Stall No 007",
-    postal: null,
-    lat: 1.3072,
-    lng: 103.8562,
-    sfa: {
-      licenceNumber: "BSF007002",
-      licenseeName: "CHUA CHOW YONG",
-      premisesAddress: "BERSEH FOOD CENTRE Stall No 007",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "berseh_food_centre_ee_hoe_soon_p267",
-    brandId: "berseh_food_centre_ee_hoe_soon",
-    label: "Berseh Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Berseh Food Centre",
-    address: "BERSEH FOOD CENTRE Stall No 030",
-    postal: null,
-    lat: 1.3072,
-    lng: 103.8562,
-    sfa: {
-      licenceNumber: "BSF030001",
-      licenseeName: "EE HOE SOON",
-      premisesAddress: "BERSEH FOOD CENTRE Stall No 030",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "berseh_food_centre_foo_see_tong_p268",
-    brandId: "berseh_food_centre_foo_see_tong",
-    label: "Berseh Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Berseh Food Centre",
-    address: "BERSEH FOOD CENTRE Stall No 065",
-    postal: null,
-    lat: 1.3072,
-    lng: 103.8562,
-    sfa: {
-      licenceNumber: "BSF065001",
-      licenseeName: "FOO SEE TONG",
-      premisesAddress: "BERSEH FOOD CENTRE Stall No 065",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie_p269",
-    brandId: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie",
-    label: "Berseh Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Berseh Food Centre",
-    address: "BERSEH FOOD CENTRE Stall No 013",
-    postal: null,
-    lat: 1.3072,
-    lng: 103.8562,
-    sfa: {
-      licenceNumber: "BSF013003",
-      licenseeName: "GOH RONG JIE, BILLY (WU RONGJIE)",
-      premisesAddress: "BERSEH FOOD CENTRE Stall No 013",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie_2_p270",
-    brandId: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie_2",
-    label: "Berseh Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Berseh Food Centre",
-    address: "BERSEH FOOD CENTRE Stall No 008",
-    postal: null,
-    lat: 1.3072,
-    lng: 103.8562,
-    sfa: {
-      licenceNumber: "BSF008002",
-      licenseeName: "GOH RONG JIE, BILLY (WU RONGJIE)",
-      premisesAddress: "BERSEH FOOD CENTRE Stall No 008",
-      grade: "A",
-      demeritPoints: 6,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "berseh_food_centre_kong_kam_yau_p271",
-    brandId: "berseh_food_centre_kong_kam_yau",
-    label: "Berseh Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Berseh Food Centre",
-    address: "BERSEH FOOD CENTRE Stall No 043",
-    postal: null,
-    lat: 1.3072,
-    lng: 103.8562,
-    sfa: {
-      licenceNumber: "BSF043001",
-      licenseeName: "KONG KAM YAU",
-      premisesAddress: "BERSEH FOOD CENTRE Stall No 043",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+              {
     id: "peoples_park_food_centre_chan_sook_kheng_p272",
     brandId: "peoples_park_food_centre_chan_sook_kheng",
     label: "People's Park Food Centre",
@@ -6029,127 +5789,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "alexandra_village_food_centre_ahmad_tarmizi_bin_masderbari_p363",
-    brandId: "alexandra_village_food_centre_ahmad_tarmizi_bin_masderbari",
-    label: "Alexandra Village Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Alexandra Village Food Centre",
-    address: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-65",
-    postal: null,
-    lat: 1.2775,
-    lng: 103.8157,
-    sfa: {
-      licenceNumber: "BM20165003",
-      licenseeName: "AHMAD TARMIZI BIN MASDERBARI",
-      premisesAddress: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-65",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "alexandra_village_food_centre_cai_jiaming_p364",
-    brandId: "alexandra_village_food_centre_cai_jiaming",
-    label: "Alexandra Village Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Alexandra Village Food Centre",
-    address: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-01",
-    postal: null,
-    lat: 1.2775,
-    lng: 103.8157,
-    sfa: {
-      licenceNumber: "BM20101003",
-      licenseeName: "CAI JIAMING",
-      premisesAddress: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-01",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "alexandra_village_food_centre_chan_chu_kwang_p365",
-    brandId: "alexandra_village_food_centre_chan_chu_kwang",
-    label: "Alexandra Village Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Alexandra Village Food Centre",
-    address: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-84",
-    postal: null,
-    lat: 1.2775,
-    lng: 103.8157,
-    sfa: {
-      licenceNumber: "BM20184001",
-      licenseeName: "CHAN CHU KWANG",
-      premisesAddress: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-84",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "alexandra_village_food_centre_chng_eng_pin_p366",
-    brandId: "alexandra_village_food_centre_chng_eng_pin",
-    label: "Alexandra Village Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Alexandra Village Food Centre",
-    address: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-23",
-    postal: null,
-    lat: 1.2775,
-    lng: 103.8157,
-    sfa: {
-      licenceNumber: "BM20123003",
-      licenseeName: "CHNG ENG PIN",
-      premisesAddress: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-23",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "alexandra_village_food_centre_chng_siew_leng_p367",
-    brandId: "alexandra_village_food_centre_chng_siew_leng",
-    label: "Alexandra Village Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Alexandra Village Food Centre",
-    address: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-22",
-    postal: null,
-    lat: 1.2775,
-    lng: 103.8157,
-    sfa: {
-      licenceNumber: "BM20122002",
-      licenseeName: "CHNG SIEW LENG",
-      premisesAddress: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-22",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "alexandra_village_food_centre_erh_chiang_ngiap_p368",
-    brandId: "alexandra_village_food_centre_erh_chiang_ngiap",
-    label: "Alexandra Village Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Alexandra Village Food Centre",
-    address: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-10",
-    postal: null,
-    lat: 1.2775,
-    lng: 103.8157,
-    sfa: {
-      licenceNumber: "BM20110001",
-      licenseeName: "ERH CHIANG NGIAP",
-      premisesAddress: "BUKIT MERAH LANE 1 BLK 120 Stall No 01-10",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+              {
     id: "80_circuit_road_market_and_food_centre_choy_mee_leng_p369",
     brandId: "80_circuit_road_market_and_food_centre_choy_mee_leng",
     label: "80 Circuit Road Market and Food Centre",
@@ -81869,6 +81509,822 @@ export const PREMISES_12 = [
     lng: 103.844747525064,
     sfa: null,
     source: "operator_official_site"
+  },
+  {
+    id: "chomp_chomp_food_centre_ah_hock_fried_hokkien_noodles_p1",
+    brandId: "chomp_chomp_food_centre_ah_hock_fried_hokkien_noodles",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-27, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-27",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_swee_heng_wanton_noodle_p1",
+    brandId: "chomp_chomp_food_centre_swee_heng_wanton_noodle",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-12, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-12",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_ang_sar_lee_satay_bee_hoon_p1",
+    brandId: "chomp_chomp_food_centre_ang_sar_lee_satay_bee_hoon",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-17, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-17",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_carrot_cake_p1",
+    brandId: "chomp_chomp_food_centre_carrot_cake",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-36, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-36",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_the_warung_p1",
+    brandId: "chomp_chomp_food_centre_the_warung",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-15, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-15",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_bbq_seafood_p1",
+    brandId: "chomp_chomp_food_centre_bbq_seafood",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-20, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-20",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_wang_bbq_and_grill_p1",
+    brandId: "chomp_chomp_food_centre_wang_bbq_and_grill",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-31, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chomp_chomp_food_centre_wang_da_shen_chicken_wing_and_satay_p1",
+    brandId: "chomp_chomp_food_centre_wang_da_shen_chicken_wing_and_satay",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-03, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-03",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_chomp_chomp_fried_oyster_p1",
+    brandId: "chomp_chomp_food_centre_chomp_chomp_fried_oyster",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-24, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-24",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_chomp_chomp_rojak_popiah_p1",
+    brandId: "chomp_chomp_food_centre_chomp_chomp_rojak_popiah",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, #01-23, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Chomp Chomp Food Centre Stall No 01-23",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "chomp_chomp_food_centre_chia_keng_fried_hokkien_prawn_noodle_p1",
+    brandId: "chomp_chomp_food_centre_chia_keng_fried_hokkien_prawn_noodle",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chomp_chomp_food_centre_lucy_bbq_seafood_p1",
+    brandId: "chomp_chomp_food_centre_lucy_bbq_seafood",
+    label: "Chomp Chomp Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chomp Chomp Food Centre",
+    address: "20 Kensington Park Rd, Singapore 557269",
+    postal: "557269",
+    lat: 1.36423252476886,
+    lng: 103.86652701738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_fu_zhou_poh_hwa_oyster_cake_p1",
+    brandId: "berseh_food_centre_fu_zhou_poh_hwa_oyster_cake",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #02-34, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_mei_xiang_black_and_white_fish_soup_p1",
+    brandId: "berseh_food_centre_mei_xiang_black_and_white_fish_soup",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #02-44, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_northern_thai_tomyam_p1",
+    brandId: "berseh_food_centre_northern_thai_tomyam",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #01-25, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_kelantan_kway_chap_pig_s_organ_soup_p1",
+    brandId: "berseh_food_centre_kelantan_kway_chap_pig_s_organ_soup",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #02-39, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_fu_he_delights_p1",
+    brandId: "berseh_food_centre_fu_he_delights",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #02-40/47, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_sheng_kee_curry_chicken_noodle_p1",
+    brandId: "berseh_food_centre_sheng_kee_curry_chicken_noodle",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #01-45, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_coffee_hut_p1",
+    brandId: "berseh_food_centre_coffee_hut",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #02-43, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_special_chilli_yong_tau_foo_p1",
+    brandId: "berseh_food_centre_special_chilli_yong_tau_foo",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #01-17, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "berseh_food_centre_epok_epok_story_p1",
+    brandId: "berseh_food_centre_epok_epok_story",
+    label: "Berseh Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Berseh Food Centre",
+    address: "166 Jalan Besar, #B1-11, Singapore 208877",
+    postal: "208877",
+    lat: 1.30734410946371,
+    lng: 103.856888783769,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "alexandra_village_food_centre_xiang_jiang_soya_sauce_chicken_p1",
+    brandId: "alexandra_village_food_centre_xiang_jiang_soya_sauce_chicken",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-77, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-77",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_depot_road_zhen_shan_mei_laksa_p1",
+    brandId: "alexandra_village_food_centre_depot_road_zhen_shan_mei_laksa",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-75, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-75",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_the_old_stall_hokkien_street_famous_prawn_mee_p1",
+    brandId: "alexandra_village_food_centre_the_old_stall_hokkien_street_famous_prawn_mee",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-58, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-58",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_dover_road_kai_kee_wanton_noodles_p1",
+    brandId: "alexandra_village_food_centre_dover_road_kai_kee_wanton_noodles",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-09, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-09",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_zhang_ji_shanghai_la_mian_xiao_long_bao_p1",
+    brandId: "alexandra_village_food_centre_zhang_ji_shanghai_la_mian_xiao_long_bao",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-56, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-56",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_tong_le_wanton_mee_p1",
+    brandId: "alexandra_village_food_centre_tong_le_wanton_mee",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-87, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-87",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_hor_fun_premium_p1",
+    brandId: "alexandra_village_food_centre_hor_fun_premium",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-30, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-30",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_ding_sheng_p1",
+    brandId: "alexandra_village_food_centre_ding_sheng",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-78, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-78",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_zi_jin_cheng_hainanese_boneless_chicken_rice_p1",
+    brandId: "alexandra_village_food_centre_zi_jin_cheng_hainanese_boneless_chicken_rice",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-15, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-15",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_the_thunder_tea_story_p1",
+    brandId: "alexandra_village_food_centre_the_thunder_tea_story",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-55, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-55",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_hong_kong_yummy_soup_p1",
+    brandId: "alexandra_village_food_centre_hong_kong_yummy_soup",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-51, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-51",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_ma_la_xiang_guo_p1",
+    brandId: "alexandra_village_food_centre_ma_la_xiang_guo",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-42, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-42",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_xiao_gang_western_food_p1",
+    brandId: "alexandra_village_food_centre_xiao_gang_western_food",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-29, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-29",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_lye_bo_toss_noodle_p1",
+    brandId: "alexandra_village_food_centre_lye_bo_toss_noodle",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-27, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-27",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_pu_tian_delights_p1",
+    brandId: "alexandra_village_food_centre_pu_tian_delights",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-88, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-88",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_lau_phua_chay_authentic_roasted_delicacies_p1",
+    brandId: "alexandra_village_food_centre_lau_phua_chay_authentic_roasted_delicacies",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-20, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-20",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_tai_liok_claypot_chicken_rice_p1",
+    brandId: "alexandra_village_food_centre_tai_liok_claypot_chicken_rice",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-66, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-66",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_tiong_bahru_lien_fa_shui_jing_pau_p1",
+    brandId: "alexandra_village_food_centre_tiong_bahru_lien_fa_shui_jing_pau",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-10, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-10",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_star_yong_kwang_bbq_seafood_p1",
+    brandId: "alexandra_village_food_centre_star_yong_kwang_bbq_seafood",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-04, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-04",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_old_punggol_satay_p1",
+    brandId: "alexandra_village_food_centre_old_punggol_satay",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-52, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-52",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_mr_avocado_exotic_juice_p1",
+    brandId: "alexandra_village_food_centre_mr_avocado_exotic_juice",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-19, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-19",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_desserts_pavilion_p1",
+    brandId: "alexandra_village_food_centre_desserts_pavilion",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-69, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-69",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_aj_delights_p1",
+    brandId: "alexandra_village_food_centre_aj_delights",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-82, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-82",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "alexandra_village_food_centre_ah_b_bakery_p1",
+    brandId: "alexandra_village_food_centre_ah_b_bakery",
+    label: "Alexandra Village Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Alexandra Village Food Centre",
+    address: "120 Bukit Merah Lane 1, #01-35, Singapore 150120",
+    postal: "150120",
+    lat: 1.28630594274136,
+    lng: 103.804492637648,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Alexandra Village Food Centre Stall No 01-35",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
   }
 ];
 
