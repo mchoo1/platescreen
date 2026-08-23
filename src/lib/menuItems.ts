@@ -14989,5 +14989,53 @@ export const MENU_ITEMS = [
     ],
     confidence: "estimated",
     isPopular: true
+  },
+  {
+    id: "chinatownroasted_char_siew_rice",
+    brandId: "kopitiam_chinatown_roasted",
+    name: "Char Siew Rice",
+    emoji: "🍖",
+    category: "Rice",
+    price: 4.5,
+    calories: 660,
+    protein: 30,
+    carbs: 76,
+    fat: 20,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "chinatownroasted_roast_duck_rice",
+    brandId: "kopitiam_chinatown_roasted",
+    name: "Roast Duck Rice",
+    emoji: "🦆",
+    category: "Rice",
+    price: 6,
+    calories: 688,
+    protein: 36,
+    carbs: 72,
+    fat: 24,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "chinatownroasted_roasted_chicken_rice",
+    brandId: "kopitiam_chinatown_roasted",
+    name: "Roasted Chicken Rice",
+    emoji: "🍗",
+    category: "Rice",
+    price: 5,
+    calories: 650,
+    protein: 36,
+    carbs: 76,
+    fat: 20,
+    compatibleWith: [
+      "lactose_free"
+    ],
+    confidence: "estimated"
   }
 ];

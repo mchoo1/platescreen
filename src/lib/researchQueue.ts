@@ -24,6 +24,22 @@
  *
  * Cross-reference the SFA dataset for hawker/food_court_stall types (see
  * SfaRegistration in types/db.ts) plus official nutrition sources for macros.
+ *
+ * UPDATE 2026-08-23 (4th pass, direct user request): removed 18 queue entries whose
+ * underlying Brand rows no longer exist — those Brands used raw SFA `licensee_name`
+ * values (e.g. "Chew Boon Teck") as the display name, which are personal/legal names,
+ * not real trading names, and were deleted from brands.ts/premises.ts as zero-value
+ * placeholders (Chomp Chomp Food Centre x6, Berseh Food Centre x6, Alexandra Village
+ * Food Centre x6). Replaced with 45 real, distinctly-named stalls researched via
+ * Google Maps + food-blog sources, cross-checked against
+ * reference/migration-scripts/sfa-discovery-log.json — see
+ * reference/research-sessions/2026-08-23-chomp-chomp-berseh-alexandra-village.md.
+ * These 45 new brands need the same macro-research follow-up as every other batch
+ * this project has added (no MenuItems yet, real dish names only) — not queued here
+ * individually to avoid repeating the same "one row per stall" scale problem already
+ * flagged for the 839-stall Kopitiam backlog; treat as part of that same future
+ * batched-macro-research pass. IMPORTANT: this is only 3 of the ~103 hawker centres
+ * affected by the generic-licensee-name problem — most still need the same cleanup.
  */
 export const RESEARCH_QUEUE = [
   {
@@ -93,7 +109,7 @@ export const RESEARCH_QUEUE = [
     cuisine: "Food Court",
     priority: "high",
     status: "pending",
-    notes: "2026-08-22: Kopitiam is no longer a Brand — it was a single 'brand' row standing in for 48 different physical food-court buildings, each containing many unrelated stalls with completely different food, which never had a real menu and never rendered (buildScreenerRows joins off MenuItems). Restructured per the Operator design in types/db.ts: Kopitiam stays in operators.ts as the operating company; its 48 real SFA-sourced building addresses are preserved in reference/data/food-court-venues.json (operatorId: 'kopitiam') as research anchors. UPDATE 2026-08-22 (2nd pass, same day): the outlet-finder map widget IS genuinely JS-only with no usable endpoint (confirmed again), but its WordPress SEO sitemap (stall-sitemap.xml + stall-sitemap2.xml) lists 1,441 individual stall pages with clean schema.org JSON-LD — scraped all of them directly (see reference/research-sessions/2026-08-22-kopitiam-stall-scrape.md). After dedup + filtering 58 bare cuisine-label placeholders (reference/data/kopitiam-generic-filter.md), added 839 real Brand rows (operatorId: 'kopitiam') + 1,183 geocoded Premises rows to brands.ts/premises.ts. REMAINING WORK (this is now the priority item, not full re-research): none of these 839 brands have MenuItems yet — the scraped data gives real dish NAMES per brand (preserved in reference/data/kopitiam-stall-dishes.json, ~1,861 dish names across 846 name-keys) but never macros, and this project never fabricates calories/protein/carbs/fat. A future pass needs to research real macros (USDA lookup / vision / manual with source citation) for a representative dish or two per brand and add MenuItems — until then these brands are invisible in the calorie/protein screener even though they're now real, addressed, and geocoded. 3 brand-new venues (504 Yishun, 542B Serangoon North, Pasir Ris 735) have no published address yet and were left out entirely (8 brands with no other location: Mr Prata, Fried Chicken, Savoury Seafood, Hao You Ji Roasted Delights, Hao La Wei Mix Rice, Hao Lai Ke Lamian, Tandoori House, Yong Li Coffee Station) — revisit once Kopitiam publishes them. Kopitiam's other named F&B brands from FairPrice Group's corporate site (Bagus/Bagus Food Hall, Kopitiam Corner, Ah Bowl Den, Belly Belly Good Cai Fan, Chomp!, Kokoro Izakaya, Sedap Kitchen) — check whether they're already among the 839 scraped stalls (several matching names did turn up, e.g. Heavenly Wang, Kokoro Kiosuku, Confirm & Chop, Xiang Chi Mian) before doing separate lookups. UPDATE 2026-08-23: this entry's real unit of work is the 839-brand MenuItems backlog described above, not the 'Kopitiam' queue row itself (which correctly has no Brand of its own — adding one would recreate the exact mega-brand pattern this restructure reverted). This run added MenuItems for 1 of the 839 (kopitiam_kopi_kiosk — 6 items: Kaya Toast, Kaya Butter Toast, Kopi, Teh, Ice Kacang, Kaya Butter Set Meal; all confidence 'estimated', reasoned from singaporecalorie.com/HPB-adjacent generic dish data plus this project's existing Ya Kun kopi/toast entries as a calibration analog — see reference/research-sessions/2026-08-23-kopitiam_kopi_kiosk.md). Skipped 'Signature Breakfast Set' from the stall's scraped dish list as a likely near-duplicate of the set meal already added, with no credible way to differentiate the two without fabricating a distinction. Status left 'pending' — 838 kopitiam-operator brands still have zero MenuItems; picking one per run here would take ~2 years at this cadence, so a future session should consider batching multiple stalls per run specifically for this backlog rather than treating it as a single one-outlet-per-run entry."
+    notes: "2026-08-22: Kopitiam is no longer a Brand — it was a single 'brand' row standing in for 48 different physical food-court buildings, each containing many unrelated stalls with completely different food, which never had a real menu and never rendered (buildScreenerRows joins off MenuItems). Restructured per the Operator design in types/db.ts: Kopitiam stays in operators.ts as the operating company; its 48 real SFA-sourced building addresses are preserved in reference/data/food-court-venues.json (operatorId: 'kopitiam') as research anchors. UPDATE 2026-08-22 (2nd pass, same day): the outlet-finder map widget IS genuinely JS-only with no usable endpoint (confirmed again), but its WordPress SEO sitemap (stall-sitemap.xml + stall-sitemap2.xml) lists 1,441 individual stall pages with clean schema.org JSON-LD — scraped all of them directly (see reference/research-sessions/2026-08-22-kopitiam-stall-scrape.md). After dedup + filtering 58 bare cuisine-label placeholders (reference/data/kopitiam-generic-filter.md), added 839 real Brand rows (operatorId: 'kopitiam') + 1,183 geocoded Premises rows to brands.ts/premises.ts. REMAINING WORK (this is now the priority item, not full re-research): none of these 839 brands have MenuItems yet — the scraped data gives real dish NAMES per brand (preserved in reference/data/kopitiam-stall-dishes.json, ~1,861 dish names across 846 name-keys) but never macros, and this project never fabricates calories/protein/carbs/fat. A future pass needs to research real macros (USDA lookup / vision / manual with source citation) for a representative dish or two per brand and add MenuItems — until then these brands are invisible in the calorie/protein screener even though they're now real, addressed, and geocoded. 3 brand-new venues (504 Yishun, 542B Serangoon North, Pasir Ris 735) have no published address yet and were left out entirely (8 brands with no other location: Mr Prata, Fried Chicken, Savoury Seafood, Hao You Ji Roasted Delights, Hao La Wei Mix Rice, Hao Lai Ke Lamian, Tandoori House, Yong Li Coffee Station) — revisit once Kopitiam publishes them. Kopitiam's other named F&B brands from FairPrice Group's corporate site (Bagus/Bagus Food Hall, Kopitiam Corner, Ah Bowl Den, Belly Belly Good Cai Fan, Chomp!, Kokoro Izakaya, Sedap Kitchen) — check whether they're already among the 839 scraped stalls (several matching names did turn up, e.g. Heavenly Wang, Kokoro Kiosuku, Confirm & Chop, Xiang Chi Mian) before doing separate lookups. UPDATE 2026-08-23: this entry's real unit of work is the 839-brand MenuItems backlog described above, not the 'Kopitiam' queue row itself (which correctly has no Brand of its own — adding one would recreate the exact mega-brand pattern this restructure reverted). This run added MenuItems for 1 of the 839 (kopitiam_kopi_kiosk — 6 items: Kaya Toast, Kaya Butter Toast, Kopi, Teh, Ice Kacang, Kaya Butter Set Meal; all confidence 'estimated', reasoned from singaporecalorie.com/HPB-adjacent generic dish data plus this project's existing Ya Kun kopi/toast entries as a calibration analog — see reference/research-sessions/2026-08-23-kopitiam_kopi_kiosk.md). Skipped 'Signature Breakfast Set' from the stall's scraped dish list as a likely near-duplicate of the set meal already added, with no credible way to differentiate the two without fabricating a distinction. Status left 'pending' — 838 kopitiam-operator brands still have zero MenuItems; picking one per run here would take ~2 years at this cadence, so a future session should consider batching multiple stalls per run specifically for this backlog rather than treating it as a single one-outlet-per-run entry. UPDATE 2026-08-23 (2nd pass): added MenuItems for 1 more of the 839 (kopitiam_chinatown_roasted, a Chinese roast-meats stall at the Changi Airport T3 Kopitiam — 3 items: Char Siew Rice, Roast Duck Rice, Roasted Chicken Rice; all confidence 'estimated'). Only 3 dish names were scraped for this stall (below the usual padding room), so rather than inventing extra menu items not confirmed on its page, macros/prices were calibrated directly off this project's own existing entries for the identical dish names at other Chinese roast-meat stalls already in menuItems.ts (tian_tian_chicken_rice, cc_roast_meats_stall, oar_roast_duck_rice — all also 'estimated' confidence for the same dishes), since no outlet-specific source (official page, HPB, or press) exists for this individual airport stall — see reference/research-sessions/2026-08-23-kopitiam_chinatown_roasted.md. No SFA lookup (Brand already existed with a Premises row from the 2026-08-22 scrape). 837 kopitiam-operator brands still have zero MenuItems."
   },
   {
     id: "koufu",
@@ -255,8 +271,6 @@ export const RESEARCH_QUEUE = [
     priority: "low",
     status: "pending"
   },
-
-  // ── Real SFA-sourced hawker stalls needing menu/macro research (2026-08-20) ──
   {
     id: "commonwealth_crescent_market_ang_foo_lui",
     name: "Ang Foo Lui",
@@ -652,72 +666,6 @@ export const RESEARCH_QUEUE = [
     status: "pending",
     sfaLicenceNo: "NBR01104002",
     notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: North Bridge Road Market) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "chomp_chomp_food_centre_chew_boon_teck",
-    name: "Chew Boon Teck",
-    aliases: ["chew boon teck"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "CCF0135001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chomp Chomp Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "chomp_chomp_food_centre_goh_chye_lee",
-    name: "Goh Chye Lee",
-    aliases: ["goh chye lee"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "CCF0114001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chomp Chomp Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "chomp_chomp_food_centre_goh_yeow_seng",
-    name: "Goh Yeow Seng",
-    aliases: ["goh yeow seng"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "CCF0101002",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chomp Chomp Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "chomp_chomp_food_centre_ho_chew_teck_vincent",
-    name: "Ho Chew Teck Vincent",
-    aliases: ["ho chew teck vincent"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "CCF0128006",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chomp Chomp Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "chomp_chomp_food_centre_jenny_wen_chang",
-    name: "Jenny Wen Chang",
-    aliases: ["jenny wen chang"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "CCF0104004",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chomp Chomp Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "chomp_chomp_food_centre_kang_leang_chua",
-    name: "Kang Leang Chua",
-    aliases: ["kang leang chua"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "CCF0112002",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Chomp Chomp Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
   },
   {
     id: "new_upper_changi_road_blk_58_choo_siew_luan",
@@ -1787,72 +1735,6 @@ export const RESEARCH_QUEUE = [
     notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Tanglin Halt Market) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
   },
   {
-    id: "berseh_food_centre_chua_chow_yong",
-    name: "Chua Chow Yong",
-    aliases: ["chua chow yong"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BSF007002",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Berseh Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "berseh_food_centre_ee_hoe_soon",
-    name: "Ee Hoe Soon",
-    aliases: ["ee hoe soon"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BSF030001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Berseh Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "berseh_food_centre_foo_see_tong",
-    name: "Foo See Tong",
-    aliases: ["foo see tong"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BSF065001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Berseh Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie",
-    name: "Goh Rong Jie, Billy (Wu Rongjie)",
-    aliases: ["goh rong jie, billy (wu rongjie)"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BSF013003",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Berseh Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "berseh_food_centre_goh_rong_jie_billy_wu_rongjie_2",
-    name: "Goh Rong Jie, Billy (Wu Rongjie)",
-    aliases: ["goh rong jie, billy (wu rongjie)"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BSF008002",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Berseh Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "berseh_food_centre_kong_kam_yau",
-    name: "Kong Kam Yau",
-    aliases: ["kong kam yau"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BSF043001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Berseh Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
     id: "peoples_park_food_centre_chan_sook_kheng",
     name: "Chan Sook Kheng",
     aliases: ["chan sook kheng"],
@@ -2852,72 +2734,6 @@ export const RESEARCH_QUEUE = [
     status: "pending",
     sfaLicenceNo: "BM10256001",
     notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Bukit Merah Central Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "alexandra_village_food_centre_ahmad_tarmizi_bin_masderbari",
-    name: "Ahmad Tarmizi Bin Masderbari",
-    aliases: ["ahmad tarmizi bin masderbari"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BM20165003",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Alexandra Village Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "alexandra_village_food_centre_cai_jiaming",
-    name: "Cai Jiaming",
-    aliases: ["cai jiaming"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BM20101003",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Alexandra Village Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "alexandra_village_food_centre_chan_chu_kwang",
-    name: "Chan Chu Kwang",
-    aliases: ["chan chu kwang"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BM20184001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Alexandra Village Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "alexandra_village_food_centre_chng_eng_pin",
-    name: "Chng Eng Pin",
-    aliases: ["chng eng pin"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BM20123003",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Alexandra Village Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "alexandra_village_food_centre_chng_siew_leng",
-    name: "Chng Siew Leng",
-    aliases: ["chng siew leng"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BM20122002",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Alexandra Village Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
-  },
-  {
-    id: "alexandra_village_food_centre_erh_chiang_ngiap",
-    name: "Erh Chiang Ngiap",
-    aliases: ["erh chiang ngiap"],
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    priority: "medium",
-    status: "pending",
-    sfaLicenceNo: "BM20110001",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Alexandra Village Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
   },
   {
     id: "80_circuit_road_market_and_food_centre_choy_mee_leng",
