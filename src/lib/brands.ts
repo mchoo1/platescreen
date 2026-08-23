@@ -3423,54 +3423,9 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-                                  {
-    id: "east_coast_lagoon_food_village_goh_boon_heng_wu_wenxing",
-    name: "Goh Boon Heng (Wu Wenxing)",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "goh boon heng (wu wenxing)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "east_coast_lagoon_food_village_isnin_bin_salim",
-    name: "Isnin Bin Salim",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "isnin bin salim"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "serangoon_garden_market_chin_hon_yin",
-    name: "Chin Hon Yin",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chin hon yin"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+                                  
+  
+  
           {
     id: "tanglin_halt_market_lim_hang_tong",
     name: "Lim Hang Tong",
@@ -3599,22 +3554,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-  {
-    id: "sims_vista_market_and_food_centre_lim_swee_hiok",
-    name: "Lim Swee Hiok",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "lim swee hiok"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+  
               {
     id: "bukit_merah_central_food_centre_creme_works_private_limited",
     name: "Creme Works Private Limited",
@@ -3714,22 +3654,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "kukoh_21_food_centre_kang_soh_chye",
-    name: "Kang Soh Chye",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "kang soh chye"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+  
   {
     id: "telok_ayer_food_centre_e_p_cafeteria_pte_ltd",
     name: "E&P Cafeteria Pte. Ltd.",
@@ -3762,22 +3687,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-            {
-    id: "marsiling_lane_blk_20_21_eng_siak_yong",
-    name: "Eng Siak Yong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "eng siak yong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+            
   {
     id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_chen_kin_fatt",
     name: "Chen Kin Fatt",
@@ -27934,6 +27844,96 @@ export const BRANDS_4 = [
     cuisine: "Duck Rice & Duck Noodle",
     aliases: [
       "yu kee duck rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "east_coast_lagoon_food_village_east_coast_lagoon_fishball_noodle",
+    name: "East Coast Lagoon Fishball Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Fishball Noodle",
+    aliases: [
+      "east coast lagoon fishball noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "east_coast_lagoon_food_village_lagoon_famous_carrot_cake",
+    name: "Lagoon Famous Carrot Cake",
+    emoji: "🍘",
+    type: "hawker",
+    cuisine: "Fried Carrot Cake",
+    aliases: [
+      "lagoon famous carrot cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "serangoon_garden_market_bossi_ban_mian",
+    name: "Bossi Ban Mian",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Ban Mian",
+    aliases: [
+      "bossi ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "sims_vista_market_and_food_centre_green_chili_chicken_rice",
+    name: "Green Chili Chicken Rice",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Hainanese Chicken Rice",
+    aliases: [
+      "green chili chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "kukoh_21_food_centre_bedok_69_traditional_wanton_noodle",
+    name: "Bedok 69 Traditional Wanton Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Wanton Noodle",
+    aliases: [
+      "bedok 69 traditional wanton noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "marsiling_lane_blk_20_21_azizah_aziz_caferia",
+    name: "Azizah Aziz Caferia",
+    emoji: "🍵",
+    type: "hawker",
+    cuisine: "Teh Tarik & Malay Breakfast",
+    aliases: [
+      "azizah aziz caferia"
     ],
     dietTags: [],
     priceRange: "$",

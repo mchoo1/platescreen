@@ -1472,66 +1472,9 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-                                  {
-    id: "east_coast_lagoon_food_village_goh_boon_heng_wu_wenxing_p252",
-    brandId: "east_coast_lagoon_food_village_goh_boon_heng_wu_wenxing",
-    label: "East Coast Lagoon Food Village",
-    locationType: "hawker_centre",
-    locationContext: "East Coast Lagoon Food Village",
-    address: "EAST COAST LAGOON FOOD VILLAGE Stall No 008",
-    postal: null,
-    lat: 1.3073,
-    lng: 103.92,
-    sfa: {
-      licenceNumber: "ECF008001",
-      licenseeName: "GOH BOON HENG (WU WENXING)",
-      premisesAddress: "EAST COAST LAGOON FOOD VILLAGE Stall No 008",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "east_coast_lagoon_food_village_isnin_bin_salim_p253",
-    brandId: "east_coast_lagoon_food_village_isnin_bin_salim",
-    label: "East Coast Lagoon Food Village",
-    locationType: "hawker_centre",
-    locationContext: "East Coast Lagoon Food Village",
-    address: "EAST COAST LAGOON FOOD VILLAGE Stall No 057",
-    postal: null,
-    lat: 1.3073,
-    lng: 103.92,
-    sfa: {
-      licenceNumber: "ECF057001",
-      licenseeName: "ISNIN BIN SALIM",
-      premisesAddress: "EAST COAST LAGOON FOOD VILLAGE Stall No 057",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "serangoon_garden_market_chin_hon_yin_p259",
-    brandId: "serangoon_garden_market_chin_hon_yin",
-    label: "Serangoon Garden Market",
-    locationType: "hawker_centre",
-    locationContext: "Serangoon Garden Market",
-    address: "SERANGOON GARDEN MARKET Stall No 025",
-    postal: null,
-    lat: 1.3686,
-    lng: 103.8682,
-    sfa: {
-      licenceNumber: "SGM025002",
-      licenseeName: "CHIN HON YIN",
-      premisesAddress: "SERANGOON GARDEN MARKET Stall No 025",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+                                  
+  
+  
           {
     id: "tanglin_halt_market_lim_hang_tong_p264",
     brandId: "tanglin_halt_market_lim_hang_tong",
@@ -1692,26 +1635,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "sims_vista_market_and_food_centre_lim_swee_hiok_p314",
-    brandId: "sims_vista_market_and_food_centre_lim_swee_hiok",
-    label: "Sims Vista Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Sims Vista Market and Food Centre",
-    address: "SIMS PLACE BLK 49 Stall No 01-46",
-    postal: null,
-    lat: 1.317035023753244,
-    lng: 103.8793098547741,
-    sfa: {
-      licenceNumber: "SI10146001",
-      licenseeName: "LIM SWEE HIOK",
-      premisesAddress: "SIMS PLACE BLK 49 Stall No 01-46",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
               {
     id: "bukit_merah_central_food_centre_creme_works_private_limited_p357",
     brandId: "bukit_merah_central_food_centre_creme_works_private_limited",
@@ -1818,10 +1742,10 @@ const PREMISES_1 = [
     label: "Kukoh 21 Food Centre",
     locationType: "hawker_centre",
     locationContext: "Kukoh 21 Food Centre",
-    address: "JALAN KUKOH BLK 1 Stall No 01-07",
-    postal: null,
-    lat: 1.2841,
-    lng: 103.8422,
+    address: "1 Jalan Kukoh, Singapore 161001",
+    postal: "161001",
+    lat: 1.2882310152805,
+    lng: 103.839934168065,
     sfa: {
       licenceNumber: "JK10107004",
       licenseeName: "NTUC FOODFARE CO-OPERATIVE LTD",
@@ -1832,26 +1756,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "kukoh_21_food_centre_kang_soh_chye_p416",
-    brandId: "kukoh_21_food_centre_kang_soh_chye",
-    label: "Kukoh 21 Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kukoh 21 Food Centre",
-    address: "JALAN KUKOH BLK 1 Stall No 01-09",
-    postal: null,
-    lat: 1.2841,
-    lng: 103.8422,
-    sfa: {
-      licenceNumber: "JK10109002",
-      licenseeName: "KANG SOH CHYE",
-      premisesAddress: "JALAN KUKOH BLK 1 Stall No 01-09",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
   {
     id: "telok_ayer_food_centre_e_p_cafeteria_pte_ltd_p425",
     brandId: "telok_ayer_food_centre_e_p_cafeteria_pte_ltd",
@@ -1895,26 +1800,7 @@ const PREMISES_1 = [
 ];
 
 const PREMISES_2 = [
-      {
-    id: "marsiling_lane_blk_20_21_eng_siak_yong_p434",
-    brandId: "marsiling_lane_blk_20_21_eng_siak_yong",
-    label: "Marsiling Lane Blk 20/21",
-    locationType: "hawker_centre",
-    locationContext: "Marsiling Lane Blk 20/21",
-    address: "MARSILING LANE BLK 20 Stall No 01-36",
-    postal: null,
-    lat: 1.443444167875218,
-    lng: 103.7769894778329,
-    sfa: {
-      licenceNumber: "ML10136001",
-      licenseeName: "ENG SIAK YONG",
-      premisesAddress: "MARSILING LANE BLK 20 Stall No 01-36",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+      
   {
     id: "blk_6_tanjong_pagar_plaza_market_and_food_centre_chen_kin_fatt_p440",
     brandId: "blk_6_tanjong_pagar_plaza_market_and_food_centre_chen_kin_fatt",
@@ -79956,6 +79842,84 @@ export const PREMISES_12 = [
     postal: "679947",
     lat: 1.37759742308947,
     lng: 103.772491526747,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "east_coast_lagoon_food_village_east_coast_lagoon_fishball_noodle_batchs1",
+    brandId: "east_coast_lagoon_food_village_east_coast_lagoon_fishball_noodle",
+    label: "East Coast Lagoon Food Village",
+    locationType: "hawker_centre",
+    locationContext: "East Coast Lagoon Food Village",
+    address: "1220 East Coast Parkway #01-08, Singapore 468960",
+    postal: "468960",
+    lat: 1.3073,
+    lng: 103.92,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "east_coast_lagoon_food_village_lagoon_famous_carrot_cake_batchs2",
+    brandId: "east_coast_lagoon_food_village_lagoon_famous_carrot_cake",
+    label: "East Coast Lagoon Food Village",
+    locationType: "hawker_centre",
+    locationContext: "East Coast Lagoon Food Village",
+    address: "1220 East Coast Parkway #01-40, Singapore 468960",
+    postal: "468960",
+    lat: 1.3073,
+    lng: 103.92,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "serangoon_garden_market_bossi_ban_mian_batchs1",
+    brandId: "serangoon_garden_market_bossi_ban_mian",
+    label: "Serangoon Garden Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Serangoon Garden Market & Food Centre",
+    address: "49A Serangoon Garden Way #01-18, Singapore 555945",
+    postal: "555945",
+    lat: 1.36273680777483,
+    lng: 103.866162163042,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "sims_vista_market_and_food_centre_green_chili_chicken_rice_batchs1",
+    brandId: "sims_vista_market_and_food_centre_green_chili_chicken_rice",
+    label: "Sims Vista Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Sims Vista Market & Food Centre",
+    address: "49 Sims Place #01-09, Singapore 380049",
+    postal: "380049",
+    lat: 1.31703502375324,
+    lng: 103.879309854774,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kukoh_21_food_centre_bedok_69_traditional_wanton_noodle_batchs1",
+    brandId: "kukoh_21_food_centre_bedok_69_traditional_wanton_noodle",
+    label: "Kukoh 21 Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kukoh 21 Food Centre",
+    address: "1 Jalan Kukoh #01-15, Singapore 161001",
+    postal: "161001",
+    lat: 1.2882310152805,
+    lng: 103.839934168065,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "marsiling_lane_blk_20_21_azizah_aziz_caferia_batchs1",
+    brandId: "marsiling_lane_blk_20_21_azizah_aziz_caferia",
+    label: "Marsiling Lane Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Marsiling Lane Market & Food Centre",
+    address: "20 Marsiling Lane #01-03, Singapore 730020",
+    postal: "730020",
+    lat: 1.44344416787521,
+    lng: 103.776989477833,
     sfa: null,
     source: "web_research"
   },
