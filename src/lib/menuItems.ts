@@ -15037,5 +15037,102 @@ export const MENU_ITEMS = [
       "lactose_free"
     ],
     confidence: "estimated"
+  },
+  {
+    id: "beradikwestern_chicken_chop",
+    brandId: "kopitiam_beradik_western",
+    name: "Chicken Chop",
+    emoji: "🍗",
+    category: "Chicken",
+    price: 6.5,
+    calories: 650,
+    protein: 34,
+    carbs: 55,
+    fat: 30,
+    compatibleWith: [
+      "no_pork"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "beradikwestern_fish_and_chips",
+    brandId: "kopitiam_beradik_western",
+    name: "Fish & Chips",
+    emoji: "🐟",
+    category: "Seafood",
+    price: 6.8,
+    calories: 680,
+    protein: 26,
+    carbs: 60,
+    fat: 32,
+    compatibleWith: [
+      "no_pork"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "beradikwestern_chicken_chop_aglio_olio",
+    brandId: "kopitiam_beradik_western",
+    name: "Chicken Chop Aglio Olio",
+    emoji: "🍝",
+    category: "Pasta",
+    price: 7.5,
+    calories: 720,
+    protein: 36,
+    carbs: 70,
+    fat: 28,
+    compatibleWith: [
+      "no_pork"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "beradikwestern_crispy_chicken_cutlet_rice",
+    brandId: "kopitiam_beradik_western",
+    name: "Crispy Chicken Cutlet With Rice",
+    emoji: "🍗",
+    category: "Chicken",
+    price: 6,
+    calories: 700,
+    protein: 32,
+    carbs: 75,
+    fat: 26,
+    compatibleWith: [
+      "no_pork"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "beradikwestern_grilled_chicken_steak",
+    brandId: "kopitiam_beradik_western",
+    name: "Grilled Chicken Steak",
+    emoji: "🍗",
+    category: "Chicken",
+    price: 7,
+    calories: 480,
+    protein: 42,
+    carbs: 30,
+    fat: 18,
+    compatibleWith: [
+      "no_pork"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "beradikwestern_chicken_bolognese",
+    brandId: "kopitiam_beradik_western",
+    name: "Chicken Bolognese",
+    emoji: "🍝",
+    category: "Pasta",
+    price: 6.5,
+    calories: 620,
+    protein: 28,
+    carbs: 78,
+    fat: 18,
+    compatibleWith: [
+      "no_pork"
+    ],
+    confidence: "estimated"
   }
 ];
