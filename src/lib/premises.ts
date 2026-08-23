@@ -1430,486 +1430,6 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   {
-    id: "tiong_bahru_market_ang_swee_kong_p133",
-    brandId: "tiong_bahru_market_ang_swee_kong",
-    label: "Tiong Bahru Market",
-    locationType: "hawker_centre",
-    locationContext: "Tiong Bahru Market",
-    address: "TIONG BAHRU MARKET Stall No 02-27",
-    postal: null,
-    lat: 1.2846,
-    lng: 103.8272,
-    sfa: {
-      licenceNumber: "THM0227002",
-      licenseeName: "ANG SWEE KONG",
-      premisesAddress: "TIONG BAHRU MARKET Stall No 02-27",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "tiong_bahru_market_boo_geok_beng_p134",
-    brandId: "tiong_bahru_market_boo_geok_beng",
-    label: "Tiong Bahru Market",
-    locationType: "hawker_centre",
-    locationContext: "Tiong Bahru Market",
-    address: "TIONG BAHRU MARKET Stall No 02-53",
-    postal: null,
-    lat: 1.2846,
-    lng: 103.8272,
-    sfa: {
-      licenceNumber: "THM0253002",
-      licenseeName: "BOO GEOK BENG",
-      premisesAddress: "TIONG BAHRU MARKET Stall No 02-53",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "tiong_bahru_market_chan_lai_ee_p135",
-    brandId: "tiong_bahru_market_chan_lai_ee",
-    label: "Tiong Bahru Market",
-    locationType: "hawker_centre",
-    locationContext: "Tiong Bahru Market",
-    address: "TIONG BAHRU MARKET Stall No 02-36",
-    postal: null,
-    lat: 1.2846,
-    lng: 103.8272,
-    sfa: {
-      licenceNumber: "THM0236002",
-      licenseeName: "CHAN LAI EE",
-      premisesAddress: "TIONG BAHRU MARKET Stall No 02-36",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "tiong_bahru_market_chan_lai_ee_2_p136",
-    brandId: "tiong_bahru_market_chan_lai_ee_2",
-    label: "Tiong Bahru Market",
-    locationType: "hawker_centre",
-    locationContext: "Tiong Bahru Market",
-    address: "TIONG BAHRU MARKET Stall No 02-07",
-    postal: null,
-    lat: 1.2846,
-    lng: 103.8272,
-    sfa: {
-      licenceNumber: "THM0207003",
-      licenseeName: "CHAN LAI EE",
-      premisesAddress: "TIONG BAHRU MARKET Stall No 02-07",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "tiong_bahru_market_chan_pak_seng_p137",
-    brandId: "tiong_bahru_market_chan_pak_seng",
-    label: "Tiong Bahru Market",
-    locationType: "hawker_centre",
-    locationContext: "Tiong Bahru Market",
-    address: "TIONG BAHRU MARKET Stall No 02-68",
-    postal: null,
-    lat: 1.2846,
-    lng: 103.8272,
-    sfa: {
-      licenceNumber: "THM0268002",
-      licenseeName: "CHAN PAK SENG",
-      premisesAddress: "TIONG BAHRU MARKET Stall No 02-68",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "tiong_bahru_market_chan_siew_tien_p138",
-    brandId: "tiong_bahru_market_chan_siew_tien",
-    label: "Tiong Bahru Market",
-    locationType: "hawker_centre",
-    locationContext: "Tiong Bahru Market",
-    address: "TIONG BAHRU MARKET Stall No 02-67",
-    postal: null,
-    lat: 1.2846,
-    lng: 103.8272,
-    sfa: {
-      licenceNumber: "THM0267002",
-      licenseeName: "CHAN SIEW TIEN",
-      premisesAddress: "TIONG BAHRU MARKET Stall No 02-67",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "dunman_food_centre_chia_song_kim_p139",
-    brandId: "dunman_food_centre_chia_song_kim",
-    label: "Dunman Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Dunman Food Centre",
-    address: "DUNMAN FOOD CENTRE Stall No 02-18",
-    postal: null,
-    lat: 1.3161,
-    lng: 103.8896,
-    sfa: {
-      licenceNumber: "DUF0218002",
-      licenseeName: "CHIA SONG KIM",
-      premisesAddress: "DUNMAN FOOD CENTRE Stall No 02-18",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "dunman_food_centre_chua_chye_lian_p140",
-    brandId: "dunman_food_centre_chua_chye_lian",
-    label: "Dunman Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Dunman Food Centre",
-    address: "DUNMAN FOOD CENTRE Stall No 01-10",
-    postal: null,
-    lat: 1.3161,
-    lng: 103.8896,
-    sfa: {
-      licenceNumber: "DUF0110002",
-      licenseeName: "CHUA CHYE LIAN",
-      premisesAddress: "DUNMAN FOOD CENTRE Stall No 01-10",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "dunman_food_centre_kee_hock_seng_p141",
-    brandId: "dunman_food_centre_kee_hock_seng",
-    label: "Dunman Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Dunman Food Centre",
-    address: "DUNMAN FOOD CENTRE Stall No 02-28",
-    postal: null,
-    lat: 1.3161,
-    lng: 103.8896,
-    sfa: {
-      licenceNumber: "DUF0228002",
-      licenseeName: "KEE HOCK SENG",
-      premisesAddress: "DUNMAN FOOD CENTRE Stall No 02-28",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "dunman_food_centre_kway_kim_seng_p142",
-    brandId: "dunman_food_centre_kway_kim_seng",
-    label: "Dunman Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Dunman Food Centre",
-    address: "DUNMAN FOOD CENTRE Stall No 02-17",
-    postal: null,
-    lat: 1.3161,
-    lng: 103.8896,
-    sfa: {
-      licenceNumber: "DUF0217001",
-      licenseeName: "KWAY KIM SENG",
-      premisesAddress: "DUNMAN FOOD CENTRE Stall No 02-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "dunman_food_centre_lim_khai_ngee_p143",
-    brandId: "dunman_food_centre_lim_khai_ngee",
-    label: "Dunman Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Dunman Food Centre",
-    address: "DUNMAN FOOD CENTRE Stall No 02-14",
-    postal: null,
-    lat: 1.3161,
-    lng: 103.8896,
-    sfa: {
-      licenceNumber: "DUF0214002",
-      licenseeName: "LIM KHAI NGEE",
-      premisesAddress: "DUNMAN FOOD CENTRE Stall No 02-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "dunman_food_centre_neo_aik_huat_p144",
-    brandId: "dunman_food_centre_neo_aik_huat",
-    label: "Dunman Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Dunman Food Centre",
-    address: "DUNMAN FOOD CENTRE Stall No 01-04",
-    postal: null,
-    lat: 1.3161,
-    lng: 103.8896,
-    sfa: {
-      licenceNumber: "DUF0104002",
-      licenseeName: "NEO AIK HUAT",
-      premisesAddress: "DUNMAN FOOD CENTRE Stall No 01-04",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "beo_crescent_market_chan_ah_muay_p145",
-    brandId: "beo_crescent_market_chan_ah_muay",
-    label: "Beo Crescent Market",
-    locationType: "hawker_centre",
-    locationContext: "Beo Crescent Market",
-    address: "BEO CRESCENT MARKET Stall No 01-71",
-    postal: null,
-    lat: 1.2881,
-    lng: 103.8205,
-    sfa: {
-      licenceNumber: "BCM0171003",
-      licenseeName: "CHAN AH MUAY",
-      premisesAddress: "BEO CRESCENT MARKET Stall No 01-71",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "beo_crescent_market_goh_meow_koon_p146",
-    brandId: "beo_crescent_market_goh_meow_koon",
-    label: "Beo Crescent Market",
-    locationType: "hawker_centre",
-    locationContext: "Beo Crescent Market",
-    address: "BEO CRESCENT MARKET Stall No 01-87",
-    postal: null,
-    lat: 1.2881,
-    lng: 103.8205,
-    sfa: {
-      licenceNumber: "BCM0187002",
-      licenseeName: "GOH MEOW KOON",
-      premisesAddress: "BEO CRESCENT MARKET Stall No 01-87",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "beo_crescent_market_pua_shu_mei_p147",
-    brandId: "beo_crescent_market_pua_shu_mei",
-    label: "Beo Crescent Market",
-    locationType: "hawker_centre",
-    locationContext: "Beo Crescent Market",
-    address: "BEO CRESCENT MARKET Stall No 01-67",
-    postal: null,
-    lat: 1.2881,
-    lng: 103.8205,
-    sfa: {
-      licenceNumber: "BCM0167002",
-      licenseeName: "PUA SHU MEI",
-      premisesAddress: "BEO CRESCENT MARKET Stall No 01-67",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "beo_crescent_market_tay_puay_seh_p148",
-    brandId: "beo_crescent_market_tay_puay_seh",
-    label: "Beo Crescent Market",
-    locationType: "hawker_centre",
-    locationContext: "Beo Crescent Market",
-    address: "BEO CRESCENT MARKET Stall No 01-82",
-    postal: null,
-    lat: 1.2881,
-    lng: 103.8205,
-    sfa: {
-      licenceNumber: "BCM0182002",
-      licenseeName: "TAY PUAY SEH",
-      premisesAddress: "BEO CRESCENT MARKET Stall No 01-82",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "beo_crescent_market_yong_chiou_mei_koh_chiou_mei_p149",
-    brandId: "beo_crescent_market_yong_chiou_mei_koh_chiou_mei",
-    label: "Beo Crescent Market",
-    locationType: "hawker_centre",
-    locationContext: "Beo Crescent Market",
-    address: "BEO CRESCENT MARKET Stall No 01-90",
-    postal: null,
-    lat: 1.2881,
-    lng: 103.8205,
-    sfa: {
-      licenceNumber: "BCM0190002",
-      licenseeName: "YONG CHIOU MEI @KOH CHIOU MEI",
-      premisesAddress: "BEO CRESCENT MARKET Stall No 01-90",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "beo_crescent_market_chen_ling_p150",
-    brandId: "beo_crescent_market_chen_ling",
-    label: "Beo Crescent Market",
-    locationType: "hawker_centre",
-    locationContext: "Beo Crescent Market",
-    address: "BEO CRESCENT MARKET Stall No 01-75",
-    postal: null,
-    lat: 1.2881,
-    lng: 103.8205,
-    sfa: {
-      licenceNumber: "BCM0175003",
-      licenseeName: "CHEN LING",
-      premisesAddress: "BEO CRESCENT MARKET Stall No 01-75",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "adam_road_food_centre_chan_ah_kim_p151",
-    brandId: "adam_road_food_centre_chan_ah_kim",
-    label: "Adam Road Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Adam Road Food Centre",
-    address: "ADAM ROAD FOOD CENTRE Stall No 01-17",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.8106,
-    sfa: {
-      licenceNumber: "ADF0117002",
-      licenseeName: "CHAN AH KIM",
-      premisesAddress: "ADAM ROAD FOOD CENTRE Stall No 01-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "adam_road_food_centre_goh_ah_mui_p152",
-    brandId: "adam_road_food_centre_goh_ah_mui",
-    label: "Adam Road Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Adam Road Food Centre",
-    address: "ADAM ROAD FOOD CENTRE Stall No 01-20",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.8106,
-    sfa: {
-      licenceNumber: "ADF0120001",
-      licenseeName: "GOH AH MUI",
-      premisesAddress: "ADAM ROAD FOOD CENTRE Stall No 01-20",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "adam_road_food_centre_jumila_binte_kamari_p153",
-    brandId: "adam_road_food_centre_jumila_binte_kamari",
-    label: "Adam Road Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Adam Road Food Centre",
-    address: "ADAM ROAD FOOD CENTRE Stall No 01-14",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.8106,
-    sfa: {
-      licenceNumber: "ADF0114001",
-      licenseeName: "JUMILA BINTE KAMARI",
-      premisesAddress: "ADAM ROAD FOOD CENTRE Stall No 01-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "adam_road_food_centre_lim_sar_hoe_p154",
-    brandId: "adam_road_food_centre_lim_sar_hoe",
-    label: "Adam Road Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Adam Road Food Centre",
-    address: "ADAM ROAD FOOD CENTRE Stall No 01-32",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.8106,
-    sfa: {
-      licenceNumber: "ADF0132002",
-      licenseeName: "LIM SAR HOE",
-      premisesAddress: "ADAM ROAD FOOD CENTRE Stall No 01-32",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "adam_road_food_centre_lim_then_poh_p155",
-    brandId: "adam_road_food_centre_lim_then_poh",
-    label: "Adam Road Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Adam Road Food Centre",
-    address: "ADAM ROAD FOOD CENTRE Stall No 01-31",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.8106,
-    sfa: {
-      licenceNumber: "ADF0131001",
-      licenseeName: "LIM THEN POH",
-      premisesAddress: "ADAM ROAD FOOD CENTRE Stall No 01-31",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "adam_road_food_centre_mohd_hanafiah_bin_mohd_idris_p156",
-    brandId: "adam_road_food_centre_mohd_hanafiah_bin_mohd_idris",
-    label: "Adam Road Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Adam Road Food Centre",
-    address: "ADAM ROAD FOOD CENTRE Stall No 01-06",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.8106,
-    sfa: {
-      licenceNumber: "ADF0106001",
-      licenseeName: "MOHD HANAFIAH BIN MOHD IDRIS",
-      premisesAddress: "ADAM ROAD FOOD CENTRE Stall No 01-06",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "north_bridge_road_market_barakath_ali_s_o_k_e_abdul_majeed_p157",
     brandId: "north_bridge_road_market_barakath_ali_s_o_k_e_abdul_majeed",
     label: "North Bridge Road Market",
@@ -2150,26 +1670,6 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   {
-    id: "redhill_food_centre_9_plus_redhill_pte_ltd_p175",
-    brandId: "redhill_food_centre_9_plus_redhill_pte_ltd",
-    label: "Redhill Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Food Centre",
-    address: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-    postal: null,
-    lat: 1.2843,
-    lng: 103.8181,
-    sfa: {
-      licenceNumber: "CE08H52E001",
-      licenseeName: "9 PLUS REDHILL PTE LTD",
-      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "redhill_food_centre_er_see_liang_p176",
     brandId: "redhill_food_centre_er_see_liang",
     label: "Redhill Food Centre",
@@ -2184,26 +1684,6 @@ const PREMISES_1 = [
       licenseeName: "ER SEE LIANG",
       premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
       grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "redhill_food_centre_9_plus_cafe_pte_ltd_p177",
-    brandId: "redhill_food_centre_9_plus_cafe_pte_ltd",
-    label: "Redhill Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Food Centre",
-    address: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-    postal: null,
-    lat: 1.2843,
-    lng: 103.8181,
-    sfa: {
-      licenceNumber: "CE08H52E005",
-      licenseeName: "9 PLUS CAFE PTE. LTD.",
-      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-      grade: "B",
       demeritPoints: null,
       licenceSuspended: false
     },
@@ -3370,126 +2850,6 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   {
-    id: "zion_riverside_food_centre_goh_leng_hua_p242",
-    brandId: "zion_riverside_food_centre_goh_leng_hua",
-    label: "Zion Riverside Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Zion Riverside Food Centre",
-    address: "ZION RIVERSIDE FOOD CENTRE Stall No 01-26",
-    postal: null,
-    lat: 1.2892,
-    lng: 103.8219,
-    sfa: {
-      licenceNumber: "ZRF0126002",
-      licenseeName: "GOH LENG HUA",
-      premisesAddress: "ZION RIVERSIDE FOOD CENTRE Stall No 01-26",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "zion_riverside_food_centre_goh_lum_eng_p243",
-    brandId: "zion_riverside_food_centre_goh_lum_eng",
-    label: "Zion Riverside Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Zion Riverside Food Centre",
-    address: "ZION RIVERSIDE FOOD CENTRE Stall No 01-31",
-    postal: null,
-    lat: 1.2892,
-    lng: 103.8219,
-    sfa: {
-      licenceNumber: "ZRF0131001",
-      licenseeName: "GOH LUM ENG",
-      premisesAddress: "ZION RIVERSIDE FOOD CENTRE Stall No 01-31",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "zion_riverside_food_centre_goh_miah_liang_p244",
-    brandId: "zion_riverside_food_centre_goh_miah_liang",
-    label: "Zion Riverside Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Zion Riverside Food Centre",
-    address: "ZION RIVERSIDE FOOD CENTRE Stall No 01-27",
-    postal: null,
-    lat: 1.2892,
-    lng: 103.8219,
-    sfa: {
-      licenceNumber: "ZRF0127001",
-      licenseeName: "GOH MIAH LIANG",
-      premisesAddress: "ZION RIVERSIDE FOOD CENTRE Stall No 01-27",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "zion_riverside_food_centre_ho_kian_tat_p245",
-    brandId: "zion_riverside_food_centre_ho_kian_tat",
-    label: "Zion Riverside Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Zion Riverside Food Centre",
-    address: "ZION RIVERSIDE FOOD CENTRE Stall No 01-17",
-    postal: null,
-    lat: 1.2892,
-    lng: 103.8219,
-    sfa: {
-      licenceNumber: "ZRF0117002",
-      licenseeName: "HO KIAN TAT",
-      premisesAddress: "ZION RIVERSIDE FOOD CENTRE Stall No 01-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "zion_riverside_food_centre_kenlee_tan_soon_wah_p246",
-    brandId: "zion_riverside_food_centre_kenlee_tan_soon_wah",
-    label: "Zion Riverside Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Zion Riverside Food Centre",
-    address: "ZION RIVERSIDE FOOD CENTRE Stall No 01-23",
-    postal: null,
-    lat: 1.2892,
-    lng: 103.8219,
-    sfa: {
-      licenceNumber: "ZRF0123002",
-      licenseeName: "KENLEE TAN SOON WAH",
-      premisesAddress: "ZION RIVERSIDE FOOD CENTRE Stall No 01-23",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "zion_riverside_food_centre_khng_lee_po_alice_chung_yoke_lan_p247",
-    brandId: "zion_riverside_food_centre_khng_lee_po_alice_chung_yoke_lan",
-    label: "Zion Riverside Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Zion Riverside Food Centre",
-    address: "ZION RIVERSIDE FOOD CENTRE Stall No 01-06",
-    postal: null,
-    lat: 1.2892,
-    lng: 103.8219,
-    sfa: {
-      licenceNumber: "ZRF0106002",
-      licenseeName: "KHNG LEE PO ALICE @CHUNG YOKE LAN",
-      premisesAddress: "ZION RIVERSIDE FOOD CENTRE Stall No 01-06",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "east_coast_lagoon_food_village_ang_siau_lai_p248",
     brandId: "east_coast_lagoon_food_village_ang_siau_lai",
     label: "East Coast Lagoon Food Village",
@@ -4570,26 +3930,6 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   {
-    id: "redhill_market_tan_boon_kwang_p308",
-    brandId: "redhill_market_tan_boon_kwang",
-    label: "Redhill Market",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Market",
-    address: "REDHILL LANE BLK 85 Stall No 01-79",
-    postal: null,
-    lat: 1.287843172980647,
-    lng: 103.8183520972984,
-    sfa: {
-      licenceNumber: "RH20179001",
-      licenseeName: "TAN BOON KWANG",
-      premisesAddress: "REDHILL LANE BLK 85 Stall No 01-79",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "sims_vista_market_and_food_centre_akberali_bin_a_p_abdul_hameed_p309",
     brandId: "sims_vista_market_and_food_centre_akberali_bin_a_p_abdul_hameed",
     label: "Sims Vista Market and Food Centre",
@@ -5184,246 +4524,6 @@ const PREMISES_1 = [
       licenseeName: "ABDUL HAMID BIN DOLLAH",
       premisesAddress: "SHUNFU ROAD BLK 320 Stall No 02-15",
       grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kebun_baru_food_centre_ang_lau_aik_p339",
-    brandId: "kebun_baru_food_centre_ang_lau_aik",
-    label: "Kebun Baru Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kebun Baru Food Centre",
-    address: "ANG MO KIO STREET 22 BLK 226H Stall No 01-14",
-    postal: null,
-    lat: 1.367178740946947,
-    lng: 103.8401577419773,
-    sfa: {
-      licenceNumber: "AMA0114001",
-      licenseeName: "ANG LAU AIK",
-      premisesAddress: "ANG MO KIO STREET 22 BLK 226H Stall No 01-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kebun_baru_food_centre_chee_ah_eng_p340",
-    brandId: "kebun_baru_food_centre_chee_ah_eng",
-    label: "Kebun Baru Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kebun Baru Food Centre",
-    address: "ANG MO KIO STREET 22 BLK 226H Stall No 01-02",
-    postal: null,
-    lat: 1.367178740946947,
-    lng: 103.8401577419773,
-    sfa: {
-      licenceNumber: "AMA0102001",
-      licenseeName: "CHEE AH ENG",
-      premisesAddress: "ANG MO KIO STREET 22 BLK 226H Stall No 01-02",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kebun_baru_food_centre_chew_ban_koon_p341",
-    brandId: "kebun_baru_food_centre_chew_ban_koon",
-    label: "Kebun Baru Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kebun Baru Food Centre",
-    address: "ANG MO KIO STREET 22 BLK 226H Stall No 01-24",
-    postal: null,
-    lat: 1.367178740946947,
-    lng: 103.8401577419773,
-    sfa: {
-      licenceNumber: "AMA0124002",
-      licenseeName: "CHEW BAN KOON",
-      premisesAddress: "ANG MO KIO STREET 22 BLK 226H Stall No 01-24",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kebun_baru_food_centre_chng_yiam_nguen_p342",
-    brandId: "kebun_baru_food_centre_chng_yiam_nguen",
-    label: "Kebun Baru Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kebun Baru Food Centre",
-    address: "ANG MO KIO STREET 22 BLK 226H Stall No 01-09",
-    postal: null,
-    lat: 1.367178740946947,
-    lng: 103.8401577419773,
-    sfa: {
-      licenceNumber: "AMA0109001",
-      licenseeName: "CHNG YIAM NGUEN",
-      premisesAddress: "ANG MO KIO STREET 22 BLK 226H Stall No 01-09",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kebun_baru_food_centre_ng_ah_boo_p343",
-    brandId: "kebun_baru_food_centre_ng_ah_boo",
-    label: "Kebun Baru Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kebun Baru Food Centre",
-    address: "ANG MO KIO STREET 22 BLK 226H Stall No 01-17",
-    postal: null,
-    lat: 1.367178740946947,
-    lng: 103.8401577419773,
-    sfa: {
-      licenceNumber: "AMA0117001",
-      licenseeName: "NG AH BOO",
-      premisesAddress: "ANG MO KIO STREET 22 BLK 226H Stall No 01-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kebun_baru_food_centre_ong_kim_tee_p344",
-    brandId: "kebun_baru_food_centre_ong_kim_tee",
-    label: "Kebun Baru Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kebun Baru Food Centre",
-    address: "ANG MO KIO STREET 22 BLK 226H Stall No 01-05",
-    postal: null,
-    lat: 1.367178740946947,
-    lng: 103.8401577419773,
-    sfa: {
-      licenceNumber: "AMA0105002",
-      licenseeName: "ONG KIM TEE",
-      premisesAddress: "ANG MO KIO STREET 22 BLK 226H Stall No 01-05",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_chan_nung_kiang_p345",
-    brandId: "bendemeer_market_and_food_centre_chan_nung_kiang",
-    label: "Bendemeer Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bendemeer Market and Food Centre",
-    address: "BENDEMEER ROAD BLK 29 Stall No 01-32",
-    postal: null,
-    lat: 1.3141,
-    lng: 103.862,
-    sfa: {
-      licenceNumber: "BE10132001",
-      licenseeName: "CHAN NUNG KIANG",
-      premisesAddress: "BENDEMEER ROAD BLK 29 Stall No 01-32",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_chan_yeok_kin_p346",
-    brandId: "bendemeer_market_and_food_centre_chan_yeok_kin",
-    label: "Bendemeer Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bendemeer Market and Food Centre",
-    address: "BENDEMEER ROAD BLK 29 Stall No 01-17",
-    postal: null,
-    lat: 1.3141,
-    lng: 103.862,
-    sfa: {
-      licenceNumber: "BE10117001",
-      licenseeName: "CHAN YEOK KIN",
-      premisesAddress: "BENDEMEER ROAD BLK 29 Stall No 01-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_chia_geok_tin_p347",
-    brandId: "bendemeer_market_and_food_centre_chia_geok_tin",
-    label: "Bendemeer Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bendemeer Market and Food Centre",
-    address: "BENDEMEER ROAD BLK 29 Stall No 01-05",
-    postal: null,
-    lat: 1.3141,
-    lng: 103.862,
-    sfa: {
-      licenceNumber: "BE10105001",
-      licenseeName: "CHIA GEOK TIN",
-      premisesAddress: "BENDEMEER ROAD BLK 29 Stall No 01-05",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_chua_wee_liang_p348",
-    brandId: "bendemeer_market_and_food_centre_chua_wee_liang",
-    label: "Bendemeer Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bendemeer Market and Food Centre",
-    address: "BENDEMEER ROAD BLK 29 Stall No 01-43",
-    postal: null,
-    lat: 1.3141,
-    lng: 103.862,
-    sfa: {
-      licenceNumber: "BE10143002",
-      licenseeName: "CHUA WEE LIANG",
-      premisesAddress: "BENDEMEER ROAD BLK 29 Stall No 01-43",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_er_soo_liang_p349",
-    brandId: "bendemeer_market_and_food_centre_er_soo_liang",
-    label: "Bendemeer Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bendemeer Market and Food Centre",
-    address: "BENDEMEER ROAD BLK 29 Stall No 01-33",
-    postal: null,
-    lat: 1.3141,
-    lng: 103.862,
-    sfa: {
-      licenceNumber: "BE10133001",
-      licenseeName: "ER SOO LIANG",
-      premisesAddress: "BENDEMEER ROAD BLK 29 Stall No 01-33",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bendemeer_market_and_food_centre_foo_choon_yee_p350",
-    brandId: "bendemeer_market_and_food_centre_foo_choon_yee",
-    label: "Bendemeer Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bendemeer Market and Food Centre",
-    address: "BENDEMEER ROAD BLK 29 Stall No 01-63",
-    postal: null,
-    lat: 1.3141,
-    lng: 103.862,
-    sfa: {
-      licenceNumber: "BE10163001",
-      licenseeName: "FOO CHOON YEE",
-      premisesAddress: "BENDEMEER ROAD BLK 29 Stall No 01-63",
-      grade: "A",
       demeritPoints: null,
       licenceSuspended: false
     },
@@ -6390,126 +5490,6 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   {
-    id: "abc_brickworks_market_food_centre_chan_tuck_cheong_p405",
-    brandId: "abc_brickworks_market_food_centre_chan_tuck_cheong",
-    label: "ABC Brickworks Market/Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "ABC Brickworks Market/Food Centre",
-    address: "JALAN BUKIT MERAH BLK 6 Stall No 01-52",
-    postal: null,
-    lat: 1.2806,
-    lng: 103.8189,
-    sfa: {
-      licenceNumber: "BM50152001",
-      licenseeName: "CHAN TUCK CHEONG",
-      premisesAddress: "JALAN BUKIT MERAH BLK 6 Stall No 01-52",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_hui_tee_ying_p406",
-    brandId: "abc_brickworks_market_food_centre_hui_tee_ying",
-    label: "ABC Brickworks Market/Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "ABC Brickworks Market/Food Centre",
-    address: "JALAN BUKIT MERAH BLK 6 Stall No 01-137",
-    postal: null,
-    lat: 1.2806,
-    lng: 103.8189,
-    sfa: {
-      licenceNumber: "BM501137001",
-      licenseeName: "HUI TEE YING",
-      premisesAddress: "JALAN BUKIT MERAH BLK 6 Stall No 01-137",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_lee_bee_lan_p407",
-    brandId: "abc_brickworks_market_food_centre_lee_bee_lan",
-    label: "ABC Brickworks Market/Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "ABC Brickworks Market/Food Centre",
-    address: "JALAN BUKIT MERAH BLK 6 Stall No 01-14",
-    postal: null,
-    lat: 1.2806,
-    lng: 103.8189,
-    sfa: {
-      licenceNumber: "BM50114003",
-      licenseeName: "LEE BEE LAN",
-      premisesAddress: "JALAN BUKIT MERAH BLK 6 Stall No 01-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_lin_shiying_p408",
-    brandId: "abc_brickworks_market_food_centre_lin_shiying",
-    label: "ABC Brickworks Market/Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "ABC Brickworks Market/Food Centre",
-    address: "JALAN BUKIT MERAH BLK 6 Stall No 01-16",
-    postal: null,
-    lat: 1.2806,
-    lng: 103.8189,
-    sfa: {
-      licenceNumber: "BM50116001",
-      licenseeName: "LIN SHIYING",
-      premisesAddress: "JALAN BUKIT MERAH BLK 6 Stall No 01-16",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_minah_binte_ahmad_p409",
-    brandId: "abc_brickworks_market_food_centre_minah_binte_ahmad",
-    label: "ABC Brickworks Market/Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "ABC Brickworks Market/Food Centre",
-    address: "JALAN BUKIT MERAH BLK 6 Stall No 01-09",
-    postal: null,
-    lat: 1.2806,
-    lng: 103.8189,
-    sfa: {
-      licenceNumber: "BM50109002",
-      licenseeName: "MINAH BINTE AHMAD",
-      premisesAddress: "JALAN BUKIT MERAH BLK 6 Stall No 01-09",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "abc_brickworks_market_food_centre_ng_geok_lian_p410",
-    brandId: "abc_brickworks_market_food_centre_ng_geok_lian",
-    label: "ABC Brickworks Market/Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "ABC Brickworks Market/Food Centre",
-    address: "JALAN BUKIT MERAH BLK 6 Stall No 01-131",
-    postal: null,
-    lat: 1.2806,
-    lng: 103.8189,
-    sfa: {
-      licenceNumber: "BM501131001",
-      licenseeName: "NG GEOK LIAN",
-      premisesAddress: "JALAN BUKIT MERAH BLK 6 Stall No 01-131",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "kukoh_21_food_centre_ntuc_foodfare_co_operative_ltd_p411",
     brandId: "kukoh_21_food_centre_ntuc_foodfare_co_operative_ltd",
     label: "Kukoh 21 Food Centre",
@@ -7107,126 +6087,6 @@ const PREMISES_2 = [
       licenseeName: "CHEN KIN FATT",
       premisesAddress: "TANJONG PAGAR PLAZA BLK 6 Stall No 02-38",
       grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_chua_tai_tha_p441",
-    brandId: "pek_kio_market_and_food_centre_chua_tai_tha",
-    label: "Pek Kio Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pek Kio Market and Food Centre",
-    address: "CAMBRIDGE ROAD BLK 41A Stall No 01-19",
-    postal: null,
-    lat: 1.3133,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CR10119001",
-      licenseeName: "CHUA TAI THA",
-      premisesAddress: "CAMBRIDGE ROAD BLK 41A Stall No 01-19",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_huang_yin_p442",
-    brandId: "pek_kio_market_and_food_centre_huang_yin",
-    label: "Pek Kio Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pek Kio Market and Food Centre",
-    address: "CAMBRIDGE ROAD BLK 41A Stall No 01-37",
-    postal: null,
-    lat: 1.3133,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CR10137003",
-      licenseeName: "HUANG YIN",
-      premisesAddress: "CAMBRIDGE ROAD BLK 41A Stall No 01-37",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_lek_cha_boh_p443",
-    brandId: "pek_kio_market_and_food_centre_lek_cha_boh",
-    label: "Pek Kio Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pek Kio Market and Food Centre",
-    address: "CAMBRIDGE ROAD BLK 41A Stall No 01-16",
-    postal: null,
-    lat: 1.3133,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CR10116002",
-      licenseeName: "LEK CHA BOH",
-      premisesAddress: "CAMBRIDGE ROAD BLK 41A Stall No 01-16",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_ng_thian_kuang_p444",
-    brandId: "pek_kio_market_and_food_centre_ng_thian_kuang",
-    label: "Pek Kio Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pek Kio Market and Food Centre",
-    address: "CAMBRIDGE ROAD BLK 41A Stall No 01-24",
-    postal: null,
-    lat: 1.3133,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CR10124001",
-      licenseeName: "NG THIAN KUANG",
-      premisesAddress: "CAMBRIDGE ROAD BLK 41A Stall No 01-24",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_tan_song_peow_p445",
-    brandId: "pek_kio_market_and_food_centre_tan_song_peow",
-    label: "Pek Kio Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pek Kio Market and Food Centre",
-    address: "CAMBRIDGE ROAD BLK 41A Stall No 01-25",
-    postal: null,
-    lat: 1.3133,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CR10125002",
-      licenseeName: "TAN SONG PEOW",
-      premisesAddress: "CAMBRIDGE ROAD BLK 41A Stall No 01-25",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pek_kio_market_and_food_centre_yeo_siang_cheng_p446",
-    brandId: "pek_kio_market_and_food_centre_yeo_siang_cheng",
-    label: "Pek Kio Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pek Kio Market and Food Centre",
-    address: "CAMBRIDGE ROAD BLK 41A Stall No 01-49",
-    postal: null,
-    lat: 1.3133,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CR10149001",
-      licenseeName: "YEO SIANG CHENG",
-      premisesAddress: "CAMBRIDGE ROAD BLK 41A Stall No 01-49",
-      grade: "A",
       demeritPoints: null,
       licenceSuspended: false
     },
@@ -81965,6 +80825,1127 @@ export const PREMISES_12 = [
       licenceSuspended: false
     },
     source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "tiong_bahru_market_jian_bo_shui_kueh_p1",
+    brandId: "tiong_bahru_market_jian_bo_shui_kueh",
+    label: "Tiong Bahru Market",
+    locationType: "hawker_centre",
+    locationContext: "Tiong Bahru Market",
+    address: "30 Seng Poh Road, #02-05, Singapore 168898",
+    postal: "168898",
+    lat: 1.28478559810371,
+    lng: 103.832181546885,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Tiong Bahru Market Stall No 02-05",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "tiong_bahru_market_tiong_bahru_fried_kway_teow_p1",
+    brandId: "tiong_bahru_market_tiong_bahru_fried_kway_teow",
+    label: "Tiong Bahru Market",
+    locationType: "hawker_centre",
+    locationContext: "Tiong Bahru Market",
+    address: "30 Seng Poh Road, #02-11, Singapore 168898",
+    postal: "168898",
+    lat: 1.28478559810371,
+    lng: 103.832181546885,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Tiong Bahru Market Stall No 02-11",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "tiong_bahru_market_joo_chiat_beef_king_p1",
+    brandId: "tiong_bahru_market_joo_chiat_beef_king",
+    label: "Tiong Bahru Market",
+    locationType: "hawker_centre",
+    locationContext: "Tiong Bahru Market",
+    address: "30 Seng Poh Road, #02-35, Singapore 168898",
+    postal: "168898",
+    lat: 1.28478559810371,
+    lng: 103.832181546885,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Tiong Bahru Market Stall No 02-35",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "tiong_bahru_market_lor_mee_178_p1",
+    brandId: "tiong_bahru_market_lor_mee_178",
+    label: "Tiong Bahru Market",
+    locationType: "hawker_centre",
+    locationContext: "Tiong Bahru Market",
+    address: "30 Seng Poh Road, Singapore 168898",
+    postal: "168898",
+    lat: 1.28478559810371,
+    lng: 103.832181546885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "tiong_bahru_market_hong_heng_fried_sotong_prawn_mee_p1",
+    brandId: "tiong_bahru_market_hong_heng_fried_sotong_prawn_mee",
+    label: "Tiong Bahru Market",
+    locationType: "hawker_centre",
+    locationContext: "Tiong Bahru Market",
+    address: "30 Seng Poh Road, #02-01, Singapore 168898",
+    postal: "168898",
+    lat: 1.28478559810371,
+    lng: 103.832181546885,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Tiong Bahru Market Stall No 02-01",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "tiong_bahru_market_tiong_bahru_hainanese_boneless_chicken_rice_p1",
+    brandId: "tiong_bahru_market_tiong_bahru_hainanese_boneless_chicken_rice",
+    label: "Tiong Bahru Market",
+    locationType: "hawker_centre",
+    locationContext: "Tiong Bahru Market",
+    address: "30 Seng Poh Road, #02-82, Singapore 168898",
+    postal: "168898",
+    lat: 1.28478559810371,
+    lng: 103.832181546885,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Tiong Bahru Market Stall No 02-82",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "beo_crescent_market_chef_wang_fried_rice_p1",
+    brandId: "beo_crescent_market_chef_wang_fried_rice",
+    label: "Beo Crescent Market",
+    locationType: "hawker_centre",
+    locationContext: "Beo Crescent Market",
+    address: "38A Beo Crescent, #01-71, Singapore 169982",
+    postal: "169982",
+    lat: 1.28883089150258,
+    lng: 103.827353892228,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Beo Crescent Market Stall No 01-71",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "beo_crescent_market_heng_heng_cooked_food_p1",
+    brandId: "beo_crescent_market_heng_heng_cooked_food",
+    label: "Beo Crescent Market",
+    locationType: "hawker_centre",
+    locationContext: "Beo Crescent Market",
+    address: "38A Beo Crescent, #01-72, Singapore 169982",
+    postal: "169982",
+    lat: 1.28883089150258,
+    lng: 103.827353892228,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Beo Crescent Market Stall No 01-72",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "beo_crescent_market_nan_yuan_teochew_fishball_noodle_p1",
+    brandId: "beo_crescent_market_nan_yuan_teochew_fishball_noodle",
+    label: "Beo Crescent Market",
+    locationType: "hawker_centre",
+    locationContext: "Beo Crescent Market",
+    address: "38A Beo Crescent, #01-84, Singapore 169982",
+    postal: "169982",
+    lat: 1.28883089150258,
+    lng: 103.827353892228,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Beo Crescent Market Stall No 01-84",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "beo_crescent_market_guang_dong_xiang_gang_wei_dao_p1",
+    brandId: "beo_crescent_market_guang_dong_xiang_gang_wei_dao",
+    label: "Beo Crescent Market",
+    locationType: "hawker_centre",
+    locationContext: "Beo Crescent Market",
+    address: "38A Beo Crescent, #01-66, Singapore 169982",
+    postal: "169982",
+    lat: 1.28883089150258,
+    lng: 103.827353892228,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Beo Crescent Market Stall No 01-66",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "beo_crescent_market_hai_chew_p1",
+    brandId: "beo_crescent_market_hai_chew",
+    label: "Beo Crescent Market",
+    locationType: "hawker_centre",
+    locationContext: "Beo Crescent Market",
+    address: "38A Beo Crescent, #01-75, Singapore 169982",
+    postal: "169982",
+    lat: 1.28883089150258,
+    lng: 103.827353892228,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Beo Crescent Market Stall No 01-75",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "dunman_food_centre_no_name_hokkien_mee_p1",
+    brandId: "dunman_food_centre_no_name_hokkien_mee",
+    label: "Dunman Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Dunman Food Centre",
+    address: "271 Onan Road, #01-28, Singapore 424768",
+    postal: "424768",
+    lat: 1.30941788760759,
+    lng: 103.901825408227,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "dunman_food_centre_say_seng_tau_kwa_pau_p1",
+    brandId: "dunman_food_centre_say_seng_tau_kwa_pau",
+    label: "Dunman Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Dunman Food Centre",
+    address: "271 Onan Road, #01-05, Singapore 424768",
+    postal: "424768",
+    lat: 1.30941788760759,
+    lng: 103.901825408227,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Dunman Food Centre Stall No 01-05",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "dunman_food_centre_dunman_road_char_siew_wan_ton_mee_p1",
+    brandId: "dunman_food_centre_dunman_road_char_siew_wan_ton_mee",
+    label: "Dunman Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Dunman Food Centre",
+    address: "271 Onan Road, #02-19, Singapore 424768",
+    postal: "424768",
+    lat: 1.30941788760759,
+    lng: 103.901825408227,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Dunman Food Centre Stall No 02-19",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "dunman_food_centre_dunman_duck_rice_p1",
+    brandId: "dunman_food_centre_dunman_duck_rice",
+    label: "Dunman Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Dunman Food Centre",
+    address: "271 Onan Road, #01-10, Singapore 424768",
+    postal: "424768",
+    lat: 1.30941788760759,
+    lng: 103.901825408227,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Dunman Food Centre Stall No 01-10",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "dunman_food_centre_lau_hong_ser_rojak_p1",
+    brandId: "dunman_food_centre_lau_hong_ser_rojak",
+    label: "Dunman Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Dunman Food Centre",
+    address: "271 Onan Road, #02-14, Singapore 424768",
+    postal: "424768",
+    lat: 1.30941788760759,
+    lng: 103.901825408227,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Dunman Food Centre Stall No 02-14",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "dunman_food_centre_restaurant_joo_chiat_ah_huat_wanton_mee_p1",
+    brandId: "dunman_food_centre_restaurant_joo_chiat_ah_huat_wanton_mee",
+    label: "Dunman Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Dunman Food Centre",
+    address: "271 Onan Road, #01-04, Singapore 424768",
+    postal: "424768",
+    lat: 1.30941788760759,
+    lng: 103.901825408227,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Dunman Food Centre Stall No 01-04",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "zion_riverside_food_centre_zhi_wei_xian_zion_road_big_prawn_noodle_p1",
+    brandId: "zion_riverside_food_centre_zhi_wei_xian_zion_road_big_prawn_noodle",
+    label: "Zion Riverside Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Zion Riverside Food Centre",
+    address: "70 Zion Road, #01-04, Singapore 247792",
+    postal: "247792",
+    lat: 1.2923422114207,
+    lng: 103.831189023623,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Zion Riverside Food Centre Stall No 01-04",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "zion_riverside_food_centre_no_18_zion_road_fried_kway_teow_p1",
+    brandId: "zion_riverside_food_centre_no_18_zion_road_fried_kway_teow",
+    label: "Zion Riverside Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Zion Riverside Food Centre",
+    address: "70 Zion Road, #01-17, Singapore 247792",
+    postal: "247792",
+    lat: 1.2923422114207,
+    lng: 103.831189023623,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Zion Riverside Food Centre Stall No 01-17",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "zion_riverside_food_centre_peter_gohs_carrot_cake_p1",
+    brandId: "zion_riverside_food_centre_peter_gohs_carrot_cake",
+    label: "Zion Riverside Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Zion Riverside Food Centre",
+    address: "70 Zion Road, #01-26, Singapore 247792",
+    postal: "247792",
+    lat: 1.2923422114207,
+    lng: 103.831189023623,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Zion Riverside Food Centre Stall No 01-26",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "zion_riverside_food_centre_braised_duck_kway_chap_p1",
+    brandId: "zion_riverside_food_centre_braised_duck_kway_chap",
+    label: "Zion Riverside Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Zion Riverside Food Centre",
+    address: "70 Zion Road, #01-24, Singapore 247792",
+    postal: "247792",
+    lat: 1.2923422114207,
+    lng: 103.831189023623,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Zion Riverside Food Centre Stall No 01-24",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "zion_riverside_food_centre_kangs_wanton_noodle_p1",
+    brandId: "zion_riverside_food_centre_kangs_wanton_noodle",
+    label: "Zion Riverside Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Zion Riverside Food Centre",
+    address: "70 Zion Road, Singapore 247792",
+    postal: "247792",
+    lat: 1.2923422114207,
+    lng: 103.831189023623,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "zion_riverside_food_centre_soon_lees_pig_organ_soup_p1",
+    brandId: "zion_riverside_food_centre_soon_lees_pig_organ_soup",
+    label: "Zion Riverside Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Zion Riverside Food Centre",
+    address: "70 Zion Road, #01-13, Singapore 247792",
+    postal: "247792",
+    lat: 1.2923422114207,
+    lng: 103.831189023623,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Zion Riverside Food Centre Stall No 01-13",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "abc_brickworks_market_food_centre_yuan_yuan_claypot_rice_p1",
+    brandId: "abc_brickworks_market_food_centre_yuan_yuan_claypot_rice",
+    label: "ABC Brickworks Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "ABC Brickworks Market & Food Centre",
+    address: "6 Jalan Bukit Merah, Singapore 150006",
+    postal: "150006",
+    lat: 1.28688297261475,
+    lng: 103.808131274161,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "abc_brickworks_market_food_centre_ah_er_soup_p1",
+    brandId: "abc_brickworks_market_food_centre_ah_er_soup",
+    label: "ABC Brickworks Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "ABC Brickworks Market & Food Centre",
+    address: "6 Jalan Bukit Merah, Singapore 150006",
+    postal: "150006",
+    lat: 1.28688297261475,
+    lng: 103.808131274161,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "abc_brickworks_market_food_centre_tiong_bahru_yi_sheng_fried_hokkien_mee_p1",
+    brandId: "abc_brickworks_market_food_centre_tiong_bahru_yi_sheng_fried_hokkien_mee",
+    label: "ABC Brickworks Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "ABC Brickworks Market & Food Centre",
+    address: "6 Jalan Bukit Merah, Singapore 150006",
+    postal: "150006",
+    lat: 1.28688297261475,
+    lng: 103.808131274161,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "abc_brickworks_market_food_centre_jason_penang_cuisine_p1",
+    brandId: "abc_brickworks_market_food_centre_jason_penang_cuisine",
+    label: "ABC Brickworks Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "ABC Brickworks Market & Food Centre",
+    address: "6 Jalan Bukit Merah, #01-112, Singapore 150006",
+    postal: "150006",
+    lat: 1.28688297261475,
+    lng: 103.808131274161,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "ABC Brickworks Market & Food Centre Stall No 01-112",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "abc_brickworks_market_food_centre_wow_wow_west_p1",
+    brandId: "abc_brickworks_market_food_centre_wow_wow_west",
+    label: "ABC Brickworks Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "ABC Brickworks Market & Food Centre",
+    address: "6 Jalan Bukit Merah, Singapore 150006",
+    postal: "150006",
+    lat: 1.28688297261475,
+    lng: 103.808131274161,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "abc_brickworks_market_food_centre_nusa_and_tara_p1",
+    brandId: "abc_brickworks_market_food_centre_nusa_and_tara",
+    label: "ABC Brickworks Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "ABC Brickworks Market & Food Centre",
+    address: "6 Jalan Bukit Merah, Singapore 150006",
+    postal: "150006",
+    lat: 1.28688297261475,
+    lng: 103.808131274161,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_market_bak_kee_teochew_satay_bee_hoon_p1",
+    brandId: "redhill_market_bak_kee_teochew_satay_bee_hoon",
+    label: "Redhill Market",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Market",
+    address: "79 Redhill Lane, #01-40, Singapore 150079",
+    postal: "150079",
+    lat: 1.28784317298064,
+    lng: 103.818352097299,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_market_jia_xiang_p1",
+    brandId: "redhill_market_jia_xiang",
+    label: "Redhill Market",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Market",
+    address: "79 Redhill Lane, #01-49, Singapore 150079",
+    postal: "150079",
+    lat: 1.28784317298064,
+    lng: 103.818352097299,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_market_rong_ji_traditional_hainanese_chicken_rice_p1",
+    brandId: "redhill_market_rong_ji_traditional_hainanese_chicken_rice",
+    label: "Redhill Market",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Market",
+    address: "79 Redhill Lane, #01-42, Singapore 150079",
+    postal: "150079",
+    lat: 1.28784317298064,
+    lng: 103.818352097299,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_market_qing_tian_p1",
+    brandId: "redhill_market_qing_tian",
+    label: "Redhill Market",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Market",
+    address: "79 Redhill Lane, #01-60, Singapore 150079",
+    postal: "150079",
+    lat: 1.28784317298064,
+    lng: 103.818352097299,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_market_shun_li_ah_p1",
+    brandId: "redhill_market_shun_li_ah",
+    label: "Redhill Market",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Market",
+    address: "79 Redhill Lane, #01-07, Singapore 150079",
+    postal: "150079",
+    lat: 1.28784317298064,
+    lng: 103.818352097299,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_market_fu_ming_cooked_food_p1",
+    brandId: "redhill_market_fu_ming_cooked_food",
+    label: "Redhill Market",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Market",
+    address: "79 Redhill Lane, Singapore 150079",
+    postal: "150079",
+    lat: 1.28784317298064,
+    lng: 103.818352097299,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bendemeer_market_and_food_centre_min_ji_laksa_p1",
+    brandId: "bendemeer_market_and_food_centre_min_ji_laksa",
+    label: "Bendemeer Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bendemeer Market and Food Centre",
+    address: "29 Bendemeer Road, #01-31, Singapore 330029",
+    postal: "330029",
+    lat: 1.31921667890113,
+    lng: 103.863020922593,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bendemeer Market and Food Centre Stall No 01-31",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bendemeer_market_and_food_centre_bendemeer_prawn_noodle_p1",
+    brandId: "bendemeer_market_and_food_centre_bendemeer_prawn_noodle",
+    label: "Bendemeer Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bendemeer Market and Food Centre",
+    address: "29 Bendemeer Road, #01-42, Singapore 330029",
+    postal: "330029",
+    lat: 1.31921667890113,
+    lng: 103.863020922593,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bendemeer Market and Food Centre Stall No 01-42",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bendemeer_market_and_food_centre_ah_xiao_teochew_braised_duck_p1",
+    brandId: "bendemeer_market_and_food_centre_ah_xiao_teochew_braised_duck",
+    label: "Bendemeer Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bendemeer Market and Food Centre",
+    address: "29 Bendemeer Road, #01-41, Singapore 330029",
+    postal: "330029",
+    lat: 1.31921667890113,
+    lng: 103.863020922593,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bendemeer Market and Food Centre Stall No 01-41",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bendemeer_market_and_food_centre_hai_sheng_carrot_cake_p1",
+    brandId: "bendemeer_market_and_food_centre_hai_sheng_carrot_cake",
+    label: "Bendemeer Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bendemeer Market and Food Centre",
+    address: "29 Bendemeer Road, #01-01, Singapore 330029",
+    postal: "330029",
+    lat: 1.31921667890113,
+    lng: 103.863020922593,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bendemeer Market and Food Centre Stall No 01-01",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bendemeer_market_and_food_centre_heng_kee_lor_mee_p1",
+    brandId: "bendemeer_market_and_food_centre_heng_kee_lor_mee",
+    label: "Bendemeer Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bendemeer Market and Food Centre",
+    address: "29 Bendemeer Road, #01-85, Singapore 330029",
+    postal: "330029",
+    lat: 1.31921667890113,
+    lng: 103.863020922593,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bendemeer Market and Food Centre Stall No 01-85",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bendemeer_market_and_food_centre_toa_payoh_93_soon_kueh_p1",
+    brandId: "bendemeer_market_and_food_centre_toa_payoh_93_soon_kueh",
+    label: "Bendemeer Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bendemeer Market and Food Centre",
+    address: "29 Bendemeer Road, #01-52, Singapore 330029",
+    postal: "330029",
+    lat: 1.31921667890113,
+    lng: 103.863020922593,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bendemeer Market and Food Centre Stall No 01-52",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "pek_kio_market_and_food_centre_pin_wei_hong_kong_style_chee_cheong_fun_p1",
+    brandId: "pek_kio_market_and_food_centre_pin_wei_hong_kong_style_chee_cheong_fun",
+    label: "Pek Kio Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pek Kio Market & Food Centre",
+    address: "41A Cambridge Road, #01-25, Singapore 211041",
+    postal: "211041",
+    lat: 1.31613128029458,
+    lng: 103.850232935162,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Pek Kio Market & Food Centre Stall No 01-25",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "pek_kio_market_and_food_centre_lai_hiang_pork_rib_prawn_noodles_p1",
+    brandId: "pek_kio_market_and_food_centre_lai_hiang_pork_rib_prawn_noodles",
+    label: "Pek Kio Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pek Kio Market & Food Centre",
+    address: "41A Cambridge Road, #01-41, Singapore 211041",
+    postal: "211041",
+    lat: 1.31613128029458,
+    lng: 103.850232935162,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Pek Kio Market & Food Centre Stall No 01-41",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "pek_kio_market_and_food_centre_sheng_seng_fried_prawn_noodles_p1",
+    brandId: "pek_kio_market_and_food_centre_sheng_seng_fried_prawn_noodles",
+    label: "Pek Kio Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pek Kio Market & Food Centre",
+    address: "41A Cambridge Road, Singapore 211041",
+    postal: "211041",
+    lat: 1.31613128029458,
+    lng: 103.850232935162,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pek_kio_market_and_food_centre_wah_kee_big_prawns_noodle_p1",
+    brandId: "pek_kio_market_and_food_centre_wah_kee_big_prawns_noodle",
+    label: "Pek Kio Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pek Kio Market & Food Centre",
+    address: "41A Cambridge Road, Singapore 211041",
+    postal: "211041",
+    lat: 1.31613128029458,
+    lng: 103.850232935162,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kebun_baru_food_centre_foo_hing_handmade_fishball_and_meatball_noodle_p1",
+    brandId: "kebun_baru_food_centre_foo_hing_handmade_fishball_and_meatball_noodle",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-01",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-01",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_a1_house_of_claypot_p1",
+    brandId: "kebun_baru_food_centre_a1_house_of_claypot",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-02",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-02",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_hock_kee_wanton_noodle_p1",
+    brandId: "kebun_baru_food_centre_hock_kee_wanton_noodle",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-05",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-05",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_seletar_sheng_mian_mian_fen_guo_p1",
+    brandId: "kebun_baru_food_centre_seletar_sheng_mian_mian_fen_guo",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-07",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-07",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_226_boneless_chicken_rice_p1",
+    brandId: "kebun_baru_food_centre_226_boneless_chicken_rice",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-08",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-08",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_lims_fishball_noodle_p1",
+    brandId: "kebun_baru_food_centre_lims_fishball_noodle",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-09",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-09",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_teck_kee_cooked_food_p1",
+    brandId: "kebun_baru_food_centre_teck_kee_cooked_food",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-23",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-23",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "kebun_baru_food_centre_hong_heng_p1",
+    brandId: "kebun_baru_food_centre_hong_heng",
+    label: "Kebun Baru Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kebun Baru Food Centre",
+    address: "226H Ang Mo Kio Street 22, #01-16",
+    postal: null,
+    lat: 1.36717874094695,
+    lng: 103.840157741978,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Kebun Baru Food Centre Stall No 01-16",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_selera_rasa_nasi_lemak_p1",
+    brandId: "adam_road_food_centre_selera_rasa_nasi_lemak",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-02, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-02",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_stall_22_hokkien_mee_p1",
+    brandId: "adam_road_food_centre_stall_22_hokkien_mee",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-22, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-22",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_adam_fishball_noodles_p1",
+    brandId: "adam_road_food_centre_adam_fishball_noodles",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-25, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-25",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_adam_road_noo_cheng_big_prawn_noodles_p1",
+    brandId: "adam_road_food_centre_adam_road_noo_cheng_big_prawn_noodles",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-27, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-27",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_teck_kee_hot_and_cold_dessert_p1",
+    brandId: "adam_road_food_centre_teck_kee_hot_and_cold_dessert",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-31, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-31",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_al_sheik_mee_stall_p1",
+    brandId: "adam_road_food_centre_al_sheik_mee_stall",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-16, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-16",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_amirah_and_nur_aniqah_mee_soto_and_mee_rebus_p1",
+    brandId: "adam_road_food_centre_amirah_and_nur_aniqah_mee_soto_and_mee_rebus",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-09, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-09",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "adam_road_food_centre_adam_chicken_rice_p1",
+    brandId: "adam_road_food_centre_adam_chicken_rice",
+    label: "Adam Road Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Adam Road Food Centre",
+    address: "2 Adam Road, #01-08, Singapore 289876",
+    postal: "289876",
+    lat: 1.32415985259558,
+    lng: 103.814165924136,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Adam Road Food Centre Stall No 01-08",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "redhill_food_centre_9_plus_bistro_p1",
+    brandId: "redhill_food_centre_9_plus_bistro",
+    label: "Redhill Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Food Centre",
+    address: "1001A Jalan Bukit Merah, Singapore 159469",
+    postal: "159469",
+    lat: 1.28426986923589,
+    lng: 103.812947984111,
+    sfa: null,
+    source: "web_research"
   }
 ];
 
