@@ -1310,126 +1310,6 @@ const PREMISES_1 = [
     source: "legacy_static_coordinate"
   },
   {
-    id: "north_bridge_road_market_barakath_ali_s_o_k_e_abdul_majeed_p157",
-    brandId: "north_bridge_road_market_barakath_ali_s_o_k_e_abdul_majeed",
-    label: "North Bridge Road Market",
-    locationType: "hawker_centre",
-    locationContext: "North Bridge Road Market",
-    address: "NORTH BRIDGE ROAD MARKET Stall No 01-117",
-    postal: null,
-    lat: 1.3005,
-    lng: 103.86,
-    sfa: {
-      licenceNumber: "NBR01117002",
-      licenseeName: "BARAKATH ALI S/O K E ABDUL MAJEED",
-      premisesAddress: "NORTH BRIDGE ROAD MARKET Stall No 01-117",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "north_bridge_road_market_chan_lye_seng_p158",
-    brandId: "north_bridge_road_market_chan_lye_seng",
-    label: "North Bridge Road Market",
-    locationType: "hawker_centre",
-    locationContext: "North Bridge Road Market",
-    address: "NORTH BRIDGE ROAD MARKET Stall No 01-103",
-    postal: null,
-    lat: 1.3005,
-    lng: 103.86,
-    sfa: {
-      licenceNumber: "NBR01103001",
-      licenseeName: "CHAN LYE SENG",
-      premisesAddress: "NORTH BRIDGE ROAD MARKET Stall No 01-103",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "north_bridge_road_market_chen_min_hong_p159",
-    brandId: "north_bridge_road_market_chen_min_hong",
-    label: "North Bridge Road Market",
-    locationType: "hawker_centre",
-    locationContext: "North Bridge Road Market",
-    address: "NORTH BRIDGE ROAD MARKET Stall No 01-95",
-    postal: null,
-    lat: 1.3005,
-    lng: 103.86,
-    sfa: {
-      licenceNumber: "NBR0195002",
-      licenseeName: "CHEN MIN HONG",
-      premisesAddress: "NORTH BRIDGE ROAD MARKET Stall No 01-95",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "north_bridge_road_market_chua_cheng_ann_chua_cheng_huay_p160",
-    brandId: "north_bridge_road_market_chua_cheng_ann_chua_cheng_huay",
-    label: "North Bridge Road Market",
-    locationType: "hawker_centre",
-    locationContext: "North Bridge Road Market",
-    address: "NORTH BRIDGE ROAD MARKET Stall No 01-101",
-    postal: null,
-    lat: 1.3005,
-    lng: 103.86,
-    sfa: {
-      licenceNumber: "NBR01101002",
-      licenseeName: "CHUA CHENG ANN @ CHUA CHENG HUAY",
-      premisesAddress: "NORTH BRIDGE ROAD MARKET Stall No 01-101",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "north_bridge_road_market_koh_chee_seng_p161",
-    brandId: "north_bridge_road_market_koh_chee_seng",
-    label: "North Bridge Road Market",
-    locationType: "hawker_centre",
-    locationContext: "North Bridge Road Market",
-    address: "NORTH BRIDGE ROAD MARKET Stall No 01-110",
-    postal: null,
-    lat: 1.3005,
-    lng: 103.86,
-    sfa: {
-      licenceNumber: "NBR01110002",
-      licenseeName: "KOH CHEE SENG",
-      premisesAddress: "NORTH BRIDGE ROAD MARKET Stall No 01-110",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "north_bridge_road_market_kuah_liang_chuan_p162",
-    brandId: "north_bridge_road_market_kuah_liang_chuan",
-    label: "North Bridge Road Market",
-    locationType: "hawker_centre",
-    locationContext: "North Bridge Road Market",
-    address: "NORTH BRIDGE ROAD MARKET Stall No 01-104",
-    postal: null,
-    lat: 1.3005,
-    lng: 103.86,
-    sfa: {
-      licenceNumber: "NBR01104002",
-      licenseeName: "KUAH LIANG CHUAN",
-      premisesAddress: "NORTH BRIDGE ROAD MARKET Stall No 01-104",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "new_upper_changi_road_blk_58_choo_siew_luan_p169",
     brandId: "new_upper_changi_road_blk_58_choo_siew_luan",
     label: "New Upper Changi Road Blk 58",
@@ -3090,126 +2970,6 @@ const PREMISES_1 = [
     source: "sfa_licence_match"
   },
   {
-    id: "peoples_park_food_centre_chan_sook_kheng_p272",
-    brandId: "peoples_park_food_centre_chan_sook_kheng",
-    label: "People's Park Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "People's Park Food Centre",
-    address: "NEW MARKET ROAD F C BLK 32 Stall No 01-1012",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "NMF011012005",
-      licenseeName: "CHAN SOOK KHENG",
-      premisesAddress: "NEW MARKET ROAD F C BLK 32 Stall No 01-1012",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "peoples_park_food_centre_chong_yik_hwee_chong_chin_yew_p273",
-    brandId: "peoples_park_food_centre_chong_yik_hwee_chong_chin_yew",
-    label: "People's Park Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "People's Park Food Centre",
-    address: "NEW MARKET ROAD F C BLK 32 Stall No 01-1110",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "NMF011110003",
-      licenseeName: "CHONG YIK HWEE @ CHONG CHIN YEW",
-      premisesAddress: "NEW MARKET ROAD F C BLK 32 Stall No 01-1110",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "peoples_park_food_centre_chow_kum_yew_p274",
-    brandId: "peoples_park_food_centre_chow_kum_yew",
-    label: "People's Park Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "People's Park Food Centre",
-    address: "NEW MARKET ROAD F C BLK 32 Stall No 01-1150",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "NMF011150001",
-      licenseeName: "CHOW KUM YEW",
-      premisesAddress: "NEW MARKET ROAD F C BLK 32 Stall No 01-1150",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "peoples_park_food_centre_gan_bee_guat_p275",
-    brandId: "peoples_park_food_centre_gan_bee_guat",
-    label: "People's Park Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "People's Park Food Centre",
-    address: "NEW MARKET ROAD F C BLK 32 Stall No 01-1022",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "NMF011022002",
-      licenseeName: "GAN BEE GUAT",
-      premisesAddress: "NEW MARKET ROAD F C BLK 32 Stall No 01-1022",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "peoples_park_food_centre_koh_kia_wui_xu_jiawei_p276",
-    brandId: "peoples_park_food_centre_koh_kia_wui_xu_jiawei",
-    label: "People's Park Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "People's Park Food Centre",
-    address: "NEW MARKET ROAD F C BLK 32 Stall No 01-1008",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "NMF011008003",
-      licenseeName: "KOH KIA WUI (XU JIAWEI)",
-      premisesAddress: "NEW MARKET ROAD F C BLK 32 Stall No 01-1008",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "peoples_park_food_centre_koufu_gourmet_pte_ltd_p277",
-    brandId: "peoples_park_food_centre_koufu_gourmet_pte_ltd",
-    label: "People's Park Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "People's Park Food Centre",
-    address: "32 NEW MARKET ROAD #02-1024 SINGAPORE 050032",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "CE06737N000",
-      licenseeName: "KOUFU GOURMET PTE LTD",
-      premisesAddress: "32 NEW MARKET ROAD #02-1024 SINGAPORE 050032",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "marine_terrace_blk_50a_50a_marine_terrace_ho_yuen_khow_p278",
     brandId: "marine_terrace_blk_50a_50a_marine_terrace_ho_yuen_khow",
     label: "Marine Terrace Blk 50A (50A Marine Terrace)",
@@ -3683,126 +3443,6 @@ const PREMISES_1 = [
       licenceNumber: "NUC0118001",
       licenseeName: "CHAN KOK HEE (TIAN GUOXI)",
       premisesAddress: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-18",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "albert_centre_chow_sai_peng_p302",
-    brandId: "albert_centre_chow_sai_peng",
-    label: "Albert Centre",
-    locationType: "hawker_centre",
-    locationContext: "Albert Centre",
-    address: "QUEEN STREET BLK 270 Stall No 01-87",
-    postal: null,
-    lat: 1.3049,
-    lng: 103.8564,
-    sfa: {
-      licenceNumber: "QS10187002",
-      licenseeName: "CHOW SAI PENG",
-      premisesAddress: "QUEEN STREET BLK 270 Stall No 01-87",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "albert_centre_eng_kwang_chiang_p303",
-    brandId: "albert_centre_eng_kwang_chiang",
-    label: "Albert Centre",
-    locationType: "hawker_centre",
-    locationContext: "Albert Centre",
-    address: "QUEEN STREET BLK 270 Stall No 01-50",
-    postal: null,
-    lat: 1.3049,
-    lng: 103.8564,
-    sfa: {
-      licenceNumber: "QS10150001",
-      licenseeName: "ENG KWANG CHIANG",
-      premisesAddress: "QUEEN STREET BLK 270 Stall No 01-50",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "albert_centre_halilur_rahman_p304",
-    brandId: "albert_centre_halilur_rahman",
-    label: "Albert Centre",
-    locationType: "hawker_centre",
-    locationContext: "Albert Centre",
-    address: "QUEEN STREET BLK 270 Stall No 01-125",
-    postal: null,
-    lat: 1.3049,
-    lng: 103.8564,
-    sfa: {
-      licenceNumber: "QS101125002",
-      licenseeName: "HALILUR RAHMAN",
-      premisesAddress: "QUEEN STREET BLK 270 Stall No 01-125",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "albert_centre_koh_tah_leng_p305",
-    brandId: "albert_centre_koh_tah_leng",
-    label: "Albert Centre",
-    locationType: "hawker_centre",
-    locationContext: "Albert Centre",
-    address: "QUEEN STREET BLK 270 Stall No 01-86",
-    postal: null,
-    lat: 1.3049,
-    lng: 103.8564,
-    sfa: {
-      licenceNumber: "QS10186002",
-      licenseeName: "KOH TAH LENG",
-      premisesAddress: "QUEEN STREET BLK 270 Stall No 01-86",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "albert_centre_lee_kia_fook_p306",
-    brandId: "albert_centre_lee_kia_fook",
-    label: "Albert Centre",
-    locationType: "hawker_centre",
-    locationContext: "Albert Centre",
-    address: "QUEEN STREET BLK 270 Stall No 01-83",
-    postal: null,
-    lat: 1.3049,
-    lng: 103.8564,
-    sfa: {
-      licenceNumber: "QS10183002",
-      licenseeName: "LEE KIA FOOK",
-      premisesAddress: "QUEEN STREET BLK 270 Stall No 01-83",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "albert_centre_lee_seng_tiong_p307",
-    brandId: "albert_centre_lee_seng_tiong",
-    label: "Albert Centre",
-    locationType: "hawker_centre",
-    locationContext: "Albert Centre",
-    address: "QUEEN STREET BLK 270 Stall No 01-60",
-    postal: null,
-    lat: 1.3049,
-    lng: 103.8564,
-    sfa: {
-      licenceNumber: "QS10160002",
-      licenseeName: "LEE SENG TIONG",
-      premisesAddress: "QUEEN STREET BLK 270 Stall No 01-60",
       grade: "A",
       demeritPoints: null,
       licenceSuspended: false
@@ -4764,166 +4404,6 @@ const PREMISES_1 = [
       licenseeName: "KANG SOH CHYE",
       premisesAddress: "JALAN KUKOH BLK 1 Stall No 01-09",
       grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_alias_bin_suradi_p417",
-    brandId: "hong_lim_food_centre_and_market_alias_bin_suradi",
-    label: "Hong Lim Food Centre and Market",
-    locationType: "hawker_centre",
-    locationContext: "Hong Lim Food Centre and Market",
-    address: "UPPER CROSS STREET BLK 531A Stall No 01-55",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "UC10155003",
-      licenseeName: "ALIAS BIN SURADI",
-      premisesAddress: "UPPER CROSS STREET BLK 531A Stall No 01-55",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_cher_kay_hiong_p418",
-    brandId: "hong_lim_food_centre_and_market_cher_kay_hiong",
-    label: "Hong Lim Food Centre and Market",
-    locationType: "hawker_centre",
-    locationContext: "Hong Lim Food Centre and Market",
-    address: "UPPER CROSS STREET BLK 531A Stall No 01-60",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "UC10160002",
-      licenseeName: "CHER KAY HIONG",
-      premisesAddress: "UPPER CROSS STREET BLK 531A Stall No 01-60",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_chu_hung_peng_p419",
-    brandId: "hong_lim_food_centre_and_market_chu_hung_peng",
-    label: "Hong Lim Food Centre and Market",
-    locationType: "hawker_centre",
-    locationContext: "Hong Lim Food Centre and Market",
-    address: "UPPER CROSS STREET BLK 531A Stall No 02-42",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "UC10242002",
-      licenseeName: "CHU HUNG PENG",
-      premisesAddress: "UPPER CROSS STREET BLK 531A Stall No 02-42",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_chu_nam_kiu_p420",
-    brandId: "hong_lim_food_centre_and_market_chu_nam_kiu",
-    label: "Hong Lim Food Centre and Market",
-    locationType: "hawker_centre",
-    locationContext: "Hong Lim Food Centre and Market",
-    address: "UPPER CROSS STREET BLK 531A Stall No 02-44",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "UC10244003",
-      licenseeName: "CHU NAM KIU",
-      premisesAddress: "UPPER CROSS STREET BLK 531A Stall No 02-44",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_chua_kian_teck_p421",
-    brandId: "hong_lim_food_centre_and_market_chua_kian_teck",
-    label: "Hong Lim Food Centre and Market",
-    locationType: "hawker_centre",
-    locationContext: "Hong Lim Food Centre and Market",
-    address: "UPPER CROSS STREET BLK 531A Stall No 01-52",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "UC10152003",
-      licenseeName: "CHUA KIAN TECK",
-      premisesAddress: "UPPER CROSS STREET BLK 531A Stall No 01-52",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "hong_lim_food_centre_and_market_huang_jialin_p422",
-    brandId: "hong_lim_food_centre_and_market_huang_jialin",
-    label: "Hong Lim Food Centre and Market",
-    locationType: "hawker_centre",
-    locationContext: "Hong Lim Food Centre and Market",
-    address: "UPPER CROSS STREET BLK 531A Stall No 02-50",
-    postal: null,
-    lat: 1.2826,
-    lng: 103.8441,
-    sfa: {
-      licenceNumber: "UC10250002",
-      licenseeName: "HUANG JIALIN",
-      premisesAddress: "UPPER CROSS STREET BLK 531A Stall No 02-50",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "telok_ayer_food_centre_china_square_food_centre_pte_ltd_p423",
-    brandId: "telok_ayer_food_centre_china_square_food_centre_pte_ltd",
-    label: "Telok Ayer Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Telok Ayer Food Centre",
-    address: "51 TELOK AYER STREET #01-08/18 CHINA SQUARE FOOD CENTRE (unit: #01-12) SINGAPORE 048441",
-    postal: null,
-    lat: 1.2797,
-    lng: 103.8474,
-    sfa: {
-      licenceNumber: "CE09009X008",
-      licenseeName: "CHINA SQUARE FOOD CENTRE PTE LTD",
-      premisesAddress: "51 TELOK AYER STREET #01-08/18 CHINA SQUARE FOOD CENTRE (unit: #01-12) SINGAPORE 048441",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "telok_ayer_food_centre_crema_hound_pte_ltd_p424",
-    brandId: "telok_ayer_food_centre_crema_hound_pte_ltd",
-    label: "Telok Ayer Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Telok Ayer Food Centre",
-    address: "51 TELOK AYER STREET #01-06 CHINA SQUARE FOOD CENTRE SINGAPORE 048441",
-    postal: null,
-    lat: 1.2797,
-    lng: 103.8474,
-    sfa: {
-      licenceNumber: "CE09141L000",
-      licenseeName: "CREMA & HOUND PTE. LTD.",
-      premisesAddress: "51 TELOK AYER STREET #01-06 CHINA SQUARE FOOD CENTRE SINGAPORE 048441",
-      grade: "A",
       demeritPoints: null,
       licenceSuspended: false
     },
@@ -81704,6 +81184,437 @@ export const PREMISES_12 = [
     lng: 103.800367271218,
     sfa: null,
     source: "web_research"
+  },
+  {
+    id: "hong_lim_food_centre_and_market_outram_park_fried_kway_teow_p1",
+    brandId: "hong_lim_food_centre_and_market_outram_park_fried_kway_teow",
+    label: "Hong Lim Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Hong Lim Market & Food Centre",
+    address: "531A Upper Cross Street, #02-17, Singapore 051531",
+    postal: "051531",
+    lat: 1.28529907736773,
+    lng: 103.845823802043,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Hong Lim Market & Food Centre Stall No 02-17",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "hong_lim_food_centre_and_market_heng_kee_curry_chicken_bee_hoon_p1",
+    brandId: "hong_lim_food_centre_and_market_heng_kee_curry_chicken_bee_hoon",
+    label: "Hong Lim Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Hong Lim Market & Food Centre",
+    address: "531A Upper Cross Street, #01-58, Singapore 051531",
+    postal: "051531",
+    lat: 1.28529907736773,
+    lng: 103.845823802043,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Hong Lim Market & Food Centre Stall No 01-58",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "hong_lim_food_centre_and_market_tai_hwa_pork_noodles_p1",
+    brandId: "hong_lim_food_centre_and_market_tai_hwa_pork_noodles",
+    label: "Hong Lim Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Hong Lim Market & Food Centre",
+    address: "531A Upper Cross Street, #02-16, Singapore 051531",
+    postal: "051531",
+    lat: 1.28529907736773,
+    lng: 103.845823802043,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Hong Lim Market & Food Centre Stall No 02-16",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "hong_lim_food_centre_and_market_midas_chicken_curry_p1",
+    brandId: "hong_lim_food_centre_and_market_midas_chicken_curry",
+    label: "Hong Lim Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Hong Lim Market & Food Centre",
+    address: "531A Upper Cross Street, #02-07, Singapore 051531",
+    postal: "051531",
+    lat: 1.28529907736773,
+    lng: 103.845823802043,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Hong Lim Market & Food Centre Stall No 02-07",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "hong_lim_food_centre_and_market_ddsd_p1",
+    brandId: "hong_lim_food_centre_and_market_ddsd",
+    label: "Hong Lim Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Hong Lim Market & Food Centre",
+    address: "531A Upper Cross Street, #02-53, Singapore 051531",
+    postal: "051531",
+    lat: 1.28529907736773,
+    lng: 103.845823802043,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Hong Lim Market & Food Centre Stall No 02-53",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "telok_ayer_food_centre_hock_go_p1",
+    brandId: "telok_ayer_food_centre_hock_go",
+    label: "China Square Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "China Square Food Centre",
+    address: "51 Telok Ayer Street, Singapore 048441",
+    postal: "048441",
+    lat: 1.28286636225753,
+    lng: 103.849289233227,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "telok_ayer_food_centre_tiffin_makan_p1",
+    brandId: "telok_ayer_food_centre_tiffin_makan",
+    label: "China Square Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "China Square Food Centre",
+    address: "51 Telok Ayer Street, Singapore 048441",
+    postal: "048441",
+    lat: 1.28286636225753,
+    lng: 103.849289233227,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "peoples_park_food_centre_yong_xiang_xing_dou_fu_p1",
+    brandId: "peoples_park_food_centre_yong_xiang_xing_dou_fu",
+    label: "People's Park Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "People's Park Food Centre",
+    address: "32 New Market Road, #01-1084, Singapore 050032",
+    postal: "050032",
+    lat: 1.28485860802646,
+    lng: 103.842578771054,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "People's Park Food Centre Stall No 01-1084",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "peoples_park_food_centre_bai_nian_niang_dou_foo_p1",
+    brandId: "peoples_park_food_centre_bai_nian_niang_dou_foo",
+    label: "People's Park Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "People's Park Food Centre",
+    address: "32 New Market Road, #01-1144, Singapore 050032",
+    postal: "050032",
+    lat: 1.28485860802646,
+    lng: 103.842578771054,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "People's Park Food Centre Stall No 01-1144",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "peoples_park_food_centre_hong_peng_la_mian_xiao_long_bao_p1",
+    brandId: "peoples_park_food_centre_hong_peng_la_mian_xiao_long_bao",
+    label: "People's Park Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "People's Park Food Centre",
+    address: "32 New Market Road, #01-1064, Singapore 050032",
+    postal: "050032",
+    lat: 1.28485860802646,
+    lng: 103.842578771054,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "People's Park Food Centre Stall No 01-1064",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "peoples_park_food_centre_chuan_wei_fang_xiang_la_xie_p1",
+    brandId: "peoples_park_food_centre_chuan_wei_fang_xiang_la_xie",
+    label: "People's Park Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "People's Park Food Centre",
+    address: "32 New Market Road, #01-1040, Singapore 050032",
+    postal: "050032",
+    lat: 1.28485860802646,
+    lng: 103.842578771054,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "People's Park Food Centre Stall No 01-1040",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "peoples_park_food_centre_yi_pin_beef_king_p1",
+    brandId: "peoples_park_food_centre_yi_pin_beef_king",
+    label: "People's Park Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "People's Park Food Centre",
+    address: "32 New Market Road, Singapore 050032",
+    postal: "050032",
+    lat: 1.28485860802646,
+    lng: 103.842578771054,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "peoples_park_food_centre_kim_hua_guan_bak_kwa_p1",
+    brandId: "peoples_park_food_centre_kim_hua_guan_bak_kwa",
+    label: "People's Park Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "People's Park Food Centre",
+    address: "32 New Market Road, Singapore 050032",
+    postal: "050032",
+    lat: 1.28485860802646,
+    lng: 103.842578771054,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "north_bridge_road_market_hua_mei_zhen_p1",
+    brandId: "north_bridge_road_market_hua_mei_zhen",
+    label: "North Bridge Road Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "North Bridge Road Market & Food Centre",
+    address: "861 North Bridge Road, Singapore 198783",
+    postal: "198783",
+    lat: 1.30563433652207,
+    lng: 103.863909336656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "north_bridge_road_market_soon_huat_prawn_noodles_p1",
+    brandId: "north_bridge_road_market_soon_huat_prawn_noodles",
+    label: "North Bridge Road Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "North Bridge Road Market & Food Centre",
+    address: "861 North Bridge Road, #01-105, Singapore 198783",
+    postal: "198783",
+    lat: 1.30563433652207,
+    lng: 103.863909336656,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "North Bridge Road Market & Food Centre Stall No 01-105",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "north_bridge_road_market_xiao_ling_fried_carrot_cake_p1",
+    brandId: "north_bridge_road_market_xiao_ling_fried_carrot_cake",
+    label: "North Bridge Road Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "North Bridge Road Market & Food Centre",
+    address: "861 North Bridge Road, Singapore 198783",
+    postal: "198783",
+    lat: 1.30563433652207,
+    lng: 103.863909336656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "north_bridge_road_market_lao_huang_hakka_niang_tou_fu_p1",
+    brandId: "north_bridge_road_market_lao_huang_hakka_niang_tou_fu",
+    label: "North Bridge Road Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "North Bridge Road Market & Food Centre",
+    address: "861 North Bridge Road, #01-108, Singapore 198783",
+    postal: "198783",
+    lat: 1.30563433652207,
+    lng: 103.863909336656,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "North Bridge Road Market & Food Centre Stall No 01-108",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "north_bridge_road_market_tian_yi_p1",
+    brandId: "north_bridge_road_market_tian_yi",
+    label: "North Bridge Road Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "North Bridge Road Market & Food Centre",
+    address: "861 North Bridge Road, Singapore 198783",
+    postal: "198783",
+    lat: 1.30563433652207,
+    lng: 103.863909336656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "albert_centre_guan_kee_carrot_cake_p1",
+    brandId: "albert_centre_guan_kee_carrot_cake",
+    label: "Albert Centre Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Albert Centre Market & Food Centre",
+    address: "270 Queen Street, #01-59, Singapore 180270",
+    postal: "180270",
+    lat: 1.30110201573423,
+    lng: 103.854115779087,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Albert Centre Market & Food Centre Stall No 01-59",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "albert_centre_bedok_chwee_kueh_p1",
+    brandId: "albert_centre_bedok_chwee_kueh",
+    label: "Albert Centre Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Albert Centre Market & Food Centre",
+    address: "270 Queen Street, #01-57, Singapore 180270",
+    postal: "180270",
+    lat: 1.30110201573423,
+    lng: 103.854115779087,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Albert Centre Market & Food Centre Stall No 01-57",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "albert_centre_singapore_famous_rojak_p1",
+    brandId: "albert_centre_singapore_famous_rojak",
+    label: "Albert Centre Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Albert Centre Market & Food Centre",
+    address: "270 Queen Street, #01-45, Singapore 180270",
+    postal: "180270",
+    lat: 1.30110201573423,
+    lng: 103.854115779087,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Albert Centre Market & Food Centre Stall No 01-45",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "albert_centre_angel_horse_teochew_fish_soup_p1",
+    brandId: "albert_centre_angel_horse_teochew_fish_soup",
+    label: "Albert Centre Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Albert Centre Market & Food Centre",
+    address: "270 Queen Street, #01-95, Singapore 180270",
+    postal: "180270",
+    lat: 1.30110201573423,
+    lng: 103.854115779087,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Albert Centre Market & Food Centre Stall No 01-95",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "albert_centre_pondok_makan_indonesia_p1",
+    brandId: "albert_centre_pondok_makan_indonesia",
+    label: "Albert Centre Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Albert Centre Market & Food Centre",
+    address: "270 Queen Street, #01-123, Singapore 180270",
+    postal: "180270",
+    lat: 1.30110201573423,
+    lng: 103.854115779087,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Albert Centre Market & Food Centre Stall No 01-123",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "albert_centre_fu_cheng_shi_pin_p1",
+    brandId: "albert_centre_fu_cheng_shi_pin",
+    label: "Albert Centre Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Albert Centre Market & Food Centre",
+    address: "270 Queen Street, #01-80, Singapore 180270",
+    postal: "180270",
+    lat: 1.30110201573423,
+    lng: 103.854115779087,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Albert Centre Market & Food Centre Stall No 01-80",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
   }
 ];
 
