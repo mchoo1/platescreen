@@ -4127,39 +4127,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "tampines_round_market_and_food_centre_fu_chan_f_b_group_pte_ltd",
-    name: "Fu Chan F&B Group Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "fu chan f&b group pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "tampines_round_market_and_food_centre_hoon_kee_meng",
-    name: "Hoon Kee Meng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "hoon kee meng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+      {
     id: "tampines_round_market_and_food_centre_kentucky_fried_chicken_management_pte_ltd",
     name: "Kentucky Fried Chicken Management Pte Ltd",
     emoji: "🍜",
@@ -4175,23 +4143,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "tampines_round_market_and_food_centre_ng_bee_bee",
-    name: "Ng Bee Bee",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ng bee bee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "tampines_round_market_and_food_centre_pizza_hut_singapore_pte_ltd",
     name: "Pizza Hut Singapore Pte Ltd",
     emoji: "🍜",
@@ -4351,71 +4303,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "toa_payoh_lorong_4_blk_93_balance_delight_pte_ltd",
-    name: "Balance Delight Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "balance delight pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_khoo_lor_huat",
-    name: "Khoo Lor Huat",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "khoo lor huat"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_lim_hock_leong_lin_fulong",
-    name: "Lim Hock Leong (Lin Fulong)",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "lim hock leong (lin fulong)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_matson_food_beverage_pte_ltd",
-    name: "Matson Food & Beverage Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "matson food & beverage pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+          {
     id: "toa_payoh_lorong_4_blk_93_mcdonald_s_restaurants_pte_ltd",
     name: "Mcdonald'S Restaurants Pte. Ltd.",
     emoji: "🍜",
@@ -28005,6 +27893,111 @@ export const BRANDS_4 = [
     cuisine: "Fish Head Bee Hoon",
     aliases: [
       "ron sheng fish head beehoon"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "tampines_round_market_and_food_centre_137_lor_mee_prawn_mee",
+    name: "137 Lor Mee Prawn Mee",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Lor Mee & Prawn Mee",
+    aliases: [
+      "137 lor mee prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "tampines_round_market_and_food_centre_yummy_sawarak_kolo_mee",
+    name: "Yummy Sawarak Kolo Mee",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Sarawak Kolo Mee",
+    aliases: [
+      "yummy sawarak kolo mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "tampines_round_market_and_food_centre_yong_huat_chicken_rice",
+    name: "Yong Huat Chicken Rice",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Kampung Chicken Rice",
+    aliases: [
+      "yong huat chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "toa_payoh_lorong_4_blk_93_kuey_chap_stall",
+    name: "Kuey Chap Stall",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Kway Chap",
+    aliases: [
+      "kuey chap stall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "toa_payoh_lorong_4_blk_93_abc_popiah",
+    name: "ABC Popiah",
+    emoji: "🥙",
+    type: "hawker",
+    cuisine: "Popiah",
+    aliases: [
+      "abc popiah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "toa_payoh_lorong_4_blk_93_ping_xiang_wanton_mee",
+    name: "Ping Xiang Wanton Mee",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Wanton Mee",
+    aliases: [
+      "ping xiang wanton mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "toa_payoh_lorong_4_blk_93_93_wu_xiang_xia_bing",
+    name: "93 Wu Xiang Xia Bing",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Ngoh Hiang",
+    aliases: [
+      "93 wu xiang xia bing"
     ],
     dietTags: [],
     priceRange: "$",
