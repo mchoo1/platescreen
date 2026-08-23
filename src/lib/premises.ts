@@ -2968,111 +2968,11 @@ const PREMISES_1 = [
       licenceSuspended: false
     },
     source: "sfa_licence_match"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_abdul_rahman_bin_abu_p429",
-    brandId: "marsiling_lane_blk_20_21_abdul_rahman_bin_abu",
-    label: "Marsiling Lane Blk 20/21",
-    locationType: "hawker_centre",
-    locationContext: "Marsiling Lane Blk 20/21",
-    address: "MARSILING LANE BLK 20 Stall No 01-20",
-    postal: null,
-    lat: 1.443444167875218,
-    lng: 103.7769894778329,
-    sfa: {
-      licenceNumber: "ML10120001",
-      licenseeName: "ABDUL RAHMAN BIN ABU",
-      premisesAddress: "MARSILING LANE BLK 20 Stall No 01-20",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_chen_kok_keong_p430",
-    brandId: "marsiling_lane_blk_20_21_chen_kok_keong",
-    label: "Marsiling Lane Blk 20/21",
-    locationType: "hawker_centre",
-    locationContext: "Marsiling Lane Blk 20/21",
-    address: "MARSILING LANE BLK 20 Stall No 01-16",
-    postal: null,
-    lat: 1.443444167875218,
-    lng: 103.7769894778329,
-    sfa: {
-      licenceNumber: "ML10116002",
-      licenseeName: "CHEN KOK KEONG",
-      premisesAddress: "MARSILING LANE BLK 20 Stall No 01-16",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_chiang_poh_nai_p431",
-    brandId: "marsiling_lane_blk_20_21_chiang_poh_nai",
-    label: "Marsiling Lane Blk 20/21",
-    locationType: "hawker_centre",
-    locationContext: "Marsiling Lane Blk 20/21",
-    address: "MARSILING LANE BLK 20 Stall No 01-04",
-    postal: null,
-    lat: 1.443444167875218,
-    lng: 103.7769894778329,
-    sfa: {
-      licenceNumber: "ML10104001",
-      licenseeName: "CHIANG POH NAI",
-      premisesAddress: "MARSILING LANE BLK 20 Stall No 01-04",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
   }
 ];
 
 const PREMISES_2 = [
-  {
-    id: "marsiling_lane_blk_20_21_chin_lee_fung_p432",
-    brandId: "marsiling_lane_blk_20_21_chin_lee_fung",
-    label: "Marsiling Lane Blk 20/21",
-    locationType: "hawker_centre",
-    locationContext: "Marsiling Lane Blk 20/21",
-    address: "MARSILING LANE BLK 20 Stall No 01-13",
-    postal: null,
-    lat: 1.443444167875218,
-    lng: 103.7769894778329,
-    sfa: {
-      licenceNumber: "ML10113003",
-      licenseeName: "CHIN LEE FUNG",
-      premisesAddress: "MARSILING LANE BLK 20 Stall No 01-13",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "marsiling_lane_blk_20_21_chong_fu_voon_p433",
-    brandId: "marsiling_lane_blk_20_21_chong_fu_voon",
-    label: "Marsiling Lane Blk 20/21",
-    locationType: "hawker_centre",
-    locationContext: "Marsiling Lane Blk 20/21",
-    address: "MARSILING LANE BLK 20 Stall No 01-24",
-    postal: null,
-    lat: 1.443444167875218,
-    lng: 103.7769894778329,
-    sfa: {
-      licenceNumber: "ML10124001",
-      licenseeName: "CHONG FU VOON",
-      premisesAddress: "MARSILING LANE BLK 20 Stall No 01-24",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "marsiling_lane_blk_20_21_eng_siak_yong_p434",
     brandId: "marsiling_lane_blk_20_21_eng_siak_yong",
     label: "Marsiling Lane Blk 20/21",
@@ -3492,87 +3392,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "jurong_west_street_52_blk_505_ang_boh_tan_p477",
-    brandId: "jurong_west_street_52_blk_505_ang_boh_tan",
-    label: "Jurong West Street 52 Blk 505",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Street 52 Blk 505",
-    address: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "J85109N001",
-      licenseeName: "ANG BOH TAN",
-      premisesAddress: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_azehar_bin_a_ghafar_p478",
-    brandId: "jurong_west_street_52_blk_505_azehar_bin_a_ghafar",
-    label: "Jurong West Street 52 Blk 505",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Street 52 Blk 505",
-    address: "6A JURONG WEST STREET 52 GRACE ORCHARD SCHOOL SINGAPORE 649297",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "SW08B74N002",
-      licenseeName: "AZEHAR BIN A GHAFAR",
-      premisesAddress: "6A JURONG WEST STREET 52 GRACE ORCHARD SCHOOL SINGAPORE 649297",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_chua_ah_hiong_p479",
-    brandId: "jurong_west_street_52_blk_505_chua_ah_hiong",
-    label: "Jurong West Street 52 Blk 505",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Street 52 Blk 505",
-    address: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "J85109N002",
-      licenseeName: "CHUA AH HIONG",
-      premisesAddress: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "jurong_west_street_52_blk_505_eng_hui_p480",
-    brandId: "jurong_west_street_52_blk_505_eng_hui",
-    label: "Jurong West Street 52 Blk 505",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Street 52 Blk 505",
-    address: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "J85109N004",
-      licenseeName: "ENG HUI",
-      premisesAddress: "6 JURONG WEST STREET 52 RULANG PRIMARY SCHOOL SINGAPORE 649295",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+          {
     id: "jurong_west_street_52_blk_505_hap_ah_lam_p481",
     brandId: "jurong_west_street_52_blk_505_hap_ah_lam",
     label: "Jurong West Street 52 Blk 505",
@@ -4172,27 +3992,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "kim_keat_palm_market_and_food_centre_angeledevi_d_o_p_m_p_ganesan_p525",
-    brandId: "kim_keat_palm_market_and_food_centre_angeledevi_d_o_p_m_p_ganesan",
-    label: "Kim Keat Palm Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kim Keat Palm Market and Food Centre",
-    address: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-    postal: null,
-    lat: 1.3393,
-    lng: 103.8561,
-    sfa: {
-      licenceNumber: "S01200J006",
-      licenseeName: "ANGELEDEVI D/O P M P GANESAN",
-      premisesAddress: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "kim_keat_palm_market_and_food_centre_chang_lai_pte_ltd_p526",
     brandId: "kim_keat_palm_market_and_food_centre_chang_lai_pte_ltd",
     label: "Kim Keat Palm Market and Food Centre",
@@ -4212,87 +4012,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "kim_keat_palm_market_and_food_centre_haslina_bt_hassan_p527",
-    brandId: "kim_keat_palm_market_and_food_centre_haslina_bt_hassan",
-    label: "Kim Keat Palm Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kim Keat Palm Market and Food Centre",
-    address: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-    postal: null,
-    lat: 1.3393,
-    lng: 103.8561,
-    sfa: {
-      licenceNumber: "S01200J003",
-      licenseeName: "HASLINA BT HASSAN",
-      premisesAddress: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_how_ah_lai_p528",
-    brandId: "kim_keat_palm_market_and_food_centre_how_ah_lai",
-    label: "Kim Keat Palm Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kim Keat Palm Market and Food Centre",
-    address: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-    postal: null,
-    lat: 1.3393,
-    lng: 103.8561,
-    sfa: {
-      licenceNumber: "S01200J008",
-      licenseeName: "HOW AH LAI",
-      premisesAddress: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_lim_bee_yoong_p529",
-    brandId: "kim_keat_palm_market_and_food_centre_lim_bee_yoong",
-    label: "Kim Keat Palm Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kim Keat Palm Market and Food Centre",
-    address: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-    postal: null,
-    lat: 1.3393,
-    lng: 103.8561,
-    sfa: {
-      licenceNumber: "S01200J004",
-      licenseeName: "LIM BEE YOONG",
-      premisesAddress: "16 LORONG 7 TOA PAYOH PEI CHUN PUBLIC SCHOOL SINGAPORE 319320",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kim_keat_palm_market_and_food_centre_lim_yen_lin_p530",
-    brandId: "kim_keat_palm_market_and_food_centre_lim_yen_lin",
-    label: "Kim Keat Palm Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kim Keat Palm Market and Food Centre",
-    address: "18 LORONG 7 TOA PAYOH #01-252 (PART OF - LEFT) SINGAPORE 310018",
-    postal: null,
-    lat: 1.3393,
-    lng: 103.8561,
-    sfa: {
-      licenceNumber: "CE13784N000",
-      licenseeName: "LIM YEN LIN",
-      premisesAddress: "18 LORONG 7 TOA PAYOH #01-252 (PART OF - LEFT) SINGAPORE 310018",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+          {
     id: "chong_boon_market_and_food_centre_amk443_eating_house_pte_ltd_p531",
     brandId: "chong_boon_market_and_food_centre_amk443_eating_house_pte_ltd",
     label: "Chong Boon Market and Food Centre",
@@ -5872,47 +5592,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "toa_payoh_lorong_8_blk_210_ang_kim_hua_hong_jinhua_p621",
-    brandId: "toa_payoh_lorong_8_blk_210_ang_kim_hua_hong_jinhua",
-    label: "Toa Payoh Lorong 8 Blk 210",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Lorong 8 Blk 210",
-    address: "233 LORONG 8 TOA PAYOH #01-256 (RIGHT PART OF UNIT) SINGAPORE 310233",
-    postal: null,
-    lat: 1.340261046188113,
-    lng: 103.8543957588659,
-    sfa: {
-      licenceNumber: "CE14M20N000",
-      licenseeName: "ANG KIM HUA (HONG JINHUA)",
-      premisesAddress: "233 LORONG 8 TOA PAYOH #01-256 (RIGHT PART OF UNIT) SINGAPORE 310233",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_goh_keow_huay_p622",
-    brandId: "toa_payoh_lorong_8_blk_210_goh_keow_huay",
-    label: "Toa Payoh Lorong 8 Blk 210",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Lorong 8 Blk 210",
-    address: "7 LORONG 8 TOA PAYOH FIRST TOA PAYOH PRIMARY SCHOOL SINGAPORE 319252",
-    postal: null,
-    lat: 1.340261046188113,
-    lng: 103.8543957588659,
-    sfa: {
-      licenceNumber: "E02001L007",
-      licenseeName: "GOH KEOW HUAY",
-      premisesAddress: "7 LORONG 8 TOA PAYOH FIRST TOA PAYOH PRIMARY SCHOOL SINGAPORE 319252",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "toa_payoh_lorong_8_blk_210_jnr_food_pte_ltd_p623",
     brandId: "toa_payoh_lorong_8_blk_210_jnr_food_pte_ltd",
     label: "Toa Payoh Lorong 8 Blk 210",
@@ -5932,47 +5612,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "toa_payoh_lorong_8_blk_210_katijah_bte_mammu_p624",
-    brandId: "toa_payoh_lorong_8_blk_210_katijah_bte_mammu",
-    label: "Toa Payoh Lorong 8 Blk 210",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Lorong 8 Blk 210",
-    address: "7 LORONG 8 TOA PAYOH FIRST TOA PAYOH PRIMARY SCHOOL SINGAPORE 319252",
-    postal: null,
-    lat: 1.340261046188113,
-    lng: 103.8543957588659,
-    sfa: {
-      licenceNumber: "E02001L003",
-      licenseeName: "KATIJAH BTE MAMMU",
-      premisesAddress: "7 LORONG 8 TOA PAYOH FIRST TOA PAYOH PRIMARY SCHOOL SINGAPORE 319252",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_lorong_8_blk_210_kiang_siang_heng_p625",
-    brandId: "toa_payoh_lorong_8_blk_210_kiang_siang_heng",
-    label: "Toa Payoh Lorong 8 Blk 210",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Lorong 8 Blk 210",
-    address: "211 LORONG 8 TOA PAYOH #01-01 SINGAPORE 310211",
-    postal: null,
-    lat: 1.340261046188113,
-    lng: 103.8543957588659,
-    sfa: {
-      licenceNumber: "E75023P003",
-      licenseeName: "KIANG SIANG HENG",
-      premisesAddress: "211 LORONG 8 TOA PAYOH #01-01 SINGAPORE 310211",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd_p626",
     brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd",
     label: "Toa Payoh Lorong 8 Blk 210",
@@ -6132,47 +5772,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-        {
-    id: "one_punggol_hawker_centre_azali_bin_dankarna_p651",
-    brandId: "one_punggol_hawker_centre_azali_bin_dankarna",
-    label: "One Punggol Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "One Punggol Hawker Centre",
-    address: "70 PUNGGOL DRIVE -WATERWAY PRIMARY SCHOOL SINGAPORE 828802",
-    postal: null,
-    lat: 1.405,
-    lng: 103.9019,
-    sfa: {
-      licenceNumber: "NE15535N008",
-      licenseeName: "AZALI BIN DANKARNA",
-      premisesAddress: "70 PUNGGOL DRIVE -WATERWAY PRIMARY SCHOOL SINGAPORE 828802",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "one_punggol_hawker_centre_chiang_ken_weng_p652",
-    brandId: "one_punggol_hawker_centre_chiang_ken_weng",
-    label: "One Punggol Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "One Punggol Hawker Centre",
-    address: "70 PUNGGOL DRIVE -WATERWAY PRIMARY SCHOOL SINGAPORE 828802",
-    postal: null,
-    lat: 1.405,
-    lng: 103.9019,
-    sfa: {
-      licenceNumber: "NE15535N006",
-      licenseeName: "CHIANG KEN WENG",
-      premisesAddress: "70 PUNGGOL DRIVE -WATERWAY PRIMARY SCHOOL SINGAPORE 828802",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "one_punggol_hawker_centre_cold_storage_singapore_1983_pte_ltd_p653",
     brandId: "one_punggol_hawker_centre_cold_storage_singapore_1983_pte_ltd",
     label: "One Punggol Hawker Centre",
@@ -6192,27 +5792,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "one_punggol_hawker_centre_broadway_food_centre_holdings_pte_ltd_p654",
-    brandId: "one_punggol_hawker_centre_broadway_food_centre_holdings_pte_ltd",
-    label: "One Punggol Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "One Punggol Hawker Centre",
-    address: "612 PUNGGOL DRIVE #01-01 SINGAPORE 820612",
-    postal: null,
-    lat: 1.405,
-    lng: 103.9019,
-    sfa: {
-      licenceNumber: "NE12G34X007",
-      licenseeName: "BROADWAY FOOD CENTRE (HOLDINGS) PTE LTD",
-      premisesAddress: "612 PUNGGOL DRIVE #01-01 SINGAPORE 820612",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "one_punggol_hawker_centre_haji_karim_prata_palace_pte_ltd_p655",
     brandId: "one_punggol_hawker_centre_haji_karim_prata_palace_pte_ltd",
     label: "One Punggol Hawker Centre",
@@ -6232,27 +5812,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "one_punggol_hawker_centre_kopitiam_investment_pte_ltd_p656",
-    brandId: "one_punggol_hawker_centre_kopitiam_investment_pte_ltd",
-    label: "One Punggol Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "One Punggol Hawker Centre",
-    address: "639 PUNGGOL DRIVE #01-07 SINGAPORE 820639",
-    postal: null,
-    lat: 1.405,
-    lng: 103.9019,
-    sfa: {
-      licenceNumber: "NE04163C002",
-      licenseeName: "KOPITIAM INVESTMENT PTE LTD",
-      premisesAddress: "639 PUNGGOL DRIVE #01-07 SINGAPORE 820639",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "punggol_coast_hawker_centre_cold_storage_singapore_1983_pte_ltd_p663",
     brandId: "punggol_coast_hawker_centre_cold_storage_singapore_1983_pte_ltd",
     label: "Punggol Coast Hawker Centre",
@@ -6272,87 +5832,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "punggol_coast_hawker_centre_chun_kheng_leng_p664",
-    brandId: "punggol_coast_hawker_centre_chun_kheng_leng",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-    postal: null,
-    lat: 1.414553313508363,
-    lng: 103.9082353086679,
-    sfa: {
-      licenceNumber: "NE15407E006",
-      licenseeName: "CHUN KHENG LENG",
-      premisesAddress: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "punggol_coast_hawker_centre_how_wei_pte_ltd_p665",
-    brandId: "punggol_coast_hawker_centre_how_wei_pte_ltd",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-    postal: null,
-    lat: 1.414553313508363,
-    lng: 103.9082353086679,
-    sfa: {
-      licenceNumber: "NE15407E003",
-      licenseeName: "HOW WEI PTE. LTD.",
-      premisesAddress: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "punggol_coast_hawker_centre_ng_huat_kee_p666",
-    brandId: "punggol_coast_hawker_centre_ng_huat_kee",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-    postal: null,
-    lat: 1.414553313508363,
-    lng: 103.9082353086679,
-    sfa: {
-      licenceNumber: "NE15407E004",
-      licenseeName: "NG HUAT KEE",
-      premisesAddress: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "punggol_coast_hawker_centre_seow_chun_kiat_p667",
-    brandId: "punggol_coast_hawker_centre_seow_chun_kiat",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-    postal: null,
-    lat: 1.414553313508363,
-    lng: 103.9082353086679,
-    sfa: {
-      licenceNumber: "NE15407E008",
-      licenseeName: "SEOW CHUN KIAT",
-      premisesAddress: "261 PUNGGOL WAY #01-01 SINGAPORE 820261",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+          {
     id: "punggol_coast_hawker_centre_srisun_prata_com_food_holding_s_pte_ltd_p668",
     brandId: "punggol_coast_hawker_centre_srisun_prata_com_food_holding_s_pte_ltd",
     label: "Punggol Coast Hawker Centre",
@@ -80981,6 +80461,370 @@ export const PREMISES_12 = [
     postal: "310095",
     lat: 1.3345,
     lng: 103.8498,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kim_keat_palm_market_and_food_centre_lixin_chao_zhou_fishball_noodle_p1",
+    brandId: "kim_keat_palm_market_and_food_centre_lixin_chao_zhou_fishball_noodle",
+    label: "Kim Keat Palm Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kim Keat Palm Market and Food Centre",
+    address: "22 Lorong 7 Toa Payoh, Singapore 310022",
+    postal: "310022",
+    lat: 1.33538261333779,
+    lng: 103.857003709119,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kim_keat_palm_market_and_food_centre_hai_nan_xing_zhou_beef_noodle_p1",
+    brandId: "kim_keat_palm_market_and_food_centre_hai_nan_xing_zhou_beef_noodle",
+    label: "Kim Keat Palm Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kim Keat Palm Market and Food Centre",
+    address: "22 Lorong 7 Toa Payoh, Singapore 310022",
+    postal: "310022",
+    lat: 1.33538261333779,
+    lng: 103.857003709119,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kim_keat_palm_market_and_food_centre_min_kee_tanjong_rhu_wanton_noodle_p1",
+    brandId: "kim_keat_palm_market_and_food_centre_min_kee_tanjong_rhu_wanton_noodle",
+    label: "Kim Keat Palm Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kim Keat Palm Market and Food Centre",
+    address: "22 Lorong 7 Toa Payoh, Singapore 310022",
+    postal: "310022",
+    lat: 1.33538261333779,
+    lng: 103.857003709119,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kim_keat_palm_market_and_food_centre_old_long_house_popiah_p1",
+    brandId: "kim_keat_palm_market_and_food_centre_old_long_house_popiah",
+    label: "Kim Keat Palm Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kim Keat Palm Market and Food Centre",
+    address: "22 Lorong 7 Toa Payoh, Singapore 310022",
+    postal: "310022",
+    lat: 1.33538261333779,
+    lng: 103.857003709119,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kim_keat_palm_market_and_food_centre_ah_chuan_fried_oyster_omelette_p1",
+    brandId: "kim_keat_palm_market_and_food_centre_ah_chuan_fried_oyster_omelette",
+    label: "Kim Keat Palm Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kim Keat Palm Market and Food Centre",
+    address: "22 Lorong 7 Toa Payoh, Singapore 310022",
+    postal: "310022",
+    lat: 1.33538261333779,
+    lng: 103.857003709119,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "one_punggol_hawker_centre_no_25_minced_meat_noodles_p1",
+    brandId: "one_punggol_hawker_centre_no_25_minced_meat_noodles",
+    label: "One Punggol Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "One Punggol Hawker Centre",
+    address: "1 Punggol Drive, Singapore 828629",
+    postal: "828629",
+    lat: 1.40852158088602,
+    lng: 103.90503420803,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "one_punggol_hawker_centre_kwang_kee_teochew_fish_porridge_p1",
+    brandId: "one_punggol_hawker_centre_kwang_kee_teochew_fish_porridge",
+    label: "One Punggol Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "One Punggol Hawker Centre",
+    address: "1 Punggol Drive, Singapore 828629",
+    postal: "828629",
+    lat: 1.40852158088602,
+    lng: 103.90503420803,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "one_punggol_hawker_centre_eng_kee_p1",
+    brandId: "one_punggol_hawker_centre_eng_kee",
+    label: "One Punggol Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "One Punggol Hawker Centre",
+    address: "1 Punggol Drive, Singapore 828629",
+    postal: "828629",
+    lat: 1.40852158088602,
+    lng: 103.90503420803,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "one_punggol_hawker_centre_obba_jjajang_p1",
+    brandId: "one_punggol_hawker_centre_obba_jjajang",
+    label: "One Punggol Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "One Punggol Hawker Centre",
+    address: "1 Punggol Drive, Singapore 828629",
+    postal: "828629",
+    lat: 1.40852158088602,
+    lng: 103.90503420803,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "one_punggol_hawker_centre_lim_bo_rojak_p1",
+    brandId: "one_punggol_hawker_centre_lim_bo_rojak",
+    label: "One Punggol Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "One Punggol Hawker Centre",
+    address: "1 Punggol Drive, Singapore 828629",
+    postal: "828629",
+    lat: 1.40852158088602,
+    lng: 103.90503420803,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "punggol_coast_hawker_centre_singapore_fried_hokkien_mee_p1",
+    brandId: "punggol_coast_hawker_centre_singapore_fried_hokkien_mee",
+    label: "Punggol Coast Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Punggol Coast Hawker Centre",
+    address: "84 Punggol Way, #02-55, Singapore 829911",
+    postal: "829911",
+    lat: 1.41455331350836,
+    lng: 103.908235308668,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "punggol_coast_hawker_centre_hock_hai_hong_lim_curry_chicken_p1",
+    brandId: "punggol_coast_hawker_centre_hock_hai_hong_lim_curry_chicken",
+    label: "Punggol Coast Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Punggol Coast Hawker Centre",
+    address: "84 Punggol Way, #02-55, Singapore 829911",
+    postal: "829911",
+    lat: 1.41455331350836,
+    lng: 103.908235308668,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "punggol_coast_hawker_centre_south_buona_vista_braised_duck_p1",
+    brandId: "punggol_coast_hawker_centre_south_buona_vista_braised_duck",
+    label: "Punggol Coast Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Punggol Coast Hawker Centre",
+    address: "84 Punggol Way, #02-55, Singapore 829911",
+    postal: "829911",
+    lat: 1.41455331350836,
+    lng: 103.908235308668,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "punggol_coast_hawker_centre_huay_kwang_thai_wanton_mee_p1",
+    brandId: "punggol_coast_hawker_centre_huay_kwang_thai_wanton_mee",
+    label: "Punggol Coast Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Punggol Coast Hawker Centre",
+    address: "84 Punggol Way, #02-55, Singapore 829911",
+    postal: "829911",
+    lat: 1.41455331350836,
+    lng: 103.908235308668,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "punggol_coast_hawker_centre_s_j_sickander_ammal_muslim_foods_p1",
+    brandId: "punggol_coast_hawker_centre_s_j_sickander_ammal_muslim_foods",
+    label: "Punggol Coast Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Punggol Coast Hawker Centre",
+    address: "84 Punggol Way, #02-55, Singapore 829911",
+    postal: "829911",
+    lat: 1.41455331350836,
+    lng: 103.908235308668,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "marsiling_lane_blk_20_21_soon_xing_coffee_p1",
+    brandId: "marsiling_lane_blk_20_21_soon_xing_coffee",
+    label: "Marsiling Lane Blk 20/21",
+    locationType: "hawker_centre",
+    locationContext: "Marsiling Lane Blk 20/21",
+    address: "20 Marsiling Lane, #01-08, Singapore 730020",
+    postal: "730020",
+    lat: 1.44344416787521,
+    lng: 103.776989477833,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "marsiling_lane_blk_20_21_joy_junction_p1",
+    brandId: "marsiling_lane_blk_20_21_joy_junction",
+    label: "Marsiling Lane Blk 20/21",
+    locationType: "hawker_centre",
+    locationContext: "Marsiling Lane Blk 20/21",
+    address: "20 Marsiling Lane, #01-30, Singapore 730020",
+    postal: "730020",
+    lat: 1.44344416787521,
+    lng: 103.776989477833,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "marsiling_lane_blk_20_21_chin_heng_p1",
+    brandId: "marsiling_lane_blk_20_21_chin_heng",
+    label: "Marsiling Lane Blk 20/21",
+    locationType: "hawker_centre",
+    locationContext: "Marsiling Lane Blk 20/21",
+    address: "20 Marsiling Lane, #01-86, Singapore 730020",
+    postal: "730020",
+    lat: 1.44344416787521,
+    lng: 103.776989477833,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "marsiling_lane_blk_20_21_selera_menanti_traditional_malay_cuisine_p1",
+    brandId: "marsiling_lane_blk_20_21_selera_menanti_traditional_malay_cuisine",
+    label: "Marsiling Lane Blk 20/21",
+    locationType: "hawker_centre",
+    locationContext: "Marsiling Lane Blk 20/21",
+    address: "20 Marsiling Lane, #01-120, Singapore 730020",
+    postal: "730020",
+    lat: 1.44344416787521,
+    lng: 103.776989477833,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "marsiling_lane_blk_20_21_yap_kee_hainanese_chicken_rice_p1",
+    brandId: "marsiling_lane_blk_20_21_yap_kee_hainanese_chicken_rice",
+    label: "Marsiling Lane Blk 20/21",
+    locationType: "hawker_centre",
+    locationContext: "Marsiling Lane Blk 20/21",
+    address: "20 Marsiling Lane, #01-21, Singapore 730020",
+    postal: "730020",
+    lat: 1.44344416787521,
+    lng: 103.776989477833,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_street_52_blk_505_jian_bo_shui_kueh_p1",
+    brandId: "jurong_west_street_52_blk_505_jian_bo_shui_kueh",
+    label: "Jurong West Street 52 Blk 505",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Street 52 Blk 505",
+    address: "505 Jurong West Street 52, Singapore 640505",
+    postal: "640505",
+    lat: 1.34965729130746,
+    lng: 103.718443677825,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_street_52_blk_505_soh_kee_cooked_food_p1",
+    brandId: "jurong_west_street_52_blk_505_soh_kee_cooked_food",
+    label: "Jurong West Street 52 Blk 505",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Street 52 Blk 505",
+    address: "505 Jurong West Street 52, Singapore 640505",
+    postal: "640505",
+    lat: 1.34965729130746,
+    lng: 103.718443677825,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_street_52_blk_505_wen_guang_handmade_fishball_noodle_p1",
+    brandId: "jurong_west_street_52_blk_505_wen_guang_handmade_fishball_noodle",
+    label: "Jurong West Street 52 Blk 505",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Street 52 Blk 505",
+    address: "505 Jurong West Street 52, Singapore 640505",
+    postal: "640505",
+    lat: 1.34965729130746,
+    lng: 103.718443677825,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_street_52_blk_505_du_du_shou_shi_p1",
+    brandId: "jurong_west_street_52_blk_505_du_du_shou_shi",
+    label: "Jurong West Street 52 Blk 505",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Street 52 Blk 505",
+    address: "505 Jurong West Street 52, Singapore 640505",
+    postal: "640505",
+    lat: 1.34965729130746,
+    lng: 103.718443677825,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_lorong_8_blk_210_seletar_sheng_mian_mee_hoon_kway_p1",
+    brandId: "toa_payoh_lorong_8_blk_210_seletar_sheng_mian_mee_hoon_kway",
+    label: "Toa Payoh Lorong 8 Blk 210",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Lorong 8 Blk 210",
+    address: "210 Lorong 8 Toa Payoh, #01-05, Singapore 310210",
+    postal: "310210",
+    lat: 1.3402610461881,
+    lng: 103.854395758866,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_lorong_8_blk_210_guan_kee_kway_chap_p1",
+    brandId: "toa_payoh_lorong_8_blk_210_guan_kee_kway_chap",
+    label: "Toa Payoh Lorong 8 Blk 210",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Lorong 8 Blk 210",
+    address: "210 Lorong 8 Toa Payoh, Singapore 310210",
+    postal: "310210",
+    lat: 1.3402610461881,
+    lng: 103.854395758866,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_lorong_8_blk_210_hai_kee_noodle_p1",
+    brandId: "toa_payoh_lorong_8_blk_210_hai_kee_noodle",
+    label: "Toa Payoh Lorong 8 Blk 210",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Lorong 8 Blk 210",
+    address: "210 Lorong 8 Toa Payoh, #01-59, Singapore 310210",
+    postal: "310210",
+    lat: 1.3402610461881,
+    lng: 103.854395758866,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_lorong_8_blk_210_hong_seng_lor_mee_laksa_p1",
+    brandId: "toa_payoh_lorong_8_blk_210_hong_seng_lor_mee_laksa",
+    label: "Toa Payoh Lorong 8 Blk 210",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Lorong 8 Blk 210",
+    address: "210 Lorong 8 Toa Payoh, #01-54, Singapore 310210",
+    postal: "310210",
+    lat: 1.3402610461881,
+    lng: 103.854395758866,
     sfa: null,
     source: "web_research"
   },
