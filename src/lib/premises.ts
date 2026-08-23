@@ -1769,67 +1769,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "bukit_panjang_hawker_centre_aw_li_seng_benjamin_p194",
-    brandId: "bukit_panjang_hawker_centre_aw_li_seng_benjamin",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "BUKIT PANJANG HAWKER CENTRE Stall No 01-08",
-    postal: null,
-    lat: 1.3807,
-    lng: 103.763,
-    sfa: {
-      licenceNumber: "BPH0108001",
-      licenseeName: "AW LI SENG BENJAMIN",
-      premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-08",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_chen_hsien_yi_p195",
-    brandId: "bukit_panjang_hawker_centre_chen_hsien_yi",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "BUKIT PANJANG HAWKER CENTRE Stall No 01-15",
-    postal: null,
-    lat: 1.3807,
-    lng: 103.763,
-    sfa: {
-      licenceNumber: "BPH0115001",
-      licenseeName: "CHEN HSIEN YI",
-      premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-15",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_panjang_hawker_centre_chiam_chee_meng_p196",
-    brandId: "bukit_panjang_hawker_centre_chiam_chee_meng",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "BUKIT PANJANG HAWKER CENTRE Stall No 01-24",
-    postal: null,
-    lat: 1.3807,
-    lng: 103.763,
-    sfa: {
-      licenceNumber: "BPH0124001",
-      licenseeName: "CHIAM CHEE MENG",
-      premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-24",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "bukit_panjang_hawker_centre_khor_lye_hong_p197",
     brandId: "bukit_panjang_hawker_centre_khor_lye_hong",
     label: "Bukit Panjang Hawker Centre",
@@ -2369,127 +2309,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "pasir_panjang_food_centre_panipak_yong_p230",
-    brandId: "pasir_panjang_food_centre_panipak_yong",
-    label: "Pasir Panjang Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Panjang Food Centre",
-    address: "PASIR PANJANG FOOD CENTRE Stall No 01-20",
-    postal: null,
-    lat: 1.286,
-    lng: 103.7947,
-    sfa: {
-      licenceNumber: "PPF0120004",
-      licenseeName: "PANIPAK YONG",
-      premisesAddress: "PASIR PANJANG FOOD CENTRE Stall No 01-20",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_panjang_food_centre_tock_poh_lian_p231",
-    brandId: "pasir_panjang_food_centre_tock_poh_lian",
-    label: "Pasir Panjang Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Panjang Food Centre",
-    address: "PASIR PANJANG FOOD CENTRE Stall No 01-45",
-    postal: null,
-    lat: 1.286,
-    lng: 103.7947,
-    sfa: {
-      licenceNumber: "PPF0145001",
-      licenseeName: "TOCK POH LIAN",
-      premisesAddress: "PASIR PANJANG FOOD CENTRE Stall No 01-45",
-      grade: "A",
-      demeritPoints: 6,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_panjang_food_centre_ang_kor_huat_p232",
-    brandId: "pasir_panjang_food_centre_ang_kor_huat",
-    label: "Pasir Panjang Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Panjang Food Centre",
-    address: "PASIR PANJANG FOOD CENTRE Stall No 01-35",
-    postal: null,
-    lat: 1.286,
-    lng: 103.7947,
-    sfa: {
-      licenceNumber: "PPF0135005",
-      licenseeName: "ANG KOR HUAT",
-      premisesAddress: "PASIR PANJANG FOOD CENTRE Stall No 01-35",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_panjang_food_centre_anthony_tay_seng_boon_p233",
-    brandId: "pasir_panjang_food_centre_anthony_tay_seng_boon",
-    label: "Pasir Panjang Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Panjang Food Centre",
-    address: "PASIR PANJANG FOOD CENTRE Stall No 01-05",
-    postal: null,
-    lat: 1.286,
-    lng: 103.7947,
-    sfa: {
-      licenceNumber: "PPF0105002",
-      licenseeName: "ANTHONY TAY SENG BOON",
-      premisesAddress: "PASIR PANJANG FOOD CENTRE Stall No 01-05",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_panjang_food_centre_chang_chee_keong_p234",
-    brandId: "pasir_panjang_food_centre_chang_chee_keong",
-    label: "Pasir Panjang Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Panjang Food Centre",
-    address: "PASIR PANJANG FOOD CENTRE Stall No 01-43",
-    postal: null,
-    lat: 1.286,
-    lng: 103.7947,
-    sfa: {
-      licenceNumber: "PPF0143004",
-      licenseeName: "CHANG CHEE KEONG",
-      premisesAddress: "PASIR PANJANG FOOD CENTRE Stall No 01-43",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_panjang_food_centre_chee_yew_khuen_p235",
-    brandId: "pasir_panjang_food_centre_chee_yew_khuen",
-    label: "Pasir Panjang Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Panjang Food Centre",
-    address: "PASIR PANJANG FOOD CENTRE Stall No 01-07",
-    postal: null,
-    lat: 1.286,
-    lng: 103.7947,
-    sfa: {
-      licenceNumber: "PPF0107006",
-      licenseeName: "CHEE YEW KHUEN",
-      premisesAddress: "PASIR PANJANG FOOD CENTRE Stall No 01-07",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+              {
     id: "bedok_food_centre_abd_latiff_bin_kunji_ahmad_p236",
     brandId: "bedok_food_centre_abd_latiff_bin_kunji_ahmad",
     label: "Bedok Food Centre",
@@ -3189,107 +3009,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "bukit_merah_central_food_centre_ang_seng_yong_p358",
-    brandId: "bukit_merah_central_food_centre_ang_seng_yong",
-    label: "Bukit Merah Central Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Merah Central Food Centre",
-    address: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-26",
-    postal: null,
-    lat: 1.2828,
-    lng: 103.8224,
-    sfa: {
-      licenceNumber: "BM10226001",
-      licenseeName: "ANG SENG YONG",
-      premisesAddress: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-26",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_merah_central_food_centre_chan_mei_chui_p359",
-    brandId: "bukit_merah_central_food_centre_chan_mei_chui",
-    label: "Bukit Merah Central Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Merah Central Food Centre",
-    address: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-14",
-    postal: null,
-    lat: 1.2828,
-    lng: 103.8224,
-    sfa: {
-      licenceNumber: "BM10214001",
-      licenseeName: "CHAN MEI CHUI",
-      premisesAddress: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-14",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_merah_central_food_centre_chen_ying_p360",
-    brandId: "bukit_merah_central_food_centre_chen_ying",
-    label: "Bukit Merah Central Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Merah Central Food Centre",
-    address: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-50",
-    postal: null,
-    lat: 1.2828,
-    lng: 103.8224,
-    sfa: {
-      licenceNumber: "BM10250002",
-      licenseeName: "CHEN YING",
-      premisesAddress: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-50",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_merah_central_food_centre_chen_youyun_p361",
-    brandId: "bukit_merah_central_food_centre_chen_youyun",
-    label: "Bukit Merah Central Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Merah Central Food Centre",
-    address: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-37",
-    postal: null,
-    lat: 1.2828,
-    lng: 103.8224,
-    sfa: {
-      licenceNumber: "BM10237002",
-      licenseeName: "CHEN YOUYUN",
-      premisesAddress: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-37",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_merah_central_food_centre_chong_kwai_choy_p362",
-    brandId: "bukit_merah_central_food_centre_chong_kwai_choy",
-    label: "Bukit Merah Central Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Merah Central Food Centre",
-    address: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-56",
-    postal: null,
-    lat: 1.2828,
-    lng: 103.8224,
-    sfa: {
-      licenceNumber: "BM10256001",
-      licenseeName: "CHONG KWAI CHOY",
-      premisesAddress: "BUKIT MERAH CENTRAL BLK 163 Stall No 02-56",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "80_circuit_road_market_and_food_centre_low_hua_boon_p374",
     brandId: "80_circuit_road_market_and_food_centre_low_hua_boon",
     label: "80 Circuit Road Market and Food Centre",
@@ -4132,67 +3852,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "pasir_ris_central_hawker_centre_abdus_salam_s_o_akber_ali_p489",
-    brandId: "pasir_ris_central_hawker_centre_abdus_salam_s_o_akber_ali",
-    label: "Pasir Ris Central Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Ris Central Hawker Centre",
-    address: "1 PASIR RIS CENTRAL STREET 3 #01-30 WHITE SANDS SINGAPORE 518457",
-    postal: null,
-    lat: 1.3729,
-    lng: 103.9494,
-    sfa: {
-      licenceNumber: "NE15636E000",
-      licenseeName: "ABDUS SALAM S/O AKBER ALI",
-      premisesAddress: "1 PASIR RIS CENTRAL STREET 3 #01-30 WHITE SANDS SINGAPORE 518457",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_bachmann_japanese_restaurant_pte_ltd_p490",
-    brandId: "pasir_ris_central_hawker_centre_bachmann_japanese_restaurant_pte_ltd",
-    label: "Pasir Ris Central Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Ris Central Hawker Centre",
-    address: "1 PASIR RIS CENTRAL STREET 3 #01-26 SINGAPORE 518457",
-    postal: null,
-    lat: 1.3729,
-    lng: 103.9494,
-    sfa: {
-      licenceNumber: "NE15579L000",
-      licenseeName: "BACHMANN JAPANESE RESTAURANT PTE LTD",
-      premisesAddress: "1 PASIR RIS CENTRAL STREET 3 #01-26 SINGAPORE 518457",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_beach_cabana_pte_ltd_p491",
-    brandId: "pasir_ris_central_hawker_centre_beach_cabana_pte_ltd",
-    label: "Pasir Ris Central Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Ris Central Hawker Centre",
-    address: "96 PASIR RIS CENTRAL PASIR RIS TOWN PARK SINGAPORE 519638",
-    postal: null,
-    lat: 1.3729,
-    lng: 103.9494,
-    sfa: {
-      licenceNumber: "NE05047B000",
-      licenseeName: "BEACH CABANA PTE. LTD.",
-      premisesAddress: "96 PASIR RIS CENTRAL PASIR RIS TOWN PARK SINGAPORE 519638",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "pasir_ris_central_hawker_centre_bee_cheng_hiang_concept_pte_ltd_p492",
     brandId: "pasir_ris_central_hawker_centre_bee_cheng_hiang_concept_pte_ltd",
     label: "Pasir Ris Central Hawker Centre",
@@ -4212,27 +3872,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "pasir_ris_central_hawker_centre_benfris_glory_pte_ltd_p493",
-    brandId: "pasir_ris_central_hawker_centre_benfris_glory_pte_ltd",
-    label: "Pasir Ris Central Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Ris Central Hawker Centre",
-    address: "1 PASIR RIS CENTRAL STREET 3 #03-03 WHITE SANDS SHOPPING CENTRE SINGAPORE 518457",
-    postal: null,
-    lat: 1.3729,
-    lng: 103.9494,
-    sfa: {
-      licenceNumber: "NE15188L000",
-      licenseeName: "BENFRIS GLORY PTE. LTD.",
-      premisesAddress: "1 PASIR RIS CENTRAL STREET 3 #03-03 WHITE SANDS SHOPPING CENTRE SINGAPORE 518457",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "pasir_ris_central_hawker_centre_bengawan_solo_pte_ltd_p494",
     brandId: "pasir_ris_central_hawker_centre_bengawan_solo_pte_ltd",
     label: "Pasir Ris Central Hawker Centre",
@@ -6492,47 +6132,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "jurong_west_hawker_centre_a_esa_binte_ismail_p609",
-    brandId: "jurong_west_hawker_centre_a_esa_binte_ismail",
-    label: "Jurong West Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Hawker Centre",
-    address: "20 JURONG WEST STREET 61 FRONTIER PRIMARY SCHOOL SINGAPORE 648200",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "SW11B81X004",
-      licenseeName: "A'ESA BINTE ISMAIL",
-      premisesAddress: "20 JURONG WEST STREET 61 FRONTIER PRIMARY SCHOOL SINGAPORE 648200",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "jurong_west_hawker_centre_aw_siow_ping_audrey_p610",
-    brandId: "jurong_west_hawker_centre_aw_siow_ping_audrey",
-    label: "Jurong West Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Hawker Centre",
-    address: "30 JURONG WEST STREET 61 JURONG WEST PRIMARY SCHOOL SINGAPORE 648368",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "C99071P005",
-      licenseeName: "AW SIOW PING,AUDREY",
-      premisesAddress: "30 JURONG WEST STREET 61 JURONG WEST PRIMARY SCHOOL SINGAPORE 648368",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "jurong_west_hawker_centre_cold_storage_singapore_1983_pte_ltd_p611",
     brandId: "jurong_west_hawker_centre_cold_storage_singapore_1983_pte_ltd",
     label: "Jurong West Hawker Centre",
@@ -6572,47 +6172,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "jurong_west_hawker_centre_jamilah_binte_rasul_p613",
-    brandId: "jurong_west_hawker_centre_jamilah_binte_rasul",
-    label: "Jurong West Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Hawker Centre",
-    address: "30 JURONG WEST STREET 61 JURONG WEST PRIMARY SCHOOL SINGAPORE 648368",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "C99071P003",
-      licenseeName: "JAMILAH BINTE RASUL",
-      premisesAddress: "30 JURONG WEST STREET 61 JURONG WEST PRIMARY SCHOOL SINGAPORE 648368",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "jurong_west_hawker_centre_jiang_huihong_p614",
-    brandId: "jurong_west_hawker_centre_jiang_huihong",
-    label: "Jurong West Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Jurong West Hawker Centre",
-    address: "20 JURONG WEST STREET 61 FRONTIER PRIMARY SCHOOL SINGAPORE 648200",
-    postal: null,
-    lat: 1.348,
-    lng: 103.7073,
-    sfa: {
-      licenceNumber: "SW11B81X006",
-      licenseeName: "JIANG HUIHONG",
-      premisesAddress: "20 JURONG WEST STREET 61 FRONTIER PRIMARY SCHOOL SINGAPORE 648200",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd_p616",
     brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd",
     label: "Yuhua Market and Hawker Centre",
@@ -6812,27 +6372,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "margaret_drive_hawker_centre_bibjan_bte_ali_zaman_p639",
-    brandId: "margaret_drive_hawker_centre_bibjan_bte_ali_zaman",
-    label: "Margaret Drive Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Margaret Drive Hawker Centre",
-    address: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-    postal: null,
-    lat: 1.2931,
-    lng: 103.8124,
-    sfa: {
-      licenceNumber: "W85265K007",
-      licenseeName: "BIBJAN BTE ALI ZAMAN",
-      premisesAddress: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "margaret_drive_hawker_centre_cafe_galilee_pte_ltd_p640",
     brandId: "margaret_drive_hawker_centre_cafe_galilee_pte_ltd",
     label: "Margaret Drive Hawker Centre",
@@ -6852,67 +6392,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "margaret_drive_hawker_centre_chan_tai_seng_p641",
-    brandId: "margaret_drive_hawker_centre_chan_tai_seng",
-    label: "Margaret Drive Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Margaret Drive Hawker Centre",
-    address: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-    postal: null,
-    lat: 1.2931,
-    lng: 103.8124,
-    sfa: {
-      licenceNumber: "W85265K001",
-      licenseeName: "CHAN TAI SENG",
-      premisesAddress: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "margaret_drive_hawker_centre_cheong_siew_kum_p642",
-    brandId: "margaret_drive_hawker_centre_cheong_siew_kum",
-    label: "Margaret Drive Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Margaret Drive Hawker Centre",
-    address: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-    postal: null,
-    lat: 1.2931,
-    lng: 103.8124,
-    sfa: {
-      licenceNumber: "W85265K008",
-      licenseeName: "CHEONG SIEW KUM",
-      premisesAddress: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "margaret_drive_hawker_centre_chiang_meng_tye_p643",
-    brandId: "margaret_drive_hawker_centre_chiang_meng_tye",
-    label: "Margaret Drive Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Margaret Drive Hawker Centre",
-    address: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-    postal: null,
-    lat: 1.2931,
-    lng: 103.8124,
-    sfa: {
-      licenceNumber: "W85265K004",
-      licenseeName: "CHIANG MENG TYE",
-      premisesAddress: "310 MARGARET DRIVE QUEENSTOWN PRIMARY SCHOOL SINGAPORE 149303",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "margaret_drive_hawker_centre_goh_hin_chiang_p644",
     brandId: "margaret_drive_hawker_centre_goh_hin_chiang",
     label: "Margaret Drive Hawker Centre",
@@ -81294,7 +80774,372 @@ export const PREMISES_12 = [
     lng: 103.731703838354,
     sfa: null,
     source: "web_research"
-  }
+  },
+  {
+    id: "pasir_ris_central_hawker_centre_wild_olives_p1",
+    brandId: "pasir_ris_central_hawker_centre_wild_olives",
+    label: "Pasir Ris Central Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Ris Central Hawker Centre",
+    address: "110 Pasir Ris Central, Singapore 519641",
+    postal: "519641",
+    lat: 1.37347252064326,
+    lng: 103.951571342467,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_ris_central_hawker_centre_prawnaholic_p1",
+    brandId: "pasir_ris_central_hawker_centre_prawnaholic",
+    label: "Pasir Ris Central Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Ris Central Hawker Centre",
+    address: "110 Pasir Ris Central, Singapore 519641",
+    postal: "519641",
+    lat: 1.37347252064326,
+    lng: 103.951571342467,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_ris_central_hawker_centre_ayam_penyet_p1",
+    brandId: "pasir_ris_central_hawker_centre_ayam_penyet",
+    label: "Pasir Ris Central Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Ris Central Hawker Centre",
+    address: "110 Pasir Ris Central, Singapore 519641",
+    postal: "519641",
+    lat: 1.37347252064326,
+    lng: 103.951571342467,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_ris_central_hawker_centre_siap_lah_p1",
+    brandId: "pasir_ris_central_hawker_centre_siap_lah",
+    label: "Pasir Ris Central Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Ris Central Hawker Centre",
+    address: "110 Pasir Ris Central, Singapore 519641",
+    postal: "519641",
+    lat: 1.37347252064326,
+    lng: 103.951571342467,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_ris_central_hawker_centre_daburu_p1",
+    brandId: "pasir_ris_central_hawker_centre_daburu",
+    label: "Pasir Ris Central Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Ris Central Hawker Centre",
+    address: "110 Pasir Ris Central, Singapore 519641",
+    postal: "519641",
+    lat: 1.37347252064326,
+    lng: 103.951571342467,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_panjang_hawker_centre_you_xiang_teochew_noodles_p1",
+    brandId: "bukit_panjang_hawker_centre_you_xiang_teochew_noodles",
+    label: "Bukit Panjang Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Panjang Hawker Centre",
+    address: "2 Bukit Panjang Ring Road, Singapore 679947",
+    postal: "679947",
+    lat: 1.37759742308947,
+    lng: 103.772491526747,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_panjang_hawker_centre_zai_lais_lor_mee_p1",
+    brandId: "bukit_panjang_hawker_centre_zai_lais_lor_mee",
+    label: "Bukit Panjang Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Panjang Hawker Centre",
+    address: "2 Bukit Panjang Ring Road, Singapore 679947",
+    postal: "679947",
+    lat: 1.37759742308947,
+    lng: 103.772491526747,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_panjang_hawker_centre_like_pudding_p1",
+    brandId: "bukit_panjang_hawker_centre_like_pudding",
+    label: "Bukit Panjang Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Panjang Hawker Centre",
+    address: "2 Bukit Panjang Ring Road, Singapore 679947",
+    postal: "679947",
+    lat: 1.37759742308947,
+    lng: 103.772491526747,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "margaret_drive_hawker_centre_hakka_thunder_tea_p1",
+    brandId: "margaret_drive_hawker_centre_hakka_thunder_tea",
+    label: "Margaret Drive Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Margaret Drive Hawker Centre",
+    address: "38A Margaret Drive, Singapore 142038",
+    postal: "142038",
+    lat: 1.29742585102203,
+    lng: 103.804710471304,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "margaret_drive_hawker_centre_tong_kee_chicken_rice_p1",
+    brandId: "margaret_drive_hawker_centre_tong_kee_chicken_rice",
+    label: "Margaret Drive Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Margaret Drive Hawker Centre",
+    address: "38A Margaret Drive, Singapore 142038",
+    postal: "142038",
+    lat: 1.29742585102203,
+    lng: 103.804710471304,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "margaret_drive_hawker_centre_no_1_western_food_p1",
+    brandId: "margaret_drive_hawker_centre_no_1_western_food",
+    label: "Margaret Drive Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Margaret Drive Hawker Centre",
+    address: "38A Margaret Drive, Singapore 142038",
+    postal: "142038",
+    lat: 1.29742585102203,
+    lng: 103.804710471304,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "margaret_drive_hawker_centre_queenstown_lontong_p1",
+    brandId: "margaret_drive_hawker_centre_queenstown_lontong",
+    label: "Margaret Drive Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Margaret Drive Hawker Centre",
+    address: "38A Margaret Drive, Singapore 142038",
+    postal: "142038",
+    lat: 1.29742585102203,
+    lng: 103.804710471304,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_panjang_food_centre_alan_banana_leaves_bbq_seafood_p1",
+    brandId: "pasir_panjang_food_centre_alan_banana_leaves_bbq_seafood",
+    label: "Pasir Panjang Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Panjang Food Centre",
+    address: "121 Pasir Panjang Road, Singapore 118543",
+    postal: "118543",
+    lat: 1.27591797439292,
+    lng: 103.791410908656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_panjang_food_centre_yusoff_haji_jalal_satay_p1",
+    brandId: "pasir_panjang_food_centre_yusoff_haji_jalal_satay",
+    label: "Pasir Panjang Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Panjang Food Centre",
+    address: "121 Pasir Panjang Road, Singapore 118543",
+    postal: "118543",
+    lat: 1.27591797439292,
+    lng: 103.791410908656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_panjang_food_centre_ivys_hainanese_herbal_mutton_soup_p1",
+    brandId: "pasir_panjang_food_centre_ivys_hainanese_herbal_mutton_soup",
+    label: "Pasir Panjang Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Panjang Food Centre",
+    address: "121 Pasir Panjang Road, Singapore 118543",
+    postal: "118543",
+    lat: 1.27591797439292,
+    lng: 103.791410908656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_panjang_food_centre_ah_heng_curry_chicken_bee_hoon_mee_p1",
+    brandId: "pasir_panjang_food_centre_ah_heng_curry_chicken_bee_hoon_mee",
+    label: "Pasir Panjang Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Panjang Food Centre",
+    address: "121 Pasir Panjang Road, Singapore 118543",
+    postal: "118543",
+    lat: 1.27591797439292,
+    lng: 103.791410908656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_panjang_food_centre_lao_liang_pork_porridge_p1",
+    brandId: "pasir_panjang_food_centre_lao_liang_pork_porridge",
+    label: "Pasir Panjang Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Panjang Food Centre",
+    address: "121 Pasir Panjang Road, Singapore 118543",
+    postal: "118543",
+    lat: 1.27591797439292,
+    lng: 103.791410908656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "pasir_panjang_food_centre_al_ehsan_nasi_padang_p1",
+    brandId: "pasir_panjang_food_centre_al_ehsan_nasi_padang",
+    label: "Pasir Panjang Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Pasir Panjang Food Centre",
+    address: "121 Pasir Panjang Road, Singapore 118543",
+    postal: "118543",
+    lat: 1.27591797439292,
+    lng: 103.791410908656,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_hawker_centre_t_bar_p1",
+    brandId: "jurong_west_hawker_centre_t_bar",
+    label: "Jurong West Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Hawker Centre",
+    address: "50 Jurong West Street 61, Singapore 648202",
+    postal: "648202",
+    lat: 1.34126410393954,
+    lng: 103.697241852189,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_hawker_centre_changi_village_fried_hokkien_mee_p1",
+    brandId: "jurong_west_hawker_centre_changi_village_fried_hokkien_mee",
+    label: "Jurong West Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Hawker Centre",
+    address: "50 Jurong West Street 61, Singapore 648202",
+    postal: "648202",
+    lat: 1.34126410393954,
+    lng: 103.697241852189,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_hawker_centre_munchi_pancakes_p1",
+    brandId: "jurong_west_hawker_centre_munchi_pancakes",
+    label: "Jurong West Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Hawker Centre",
+    address: "50 Jurong West Street 61, Singapore 648202",
+    postal: "648202",
+    lat: 1.34126410393954,
+    lng: 103.697241852189,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "jurong_west_hawker_centre_nam_wah_heng_fish_head_steamboat_p1",
+    brandId: "jurong_west_hawker_centre_nam_wah_heng_fish_head_steamboat",
+    label: "Jurong West Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Jurong West Hawker Centre",
+    address: "50 Jurong West Street 61, Singapore 648202",
+    postal: "648202",
+    lat: 1.34126410393954,
+    lng: 103.697241852189,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_merah_central_food_centre_day_night_fried_kway_teow_p1",
+    brandId: "bukit_merah_central_food_centre_day_night_fried_kway_teow",
+    label: "Bukit Merah Central Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Merah Central Food Centre",
+    address: "163 Bukit Merah Central, Singapore 150163",
+    postal: "150163",
+    lat: 1.2828,
+    lng: 103.8224,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_merah_central_food_centre_nan_heng_hainanese_boneless_chicken_rice_p1",
+    brandId: "bukit_merah_central_food_centre_nan_heng_hainanese_boneless_chicken_rice",
+    label: "Bukit Merah Central Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Merah Central Food Centre",
+    address: "163 Bukit Merah Central, #02-28, Singapore 150163",
+    postal: "150163",
+    lat: 1.2828,
+    lng: 103.8224,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bukit Merah Central Food Centre Stall No 02-28",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bukit_merah_central_food_centre_guan_huat_yong_tau_foo_p1",
+    brandId: "bukit_merah_central_food_centre_guan_huat_yong_tau_foo",
+    label: "Bukit Merah Central Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Merah Central Food Centre",
+    address: "163 Bukit Merah Central, Singapore 150163",
+    postal: "150163",
+    lat: 1.2828,
+    lng: 103.8224,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_merah_central_food_centre_seng_kee_p1",
+    brandId: "bukit_merah_central_food_centre_seng_kee",
+    label: "Bukit Merah Central Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Merah Central Food Centre",
+    address: "163 Bukit Merah Central, Singapore 150163",
+    postal: "150163",
+    lat: 1.2828,
+    lng: 103.8224,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bukit_merah_central_food_centre_lai_hin_fish_ball_kway_teow_mee_p1",
+    brandId: "bukit_merah_central_food_centre_lai_hin_fish_ball_kway_teow_mee",
+    label: "Bukit Merah Central Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bukit Merah Central Food Centre",
+    address: "163 Bukit Merah Central, #02-11, Singapore 150163",
+    postal: "150163",
+    lat: 1.2828,
+    lng: 103.8224,
+    sfa: {
+      licenceNumber: null,
+      licenseeName: null,
+      premisesAddress: "Bukit Merah Central Food Centre Stall No 02-11",
+      grade: "B",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "web_research_cross_checked_sfa"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12];
