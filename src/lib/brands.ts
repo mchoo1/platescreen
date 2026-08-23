@@ -3308,23 +3308,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-          {
-    id: "teck_ghee_square_commonwealth_retail_concepts_pte_ltd",
-    name: "Commonwealth Retail Concepts Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "commonwealth retail concepts pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-                      {
+                                {
     id: "bedok_south_road_blk_16_goh_poo_huat",
     name: "Goh Poo Huat",
     emoji: "🍜",
@@ -4335,23 +4319,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "mayflower_market_chua_swee_soon",
-    name: "Chua Swee Soon",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chua swee soon"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "mayflower_market_cold_storage_singapore_1983_pte_ltd",
     name: "Cold Storage Singapore (1983) Pte Ltd",
     emoji: "🍜",
@@ -4367,39 +4335,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "mayflower_market_elixir_juice_pte_ltd",
-    name: "Elixir Juice Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "elixir juice pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "mayflower_market_gim_tim_pte_ltd",
-    name: "Gim Tim Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "gim tim pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+      {
     id: "mayflower_market_mcdonald_s_restaurants_pte_ltd",
     name: "Mcdonald'S Restaurants Pte. Ltd.",
     emoji: "🍜",
@@ -4415,39 +4351,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "mayflower_market_ng_get_lian",
-    name: "Ng Get Lian",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ng get lian"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ang_mo_kio_628_market_chua_swee_soon",
-    name: "Chua Swee Soon",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chua swee soon"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+      {
     id: "ang_mo_kio_628_market_cold_storage_singapore_1983_pte_ltd",
     name: "Cold Storage Singapore (1983) Pte Ltd",
     emoji: "🍜",
@@ -4463,39 +4367,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "ang_mo_kio_628_market_elixir_juice_pte_ltd",
-    name: "Elixir Juice Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "elixir juice pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ang_mo_kio_628_market_gim_tim_pte_ltd",
-    name: "Gim Tim Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "gim tim pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+      {
     id: "ang_mo_kio_628_market_mcdonald_s_restaurants_pte_ltd",
     name: "Mcdonald'S Restaurants Pte. Ltd.",
     emoji: "🍜",
@@ -4511,23 +4383,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "ang_mo_kio_628_market_ng_get_lian",
-    name: "Ng Get Lian",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ng get lian"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "blk_724_ang_mo_kio_market_alvin_sabai",
     name: "Alvin Sabai",
     emoji: "🍜",
@@ -4687,23 +4543,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-    {
-    id: "kaki_bukit_511_market_and_food_centre_cheers_holdings_2004_pte_ltd",
-    name: "Cheers Holdings (2004) Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cheers holdings (2004) pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+      {
     id: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
     name: "Cold Storage Singapore (1983) Pte Ltd",
     emoji: "🍜",
@@ -4719,87 +4559,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_2",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_elfyzawaty_binte_sulaiman_ibrahim",
-    name: "Elfyzawaty Binte Sulaiman Ibrahim",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "elfyzawaty binte sulaiman ibrahim"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_gptg_management_pte_ltd",
-    name: "Gptg Management Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "gptg management pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_j_c_unity_pte_ltd",
-    name: "J&C Unity Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "j&c unity pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bedok_north_street_3_blk_538_cheers_holdings_2004_pte_ltd",
-    name: "Cheers Holdings (2004) Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cheers holdings (2004) pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+            {
     id: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd",
     name: "Cold Storage Singapore (1983) Pte Ltd",
     emoji: "🍜",
@@ -4815,71 +4575,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd_2",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bedok_north_street_3_blk_538_elfyzawaty_binte_sulaiman_ibrahim",
-    name: "Elfyzawaty Binte Sulaiman Ibrahim",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "elfyzawaty binte sulaiman ibrahim"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bedok_north_street_3_blk_538_gptg_management_pte_ltd",
-    name: "Gptg Management Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "gptg management pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bedok_north_street_3_blk_538_j_c_unity_pte_ltd",
-    name: "J&C Unity Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "j&c unity pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+          {
     id: "85_fengshan_centre_bangkok_street_mookata_pte_ltd",
     name: "Bangkok Street Mookata Pte. Ltd.",
     emoji: "🍜",
@@ -27983,6 +27679,261 @@ export const BRANDS_4 = [
     cuisine: "Modern Singaporean Skewers & Rice Bowls",
     aliases: [
       "kush"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "mayflower_market_barakath_nachiyar",
+    name: "Barakath Nachiyar",
+    emoji: "🫓",
+    type: "hawker",
+    cuisine: "Prata & Fish Curry",
+    aliases: [
+      "barakath nachiyar"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "mayflower_market_ho_ji_fried_hokkien_prawn_noodle",
+    name: "Ho Ji Fried Hokkien Prawn Noodle",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Hokkien Prawn Mee",
+    aliases: [
+      "ho ji fried hokkien prawn noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "mayflower_market_pin_xiang_yuan_mushroom_minced_meat_noodle",
+    name: "Pin Xiang Yuan Mushroom & Minced Meat Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Bak Chor Mee",
+    aliases: [
+      "pin xiang yuan mushroom & minced meat noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "mayflower_market_ang_mo_kio_453_wanton_mee",
+    name: "Ang Mo Kio 453 Wanton Mee",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Wanton Mee",
+    aliases: [
+      "ang mo kio 453 wanton mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ang_mo_kio_628_market_ho_bee_roasted_food",
+    name: "Ho Bee Roasted Food",
+    emoji: "🦆",
+    type: "hawker",
+    cuisine: "Char Siew, Sio Bak & Roast Duck",
+    aliases: [
+      "ho bee roasted food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ang_mo_kio_628_market_rosnahs_family_kitchen",
+    name: "Rosnah's Family Kitchen",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Malay Cuisine",
+    aliases: [
+      "rosnah's family kitchen"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ang_mo_kio_628_market_sumo_fried_hokkien_prawn_mee",
+    name: "Sumo Fried Hokkien Prawn Mee",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Hokkien Prawn Mee",
+    aliases: [
+      "sumo fried hokkien prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ang_mo_kio_628_market_nasi_lemak_67",
+    name: "Nasi Lemak@67",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Nasi Lemak",
+    aliases: [
+      "nasi lemak@67"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "kaki_bukit_511_market_and_food_centre_seng_kee",
+    name: "Seng Kee",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Black Chicken Herbal Soup & Kidney Mee Sua",
+    aliases: [
+      "seng kee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "kaki_bukit_511_market_and_food_centre_chong_pang_satay_bbq_chicken_wings",
+    name: "Chong Pang Satay & BBQ Chicken Wings",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Satay & BBQ Chicken Wings",
+    aliases: [
+      "chong pang satay & bbq chicken wings"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "kaki_bukit_511_market_and_food_centre_tongs_rojak",
+    name: "Tongs Rojak",
+    emoji: "🥗",
+    type: "hawker",
+    cuisine: "Rojak",
+    aliases: [
+      "tongs rojak"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "bedok_north_street_3_blk_538_ah_kiat_wanton_mee",
+    name: "Ah Kiat Wanton Mee",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Wanton Mee",
+    aliases: [
+      "ah kiat wanton mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "bedok_north_street_3_blk_538_yung_sheng_chicken_rice",
+    name: "Yung Sheng Chicken Rice",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Chicken Rice",
+    aliases: [
+      "yung sheng chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "bedok_north_street_3_blk_538_ding_dang_guai",
+    name: "Ding Dang Guai",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Local Snacks",
+    aliases: [
+      "ding dang guai"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "bedok_north_street_3_blk_538_bedok_ah_koon_fish_soup",
+    name: "Bedok Ah Koon Fish Soup",
+    emoji: "🐟",
+    type: "hawker",
+    cuisine: "Fish Soup",
+    aliases: [
+      "bedok ah koon fish soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "teck_ghee_square_steakgrill_steak_house",
+    name: "Steakgrill Steak House",
+    emoji: "🥩",
+    type: "hawker",
+    cuisine: "Grilled Steak & Western Food",
+    aliases: [
+      "steakgrill steak house"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "teck_ghee_square_jie_mei_yong_tau_foo",
+    name: "Jie Mei Yong Tau Foo",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Yong Tau Foo & Laksa",
+    aliases: [
+      "jie mei yong tau foo"
     ],
     dietTags: [],
     priceRange: "$",

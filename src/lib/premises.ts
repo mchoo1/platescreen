@@ -1329,27 +1329,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-          {
-    id: "teck_ghee_square_commonwealth_retail_concepts_pte_ltd_p181",
-    brandId: "teck_ghee_square_commonwealth_retail_concepts_pte_ltd",
-    label: "Teck Ghee Square",
-    locationType: "hawker_centre",
-    locationContext: "Teck Ghee Square",
-    address: "408 ANG MO KIO AVENUE 10 #01-783 TECK GHEE SQUARE SINGAPORE 560408",
-    postal: null,
-    lat: 1.368,
-    lng: 103.8533,
-    sfa: {
-      licenceNumber: "CE16577A000",
-      licenseeName: "COMMONWEALTH RETAIL CONCEPTS PTE. LTD.",
-      premisesAddress: "408 ANG MO KIO AVENUE 10 #01-783 TECK GHEE SQUARE SINGAPORE 560408",
-      grade: "not_applicable",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-                      {
+                                {
     id: "bedok_south_road_blk_16_goh_poo_huat_p192",
     brandId: "bedok_south_road_blk_16_goh_poo_huat",
     label: "Bedok South Road Blk 16",
@@ -2612,36 +2592,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "mayflower_market_chua_swee_soon_p543",
-    brandId: "mayflower_market_chua_swee_soon",
-    label: "Mayflower Market",
-    locationType: "hawker_centre",
-    locationContext: "Mayflower Market",
-    address: "108 ANG MO KIO AVENUE 4 #01-74 SINGAPORE 560108",
-    postal: null,
-    lat: 1.374107570201603,
-    lng: 103.8388639211216,
-    sfa: {
-      licenceNumber: "B78155A007",
-      licenseeName: "CHUA SWEE SOON",
-      premisesAddress: "108 ANG MO KIO AVENUE 4 #01-74 SINGAPORE 560108",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "mayflower_market_cold_storage_singapore_1983_pte_ltd_p544",
     brandId: "mayflower_market_cold_storage_singapore_1983_pte_ltd",
     label: "Mayflower Market",
     locationType: "hawker_centre",
     locationContext: "Mayflower Market",
-    address: "630 ANG MO KIO AVENUE 4 #01-970 SINGAPORE 560630",
-    postal: null,
-    lat: 1.374107570201603,
-    lng: 103.8388639211216,
+    address: "162 Ang Mo Kio Avenue 4, Singapore 560162",
+    postal: "560162",
+    lat: 1.3741075702016,
+    lng: 103.838863921122,
     sfa: {
       licenceNumber: "B00030C000",
       licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
@@ -2652,56 +2612,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "mayflower_market_elixir_juice_pte_ltd_p545",
-    brandId: "mayflower_market_elixir_juice_pte_ltd",
-    label: "Mayflower Market",
-    locationType: "hawker_centre",
-    locationContext: "Mayflower Market",
-    address: "163 ANG MO KIO AVENUE 4 #01-460 MAYFLOWER SHOPPING & FOOD CENTRE (left-side) SINGAPORE 560163",
-    postal: null,
-    lat: 1.374107570201603,
-    lng: 103.8388639211216,
-    sfa: {
-      licenceNumber: "CE14B67E000",
-      licenseeName: "ELIXIR JUICE PTE LTD",
-      premisesAddress: "163 ANG MO KIO AVENUE 4 #01-460 MAYFLOWER SHOPPING & FOOD CENTRE (left-side) SINGAPORE 560163",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "mayflower_market_gim_tim_pte_ltd_p546",
-    brandId: "mayflower_market_gim_tim_pte_ltd",
-    label: "Mayflower Market",
-    locationType: "hawker_centre",
-    locationContext: "Mayflower Market",
-    address: "BLK 157 ANG MO KIO AVENUE 4 #01-546 SINGAPORE 560157",
-    postal: null,
-    lat: 1.374107570201603,
-    lng: 103.8388639211216,
-    sfa: {
-      licenceNumber: "B82070C000",
-      licenseeName: "GIM TIM PTE LTD",
-      premisesAddress: "BLK 157 ANG MO KIO AVENUE 4 #01-546 SINGAPORE 560157",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "mayflower_market_mcdonald_s_restaurants_pte_ltd_p547",
     brandId: "mayflower_market_mcdonald_s_restaurants_pte_ltd",
     label: "Mayflower Market",
     locationType: "hawker_centre",
     locationContext: "Mayflower Market",
-    address: "BLK 163 ANG MO KIO AVENUE 4 #01-438 SINGAPORE 560163",
-    postal: null,
-    lat: 1.374107570201603,
-    lng: 103.8388639211216,
+    address: "162 Ang Mo Kio Avenue 4, Singapore 560162",
+    postal: "560162",
+    lat: 1.3741075702016,
+    lng: 103.838863921122,
     sfa: {
       licenceNumber: "B81055C000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -2712,56 +2632,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "mayflower_market_ng_get_lian_p548",
-    brandId: "mayflower_market_ng_get_lian",
-    label: "Mayflower Market",
-    locationType: "hawker_centre",
-    locationContext: "Mayflower Market",
-    address: "107 ANG MO KIO AVENUE 4 #01-138 SINGAPORE 560107",
-    postal: null,
-    lat: 1.374107570201603,
-    lng: 103.8388639211216,
-    sfa: {
-      licenceNumber: "B78157P006",
-      licenseeName: "NG GET LIAN",
-      premisesAddress: "107 ANG MO KIO AVENUE 4 #01-138 SINGAPORE 560107",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ang_mo_kio_628_market_chua_swee_soon_p549",
-    brandId: "ang_mo_kio_628_market_chua_swee_soon",
-    label: "Ang Mo Kio 628 Market",
-    locationType: "hawker_centre",
-    locationContext: "Ang Mo Kio 628 Market",
-    address: "108 ANG MO KIO AVENUE 4 #01-74 SINGAPORE 560108",
-    postal: null,
-    lat: 1.3742,
-    lng: 103.8435,
-    sfa: {
-      licenceNumber: "B78155A007",
-      licenseeName: "CHUA SWEE SOON",
-      premisesAddress: "108 ANG MO KIO AVENUE 4 #01-74 SINGAPORE 560108",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "ang_mo_kio_628_market_cold_storage_singapore_1983_pte_ltd_p550",
     brandId: "ang_mo_kio_628_market_cold_storage_singapore_1983_pte_ltd",
     label: "Ang Mo Kio 628 Market",
     locationType: "hawker_centre",
     locationContext: "Ang Mo Kio 628 Market",
-    address: "630 ANG MO KIO AVENUE 4 #01-970 SINGAPORE 560630",
-    postal: null,
-    lat: 1.3742,
-    lng: 103.8435,
+    address: "628 Ang Mo Kio Avenue 4, Singapore 560628",
+    postal: "560628",
+    lat: 1.38098761665454,
+    lng: 103.840628087484,
     sfa: {
       licenceNumber: "B00030C000",
       licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
@@ -2772,56 +2652,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "ang_mo_kio_628_market_elixir_juice_pte_ltd_p551",
-    brandId: "ang_mo_kio_628_market_elixir_juice_pte_ltd",
-    label: "Ang Mo Kio 628 Market",
-    locationType: "hawker_centre",
-    locationContext: "Ang Mo Kio 628 Market",
-    address: "163 ANG MO KIO AVENUE 4 #01-460 MAYFLOWER SHOPPING & FOOD CENTRE (left-side) SINGAPORE 560163",
-    postal: null,
-    lat: 1.3742,
-    lng: 103.8435,
-    sfa: {
-      licenceNumber: "CE14B67E000",
-      licenseeName: "ELIXIR JUICE PTE LTD",
-      premisesAddress: "163 ANG MO KIO AVENUE 4 #01-460 MAYFLOWER SHOPPING & FOOD CENTRE (left-side) SINGAPORE 560163",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ang_mo_kio_628_market_gim_tim_pte_ltd_p552",
-    brandId: "ang_mo_kio_628_market_gim_tim_pte_ltd",
-    label: "Ang Mo Kio 628 Market",
-    locationType: "hawker_centre",
-    locationContext: "Ang Mo Kio 628 Market",
-    address: "BLK 157 ANG MO KIO AVENUE 4 #01-546 SINGAPORE 560157",
-    postal: null,
-    lat: 1.3742,
-    lng: 103.8435,
-    sfa: {
-      licenceNumber: "B82070C000",
-      licenseeName: "GIM TIM PTE LTD",
-      premisesAddress: "BLK 157 ANG MO KIO AVENUE 4 #01-546 SINGAPORE 560157",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "ang_mo_kio_628_market_mcdonald_s_restaurants_pte_ltd_p553",
     brandId: "ang_mo_kio_628_market_mcdonald_s_restaurants_pte_ltd",
     label: "Ang Mo Kio 628 Market",
     locationType: "hawker_centre",
     locationContext: "Ang Mo Kio 628 Market",
-    address: "BLK 163 ANG MO KIO AVENUE 4 #01-438 SINGAPORE 560163",
-    postal: null,
-    lat: 1.3742,
-    lng: 103.8435,
+    address: "628 Ang Mo Kio Avenue 4, Singapore 560628",
+    postal: "560628",
+    lat: 1.38098761665454,
+    lng: 103.840628087484,
     sfa: {
       licenceNumber: "B81055C000",
       licenseeName: "MCDONALD'S RESTAURANTS PTE. LTD.",
@@ -2832,27 +2672,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "ang_mo_kio_628_market_ng_get_lian_p554",
-    brandId: "ang_mo_kio_628_market_ng_get_lian",
-    label: "Ang Mo Kio 628 Market",
-    locationType: "hawker_centre",
-    locationContext: "Ang Mo Kio 628 Market",
-    address: "107 ANG MO KIO AVENUE 4 #01-138 SINGAPORE 560107",
-    postal: null,
-    lat: 1.3742,
-    lng: 103.8435,
-    sfa: {
-      licenceNumber: "B78157P006",
-      licenseeName: "NG GET LIAN",
-      premisesAddress: "107 ANG MO KIO AVENUE 4 #01-138 SINGAPORE 560107",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "blk_724_ang_mo_kio_market_alvin_sabai_p555",
     brandId: "blk_724_ang_mo_kio_market_alvin_sabai",
     label: "Blk 724 Ang Mo Kio Market",
@@ -3052,36 +2872,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-    {
-    id: "kaki_bukit_511_market_and_food_centre_cheers_holdings_2004_pte_ltd_p567",
-    brandId: "kaki_bukit_511_market_and_food_centre_cheers_holdings_2004_pte_ltd",
-    label: "Kaki Bukit 511 Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kaki Bukit 511 Market and Food Centre",
-    address: "539 BEDOK NORTH STREET 3 #01-625 SINGAPORE 460539",
-    postal: null,
-    lat: 1.333219932972652,
-    lng: 103.9305815227753,
-    sfa: {
-      licenceNumber: "E00068L000",
-      licenseeName: "CHEERS HOLDINGS (2004) PTE. LTD.",
-      premisesAddress: "539 BEDOK NORTH STREET 3 #01-625 SINGAPORE 460539",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p568",
     brandId: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
     label: "Kaki Bukit 511 Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Kaki Bukit 511 Market and Food Centre",
-    address: "531 BEDOK NORTH STREET 3 #01-706 SINGAPORE 460531",
-    postal: null,
-    lat: 1.333219932972652,
-    lng: 103.9305815227753,
+    address: "511 Bedok North Street 3, Singapore 460511",
+    postal: "460511",
+    lat: 1.33321993297265,
+    lng: 103.930581522776,
     sfa: {
       licenceNumber: "SE10593N000",
       licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
@@ -3092,116 +2892,16 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_2_p569",
-    brandId: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_2",
-    label: "Kaki Bukit 511 Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kaki Bukit 511 Market and Food Centre",
-    address: "510 BEDOK NORTH STREET 3 #01-43 SINGAPORE 460510",
-    postal: null,
-    lat: 1.333219932972652,
-    lng: 103.9305815227753,
-    sfa: {
-      licenceNumber: "E01072L000",
-      licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
-      premisesAddress: "510 BEDOK NORTH STREET 3 #01-43 SINGAPORE 460510",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_elfyzawaty_binte_sulaiman_ibrahim_p570",
-    brandId: "kaki_bukit_511_market_and_food_centre_elfyzawaty_binte_sulaiman_ibrahim",
-    label: "Kaki Bukit 511 Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kaki Bukit 511 Market and Food Centre",
-    address: "510 BEDOK NORTH STREET 3 #01-09 SINGAPORE 460510",
-    postal: null,
-    lat: 1.333219932972652,
-    lng: 103.9305815227753,
-    sfa: {
-      licenceNumber: "NE13O51C000",
-      licenseeName: "ELFYZAWATY BINTE SULAIMAN IBRAHIM",
-      premisesAddress: "510 BEDOK NORTH STREET 3 #01-09 SINGAPORE 460510",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_gptg_management_pte_ltd_p571",
-    brandId: "kaki_bukit_511_market_and_food_centre_gptg_management_pte_ltd",
-    label: "Kaki Bukit 511 Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kaki Bukit 511 Market and Food Centre",
-    address: "537 BEDOK NORTH STREET 3 #01-559 SINGAPORE 460537",
-    postal: null,
-    lat: 1.333219932972652,
-    lng: 103.9305815227753,
-    sfa: {
-      licenceNumber: "SE10271A000",
-      licenseeName: "GPTG MANAGEMENT PTE LTD",
-      premisesAddress: "537 BEDOK NORTH STREET 3 #01-559 SINGAPORE 460537",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "kaki_bukit_511_market_and_food_centre_j_c_unity_pte_ltd_p572",
-    brandId: "kaki_bukit_511_market_and_food_centre_j_c_unity_pte_ltd",
-    label: "Kaki Bukit 511 Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Kaki Bukit 511 Market and Food Centre",
-    address: "531 BEDOK NORTH STREET 3 #01-700 SINGAPORE 460531",
-    postal: null,
-    lat: 1.333219932972652,
-    lng: 103.9305815227753,
-    sfa: {
-      licenceNumber: "SE07279C000",
-      licenseeName: "J&C UNITY PTE. LTD.",
-      premisesAddress: "531 BEDOK NORTH STREET 3 #01-700 SINGAPORE 460531",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_cheers_holdings_2004_pte_ltd_p573",
-    brandId: "bedok_north_street_3_blk_538_cheers_holdings_2004_pte_ltd",
-    label: "Bedok North Street 3 Blk 538",
-    locationType: "hawker_centre",
-    locationContext: "Bedok North Street 3 Blk 538",
-    address: "539 BEDOK NORTH STREET 3 #01-625 SINGAPORE 460539",
-    postal: null,
-    lat: 1.33206727712281,
-    lng: 103.9246213149709,
-    sfa: {
-      licenceNumber: "E00068L000",
-      licenseeName: "CHEERS HOLDINGS (2004) PTE. LTD.",
-      premisesAddress: "539 BEDOK NORTH STREET 3 #01-625 SINGAPORE 460539",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd_p574",
     brandId: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd",
     label: "Bedok North Street 3 Blk 538",
     locationType: "hawker_centre",
     locationContext: "Bedok North Street 3 Blk 538",
-    address: "531 BEDOK NORTH STREET 3 #01-706 SINGAPORE 460531",
-    postal: null,
-    lat: 1.33206727712281,
-    lng: 103.9246213149709,
+    address: "538 Bedok North Street 3, Singapore 460538",
+    postal: "460538",
+    lat: 1.3320672771228,
+    lng: 103.924621314971,
     sfa: {
       licenceNumber: "SE10593N000",
       licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
@@ -3212,87 +2912,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd_2_p575",
-    brandId: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd_2",
-    label: "Bedok North Street 3 Blk 538",
-    locationType: "hawker_centre",
-    locationContext: "Bedok North Street 3 Blk 538",
-    address: "510 BEDOK NORTH STREET 3 #01-43 SINGAPORE 460510",
-    postal: null,
-    lat: 1.33206727712281,
-    lng: 103.9246213149709,
-    sfa: {
-      licenceNumber: "E01072L000",
-      licenseeName: "COLD STORAGE SINGAPORE (1983) PTE LTD",
-      premisesAddress: "510 BEDOK NORTH STREET 3 #01-43 SINGAPORE 460510",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_elfyzawaty_binte_sulaiman_ibrahim_p576",
-    brandId: "bedok_north_street_3_blk_538_elfyzawaty_binte_sulaiman_ibrahim",
-    label: "Bedok North Street 3 Blk 538",
-    locationType: "hawker_centre",
-    locationContext: "Bedok North Street 3 Blk 538",
-    address: "510 BEDOK NORTH STREET 3 #01-09 SINGAPORE 460510",
-    postal: null,
-    lat: 1.33206727712281,
-    lng: 103.9246213149709,
-    sfa: {
-      licenceNumber: "NE13O51C000",
-      licenseeName: "ELFYZAWATY BINTE SULAIMAN IBRAHIM",
-      premisesAddress: "510 BEDOK NORTH STREET 3 #01-09 SINGAPORE 460510",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_gptg_management_pte_ltd_p577",
-    brandId: "bedok_north_street_3_blk_538_gptg_management_pte_ltd",
-    label: "Bedok North Street 3 Blk 538",
-    locationType: "hawker_centre",
-    locationContext: "Bedok North Street 3 Blk 538",
-    address: "537 BEDOK NORTH STREET 3 #01-559 SINGAPORE 460537",
-    postal: null,
-    lat: 1.33206727712281,
-    lng: 103.9246213149709,
-    sfa: {
-      licenceNumber: "SE10271A000",
-      licenseeName: "GPTG MANAGEMENT PTE LTD",
-      premisesAddress: "537 BEDOK NORTH STREET 3 #01-559 SINGAPORE 460537",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_north_street_3_blk_538_j_c_unity_pte_ltd_p578",
-    brandId: "bedok_north_street_3_blk_538_j_c_unity_pte_ltd",
-    label: "Bedok North Street 3 Blk 538",
-    locationType: "hawker_centre",
-    locationContext: "Bedok North Street 3 Blk 538",
-    address: "531 BEDOK NORTH STREET 3 #01-700 SINGAPORE 460531",
-    postal: null,
-    lat: 1.33206727712281,
-    lng: 103.9246213149709,
-    sfa: {
-      licenceNumber: "SE07279C000",
-      licenseeName: "J&C UNITY PTE. LTD.",
-      premisesAddress: "531 BEDOK NORTH STREET 3 #01-700 SINGAPORE 460531",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+          {
     id: "85_fengshan_centre_bangkok_street_mookata_pte_ltd_p579",
     brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd",
     label: "85 Fengshan Centre",
@@ -80247,6 +79867,227 @@ export const PREMISES_12 = [
     postal: "139957",
     lat: 1.3068,
     lng: 103.7672,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mayflower_market_barakath_nachiyar_p1",
+    brandId: "mayflower_market_barakath_nachiyar",
+    label: "Mayflower Market",
+    locationType: "hawker_centre",
+    locationContext: "Mayflower Market",
+    address: "162 Ang Mo Kio Avenue 4, Singapore 560162",
+    postal: "560162",
+    lat: 1.3741075702016,
+    lng: 103.838863921122,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mayflower_market_ho_ji_fried_hokkien_prawn_noodle_p1",
+    brandId: "mayflower_market_ho_ji_fried_hokkien_prawn_noodle",
+    label: "Mayflower Market",
+    locationType: "hawker_centre",
+    locationContext: "Mayflower Market",
+    address: "162 Ang Mo Kio Avenue 4, Singapore 560162",
+    postal: "560162",
+    lat: 1.3741075702016,
+    lng: 103.838863921122,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mayflower_market_pin_xiang_yuan_mushroom_minced_meat_noodle_p1",
+    brandId: "mayflower_market_pin_xiang_yuan_mushroom_minced_meat_noodle",
+    label: "Mayflower Market",
+    locationType: "hawker_centre",
+    locationContext: "Mayflower Market",
+    address: "162 Ang Mo Kio Avenue 4, Singapore 560162",
+    postal: "560162",
+    lat: 1.3741075702016,
+    lng: 103.838863921122,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mayflower_market_ang_mo_kio_453_wanton_mee_p1",
+    brandId: "mayflower_market_ang_mo_kio_453_wanton_mee",
+    label: "Mayflower Market",
+    locationType: "hawker_centre",
+    locationContext: "Mayflower Market",
+    address: "162 Ang Mo Kio Avenue 4, #01-28, Singapore 560162",
+    postal: "560162",
+    lat: 1.3741075702016,
+    lng: 103.838863921122,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "ang_mo_kio_628_market_ho_bee_roasted_food_p1",
+    brandId: "ang_mo_kio_628_market_ho_bee_roasted_food",
+    label: "Ang Mo Kio 628 Market",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio 628 Market",
+    address: "628 Ang Mo Kio Avenue 4, Singapore 560628",
+    postal: "560628",
+    lat: 1.38098761665454,
+    lng: 103.840628087484,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "ang_mo_kio_628_market_rosnahs_family_kitchen_p1",
+    brandId: "ang_mo_kio_628_market_rosnahs_family_kitchen",
+    label: "Ang Mo Kio 628 Market",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio 628 Market",
+    address: "628 Ang Mo Kio Avenue 4, Singapore 560628",
+    postal: "560628",
+    lat: 1.38098761665454,
+    lng: 103.840628087484,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "ang_mo_kio_628_market_sumo_fried_hokkien_prawn_mee_p1",
+    brandId: "ang_mo_kio_628_market_sumo_fried_hokkien_prawn_mee",
+    label: "Ang Mo Kio 628 Market",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio 628 Market",
+    address: "628 Ang Mo Kio Avenue 4, Singapore 560628",
+    postal: "560628",
+    lat: 1.38098761665454,
+    lng: 103.840628087484,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "ang_mo_kio_628_market_nasi_lemak_67_p1",
+    brandId: "ang_mo_kio_628_market_nasi_lemak_67",
+    label: "Ang Mo Kio 628 Market",
+    locationType: "hawker_centre",
+    locationContext: "Ang Mo Kio 628 Market",
+    address: "628 Ang Mo Kio Avenue 4, Singapore 560628",
+    postal: "560628",
+    lat: 1.38098761665454,
+    lng: 103.840628087484,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kaki_bukit_511_market_and_food_centre_seng_kee_p1",
+    brandId: "kaki_bukit_511_market_and_food_centre_seng_kee",
+    label: "Kaki Bukit 511 Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kaki Bukit 511 Market and Food Centre",
+    address: "511 Bedok North Street 3, #01-31/32, Singapore 460511",
+    postal: "460511",
+    lat: 1.33321993297265,
+    lng: 103.930581522776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kaki_bukit_511_market_and_food_centre_chong_pang_satay_bbq_chicken_wings_p1",
+    brandId: "kaki_bukit_511_market_and_food_centre_chong_pang_satay_bbq_chicken_wings",
+    label: "Kaki Bukit 511 Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kaki Bukit 511 Market and Food Centre",
+    address: "511 Bedok North Street 3, #01-05, Singapore 460511",
+    postal: "460511",
+    lat: 1.33321993297265,
+    lng: 103.930581522776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "kaki_bukit_511_market_and_food_centre_tongs_rojak_p1",
+    brandId: "kaki_bukit_511_market_and_food_centre_tongs_rojak",
+    label: "Kaki Bukit 511 Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Kaki Bukit 511 Market and Food Centre",
+    address: "511 Bedok North Street 3, Singapore 460511",
+    postal: "460511",
+    lat: 1.33321993297265,
+    lng: 103.930581522776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_north_street_3_blk_538_ah_kiat_wanton_mee_p1",
+    brandId: "bedok_north_street_3_blk_538_ah_kiat_wanton_mee",
+    label: "Bedok North Street 3 Blk 538",
+    locationType: "hawker_centre",
+    locationContext: "Bedok North Street 3 Blk 538",
+    address: "538 Bedok North Street 3, Singapore 460538",
+    postal: "460538",
+    lat: 1.3320672771228,
+    lng: 103.924621314971,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_north_street_3_blk_538_yung_sheng_chicken_rice_p1",
+    brandId: "bedok_north_street_3_blk_538_yung_sheng_chicken_rice",
+    label: "Bedok North Street 3 Blk 538",
+    locationType: "hawker_centre",
+    locationContext: "Bedok North Street 3 Blk 538",
+    address: "538 Bedok North Street 3, Singapore 460538",
+    postal: "460538",
+    lat: 1.3320672771228,
+    lng: 103.924621314971,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_north_street_3_blk_538_ding_dang_guai_p1",
+    brandId: "bedok_north_street_3_blk_538_ding_dang_guai",
+    label: "Bedok North Street 3 Blk 538",
+    locationType: "hawker_centre",
+    locationContext: "Bedok North Street 3 Blk 538",
+    address: "538 Bedok North Street 3, Singapore 460538",
+    postal: "460538",
+    lat: 1.3320672771228,
+    lng: 103.924621314971,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_north_street_3_blk_538_bedok_ah_koon_fish_soup_p1",
+    brandId: "bedok_north_street_3_blk_538_bedok_ah_koon_fish_soup",
+    label: "Bedok North Street 3 Blk 538",
+    locationType: "hawker_centre",
+    locationContext: "Bedok North Street 3 Blk 538",
+    address: "538 Bedok North Street 3, Singapore 460538",
+    postal: "460538",
+    lat: 1.3320672771228,
+    lng: 103.924621314971,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teck_ghee_square_steakgrill_steak_house_p1",
+    brandId: "teck_ghee_square_steakgrill_steak_house",
+    label: "Teck Ghee Square",
+    locationType: "hawker_centre",
+    locationContext: "Teck Ghee Square",
+    address: "408 Ang Mo Kio Avenue 10, #01-783, Singapore 560408",
+    postal: "560408",
+    lat: 1.368,
+    lng: 103.8533,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teck_ghee_square_jie_mei_yong_tau_foo_p1",
+    brandId: "teck_ghee_square_jie_mei_yong_tau_foo",
+    label: "Teck Ghee Square",
+    locationType: "hawker_centre",
+    locationContext: "Teck Ghee Square",
+    address: "408 Ang Mo Kio Avenue 10, #01-26, Singapore 560408",
+    postal: "560408",
+    lat: 1.368,
+    lng: 103.8533,
     sfa: null,
     source: "web_research"
   },
