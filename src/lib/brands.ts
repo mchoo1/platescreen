@@ -4781,102 +4781,6 @@ export const BRANDS_1 = [
     ]
   },
   {
-    id: "shunfu_mart_chan_mun_yew_chen_wenyao",
-    name: "Chan Mun Yew (Chen Wenyao)",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chan mun yew (chen wenyao)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "shunfu_mart_martin_yip_jia_hong",
-    name: "Martin Yip Jia Hong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "martin yip jia hong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "shunfu_mart_neo_cheng_leong",
-    name: "Neo Cheng Leong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "neo cheng leong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "shunfu_mart_ong_ting_kang",
-    name: "Ong Ting Kang",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ong ting kang"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "shunfu_mart_yeo_yoke_gen",
-    name: "Yeo Yoke Gen",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "yeo yoke gen"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "shunfu_mart_abdul_hamid_bin_dollah",
-    name: "Abdul Hamid Bin Dollah",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "abdul hamid bin dollah"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
     id: "bukit_merah_central_food_centre_creme_works_private_limited",
     name: "Creme Works Private Limited",
     emoji: "🍜",
@@ -5431,182 +5335,6 @@ export const BRANDS_2 = [
     cuisine: "Local & Hawker",
     aliases: [
       "chew choh khian"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_chan_sasithon",
-    name: "Chan Sasithon",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chan sasithon"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_cheah_yin_hoi",
-    name: "Cheah Yin Hoi",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cheah yin hoi"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_cheong_siew_heng",
-    name: "Cheong Siew Heng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cheong siew heng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_chok_leng_leng",
-    name: "Chok Leng Leng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chok leng leng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_hong_hee_seng",
-    name: "Hong Hee Seng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "hong hee seng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_69_geylang_bahru_market_and_food_centre_hoon_siew_chiew_angeline_hong_xiuqiu",
-    name: "Hoon Siew Chiew, Angeline @ Hong Xiuqiu, Angeline",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "hoon siew chiew, angeline @ hong xiuqiu, angeline"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_abdul_ghani_bin_abdullah",
-    name: "Abdul Ghani Bin Abdullah",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "abdul ghani bin abdullah"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_chai_kee_bee",
-    name: "Chai Kee Bee",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chai kee bee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_chia_pheng_meng",
-    name: "Chia Pheng Meng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chia pheng meng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_chong_how_siong",
-    name: "Chong How Siong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chong how siong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "blk_17_upper_boon_keng_market_and_food_centre_kalsom_binte_ali_hasnah_binte_ali",
-    name: "Kalsom Binte Ali @Hasnah Binte Ali",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "kalsom binte ali @hasnah binte ali"
     ],
     dietTags: [],
     priceRange: "$",
@@ -7808,22 +7536,6 @@ export const BRANDS_2 = [
     ]
   },
   {
-    id: "yuhua_market_and_hawker_centre_ang_mui_guat",
-    name: "Ang Mui Guat",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ang mui guat"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
     id: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd",
     name: "Boon Tong Kee Pte Ltd",
     emoji: "🍜",
@@ -7831,70 +7543,6 @@ export const BRANDS_2 = [
     cuisine: "Local & Hawker",
     aliases: [
       "boon tong kee pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_hamisah_bte_ahmad",
-    name: "Hamisah Bte Ahmad",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "hamisah bte ahmad"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_loh_ai_gek",
-    name: "Loh Ai Gek",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "loh ai gek"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_loo_poh_kien",
-    name: "Loo Poh Kien",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "loo poh kien"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yuhua_market_and_hawker_centre_low_may_lan",
-    name: "Low May Lan",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "low may lan"
     ],
     dietTags: [],
     priceRange: "$",
@@ -7991,54 +7639,6 @@ export const BRANDS_2 = [
     cuisine: "Local & Hawker",
     aliases: [
       "lee kwang kee groups pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ayer_rajah_market_amat_bin_jantan",
-    name: "Amat Bin Jantan",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "amat bin jantan"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ayer_rajah_market_ang_lye_seng",
-    name: "Ang Lye Seng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ang lye seng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ayer_rajah_market_ang_siam_ngo",
-    name: "Ang Siam Ngo",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ang siam ngo"
     ],
     dietTags: [],
     priceRange: "$",
@@ -27996,6 +27596,426 @@ export const BRANDS_4 = [
     cuisine: "Lor Mee",
     aliases: [
       "ma bo lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ayer_rajah_market_nm_abdul_rahim",
+    name: "N.M. Abdul Rahim",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Mee Goreng",
+    aliases: [
+      "n.m. abdul rahim"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ayer_rajah_market_hong_kong_yummy_soup",
+    name: "Hong Kong Yummy Soup",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Double-Boiled Soup",
+    aliases: [
+      "hong kong yummy soup"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ayer_rajah_market_uncle_noodle",
+    name: "Uncle Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Noodles",
+    aliases: [
+      "uncle noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ayer_rajah_market_tokyo_bbq_stingray",
+    name: "Tokyo BBQ Stingray",
+    emoji: "🐟",
+    type: "hawker",
+    cuisine: "BBQ Stingray",
+    aliases: [
+      "tokyo bbq stingray"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ayer_rajah_market_xin_bao_sheng",
+    name: "Xin Bao Sheng",
+    emoji: "🍢",
+    type: "hawker",
+    cuisine: "Local Snacks",
+    aliases: [
+      "xin bao sheng"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "ayer_rajah_market_wu_ba_ye_fried_hokkien_prawn_mee",
+    name: "Wu Ba Ye Fried Hokkien Prawn Mee",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Hokkien Prawn Mee",
+    aliases: [
+      "wu ba ye fried hokkien prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_17_upper_boon_keng_market_and_food_centre_hock_huat",
+    name: "Hock Huat",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Fried Kway Teow",
+    aliases: [
+      "hock huat"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_17_upper_boon_keng_market_and_food_centre_hjh_yang_chek_nasi_rawon_and_mee_rebus",
+    name: "HJH Yang Chek Nasi Rawon & Mee Rebus",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Nasi Rawon & Mee Rebus",
+    aliases: [
+      "hjh yang chek nasi rawon & mee rebus"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_17_upper_boon_keng_market_and_food_centre_ah_hock_fried_hokkien_mee",
+    name: "Ah Hock Fried Hokkien Mee",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Hokkien Mee",
+    aliases: [
+      "ah hock fried hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_17_upper_boon_keng_market_and_food_centre_uncle_tans_chicken_rice",
+    name: "Uncle Tan's Chicken Rice",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Chicken Rice",
+    aliases: [
+      "uncle tan's chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_17_upper_boon_keng_market_and_food_centre_makan_delights",
+    name: "Makan Delights",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Nasi Lemak",
+    aliases: [
+      "makan delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_69_geylang_bahru_market_and_food_centre_hui_wei_chilli_ban_mian",
+    name: "Hui Wei Chilli Ban Mian",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Chilli Ban Mian",
+    aliases: [
+      "hui wei chilli ban mian"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_69_geylang_bahru_market_and_food_centre_hua_ji_carrot_cake",
+    name: "Hua Ji Carrot Cake",
+    emoji: "🥕",
+    type: "hawker",
+    cuisine: "Fried Carrot Cake",
+    aliases: [
+      "hua ji carrot cake"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_69_geylang_bahru_market_and_food_centre_hong_mei_western_delights",
+    name: "Hong Mei Western Delights",
+    emoji: "🍽️",
+    type: "hawker",
+    cuisine: "Western Food",
+    aliases: [
+      "hong mei western delights"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_69_geylang_bahru_market_and_food_centre_red_stove_fried_prawn_mee",
+    name: "Red Stove Fried Prawn Mee",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Fried Prawn Mee",
+    aliases: [
+      "red stove fried prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_69_geylang_bahru_market_and_food_centre_zainabs_nasi_padang",
+    name: "Zainab's Nasi Padang",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Nasi Padang",
+    aliases: [
+      "zainab's nasi padang"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "blk_69_geylang_bahru_market_and_food_centre_al_amin_prata_corner",
+    name: "Al-Amin Prata Corner",
+    emoji: "🥙",
+    type: "hawker",
+    cuisine: "Prata",
+    aliases: [
+      "al-amin prata corner"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "shunfu_mart_mei_zhen_hakka_delicacies",
+    name: "Mei Zhen Hakka Delicacies",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Hakka Cuisine",
+    aliases: [
+      "mei zhen hakka delicacies"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "shunfu_mart_wak_limah_stall",
+    name: "Wak Limah Stall",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Malay Cuisine",
+    aliases: [
+      "wak limah stall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "shunfu_mart_lai_heng_fried_kuay_teow_and_cooked_food",
+    name: "Lai Heng Fried Kuay Teow & Cooked Food",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Fried Kway Teow",
+    aliases: [
+      "lai heng fried kuay teow & cooked food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "shunfu_mart_quan_ann_prawn_mee",
+    name: "Quan Ann Prawn Mee",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Prawn Mee",
+    aliases: [
+      "quan ann prawn mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "shunfu_mart_chocolat_n_spice",
+    name: "Chocolat N' Spice",
+    emoji: "🧁",
+    type: "hawker",
+    cuisine: "Muffins",
+    aliases: [
+      "chocolat n' spice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "shunfu_mart_heng_heng_bao_bing",
+    name: "Heng Heng Bao Bing",
+    emoji: "🥙",
+    type: "hawker",
+    cuisine: "Popiah",
+    aliases: [
+      "heng heng bao bing"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "yuhua_market_and_hawker_centre_jing_jing_hokkien_mee_and_oyster_omelette",
+    name: "Jing Jing Hokkien Mee & Oyster Omelette",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Hokkien Mee & Oyster Omelette",
+    aliases: [
+      "jing jing hokkien mee & oyster omelette"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "yuhua_market_and_hawker_centre_guang_tai_lor_mee",
+    name: "Guang Tai Lor Mee",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Lor Mee",
+    aliases: [
+      "guang tai lor mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "yuhua_market_and_hawker_centre_lai_heng_handmade_teochew_kueh",
+    name: "Lai Heng Handmade Teochew Kueh",
+    emoji: "🍡",
+    type: "hawker",
+    cuisine: "Teochew Kueh",
+    aliases: [
+      "lai heng handmade teochew kueh"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "yuhua_market_and_hawker_centre_xing_yun_hainanese_chicken_rice",
+    name: "Xing Yun Hainanese Chicken Rice",
+    emoji: "🍗",
+    type: "hawker",
+    cuisine: "Hainanese Chicken Rice",
+    aliases: [
+      "xing yun hainanese chicken rice"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "yuhua_market_and_hawker_centre_hua_xing_bak_kut_teh",
+    name: "Hua Xing Bak Kut Teh",
+    emoji: "🍲",
+    type: "hawker",
+    cuisine: "Bak Kut Teh",
+    aliases: [
+      "hua xing bak kut teh"
     ],
     dietTags: [],
     priceRange: "$",
