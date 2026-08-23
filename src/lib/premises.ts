@@ -1329,87 +1329,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "redhill_food_centre_er_see_liang_p176",
-    brandId: "redhill_food_centre_er_see_liang",
-    label: "Redhill Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Food Centre",
-    address: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-    postal: null,
-    lat: 1.2843,
-    lng: 103.8181,
-    sfa: {
-      licenceNumber: "CE08H52E004",
-      licenseeName: "ER SEE LIANG",
-      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "redhill_food_centre_pang_jee_fong_p178",
-    brandId: "redhill_food_centre_pang_jee_fong",
-    label: "Redhill Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Food Centre",
-    address: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-    postal: null,
-    lat: 1.2843,
-    lng: 103.8181,
-    sfa: {
-      licenceNumber: "CE08H52E006",
-      licenseeName: "PANG JEE FONG",
-      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "redhill_food_centre_siti_azizah_bt_yaakop_p179",
-    brandId: "redhill_food_centre_siti_azizah_bt_yaakop",
-    label: "Redhill Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Food Centre",
-    address: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-    postal: null,
-    lat: 1.2843,
-    lng: 103.8181,
-    sfa: {
-      licenceNumber: "CE08H52E008",
-      licenseeName: "SITI AZIZAH BT YAAKOP",
-      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "redhill_food_centre_wong_yong_khoon_p180",
-    brandId: "redhill_food_centre_wong_yong_khoon",
-    label: "Redhill Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Redhill Food Centre",
-    address: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-    postal: null,
-    lat: 1.2843,
-    lng: 103.8181,
-    sfa: {
-      licenceNumber: "CE08H52E007",
-      licenseeName: "WONG YONG KHOON",
-      premisesAddress: "1001A JALAN BUKIT MERAH REDHILL FOOD CENTRE SINGAPORE 159469",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+          {
     id: "teck_ghee_square_commonwealth_retail_concepts_pte_ltd_p181",
     brandId: "teck_ghee_square_commonwealth_retail_concepts_pte_ltd",
     label: "Teck Ghee Square",
@@ -2209,47 +2129,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "telok_ayer_food_centre_fresh_fire_pte_ltd_p426",
-    brandId: "telok_ayer_food_centre_fresh_fire_pte_ltd",
-    label: "Telok Ayer Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Telok Ayer Food Centre",
-    address: "51 TELOK AYER STREET #01-06A CHINA SQUARE FOOD CENTRE SINGAPORE 048441",
-    postal: null,
-    lat: 1.2797,
-    lng: 103.8474,
-    sfa: {
-      licenceNumber: "CE09454E000",
-      licenseeName: "FRESH FIRE PTE. LTD.",
-      premisesAddress: "51 TELOK AYER STREET #01-06A CHINA SQUARE FOOD CENTRE SINGAPORE 048441",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "telok_ayer_food_centre_goh_chai_seng_p427",
-    brandId: "telok_ayer_food_centre_goh_chai_seng",
-    label: "Telok Ayer Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Telok Ayer Food Centre",
-    address: "51 TELOK AYER STREET #01-04 CHINA SQUARE FOOD CENTRE SINGAPORE 048441",
-    postal: null,
-    lat: 1.2797,
-    lng: 103.8474,
-    sfa: {
-      licenceNumber: "CE09193K000",
-      licenseeName: "GOH CHAI SENG",
-      premisesAddress: "51 TELOK AYER STREET #01-04 CHINA SQUARE FOOD CENTRE SINGAPORE 048441",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "telok_ayer_food_centre_jex_pte_ltd_p428",
     brandId: "telok_ayer_food_centre_jex_pte_ltd",
     label: "Telok Ayer Food Centre",
@@ -2372,107 +2252,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "yuhua_village_market_and_food_centre_goh_puan_huay_p472",
-    brandId: "yuhua_village_market_and_food_centre_goh_puan_huay",
-    label: "Yuhua Village Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yuhua Village Market and Food Centre",
-    address: "158 JURONG EAST STREET 24 YUHUA PRIMARY SCHOOL SINGAPORE 609558",
-    postal: null,
-    lat: 1.3432,
-    lng: 103.7353,
-    sfa: {
-      licenceNumber: "C84310C006",
-      licenseeName: "GOH PUAN HUAY",
-      premisesAddress: "158 JURONG EAST STREET 24 YUHUA PRIMARY SCHOOL SINGAPORE 609558",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_hayiyah_bte_hafid_p473",
-    brandId: "yuhua_village_market_and_food_centre_hayiyah_bte_hafid",
-    label: "Yuhua Village Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yuhua Village Market and Food Centre",
-    address: "158 JURONG EAST STREET 24 YUHUA PRIMARY SCHOOL SINGAPORE 609558",
-    postal: null,
-    lat: 1.3432,
-    lng: 103.7353,
-    sfa: {
-      licenceNumber: "C84310C002",
-      licenseeName: "HAYIYAH BTE HAFID",
-      premisesAddress: "158 JURONG EAST STREET 24 YUHUA PRIMARY SCHOOL SINGAPORE 609558",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_istimaya_isdalrina_p474",
-    brandId: "yuhua_village_market_and_food_centre_istimaya_isdalrina",
-    label: "Yuhua Village Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yuhua Village Market and Food Centre",
-    address: "561 JURONG EAST STREET 24 CREST SECONDARY SCHOOL SINGAPORE 609561",
-    postal: null,
-    lat: 1.3432,
-    lng: 103.7353,
-    sfa: {
-      licenceNumber: "C95193A004",
-      licenseeName: "ISTIMAYA ISDALRINA",
-      premisesAddress: "561 JURONG EAST STREET 24 CREST SECONDARY SCHOOL SINGAPORE 609561",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_jaliha_binte_hodari_p475",
-    brandId: "yuhua_village_market_and_food_centre_jaliha_binte_hodari",
-    label: "Yuhua Village Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yuhua Village Market and Food Centre",
-    address: "158 JURONG EAST STREET 24 YUHUA PRIMARY SCHOOL SINGAPORE 609558",
-    postal: null,
-    lat: 1.3432,
-    lng: 103.7353,
-    sfa: {
-      licenceNumber: "C84310C005",
-      licenseeName: "JALIHA BINTE HODARI",
-      premisesAddress: "158 JURONG EAST STREET 24 YUHUA PRIMARY SCHOOL SINGAPORE 609558",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yuhua_village_market_and_food_centre_koh_bee_lan_p476",
-    brandId: "yuhua_village_market_and_food_centre_koh_bee_lan",
-    label: "Yuhua Village Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yuhua Village Market and Food Centre",
-    address: "561 JURONG EAST STREET 24 CREST SECONDARY SCHOOL SINGAPORE 609561",
-    postal: null,
-    lat: 1.3432,
-    lng: 103.7353,
-    sfa: {
-      licenceNumber: "C95193A003",
-      licenseeName: "KOH BEE LAN",
-      premisesAddress: "561 JURONG EAST STREET 24 CREST SECONDARY SCHOOL SINGAPORE 609561",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-          {
+                    {
     id: "jurong_west_street_52_blk_505_hap_ah_lam_p481",
     brandId: "jurong_west_street_52_blk_505_hap_ah_lam",
     label: "Jurong West Street 52 Blk 505",
@@ -2832,107 +2612,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "toa_payoh_west_market_and_food_court_128_choices_eating_house_pte_ltd_p513",
-    brandId: "toa_payoh_west_market_and_food_court_128_choices_eating_house_pte_ltd",
-    label: "Toa Payoh West Market and Food Court",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh West Market and Food Court",
-    address: "128 LORONG 1 TOA PAYOH #01-811 SINGAPORE 310128",
-    postal: null,
-    lat: 1.338103514521133,
-    lng: 103.8447327267261,
-    sfa: {
-      licenceNumber: "S69023N002",
-      licenseeName: "128 CHOICES EATING HOUSE PTE. LTD.",
-      premisesAddress: "128 LORONG 1 TOA PAYOH #01-811 SINGAPORE 310128",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_8lit_pte_ltd_p514",
-    brandId: "toa_payoh_west_market_and_food_court_8lit_pte_ltd",
-    label: "Toa Payoh West Market and Food Court",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh West Market and Food Court",
-    address: "109 LORONG 1 TOA PAYOH #01-304 (RIGHT SIDE OF UNIT) SINGAPORE 310109",
-    postal: null,
-    lat: 1.338103514521133,
-    lng: 103.8447327267261,
-    sfa: {
-      licenceNumber: "CE10L46K000",
-      licenseeName: "8LIT PTE. LTD.",
-      premisesAddress: "109 LORONG 1 TOA PAYOH #01-304 (RIGHT SIDE OF UNIT) SINGAPORE 310109",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_a_thousand_blessings_pte_ltd_p515",
-    brandId: "toa_payoh_west_market_and_food_court_a_thousand_blessings_pte_ltd",
-    label: "Toa Payoh West Market and Food Court",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh West Market and Food Court",
-    address: "126 LORONG 1 TOA PAYOH #01-551 SINGAPORE 310126",
-    postal: null,
-    lat: 1.338103514521133,
-    lng: 103.8447327267261,
-    sfa: {
-      licenceNumber: "CE14M21L000",
-      licenseeName: "A THOUSAND BLESSINGS PTE. LTD.",
-      premisesAddress: "126 LORONG 1 TOA PAYOH #01-551 SINGAPORE 310126",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_agatha_tan_poh_tin_p516",
-    brandId: "toa_payoh_west_market_and_food_court_agatha_tan_poh_tin",
-    label: "Toa Payoh West Market and Food Court",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh West Market and Food Court",
-    address: "430 LORONG 1 TOA PAYOH MARYMOUNT CONVENT SCHOOL SINGAPORE 319759",
-    postal: null,
-    lat: 1.338103514521133,
-    lng: 103.8447327267261,
-    sfa: {
-      licenceNumber: "S02217C009",
-      licenseeName: "AGATHA TAN POH TIN",
-      premisesAddress: "430 LORONG 1 TOA PAYOH MARYMOUNT CONVENT SCHOOL SINGAPORE 319759",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_west_market_and_food_court_chai_wai_keng_p517",
-    brandId: "toa_payoh_west_market_and_food_court_chai_wai_keng",
-    label: "Toa Payoh West Market and Food Court",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh West Market and Food Court",
-    address: "628 LORONG 1 TOA PAYOH CHIJ PRIMARY SCHOOL (TOA PAYOH) SINGAPORE 319765",
-    postal: null,
-    lat: 1.338103514521133,
-    lng: 103.8447327267261,
-    sfa: {
-      licenceNumber: "CE05740K006",
-      licenseeName: "CHAI WAI KENG",
-      premisesAddress: "628 LORONG 1 TOA PAYOH CHIJ PRIMARY SCHOOL (TOA PAYOH) SINGAPORE 319765",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "toa_payoh_west_market_and_food_court_chang_cheng_food_paradise_pte_ltd_p518",
     brandId: "toa_payoh_west_market_and_food_court_chang_cheng_food_paradise_pte_ltd",
     label: "Toa Payoh West Market and Food Court",
@@ -4272,27 +3952,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "clementi_west_street_2_blk_726_naranjan_singh_s_o_jaswant_singh_p592",
-    brandId: "clementi_west_street_2_blk_726_naranjan_singh_s_o_jaswant_singh",
-    label: "Clementi West Street 2 Blk 726",
-    locationType: "hawker_centre",
-    locationContext: "Clementi West Street 2 Blk 726",
-    address: "721 CLEMENTI WEST STREET 2 #01-138 (#01-138/140) SINGAPORE 120721",
-    postal: null,
-    lat: 1.303810731841269,
-    lng: 103.7642507484353,
-    sfa: {
-      licenceNumber: "SW15D24N000",
-      licenseeName: "NARANJAN SINGH S/O JASWANT SINGH",
-      premisesAddress: "721 CLEMENTI WEST STREET 2 #01-138 (#01-138/140) SINGAPORE 120721",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "clementi_west_street_2_blk_726_new_century_food_house_721_pte_ltd_p593",
     brandId: "clementi_west_street_2_blk_726_new_century_food_house_721_pte_ltd",
     label: "Clementi West Street 2 Blk 726",
@@ -4312,67 +3972,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "clementi_west_street_2_blk_726_cheong_lok_food_marketing_pte_ltd_p594",
-    brandId: "clementi_west_street_2_blk_726_cheong_lok_food_marketing_pte_ltd",
-    label: "Clementi West Street 2 Blk 726",
-    locationType: "hawker_centre",
-    locationContext: "Clementi West Street 2 Blk 726",
-    address: "BLK 727 CLEMENTI WEST STREET 2 #01-294 SINGAPORE 120727",
-    postal: null,
-    lat: 1.303810731841269,
-    lng: 103.7642507484353,
-    sfa: {
-      licenceNumber: "C82237J008",
-      licenseeName: "CHEONG LOK FOOD MARKETING PTE. LTD.",
-      premisesAddress: "BLK 727 CLEMENTI WEST STREET 2 #01-294 SINGAPORE 120727",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_chia_kok_wah_p595",
-    brandId: "clementi_west_street_2_blk_726_chia_kok_wah",
-    label: "Clementi West Street 2 Blk 726",
-    locationType: "hawker_centre",
-    locationContext: "Clementi West Street 2 Blk 726",
-    address: "722 CLEMENTI WEST STREET 2 #01-150 SINGAPORE 120722",
-    postal: null,
-    lat: 1.303810731841269,
-    lng: 103.7642507484353,
-    sfa: {
-      licenceNumber: "C82221B003",
-      licenseeName: "CHIA KOK WAH",
-      premisesAddress: "722 CLEMENTI WEST STREET 2 #01-150 SINGAPORE 120722",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_west_street_2_blk_726_ee_chye_teck_p596",
-    brandId: "clementi_west_street_2_blk_726_ee_chye_teck",
-    label: "Clementi West Street 2 Blk 726",
-    locationType: "hawker_centre",
-    locationContext: "Clementi West Street 2 Blk 726",
-    address: "BLK 727 CLEMENTI WEST STREET 2 #01-294 SINGAPORE 120727",
-    postal: null,
-    lat: 1.303810731841269,
-    lng: 103.7642507484353,
-    sfa: {
-      licenceNumber: "C82237J006",
-      licenseeName: "EE CHYE TECK",
-      premisesAddress: "BLK 727 CLEMENTI WEST STREET 2 #01-294 SINGAPORE 120727",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "kovan_hougang_market_and_food_centre_alpha_subs_pte_ltd_p597",
     brandId: "kovan_hougang_market_and_food_centre_alpha_subs_pte_ltd",
     label: "Kovan Hougang Market and Food Centre",
@@ -80528,6 +80128,279 @@ export const PREMISES_12 = [
     postal: "120448",
     lat: 1.313319693196444,
     lng: 103.7645171928738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_west_street_2_blk_726_xin_xin_famous_fried_oyster_p1",
+    brandId: "clementi_west_street_2_blk_726_xin_xin_famous_fried_oyster",
+    label: "Clementi West Street 2 Blk 726",
+    locationType: "hawker_centre",
+    locationContext: "Clementi West Street 2 Blk 726",
+    address: "726 Clementi West Street 2, #01-187, Singapore 120726",
+    postal: "120726",
+    lat: 1.30381073184127,
+    lng: 103.764250748436,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_west_street_2_blk_726_he_ji_braised_duck_p1",
+    brandId: "clementi_west_street_2_blk_726_he_ji_braised_duck",
+    label: "Clementi West Street 2 Blk 726",
+    locationType: "hawker_centre",
+    locationContext: "Clementi West Street 2 Blk 726",
+    address: "726 Clementi West Street 2, #01-162, Singapore 120726",
+    postal: "120726",
+    lat: 1.30381073184127,
+    lng: 103.764250748436,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_west_street_2_blk_726_slice_fish_p1",
+    brandId: "clementi_west_street_2_blk_726_slice_fish",
+    label: "Clementi West Street 2 Blk 726",
+    locationType: "hawker_centre",
+    locationContext: "Clementi West Street 2 Blk 726",
+    address: "726 Clementi West Street 2, #01-138, Singapore 120726",
+    postal: "120726",
+    lat: 1.30381073184127,
+    lng: 103.764250748436,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_west_street_2_blk_726_gui_ji_p1",
+    brandId: "clementi_west_street_2_blk_726_gui_ji",
+    label: "Clementi West Street 2 Blk 726",
+    locationType: "hawker_centre",
+    locationContext: "Clementi West Street 2 Blk 726",
+    address: "726 Clementi West Street 2, Singapore 120726",
+    postal: "120726",
+    lat: 1.30381073184127,
+    lng: 103.764250748436,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_west_street_2_blk_726_ming_kee_p1",
+    brandId: "clementi_west_street_2_blk_726_ming_kee",
+    label: "Clementi West Street 2 Blk 726",
+    locationType: "hawker_centre",
+    locationContext: "Clementi West Street 2 Blk 726",
+    address: "726 Clementi West Street 2, Singapore 120726",
+    postal: "120726",
+    lat: 1.30381073184127,
+    lng: 103.764250748436,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_west_market_and_food_court_chey_sua_carrot_cake_p1",
+    brandId: "toa_payoh_west_market_and_food_court_chey_sua_carrot_cake",
+    label: "Toa Payoh West Market and Food Court",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh West Market and Food Court",
+    address: "128 Lorong 1 Toa Payoh, Singapore 310128",
+    postal: "310128",
+    lat: 1.338103514521133,
+    lng: 103.8447327267261,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_west_market_and_food_court_come_daily_fried_hokkien_prawn_mee_p1",
+    brandId: "toa_payoh_west_market_and_food_court_come_daily_fried_hokkien_prawn_mee",
+    label: "Toa Payoh West Market and Food Court",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh West Market and Food Court",
+    address: "128 Lorong 1 Toa Payoh, Singapore 310128",
+    postal: "310128",
+    lat: 1.338103514521133,
+    lng: 103.8447327267261,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_west_market_and_food_court_da_cheng_kway_chap_p1",
+    brandId: "toa_payoh_west_market_and_food_court_da_cheng_kway_chap",
+    label: "Toa Payoh West Market and Food Court",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh West Market and Food Court",
+    address: "128 Lorong 1 Toa Payoh, Singapore 310128",
+    postal: "310128",
+    lat: 1.338103514521133,
+    lng: 103.8447327267261,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_west_market_and_food_court_hong_kong_lung_hwa_roast_duck_p1",
+    brandId: "toa_payoh_west_market_and_food_court_hong_kong_lung_hwa_roast_duck",
+    label: "Toa Payoh West Market and Food Court",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh West Market and Food Court",
+    address: "128 Lorong 1 Toa Payoh, Singapore 310128",
+    postal: "310128",
+    lat: 1.338103514521133,
+    lng: 103.8447327267261,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_west_market_and_food_court_jia_le_man_fen_guo_p1",
+    brandId: "toa_payoh_west_market_and_food_court_jia_le_man_fen_guo",
+    label: "Toa Payoh West Market and Food Court",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh West Market and Food Court",
+    address: "128 Lorong 1 Toa Payoh, Singapore 310128",
+    postal: "310128",
+    lat: 1.338103514521133,
+    lng: 103.8447327267261,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "telok_ayer_food_centre_dian_mixian_p1",
+    brandId: "telok_ayer_food_centre_dian_mixian",
+    label: "Telok Ayer Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Telok Ayer Food Centre",
+    address: "51 Telok Ayer Street, Singapore 048441",
+    postal: "048441",
+    lat: 1.2797,
+    lng: 103.8474,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "telok_ayer_food_centre_biang_biang_xian_famous_foods_p1",
+    brandId: "telok_ayer_food_centre_biang_biang_xian_famous_foods",
+    label: "Telok Ayer Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Telok Ayer Food Centre",
+    address: "51 Telok Ayer Street, Singapore 048441",
+    postal: "048441",
+    lat: 1.2797,
+    lng: 103.8474,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_food_centre_bak_kee_teochew_satay_bee_hoon_p1",
+    brandId: "redhill_food_centre_bak_kee_teochew_satay_bee_hoon",
+    label: "Redhill Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Food Centre",
+    address: "1001A Jalan Bukit Merah, Singapore 159469",
+    postal: "159469",
+    lat: 1.2843,
+    lng: 103.8181,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_food_centre_fu_ming_cooked_food_p1",
+    brandId: "redhill_food_centre_fu_ming_cooked_food",
+    label: "Redhill Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Food Centre",
+    address: "1001A Jalan Bukit Merah, Singapore 159469",
+    postal: "159469",
+    lat: 1.2843,
+    lng: 103.8181,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_food_centre_shi_le_yuan_kway_chap_p1",
+    brandId: "redhill_food_centre_shi_le_yuan_kway_chap",
+    label: "Redhill Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Food Centre",
+    address: "1001A Jalan Bukit Merah, Singapore 159469",
+    postal: "159469",
+    lat: 1.2843,
+    lng: 103.8181,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "redhill_food_centre_jia_xiang_mee_siam_p1",
+    brandId: "redhill_food_centre_jia_xiang_mee_siam",
+    label: "Redhill Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Redhill Food Centre",
+    address: "1001A Jalan Bukit Merah, Singapore 159469",
+    postal: "159469",
+    lat: 1.2843,
+    lng: 103.8181,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "yuhua_village_market_and_food_centre_fei_fei_roasted_noodles_p1",
+    brandId: "yuhua_village_market_and_food_centre_fei_fei_roasted_noodles",
+    label: "Yuhua Village Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Yuhua Village Market and Food Centre",
+    address: "252 Jurong East Street 24, Singapore 600252",
+    postal: "600252",
+    lat: 1.34302644263059,
+    lng: 103.7381452862,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "yuhua_village_market_and_food_centre_heng_heng_cooked_food_p1",
+    brandId: "yuhua_village_market_and_food_centre_heng_heng_cooked_food",
+    label: "Yuhua Village Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Yuhua Village Market and Food Centre",
+    address: "252 Jurong East Street 24, Singapore 600252",
+    postal: "600252",
+    lat: 1.34302644263059,
+    lng: 103.7381452862,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "yuhua_village_market_and_food_centre_tommys_wanton_noodle_p1",
+    brandId: "yuhua_village_market_and_food_centre_tommys_wanton_noodle",
+    label: "Yuhua Village Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Yuhua Village Market and Food Centre",
+    address: "252 Jurong East Street 24, Singapore 600252",
+    postal: "600252",
+    lat: 1.34302644263059,
+    lng: 103.7381452862,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "yuhua_village_market_and_food_centre_cais_hor_fun_p1",
+    brandId: "yuhua_village_market_and_food_centre_cais_hor_fun",
+    label: "Yuhua Village Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Yuhua Village Market and Food Centre",
+    address: "252 Jurong East Street 24, Singapore 600252",
+    postal: "600252",
+    lat: 1.34302644263059,
+    lng: 103.7381452862,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "yuhua_village_market_and_food_centre_ron_sheng_fish_head_beehoon_p1",
+    brandId: "yuhua_village_market_and_food_centre_ron_sheng_fish_head_beehoon",
+    label: "Yuhua Village Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Yuhua Village Market and Food Centre",
+    address: "252 Jurong East Street 24, Singapore 600252",
+    postal: "600252",
+    lat: 1.34302644263059,
+    lng: 103.7381452862,
     sfa: null,
     source: "web_research"
   },
