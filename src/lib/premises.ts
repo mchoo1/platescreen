@@ -2309,127 +2309,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-              {
-    id: "bedok_food_centre_abd_latiff_bin_kunji_ahmad_p236",
-    brandId: "bedok_food_centre_abd_latiff_bin_kunji_ahmad",
-    label: "Bedok Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bedok Food Centre",
-    address: "BEDOK FOOD CENTRE Stall No 01-01",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.9271,
-    sfa: {
-      licenceNumber: "BEF0101003",
-      licenseeName: "ABD LATIFF BIN KUNJI AHMAD",
-      premisesAddress: "BEDOK FOOD CENTRE Stall No 01-01",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_food_centre_ee_eng_leong_p237",
-    brandId: "bedok_food_centre_ee_eng_leong",
-    label: "Bedok Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bedok Food Centre",
-    address: "BEDOK FOOD CENTRE Stall No 01-29",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.9271,
-    sfa: {
-      licenceNumber: "BEF0129001",
-      licenseeName: "EE ENG LEONG",
-      premisesAddress: "BEDOK FOOD CENTRE Stall No 01-29",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_food_centre_how_jee_kim_p238",
-    brandId: "bedok_food_centre_how_jee_kim",
-    label: "Bedok Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bedok Food Centre",
-    address: "BEDOK FOOD CENTRE Stall No 01-13",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.9271,
-    sfa: {
-      licenceNumber: "BEF0113002",
-      licenseeName: "HOW JEE KIM",
-      premisesAddress: "BEDOK FOOD CENTRE Stall No 01-13",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_food_centre_lai_kum_yip_lai_kum_yoke_p239",
-    brandId: "bedok_food_centre_lai_kum_yip_lai_kum_yoke",
-    label: "Bedok Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bedok Food Centre",
-    address: "BEDOK FOOD CENTRE Stall No 01-30",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.9271,
-    sfa: {
-      licenceNumber: "BEF0130001",
-      licenseeName: "LAI KUM YIP @ LAI KUM YOKE",
-      premisesAddress: "BEDOK FOOD CENTRE Stall No 01-30",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_food_centre_lim_geok_sim_p240",
-    brandId: "bedok_food_centre_lim_geok_sim",
-    label: "Bedok Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bedok Food Centre",
-    address: "BEDOK FOOD CENTRE Stall No 01-21",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.9271,
-    sfa: {
-      licenceNumber: "BEF0121002",
-      licenseeName: "LIM GEOK SIM",
-      premisesAddress: "BEDOK FOOD CENTRE Stall No 01-21",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bedok_food_centre_lim_poh_hua_p241",
-    brandId: "bedok_food_centre_lim_poh_hua",
-    label: "Bedok Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bedok Food Centre",
-    address: "BEDOK FOOD CENTRE Stall No 01-32",
-    postal: null,
-    lat: 1.3262,
-    lng: 103.9271,
-    sfa: {
-      licenceNumber: "BEF0132001",
-      licenseeName: "LIM POH HUA",
-      premisesAddress: "BEDOK FOOD CENTRE Stall No 01-32",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+                          {
     id: "east_coast_lagoon_food_village_goh_boon_heng_wu_wenxing_p252",
     brandId: "east_coast_lagoon_food_village_goh_boon_heng_wu_wenxing",
     label: "East Coast Lagoon Food Village",
@@ -2869,127 +2749,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "toa_payoh_vista_market_ang_wah_tee_p327",
-    brandId: "toa_payoh_vista_market_ang_wah_tee",
-    label: "Toa Payoh Vista Market",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Vista Market",
-    address: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-    postal: null,
-    lat: 1.3345,
-    lng: 103.8498,
-    sfa: {
-      licenceNumber: "S67026N008",
-      licenseeName: "ANG WAH TEE",
-      premisesAddress: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_vista_market_haslinah_bte_mohd_khair_p328",
-    brandId: "toa_payoh_vista_market_haslinah_bte_mohd_khair",
-    label: "Toa Payoh Vista Market",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Vista Market",
-    address: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-    postal: null,
-    lat: 1.3345,
-    lng: 103.8498,
-    sfa: {
-      licenceNumber: "S67026N002",
-      licenseeName: "HASLINAH BTE MOHD KHAIR",
-      premisesAddress: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_vista_market_lim_chin_kwang_p329",
-    brandId: "toa_payoh_vista_market_lim_chin_kwang",
-    label: "Toa Payoh Vista Market",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Vista Market",
-    address: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-    postal: null,
-    lat: 1.3345,
-    lng: 103.8498,
-    sfa: {
-      licenceNumber: "S67026N004",
-      licenseeName: "LIM CHIN KWANG",
-      premisesAddress: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_vista_market_teo_boon_sing_p330",
-    brandId: "toa_payoh_vista_market_teo_boon_sing",
-    label: "Toa Payoh Vista Market",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Vista Market",
-    address: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-    postal: null,
-    lat: 1.3345,
-    lng: 103.8498,
-    sfa: {
-      licenceNumber: "S67026N005",
-      licenseeName: "TEO BOON SING",
-      premisesAddress: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_vista_market_ng_tee_meng_p331",
-    brandId: "toa_payoh_vista_market_ng_tee_meng",
-    label: "Toa Payoh Vista Market",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Vista Market",
-    address: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-    postal: null,
-    lat: 1.3345,
-    lng: 103.8498,
-    sfa: {
-      licenceNumber: "S67026N001",
-      licenseeName: "NG TEE MENG",
-      premisesAddress: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-      grade: "C",
-      demeritPoints: 10,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "toa_payoh_vista_market_ong_yuan_jun_p332",
-    brandId: "toa_payoh_vista_market_ong_yuan_jun",
-    label: "Toa Payoh Vista Market",
-    locationType: "hawker_centre",
-    locationContext: "Toa Payoh Vista Market",
-    address: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-    postal: null,
-    lat: 1.3345,
-    lng: 103.8498,
-    sfa: {
-      licenceNumber: "S67026N003",
-      licenseeName: "ONG YUAN JUN",
-      premisesAddress: "95 LORONG 4 TOA PAYOH #01-74 SINGAPORE 310095",
-      grade: "not_applicable",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+              {
     id: "bukit_merah_central_food_centre_creme_works_private_limited_p357",
     brandId: "bukit_merah_central_food_centre_creme_works_private_limited",
     label: "Bukit Merah Central Food Centre",
@@ -4032,27 +3792,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "teban_gardens_market_and_food_centre_ang_song_kiau_p502",
-    brandId: "teban_gardens_market_and_food_centre_ang_song_kiau",
-    label: "Teban Gardens Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Teban Gardens Market and Food Centre",
-    address: "BLK 37 TEBAN GARDENS ROAD #01-302 SINGAPORE 600037",
-    postal: null,
-    lat: 1.320831093414238,
-    lng: 103.7427481191047,
-    sfa: {
-      licenceNumber: "C77102K002",
-      licenseeName: "ANG SONG KIAU",
-      premisesAddress: "BLK 37 TEBAN GARDENS ROAD #01-302 SINGAPORE 600037",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd_p503",
     brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd",
     label: "Teban Gardens Market and Food Centre",
@@ -4072,67 +3812,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "teban_gardens_market_and_food_centre_chua_choon_lim_p504",
-    brandId: "teban_gardens_market_and_food_centre_chua_choon_lim",
-    label: "Teban Gardens Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Teban Gardens Market and Food Centre",
-    address: "39 TEBAN GARDENS ROAD #01-325 SINGAPORE 600039",
-    postal: null,
-    lat: 1.320831093414238,
-    lng: 103.7427481191047,
-    sfa: {
-      licenceNumber: "SW04208K000",
-      licenseeName: "CHUA CHOON LIM",
-      premisesAddress: "39 TEBAN GARDENS ROAD #01-325 SINGAPORE 600039",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_ho_yew_keong_p505",
-    brandId: "teban_gardens_market_and_food_centre_ho_yew_keong",
-    label: "Teban Gardens Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Teban Gardens Market and Food Centre",
-    address: "61 TEBAN GARDENS ROAD #02-11 SINGAPORE 600061",
-    postal: null,
-    lat: 1.320831093414238,
-    lng: 103.7427481191047,
-    sfa: {
-      licenceNumber: "C02093X009",
-      licenseeName: "Ho Yew Keong",
-      premisesAddress: "61 TEBAN GARDENS ROAD #02-11 SINGAPORE 600061",
-      grade: "B",
-      demeritPoints: 4,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_koh_loo_peng_p506",
-    brandId: "teban_gardens_market_and_food_centre_koh_loo_peng",
-    label: "Teban Gardens Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Teban Gardens Market and Food Centre",
-    address: "61 TEBAN GARDENS ROAD #02-11 SINGAPORE 600061",
-    postal: null,
-    lat: 1.320831093414238,
-    lng: 103.7427481191047,
-    sfa: {
-      licenceNumber: "C02093X007",
-      licenseeName: "KOH LOO PENG",
-      premisesAddress: "61 TEBAN GARDENS ROAD #02-11 SINGAPORE 600061",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "telok_blangah_market_al_borgo_pte_ltd_p507",
     brandId: "telok_blangah_market_al_borgo_pte_ltd",
     label: "Telok Blangah Market",
@@ -6412,27 +6092,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "anchorvale_village_hawker_centre_chia_cher_khiang_p645",
-    brandId: "anchorvale_village_hawker_centre_chia_cher_khiang",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "308 ANCHORVALE ROAD #01-07 SINGAPORE 540308",
-    postal: null,
-    lat: 1.3978,
-    lng: 103.8925,
-    sfa: {
-      licenceNumber: "S00102X001",
-      licenseeName: "CHIA CHER KHIANG",
-      premisesAddress: "308 ANCHORVALE ROAD #01-07 SINGAPORE 540308",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "anchorvale_village_hawker_centre_commonwealth_retail_concepts_pte_ltd_p646",
     brandId: "anchorvale_village_hawker_centre_commonwealth_retail_concepts_pte_ltd",
     label: "Anchorvale Village Hawker Centre",
@@ -6472,67 +6132,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "anchorvale_village_hawker_centre_ysq_f_b_pte_ltd_p648",
-    brandId: "anchorvale_village_hawker_centre_ysq_f_b_pte_ltd",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "59 ANCHORVALE ROAD #01-06 ANCHORVALE COMMUNITY CLUB SINGAPORE 544965",
-    postal: null,
-    lat: 1.3978,
-    lng: 103.8925,
-    sfa: {
-      licenceNumber: "CE08G55E000",
-      licenseeName: "YSQ F&B Pte Ltd",
-      premisesAddress: "59 ANCHORVALE ROAD #01-06 ANCHORVALE COMMUNITY CLUB SINGAPORE 544965",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_chodee_food_holdings_pte_ltd_p649",
-    brandId: "anchorvale_village_hawker_centre_chodee_food_holdings_pte_ltd",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "308 ANCHORVALE ROAD #01-07 SINGAPORE 540308",
-    postal: null,
-    lat: 1.3978,
-    lng: 103.8925,
-    sfa: {
-      licenceNumber: "S00102X003",
-      licenseeName: "CHODEE FOOD HOLDINGS PTE. LTD.",
-      premisesAddress: "308 ANCHORVALE ROAD #01-07 SINGAPORE 540308",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_goh_sin_keat_p650",
-    brandId: "anchorvale_village_hawker_centre_goh_sin_keat",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "350A ANCHORVALE ROAD #01-01 SINGAPORE 541350",
-    postal: null,
-    lat: 1.3978,
-    lng: 103.8925,
-    sfa: {
-      licenceNumber: "CE15802E005",
-      licenseeName: "GOH SIN KEAT",
-      premisesAddress: "350A ANCHORVALE ROAD #01-01 SINGAPORE 541350",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "one_punggol_hawker_centre_azali_bin_dankarna_p651",
     brandId: "one_punggol_hawker_centre_azali_bin_dankarna",
     label: "One Punggol Hawker Centre",
@@ -6792,127 +6392,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "chong_pang_market_and_food_centre_alvin_sabai_p675",
-    brandId: "chong_pang_market_and_food_centre_alvin_sabai",
-    label: "Chong Pang Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Pang Market and Food Centre",
-    address: "585 YISHUN RING ROAD NORTHBROOKS SECONDARY SCHOOL SINGAPORE 768692",
-    postal: null,
-    lat: 1.4362,
-    lng: 103.8386,
-    sfa: {
-      licenceNumber: "NW12H98L000",
-      licenseeName: "ALVIN SABAI",
-      premisesAddress: "585 YISHUN RING ROAD NORTHBROOKS SECONDARY SCHOOL SINGAPORE 768692",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_alvin_sabai_2_p676",
-    brandId: "chong_pang_market_and_food_centre_alvin_sabai_2",
-    label: "Chong Pang Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Pang Market and Food Centre",
-    address: "3 YISHUN RING ROAD YISHUN JUNIOR COLLEGE SINGAPORE 768675",
-    postal: null,
-    lat: 1.4362,
-    lng: 103.8386,
-    sfa: {
-      licenceNumber: "CE10M80A000",
-      licenseeName: "ALVIN SABAI",
-      premisesAddress: "3 YISHUN RING ROAD YISHUN JUNIOR COLLEGE SINGAPORE 768675",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_ang_siang_kah_p677",
-    brandId: "chong_pang_market_and_food_centre_ang_siang_kah",
-    label: "Chong Pang Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Pang Market and Food Centre",
-    address: "585 YISHUN RING ROAD NORTHBROOKS SECONDARY SCHOOL SINGAPORE 768692",
-    postal: null,
-    lat: 1.4362,
-    lng: 103.8386,
-    sfa: {
-      licenceNumber: "B99091N002",
-      licenseeName: "ANG SIANG KAH",
-      premisesAddress: "585 YISHUN RING ROAD NORTHBROOKS SECONDARY SCHOOL SINGAPORE 768692",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_ang_teng_aik_p678",
-    brandId: "chong_pang_market_and_food_centre_ang_teng_aik",
-    label: "Chong Pang Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Pang Market and Food Centre",
-    address: "3 YISHUN RING ROAD YISHUN JUNIOR COLLEGE SINGAPORE 768675",
-    postal: null,
-    lat: 1.4362,
-    lng: 103.8386,
-    sfa: {
-      licenceNumber: "CE08C43P001",
-      licenseeName: "ANG TENG AIK",
-      premisesAddress: "3 YISHUN RING ROAD YISHUN JUNIOR COLLEGE SINGAPORE 768675",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_azizah_bte_ahmad_p679",
-    brandId: "chong_pang_market_and_food_centre_azizah_bte_ahmad",
-    label: "Chong Pang Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Pang Market and Food Centre",
-    address: "651 YISHUN RING ROAD PEIYING PRIMARY SCHOOL SINGAPORE 768687",
-    postal: null,
-    lat: 1.4362,
-    lng: 103.8386,
-    sfa: {
-      licenceNumber: "B02056L006",
-      licenseeName: "AZIZAH BTE AHMAD",
-      premisesAddress: "651 YISHUN RING ROAD PEIYING PRIMARY SCHOOL SINGAPORE 768687",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "chong_pang_market_and_food_centre_chang_keng_nooi_p680",
-    brandId: "chong_pang_market_and_food_centre_chang_keng_nooi",
-    label: "Chong Pang Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Chong Pang Market and Food Centre",
-    address: "585 YISHUN RING ROAD NORTHBROOKS SECONDARY SCHOOL SINGAPORE 768692",
-    postal: null,
-    lat: 1.4362,
-    lng: 103.8386,
-    sfa: {
-      licenceNumber: "B99091N004",
-      licenseeName: "CHANG KENG NOOI",
-      premisesAddress: "585 YISHUN RING ROAD NORTHBROOKS SECONDARY SCHOOL SINGAPORE 768692",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+              {
     id: "mcd_p681",
     brandId: "mcd",
     label: "360 BALESTIER ROAD",
@@ -81139,6 +80619,370 @@ export const PREMISES_12 = [
       licenceSuspended: false
     },
     source: "web_research_cross_checked_sfa"
+  },
+  {
+    id: "bedok_food_centre_bedok_corner_hokkien_fried_squid_prawn_mee_p1",
+    brandId: "bedok_food_centre_bedok_corner_hokkien_fried_squid_prawn_mee",
+    label: "Bedok Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bedok Food Centre",
+    address: "1 Bedok Road, #01-29, Singapore 469572",
+    postal: "469572",
+    lat: 1.32035015956128,
+    lng: 103.955477598724,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_food_centre_yangs_epok_epok_p1",
+    brandId: "bedok_food_centre_yangs_epok_epok",
+    label: "Bedok Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bedok Food Centre",
+    address: "1 Bedok Road, #01-04, Singapore 469572",
+    postal: "469572",
+    lat: 1.32035015956128,
+    lng: 103.955477598724,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_food_centre_laksamana_p1",
+    brandId: "bedok_food_centre_laksamana",
+    label: "Bedok Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bedok Food Centre",
+    address: "1 Bedok Road, #01-19, Singapore 469572",
+    postal: "469572",
+    lat: 1.32035015956128,
+    lng: 103.955477598724,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_food_centre_persian_tandoor_p1",
+    brandId: "bedok_food_centre_persian_tandoor",
+    label: "Bedok Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bedok Food Centre",
+    address: "1 Bedok Road, #01-18, Singapore 469572",
+    postal: "469572",
+    lat: 1.32035015956128,
+    lng: 103.955477598724,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_food_centre_bamboo_nasi_rendang_p1",
+    brandId: "bedok_food_centre_bamboo_nasi_rendang",
+    label: "Bedok Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bedok Food Centre",
+    address: "1 Bedok Road, #01-01, Singapore 469572",
+    postal: "469572",
+    lat: 1.32035015956128,
+    lng: 103.955477598724,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "bedok_food_centre_noi_kassim_barbeque_p1",
+    brandId: "bedok_food_centre_noi_kassim_barbeque",
+    label: "Bedok Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Bedok Food Centre",
+    address: "1 Bedok Road, #01-27, Singapore 469572",
+    postal: "469572",
+    lat: 1.32035015956128,
+    lng: 103.955477598724,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "anchorvale_village_hawker_centre_pin_wei_hong_kong_style_chee_cheong_fun_p1",
+    brandId: "anchorvale_village_hawker_centre_pin_wei_hong_kong_style_chee_cheong_fun",
+    label: "Anchorvale Village Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Anchorvale Village Hawker Centre",
+    address: "308 Anchorvale Road, Singapore 540308",
+    postal: "540308",
+    lat: 1.3978,
+    lng: 103.8925,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "anchorvale_village_hawker_centre_hakka_leipopo_p1",
+    brandId: "anchorvale_village_hawker_centre_hakka_leipopo",
+    label: "Anchorvale Village Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Anchorvale Village Hawker Centre",
+    address: "308 Anchorvale Road, Singapore 540308",
+    postal: "540308",
+    lat: 1.3978,
+    lng: 103.8925,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "anchorvale_village_hawker_centre_original_simon_road_hokkien_mee_p1",
+    brandId: "anchorvale_village_hawker_centre_original_simon_road_hokkien_mee",
+    label: "Anchorvale Village Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Anchorvale Village Hawker Centre",
+    address: "308 Anchorvale Road, Singapore 540308",
+    postal: "540308",
+    lat: 1.3978,
+    lng: 103.8925,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "anchorvale_village_hawker_centre_tai_hao_chi_roasted_delights_p1",
+    brandId: "anchorvale_village_hawker_centre_tai_hao_chi_roasted_delights",
+    label: "Anchorvale Village Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Anchorvale Village Hawker Centre",
+    address: "308 Anchorvale Road, Singapore 540308",
+    postal: "540308",
+    lat: 1.3978,
+    lng: 103.8925,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "anchorvale_village_hawker_centre_munchi_pancakes_p1",
+    brandId: "anchorvale_village_hawker_centre_munchi_pancakes",
+    label: "Anchorvale Village Hawker Centre",
+    locationType: "hawker_centre",
+    locationContext: "Anchorvale Village Hawker Centre",
+    address: "308 Anchorvale Road, Singapore 540308",
+    postal: "540308",
+    lat: 1.3978,
+    lng: 103.8925,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_pang_market_and_food_centre_chuan_kee_boneless_duck_rice_p1",
+    brandId: "chong_pang_market_and_food_centre_chuan_kee_boneless_duck_rice",
+    label: "Chong Pang Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Pang Market and Food Centre",
+    address: "104 Yishun Ring Road, #01-159, Singapore 760104",
+    postal: "760104",
+    lat: 1.43144775158984,
+    lng: 103.828537671885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_pang_market_and_food_centre_ji_de_lai_hainanese_chicken_rice_p1",
+    brandId: "chong_pang_market_and_food_centre_ji_de_lai_hainanese_chicken_rice",
+    label: "Chong Pang Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Pang Market and Food Centre",
+    address: "104 Yishun Ring Road, Singapore 760104",
+    postal: "760104",
+    lat: 1.43144775158984,
+    lng: 103.828537671885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_pang_market_and_food_centre_xiang_xiang_fishball_noodles_p1",
+    brandId: "chong_pang_market_and_food_centre_xiang_xiang_fishball_noodles",
+    label: "Chong Pang Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Pang Market and Food Centre",
+    address: "104 Yishun Ring Road, Singapore 760104",
+    postal: "760104",
+    lat: 1.43144775158984,
+    lng: 103.828537671885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_pang_market_and_food_centre_old_chong_pang_wu_xiang_xia_bing_p1",
+    brandId: "chong_pang_market_and_food_centre_old_chong_pang_wu_xiang_xia_bing",
+    label: "Chong Pang Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Pang Market and Food Centre",
+    address: "104 Yishun Ring Road, Singapore 760104",
+    postal: "760104",
+    lat: 1.43144775158984,
+    lng: 103.828537671885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_pang_market_and_food_centre_ah_chuan_fried_oyster_omelette_p1",
+    brandId: "chong_pang_market_and_food_centre_ah_chuan_fried_oyster_omelette",
+    label: "Chong Pang Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Pang Market and Food Centre",
+    address: "104 Yishun Ring Road, Singapore 760104",
+    postal: "760104",
+    lat: 1.43144775158984,
+    lng: 103.828537671885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "chong_pang_market_and_food_centre_chong_pang_nasi_lemak_p1",
+    brandId: "chong_pang_market_and_food_centre_chong_pang_nasi_lemak",
+    label: "Chong Pang Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Chong Pang Market and Food Centre",
+    address: "104 Yishun Ring Road, Singapore 760104",
+    postal: "760104",
+    lat: 1.43144775158984,
+    lng: 103.828537671885,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teban_gardens_market_and_food_centre_salbiah_malay_stall_p1",
+    brandId: "teban_gardens_market_and_food_centre_salbiah_malay_stall",
+    label: "Teban Gardens Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Teban Gardens Market and Food Centre",
+    address: "38 Teban Gardens Road, Singapore 600038",
+    postal: "600038",
+    lat: 1.320831093414238,
+    lng: 103.7427481191047,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teban_gardens_market_and_food_centre_poh_poh_roasted_chicken_rice_p1",
+    brandId: "teban_gardens_market_and_food_centre_poh_poh_roasted_chicken_rice",
+    label: "Teban Gardens Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Teban Gardens Market and Food Centre",
+    address: "38 Teban Gardens Road, Singapore 600038",
+    postal: "600038",
+    lat: 1.320831093414238,
+    lng: 103.7427481191047,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teban_gardens_market_and_food_centre_ah_boy_popiah_p1",
+    brandId: "teban_gardens_market_and_food_centre_ah_boy_popiah",
+    label: "Teban Gardens Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Teban Gardens Market and Food Centre",
+    address: "38 Teban Gardens Road, Singapore 600038",
+    postal: "600038",
+    lat: 1.320831093414238,
+    lng: 103.7427481191047,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teban_gardens_market_and_food_centre_tian_wai_tian_fish_soup_p1",
+    brandId: "teban_gardens_market_and_food_centre_tian_wai_tian_fish_soup",
+    label: "Teban Gardens Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Teban Gardens Market and Food Centre",
+    address: "38 Teban Gardens Road, Singapore 600038",
+    postal: "600038",
+    lat: 1.320831093414238,
+    lng: 103.7427481191047,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "teban_gardens_market_and_food_centre_tan_hock_seng_cooked_food_p1",
+    brandId: "teban_gardens_market_and_food_centre_tan_hock_seng_cooked_food",
+    label: "Teban Gardens Market and Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "Teban Gardens Market and Food Centre",
+    address: "38 Teban Gardens Road, Singapore 600038",
+    postal: "600038",
+    lat: 1.320831093414238,
+    lng: 103.7427481191047,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_vista_market_rahmath_cheese_prata_p1",
+    brandId: "toa_payoh_vista_market_rahmath_cheese_prata",
+    label: "Toa Payoh Vista Market",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Vista Market",
+    address: "95 Lorong 4 Toa Payoh, Singapore 310095",
+    postal: "310095",
+    lat: 1.3345,
+    lng: 103.8498,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_vista_market_uncle_kuns_delicacies_p1",
+    brandId: "toa_payoh_vista_market_uncle_kuns_delicacies",
+    label: "Toa Payoh Vista Market",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Vista Market",
+    address: "95 Lorong 4 Toa Payoh, Singapore 310095",
+    postal: "310095",
+    lat: 1.3345,
+    lng: 103.8498,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_vista_market_hua_fong_kee_roasted_duck_p1",
+    brandId: "toa_payoh_vista_market_hua_fong_kee_roasted_duck",
+    label: "Toa Payoh Vista Market",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Vista Market",
+    address: "95 Lorong 4 Toa Payoh, Singapore 310095",
+    postal: "310095",
+    lat: 1.3345,
+    lng: 103.8498,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_vista_market_127_lor_1_fish_porridge_p1",
+    brandId: "toa_payoh_vista_market_127_lor_1_fish_porridge",
+    label: "Toa Payoh Vista Market",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Vista Market",
+    address: "95 Lorong 4 Toa Payoh, Singapore 310095",
+    postal: "310095",
+    lat: 1.3345,
+    lng: 103.8498,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_vista_market_hai_nan_xing_zhou_beef_noodles_p1",
+    brandId: "toa_payoh_vista_market_hai_nan_xing_zhou_beef_noodles",
+    label: "Toa Payoh Vista Market",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Vista Market",
+    address: "95 Lorong 4 Toa Payoh, Singapore 310095",
+    postal: "310095",
+    lat: 1.3345,
+    lng: 103.8498,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "toa_payoh_vista_market_old_long_house_popiah_p1",
+    brandId: "toa_payoh_vista_market_old_long_house_popiah",
+    label: "Toa Payoh Vista Market",
+    locationType: "hawker_centre",
+    locationContext: "Toa Payoh Vista Market",
+    address: "95 Lorong 4 Toa Payoh, Singapore 310095",
+    postal: "310095",
+    lat: 1.3345,
+    lng: 103.8498,
+    sfa: null,
+    source: "web_research"
   },
 ];
 
