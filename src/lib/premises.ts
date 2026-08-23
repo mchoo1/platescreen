@@ -2992,126 +2992,12 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_chevron_singapore_pte_ltd_p585",
-    brandId: "clementi_ave_2_market_cooked_food_centre_chevron_singapore_pte_ltd",
-    label: "Clementi Ave 2 Market/Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 2 Market/Cooked Food Centre",
-    address: "126 CLEMENTI AVENUE 2 CALTEX SERVICE STATION SINGAPORE 129930",
-    postal: null,
-    lat: 1.3131,
-    lng: 103.7637,
-    sfa: {
-      licenceNumber: "C90111X000",
-      licenseeName: "CHEVRON SINGAPORE PTE. LTD.",
-      premisesAddress: "126 CLEMENTI AVENUE 2 CALTEX SERVICE STATION SINGAPORE 129930",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_d_successo_pte_ltd_p586",
-    brandId: "clementi_ave_2_market_cooked_food_centre_d_successo_pte_ltd",
-    label: "Clementi Ave 2 Market/Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 2 Market/Cooked Food Centre",
-    address: "354 CLEMENTI AVENUE 2 PART OF #01-233 CLEMENTI AVENUE 2 SHOPPING CENTRE SINGAPORE 120354",
-    postal: null,
-    lat: 1.3131,
-    lng: 103.7637,
-    sfa: {
-      licenceNumber: "SW13262X000",
-      licenseeName: "D'' SUCCESSO PTE. LTD.",
-      premisesAddress: "354 CLEMENTI AVENUE 2 PART OF #01-233 CLEMENTI AVENUE 2 SHOPPING CENTRE SINGAPORE 120354",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_gateau_pte_ltd_p587",
-    brandId: "clementi_ave_2_market_cooked_food_centre_gateau_pte_ltd",
-    label: "Clementi Ave 2 Market/Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 2 Market/Cooked Food Centre",
-    address: "328 CLEMENTI AVENUE 2 #01-190 SINGAPORE 120328",
-    postal: null,
-    lat: 1.3131,
-    lng: 103.7637,
-    sfa: {
-      licenceNumber: "SW08439X000",
-      licenseeName: "GATEAU PTE. LTD.",
-      premisesAddress: "328 CLEMENTI AVENUE 2 #01-190 SINGAPORE 120328",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_jojerie_pte_ltd_p588",
-    brandId: "clementi_ave_2_market_cooked_food_centre_jojerie_pte_ltd",
-    label: "Clementi Ave 2 Market/Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 2 Market/Cooked Food Centre",
-    address: "352 CLEMENTI AVENUE 2 #01-129 CLEMENTI AVENUE 2 SHOPPING CENTRE SINGAPORE 120352",
-    postal: null,
-    lat: 1.3131,
-    lng: 103.7637,
-    sfa: {
-      licenceNumber: "SW11A35N000",
-      licenseeName: "JOJERIE PTE. LTD.",
-      premisesAddress: "352 CLEMENTI AVENUE 2 #01-129 CLEMENTI AVENUE 2 SHOPPING CENTRE SINGAPORE 120352",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_pang_sook_leng_p589",
-    brandId: "clementi_ave_2_market_cooked_food_centre_pang_sook_leng",
-    label: "Clementi Ave 2 Market/Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 2 Market/Cooked Food Centre",
-    address: "BLK 328 CLEMENTI AVENUE 2 #01-220 SINGAPORE 120328",
-    postal: null,
-    lat: 1.3131,
-    lng: 103.7637,
-    sfa: {
-      licenceNumber: "C78118C008",
-      licenseeName: "PANG SOOK LENG",
-      premisesAddress: "BLK 328 CLEMENTI AVENUE 2 #01-220 SINGAPORE 120328",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_qeetrade_singapore_pte_ltd_p590",
-    brandId: "clementi_ave_2_market_cooked_food_centre_qeetrade_singapore_pte_ltd",
-    label: "Clementi Ave 2 Market/Cooked Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 2 Market/Cooked Food Centre",
-    address: "328 CLEMENTI AVENUE 2 #01-198 SINGAPORE 120328",
-    postal: null,
-    lat: 1.3131,
-    lng: 103.7637,
-    sfa: {
-      licenceNumber: "C02086P000",
-      licenseeName: "QEETRADE (SINGAPORE) PTE. LTD.",
-      premisesAddress: "328 CLEMENTI AVENUE 2 #01-198 SINGAPORE 120328",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
+  
+  
+  
+  
+  
+  
   {
     id: "clementi_west_street_2_blk_726_cold_storage_singapore_1983_pte_ltd_p591",
     brandId: "clementi_west_street_2_blk_726_cold_storage_singapore_1983_pte_ltd",
@@ -80088,6 +79974,84 @@ export const PREMISES_12 = [
     postal: "560408",
     lat: 1.368,
     lng: 103.8533,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_aishah_lee_muslim_food_batchq1",
+    brandId: "clementi_ave_2_market_cooked_food_centre_aishah_lee_muslim_food",
+    label: "353 Clementi Avenue 2 Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "353 Clementi Avenue 2 Market & Food Centre",
+    address: "353 Clementi Avenue 2 #01-60, Singapore 120353",
+    postal: "120353",
+    lat: 1.3141709,
+    lng: 103.7707776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_jalilahs_corner_batchq2",
+    brandId: "clementi_ave_2_market_cooked_food_centre_jalilahs_corner",
+    label: "353 Clementi Avenue 2 Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "353 Clementi Avenue 2 Market & Food Centre",
+    address: "353 Clementi Avenue 2 #01-69, Singapore 120353",
+    postal: "120353",
+    lat: 1.3141709,
+    lng: 103.7707776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_ah_meng_delicious_food_batchq3",
+    brandId: "clementi_ave_2_market_cooked_food_centre_ah_meng_delicious_food",
+    label: "353 Clementi Avenue 2 Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "353 Clementi Avenue 2 Market & Food Centre",
+    address: "353 Clementi Avenue 2 #01-67, Singapore 120353",
+    postal: "120353",
+    lat: 1.3141709,
+    lng: 103.7707776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_gu_zao_wei_braised_duck_rice_noodle_kway_chap_batchq4",
+    brandId: "clementi_ave_2_market_cooked_food_centre_gu_zao_wei_braised_duck_rice_noodle_kway_chap",
+    label: "353 Clementi Avenue 2 Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "353 Clementi Avenue 2 Market & Food Centre",
+    address: "353 Clementi Avenue 2 #01-73, Singapore 120353",
+    postal: "120353",
+    lat: 1.3141709,
+    lng: 103.7707776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_fa_noodle_batchq5",
+    brandId: "clementi_ave_2_market_cooked_food_centre_fa_noodle",
+    label: "353 Clementi Avenue 2 Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "353 Clementi Avenue 2 Market & Food Centre",
+    address: "353 Clementi Avenue 2 #01-65, Singapore 120353",
+    postal: "120353",
+    lat: 1.3141709,
+    lng: 103.7707776,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_chef_wei_hk_cheong_fun_batchq6",
+    brandId: "clementi_ave_2_market_cooked_food_centre_chef_wei_hk_cheong_fun",
+    label: "353 Clementi Avenue 2 Market & Food Centre",
+    locationType: "hawker_centre",
+    locationContext: "353 Clementi Avenue 2 Market & Food Centre",
+    address: "353 Clementi Avenue 2, Singapore 120353",
+    postal: "120353",
+    lat: 1.3141709,
+    lng: 103.7707776,
     sfa: null,
     source: "web_research"
   },

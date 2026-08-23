@@ -4639,102 +4639,12 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_chevron_singapore_pte_ltd",
-    name: "Chevron Singapore Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chevron singapore pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_d_successo_pte_ltd",
-    name: "D'' Successo Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "d'' successo pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_gateau_pte_ltd",
-    name: "Gateau Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "gateau pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_jojerie_pte_ltd",
-    name: "Jojerie Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "jojerie pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_pang_sook_leng",
-    name: "Pang Sook Leng",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "pang sook leng"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "clementi_ave_2_market_cooked_food_centre_qeetrade_singapore_pte_ltd",
-    name: "Qeetrade (Singapore) Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "qeetrade (singapore) pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+  
+  
+  
+  
+  
+  
   {
     id: "clementi_west_street_2_blk_726_cold_storage_singapore_1983_pte_ltd",
     name: "Cold Storage Singapore (1983) Pte Ltd",
@@ -27934,6 +27844,96 @@ export const BRANDS_4 = [
     cuisine: "Yong Tau Foo & Laksa",
     aliases: [
       "jie mei yong tau foo"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_aishah_lee_muslim_food",
+    name: "Aishah Lee Muslim Food",
+    emoji: "🍛",
+    type: "hawker",
+    cuisine: "Malay & Muslim / Nasi Lemak",
+    aliases: [
+      "aishah lee muslim food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_jalilahs_corner",
+    name: "Jalilah's Corner",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Malay & Muslim / Mee Siam & Mee Rebus",
+    aliases: [
+      "jalilah's corner"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_ah_meng_delicious_food",
+    name: "Ah Meng Delicious Food",
+    emoji: "🍤",
+    type: "hawker",
+    cuisine: "Prawn Mee & Fried Hokkien Mee",
+    aliases: [
+      "ah meng delicious food"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_gu_zao_wei_braised_duck_rice_noodle_kway_chap",
+    name: "Gu Zao Wei Braised Duck Rice Noodle Kway Chap",
+    emoji: "🦆",
+    type: "hawker",
+    cuisine: "Braised Duck Rice & Kway Chap",
+    aliases: [
+      "gu zao wei braised duck rice noodle kway chap"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_fa_noodle",
+    name: "Fa Noodle",
+    emoji: "🍜",
+    type: "hawker",
+    cuisine: "Wanton Mee & Mee Pok",
+    aliases: [
+      "fa noodle"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in"
+    ]
+  },
+  {
+    id: "clementi_ave_2_market_cooked_food_centre_chef_wei_hk_cheong_fun",
+    name: "Chef Wei HK Cheong Fun",
+    emoji: "🥟",
+    type: "hawker",
+    cuisine: "Hong Kong Style Cheong Fun",
+    aliases: [
+      "chef wei hk cheong fun"
     ],
     dietTags: [],
     priceRange: "$",
