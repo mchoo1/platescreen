@@ -1309,107 +1309,7 @@ const PREMISES_1 = [
     sfa: null,
     source: "legacy_static_coordinate"
   },
-  {
-    id: "new_upper_changi_road_blk_58_choo_siew_luan_p169",
-    brandId: "new_upper_changi_road_blk_58_choo_siew_luan",
-    label: "New Upper Changi Road Blk 58",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 58",
-    address: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-175",
-    postal: null,
-    lat: 1.324200873340016,
-    lng: 103.9411252775471,
-    sfa: {
-      licenceNumber: "NC101175002",
-      licenseeName: "CHOO SIEW LUAN",
-      premisesAddress: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-175",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_hapsah_binti_mohd_yusof_p170",
-    brandId: "new_upper_changi_road_blk_58_hapsah_binti_mohd_yusof",
-    label: "New Upper Changi Road Blk 58",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 58",
-    address: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-186",
-    postal: null,
-    lat: 1.324200873340016,
-    lng: 103.9411252775471,
-    sfa: {
-      licenceNumber: "NC101186003",
-      licenseeName: "HAPSAH BINTI MOHD YUSOF",
-      premisesAddress: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-186",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_kamaria_binte_sukarjo_p171",
-    brandId: "new_upper_changi_road_blk_58_kamaria_binte_sukarjo",
-    label: "New Upper Changi Road Blk 58",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 58",
-    address: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-183",
-    postal: null,
-    lat: 1.324200873340016,
-    lng: 103.9411252775471,
-    sfa: {
-      licenceNumber: "NC101183002",
-      licenseeName: "KAMARIA BINTE SUKARJO",
-      premisesAddress: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-183",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_koh_kok_ann_p172",
-    brandId: "new_upper_changi_road_blk_58_koh_kok_ann",
-    label: "New Upper Changi Road Blk 58",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 58",
-    address: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-155",
-    postal: null,
-    lat: 1.324200873340016,
-    lng: 103.9411252775471,
-    sfa: {
-      licenceNumber: "NC101155002",
-      licenseeName: "KOH KOK ANN",
-      premisesAddress: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-155",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "new_upper_changi_road_blk_58_lau_kum_sang_p173",
-    brandId: "new_upper_changi_road_blk_58_lau_kum_sang",
-    label: "New Upper Changi Road Blk 58",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 58",
-    address: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-170",
-    postal: null,
-    lat: 1.324200873340016,
-    lng: 103.9411252775471,
-    sfa: {
-      licenceNumber: "NC101170002",
-      licenseeName: "LAU KUM SANG",
-      premisesAddress: "NEW UPPER CHANGI ROAD BLK 58 Stall No 01-170",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "new_upper_changi_road_blk_58_lee_len_tong_p174",
     brandId: "new_upper_changi_road_blk_58_lee_len_tong",
     label: "New Upper Changi Road Blk 58",
@@ -1629,87 +1529,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-              {
-    id: "clementi_ave_3_blk_448_ding_kwong_leung_p212",
-    brandId: "clementi_ave_3_blk_448_ding_kwong_leung",
-    label: "Clementi Ave 3 Blk 448",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 3 Blk 448",
-    address: "CLEMENTI AVE 3 BLK 448 Stall No 01-36",
-    postal: null,
-    lat: 1.313319693196444,
-    lng: 103.7645171928738,
-    sfa: {
-      licenceNumber: "CL30136002",
-      licenseeName: "DING KWONG LEUNG",
-      premisesAddress: "CLEMENTI AVE 3 BLK 448 Stall No 01-36",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_3_blk_448_easah_bte_mageed_p213",
-    brandId: "clementi_ave_3_blk_448_easah_bte_mageed",
-    label: "Clementi Ave 3 Blk 448",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 3 Blk 448",
-    address: "CLEMENTI AVE 3 BLK 448 Stall No 01-04",
-    postal: null,
-    lat: 1.313319693196444,
-    lng: 103.7645171928738,
-    sfa: {
-      licenceNumber: "CL30104001",
-      licenseeName: "EASAH BTE MAGEED",
-      premisesAddress: "CLEMENTI AVE 3 BLK 448 Stall No 01-04",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_3_blk_448_fung_king_san_p214",
-    brandId: "clementi_ave_3_blk_448_fung_king_san",
-    label: "Clementi Ave 3 Blk 448",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 3 Blk 448",
-    address: "CLEMENTI AVE 3 BLK 448 Stall No 01-29",
-    postal: null,
-    lat: 1.313319693196444,
-    lng: 103.7645171928738,
-    sfa: {
-      licenceNumber: "CL30129002",
-      licenseeName: "FUNG KING SAN",
-      premisesAddress: "CLEMENTI AVE 3 BLK 448 Stall No 01-29",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "clementi_ave_3_blk_448_koh_teck_chuan_xu_dechuan_p215",
-    brandId: "clementi_ave_3_blk_448_koh_teck_chuan_xu_dechuan",
-    label: "Clementi Ave 3 Blk 448",
-    locationType: "hawker_centre",
-    locationContext: "Clementi Ave 3 Blk 448",
-    address: "CLEMENTI AVE 3 BLK 448 Stall No 01-08",
-    postal: null,
-    lat: 1.313319693196444,
-    lng: 103.7645171928738,
-    sfa: {
-      licenceNumber: "CL30108002",
-      licenseeName: "KOH TECK CHUAN (XU DECHUAN)",
-      premisesAddress: "CLEMENTI AVE 3 BLK 448 Stall No 01-08",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+                      {
     id: "clementi_ave_3_blk_448_lee_guat_hoon_p216",
     brandId: "clementi_ave_3_blk_448_lee_guat_hoon",
     label: "Clementi Ave 3 Blk 448",
@@ -1749,87 +1569,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "eunos_crescent_blk_4a_goh_ah_loy_goh_kim_ngoh_p218",
-    brandId: "eunos_crescent_blk_4a_goh_ah_loy_goh_kim_ngoh",
-    label: "Eunos Crescent Blk 4A",
-    locationType: "hawker_centre",
-    locationContext: "Eunos Crescent Blk 4A",
-    address: "EUNOS CRESCENT BLK 4A Stall No 01-42",
-    postal: null,
-    lat: 1.320331260100958,
-    lng: 103.9042564784258,
-    sfa: {
-      licenceNumber: "EU10142002",
-      licenseeName: "GOH AH LOY @GOH KIM NGOH",
-      premisesAddress: "EUNOS CRESCENT BLK 4A Stall No 01-42",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "eunos_crescent_blk_4a_sulaiman_s_o_kuriya_abdulla_p219",
-    brandId: "eunos_crescent_blk_4a_sulaiman_s_o_kuriya_abdulla",
-    label: "Eunos Crescent Blk 4A",
-    locationType: "hawker_centre",
-    locationContext: "Eunos Crescent Blk 4A",
-    address: "EUNOS CRESCENT BLK 4A Stall No 01-18",
-    postal: null,
-    lat: 1.320331260100958,
-    lng: 103.9042564784258,
-    sfa: {
-      licenceNumber: "EU10118002",
-      licenseeName: "SULAIMAN S/O KURIYA ABDULLA",
-      premisesAddress: "EUNOS CRESCENT BLK 4A Stall No 01-18",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "eunos_crescent_blk_4a_tan_geok_eng_p220",
-    brandId: "eunos_crescent_blk_4a_tan_geok_eng",
-    label: "Eunos Crescent Blk 4A",
-    locationType: "hawker_centre",
-    locationContext: "Eunos Crescent Blk 4A",
-    address: "EUNOS CRESCENT BLK 4A Stall No 01-21",
-    postal: null,
-    lat: 1.320331260100958,
-    lng: 103.9042564784258,
-    sfa: {
-      licenceNumber: "EU10121002",
-      licenseeName: "TAN GEOK ENG",
-      premisesAddress: "EUNOS CRESCENT BLK 4A Stall No 01-21",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "eunos_crescent_blk_4a_tan_yong_kee_p221",
-    brandId: "eunos_crescent_blk_4a_tan_yong_kee",
-    label: "Eunos Crescent Blk 4A",
-    locationType: "hawker_centre",
-    locationContext: "Eunos Crescent Blk 4A",
-    address: "EUNOS CRESCENT BLK 4A Stall No 01-39",
-    postal: null,
-    lat: 1.320331260100958,
-    lng: 103.9042564784258,
-    sfa: {
-      licenceNumber: "EU10139002",
-      licenseeName: "TAN YONG KEE",
-      premisesAddress: "EUNOS CRESCENT BLK 4A Stall No 01-39",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+          {
     id: "eunos_crescent_blk_4a_teo_kiang_huat_p222",
     brandId: "eunos_crescent_blk_4a_teo_kiang_huat",
     label: "Eunos Crescent Blk 4A",
@@ -2169,47 +1909,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "mei_chin_road_market_ashraf_hamdon_abdelaleim_hussein_p290",
-    brandId: "mei_chin_road_market_ashraf_hamdon_abdelaleim_hussein",
-    label: "Mei Chin Road Market",
-    locationType: "hawker_centre",
-    locationContext: "Mei Chin Road Market",
-    address: "MEI CHIN ROAD BLK 159 Stall No 02-45",
-    postal: null,
-    lat: 1.2731,
-    lng: 103.8105,
-    sfa: {
-      licenceNumber: "MC10245002",
-      licenseeName: "ASHRAF HAMDON ABDELALEIM HUSSEIN",
-      premisesAddress: "MEI CHIN ROAD BLK 159 Stall No 02-45",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "mei_chin_road_market_chan_chee_khuen_p291",
-    brandId: "mei_chin_road_market_chan_chee_khuen",
-    label: "Mei Chin Road Market",
-    locationType: "hawker_centre",
-    locationContext: "Mei Chin Road Market",
-    address: "MEI CHIN ROAD BLK 159 Stall No 02-15",
-    postal: null,
-    lat: 1.2731,
-    lng: 103.8105,
-    sfa: {
-      licenceNumber: "MC10215002",
-      licenseeName: "CHAN CHEE KHUEN",
-      premisesAddress: "MEI CHIN ROAD BLK 159 Stall No 02-15",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+      {
     id: "mei_chin_road_market_goh_jee_tee_p292",
     brandId: "mei_chin_road_market_goh_jee_tee",
     label: "Mei Chin Road Market",
@@ -2249,27 +1949,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "mei_chin_road_market_koh_cheun_meng_p294",
-    brandId: "mei_chin_road_market_koh_cheun_meng",
-    label: "Mei Chin Road Market",
-    locationType: "hawker_centre",
-    locationContext: "Mei Chin Road Market",
-    address: "MEI CHIN ROAD BLK 159 Stall No 02-30",
-    postal: null,
-    lat: 1.2731,
-    lng: 103.8105,
-    sfa: {
-      licenceNumber: "MC10230001",
-      licenseeName: "KOH CHEUN MENG",
-      premisesAddress: "MEI CHIN ROAD BLK 159 Stall No 02-30",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "mei_chin_road_market_lee_kee_yeo_lee_lian_hong_p295",
     brandId: "mei_chin_road_market_lee_kee_yeo_lee_lian_hong",
     label: "Mei Chin Road Market",
@@ -2289,67 +1969,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "new_upper_changi_road_blk_208b_abdul_rahim_bin_noor_mohamed_p296",
-    brandId: "new_upper_changi_road_blk_208b_abdul_rahim_bin_noor_mohamed",
-    label: "New Upper Changi Road Blk 208B",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 208B",
-    address: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-68",
-    postal: null,
-    lat: 1.324782369856288,
-    lng: 103.9305703045582,
-    sfa: {
-      licenceNumber: "NUC0168001",
-      licenseeName: "ABDUL RAHIM BIN NOOR MOHAMED",
-      premisesAddress: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-68",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_akbar_ali_bin_abdul_hameed_p297",
-    brandId: "new_upper_changi_road_blk_208b_akbar_ali_bin_abdul_hameed",
-    label: "New Upper Changi Road Blk 208B",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 208B",
-    address: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-63",
-    postal: null,
-    lat: 1.324782369856288,
-    lng: 103.9305703045582,
-    sfa: {
-      licenceNumber: "NUC0163001",
-      licenseeName: "AKBAR ALI BIN ABDUL HAMEED",
-      premisesAddress: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-63",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "new_upper_changi_road_blk_208b_ang_hwee_choo_p298",
-    brandId: "new_upper_changi_road_blk_208b_ang_hwee_choo",
-    label: "New Upper Changi Road Blk 208B",
-    locationType: "hawker_centre",
-    locationContext: "New Upper Changi Road Blk 208B",
-    address: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-53",
-    postal: null,
-    lat: 1.324782369856288,
-    lng: 103.9305703045582,
-    sfa: {
-      licenceNumber: "NUC0153001",
-      licenseeName: "ANG HWEE CHOO",
-      premisesAddress: "BLK 208B NEW UPPER CHANGI ROAD Stall No 01-53",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+        {
     id: "new_upper_changi_road_blk_208b_au_jiahao_alex_p299",
     brandId: "new_upper_changi_road_blk_208b_au_jiahao_alex",
     label: "New Upper Changi Road Blk 208B",
@@ -2692,107 +2312,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "changi_village_blk_2_and_3_abdul_rahman_bin_ismail_p447",
-    brandId: "changi_village_blk_2_and_3_abdul_rahman_bin_ismail",
-    label: "Changi Village Blk 2 and 3",
-    locationType: "hawker_centre",
-    locationContext: "Changi Village Blk 2 and 3",
-    address: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-30",
-    postal: null,
-    lat: 1.3897,
-    lng: 103.9882,
-    sfa: {
-      licenceNumber: "CV10130003",
-      licenseeName: "ABDUL RAHMAN BIN ISMAIL",
-      premisesAddress: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-30",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "changi_village_blk_2_and_3_ang_nam_seng_p448",
-    brandId: "changi_village_blk_2_and_3_ang_nam_seng",
-    label: "Changi Village Blk 2 and 3",
-    locationType: "hawker_centre",
-    locationContext: "Changi Village Blk 2 and 3",
-    address: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-48",
-    postal: null,
-    lat: 1.3897,
-    lng: 103.9882,
-    sfa: {
-      licenceNumber: "CV10148002",
-      licenseeName: "ANG NAM SENG",
-      premisesAddress: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-48",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "changi_village_blk_2_and_3_athabor_rahaman_p449",
-    brandId: "changi_village_blk_2_and_3_athabor_rahaman",
-    label: "Changi Village Blk 2 and 3",
-    locationType: "hawker_centre",
-    locationContext: "Changi Village Blk 2 and 3",
-    address: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-22",
-    postal: null,
-    lat: 1.3897,
-    lng: 103.9882,
-    sfa: {
-      licenceNumber: "CV10122004",
-      licenseeName: "ATHABOR RAHAMAN",
-      premisesAddress: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-22",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "changi_village_blk_2_and_3_cheng_chang_boo_chiang_chang_boo_p450",
-    brandId: "changi_village_blk_2_and_3_cheng_chang_boo_chiang_chang_boo",
-    label: "Changi Village Blk 2 and 3",
-    locationType: "hawker_centre",
-    locationContext: "Changi Village Blk 2 and 3",
-    address: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-60",
-    postal: null,
-    lat: 1.3897,
-    lng: 103.9882,
-    sfa: {
-      licenceNumber: "CV10160002",
-      licenseeName: "CHENG CHANG BOO @CHIANG CHANG BOO",
-      premisesAddress: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-60",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "changi_village_blk_2_and_3_chong_siew_keong_p451",
-    brandId: "changi_village_blk_2_and_3_chong_siew_keong",
-    label: "Changi Village Blk 2 and 3",
-    locationType: "hawker_centre",
-    locationContext: "Changi Village Blk 2 and 3",
-    address: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-17",
-    postal: null,
-    lat: 1.3897,
-    lng: 103.9882,
-    sfa: {
-      licenceNumber: "CV10117002",
-      licenseeName: "CHONG SIEW KEONG",
-      premisesAddress: "CHANGI VILLAGE ROAD BLK 2 Stall No 01-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "changi_village_blk_2_and_3_eng_kow_muay_p452",
     brandId: "changi_village_blk_2_and_3_eng_kow_muay",
     label: "Changi Village Blk 2 and 3",
@@ -80696,6 +80216,318 @@ export const PREMISES_12 = [
     postal: "370089",
     lat: 1.32357971400582,
     lng: 103.885438842474,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "eunos_crescent_blk_4a_fen_xiang_fried_kway_teow_p1",
+    brandId: "eunos_crescent_blk_4a_fen_xiang_fried_kway_teow",
+    label: "Eunos Crescent Blk 4A",
+    locationType: "hawker_centre",
+    locationContext: "Eunos Crescent Blk 4A",
+    address: "4A Eunos Crescent, #01-21, Singapore 402004",
+    postal: "402004",
+    lat: 1.32033126010096,
+    lng: 103.904256478426,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "eunos_crescent_blk_4a_eng_kee_hainanese_chicken_rice_porridge_p1",
+    brandId: "eunos_crescent_blk_4a_eng_kee_hainanese_chicken_rice_porridge",
+    label: "Eunos Crescent Blk 4A",
+    locationType: "hawker_centre",
+    locationContext: "Eunos Crescent Blk 4A",
+    address: "4A Eunos Crescent, #01-34, Singapore 402004",
+    postal: "402004",
+    lat: 1.32033126010096,
+    lng: 103.904256478426,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "eunos_crescent_blk_4a_chao_yang_fish_ball_noodle_p1",
+    brandId: "eunos_crescent_blk_4a_chao_yang_fish_ball_noodle",
+    label: "Eunos Crescent Blk 4A",
+    locationType: "hawker_centre",
+    locationContext: "Eunos Crescent Blk 4A",
+    address: "4A Eunos Crescent, #01-24, Singapore 402004",
+    postal: "402004",
+    lat: 1.32033126010096,
+    lng: 103.904256478426,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "eunos_crescent_blk_4a_keng_huat_cold_hot_dessert_p1",
+    brandId: "eunos_crescent_blk_4a_keng_huat_cold_hot_dessert",
+    label: "Eunos Crescent Blk 4A",
+    locationType: "hawker_centre",
+    locationContext: "Eunos Crescent Blk 4A",
+    address: "4A Eunos Crescent, Singapore 402004",
+    postal: "402004",
+    lat: 1.32033126010096,
+    lng: 103.904256478426,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_208b_ma_la_xiang_guo_p1",
+    brandId: "new_upper_changi_road_blk_208b_ma_la_xiang_guo",
+    label: "New Upper Changi Road Blk 208B",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 208B",
+    address: "208B New Upper Changi Road, #01-19, Singapore 462208",
+    postal: "462208",
+    lat: 1.32478236985627,
+    lng: 103.930570304559,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_208b_fatt_soon_kueh_p1",
+    brandId: "new_upper_changi_road_blk_208b_fatt_soon_kueh",
+    label: "New Upper Changi Road Blk 208B",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 208B",
+    address: "208B New Upper Changi Road, #01-58, Singapore 462208",
+    postal: "462208",
+    lat: 1.32478236985627,
+    lng: 103.930570304559,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_208b_jimmy_peoples_park_p1",
+    brandId: "new_upper_changi_road_blk_208b_jimmy_peoples_park",
+    label: "New Upper Changi Road Blk 208B",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 208B",
+    address: "208B New Upper Changi Road, #01-47, Singapore 462208",
+    postal: "462208",
+    lat: 1.32478236985627,
+    lng: 103.930570304559,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_58_hup_lee_wanton_mee_p1",
+    brandId: "new_upper_changi_road_blk_58_hup_lee_wanton_mee",
+    label: "New Upper Changi Road Blk 58",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 58",
+    address: "58 New Upper Changi Road, #01-171, Singapore 461058",
+    postal: "461058",
+    lat: 1.32420087334002,
+    lng: 103.941125277547,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_58_old_chai_chee_minced_meat_noodle_p1",
+    brandId: "new_upper_changi_road_blk_58_old_chai_chee_minced_meat_noodle",
+    label: "New Upper Changi Road Blk 58",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 58",
+    address: "58 New Upper Changi Road, #01-155, Singapore 461058",
+    postal: "461058",
+    lat: 1.32420087334002,
+    lng: 103.941125277547,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_58_amys_laksa_p1",
+    brandId: "new_upper_changi_road_blk_58_amys_laksa",
+    label: "New Upper Changi Road Blk 58",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 58",
+    address: "58 New Upper Changi Road, #01-176, Singapore 461058",
+    postal: "461058",
+    lat: 1.32420087334002,
+    lng: 103.941125277547,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_58_original_changi_ten_mile_p1",
+    brandId: "new_upper_changi_road_blk_58_original_changi_ten_mile",
+    label: "New Upper Changi Road Blk 58",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 58",
+    address: "58 New Upper Changi Road, #01-153, Singapore 461058",
+    postal: "461058",
+    lat: 1.32420087334002,
+    lng: 103.941125277547,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "new_upper_changi_road_blk_58_hawker_delights_p1",
+    brandId: "new_upper_changi_road_blk_58_hawker_delights",
+    label: "New Upper Changi Road Blk 58",
+    locationType: "hawker_centre",
+    locationContext: "New Upper Changi Road Blk 58",
+    address: "58 New Upper Changi Road, #01-161, Singapore 461058",
+    postal: "461058",
+    lat: 1.32420087334002,
+    lng: 103.941125277547,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mei_chin_road_market_shi_hui_yuan_hor_fun_specialty_p1",
+    brandId: "mei_chin_road_market_shi_hui_yuan_hor_fun_specialty",
+    label: "Mei Chin Road Market",
+    locationType: "hawker_centre",
+    locationContext: "Mei Chin Road Market",
+    address: "159 Mei Chin Road, Singapore 140159",
+    postal: "140159",
+    lat: 1.29323624443735,
+    lng: 103.802903871889,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mei_chin_road_market_xin_lu_teochew_fishball_noodle_p1",
+    brandId: "mei_chin_road_market_xin_lu_teochew_fishball_noodle",
+    label: "Mei Chin Road Market",
+    locationType: "hawker_centre",
+    locationContext: "Mei Chin Road Market",
+    address: "159 Mei Chin Road, Singapore 140159",
+    postal: "140159",
+    lat: 1.29323624443735,
+    lng: 103.802903871889,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "mei_chin_road_market_hup_kee_teochew_fishball_noodles_p1",
+    brandId: "mei_chin_road_market_hup_kee_teochew_fishball_noodles",
+    label: "Mei Chin Road Market",
+    locationType: "hawker_centre",
+    locationContext: "Mei Chin Road Market",
+    address: "159 Mei Chin Road, Singapore 140159",
+    postal: "140159",
+    lat: 1.29323624443735,
+    lng: 103.802903871889,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "changi_village_blk_2_and_3_weng_kee_original_taste_ipoh_hor_fun_p1",
+    brandId: "changi_village_blk_2_and_3_weng_kee_original_taste_ipoh_hor_fun",
+    label: "Changi Village Blk 2 and 3",
+    locationType: "hawker_centre",
+    locationContext: "Changi Village Blk 2 and 3",
+    address: "2 Changi Village Road, Singapore 500002",
+    postal: "500002",
+    lat: 1.3891516485857,
+    lng: 103.988245247726,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "changi_village_blk_2_and_3_guang_xing_original_taste_fish_head_bee_hoon_p1",
+    brandId: "changi_village_blk_2_and_3_guang_xing_original_taste_fish_head_bee_hoon",
+    label: "Changi Village Blk 2 and 3",
+    locationType: "hawker_centre",
+    locationContext: "Changi Village Blk 2 and 3",
+    address: "2 Changi Village Road, Singapore 500002",
+    postal: "500002",
+    lat: 1.3891516485857,
+    lng: 103.988245247726,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "changi_village_blk_2_and_3_hjh_salbiah_p1",
+    brandId: "changi_village_blk_2_and_3_hjh_salbiah",
+    label: "Changi Village Blk 2 and 3",
+    locationType: "hawker_centre",
+    locationContext: "Changi Village Blk 2 and 3",
+    address: "2 Changi Village Road, Singapore 500002",
+    postal: "500002",
+    lat: 1.3891516485857,
+    lng: 103.988245247726,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "changi_village_blk_2_and_3_mei_lin_leng_re_yin_pin_p1",
+    brandId: "changi_village_blk_2_and_3_mei_lin_leng_re_yin_pin",
+    label: "Changi Village Blk 2 and 3",
+    locationType: "hawker_centre",
+    locationContext: "Changi Village Blk 2 and 3",
+    address: "2 Changi Village Road, Singapore 500002",
+    postal: "500002",
+    lat: 1.3891516485857,
+    lng: 103.988245247726,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "changi_village_blk_2_and_3_charlies_corner_p1",
+    brandId: "changi_village_blk_2_and_3_charlies_corner",
+    label: "Changi Village Blk 2 and 3",
+    locationType: "hawker_centre",
+    locationContext: "Changi Village Blk 2 and 3",
+    address: "2 Changi Village Road, Singapore 500002",
+    postal: "500002",
+    lat: 1.3891516485857,
+    lng: 103.988245247726,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_3_blk_448_song_fish_soup_p1",
+    brandId: "clementi_ave_3_blk_448_song_fish_soup",
+    label: "Clementi Ave 3 Blk 448",
+    locationType: "hawker_centre",
+    locationContext: "Clementi Ave 3 Blk 448",
+    address: "448 Clementi Avenue 3, Singapore 120448",
+    postal: "120448",
+    lat: 1.313319693196444,
+    lng: 103.7645171928738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_3_blk_448_chai_ho_satay_p1",
+    brandId: "clementi_ave_3_blk_448_chai_ho_satay",
+    label: "Clementi Ave 3 Blk 448",
+    locationType: "hawker_centre",
+    locationContext: "Clementi Ave 3 Blk 448",
+    address: "448 Clementi Avenue 3, Singapore 120448",
+    postal: "120448",
+    lat: 1.313319693196444,
+    lng: 103.7645171928738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_3_blk_448_boon_kee_wanton_mee_p1",
+    brandId: "clementi_ave_3_blk_448_boon_kee_wanton_mee",
+    label: "Clementi Ave 3 Blk 448",
+    locationType: "hawker_centre",
+    locationContext: "Clementi Ave 3 Blk 448",
+    address: "448 Clementi Avenue 3, Singapore 120448",
+    postal: "120448",
+    lat: 1.313319693196444,
+    lng: 103.7645171928738,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "clementi_ave_3_blk_448_soon_huat_cooked_food_p1",
+    brandId: "clementi_ave_3_blk_448_soon_huat_cooked_food",
+    label: "Clementi Ave 3 Blk 448",
+    locationType: "hawker_centre",
+    locationContext: "Clementi Ave 3 Blk 448",
+    address: "448 Clementi Avenue 3, Singapore 120448",
+    postal: "120448",
+    lat: 1.313319693196444,
+    lng: 103.7645171928738,
     sfa: null,
     source: "web_research"
   },
