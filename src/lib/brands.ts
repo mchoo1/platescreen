@@ -3868,7 +3868,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-              {
+  {
     id: "new_upper_changi_road_blk_58_choo_siew_luan",
     name: "Choo Siew Luan",
     emoji: "🍜",
@@ -4356,102 +4356,6 @@ export const BRANDS_1 = [
     cuisine: "Local & Hawker",
     aliases: [
       "kok kuan yen"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ci_yuan_hawker_centre_ang_teck_huat",
-    name: "Ang Teck Huat",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ang teck huat"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ci_yuan_hawker_centre_ang_yi_jie",
-    name: "Ang Yi Jie",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ang yi jie"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ci_yuan_hawker_centre_chng_huang_wang",
-    name: "Chng Huang Wang",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chng huang wang"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ci_yuan_hawker_centre_chye_mui_see",
-    name: "Chye Mui See",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chye mui see"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ci_yuan_hawker_centre_fei_siong_food_management_pte_ltd",
-    name: "Fei Siong Food Management Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "fei siong food management pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ci_yuan_hawker_centre_fei_siong_food_management_pte_ltd_2",
-    name: "Fei Siong Food Management Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "fei siong food management pte ltd"
     ],
     dietTags: [],
     priceRange: "$",
@@ -5420,7 +5324,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-              {
+  {
     id: "peoples_park_food_centre_chan_sook_kheng",
     name: "Chan Sook Kheng",
     emoji: "🍜",
@@ -6876,7 +6780,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-              {
+  {
     id: "80_circuit_road_market_and_food_centre_choy_mee_leng",
     name: "Choy Mee Leng",
     emoji: "🍜",
@@ -11104,102 +11008,6 @@ export const BRANDS_2 = [
     ]
   },
   {
-    id: "yishun_park_hawker_centre_hasanah_binte_ahmad",
-    name: "Hasanah Binte Ahmad",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "hasanah binte ahmad"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yishun_park_hawker_centre_heng_kia_tuck",
-    name: "Heng Kia Tuck",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "heng kia tuck"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yishun_park_hawker_centre_hong_wee_siong",
-    name: "Hong Wee Siong",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "hong wee siong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yishun_park_hawker_centre_kumpor_sae_chew",
-    name: "Kumpor Sae Chew",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "kumpor sae chew"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yishun_park_hawker_centre_pure_coffee_house_pte_ltd",
-    name: "Pure Coffee House Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "pure coffee house pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "yishun_park_hawker_centre_shia_siew_huay",
-    name: "Shia Siew Huay",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "shia siew huay"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
     id: "margaret_drive_hawker_centre_bibjan_bte_ali_zaman",
     name: "Bibjan Bte Ali Zaman",
     emoji: "🍜",
@@ -11479,102 +11287,6 @@ export const BRANDS_2 = [
     cuisine: "Local & Hawker",
     aliases: [
       "kopitiam investment pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bukit_canberra_hawker_centre_chang_cheng_food_paradise_pte_ltd",
-    name: "Chang Cheng Food Paradise Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chang cheng food paradise pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bukit_canberra_hawker_centre_chua_beng_tee",
-    name: "Chua Beng Tee",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "chua beng tee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bukit_canberra_hawker_centre_fu_chan_f_b_group_pte_ltd",
-    name: "Fu Chan F&B Group Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "fu chan f&b group pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bukit_canberra_hawker_centre_fu_chan_f_b_pte_ltd",
-    name: "Fu Chan F&B Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "fu chan f&b pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bukit_canberra_hawker_centre_garden_cuisine_pte_ltd",
-    name: "Garden Cuisine Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "garden cuisine pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bukit_canberra_hawker_centre_lin_juan",
-    name: "Lin Juan",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "lin juan"
     ],
     dietTags: [],
     priceRange: "$",

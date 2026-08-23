@@ -2029,7 +2029,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-              {
+  {
     id: "new_upper_changi_road_blk_58_choo_siew_luan_p169",
     brandId: "new_upper_changi_road_blk_58_choo_siew_luan",
     label: "New Upper Changi Road Blk 58",
@@ -2643,126 +2643,6 @@ const PREMISES_1 = [
       licenceNumber: "BPH0114001",
       licenseeName: "KOK KUAN YEN",
       premisesAddress: "BUKIT PANJANG HAWKER CENTRE Stall No 01-14",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ci_yuan_hawker_centre_ang_teck_huat_p200",
-    brandId: "ci_yuan_hawker_centre_ang_teck_huat",
-    label: "Ci Yuan Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Ci Yuan Hawker Centre",
-    address: "CI YUAN HAWKER CENTRE Stall No 01-18",
-    postal: null,
-    lat: 1.3761,
-    lng: 103.8922,
-    sfa: {
-      licenceNumber: "CYH0118002",
-      licenseeName: "ANG TECK HUAT",
-      premisesAddress: "CI YUAN HAWKER CENTRE Stall No 01-18",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ci_yuan_hawker_centre_ang_yi_jie_p201",
-    brandId: "ci_yuan_hawker_centre_ang_yi_jie",
-    label: "Ci Yuan Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Ci Yuan Hawker Centre",
-    address: "CI YUAN HAWKER CENTRE Stall No 01-08",
-    postal: null,
-    lat: 1.3761,
-    lng: 103.8922,
-    sfa: {
-      licenceNumber: "CYH0108002",
-      licenseeName: "ANG YI JIE",
-      premisesAddress: "CI YUAN HAWKER CENTRE Stall No 01-08",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ci_yuan_hawker_centre_chng_huang_wang_p202",
-    brandId: "ci_yuan_hawker_centre_chng_huang_wang",
-    label: "Ci Yuan Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Ci Yuan Hawker Centre",
-    address: "CI YUAN HAWKER CENTRE Stall No 01-25",
-    postal: null,
-    lat: 1.3761,
-    lng: 103.8922,
-    sfa: {
-      licenceNumber: "CYH0125002",
-      licenseeName: "CHNG HUANG WANG",
-      premisesAddress: "CI YUAN HAWKER CENTRE Stall No 01-25",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ci_yuan_hawker_centre_chye_mui_see_p203",
-    brandId: "ci_yuan_hawker_centre_chye_mui_see",
-    label: "Ci Yuan Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Ci Yuan Hawker Centre",
-    address: "CI YUAN HAWKER CENTRE Stall No 01-17",
-    postal: null,
-    lat: 1.3761,
-    lng: 103.8922,
-    sfa: {
-      licenceNumber: "CYH0117002",
-      licenseeName: "CHYE MUI SEE",
-      premisesAddress: "CI YUAN HAWKER CENTRE Stall No 01-17",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ci_yuan_hawker_centre_fei_siong_food_management_pte_ltd_p204",
-    brandId: "ci_yuan_hawker_centre_fei_siong_food_management_pte_ltd",
-    label: "Ci Yuan Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Ci Yuan Hawker Centre",
-    address: "CI YUAN HAWKER CENTRE Stall No 01-09",
-    postal: null,
-    lat: 1.3761,
-    lng: 103.8922,
-    sfa: {
-      licenceNumber: "CYH0109001",
-      licenseeName: "FEI SIONG FOOD MANAGEMENT PTE LTD",
-      premisesAddress: "CI YUAN HAWKER CENTRE Stall No 01-09",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "ci_yuan_hawker_centre_fei_siong_food_management_pte_ltd_2_p205",
-    brandId: "ci_yuan_hawker_centre_fei_siong_food_management_pte_ltd_2",
-    label: "Ci Yuan Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Ci Yuan Hawker Centre",
-    address: "CI YUAN HAWKER CENTRE Stall No 01-07",
-    postal: null,
-    lat: 1.3761,
-    lng: 103.8922,
-    sfa: {
-      licenceNumber: "CYH0107001",
-      licenseeName: "FEI SIONG FOOD MANAGEMENT PTE LTD",
-      premisesAddress: "CI YUAN HAWKER CENTRE Stall No 01-07",
       grade: "A",
       demeritPoints: null,
       licenceSuspended: false
@@ -3969,7 +3849,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-              {
+  {
     id: "peoples_park_food_centre_chan_sook_kheng_p272",
     brandId: "peoples_park_food_centre_chan_sook_kheng",
     label: "People's Park Food Centre",
@@ -5789,7 +5669,7 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-              {
+  {
     id: "80_circuit_road_market_and_food_centre_choy_mee_leng_p369",
     brandId: "80_circuit_road_market_and_food_centre_choy_mee_leng",
     label: "80 Circuit Road Market and Food Centre",
@@ -11073,126 +10953,6 @@ const PREMISES_2 = [
     source: "sfa_licence_match"
   },
   {
-    id: "yishun_park_hawker_centre_hasanah_binte_ahmad_p633",
-    brandId: "yishun_park_hawker_centre_hasanah_binte_ahmad",
-    label: "Yishun Park Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yishun Park Hawker Centre",
-    address: "21 YISHUN AVENUE 11 HUAMIN PRIMARY SCHOOL SINGAPORE 768857",
-    postal: null,
-    lat: 1.4271,
-    lng: 103.8362,
-    sfa: {
-      licenceNumber: "B88090L002",
-      licenseeName: "HASANAH BINTE AHMAD",
-      premisesAddress: "21 YISHUN AVENUE 11 HUAMIN PRIMARY SCHOOL SINGAPORE 768857",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yishun_park_hawker_centre_heng_kia_tuck_p634",
-    brandId: "yishun_park_hawker_centre_heng_kia_tuck",
-    label: "Yishun Park Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yishun Park Hawker Centre",
-    address: "348 YISHUN AVENUE 11 #01-04 SINGAPORE 760348",
-    postal: null,
-    lat: 1.4271,
-    lng: 103.8362,
-    sfa: {
-      licenceNumber: "NW14072J006",
-      licenseeName: "HENG KIA TUCK",
-      premisesAddress: "348 YISHUN AVENUE 11 #01-04 SINGAPORE 760348",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yishun_park_hawker_centre_hong_wee_siong_p635",
-    brandId: "yishun_park_hawker_centre_hong_wee_siong",
-    label: "Yishun Park Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yishun Park Hawker Centre",
-    address: "418 YISHUN AVENUE 11(PART) #01-411 SINGAPORE 760418",
-    postal: null,
-    lat: 1.4271,
-    lng: 103.8362,
-    sfa: {
-      licenceNumber: "NW14624K000",
-      licenseeName: "HONG WEE SIONG",
-      premisesAddress: "418 YISHUN AVENUE 11(PART) #01-411 SINGAPORE 760418",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yishun_park_hawker_centre_kumpor_sae_chew_p636",
-    brandId: "yishun_park_hawker_centre_kumpor_sae_chew",
-    label: "Yishun Park Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yishun Park Hawker Centre",
-    address: "21 YISHUN AVENUE 11 HUAMIN PRIMARY SCHOOL SINGAPORE 768857",
-    postal: null,
-    lat: 1.4271,
-    lng: 103.8362,
-    sfa: {
-      licenceNumber: "B88090L001",
-      licenseeName: "KUMPOR SAE CHEW",
-      premisesAddress: "21 YISHUN AVENUE 11 HUAMIN PRIMARY SCHOOL SINGAPORE 768857",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yishun_park_hawker_centre_pure_coffee_house_pte_ltd_p637",
-    brandId: "yishun_park_hawker_centre_pure_coffee_house_pte_ltd",
-    label: "Yishun Park Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yishun Park Hawker Centre",
-    address: "348 YISHUN AVENUE 11 #01-04 SINGAPORE 760348",
-    postal: null,
-    lat: 1.4271,
-    lng: 103.8362,
-    sfa: {
-      licenceNumber: "NW14072J007",
-      licenseeName: "PURE COFFEE HOUSE PTE. LTD.",
-      premisesAddress: "348 YISHUN AVENUE 11 #01-04 SINGAPORE 760348",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "yishun_park_hawker_centre_shia_siew_huay_p638",
-    brandId: "yishun_park_hawker_centre_shia_siew_huay",
-    label: "Yishun Park Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Yishun Park Hawker Centre",
-    address: "21 YISHUN AVENUE 11 HUAMIN PRIMARY SCHOOL SINGAPORE 768857",
-    postal: null,
-    lat: 1.4271,
-    lng: 103.8362,
-    sfa: {
-      licenceNumber: "B88090L006",
-      licenseeName: "SHIA SIEW HUAY",
-      premisesAddress: "21 YISHUN AVENUE 11 HUAMIN PRIMARY SCHOOL SINGAPORE 768857",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "margaret_drive_hawker_centre_bibjan_bte_ali_zaman_p639",
     brandId: "margaret_drive_hawker_centre_bibjan_bte_ali_zaman",
     label: "Margaret Drive Hawker Centre",
@@ -11546,126 +11306,6 @@ const PREMISES_2 = [
       licenceNumber: "NE04163C002",
       licenseeName: "KOPITIAM INVESTMENT PTE LTD",
       premisesAddress: "639 PUNGGOL DRIVE #01-07 SINGAPORE 820639",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_chang_cheng_food_paradise_pte_ltd_p657",
-    brandId: "bukit_canberra_hawker_centre_chang_cheng_food_paradise_pte_ltd",
-    label: "Bukit Canberra Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Canberra Hawker Centre",
-    address: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-    postal: null,
-    lat: 1.4413,
-    lng: 103.8202,
-    sfa: {
-      licenceNumber: "B00025V001",
-      licenseeName: "CHANG CHENG FOOD PARADISE PTE. LTD.",
-      premisesAddress: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_chua_beng_tee_p658",
-    brandId: "bukit_canberra_hawker_centre_chua_beng_tee",
-    label: "Bukit Canberra Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Canberra Hawker Centre",
-    address: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-    postal: null,
-    lat: 1.4413,
-    lng: 103.8202,
-    sfa: {
-      licenceNumber: "B00025V003",
-      licenseeName: "CHUA BENG TEE",
-      premisesAddress: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_fu_chan_f_b_group_pte_ltd_p659",
-    brandId: "bukit_canberra_hawker_centre_fu_chan_f_b_group_pte_ltd",
-    label: "Bukit Canberra Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Canberra Hawker Centre",
-    address: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-    postal: null,
-    lat: 1.4413,
-    lng: 103.8202,
-    sfa: {
-      licenceNumber: "B00025V006",
-      licenseeName: "FU CHAN F&B GROUP PTE. LTD.",
-      premisesAddress: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-      grade: "B",
-      demeritPoints: 4,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_fu_chan_f_b_pte_ltd_p660",
-    brandId: "bukit_canberra_hawker_centre_fu_chan_f_b_pte_ltd",
-    label: "Bukit Canberra Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Canberra Hawker Centre",
-    address: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-    postal: null,
-    lat: 1.4413,
-    lng: 103.8202,
-    sfa: {
-      licenceNumber: "B00025V008",
-      licenseeName: "FU CHAN F&B PTE. LTD.",
-      premisesAddress: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-      grade: "B",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_garden_cuisine_pte_ltd_p661",
-    brandId: "bukit_canberra_hawker_centre_garden_cuisine_pte_ltd",
-    label: "Bukit Canberra Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Canberra Hawker Centre",
-    address: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-    postal: null,
-    lat: 1.4413,
-    lng: 103.8202,
-    sfa: {
-      licenceNumber: "B00025V007",
-      licenseeName: "GARDEN CUISINE PTE. LTD.",
-      premisesAddress: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-      grade: "B",
-      demeritPoints: 4,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "bukit_canberra_hawker_centre_lin_juan_p662",
-    brandId: "bukit_canberra_hawker_centre_lin_juan",
-    label: "Bukit Canberra Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Canberra Hawker Centre",
-    address: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
-    postal: null,
-    lat: 1.4413,
-    lng: 103.8202,
-    sfa: {
-      licenceNumber: "B00025V002",
-      licenseeName: "LIN JUAN",
-      premisesAddress: "505 CANBERRA LINK #01-04 MULTI STOREY CAR PARK SINGAPORE 750505",
       grade: "B",
       demeritPoints: null,
       licenceSuspended: false
