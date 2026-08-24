@@ -285,6 +285,14 @@
 // Roll, Chaat, Skewer Rice Bowl, Big Bern's Cheese Burger, Pepperoni Pizza); the rest reused
 // existing dish types (Mee Goreng, Fishball Noodles, Wanton Mee). See
 // reference/research-sessions/2026-08-24-zero-menu-ayerrajah-batch-Z.md.
+// 2026-08-24 (task #65, Batch AA): added 12 menu items covering all 12 zero-menu brands at
+// Chomp Chomp Food Centre (non-Kopitiam venue; these are brands newly surfaced by the fresh
+// audit, distinct from the 45 stalls already covered there under task #51). Item prefix
+// ccfc_ used since cc_ was already taken by the earlier Chomp Chomp batch. 4 new dish types
+// added to dish-macro-lookup.py (Satay Bee Hoon, BBQ Seafood, Lok Lok Skewers, BBQ Chicken
+// Wings); the rest reused existing dish types (Fried Hokkien Mee, Wanton Mee, Carrot Cake,
+// Satay, Fried Oyster, Rojak, Fried Hokkien Prawn Mee). See reference/research-sessions/
+// 2026-08-24-zero-menu-chompchomp-batch-AA.md.
 
 export const MENU_ITEMS = [
   {
@@ -25381,4 +25389,17 @@ export const MENU_ITEMS = [
   { id: "arf_11", brandId: "ayer_rajah_food_centre_kush", name: "Skewer Rice Bowl", emoji: "🍢", category: "Local Hawker", price: 8.0, calories: 550, protein: 30, carbs: 55, fat: 20, confidence: "estimated" },
   { id: "arf_12", brandId: "ayer_rajah_food_centre_big_bern_s_american_grill_xpolis_pte_ltd", name: "Big Bern's Cheese Burger", emoji: "🍔", category: "Western", price: 12.0, calories: 680, protein: 32, carbs: 45, fat: 38, confidence: "estimated" },
   { id: "arf_13", brandId: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
+
+  { id: "ccfc_1", brandId: "chomp_chomp_food_centre_ah_hock_fried_hokkien_noodles", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "ccfc_2", brandId: "chomp_chomp_food_centre_swee_heng_wanton_noodle", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "ccfc_3", brandId: "chomp_chomp_food_centre_ang_sar_lee_satay_bee_hoon", name: "Satay Bee Hoon", emoji: "🍢", category: "Local Hawker", price: 6.0, calories: 480, protein: 22, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "ccfc_4", brandId: "chomp_chomp_food_centre_carrot_cake", name: "Carrot Cake", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 380, protein: 8, carbs: 52, fat: 14, confidence: "estimated" },
+  { id: "ccfc_5", brandId: "chomp_chomp_food_centre_the_warung", name: "Satay", emoji: "🍢", category: "Local Hawker", price: 6.0, calories: 375, protein: 30, carbs: 20, fat: 18, confidence: "estimated" },
+  { id: "ccfc_6", brandId: "chomp_chomp_food_centre_bbq_seafood", name: "BBQ Seafood", emoji: "🦞", category: "Seafood", price: 12.0, calories: 520, protein: 30, carbs: 20, fat: 28, confidence: "estimated" },
+  { id: "ccfc_7", brandId: "chomp_chomp_food_centre_wang_bbq_and_grill", name: "Lok Lok Skewers", emoji: "🍢", category: "Local Hawker", price: 6.0, calories: 420, protein: 20, carbs: 25, fat: 26, confidence: "estimated" },
+  { id: "ccfc_8", brandId: "chomp_chomp_food_centre_wang_da_shen_chicken_wing_and_satay", name: "BBQ Chicken Wings", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.5, calories: 480, protein: 28, carbs: 15, fat: 30, confidence: "estimated" },
+  { id: "ccfc_9", brandId: "chomp_chomp_food_centre_chomp_chomp_fried_oyster", name: "Fried Oyster", emoji: "🦪", category: "Local Hawker", price: 6.0, calories: 450, protein: 15, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "ccfc_10", brandId: "chomp_chomp_food_centre_chomp_chomp_rojak_popiah", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4.0, calories: 320, protein: 6, carbs: 45, fat: 14, confidence: "estimated" },
+  { id: "ccfc_11", brandId: "chomp_chomp_food_centre_chia_keng_fried_hokkien_prawn_noodle", name: "Fried Hokkien Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "ccfc_12", brandId: "chomp_chomp_food_centre_lucy_bbq_seafood", name: "BBQ Seafood", emoji: "🦞", category: "Seafood", price: 12.0, calories: 520, protein: 30, carbs: 20, fat: 28, confidence: "estimated" },
 ];
