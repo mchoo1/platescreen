@@ -407,4 +407,8 @@ DISH_DB.update({
     "Pig Trotters": ("🍖","Chinese Roast",7.0,580,32,15,38),
     "Tandoori Chicken": ("🍗","Indian",6.5,480,38,10,28),
     "Curry Fish Head": ("🍛","Seafood",14.0,480,36,15,28),
+    "Galbi Pork Belly Set": ("🥓","Korean",9.0,650,32,45,38),
+    "Crispy Chicken": ("🍗","Chicken Rice/Poultry",5.5,480,28,25,28),
+    "Curry Chicken Noodle": ("🍜","Indonesian/Malay",5.0,540,24,60,22),
+    "Pork Rib Soup": ("🍲","Local Hawker",6.0,380,26,15,20),
 })
