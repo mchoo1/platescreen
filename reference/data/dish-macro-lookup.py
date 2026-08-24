@@ -273,3 +273,25 @@ DISH_DB.update({
     "You Tiao": ("🥖","Bakery/Dessert",1,180,4,25,7),
     "Nasi Lemak Ayam Taliwang": ("🍛","Indonesian/Malay",6.5,620,28,60,28),
 })
+DISH_DB.update({
+    "Ayam Penyet Set": ("🍗","Indonesian/Malay",6.5,620,32,55,28),
+    "Chicken Wings": ("🍗","Local Hawker",1.6,180,14,8,11),
+    "Dim Sum": ("🥟","Dim Sum",4,320,10,42,10),
+    "Nasi Rendang": ("🍛","Indonesian/Malay",5.5,600,26,62,26),
+    "Herbal Bak Kut Teh": ("🍲","Local Hawker",6.5,400,26,10,26),
+    "Jjajangmyeon": ("🍜","Korean",6.8,650,20,90,18),
+    "XL Chicken Cutlet": ("🍗","Western",8.9,700,38,55,32),
+    "Tang Yuan Peanut Soup": ("🍥","Bakery/Dessert",2.4,280,6,50,6),
+    "Kimchi Jjigae": ("🍲","Korean",8,420,24,20,24),
+    "Minced Meat Noodle": ("🍜","Noodles",5,480,20,60,16),
+    "Hakka Thunder Tea Rice": ("🍚","Local Hawker",5,480,16,70,14),
+    "Teppanyaki Bento": ("🍱","Japanese",8,620,32,60,24),
+    "Butter Chicken Naan Set": ("🍛","Indian",7.5,650,32,55,30),
+})
+DISH_DB.update({
+    "Signature Minced Meat Noodle": ("🍜","Noodles",8,520,24,60,18),
+    "Sliced Fish Porridge": ("🍚","Local Hawker",6.5,380,22,50,8),
+    "Century Egg w Lean Meat Porridge": ("🍚","Local Hawker",4,320,16,45,7),
+    "Cut Fruits": ("🍉","Bakery/Dessert",2.5,90,1,22,0),
+    "Roasted Duck Pizza": ("🍕","Western",9.8,650,26,68,28),
+})
