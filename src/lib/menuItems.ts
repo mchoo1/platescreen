@@ -401,6 +401,13 @@
 // added to dish-macro-lookup.py (Roasted Duck, Claypot Bak Kut Teh); the rest reused existing
 // dish types (Roti Prata, Curry Fish head, Ban Mian, Nasi Lemak, Kaya Toast, Economical Rice,
 // Bimbimbap). See reference/research-sessions/2026-08-24-zero-menu-jurongwest679-batch-AO.md.
+//
+// Batch AP (2026-08-25): +9 items for 9 zero-menu brands at West Mall, all operatorId:
+// kopitiam, all matched directly in kopitiam-stall-dishes.json. 2 new dish types added to
+// dish-macro-lookup.py (Char Seow Kolomee, Sorrowful Romance Claypot Rice); the rest reused
+// existing dish types (Steamboat, Yong Tau Foo, Roasted Chicken Rice, Ayam Penyet, Beef
+// Bulgogi, Mala Xiang Guo, Economical Rice). See
+// reference/research-sessions/2026-08-25-zero-menu-westmall-batch-AP.md.
 
 export const MENU_ITEMS = [
   {
@@ -25661,4 +25668,13 @@ export const MENU_ITEMS = [
   { id: "jwc679_7", brandId: "kopitiam_chang_cheng_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
   { id: "jwc679_8", brandId: "kopitiam_king", name: "Claypot Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 7.5, calories: 480, protein: 32, carbs: 15, fat: 30, confidence: "estimated" },
   { id: "jwc679_9", brandId: "kopitiam_japanese_and_korean_cusine", name: "Bimbimbap", emoji: "🍚", category: "Korean", price: 7, calories: 550, protein: 24, carbs: 70, fat: 18, confidence: "estimated" },
+  { id: "wm_1", brandId: "kopitiam_tracy_s_sarawak_kolo_mee", name: "Char Seow Kolomee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "wm_2", brandId: "kopitiam_lao_cheng_du_steamboat", name: "Steamboat", emoji: "🍲", category: "Mala/Hotpot", price: 12.0, calories: 600, protein: 32, carbs: 30, fat: 34, confidence: "estimated" },
+  { id: "wm_3", brandId: "kopitiam_ampang_yong_tau_foo_and_wen_xiang_yuan", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "wm_4", brandId: "kopitiam_lao_fan_ji", name: "Sorrowful Romance Claypot Rice", emoji: "🍚", category: "Local Hawker", price: 6.5, calories: 560, protein: 24, carbs: 75, fat: 16, confidence: "estimated" },
+  { id: "wm_5", brandId: "kopitiam_jubilee_s_hainanese_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "wm_6", brandId: "kopitiam_sunbo_express_penyet_bbq", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
+  { id: "wm_7", brandId: "kopitiam_kim_dae_bak_korean_cuisine", name: "Beef Bulgogi", emoji: "🥩", category: "Korean", price: 7.5, calories: 580, protein: 30, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "wm_8", brandId: "kopitiam_xiao_la_jiao_mala_hot_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "wm_9", brandId: "kopitiam_hao_wei_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
 ];

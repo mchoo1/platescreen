@@ -489,6 +489,8 @@ DISH_DB.update({
     "Salted Egg Fried Chicken": ("🍗","Chicken Rice/Poultry",6.5,580,30,30,35),
     "Roasted Duck": ("🦆","Chinese Roast",6.0,520,30,10,38),
     "Claypot Bak Kut Teh": ("🍲","Local Hawker",7.5,480,32,15,30),
+    "Char Seow Kolomee": ("🍜","Noodles",5.5,480,22,55,18),
+    "Sorrowful Romance Claypot Rice": ("🍚","Local Hawker",6.5,560,24,75,16),
     "Pepper Rice": ("🍚","Japanese",6.5,580,26,60,24),
     "Ayam Panggang Set": ("🍗","Indonesian/Malay",6.5,560,32,25,32),
     "Mini Buddha Jumps Over The Wall": ("🍲","Chinese Roast",9.0,420,28,20,22),
