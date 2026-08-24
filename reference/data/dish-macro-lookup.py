@@ -476,6 +476,8 @@ DISH_DB.update({
     "Mixed Grill": ("🍖","Western",12.0,750,40,45,40),
     "Trio Roasted Platter": ("🍗","Chinese Roast",8.0,620,32,55,26),
     "Nonya Kueh": ("🍥","Bakery/Dessert",1.5,180,3,32,6),
+    "Big Mac": ("🍔","Western",7.2,550,25,45,30),
+    "Prawn Paste Chicken": ("🍗","Local Hawker",5.5,480,26,20,28),
     "Pepper Rice": ("🍚","Japanese",6.5,580,26,60,24),
     "Ayam Panggang Set": ("🍗","Indonesian/Malay",6.5,560,32,25,32),
     "Mini Buddha Jumps Over The Wall": ("🍲","Chinese Roast",9.0,420,28,20,22),

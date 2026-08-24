@@ -362,6 +362,18 @@
 // types (Nasi Lemak, Roasted Chicken Rice, Yong Tau Foo, Steamed Chicken Rice, Western Food,
 // Zi Char, Nasi Padang, Herbal Soup, Rojak). See reference/research-sessions/
 // 2026-08-24-zero-menu-vistapoint-batch-AJ.md.
+// 2026-08-24 (task #65, Batch AK): re-ran the fresh audit (top-30 list fully covered as of
+// Batch AJ); added 8 menu items covering 8 of 9 zero-menu brands at Bedok North Street 1 Blk
+// 216. Found 4 more "Local & Hawker" generic-cuisine corporate-name brands here (Bengawan
+// Solo, Domino's Pizza, McDonald's Restaurants, NTUC Club) -- web search confirmed the real
+// Domino's and Bengawan Solo outlets are actually at neighbouring blocks 218 and 213, not
+// 216, matching the same location-imprecision pattern flagged in Batch AD. 3 of the 4 are
+// real, identifiable chains and given accurate real dishes (Kueh Lapis, Pepperoni Pizza, Big
+// Mac); NTUC Club skipped, not fabricated -- it's a membership/recreation club organisation,
+// not a specific food-dish brand. 2 new dish types added to dish-macro-lookup.py (Big Mac,
+// Prawn Paste Chicken); the rest reused existing dish types (Kueh Lapis, Pepperoni Pizza,
+// Kway Chap, Fishball Noodles, Sliced Fish Soup, Ipoh Hor Fun). See
+// reference/research-sessions/2026-08-24-zero-menu-bedoknorth216-batch-AK.md.
 
 export const MENU_ITEMS = [
   {
@@ -25575,4 +25587,13 @@ export const MENU_ITEMS = [
   { id: "vp_8", brandId: "kopitiam_jia_wei_lao_huo_bao_tang", name: "Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6.0, calories: 380, protein: 26, carbs: 12, fat: 22, confidence: "estimated" },
   { id: "vp_9", brandId: "kopitiam_ain_popiah_basah", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4.0, calories: 320, protein: 6, carbs: 45, fat: 14, confidence: "estimated" },
   { id: "vp_10", brandId: "kopitiam_548_nonya_kueh", name: "Nonya Kueh", emoji: "🍥", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 3, carbs: 32, fat: 6, confidence: "estimated" },
+
+  { id: "bn216_1", brandId: "bedok_north_street_1_blk_216_bengawan_solo_pte_ltd", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, confidence: "estimated" },
+  { id: "bn216_2", brandId: "bedok_north_street_1_blk_216_domino_s_pizza_singapore_pte_ltd", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
+  { id: "bn216_3", brandId: "bedok_north_street_1_blk_216_mcdonald_s_restaurants_pte_ltd", name: "Big Mac", emoji: "🍔", category: "Western", price: 7.2, calories: 550, protein: 25, carbs: 45, fat: 30, confidence: "estimated" },
+  { id: "bn216_4", brandId: "bedok_north_street_1_blk_216_chris_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "bn216_5", brandId: "bedok_north_street_1_blk_216_joo_chiat_chiap_kee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bn216_6", brandId: "bedok_north_street_1_blk_216_sin_ho", name: "Prawn Paste Chicken", emoji: "🍗", category: "Local Hawker", price: 5.5, calories: 480, protein: 26, carbs: 20, fat: 28, confidence: "estimated" },
+  { id: "bn216_7", brandId: "bedok_north_street_1_blk_216_han_kee_fish_soup", name: "Sliced Fish Soup", emoji: "🍲", category: "Seafood", price: 6.0, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "bn216_8", brandId: "bedok_north_street_1_blk_216_ah_li_ipoh_hor_fun_fish_dumpling", name: "Ipoh Hor Fun", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 15, confidence: "estimated" },
 ];
