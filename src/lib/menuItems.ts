@@ -408,6 +408,14 @@
 // existing dish types (Steamboat, Yong Tau Foo, Roasted Chicken Rice, Ayam Penyet, Beef
 // Bulgogi, Mala Xiang Guo, Economical Rice). See
 // reference/research-sessions/2026-08-25-zero-menu-westmall-batch-AP.md.
+//
+// Batch AQ (2026-08-25): +9 items for 9 zero-menu brands at Berseh Food Centre. These brands
+// already carry specific real dish-name cuisine tags from Batch 51's earlier
+// generic-licensee-name cleanup, so all 9 dishes were derived directly from the cuisine field
+// with no external research needed. 0 new dish types added to dish-macro-lookup.py — all 9
+// dishes (Oyster Cake, Fish Soup, Tom Yum Soup, Kway Chap, Claypot Rice, Curry Chicken Noodle,
+// Kaya Toast, Yong Tau Foo, Epok-Epok) already existed. See
+// reference/research-sessions/2026-08-25-zero-menu-berseh-batch-AQ.md.
 
 export const MENU_ITEMS = [
   {
@@ -25677,4 +25685,13 @@ export const MENU_ITEMS = [
   { id: "wm_7", brandId: "kopitiam_kim_dae_bak_korean_cuisine", name: "Beef Bulgogi", emoji: "🥩", category: "Korean", price: 7.5, calories: 580, protein: 30, carbs: 60, fat: 22, confidence: "estimated" },
   { id: "wm_8", brandId: "kopitiam_xiao_la_jiao_mala_hot_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
   { id: "wm_9", brandId: "kopitiam_hao_wei_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bfc_1", brandId: "berseh_food_centre_fu_zhou_poh_hwa_oyster_cake", name: "Oyster Cake", emoji: "🦪", category: "Local Hawker", price: 4.5, calories: 380, protein: 12, carbs: 42, fat: 18, confidence: "estimated" },
+  { id: "bfc_2", brandId: "berseh_food_centre_mei_xiang_black_and_white_fish_soup", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "bfc_3", brandId: "berseh_food_centre_northern_thai_tomyam", name: "Tom Yum Soup", emoji: "🍲", category: "Thai", price: 6, calories: 280, protein: 20, carbs: 15, fat: 15, confidence: "estimated" },
+  { id: "bfc_4", brandId: "berseh_food_centre_kelantan_kway_chap_pig_s_organ_soup", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "bfc_5", brandId: "berseh_food_centre_fu_he_delights", name: "Claypot Rice", emoji: "🍚", category: "Local Hawker", price: 6.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "bfc_6", brandId: "berseh_food_centre_sheng_kee_curry_chicken_noodle", name: "Curry Chicken Noodle", emoji: "🍜", category: "Indonesian/Malay", price: 5.0, calories: 540, protein: 24, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "bfc_7", brandId: "berseh_food_centre_coffee_hut", name: "Kaya Toast", emoji: "🍞", category: "Coffeeshop Fare", price: 2.2, calories: 190, protein: 4, carbs: 26, fat: 8, confidence: "estimated" },
+  { id: "bfc_8", brandId: "berseh_food_centre_special_chilli_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "bfc_9", brandId: "berseh_food_centre_epok_epok_story", name: "Epok-Epok", emoji: "🥟", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 4, carbs: 22, fat: 8, confidence: "estimated" },
 ];
