@@ -155,6 +155,23 @@
 // unit numbers (#01-28/29/30), consistent with a large tze-char stall spanning multiple
 // units, not a duplicate-recording artifact - left as-is, no premises.ts change made. See
 // reference/research-sessions/2026-08-24-zero-menu-yishunpark-batch-O.md.
+// 2026-08-24 (task #65, Batch P): added 25 menu items covering all 25 zero-menu brands at
+// Buangkok Hawker Centre (no operatorId set on these brands - independently-modeled,
+// venue-specific stalls, not part of Kopitiam/Timbre/Koufu). Sourced individually via web
+// search per stall (Eatbook's "15 Best Buangkok Hawker Centre Stalls" writeup, SETHLUI's
+// "11 picks" guide, plus targeted searches for the remaining stalls not covered by either -
+// Fat Fat Food, Yi Hong Wok, HK Wanton Noodle & Roasted Delights, Sunbo Express Penyet+BBQ,
+// UNO Eat, Huang Chao Teochew Noodle House, Juice Lab). 11 new dish types added to
+// dish-macro-lookup.py (Char Siew Don, Basil Minced Pork Rice, Kebab Rice, Fried Chicken
+// Wing, Egg Fried Rice, Char Siew Kolo Noodles, Chicken Pho, Teochew Fishball Noodle,
+// Cantonese Porridge, Fish and Chips, Fresh Fruit Juice); the rest reused existing dish
+// types with real sourced prices applied as overrides where documented (e.g. Ming Chung
+// White Lor Mee's actual $6.50, Guan Kee Kway Chap's actual $4 set price). Checked
+// buangkok_hawker_centre_fat_fat_food against kopitiam_fat_fat_food_carrot_cake_and_
+// hokkien_mee (an existing, differently-named Kopitiam brand) - confirmed distinct
+// businesses (different menus: Cantonese porridge vs carrot cake/hokkien mee), not a
+// duplicate. No brands removed this batch; 0 duplicate premises rows found at this venue.
+// See reference/research-sessions/2026-08-24-zero-menu-buangkok-batch-P.md.
 
 export const MENU_ITEMS = [
   {
@@ -25021,4 +25038,29 @@ export const MENU_ITEMS = [
   { id: "yp_24", brandId: "timbre_yishun_park_munchi", name: "Peanut Pancake", emoji: "🥞", category: "Snacks", price: 1.8, calories: 220, protein: 5, carbs: 30, fat: 9, confidence: "estimated" },
   { id: "yp_25", brandId: "timbre_yishun_park_tuck_shop", name: "Kopi", emoji: "☕", category: "Beverages", price: 1.7, calories: 120, protein: 2, carbs: 20, fat: 4, confidence: "estimated" },
   { id: "yp_26", brandId: "timbre_yishun_park_tuck_shop", name: "Teh", emoji: "🍵", category: "Beverages", price: 1.7, calories: 140, protein: 2, carbs: 28, fat: 3, confidence: "estimated" },
+  { id: "bgk_1", brandId: "buangkok_hawker_centre_liu_kou_shui", name: "Char Siew Don", emoji: "🍱", category: "Japanese", price: 7.0, calories: 620, protein: 26, carbs: 78, fat: 20, confidence: "estimated" },
+  { id: "bgk_2", brandId: "buangkok_hawker_centre_mae_ai_thai_food", name: "Basil Minced Pork Rice", emoji: "🍛", category: "Thai", price: 5.5, calories: 520, protein: 24, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "bgk_3", brandId: "buangkok_hawker_centre_penang_alley", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "bgk_4", brandId: "buangkok_hawker_centre_shawarma_n_kebab_and_sweets", name: "Kebab Rice", emoji: "🥙", category: "Western", price: 7.0, calories: 580, protein: 32, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "bgk_5", brandId: "buangkok_hawker_centre_eng_kee_chicken_wings", name: "Fried Chicken Wing", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.8, calories: 420, protein: 22, carbs: 20, fat: 28, confidence: "estimated" },
+  { id: "bgk_6", brandId: "buangkok_hawker_centre_ming_chung_white_lor_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bgk_7", brandId: "buangkok_hawker_centre_feng_ji_hainanese_boneless_chicken_rice", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 5.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "bgk_8", brandId: "buangkok_hawker_centre_chef_wang_fried_rice", name: "Egg Fried Rice", emoji: "🍚", category: "Local Hawker", price: 4.2, calories: 480, protein: 12, carbs: 68, fat: 16, confidence: "estimated" },
+  { id: "bgk_9", brandId: "buangkok_hawker_centre_bai_nian_niang_dou_fu", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 5.9, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "bgk_10", brandId: "buangkok_hawker_centre_munchi_pancakes", name: "Peanut Pancake", emoji: "🥞", category: "Snacks", price: 1.8, calories: 220, protein: 5, carbs: 30, fat: 9, confidence: "estimated" },
+  { id: "bgk_11", brandId: "buangkok_hawker_centre_origanics", name: "Char Siew Kolo Noodles", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 420, protein: 16, carbs: 62, fat: 10, confidence: "estimated" },
+  { id: "bgk_12", brandId: "buangkok_hawker_centre_guan_kee_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 4.0, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "bgk_13", brandId: "buangkok_hawker_centre_petit_saigon", name: "Chicken Pho", emoji: "🍜", category: "Vietnamese", price: 5.5, calories: 420, protein: 26, carbs: 50, fat: 10, confidence: "estimated" },
+  { id: "bgk_14", brandId: "buangkok_hawker_centre_redhill_fried_hokkien_mee", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 6.0, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "bgk_15", brandId: "buangkok_hawker_centre_soya_bean_you_tiao", name: "You Tiao", emoji: "🥖", category: "Bakery/Dessert", price: 1.1, calories: 180, protein: 4, carbs: 25, fat: 7, confidence: "estimated" },
+  { id: "bgk_16", brandId: "buangkok_hawker_centre_huang_chao_teochew_noodle_house", name: "Teochew Fishball Noodle", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bgk_17", brandId: "buangkok_hawker_centre_jue_shuang_braised_delights", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bgk_18", brandId: "buangkok_hawker_centre_fat_fat_food", name: "Cantonese Porridge", emoji: "🥣", category: "Local Hawker", price: 5.5, calories: 340, protein: 20, carbs: 42, fat: 8, confidence: "estimated" },
+  { id: "bgk_19", brandId: "buangkok_hawker_centre_yi_hong_wok", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "bgk_20", brandId: "buangkok_hawker_centre_the_11th_street_teochew_fish_soup", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 9.8, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "bgk_21", brandId: "buangkok_hawker_centre_hk_wanton_noodle_roasted_delights", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "bgk_22", brandId: "buangkok_hawker_centre_sunbo_express_penyet_bbq", name: "Ayam Penyet Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 620, protein: 32, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "bgk_23", brandId: "buangkok_hawker_centre_uno_eat", name: "Fish and Chips", emoji: "🍟", category: "Western", price: 8.0, calories: 650, protein: 28, carbs: 55, fat: 32, confidence: "estimated" },
+  { id: "bgk_24", brandId: "buangkok_hawker_centre_rizqia_muslim_food", name: "Mee Goreng", emoji: "🍜", category: "Indonesian/Malay", price: 10.0, calories: 450, protein: 12, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bgk_25", brandId: "buangkok_hawker_centre_juice_lab", name: "Fresh Fruit Juice", emoji: "🥤", category: "Beverages", price: 3.5, calories: 120, protein: 1, carbs: 28, fat: 0, confidence: "estimated" },
 ];
