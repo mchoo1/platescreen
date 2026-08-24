@@ -139,6 +139,40 @@
 // is only 3 of the ~103 venues affected by the generic-licensee-name problem - roughly 90+ hawker
 // centres still have the same zero-value placeholder entries and need the same treatment in future
 // passes. See reference/research-sessions/2026-08-23-chomp-chomp-berseh-alexandra-village.md.
+// 2026-08-23/24 (5th-6th pass, Batches A-T): completed the generic-licensee-name cleanup across the
+// entire ~103-venue backlog flagged above, in ~20 batches (see reference/research-sessions/
+// 2026-08-2[3-4]-hawker-cleanup-batch-*.md for full per-batch detail). Found and fixed 3 instances of
+// a recurring "SFA-log-duplication" bug where two physically distinct hawker centres shared byte-
+// identical generic brand lists and addresses because the original 2026-08-20 restructure had pooled
+// licensee records from an entire road/area into both venue keys (Mayflower Market/Ang Mo Kio 628
+// Market; Kaki Bukit 511/Bedok North St 3 Blk 538; Chong Boon Market/Cheng San Market) - resolved by
+// independently verifying each real venue's own address and giving each fresh, venue-specific stalls.
+// Also found and fixed numerous cases where the stored address pointed to the wrong building entirely
+// (schools, libraries, petrol stations, Shell/Caltex stations) rather than the actual hawker centre.
+// Batches R-T additionally caught 24 more affected venues that the original narrower heuristic
+// (`cuisine: "Local & Hawker"`, no operatorId) had missed because they lacked that exact cuisine tag
+// or still carried "Stall No" placeholder addresses. Net across the full cleanup: 1,721 total brands
+// by the end of Batch T (some venues have real names alone, since only the subset of generic entries
+// with a confirmed real name was ever replaced - the never-fabricate rule was applied consistently,
+// leaving a handful of "no verifiable real name found" leftovers documented as intentional in the
+// Batch S/T session docs, not fresh gaps).
+// 2026-08-24 (Batch U): retried the 2 previously-blocked "Hawker Centre 3.0" venues. Buangkok Hawker
+// Centre (buangkokhawker.com.sg) remains down (HTTP 500) - built as a brand-new venue from secondary
+// sources instead (eatbook.sg + singaporehawkercentres.com), 25 real stalls, 70 Compassvale Bow,
+// Singapore 544692. One Punggol Hawker Centre (onepunggolhc.sg) - the homepage itself (not the
+// individual stall pages, which still redirect) now serves a complete 31-stall "Hawker Heroes" list;
+// added 28 new stalls and fixed a wrong-address bug on 2 existing entries (Cold Storage, Haji Karim
+// Prata Palace had been stored at an unrelated "639 Punggol Drive" address). 1,721 -> 1,774 brands.
+// 2026-08-24 (Batch V): resolved the last-remaining Koufu sub-brands (R&B Tea, Dough Culture, Nine
+// Fresh, The Kitchen, The Green Hut, Rasapura Master - flagged unresolved in 2026-08-22f above).
+// koufu.com.sg turned out to have grown dedicated server-rendered outlet pages for each since that
+// pass. Cross-checking against the existing data found Dough Culture and Nine Fresh were already
+// 100% covered (added in an undocumented earlier session, source: operator_official_site); only R&B
+// Tea had 2 genuinely new outlets (NTU North Spine Plaza, Tampines MRT) not previously captured - added,
+// no new Brand ids (all 3 already existed as `type: "grab_go"` stubs, initially miscreated as
+// duplicates and corrected mid-batch - see the Batch V session doc). The Kitchen and The Green Hut
+// reconfirmed absent from Koufu's current brand taxonomy - not real, not a gap. 1,774 brands
+// (unchanged), +2 premises.
 
 export const BRANDS_1 = [
   {
