@@ -80534,6 +80534,32 @@ export const PREMISES_12 = [
     sfa: null,
     source: "web_research"
   },
+  {
+    id: "koufu_rb_tea_nanyang_technological_university",
+    brandId: "koufu_rb_tea",
+    label: "Nanyang Technological University",
+    locationType: "mall",
+    locationContext: "Nanyang Technological University",
+    address: "76 Nanyang Drive, North Spine Plaza #02-03, Singapore 637331",
+    postal: "637331",
+    lat: 1.34713048855579,
+    lng: 103.680033789538,
+    sfa: null,
+    source: "web_research"
+  },
+  {
+    id: "koufu_rb_tea_tampines_mrt",
+    brandId: "koufu_rb_tea",
+    label: "Tampines MRT",
+    locationType: "mall",
+    locationContext: "Tampines MRT",
+    address: "Tampines MRT Station #01-18, Singapore 529538",
+    postal: "529538",
+    lat: 1.35369188683393,
+    lng: 103.945042729998,
+    sfa: null,
+    source: "web_research"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12];
