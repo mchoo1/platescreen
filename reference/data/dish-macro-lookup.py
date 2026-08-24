@@ -200,3 +200,24 @@ DISH_DB.update({
     "Big Prawn U-Mee": ("🍜","Noodles",6.5,550,25,60,20),
     "Chicken Steak Aglio Olio": ("🍝","Western",6.8,580,28,65,22),
 })
+DISH_DB.update({
+    "Hainanese Bee Hoon": ("🍜","Local Hawker",4.5,380,15,55,12),
+    "Pig Trotter Rice with Onsen Egg": ("🍚","Local Hawker",6.9,580,26,55,26),
+    "Crispy Fried Chicken Wings with Fries": ("🍗","Western",7,650,30,55,30),
+    "BBQ Seafood Platter": ("🍤","Seafood",12,500,32,25,26),
+    "Hainanese Curry Rice (Pork Chop)": ("🍛","Western",6,620,28,65,26),
+    "BBQ Pork Rice": ("🍖","Chinese Roast",5.5,550,26,60,22),
+    "Ayam Berempah with Coconut Rice": ("🍛","Indonesian/Malay",7.5,550,30,55,22),
+    "Teochew Noodle": ("🍜","Noodles",4.5,420,18,55,12),
+    "Caramelised Char Siew Don": ("🍚","Japanese",7.5,580,24,70,18),
+    "Shawarma Plate": ("🥙","Local Hawker",8,550,30,40,26),
+    "Mee Goreng": ("🍜","Indonesian/Malay",4,450,12,60,18),
+    "Beef Boat Noodle": ("🍜","Thai",6,480,22,55,16),
+    "Chicken Quesadilla": ("🌮","Local Hawker",6.2,480,22,40,24),
+    "Ayam Merah (Red Chicken) Rice": ("🍛","Indonesian/Malay",6,580,28,55,26),
+    "Scrambled Egg Rice": ("🍚","Local Hawker",5,480,18,55,20),
+})
+DISH_DB.update({
+    "Bibimbap": ("🍚","Korean",6.5,550,20,75,16),
+    "Mala Xiang Guo": ("🌶️","Mala/Hotpot",8,550,25,35,32),
+})
