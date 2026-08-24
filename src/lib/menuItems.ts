@@ -423,6 +423,13 @@
 // Curry Rice); the rest reused existing dish types (Sliced Fish Soup, Bimbimbap, Roasted
 // Chicken Rice, Mala Xiang Guo, Scrambled Egg Rice, Beef Roti). See
 // reference/research-sessions/2026-08-25-zero-menu-bagusPasirRis-batch-AR.md.
+//
+// Batch AS (2026-08-25): +8 items for 8 zero-menu brands at Bagus @ Paya Lebar Square, all
+// operatorId: kopitiam, all matched directly in kopitiam-stall-dishes.json. 3 new dish types
+// added to dish-macro-lookup.py (Indo Mie Chicken Cutlet, Banana Fritters, Hey! Pepper Beef);
+// the rest reused existing dish types (Char Kway Teow, Roasted Chicken Rice, Mala Xiang Guo,
+// Ayam Penyet, Teppanyaki Chicken Omu Curry Rice). See
+// reference/research-sessions/2026-08-25-zero-menu-bagusPayaLebar-batch-AS.md.
 
 export const MENU_ITEMS = [
   {
@@ -25709,4 +25716,12 @@ export const MENU_ITEMS = [
   { id: "bpr_6", brandId: "kopitiam_monster_chilli", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
   { id: "bpr_7", brandId: "kopitiam_kawan_bowl_scrambled_egg", name: "Scrambled Egg Rice", emoji: "🍚", category: "Local Hawker", price: 5, calories: 480, protein: 18, carbs: 55, fat: 20, confidence: "estimated" },
   { id: "bpr_8", brandId: "kopitiam_krispi_roti", name: "Beef Roti", emoji: "🫓", category: "Indian", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "bpls_1", brandId: "kopitiam_flips_and_dips", name: "Indo Mie Chicken Cutlet", emoji: "🍗", category: "Indonesian/Malay", price: 6.0, calories: 650, protein: 28, carbs: 60, fat: 32, confidence: "estimated" },
+  { id: "bpls_2", brandId: "kopitiam_banana_fritters_and_snacks", name: "Banana Fritters", emoji: "🍌", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 35, fat: 9, confidence: "estimated" },
+  { id: "bpls_3", brandId: "kopitiam_pepper_plus_rice", name: "Hey! Pepper Beef", emoji: "🥩", category: "Western", price: 8.5, calories: 620, protein: 35, carbs: 40, fat: 30, confidence: "estimated" },
+  { id: "bpls_4", brandId: "kopitiam_pak_lum_malaysian_cuisine", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "bpls_5", brandId: "kopitiam_jj_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "bpls_6", brandId: "kopitiam_monster_chilli_mala_hot_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "bpls_7", brandId: "kopitiam_penyet_king", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
+  { id: "bpls_8", brandId: "kopitiam_tornado_egg_curry_rice_and_donburi", name: "Teppanyaki Chicken Omu Curry Rice", emoji: "🍛", category: "Japanese", price: 7.5, calories: 650, protein: 26, carbs: 75, fat: 24, confidence: "estimated" },
 ];
