@@ -1,9 +1,10 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { DIET_TAG_OPTIONS, OUTLET_TYPE_OPTIONS, type ScreenerFilters } from '@/lib/screener';
+import { DIET_TAG_OPTIONS, OUTLET_TYPE_OPTIONS, PLATFORM_OPTIONS, type ScreenerFilters } from '@/lib/screener';
 import type { DietaryFlag } from '@/types';
 import type { OutletType } from '@/types';
+import type { Platform } from '@/types/db';
 
 interface Props {
   filters: ScreenerFilters;
@@ -60,6 +61,11 @@ export function FilterPanel({ filters, onChange, geoStatus, onToggleNearMe, resu
     set({ outletTypes: has ? filters.outletTypes.filter((t) => t !== o) : [...filters.outletTypes, o] });
   };
 
+  const togglePlatform = (p: Platform) => {
+    const has = filters.platforms.includes(p);
+    set({ platforms: has ? filters.platforms.filter((t) => t !== p) : [...filters.platforms, p] });
+  };
+
   return (
     <div className="rounded-xl border border-slate-200 bg-white shadow-card p-4 dark:bg-slate-900 dark:border-slate-800">
       <div className="flex items-center justify-between mb-4">
@@ -105,6 +111,26 @@ export function FilterPanel({ filters, onChange, geoStatus, onToggleNearMe, resu
           </div>
         )}
         {geoStatus === 'error' && <p className="text-xs text-red-600 mt-1">Location permission denied or unavailable.</p>}
+      </div>
+
+      <div className="mb-5">
+        <SectionLabel>How you&apos;ll get it</SectionLabel>
+        <div className="flex flex-wrap gap-1.5">
+          {PLATFORM_OPTIONS.map((opt) => (
+            <button
+              key={opt.value}
+              onClick={() => togglePlatform(opt.value)}
+              className={cn(
+                'rounded-full text-xs font-medium px-2.5 py-1 transition-colors',
+                filters.platforms.includes(opt.value)
+                  ? 'bg-emerald-600 text-white'
+                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300'
+              )}
+            >
+              {opt.emoji} {opt.label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="mb-5 space-y-4">
@@ -164,7 +190,7 @@ export function FilterPanel({ filters, onChange, geoStatus, onToggleNearMe, resu
         onClick={() =>
           onChange({
             q: '', calMin: null, calMax: null, protMin: null, carbMax: null, priceMax: null,
-            tags: [], outletTypes: [], verifiedOnly: false, location: '', maxDistanceKm: null,
+            tags: [], outletTypes: [], platforms: [], verifiedOnly: false, location: '', maxDistanceKm: null,
           })
         }
         className="w-full rounded-lg text-sm text-red-600 hover:bg-red-50 px-3 py-2 font-medium transition-colors dark:hover:bg-red-950/40"

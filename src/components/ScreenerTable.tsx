@@ -1,7 +1,24 @@
 'use client';
 
 import { cn, fmtMoney, ppdBadgeClasses } from '@/lib/utils';
+import { PLATFORM_OPTIONS } from '@/lib/screener';
 import type { ScreenerRow, SortKey, SortDir } from '@/lib/screener';
+
+const PLATFORM_EMOJI = Object.fromEntries(PLATFORM_OPTIONS.map((o) => [o.value, o.emoji])) as Record<string, string>;
+const PLATFORM_LABEL = Object.fromEntries(PLATFORM_OPTIONS.map((o) => [o.value, o.label])) as Record<string, string>;
+
+function PlatformBadges({ platforms }: { platforms: ScreenerRow['platforms'] }) {
+  if (!platforms?.length) return null;
+  return (
+    <span className="inline-flex items-center gap-0.5 ml-1.5 align-middle">
+      {platforms.map((p) => (
+        <span key={p} title={PLATFORM_LABEL[p] ?? p} className="text-xs" aria-label={PLATFORM_LABEL[p] ?? p}>
+          {PLATFORM_EMOJI[p] ?? ''}
+        </span>
+      ))}
+    </span>
+  );
+}
 
 interface Column {
   key: SortKey;
@@ -100,6 +117,7 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
                 <td className="px-3 py-2 whitespace-nowrap text-slate-600 dark:text-slate-400">
                   <span className="mr-1">{row.restaurantEmoji}</span>
                   {row.restaurantName}
+                  <PlatformBadges platforms={row.platforms} />
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap text-slate-500 dark:text-slate-400">
                   {row.location || '—'}

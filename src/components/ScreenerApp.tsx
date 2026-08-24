@@ -14,6 +14,7 @@ import { PresetBar } from './PresetBar';
 import { ScreenerTable } from './ScreenerTable';
 import { MealTray } from './MealTray';
 import type { DietaryFlag, OutletType } from '@/types';
+import type { Platform } from '@/types/db';
 
 const ALL_ROWS = buildScreenerRows();
 const OUTLET_COUNT = new Set(ALL_ROWS.map((r) => r.restaurantId)).size;
@@ -38,6 +39,7 @@ function filtersFromParams(params: URLSearchParams): { filters: ScreenerFilters;
     priceMax: num('price_max'),
     tags: (params.get('tag')?.split(',').filter(Boolean) as DietaryFlag[]) ?? [],
     outletTypes: (params.get('outlet')?.split(',').filter(Boolean) as OutletType[]) ?? [],
+    platforms: (params.get('platform')?.split(',').filter(Boolean) as Platform[]) ?? [],
     verifiedOnly: params.get('verified') === '1',
     location: params.get('loc') ?? '',
     maxDistanceKm: num('dist_max'),
@@ -58,6 +60,7 @@ function paramsFromState(filters: ScreenerFilters, sortKey: SortKey, sortDir: So
   if (filters.priceMax != null) p.set('price_max', String(filters.priceMax));
   if (filters.tags.length) p.set('tag', filters.tags.join(','));
   if (filters.outletTypes.length) p.set('outlet', filters.outletTypes.join(','));
+  if (filters.platforms.length) p.set('platform', filters.platforms.join(','));
   if (filters.verifiedOnly) p.set('verified', '1');
   if (filters.location) p.set('loc', filters.location);
   if (filters.maxDistanceKm != null) p.set('dist_max', String(filters.maxDistanceKm));

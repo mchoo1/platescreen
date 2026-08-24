@@ -168,6 +168,7 @@ export interface ScreenerFilters {
   priceMax: number | null;
   tags: DietaryFlag[];
   outletTypes: OutletType[];
+  platforms: Platform[];
   verifiedOnly: boolean;
   location: string;
   maxDistanceKm: number | null;
@@ -182,6 +183,7 @@ export const DEFAULT_FILTERS: ScreenerFilters = {
   priceMax: null,
   tags: [],
   outletTypes: [],
+  platforms: [],
   verifiedOnly: false,
   location: '',
   maxDistanceKm: null,
@@ -199,6 +201,7 @@ export function applyFilters(rows: ScreenerRow[], f: ScreenerFilters): ScreenerR
     if (f.priceMax != null && row.price > f.priceMax) return false;
     if (f.tags.length && !f.tags.every((t) => row.compatibleWith.includes(t))) return false;
     if (f.outletTypes.length && !f.outletTypes.includes(row.outletType)) return false;
+    if (f.platforms.length && !f.platforms.every((p) => row.platforms.includes(p))) return false;
     if (f.verifiedOnly && row.confidence !== 'verified') return false;
     if (loc && !row.location.toLowerCase().includes(loc) && !row.restaurantName.toLowerCase().includes(loc)) return false;
     if (f.maxDistanceKm != null && (row.distanceKm == null || row.distanceKm > f.maxDistanceKm)) return false;
@@ -261,6 +264,13 @@ export const DIET_TAG_OPTIONS: { value: DietaryFlag; label: string }[] = [
   { value: 'high_protein', label: 'High Protein' },
   { value: 'no_pork', label: 'No Pork' },
   { value: 'low_carb', label: 'Low Carb' },
+];
+
+export const PLATFORM_OPTIONS: { value: Platform; label: string; emoji: string }[] = [
+  { value: 'dine_in', label: 'Dine-in', emoji: '🍽️' },
+  { value: 'grab_go', label: 'Takeaway', emoji: '🥡' },
+  { value: 'delivery', label: 'Delivery', emoji: '🛵' },
+  { value: 'self_cook', label: 'Ready-to-cook', emoji: '🛒' },
 ];
 
 export const OUTLET_TYPE_OPTIONS: { value: OutletType; label: string }[] = [
