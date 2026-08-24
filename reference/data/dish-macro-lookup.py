@@ -315,3 +315,17 @@ DISH_DB.update({
     "Thai Boat Noodles": ("🍜","Thai",5.5,420,18,58,12),
     "Hamburg Hot Bun": ("🍔","Japanese",7.9,580,28,55,26),
 })
+DISH_DB.update({
+    "Beef Noodles and Claypot": ("🍜","Noodles",5.5,520,26,55,20),
+    "Vegetarian Rice": ("🥦","Local Hawker",3.5,380,14,55,10),
+    "Economical Bee Hoon": ("🍜","Noodles",1.2,320,10,45,10),
+    "Japanese Curry Rice": ("🍛","Japanese",5.5,580,22,68,20),
+    "Herbal Soup": ("🍲","Local Hawker",6,380,26,12,22),
+    "Chicken Bowl": ("🍚","Japanese",6,540,28,58,18),
+    "Mee Siam": ("🍜","Local Hawker",4,450,14,62,14),
+    "Saba Fish": ("🐟","Japanese",6.5,420,32,20,22),
+    "Lobster King Pao Fan": ("🦞","Seafood",15,520,32,45,20),
+    "Rendang Dishes": ("🍛","Indonesian/Malay",6,600,26,55,28),
+    "Indian Punjab": ("🍛","Indian",6.5,600,26,60,25),
+    "Nasi Padang": ("🍛","Indonesian/Malay",5.5,580,24,62,24),
+})
