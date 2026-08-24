@@ -350,3 +350,16 @@ DISH_DB.update({
     "Yong Tow Foo Soup": ("🍲","Chicken Rice/Poultry",4.5,380,22,45,10),
     "Sweet & Sour Pork Rice Set": ("🍚","Chinese Roast",5.5,580,24,68,22),
 })
+DISH_DB.update({
+    "North Indian Veg Set": ("🍛","Indian",6,550,18,70,20),
+    "Signature Mixed Beef Noodle with Tendon": ("🍜","Noodles",7,560,28,58,20),
+    "Vegetarian": ("🥦","Local Hawker",4,380,14,55,10),
+    "Pork Bao": ("🥟","Dim Sum",1.8,220,8,32,7),
+    "Chicken Chop Curry Rice Set": ("🍛","Local Hawker",6,600,30,58,26),
+    "Egg Fried Rice w Pork Cutlet": ("🍚","Local Hawker",6,650,26,68,26),
+    "BBQ Pork Chop Rice": ("🍚","Vietnamese",6,600,30,60,22),
+    "HK Steamed Golden Pomfret Set": ("🐟","Seafood",12,450,38,15,22),
+    "Seafood White Bee Hoon": ("🍜","Noodles",6.5,480,28,50,16),
+    "Oyster Omelette": ("🍳","Local Hawker",5.5,480,18,35,28),
+    "Grilled Chicken Chop w Mushroom Cream": ("🍗","Western",7,620,36,40,30),
+})
