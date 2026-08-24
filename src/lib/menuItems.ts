@@ -374,6 +374,12 @@
 // Prawn Paste Chicken); the rest reused existing dish types (Kueh Lapis, Pepperoni Pizza,
 // Kway Chap, Fishball Noodles, Sliced Fish Soup, Ipoh Hor Fun). See
 // reference/research-sessions/2026-08-24-zero-menu-bedoknorth216-batch-AK.md.
+// 2026-08-24 (task #65, Batch AL): added 9 menu items covering all 9 zero-menu brands at
+// Tampines 1 (operatorId: hawkers_street, not kopitiam -- dishes derived directly from each
+// brand's own specific cuisine tag, no external research needed). 2 new dish types added to
+// dish-macro-lookup.py (Hainanese Chicken Rice, Penang Laksa); the rest reused existing dish
+// types (Fried Rice, Tonkotsu Chashu Ramen, Wanton Mee, Satay Bee Hoon, Nasi Lemak, Mixed
+// Grill, Kway Chap). See reference/research-sessions/2026-08-24-zero-menu-tampines1-batch-AL.md.
 
 export const MENU_ITEMS = [
   {
@@ -25596,4 +25602,14 @@ export const MENU_ITEMS = [
   { id: "bn216_6", brandId: "bedok_north_street_1_blk_216_sin_ho", name: "Prawn Paste Chicken", emoji: "🍗", category: "Local Hawker", price: 5.5, calories: 480, protein: 26, carbs: 20, fat: 28, confidence: "estimated" },
   { id: "bn216_7", brandId: "bedok_north_street_1_blk_216_han_kee_fish_soup", name: "Sliced Fish Soup", emoji: "🍲", category: "Seafood", price: 6.0, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
   { id: "bn216_8", brandId: "bedok_north_street_1_blk_216_ah_li_ipoh_hor_fun_fish_dumpling", name: "Ipoh Hor Fun", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 15, confidence: "estimated" },
+
+  { id: "tp1_1", brandId: "tiong_bahru_chicken_rice_hws", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, confidence: "estimated" },
+  { id: "tp1_2", brandId: "jason_penang_cuisine", name: "Penang Laksa", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 460, protein: 18, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "tp1_3", brandId: "king_of_fried_rice_hws", name: "Fried Rice", emoji: "🍚", category: "Local Hawker", price: 4.5, calories: 520, protein: 14, carbs: 68, fat: 18, confidence: "estimated" },
+  { id: "tp1_4", brandId: "ramen_king_hws", name: "Tonkotsu Chashu Ramen", emoji: "🍜", category: "Japanese", price: 12.0, calories: 650, protein: 30, carbs: 65, fat: 28, confidence: "estimated" },
+  { id: "tp1_5", brandId: "koungs_wan_tan_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "tp1_6", brandId: "old_teochew_satay_beehoon", name: "Satay Bee Hoon", emoji: "🍢", category: "Local Hawker", price: 6.0, calories: 480, protein: 22, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "tp1_7", brandId: "nikmat_nasi_lemak_husk", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "tp1_8", brandId: "fire_western_n_grill", name: "Mixed Grill", emoji: "🍖", category: "Western", price: 12.0, calories: 750, protein: 40, carbs: 45, fat: 40, confidence: "estimated" },
+  { id: "tp1_9", brandId: "garden_street_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
 ];
