@@ -227,6 +227,15 @@
 // - each kept the cleaner/already-covered canonical brand instead (see menuItems.ts header for
 // full mapping). 1,761 -> 1,753 brands. See reference/research-sessions/
 // 2026-08-24-zero-menu-northpoint-batch-M.md.
+// 2026-08-24 (task #65, Batch R): removed 4 more duplicate brands at Bukit Panjang (2 Bukit
+// Panjang Ring Road) - same pattern as Batch M (a stall recorded twice, this time under a
+// plain kopitiam_-prefixed id and a separate bukit_panjang_hawker_centre_-prefixed id, both
+// confirmed via exact matching Premises address). Removed:
+// bukit_panjang_hawker_centre_you_xiang_teochew_noodles,
+// bukit_panjang_hawker_centre_hai_nan_hometown_curry, bukit_panjang_hawker_centre_yu_kee_duck_rice,
+// bukit_panjang_hawker_centre_like_pudding - kept the kopitiam_-prefixed id in each pair (see
+// menuItems.ts header for the full mapping). 1,753 -> 1,749 brands. See
+// reference/research-sessions/2026-08-24-zero-menu-bukitpanjang-batch-R.md.
 
 export const BRANDS_1 = [
   {
@@ -25629,23 +25638,7 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
-  {
-    id: "bukit_panjang_hawker_centre_you_xiang_teochew_noodles",
-    name: "You Xiang Teochew Noodles",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Teochew Fishball Noodles",
-    aliases: [
-      "you xiang teochew noodles"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "bukit_panjang_hawker_centre_zai_lais_lor_mee",
     name: "Zai Lai's Lor Mee",
     emoji: "🍜",
@@ -25661,23 +25654,7 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
-  {
-    id: "bukit_panjang_hawker_centre_like_pudding",
-    name: "Like Pudding",
-    emoji: "🍮",
-    type: "hawker",
-    cuisine: "Pudding",
-    aliases: [
-      "like pudding"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "margaret_drive_hawker_centre_hakka_thunder_tea",
     name: "Hakka Thunder Tea",
     emoji: "🍵",
@@ -28818,23 +28795,7 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
-  {
-    id: "bukit_panjang_hawker_centre_hai_nan_hometown_curry",
-    name: "Hai Nan Hometown Curry",
-    emoji: "🍛",
-    type: "hawker",
-    cuisine: "Curry Rice & Curry Chicken",
-    aliases: [
-      "hai nan hometown curry"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "bukit_panjang_hawker_centre_tong_fong_fatt_hainanese_boneless_chicken_rice",
     name: "Tong Fong Fatt Hainanese Boneless Chicken Rice",
     emoji: "🍗",
@@ -28850,23 +28811,7 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
-  {
-    id: "bukit_panjang_hawker_centre_yu_kee_duck_rice",
-    name: "Yu Kee Duck Rice",
-    emoji: "🦆",
-    type: "hawker",
-    cuisine: "Duck Rice & Duck Noodle",
-    aliases: [
-      "yu kee duck rice"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "east_coast_lagoon_food_village_east_coast_lagoon_fishball_noodle",
     name: "East Coast Lagoon Fishball Noodle",
     emoji: "🍜",

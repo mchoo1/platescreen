@@ -395,4 +395,12 @@ DISH_DB.update({
     "Chinese Dessert Soup": ("🍮","Desserts",3.2,180,4,32,4),
     "Bakery Muffin": ("🧁","Bakery/Dessert",3.35,340,5,42,16),
     "Bakery Bread": ("🍞","Bakery/Dessert",2.5,260,7,42,7),
+    "Mookata": ("🍢","Local Hawker",12.0,650,35,40,38),
+    "Mixed Veg Rice": ("🍱","Local Hawker",4.0,450,18,55,15),
+    "Min Jiang Kueh": ("🥞","Bakery/Dessert",1.6,220,5,32,8),
+    "Bing Su": ("🍧","Desserts",6.0,380,8,65,10),
+    "Zi Char": ("🍲","Local Hawker",9.0,600,28,35,32),
+    "Mee Hoon Kway": ("🍜","Local Hawker",5.5,460,20,58,14),
+    "Crispy Lemongrass Chicken Nasi Lemak": ("🍛","Indonesian/Malay",5.5,580,26,60,24),
+    "Chili Egg Fried Rice": ("🍚","Local Hawker",4.5,520,14,68,18),
 })

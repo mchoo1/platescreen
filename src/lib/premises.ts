@@ -15,6 +15,8 @@
 // 2026-08-24 (task #65, Batch M): removed 8 more duplicate Premises rows plus 3 redundant
 // exact-duplicate rows within otherwise-legitimate brands, all at Kopitiam @ Northpoint City
 // — see brands.ts and menuItems.ts headers for the full mapping.
+// 2026-08-24 (task #65, Batch R): removed 4 more duplicate Premises rows at Bukit Panjang
+// (2 Bukit Panjang Ring Road) — see brands.ts and menuItems.ts headers for the full mapping.
 //
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
@@ -76637,20 +76639,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "web_research"
   },
-  {
-    id: "bukit_panjang_hawker_centre_you_xiang_teochew_noodles_p1",
-    brandId: "bukit_panjang_hawker_centre_you_xiang_teochew_noodles",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "2 Bukit Panjang Ring Road, Singapore 679947",
-    postal: "679947",
-    lat: 1.37759742308947,
-    lng: 103.772491526747,
-    sfa: null,
-    source: "web_research"
-  },
-  {
+    {
     id: "bukit_panjang_hawker_centre_zai_lais_lor_mee_p1",
     brandId: "bukit_panjang_hawker_centre_zai_lais_lor_mee",
     label: "Bukit Panjang Hawker Centre",
@@ -76663,20 +76652,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "web_research"
   },
-  {
-    id: "bukit_panjang_hawker_centre_like_pudding_p1",
-    brandId: "bukit_panjang_hawker_centre_like_pudding",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "2 Bukit Panjang Ring Road, Singapore 679947",
-    postal: "679947",
-    lat: 1.37759742308947,
-    lng: 103.772491526747,
-    sfa: null,
-    source: "web_research"
-  },
-  {
+    {
     id: "margaret_drive_hawker_centre_hakka_thunder_tea_p1",
     brandId: "margaret_drive_hawker_centre_hakka_thunder_tea",
     label: "Margaret Drive Hawker Centre",
@@ -79243,20 +79219,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "web_research"
   },
-  {
-    id: "bukit_panjang_hawker_centre_hai_nan_hometown_curry_batchr1",
-    brandId: "bukit_panjang_hawker_centre_hai_nan_hometown_curry",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "2 Bukit Panjang Ring Road #01-01, Singapore 679947",
-    postal: "679947",
-    lat: 1.37759742308947,
-    lng: 103.772491526747,
-    sfa: null,
-    source: "web_research"
-  },
-  {
+    {
     id: "bukit_panjang_hawker_centre_tong_fong_fatt_hainanese_boneless_chicken_rice_batchr2",
     brandId: "bukit_panjang_hawker_centre_tong_fong_fatt_hainanese_boneless_chicken_rice",
     label: "Bukit Panjang Hawker Centre",
@@ -79269,20 +79232,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "web_research"
   },
-  {
-    id: "bukit_panjang_hawker_centre_yu_kee_duck_rice_batchr3",
-    brandId: "bukit_panjang_hawker_centre_yu_kee_duck_rice",
-    label: "Bukit Panjang Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Bukit Panjang Hawker Centre",
-    address: "2 Bukit Panjang Ring Road #01-10, Singapore 679947",
-    postal: "679947",
-    lat: 1.37759742308947,
-    lng: 103.772491526747,
-    sfa: null,
-    source: "web_research"
-  },
-  {
+    {
     id: "east_coast_lagoon_food_village_east_coast_lagoon_fishball_noodle_batchs1",
     brandId: "east_coast_lagoon_food_village_east_coast_lagoon_fishball_noodle",
     label: "East Coast Lagoon Food Village",
