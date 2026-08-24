@@ -299,6 +299,14 @@
 // Duck Rice, Handmade Dumpling); the rest reused existing dish types (Pig Organ Soup, Nasi
 // Sambal Goreng Set, Economical Rice, Bak Kut Teh, Steamed Fish). See
 // reference/research-sessions/2026-08-24-zero-menu-vivocity-batch-AB.md.
+// 2026-08-24 (task #65, Batch AC): added 11 menu items covering all 11 zero-menu brands at
+// Northpoint City / Bagus Food Hall (100% kopitiam-operated). 10 of 11 matched directly in
+// kopitiam-stall-dishes.json; 1 (Cha Mu Lan X) had an empty cache entry and was individually
+// web-researched, confirmed as a halal-friendly bubble tea stall at Bagus Food Hall. 3 new
+// dish types added to dish-macro-lookup.py (Beef Pho, Rou Jia Mo (Chinese Burger), Bubble
+// Tea); the rest reused existing dish types (Kaya Toast, Steamboat, Chicken Teriyaki &
+// Salmon Teriyaki Bento, Mala Xiang Guo, Nasi Padang, Ban Mian, Roasted Chicken Rice, Yong
+// Tau Foo). See reference/research-sessions/2026-08-24-zero-menu-northpoint-batch-AC.md.
 
 export const MENU_ITEMS = [
   {
@@ -25418,4 +25426,16 @@ export const MENU_ITEMS = [
   { id: "vvc_7", brandId: "kopitiam_kong_wan_roast", name: "Roast Duck Rice", emoji: "🦆", category: "Chinese Roast", price: 5.5, calories: 540, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
   { id: "vvc_8", brandId: "kopitiam_jiao_tai_yuan", name: "Handmade Dumpling", emoji: "🥟", category: "Dim Sum", price: 5.0, calories: 380, protein: 16, carbs: 48, fat: 12, confidence: "estimated" },
   { id: "vvc_9", brandId: "kopitiam_hello_fish", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8.0, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
+
+  { id: "bag_1", brandId: "kopitiam_the_kiosk", name: "Kaya Toast", emoji: "🍞", category: "Coffeeshop Fare", price: 2.2, calories: 190, protein: 4, carbs: 26, fat: 8, confidence: "estimated" },
+  { id: "bag_2", brandId: "kopitiam_makan_west_hot", name: "Steamboat", emoji: "🍲", category: "Mala/Hotpot", price: 12.0, calories: 600, protein: 32, carbs: 30, fat: 34, confidence: "estimated" },
+  { id: "bag_3", brandId: "kopitiam_pho_vietnam", name: "Beef Pho", emoji: "🍜", category: "Vietnamese", price: 7.0, calories: 480, protein: 28, carbs: 55, fat: 14, confidence: "estimated" },
+  { id: "bag_4", brandId: "kopitiam_ahjuma_korean_and_japanese_cuisine", name: "Chicken Teriyaki & Salmon Teriyaki Bento", emoji: "🍱", category: "Japanese", price: 8.5, calories: 650, protein: 38, carbs: 60, fat: 26, confidence: "estimated" },
+  { id: "bag_5", brandId: "kopitiam_monster_chilli_mala_xiang_guo", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8.0, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "bag_6", brandId: "kopitiam_sedap_kitchen", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "bag_7", brandId: "kopitiam_jia_pa_pa_ban_mian", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "bag_8", brandId: "kopitiam_tang_tea_house", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "bag_9", brandId: "kopitiam_krispi", name: "Rou Jia Mo (Chinese Burger)", emoji: "🥙", category: "Local Hawker", price: 4.5, calories: 380, protein: 16, carbs: 42, fat: 16, confidence: "estimated" },
+  { id: "bag_10", brandId: "kopitiam_ani_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "bag_11", brandId: "kopitiam_cha_mu_lan_x", name: "Bubble Tea", emoji: "🧋", category: "Beverages", price: 5.0, calories: 320, protein: 2, carbs: 68, fat: 4, confidence: "estimated" },
 ];
