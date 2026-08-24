@@ -293,6 +293,12 @@
 // Wings); the rest reused existing dish types (Fried Hokkien Mee, Wanton Mee, Carrot Cake,
 // Satay, Fried Oyster, Rojak, Fried Hokkien Prawn Mee). See reference/research-sessions/
 // 2026-08-24-zero-menu-chompchomp-batch-AA.md.
+// 2026-08-24 (task #65, Batch AB): added 9 menu items covering all 9 zero-menu brands at
+// VivoCity (100% kopitiam-operated, all matched directly in kopitiam-stall-dishes.json). 4
+// new dish types added to dish-macro-lookup.py (Tonkotsu Chashu Ramen, Putian Lor Mee, Roast
+// Duck Rice, Handmade Dumpling); the rest reused existing dish types (Pig Organ Soup, Nasi
+// Sambal Goreng Set, Economical Rice, Bak Kut Teh, Steamed Fish). See
+// reference/research-sessions/2026-08-24-zero-menu-vivocity-batch-AB.md.
 
 export const MENU_ITEMS = [
   {
@@ -25402,4 +25408,14 @@ export const MENU_ITEMS = [
   { id: "ccfc_10", brandId: "chomp_chomp_food_centre_chomp_chomp_rojak_popiah", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4.0, calories: 320, protein: 6, carbs: 45, fat: 14, confidence: "estimated" },
   { id: "ccfc_11", brandId: "chomp_chomp_food_centre_chia_keng_fried_hokkien_prawn_noodle", name: "Fried Hokkien Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated" },
   { id: "ccfc_12", brandId: "chomp_chomp_food_centre_lucy_bbq_seafood", name: "BBQ Seafood", emoji: "🦞", category: "Seafood", price: 12.0, calories: 520, protein: 30, carbs: 20, fat: 28, confidence: "estimated" },
+
+  { id: "vvc_1", brandId: "kopitiam_teohchew_cuisine", name: "Pig Organ Soup", emoji: "🍲", category: "Local Hawker", price: 6.0, calories: 380, protein: 28, carbs: 10, fat: 22, confidence: "estimated" },
+  { id: "vvc_2", brandId: "kopitiam_kokoro_kiosuku", name: "Tonkotsu Chashu Ramen", emoji: "🍜", category: "Japanese", price: 12.0, calories: 650, protein: 30, carbs: 65, fat: 28, confidence: "estimated" },
+  { id: "vvc_3", brandId: "kopitiam_putien", name: "Putian Lor Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 480, protein: 18, carbs: 62, fat: 16, confidence: "estimated" },
+  { id: "vvc_4", brandId: "kopitiam_hjh_maimunah", name: "Nasi Sambal Goreng Set", emoji: "🍛", category: "Indonesian/Malay", price: 6.0, calories: 560, protein: 20, carbs: 68, fat: 22, confidence: "estimated" },
+  { id: "vvc_5", brandId: "kopitiam_eco_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "vvc_6", brandId: "kopitiam_nanyang_san_bao", name: "Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 420, protein: 28, carbs: 10, fat: 28, confidence: "estimated" },
+  { id: "vvc_7", brandId: "kopitiam_kong_wan_roast", name: "Roast Duck Rice", emoji: "🦆", category: "Chinese Roast", price: 5.5, calories: 540, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "vvc_8", brandId: "kopitiam_jiao_tai_yuan", name: "Handmade Dumpling", emoji: "🥟", category: "Dim Sum", price: 5.0, calories: 380, protein: 16, carbs: 48, fat: 12, confidence: "estimated" },
+  { id: "vvc_9", brandId: "kopitiam_hello_fish", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8.0, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
 ];
