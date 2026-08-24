@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Generated 2026-08-20 — one row per dish, FK to Brand.id (renamed from FoodOption/outletId).
 // Untyped literal export (see MenuItem in types/db.ts) — screener.ts casts at the boundary.
 // 2026-08-22: reassigned 2 items (tekka_roti_prata_egg, tekka_masala_prata) to the 2 new real
@@ -172,6 +173,37 @@
 // businesses (different menus: Cantonese porridge vs carrot cake/hokkien mee), not a
 // duplicate. No brands removed this batch; 0 duplicate premises rows found at this venue.
 // See reference/research-sessions/2026-08-24-zero-menu-buangkok-batch-P.md.
+// 2026-08-24 (task #65, Batch Q): added 24 menu items covering all 24 zero-menu brands at
+// Alexandra Village Food Centre (a venue task #51 had already renamed from generic
+// licensee names to real proper-noun stalls in an earlier session, but never gave menu
+// items to). No operatorId set on these brands, same as Buangkok. The brands.ts `cuisine`
+// field already carried a specific, accurate dish-type tag for every stall from that
+// earlier research pass, which sped up sourcing considerably. Cross-checked against
+// HungryGoWhere's "17 of our go-to stalls" guide, which confirmed/detailed 12 of the 24
+// with real dish names and prices (several are Michelin Bib Gourmand/Selected stalls -
+// Xiang Jiang Soya Sauce Chicken, Depot Road Zhen Shan Mei Laksa, Zi Jin Cheng, Zhang Ji
+// Shanghai La Mian Xiao Long Bao, Hong Kong Yummy Soup, Leon Kee). Item id prefix "av_" was
+// already taken by the Anchorvale Village batch (Batch L) - used "avfc_" for this batch's
+// ids instead. 13 new dish types added to dish-macro-lookup.py (Soya Sauce Chicken
+// Noodles, Claypot Laksa, Beef Hor Fun, Double-Boiled Herbal Soup, Char Siew Noodles,
+// Putian Fried Bee Hoon, Teochew Roast Duck, Claypot Chicken Rice, Teochew Crystal
+// Dumpling, Avocado Juice, Chinese Dessert Soup, Bakery Muffin, Bakery Bread); the rest
+// reused existing dish types (Wanton Mee, Hor Fun, Prawn Mee, Chicken Rice, Hakka Thunder
+// Tea Rice, Mala Xiang Guo, Western Food, Hotplate BBQ Stingray, Satay, Xiao Long Bao),
+// several with real sourced prices applied as overrides. See reference/research-sessions/
+// 2026-08-24-zero-menu-alexandravillage-batch-Q.md.
+// 2026-08-24 (Batch Q, build fix): adding this batch's items pushed the array past a size
+// threshold where `tsc --noEmit` started failing with "TS2590: Expression produces a union
+// type that is too complex to represent" on the array literal itself (TypeScript infers a
+// distinct literal object type per entry - e.g. every `confidence: "estimated"` - then
+// unions ~1,600+ of them; an explicit `: any[]` annotation on the const alone did NOT
+// suppress this, since tsc still computes the literal's own type before checking
+// assignability). Added `// @ts-nocheck` to the top of this file instead - it's pure data
+// with no logic, so disabling type-checking here can't hide a real bug. screener.ts already
+// does `RAW_MENU_ITEMS as unknown as MenuItem[]` at its import boundary, so nothing
+// downstream relied on this file's inferred type - this fix is a no-op for every consumer.
+// Expect this same fix may be needed for brands.ts or premises.ts if they cross a similar
+// size threshold in a future batch.
 
 export const MENU_ITEMS = [
   {
@@ -25063,4 +25095,28 @@ export const MENU_ITEMS = [
   { id: "bgk_23", brandId: "buangkok_hawker_centre_uno_eat", name: "Fish and Chips", emoji: "🍟", category: "Western", price: 8.0, calories: 650, protein: 28, carbs: 55, fat: 32, confidence: "estimated" },
   { id: "bgk_24", brandId: "buangkok_hawker_centre_rizqia_muslim_food", name: "Mee Goreng", emoji: "🍜", category: "Indonesian/Malay", price: 10.0, calories: 450, protein: 12, carbs: 60, fat: 18, confidence: "estimated" },
   { id: "bgk_25", brandId: "buangkok_hawker_centre_juice_lab", name: "Fresh Fruit Juice", emoji: "🥤", category: "Beverages", price: 3.5, calories: 120, protein: 1, carbs: 28, fat: 0, confidence: "estimated" },
+  { id: "avfc_1", brandId: "alexandra_village_food_centre_xiang_jiang_soya_sauce_chicken", name: "Soya Sauce Chicken Noodles", emoji: "🍜", category: "Noodles", price: 6.0, calories: 480, protein: 26, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "avfc_2", brandId: "alexandra_village_food_centre_depot_road_zhen_shan_mei_laksa", name: "Claypot Laksa", emoji: "🍜", category: "Local Hawker", price: 6.0, calories: 580, protein: 20, carbs: 55, fat: 32, confidence: "estimated" },
+  { id: "avfc_3", brandId: "alexandra_village_food_centre_the_old_stall_hokkien_street_famous_prawn_mee", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 6.0, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "avfc_4", brandId: "alexandra_village_food_centre_dover_road_kai_kee_wanton_noodles", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "avfc_5", brandId: "alexandra_village_food_centre_zhang_ji_shanghai_la_mian_xiao_long_bao", name: "Xiao Long Bao", emoji: "🥟", category: "Bakery/Dessert", price: 6.0, calories: 300, protein: 12, carbs: 32, fat: 12, confidence: "estimated" },
+  { id: "avfc_6", brandId: "alexandra_village_food_centre_tong_le_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "avfc_7", brandId: "alexandra_village_food_centre_hor_fun_premium", name: "Beef Hor Fun", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 540, protein: 24, carbs: 58, fat: 20, confidence: "estimated" },
+  { id: "avfc_8", brandId: "alexandra_village_food_centre_ding_sheng", name: "Hor Fun", emoji: "🍜", category: "Local Hawker", price: 5, calories: 500, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "avfc_9", brandId: "alexandra_village_food_centre_zi_jin_cheng_hainanese_boneless_chicken_rice", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 3.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "avfc_10", brandId: "alexandra_village_food_centre_the_thunder_tea_story", name: "Hakka Thunder Tea Rice", emoji: "🍚", category: "Local Hawker", price: 5.0, calories: 480, protein: 16, carbs: 70, fat: 14, confidence: "estimated" },
+  { id: "avfc_11", brandId: "alexandra_village_food_centre_hong_kong_yummy_soup", name: "Double-Boiled Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 5.5, calories: 220, protein: 20, carbs: 10, fat: 10, confidence: "estimated" },
+  { id: "avfc_12", brandId: "alexandra_village_food_centre_ma_la_xiang_guo", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "avfc_13", brandId: "alexandra_village_food_centre_xiao_gang_western_food", name: "Western Food", emoji: "🍽️", category: "Western", price: 6.5, calories: 600, protein: 28, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "avfc_14", brandId: "alexandra_village_food_centre_lye_bo_toss_noodle", name: "Char Siew Noodles", emoji: "🍜", category: "Chinese Roast", price: 5.0, calories: 460, protein: 22, carbs: 55, fat: 14, confidence: "estimated" },
+  { id: "avfc_15", brandId: "alexandra_village_food_centre_pu_tian_delights", name: "Putian Fried Bee Hoon", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 420, protein: 14, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "avfc_16", brandId: "alexandra_village_food_centre_lau_phua_chay_authentic_roasted_delicacies", name: "Teochew Roast Duck", emoji: "🦆", category: "Chinese Roast", price: 6.0, calories: 480, protein: 28, carbs: 20, fat: 30, confidence: "estimated" },
+  { id: "avfc_17", brandId: "alexandra_village_food_centre_tai_liok_claypot_chicken_rice", name: "Claypot Chicken Rice", emoji: "🍚", category: "Chicken Rice/Poultry", price: 6.5, calories: 600, protein: 28, carbs: 68, fat: 20, confidence: "estimated" },
+  { id: "avfc_18", brandId: "alexandra_village_food_centre_tiong_bahru_lien_fa_shui_jing_pau", name: "Teochew Crystal Dumpling", emoji: "🥟", category: "Dim Sum", price: 4.5, calories: 320, protein: 10, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "avfc_19", brandId: "alexandra_village_food_centre_star_yong_kwang_bbq_seafood", name: "Hotplate BBQ Stingray", emoji: "🐟", category: "Seafood", price: 14.0, calories: 420, protein: 32, carbs: 12, fat: 24, confidence: "estimated" },
+  { id: "avfc_20", brandId: "alexandra_village_food_centre_old_punggol_satay", name: "Satay", emoji: "🍢", category: "Local Hawker", price: 6, calories: 375, protein: 30, carbs: 20, fat: 18, confidence: "estimated" },
+  { id: "avfc_21", brandId: "alexandra_village_food_centre_mr_avocado_exotic_juice", name: "Avocado Juice", emoji: "🥤", category: "Beverages", price: 3.5, calories: 280, protein: 4, carbs: 32, fat: 14, confidence: "estimated" },
+  { id: "avfc_22", brandId: "alexandra_village_food_centre_desserts_pavilion", name: "Chinese Dessert Soup", emoji: "🍮", category: "Desserts", price: 3.2, calories: 180, protein: 4, carbs: 32, fat: 4, confidence: "estimated" },
+  { id: "avfc_23", brandId: "alexandra_village_food_centre_aj_delights", name: "Bakery Muffin", emoji: "🧁", category: "Bakery/Dessert", price: 3.35, calories: 340, protein: 5, carbs: 42, fat: 16, confidence: "estimated" },
+  { id: "avfc_24", brandId: "alexandra_village_food_centre_ah_b_bakery", name: "Bakery Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 260, protein: 7, carbs: 42, fat: 7, confidence: "estimated" },
 ];
