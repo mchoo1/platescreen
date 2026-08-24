@@ -268,6 +268,12 @@
 // Dumpling Noodle, La Mian, Soya Sauce Chicken Rice, Pickle Sour Slice Meat Pot); the rest
 // reused existing dish types. See reference/research-sessions/
 // 2026-08-24-zero-menu-plazasingapura-batch-X.md.
+// 2026-08-24 (task #65, Batch Y): added 12 menu items covering all 12 zero-menu brands at
+// Kopitiam Food Hall @ Jem (100% kopitiam-operated, all matched directly in
+// kopitiam-stall-dishes.json). 6 new dish types added to dish-macro-lookup.py (Oyster Don,
+// Chicken Hotpot, Korean Soup, Rice Table, Hunan Fish Head, Mini Wok); the rest reused
+// existing dish types. See reference/research-sessions/
+// 2026-08-24-zero-menu-kopitiamjem-batch-Y.md.
 
 export const MENU_ITEMS = [
   {
@@ -25337,4 +25343,17 @@ export const MENU_ITEMS = [
   { id: "psg_13", brandId: "kopitiam_new_hong_kong_roast", name: "Soya Sauce Chicken Rice", emoji: "🍗", category: "Chinese Roast", price: 5.0, calories: 540, protein: 26, carbs: 62, fat: 18, confidence: "estimated" },
   { id: "psg_14", brandId: "kopitiam_mini_hot_pot", name: "Pickle Sour Slice Meat Pot", emoji: "🍲", category: "Local Hawker", price: 8.5, calories: 480, protein: 30, carbs: 15, fat: 28, confidence: "estimated" },
   { id: "psg_15", brandId: "kopitiam_lei_popo", name: "Thunder Tea Rice", emoji: "🍵", category: "Local Hawker", price: 4.5, calories: 400, protein: 12, carbs: 55, fat: 14, confidence: "estimated" },
+
+  { id: "jem_1", brandId: "kopitiam_ampang_ytf", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "jem_2", brandId: "kopitiam_wanton_noodles", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "jem_3", brandId: "kopitiam_odeon_beef_noodles", name: "Beef Noodle", emoji: "🍜", category: "Noodles", price: 6.0, calories: 500, protein: 25, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "jem_4", brandId: "kopitiam_don_oyster_bar", name: "Oyster Don", emoji: "🦪", category: "Japanese", price: 9.5, calories: 520, protein: 20, carbs: 65, fat: 16, confidence: "estimated" },
+  { id: "jem_5", brandId: "kopitiam_seng_heng_roasted_delight", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "jem_6", brandId: "kopitiam_le_le_chicken_rice", name: "Steamed Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 530, protein: 28, carbs: 63, fat: 16, confidence: "estimated" },
+  { id: "jem_7", brandId: "kopitiam_chicken_pot_king", name: "Chicken Hotpot", emoji: "🍲", category: "Mala/Hotpot", price: 7.5, calories: 550, protein: 30, carbs: 25, fat: 30, confidence: "estimated" },
+  { id: "jem_8", brandId: "kopitiam_damok", name: "Korean Soup", emoji: "🍲", category: "Korean", price: 7.0, calories: 420, protein: 25, carbs: 20, fat: 22, confidence: "estimated" },
+  { id: "jem_9", brandId: "kopitiam_this_and_that", name: "Rice Table", emoji: "🍛", category: "Indonesian/Malay", price: 6.5, calories: 580, protein: 22, carbs: 70, fat: 20, confidence: "estimated" },
+  { id: "jem_10", brandId: "kopitiam_king_of_pao_fan", name: "Pao Fan", emoji: "🍚", category: "Local Hawker", price: 7.0, calories: 480, protein: 22, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "jem_11", brandId: "kopitiam_xi_xiang", name: "Hunan Fish Head", emoji: "🐟", category: "Local Hawker", price: 9.0, calories: 480, protein: 35, carbs: 15, fat: 26, confidence: "estimated" },
+  { id: "jem_12", brandId: "kopitiam_hao_jia_ji", name: "Mini Wok", emoji: "🥘", category: "Local Hawker", price: 6.0, calories: 500, protein: 20, carbs: 55, fat: 20, confidence: "estimated" },
 ];
