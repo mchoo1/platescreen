@@ -460,6 +460,8 @@ DISH_DB.update({
     "Royal Chicken Roti": ("🫓","Indian",5.0,480,18,55,20),
     "Ayam Bakar Penyet Set": ("🍗","Indonesian/Malay",6.5,580,30,40,30),
     "Dang Gui Roasted Duck Noodle": ("🍜","Chinese Roast",6.0,520,26,55,20),
+    "Salmon Teriyaki": ("🍣","Japanese",9.0,560,32,40,24),
+    "Sesame Oil Mee Sua with Braised Egg & Chicken": ("🍜","Taiwanese",6.5,480,24,55,16),
     "Pepper Rice": ("🍚","Japanese",6.5,580,26,60,24),
     "Ayam Panggang Set": ("🍗","Indonesian/Malay",6.5,560,32,25,32),
     "Mini Buddha Jumps Over The Wall": ("🍲","Chinese Roast",9.0,420,28,20,22),

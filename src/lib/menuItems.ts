@@ -325,6 +325,15 @@
 // Roti, Ayam Bakar Penyet Set, Dang Gui Roasted Duck Noodle); the rest reused existing dish
 // types (Pad Thai, Saba Fish, Mala Xiang Guo, Roasted Chicken Rice, Yong Tau Foo, Fried
 // Hokkien Mee). See reference/research-sessions/2026-08-24-zero-menu-amkhub-batch-AE.md.
+// 2026-08-24 (task #65, Batch AF): added 15 menu items covering all 15 zero-menu brands at
+// Kopitiam Food Hall @ Jurong Point (100% kopitiam-operated, all matched directly in
+// kopitiam-stall-dishes.json, including generically-named cache entries like "Japanese" and
+// "Curry Items" which are Kopitiam's own stall naming). 2 new dish types added to
+// dish-macro-lookup.py (Salmon Teriyaki, Sesame Oil Mee Sua with Braised Egg & Chicken); the
+// rest reused existing dish types (Mala Xiang Guo, Wanton Mee, Ayam Panggang Set, Fried Rice,
+// Curry Chicken, Chicken Hotpot, Sliced Fish Soup, Economical Rice, Carrot Cake, Ayam Bakar
+// Penyet Set, Fried Banana, Roti Prata, Fish and Chips). See reference/research-sessions/
+// 2026-08-24-zero-menu-jurongpoint-batch-AF.md.
 
 export const MENU_ITEMS = [
   {
@@ -25477,4 +25486,20 @@ export const MENU_ITEMS = [
   { id: "amk_8", brandId: "kopitiam_new_hokkien_mee", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
   { id: "amk_9", brandId: "kopitiam_jingdong_roti", name: "Royal Chicken Roti", emoji: "🫓", category: "Indian", price: 5.0, calories: 480, protein: 18, carbs: 55, fat: 20, confidence: "estimated" },
   { id: "amk_10", brandId: "kopitiam_pak_wee_chicken_rice", name: "Ayam Bakar Penyet Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 580, protein: 30, carbs: 40, fat: 30, confidence: "estimated" },
+
+  { id: "jp_1", brandId: "kopitiam_japanese", name: "Salmon Teriyaki", emoji: "🍣", category: "Japanese", price: 9.0, calories: 560, protein: 32, carbs: 40, fat: 24, confidence: "estimated" },
+  { id: "jp_2", brandId: "kopitiam_qin_tang", name: "Sesame Oil Mee Sua with Braised Egg & Chicken", emoji: "🍜", category: "Taiwanese", price: 6.5, calories: 480, protein: 24, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "jp_3", brandId: "kopitiam_mala_fu_wei", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8.0, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "jp_4", brandId: "kopitiam_wkj_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "jp_5", brandId: "kopitiam_indo_bbq", name: "Ayam Panggang Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 560, protein: 32, carbs: 25, fat: 32, confidence: "estimated" },
+  { id: "jp_6", brandId: "kopitiam_singa_wok", name: "Fried Rice", emoji: "🍚", category: "Local Hawker", price: 4.5, calories: 520, protein: 14, carbs: 68, fat: 18, confidence: "estimated" },
+  { id: "jp_7", brandId: "kopitiam_curry_items", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5.0, calories: 560, protein: 26, carbs: 55, fat: 26, confidence: "estimated" },
+  { id: "jp_8", brandId: "kopitiam_ji_gong_bao", name: "Chicken Hotpot", emoji: "🍲", category: "Mala/Hotpot", price: 7.5, calories: 550, protein: 30, carbs: 25, fat: 30, confidence: "estimated" },
+  { id: "jp_9", brandId: "kopitiam_king_of_grouper", name: "Sliced Fish Soup", emoji: "🍲", category: "Seafood", price: 6.0, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "jp_10", brandId: "kopitiam_he_jia_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "jp_11", brandId: "kopitiam_carrot_cake", name: "Carrot Cake", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 380, protein: 8, carbs: 52, fat: 14, confidence: "estimated" },
+  { id: "jp_12", brandId: "kopitiam_bara_penyet", name: "Ayam Bakar Penyet Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 580, protein: 30, carbs: 40, fat: 30, confidence: "estimated" },
+  { id: "jp_13", brandId: "kopitiam_traditional_snack", name: "Fried Banana", emoji: "🍌", category: "Bakery/Dessert", price: 2.0, calories: 240, protein: 3, carbs: 42, fat: 8, confidence: "estimated" },
+  { id: "jp_14", brandId: "kopitiam_sai_kitchen", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, confidence: "estimated" },
+  { id: "jp_15", brandId: "kopitiam_western_beradik", name: "Fish and Chips", emoji: "🍟", category: "Western", price: 8.0, calories: 650, protein: 28, carbs: 55, fat: 32, confidence: "estimated" },
 ];
