@@ -350,6 +350,12 @@
 // Siew Rice with Dumpling); the rest reused existing dish types (Fried Hokkien Mee, Ayam
 // Panggang Set, Putian Lor Mee, Ban Mian). See reference/research-sessions/
 // 2026-08-24-zero-menu-compassone-batch-AH.md.
+// 2026-08-24 (task #65, Batch AI): added 10 menu items covering all 10 zero-menu brands at
+// Tampines Mall (100% kopitiam-operated, all matched directly in kopitiam-stall-dishes.json).
+// 4 new dish types added to dish-macro-lookup.py (Signature Biang Biang Noodle, Cumin Beef,
+// Mixed Grill, Trio Roasted Platter); the rest reused existing dish types (Curry Chicken,
+// Yong Tau Foo, Nasi Ambeng Set, Mee Soto, Grilled Chicken, Char Kway Teow). See
+// reference/research-sessions/2026-08-24-zero-menu-tampinesmall-batch-AI.md.
 
 export const MENU_ITEMS = [
   {
@@ -25541,4 +25547,15 @@ export const MENU_ITEMS = [
   { id: "co_7", brandId: "kopitiam_express_teppanyaki", name: "Teppanyaki Garlic Chicken", emoji: "🍗", category: "Chicken Rice/Poultry", price: 8.5, calories: 600, protein: 34, carbs: 45, fat: 28, confidence: "estimated" },
   { id: "co_8", brandId: "kopitiam_handmade_noodle", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
   { id: "co_9", brandId: "kopitiam_chinatown_dangui_duck", name: "Signature Char Siew Rice with Dumpling", emoji: "🍚", category: "Chinese Roast", price: 6.5, calories: 600, protein: 28, carbs: 68, fat: 22, confidence: "estimated" },
+
+  { id: "tm_1", brandId: "kopitiam_xi_an_cuisine", name: "Signature Biang Biang Noodle", emoji: "🍜", category: "Noodles", price: 6.0, calories: 520, protein: 20, carbs: 68, fat: 16, confidence: "estimated" },
+  { id: "tm_2", brandId: "kopitiam_na_na_curry", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5.0, calories: 560, protein: 26, carbs: 55, fat: 26, confidence: "estimated" },
+  { id: "tm_3", brandId: "kopitiam_gao_ji_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "tm_4", brandId: "kopitiam_hjh_maimunah_nasi_padang", name: "Nasi Ambeng Set", emoji: "🍛", category: "Indonesian/Malay", price: 6.5, calories: 620, protein: 25, carbs: 70, fat: 22, confidence: "estimated" },
+  { id: "tm_5", brandId: "kopitiam_hjh_maimunah_malay_snack", name: "Mee Soto", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 420, protein: 20, carbs: 50, fat: 14, confidence: "estimated" },
+  { id: "tm_6", brandId: "kopitiam_riverside_indonesian_grill", name: "Grilled Chicken", emoji: "🍗", category: "Local Hawker", price: 5.5, calories: 480, protein: 38, carbs: 10, fat: 26, confidence: "estimated" },
+  { id: "tm_7", brandId: "kopitiam_delibowl_rice_express", name: "Cumin Beef", emoji: "🥩", category: "Local Hawker", price: 7.5, calories: 540, protein: 30, carbs: 30, fat: 28, confidence: "estimated" },
+  { id: "tm_8", brandId: "kopitiam_beradik_by_western_boy", name: "Mixed Grill", emoji: "🍖", category: "Western", price: 12.0, calories: 750, protein: 40, carbs: 45, fat: 40, confidence: "estimated" },
+  { id: "tm_9", brandId: "kopitiam_chinatown_hk_roasted", name: "Trio Roasted Platter", emoji: "🍗", category: "Chinese Roast", price: 8.0, calories: 620, protein: 32, carbs: 55, fat: 26, confidence: "estimated" },
+  { id: "tm_10", brandId: "kopitiam_singa_mini_wok", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
 ];
