@@ -362,4 +362,13 @@ DISH_DB.update({
     "Seafood White Bee Hoon": ("🍜","Noodles",6.5,480,28,50,16),
     "Oyster Omelette": ("🍳","Local Hawker",5.5,480,18,35,28),
     "Grilled Chicken Chop w Mushroom Cream": ("🍗","Western",7,620,36,40,30),
+    "Nasi Ambeng Set": ("🍛","Indonesian/Malay",6.5,620,25,70,22),
+    "Nasi Kandar": ("🍛","Indian",6.0,580,22,68,20),
+    "Spinach Soup": ("🥬","Local Hawker",4.0,150,8,12,6),
+    "Teppan Donburi": ("🍱","Japanese",7.0,550,28,62,18),
+    "Sarawak Laksa": ("🍜","Noodles",5.5,480,20,55,16),
+    "Grilled Chicken Salad Bowl": ("🥗","Western",7.5,380,32,25,14),
+    "Charcoal Grilled Pork Steak": ("🥩","Western",9.0,520,38,15,32),
+    "Hotplate BBQ Stingray": ("🐟","Seafood",14.0,420,32,12,24),
+    "Har Cheong Gai": ("🍗","Chicken Rice/Poultry",6.0,480,24,20,32),
 })

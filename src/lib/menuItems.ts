@@ -143,6 +143,18 @@
 // proceeding). All 28 matched reference/data/kopitiam-stall-dishes.json directly. 11 new
 // dish types added to dish-macro-lookup.py. See reference/research-sessions/
 // 2026-08-24-zero-menu-kopitiamsquare-batch-N.md.
+// 2026-08-24 (task #65, Batch O): added 26 menu items covering all 25 zero-menu brands at
+// Yishun Park Hawker Centre (operator timbre_plus_hawkers, not Kopitiam - sourced from the
+// official yishunparkhc.sg/hawker-heroes/ per-stall listing plus Miss Tam Chiak/Honeycombers
+// write-ups for dish-level detail, since this operator has no cached stall-dishes JSON).
+// 9 new dish types added to dish-macro-lookup.py (Nasi Ambeng Set, Nasi Kandar, Spinach Soup,
+// Teppan Donburi, Sarawak Laksa, Grilled Chicken Salad Bowl, Charcoal Grilled Pork Steak,
+// Hotplate BBQ Stingray, Har Cheong Gai); the rest reused existing dish types from prior
+// batches. Investigated timbre_yishun_park_xinlongxing_modern_tze_char's 3 Premises rows
+// (initially suspected as Batch-M-style duplicates) - turned out to be 3 distinct adjacent
+// unit numbers (#01-28/29/30), consistent with a large tze-char stall spanning multiple
+// units, not a duplicate-recording artifact - left as-is, no premises.ts change made. See
+// reference/research-sessions/2026-08-24-zero-menu-yishunpark-batch-O.md.
 
 export const MENU_ITEMS = [
   {
@@ -24983,4 +24995,30 @@ export const MENU_ITEMS = [
     confidence: "estimated",
     isPopular: true,
   },
+  { id: "yp_1", brandId: "timbre_yishun_park_kak_nur_and_meera", name: "Nasi Ambeng Set", emoji: "🍛", category: "Indonesian/Malay", price: 6.5, calories: 620, protein: 25, carbs: 70, fat: 22, confidence: "estimated" },
+  { id: "yp_2", brandId: "timbre_yishun_park_mingsu_vegetarian", name: "Vegetarian", emoji: "🥦", category: "Local Hawker", price: 4, calories: 380, protein: 14, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "yp_3", brandId: "timbre_yishun_park_bismi_briyani", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "yp_4", brandId: "timbre_yishun_park_shahstri_kitchenette", name: "Nasi Kandar", emoji: "🍛", category: "Indian", price: 6.0, calories: 580, protein: 22, carbs: 68, fat: 20, confidence: "estimated" },
+  { id: "yp_5", brandId: "timbre_yishun_park_ah_lock_hakka_tofu_bowl", name: "Hakka Thunder Tea Rice", emoji: "🍚", category: "Local Hawker", price: 5, calories: 480, protein: 16, carbs: 70, fat: 14, confidence: "estimated" },
+  { id: "yp_6", brandId: "timbre_yishun_park_sj_from_eunos", name: "Mee Goreng", emoji: "🍜", category: "Indonesian/Malay", price: 4, calories: 450, protein: 12, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "yp_7", brandId: "timbre_yishun_park_68_spinach_soup_and_fried_rice", name: "Spinach Soup", emoji: "🥬", category: "Local Hawker", price: 4.0, calories: 150, protein: 8, carbs: 12, fat: 6, confidence: "estimated" },
+  { id: "yp_8", brandId: "timbre_yishun_park_one_mouth_noodles", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "yp_9", brandId: "timbre_yishun_park_da_san_yuan", name: "Minced Meat Noodle", emoji: "🍜", category: "Noodles", price: 5, calories: 480, protein: 20, carbs: 60, fat: 16, confidence: "estimated" },
+  { id: "yp_10", brandId: "timbre_yishun_park_japanese_teppan_donburi", name: "Teppan Donburi", emoji: "🍱", category: "Japanese", price: 7.0, calories: 550, protein: 28, carbs: 62, fat: 18, confidence: "estimated" },
+  { id: "yp_11", brandId: "timbre_yishun_park_yew_s_noodle", name: "Sarawak Laksa", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "yp_12", brandId: "timbre_yishun_park_salad_and_cream", name: "Grilled Chicken Salad Bowl", emoji: "🥗", category: "Western", price: 7.5, calories: 380, protein: 32, carbs: 25, fat: 14, confidence: "estimated" },
+  { id: "yp_13", brandId: "timbre_yishun_park_lao_fu_jia", name: "Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 26, carbs: 12, fat: 22, confidence: "estimated" },
+  { id: "yp_14", brandId: "timbre_yishun_park_jj_prawn_noodles", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "yp_15", brandId: "timbre_yishun_park_li_fang_congee", name: "Pork Congee", emoji: "🥣", category: "Seafood", price: 4.5, calories: 300, protein: 18, carbs: 38, fat: 7, confidence: "estimated" },
+  { id: "yp_16", brandId: "timbre_yishun_park_xinlongxing_modern_tze_char", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, confidence: "estimated" },
+  { id: "yp_17", brandId: "timbre_yishun_park_phawo_thai_food", name: "Pad Thai", emoji: "🍜", category: "Thai", price: 5.5, calories: 500, protein: 18, carbs: 65, fat: 16, confidence: "estimated" },
+  { id: "yp_18", brandId: "timbre_yishun_park_taliwang", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "yp_19", brandId: "timbre_yishun_park_smokin_joe", name: "Charcoal Grilled Pork Steak", emoji: "🥩", category: "Western", price: 9.0, calories: 520, protein: 38, carbs: 15, fat: 32, confidence: "estimated" },
+  { id: "yp_20", brandId: "timbre_yishun_park_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "yp_21", brandId: "timbre_yishun_park_jiao_cai_hotplate_bbq", name: "Hotplate BBQ Stingray", emoji: "🐟", category: "Seafood", price: 14.0, calories: 420, protein: 32, carbs: 12, fat: 24, confidence: "estimated" },
+  { id: "yp_22", brandId: "timbre_yishun_park_ah_tan_crispy_chicken_har_cheong_gai", name: "Har Cheong Gai", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.0, calories: 480, protein: 24, carbs: 20, fat: 32, confidence: "estimated" },
+  { id: "yp_23", brandId: "timbre_yishun_park_hua_hua_cooking_and_eating", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "yp_24", brandId: "timbre_yishun_park_munchi", name: "Peanut Pancake", emoji: "🥞", category: "Snacks", price: 1.8, calories: 220, protein: 5, carbs: 30, fat: 9, confidence: "estimated" },
+  { id: "yp_25", brandId: "timbre_yishun_park_tuck_shop", name: "Kopi", emoji: "☕", category: "Beverages", price: 1.7, calories: 120, protein: 2, carbs: 20, fat: 4, confidence: "estimated" },
+  { id: "yp_26", brandId: "timbre_yishun_park_tuck_shop", name: "Teh", emoji: "🍵", category: "Beverages", price: 1.7, calories: 140, protein: 2, carbs: 28, fat: 3, confidence: "estimated" },
 ];
