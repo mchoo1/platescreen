@@ -411,4 +411,10 @@ DISH_DB.update({
     "Crispy Chicken": ("🍗","Chicken Rice/Poultry",5.5,480,28,25,28),
     "Curry Chicken Noodle": ("🍜","Indonesian/Malay",5.0,540,24,60,22),
     "Pork Rib Soup": ("🍲","Local Hawker",6.0,380,26,15,20),
+    "Ayam Panggang": ("🍗","Indonesian/Malay",6.0,520,30,20,32),
+    "Salted Baked Chicken": ("🍗","Chicken Rice/Poultry",6.5,560,34,15,36),
+    "Pao Fan": ("🍚","Local Hawker",7.0,480,22,55,16),
+    "Carrot Cake": ("🍚","Local Hawker",3.5,380,8,52,14),
+    "Donburi": ("🍱","Japanese",7.0,560,26,68,18),
+    "Dumplings": ("🥟","Dim Sum",4.5,340,12,45,10),
 })

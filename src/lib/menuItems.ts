@@ -237,6 +237,12 @@
 // Head, reused here for Tai Pai Tong Seafood). kopitiam_kopi_kiosk again has 2 legitimate
 // premises rows here (same pattern as Senja) - not a duplicate. See
 // reference/research-sessions/2026-08-24-zero-menu-fernvale-batch-T.md.
+// 2026-08-24 (task #65, Batch U): added 18 menu items covering all 18 zero-menu brands at
+// Parkway Parade (100% kopitiam-operated, all matched directly in
+// kopitiam-stall-dishes.json). 6 new dish types added to dish-macro-lookup.py (Ayam
+// Panggang, Salted Baked Chicken, Pao Fan, Carrot Cake, Donburi, Dumplings); the rest
+// reused existing dish types. See reference/research-sessions/
+// 2026-08-24-zero-menu-parkwayparade-batch-U.md.
 
 export const MENU_ITEMS = [
   {
@@ -25236,4 +25242,22 @@ export const MENU_ITEMS = [
   { id: "fv_23", brandId: "kopitiam_bedok_one_hokkien_prawn_mee", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
   { id: "fv_24", brandId: "kopitiam_umi_s_spices", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
   { id: "fv_25", brandId: "kopitiam_saudagar_penyek", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
+  { id: "pp_1", brandId: "kopitiam_king_dae_bak_korean", name: "Beef Bulgogi", emoji: "🥩", category: "Korean", price: 7.5, calories: 580, protein: 30, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "pp_2", brandId: "kopitiam_he_jia_mixed_veg_rice", name: "Mixed Veg Rice", emoji: "🍱", category: "Local Hawker", price: 4.0, calories: 450, protein: 18, carbs: 55, fat: 15, confidence: "estimated" },
+  { id: "pp_3", brandId: "kopitiam_pig_s_organ_soup", name: "Pig Organ Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 28, carbs: 10, fat: 22, confidence: "estimated" },
+  { id: "pp_4", brandId: "kopitiam_na_na_homemade_curry", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5, calories: 560, protein: 26, carbs: 55, fat: 26, confidence: "estimated" },
+  { id: "pp_5", brandId: "kopitiam_bali_bali_indonesian_bbq", name: "Ayam Panggang", emoji: "🍗", category: "Indonesian/Malay", price: 6.0, calories: 520, protein: 30, carbs: 20, fat: 32, confidence: "estimated" },
+  { id: "pp_6", brandId: "kopitiam_lam_s_noodle_and_chicken", name: "Salted Baked Chicken", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.5, calories: 560, protein: 34, carbs: 15, fat: 36, confidence: "estimated" },
+  { id: "pp_7", brandId: "kopitiam_lobster_king_pao_fan", name: "Pao Fan", emoji: "🍚", category: "Local Hawker", price: 7.0, calories: 480, protein: 22, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "pp_8", brandId: "kopitiam_mian_mian_ju_dao", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "pp_9", brandId: "kopitiam_seabay_wok_delight", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "pp_10", brandId: "kopitiam_old_hup_kee", name: "Carrot Cake", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 380, protein: 8, carbs: 52, fat: 14, confidence: "estimated" },
+  { id: "pp_11", brandId: "kopitiam_fitra_hainanese_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "pp_12", brandId: "kopitiam_hjh_maimunah_mini", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "pp_13", brandId: "kopitiam_donburi_oyster_beer", name: "Donburi", emoji: "🍱", category: "Japanese", price: 7.0, calories: 560, protein: 26, carbs: 68, fat: 18, confidence: "estimated" },
+  { id: "pp_14", brandId: "kopitiam_blanco_court_beef_noodle", name: "Beef Noodle", emoji: "🍜", category: "Noodles", price: 6, calories: 500, protein: 25, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "pp_15", brandId: "kopitiam_fuzhou_yan_dumpling_and_jian_bo", name: "Dumplings", emoji: "🥟", category: "Dim Sum", price: 4.5, calories: 340, protein: 12, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "pp_16", brandId: "kopitiam_steam_house", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
+  { id: "pp_17", brandId: "kopitiam_briyani_express", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "pp_18", brandId: "kopitiam_kuchina_kiosko", name: "Pasta", emoji: "🍝", category: "Western", price: 7.5, calories: 580, protein: 20, carbs: 68, fat: 20, confidence: "estimated" },
 ];
