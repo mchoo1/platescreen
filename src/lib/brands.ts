@@ -199,6 +199,13 @@
 // site scrape (cleaner id/name, e.g. "kopitiam_singapore_fried_hokkien_mee"). Kept the
 // Kopitiam-scrape version in each pair; the 5 removed had 0 MenuItems and no unique data.
 // 1,772 -> 1,767 brands. See reference/research-sessions/2026-08-24-zero-menu-punggolcoast-batch-F.md.
+// 2026-08-24 (task #65, Batch J): removed 1 more duplicate brand, same pattern as Batch F,
+// discovered while covering Pasir Ris Central Hawker Centre's zero-menu stalls:
+// "pasir_ris_central_hawker_centre_wild_olives" (raw SFA-licensee-derived) was the same real
+// stall, same address/postal (110 Pasir Ris Central, Singapore 519641), as
+// "kopitiam_wild_olives" (Kopitiam site scrape). Both had 0 MenuItems. Kept the Kopitiam-scrape
+// version, which is covered with a real menu item in this batch. 1,767 -> 1,766 brands. See
+// reference/research-sessions/2026-08-24-zero-menu-pasirriscentral-batch-J.md.
 
 export const BRANDS_1 = [
   {
@@ -25681,22 +25688,6 @@ export const BRANDS_4 = [
     cuisine: "Bak Kut Teh",
     aliases: [
       "hua xing bak kut teh"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_wild_olives",
-    name: "Wild Olives",
-    emoji: "🍖",
-    type: "hawker",
-    cuisine: "Western Grill",
-    aliases: [
-      "wild olives"
     ],
     dietTags: [],
     priceRange: "$",

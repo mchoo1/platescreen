@@ -5,6 +5,8 @@
 // koufu.com.sg (source: "operator_official_site") — see brands.ts header.
 // 2026-08-24 (task #65, Batch F): removed 5 duplicate premises rows at Punggol Coast Hawker
 // Centre — see brands.ts header for the matching Brand removal and full explanation.
+// 2026-08-24 (task #65, Batch J): removed 1 more duplicate premises row at Pasir Ris Central
+// Hawker Centre (pasir_ris_central_hawker_centre_wild_olives) — see brands.ts header.
 //
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
@@ -76715,19 +76717,6 @@ export const PREMISES_12 = [
     postal: "600347",
     lat: 1.34541698312776,
     lng: 103.731703838354,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "pasir_ris_central_hawker_centre_wild_olives_p1",
-    brandId: "pasir_ris_central_hawker_centre_wild_olives",
-    label: "Pasir Ris Central Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Pasir Ris Central Hawker Centre",
-    address: "110 Pasir Ris Central, Singapore 519641",
-    postal: "519641",
-    lat: 1.37347252064326,
-    lng: 103.951571342467,
     sfa: null,
     source: "web_research"
   },

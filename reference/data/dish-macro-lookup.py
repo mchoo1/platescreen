@@ -295,3 +295,23 @@ DISH_DB.update({
     "Cut Fruits": ("🍉","Bakery/Dessert",2.5,90,1,22,0),
     "Roasted Duck Pizza": ("🍕","Western",9.8,650,26,68,28),
 })
+DISH_DB.update({
+    "Ayam Penyet": ("🍗","Indonesian/Malay",6,580,30,50,26),
+    "Nasi Sambal Goreng Set": ("🍛","Indonesian/Malay",6,560,20,68,22),
+    "Indian Muslim Rojak": ("🥗","Indian",4,380,14,48,14),
+    "Signature Claypot Herbal Mutton Soup": ("🍲","Local Hawker",8,480,32,15,30),
+    "Traditional Lor Mee": ("🍜","Noodles",4.5,470,16,68,14),
+    "Signature Braised Pork Rice Combo": ("🍚","Local Hawker",5,560,24,60,22),
+    "Chicken Cutlet": ("🍗","Western",6,600,32,50,26),
+    "Cafe Latte": ("☕","Beverages",4.5,150,6,15,7),
+    "Longan Walnut Muffin": ("🧁","Bakery/Dessert",3.5,340,6,42,16),
+    "Flying Dragon Noodles": ("🍜","Noodles",5,500,20,62,16),
+    "Grilled Chicken with Mushroom Sauce": ("🍗","Western",7,520,38,30,24),
+    "Nasi Lemak with Chicken Wing Set": ("🍛","Indonesian/Malay",5.5,600,26,65,25),
+    "Ayam Curry Kapitan Set": ("🍛","Indonesian/Malay",6,580,26,60,26),
+    "Sliced Bak Kwa (100g)": ("🥓","Local Hawker",7.5,320,28,18,16),
+    "Kueh Lapis": ("🍰","Bakery/Dessert",2,220,3,32,9),
+    "Special Prawn Noodles": ("🍜","Noodles",6.5,480,26,55,16),
+    "Thai Boat Noodles": ("🍜","Thai",5.5,420,18,58,12),
+    "Hamburg Hot Bun": ("🍔","Japanese",7.9,580,28,55,26),
+})
