@@ -388,6 +388,13 @@
 // category); the rest reused existing dish types (Kaya Butter Toast, Economical Rice, Bread,
 // Nasi Lemak, Duck Rice, Roasted Chicken Rice). See
 // reference/research-sessions/2026-08-24-zero-menu-changigeneral-batch-AM.md.
+//
+// Batch AN (2026-08-24): +9 items for 9 zero-menu brands at Punggol 639, all
+// operatorId: kopitiam, all matched directly in kopitiam-stall-dishes.json. 4 new dish types
+// added to dish-macro-lookup.py (Nasi Sambal Goreng, Asam Steamed Fish, Salted Egg Yolk
+// Cutlet, Salted Egg Fried Chicken); the rest reused existing dish types (Yong Tau Foo, Nasi
+// Briyani, Dim Sum, Wanton Mee, Seafood White Bee Hoon). See
+// reference/research-sessions/2026-08-24-zero-menu-punggol639-batch-AN.md.
 
 export const MENU_ITEMS = [
   {
@@ -25630,4 +25637,13 @@ export const MENU_ITEMS = [
   { id: "cgh_7", brandId: "kopitiam_malay_kueh", name: "Epok-Epok", emoji: "🥟", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 4, carbs: 22, fat: 8, confidence: "estimated" },
   { id: "cgh_8", brandId: "kopitiam_heyya_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5.0, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
   { id: "cgh_9", brandId: "kopitiam_chicky_fun_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "pg639_1", brandId: "kopitiam_dapur_dapur_pisang", name: "Nasi Sambal Goreng", emoji: "🍚", category: "Indonesian/Malay", price: 4.5, calories: 480, protein: 12, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "pg639_2", brandId: "kopitiam_hk_chun_kee", name: "Asam Steamed Fish", emoji: "🐟", category: "Seafood", price: 7.0, calories: 320, protein: 32, carbs: 15, fat: 12, confidence: "estimated" },
+  { id: "pg639_3", brandId: "kopitiam_ho_chiak_north", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "pg639_4", brandId: "kopitiam_shuang_xing", name: "Salted Egg Yolk Cutlet", emoji: "🍗", category: "Local Hawker", price: 6.0, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "pg639_5", brandId: "kopitiam_ak_sait_restaurant", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "pg639_6", brandId: "kopitiam_kimly_dim_sum", name: "Dim Sum", emoji: "🥟", category: "Dim Sum", price: 4, calories: 320, protein: 10, carbs: 42, fat: 10, confidence: "estimated" },
+  { id: "pg639_7", brandId: "kopitiam_ming_xiang_food", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "pg639_8", brandId: "kopitiam_shang_ke_pte_ltd", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, confidence: "estimated" },
+  { id: "pg639_9", brandId: "kopitiam_he_jia_food", name: "Salted Egg Fried Chicken", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.5, calories: 580, protein: 30, carbs: 30, fat: 35, confidence: "estimated" },
 ];
