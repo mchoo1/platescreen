@@ -491,6 +491,8 @@ DISH_DB.update({
     "Claypot Bak Kut Teh": ("🍲","Local Hawker",7.5,480,32,15,30),
     "Char Seow Kolomee": ("🍜","Noodles",5.5,480,22,55,18),
     "Sorrowful Romance Claypot Rice": ("🍚","Local Hawker",6.5,560,24,75,16),
+    "Prawn Paste Chicken Cutlet Fried Rice": ("🍚","Chicken Rice/Poultry",5.5,620,24,70,26),
+    "Teppanyaki Chicken Omu Curry Rice": ("🍛","Japanese",7.5,650,26,75,24),
     "Pepper Rice": ("🍚","Japanese",6.5,580,26,60,24),
     "Ayam Panggang Set": ("🍗","Indonesian/Malay",6.5,560,32,25,32),
     "Mini Buddha Jumps Over The Wall": ("🍲","Chinese Roast",9.0,420,28,20,22),

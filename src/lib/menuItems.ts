@@ -416,6 +416,13 @@
 // dishes (Oyster Cake, Fish Soup, Tom Yum Soup, Kway Chap, Claypot Rice, Curry Chicken Noodle,
 // Kaya Toast, Yong Tau Foo, Epok-Epok) already existed. See
 // reference/research-sessions/2026-08-25-zero-menu-berseh-batch-AQ.md.
+//
+// Batch AR (2026-08-25): +8 items for 8 zero-menu brands at Bagus @ Pasir Ris Mall, all
+// operatorId: kopitiam, all matched directly in kopitiam-stall-dishes.json. 2 new dish types
+// added to dish-macro-lookup.py (Prawn Paste Chicken Cutlet Fried Rice, Teppanyaki Chicken Omu
+// Curry Rice); the rest reused existing dish types (Sliced Fish Soup, Bimbimbap, Roasted
+// Chicken Rice, Mala Xiang Guo, Scrambled Egg Rice, Beef Roti). See
+// reference/research-sessions/2026-08-25-zero-menu-bagusPasirRis-batch-AR.md.
 
 export const MENU_ITEMS = [
   {
@@ -25694,4 +25701,12 @@ export const MENU_ITEMS = [
   { id: "bfc_7", brandId: "berseh_food_centre_coffee_hut", name: "Kaya Toast", emoji: "🍞", category: "Coffeeshop Fare", price: 2.2, calories: 190, protein: 4, carbs: 26, fat: 8, confidence: "estimated" },
   { id: "bfc_8", brandId: "berseh_food_centre_special_chilli_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
   { id: "bfc_9", brandId: "berseh_food_centre_epok_epok_story", name: "Epok-Epok", emoji: "🥟", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 4, carbs: 22, fat: 8, confidence: "estimated" },
+  { id: "bpr_1", brandId: "kopitiam_wok_qi_fried_rice", name: "Prawn Paste Chicken Cutlet Fried Rice", emoji: "🍚", category: "Chicken Rice/Poultry", price: 5.5, calories: 620, protein: 24, carbs: 70, fat: 26, confidence: "estimated" },
+  { id: "bpr_2", brandId: "kopitiam_halim_fish_soup", name: "Sliced Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "bpr_3", brandId: "kopitiam_omu_curry_rice_and_donburi", name: "Teppanyaki Chicken Omu Curry Rice", emoji: "🍛", category: "Japanese", price: 7.5, calories: 650, protein: 26, carbs: 75, fat: 24, confidence: "estimated" },
+  { id: "bpr_4", brandId: "kopitiam_hong_le_korean_cuisine", name: "Bimbimbap", emoji: "🍚", category: "Korean", price: 7, calories: 550, protein: 24, carbs: 70, fat: 18, confidence: "estimated" },
+  { id: "bpr_5", brandId: "kopitiam_cintaan_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "bpr_6", brandId: "kopitiam_monster_chilli", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "bpr_7", brandId: "kopitiam_kawan_bowl_scrambled_egg", name: "Scrambled Egg Rice", emoji: "🍚", category: "Local Hawker", price: 5, calories: 480, protein: 18, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "bpr_8", brandId: "kopitiam_krispi_roti", name: "Beef Roti", emoji: "🫓", category: "Indian", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 20, confidence: "estimated" },
 ];
