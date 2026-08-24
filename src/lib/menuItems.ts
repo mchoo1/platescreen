@@ -356,6 +356,12 @@
 // Mixed Grill, Trio Roasted Platter); the rest reused existing dish types (Curry Chicken,
 // Yong Tau Foo, Nasi Ambeng Set, Mee Soto, Grilled Chicken, Char Kway Teow). See
 // reference/research-sessions/2026-08-24-zero-menu-tampinesmall-batch-AI.md.
+// 2026-08-24 (task #65, Batch AJ): added 10 menu items covering all 10 zero-menu brands at
+// Vista Point (100% kopitiam-operated, all matched directly in kopitiam-stall-dishes.json).
+// 1 new dish type added to dish-macro-lookup.py (Nonya Kueh); the rest reused existing dish
+// types (Nasi Lemak, Roasted Chicken Rice, Yong Tau Foo, Steamed Chicken Rice, Western Food,
+// Zi Char, Nasi Padang, Herbal Soup, Rojak). See reference/research-sessions/
+// 2026-08-24-zero-menu-vistapoint-batch-AJ.md.
 
 export const MENU_ITEMS = [
   {
@@ -25558,4 +25564,15 @@ export const MENU_ITEMS = [
   { id: "tm_8", brandId: "kopitiam_beradik_by_western_boy", name: "Mixed Grill", emoji: "🍖", category: "Western", price: 12.0, calories: 750, protein: 40, carbs: 45, fat: 40, confidence: "estimated" },
   { id: "tm_9", brandId: "kopitiam_chinatown_hk_roasted", name: "Trio Roasted Platter", emoji: "🍗", category: "Chinese Roast", price: 8.0, calories: 620, protein: 32, carbs: 55, fat: 26, confidence: "estimated" },
   { id: "tm_10", brandId: "kopitiam_singa_mini_wok", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+
+  { id: "vp_1", brandId: "kopitiam_super_nasi_lemak_club", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "vp_2", brandId: "kopitiam_seng_heng_atas_roasted_delights_chinatown", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "vp_3", brandId: "kopitiam_emogi_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "vp_4", brandId: "kopitiam_jom_chicken_rice", name: "Steamed Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 530, protein: 28, carbs: 63, fat: 16, confidence: "estimated" },
+  { id: "vp_5", brandId: "kopitiam_rindu_rasa_western", name: "Western Food", emoji: "🍽️", category: "Western", price: 6.5, calories: 600, protein: 28, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "vp_6", brandId: "kopitiam_he_jia_huan_and_rice_garden", name: "Zi Char", emoji: "🍲", category: "Local Hawker", price: 9.0, calories: 600, protein: 28, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "vp_7", brandId: "kopitiam_d_laila_cuisine", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "vp_8", brandId: "kopitiam_jia_wei_lao_huo_bao_tang", name: "Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6.0, calories: 380, protein: 26, carbs: 12, fat: 22, confidence: "estimated" },
+  { id: "vp_9", brandId: "kopitiam_ain_popiah_basah", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4.0, calories: 320, protein: 6, carbs: 45, fat: 14, confidence: "estimated" },
+  { id: "vp_10", brandId: "kopitiam_548_nonya_kueh", name: "Nonya Kueh", emoji: "🍥", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 3, carbs: 32, fat: 6, confidence: "estimated" },
 ];
