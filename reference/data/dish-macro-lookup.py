@@ -487,6 +487,8 @@ DISH_DB.update({
     "Asam Steamed Fish": ("🐟","Seafood",7.0,320,32,15,12),
     "Salted Egg Yolk Cutlet": ("🍗","Local Hawker",6.0,550,25,35,32),
     "Salted Egg Fried Chicken": ("🍗","Chicken Rice/Poultry",6.5,580,30,30,35),
+    "Roasted Duck": ("🦆","Chinese Roast",6.0,520,30,10,38),
+    "Claypot Bak Kut Teh": ("🍲","Local Hawker",7.5,480,32,15,30),
     "Pepper Rice": ("🍚","Japanese",6.5,580,26,60,24),
     "Ayam Panggang Set": ("🍗","Indonesian/Malay",6.5,560,32,25,32),
     "Mini Buddha Jumps Over The Wall": ("🍲","Chinese Roast",9.0,420,28,20,22),

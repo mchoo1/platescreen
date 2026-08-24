@@ -395,6 +395,12 @@
 // Cutlet, Salted Egg Fried Chicken); the rest reused existing dish types (Yong Tau Foo, Nasi
 // Briyani, Dim Sum, Wanton Mee, Seafood White Bee Hoon). See
 // reference/research-sessions/2026-08-24-zero-menu-punggol639-batch-AN.md.
+//
+// Batch AO (2026-08-24): +9 items for 9 zero-menu brands at Jurong West Central 679, all
+// operatorId: kopitiam, all matched directly in kopitiam-stall-dishes.json. 2 new dish types
+// added to dish-macro-lookup.py (Roasted Duck, Claypot Bak Kut Teh); the rest reused existing
+// dish types (Roti Prata, Curry Fish head, Ban Mian, Nasi Lemak, Kaya Toast, Economical Rice,
+// Bimbimbap). See reference/research-sessions/2026-08-24-zero-menu-jurongwest679-batch-AO.md.
 
 export const MENU_ITEMS = [
   {
@@ -25646,4 +25652,13 @@ export const MENU_ITEMS = [
   { id: "pg639_7", brandId: "kopitiam_ming_xiang_food", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
   { id: "pg639_8", brandId: "kopitiam_shang_ke_pte_ltd", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, confidence: "estimated" },
   { id: "pg639_9", brandId: "kopitiam_he_jia_food", name: "Salted Egg Fried Chicken", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.5, calories: 580, protein: 30, carbs: 30, fat: 35, confidence: "estimated" },
+  { id: "jwc679_1", brandId: "kopitiam_nks_indian_muslim_food", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, confidence: "estimated" },
+  { id: "jwc679_2", brandId: "kopitiam_hong_kong_street_old_chun_kee", name: "Curry Fish head", emoji: "🐟", category: "Seafood", price: 12, calories: 550, protein: 40, carbs: 30, fat: 30, confidence: "estimated" },
+  { id: "jwc679_3", brandId: "kopitiam_ban_mian_fish_soup_porridge", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "jwc679_4", brandId: "kopitiam_hong_man_tian", name: "Roasted Duck", emoji: "🦆", category: "Chinese Roast", price: 6.0, calories: 520, protein: 30, carbs: 10, fat: 38, confidence: "estimated" },
+  { id: "jwc679_5", brandId: "kopitiam_econ_bee_hoon_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "jwc679_6", brandId: "kopitiam_drink_counter", name: "Kaya Toast", emoji: "🍞", category: "Coffeeshop Fare", price: 2.2, calories: 190, protein: 4, carbs: 26, fat: 8, confidence: "estimated" },
+  { id: "jwc679_7", brandId: "kopitiam_chang_cheng_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "jwc679_8", brandId: "kopitiam_king", name: "Claypot Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 7.5, calories: 480, protein: 32, carbs: 15, fat: 30, confidence: "estimated" },
+  { id: "jwc679_9", brandId: "kopitiam_japanese_and_korean_cusine", name: "Bimbimbap", emoji: "🍚", category: "Korean", price: 7, calories: 550, protein: 24, carbs: 70, fat: 18, confidence: "estimated" },
 ];
