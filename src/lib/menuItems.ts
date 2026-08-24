@@ -2,6 +2,15 @@
 // Untyped literal export (see MenuItem in types/db.ts) — screener.ts casts at the boundary.
 // 2026-08-22: reassigned 2 items (tekka_roti_prata_egg, tekka_masala_prata) to the 2 new real
 // Tekka prata brands split out during the generic-name cleanup (see brands.ts header note).
+// 2026-08-24 (task #63, Batch A): added 35 menu items across the 5 Koufu in-house chains that
+// had 0 MenuItems despite being real, consistent-menu brands with 84 outlets combined (Nine
+// Fresh, Happy Hawkers, Dough Culture, R&B Tea, Grove) — first batch of the zero-menu-item
+// cleanup (1,610 of 1,772 brands had none; see reference/research-sessions/
+// 2026-08-24-zero-menu-koufu-batch-A.md). Dish names + prices are real, sourced per-brand
+// (Dough Culture from Koufu's own site scrape, Nine Fresh/R&B Tea/Grove from their current
+// public menus/reviews, Happy Hawkers from a PriceListo aggregation of an actual Koufu toast/
+// beverage stall). Macros are estimated per dish type (confidence: "estimated"), same
+// methodology used throughout this file - no macro here is an official published figure.
 
 export const MENU_ITEMS = [
   {
@@ -3643,7 +3652,7 @@ export const MENU_ITEMS = [
     confidence: "estimated"
   },
   {
-    id: "tb_set_a",
+    id: "tb_set_a2",
     brandId: "toast_box",
     name: "Set A (Toast + 2 Eggs + Drink)",
     emoji: "🍽️",
@@ -14932,6 +14941,587 @@ export const MENU_ITEMS = [
     fat: 18,
     compatibleWith: [
       "no_pork"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hh_kaya_butter_toast",
+    brandId: "koufu_happy_hawkers",
+    name: "Kaya Butter Toast",
+    emoji: "🍞",
+    category: "Breakfast",
+    price: 2.2,
+    calories: 190,
+    protein: 4,
+    carbs: 26,
+    fat: 8,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hh_kaya_butter_french_loaf",
+    brandId: "koufu_happy_hawkers",
+    name: "Kaya Butter French Loaf",
+    emoji: "🥖",
+    category: "Breakfast",
+    price: 2,
+    calories: 230,
+    protein: 5,
+    carbs: 32,
+    fat: 9,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hh_kaya_toast_set_c",
+    brandId: "koufu_happy_hawkers",
+    name: "Kaya Butter Toast Set C (Toast + Eggs + Kopi)",
+    emoji: "🍽️",
+    category: "Breakfast",
+    price: 4.6,
+    calories: 430,
+    protein: 15,
+    carbs: 44,
+    fat: 20,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "hh_soft_boiled_eggs",
+    brandId: "koufu_happy_hawkers",
+    name: "Soft Boiled Eggs (2pc)",
+    emoji: "🥚",
+    category: "Breakfast",
+    price: 2,
+    calories: 140,
+    protein: 12,
+    carbs: 1,
+    fat: 10,
+    compatibleWith: [
+      "vegetarian",
+      "gluten_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hh_kopi_o_hot",
+    brandId: "koufu_happy_hawkers",
+    name: "Kopi O (Hot)",
+    emoji: "☕",
+    category: "Beverages",
+    price: 1.7,
+    calories: 70,
+    protein: 0,
+    carbs: 18,
+    fat: 0,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hh_kopi_hot",
+    brandId: "koufu_happy_hawkers",
+    name: "Kopi (Hot, with condensed milk)",
+    emoji: "☕",
+    category: "Beverages",
+    price: 1.8,
+    calories: 120,
+    protein: 2,
+    carbs: 20,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "hh_kopi_o_iced_22oz",
+    brandId: "koufu_happy_hawkers",
+    name: "Kopi O (Iced, 22oz)",
+    emoji: "🧊",
+    category: "Beverages",
+    price: 2.7,
+    calories: 90,
+    protein: 0,
+    carbs: 23,
+    fat: 0,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "nf_signature",
+    brandId: "koufu_nine_fresh",
+    name: "Nine Fresh Signature",
+    emoji: "🍮",
+    category: "Desserts",
+    price: 3.5,
+    calories: 280,
+    protein: 6,
+    carbs: 50,
+    fat: 6,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "nf_grass_jelly_special",
+    brandId: "koufu_nine_fresh",
+    name: "Grass Jelly Special",
+    emoji: "🍧",
+    category: "Desserts",
+    price: 2.8,
+    calories: 180,
+    protein: 2,
+    carbs: 40,
+    fat: 1,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "nf_pearly_bean_curd",
+    brandId: "koufu_nine_fresh",
+    name: "Pearly Bean Curd",
+    emoji: "🍮",
+    category: "Desserts",
+    price: 3.5,
+    calories: 250,
+    protein: 8,
+    carbs: 42,
+    fat: 5,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "nf_fruity_ai_yu_jelly",
+    brandId: "koufu_nine_fresh",
+    name: "Fruity Ai-Yu Jelly",
+    emoji: "🍧",
+    category: "Desserts",
+    price: 3.8,
+    calories: 150,
+    protein: 1,
+    carbs: 36,
+    fat: 0.5,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "nf_black_sugar_ai_yu_jelly",
+    brandId: "koufu_nine_fresh",
+    name: "Black Sugar Ai-Yu Jelly",
+    emoji: "🍧",
+    category: "Desserts",
+    price: 3.8,
+    calories: 220,
+    protein: 1,
+    carbs: 52,
+    fat: 0.5,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "nf_goodness_cup",
+    brandId: "koufu_nine_fresh",
+    name: "Goodness Cup (Taro Ball Signature)",
+    emoji: "🍡",
+    category: "Desserts",
+    price: 4,
+    calories: 320,
+    protein: 5,
+    carbs: 62,
+    fat: 7,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "nf_golden_cup",
+    brandId: "koufu_nine_fresh",
+    name: "Golden Cup (Mixed Base)",
+    emoji: "🍮",
+    category: "Desserts",
+    price: 3.9,
+    calories: 300,
+    protein: 5,
+    carbs: 58,
+    fat: 6,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "nf_earl_grey_milk_tea",
+    brandId: "koufu_nine_fresh",
+    name: "Earl Grey Milk Tea",
+    emoji: "🧋",
+    category: "Beverages",
+    price: 3.5,
+    calories: 180,
+    protein: 3,
+    carbs: 30,
+    fat: 5,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_you_tiao",
+    brandId: "koufu_dough_culture",
+    name: "You Tiao",
+    emoji: "🥖",
+    category: "Snacks",
+    price: 1.1,
+    calories: 160,
+    protein: 3,
+    carbs: 18,
+    fat: 8,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "dc_curry_puff",
+    brandId: "koufu_dough_culture",
+    name: "Curry Puff",
+    emoji: "🥟",
+    category: "Snacks",
+    price: 1.5,
+    calories: 180,
+    protein: 4,
+    carbs: 20,
+    fat: 9,
+    compatibleWith: [],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_samosa",
+    brandId: "koufu_dough_culture",
+    name: "Samosa",
+    emoji: "🥟",
+    category: "Snacks",
+    price: 1.5,
+    calories: 150,
+    protein: 4,
+    carbs: 16,
+    fat: 8,
+    compatibleWith: [],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_carrot_cake",
+    brandId: "koufu_dough_culture",
+    name: "Carrot Cake (Fried, piece)",
+    emoji: "🍘",
+    category: "Snacks",
+    price: 1.1,
+    calories: 120,
+    protein: 2,
+    carbs: 14,
+    fat: 6,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_yam_cake",
+    brandId: "koufu_dough_culture",
+    name: "Yam Cake",
+    emoji: "🍘",
+    category: "Snacks",
+    price: 1.3,
+    calories: 140,
+    protein: 2,
+    carbs: 16,
+    fat: 7,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_spring_roll",
+    brandId: "koufu_dough_culture",
+    name: "Spring Roll",
+    emoji: "🥢",
+    category: "Snacks",
+    price: 1.4,
+    calories: 130,
+    protein: 3,
+    carbs: 15,
+    fat: 6,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_sweet_potato_slice",
+    brandId: "koufu_dough_culture",
+    name: "Sweet Potato Slice",
+    emoji: "🍠",
+    category: "Snacks",
+    price: 1.3,
+    calories: 110,
+    protein: 1,
+    carbs: 18,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "dc_tau_suan",
+    brandId: "koufu_dough_culture",
+    name: "Tau Suan",
+    emoji: "🥣",
+    category: "Desserts",
+    price: 2,
+    calories: 220,
+    protein: 6,
+    carbs: 38,
+    fat: 4,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "rb_brown_sugar_boba_cheese_brulee",
+    brandId: "koufu_rb_tea",
+    name: "Brown Sugar Boba Milk with Cheese Brulee",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 4.9,
+    calories: 420,
+    protein: 6,
+    carbs: 62,
+    fat: 15,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "rb_brown_sugar_boba_milk",
+    brandId: "koufu_rb_tea",
+    name: "Brown Sugar Boba Milk",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 3.9,
+    calories: 350,
+    protein: 5,
+    carbs: 55,
+    fat: 14,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "rb_classic_milk_tea",
+    brandId: "koufu_rb_tea",
+    name: "Classic Milk Tea",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 2.8,
+    calories: 300,
+    protein: 6,
+    carbs: 45,
+    fat: 10,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "rb_peachy_crystal",
+    brandId: "koufu_rb_tea",
+    name: "Peachy Crystal",
+    emoji: "🍑",
+    category: "Fruit Tea",
+    price: 4.3,
+    calories: 200,
+    protein: 1,
+    carbs: 50,
+    fat: 0,
+    compatibleWith: [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "rb_ceylon_black_tea_cheese_cream",
+    brandId: "koufu_rb_tea",
+    name: "Ceylon Black Tea with Cheese Cream",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 4.5,
+    calories: 320,
+    protein: 6,
+    carbs: 45,
+    fat: 12,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "rb_roasted_oolong_milk_tea",
+    brandId: "koufu_rb_tea",
+    name: "Roasted Oolong Milk Tea",
+    emoji: "🧋",
+    category: "Milk Tea",
+    price: 2.8,
+    calories: 290,
+    protein: 5,
+    carbs: 42,
+    fat: 10,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "rb_mango_yogi",
+    brandId: "koufu_rb_tea",
+    name: "Mango Yogi (Low Fat)",
+    emoji: "🥭",
+    category: "Beverages",
+    price: 5.2,
+    calories: 220,
+    protein: 4,
+    carbs: 45,
+    fat: 2,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "grove_lu_rou_la_mian",
+    brandId: "koufu_grove",
+    name: "Braised Mushroom (Lu Rou) La Mian",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 6.8,
+    calories: 480,
+    protein: 16,
+    carbs: 65,
+    fat: 16,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated",
+    isPopular: true
+  },
+  {
+    id: "grove_herbal_la_mian",
+    brandId: "koufu_grove",
+    name: "Herbal La Mian",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 7.8,
+    calories: 420,
+    protein: 14,
+    carbs: 58,
+    fat: 12,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "grove_laksa_la_mian",
+    brandId: "koufu_grove",
+    name: "Laksa La Mian",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 7.8,
+    calories: 520,
+    protein: 15,
+    carbs: 62,
+    fat: 22,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "grove_dry_truffle_noodle",
+    brandId: "koufu_grove",
+    name: "Dry Truffle Noodle",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 8.8,
+    calories: 460,
+    protein: 13,
+    carbs: 60,
+    fat: 16,
+    compatibleWith: [
+      "vegetarian"
+    ],
+    confidence: "estimated"
+  },
+  {
+    id: "grove_dry_kung_pao_noodle",
+    brandId: "koufu_grove",
+    name: "Dry Kung Pao Noodle",
+    emoji: "🍜",
+    category: "Noodles",
+    price: 6.8,
+    calories: 440,
+    protein: 14,
+    carbs: 58,
+    fat: 15,
+    compatibleWith: [
+      "vegetarian"
     ],
     confidence: "estimated"
   }
