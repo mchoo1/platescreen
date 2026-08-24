@@ -48,7 +48,7 @@ DISH_DB = {
     "Sweet & Sour Pork Set Meal": ("🍚","Chicken Rice/Poultry",5.5,580,22,60,26),
     "Black Carrot Cake": ("🍘","Bakery/Dessert",4,450,10,55,20),
     "Fried Carrot Cake": ("🍘","Bakery/Dessert",4,450,10,55,20),
-    "Fried Osyter": ("🦪","Bakery/Dessert",6,450,15,45,22),
+    "Fried Oyster": ("🦪","Local Hawker",6,450,15,45,22),
     "White Carrot Cake": ("🍘","Bakery/Dessert",4,420,10,53,18),
     "Fried Bee Hoon": ("🍜","Indonesian/Malay",3.5,380,10,55,12),
     "Fried Mee": ("🍜","Indonesian/Malay",4,420,12,58,14),
@@ -257,4 +257,19 @@ DISH_DB.update({
 DISH_DB.update({
     "Peanut Pancake": ("🥞","Snacks",1.8,220,5,30,9),
     "Curry Fish head": ("🐟","Seafood",12,550,40,30,30),
+})
+DISH_DB.update({
+    "Steamed Pau": ("🥟","Local Hawker",1.5,220,7,32,7),
+    "Watercress Pork Ribs Soup": ("🍲","Chicken Rice/Poultry",6.5,340,26,10,20),
+    "Meatball Minced Meat Noodle": ("🍜","Noodles",5,430,22,55,13),
+    "Salted Egg Shrimp Ball": ("🍤","Local Hawker",9,480,26,25,30),
+    "Chicken Oyako Don": ("🍚","Japanese",6,520,26,60,16),
+    "Cheong Fun": ("🥟","Dim Sum",3.5,300,10,45,7),
+    "ABC Juice": ("🥤","Local Hawker",3,150,1,35,0),
+    "Ipoh Hor Fun": ("🍜","Noodles",5.5,480,20,55,15),
+    "South Indian Banana Leaf Rice": ("🍛","Indian",6,600,20,80,20),
+})
+DISH_DB.update({
+    "You Tiao": ("🥖","Bakery/Dessert",1,180,4,25,7),
+    "Nasi Lemak Ayam Taliwang": ("🍛","Indonesian/Malay",6.5,620,28,60,28),
 })
