@@ -274,6 +274,17 @@
 // Chicken Hotpot, Korean Soup, Rice Table, Hunan Fish Head, Mini Wok); the rest reused
 // existing dish types. See reference/research-sessions/
 // 2026-08-24-zero-menu-kopitiamjem-batch-Y.md.
+// 2026-08-24 (task #65, Batch Z): added 13 menu items covering 13 of 15 zero-menu brands at
+// Ayer Rajah Food Centre / Ayer Rajah Market (non-Kopitiam venue, individually web-researched
+// via Timbre+ and hawker-guide sources). 2 brands intentionally skipped, not fabricated:
+// Cold Storage Singapore (1983) Pte Ltd (a supermarket brand mis-recorded as a hawker stall
+// -- no food "dish" applies) and Fei Siong (F&B) Holdings Pte. Ltd. (an operator/holding
+// company recorded generically, with no way to identify which of its many sub-concepts this
+// specific counter represents). 10 new dish types added to dish-macro-lookup.py (BBQ
+// Stingray, Fried Hokkien Prawn Mee, Double-Boiled Soup, Local Snacks, Fried Noodles, Lobster
+// Roll, Chaat, Skewer Rice Bowl, Big Bern's Cheese Burger, Pepperoni Pizza); the rest reused
+// existing dish types (Mee Goreng, Fishball Noodles, Wanton Mee). See
+// reference/research-sessions/2026-08-24-zero-menu-ayerrajah-batch-Z.md.
 
 export const MENU_ITEMS = [
   {
@@ -25356,4 +25367,18 @@ export const MENU_ITEMS = [
   { id: "jem_10", brandId: "kopitiam_king_of_pao_fan", name: "Pao Fan", emoji: "🍚", category: "Local Hawker", price: 7.0, calories: 480, protein: 22, carbs: 55, fat: 16, confidence: "estimated" },
   { id: "jem_11", brandId: "kopitiam_xi_xiang", name: "Hunan Fish Head", emoji: "🐟", category: "Local Hawker", price: 9.0, calories: 480, protein: 35, carbs: 15, fat: 26, confidence: "estimated" },
   { id: "jem_12", brandId: "kopitiam_hao_jia_ji", name: "Mini Wok", emoji: "🥘", category: "Local Hawker", price: 6.0, calories: 500, protein: 20, carbs: 55, fat: 20, confidence: "estimated" },
+
+  { id: "arf_1", brandId: "ayer_rajah_market_nm_abdul_rahim", name: "Mee Goreng", emoji: "🍜", category: "Indonesian/Malay", price: 4.0, calories: 450, protein: 12, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "arf_2", brandId: "ayer_rajah_market_hong_kong_yummy_soup", name: "Double-Boiled Soup", emoji: "🍲", category: "Chinese Roast", price: 8.0, calories: 320, protein: 20, carbs: 15, fat: 18, confidence: "estimated" },
+  { id: "arf_3", brandId: "ayer_rajah_market_uncle_noodle", name: "Fried Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 16, carbs: 62, fat: 16, confidence: "estimated" },
+  { id: "arf_4", brandId: "ayer_rajah_market_tokyo_bbq_stingray", name: "BBQ Stingray", emoji: "🐟", category: "Seafood", price: 8.5, calories: 380, protein: 30, carbs: 10, fat: 20, confidence: "estimated" },
+  { id: "arf_5", brandId: "ayer_rajah_market_xin_bao_sheng", name: "Local Snacks", emoji: "🥟", category: "Snacks", price: 3.5, calories: 250, protein: 6, carbs: 35, fat: 10, confidence: "estimated" },
+  { id: "arf_6", brandId: "ayer_rajah_market_wu_ba_ye_fried_hokkien_prawn_mee", name: "Fried Hokkien Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "arf_7", brandId: "ayer_rajah_food_centre_fishball_story", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "arf_8", brandId: "ayer_rajah_food_centre_wong_kee_wanton_noodles", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "arf_9", brandId: "ayer_rajah_food_centre_dancing_crab_shack", name: "Lobster Roll", emoji: "🦞", category: "Seafood", price: 14.0, calories: 480, protein: 22, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "arf_10", brandId: "ayer_rajah_food_centre_chit_chaat_chai", name: "Chaat", emoji: "🥙", category: "Indian", price: 5.0, calories: 320, protein: 10, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "arf_11", brandId: "ayer_rajah_food_centre_kush", name: "Skewer Rice Bowl", emoji: "🍢", category: "Local Hawker", price: 8.0, calories: 550, protein: 30, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "arf_12", brandId: "ayer_rajah_food_centre_big_bern_s_american_grill_xpolis_pte_ltd", name: "Big Bern's Cheese Burger", emoji: "🍔", category: "Western", price: 12.0, calories: 680, protein: 32, carbs: 45, fat: 38, confidence: "estimated" },
+  { id: "arf_13", brandId: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
 ];
