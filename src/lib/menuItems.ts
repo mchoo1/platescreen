@@ -380,6 +380,14 @@
 // dish-macro-lookup.py (Hainanese Chicken Rice, Penang Laksa); the rest reused existing dish
 // types (Fried Rice, Tonkotsu Chashu Ramen, Wanton Mee, Satay Bee Hoon, Nasi Lemak, Mixed
 // Grill, Kway Chap). See reference/research-sessions/2026-08-24-zero-menu-tampines1-batch-AL.md.
+//
+// Batch AM (2026-08-24): +9 items for 9 zero-menu brands at Changi General Hospital (8
+// kopitiam-operated matched directly in kopitiam-stall-dishes.json, 1 koufu-operated "1983 -
+// Coffee & Toast" confirmed via web search as a real 24/7 cafe brand). 3 new dish types added
+// to dish-macro-lookup.py (Lechon Kawali, Salad, Epok-Epok — including a new "Filipino"
+// category); the rest reused existing dish types (Kaya Butter Toast, Economical Rice, Bread,
+// Nasi Lemak, Duck Rice, Roasted Chicken Rice). See
+// reference/research-sessions/2026-08-24-zero-menu-changigeneral-batch-AM.md.
 
 export const MENU_ITEMS = [
   {
@@ -25612,4 +25620,14 @@ export const MENU_ITEMS = [
   { id: "tp1_7", brandId: "nikmat_nasi_lemak_husk", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
   { id: "tp1_8", brandId: "fire_western_n_grill", name: "Mixed Grill", emoji: "🍖", category: "Western", price: 12.0, calories: 750, protein: 40, carbs: 45, fat: 40, confidence: "estimated" },
   { id: "tp1_9", brandId: "garden_street_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+
+  { id: "cgh_1", brandId: "koufu_1983_coffee_toast", name: "Kaya Butter Toast", emoji: "🍞", category: "Coffeeshop Fare", price: 2.2, calories: 190, protein: 4, carbs: 26, fat: 8, confidence: "estimated" },
+  { id: "cgh_2", brandId: "kopitiam_amiba_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "cgh_3", brandId: "kopitiam_bake_inc", name: "Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 250, protein: 6, carbs: 42, fat: 6, confidence: "estimated" },
+  { id: "cgh_4", brandId: "kopitiam_filipino_cuisine", name: "Lechon Kawali", emoji: "🍖", category: "Filipino", price: 8.5, calories: 620, protein: 30, carbs: 15, fat: 45, confidence: "estimated" },
+  { id: "cgh_5", brandId: "kopitiam_crowded_salad_bowl", name: "Salad", emoji: "🥗", category: "Local Hawker", price: 6.0, calories: 280, protein: 12, carbs: 20, fat: 16, confidence: "estimated" },
+  { id: "cgh_6", brandId: "kopitiam_monster_chili_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "cgh_7", brandId: "kopitiam_malay_kueh", name: "Epok-Epok", emoji: "🥟", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 4, carbs: 22, fat: 8, confidence: "estimated" },
+  { id: "cgh_8", brandId: "kopitiam_heyya_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5.0, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "cgh_9", brandId: "kopitiam_chicky_fun_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
 ];
