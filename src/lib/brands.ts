@@ -1064,25 +1064,7 @@ export const BRANDS_1 = [
       "delivery"
     ]
   },
-  {
-    id: "superfood_kitchen",
-    name: "Superfood Kitchen",
-    emoji: "🥬",
-    type: "restaurant",
-    cuisine: "Healthy / Bowls",
-    aliases: [
-      "superfood kitchen",
-      "sfk",
-      "superfoodkitchen"
-    ],
-    dietTags: [],
-    priceRange: "$$",
-    platforms: [
-      "dine_in",
-      "grab_go",
-      "delivery"
-    ]
-  },
+  
   {
     id: "boost_juice",
     name: "Boost Juice",
@@ -3274,24 +3256,7 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-  {
-    id: "wendys",
-    name: "Wendy's",
-    emoji: "🍔",
-    type: "restaurant",
-    cuisine: "Fast Food",
-    aliases: [
-      "wendy's",
-      "wendys",
-      "wendy"
-    ],
-    dietTags: [],
-    priceRange: "$$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+  
   {
     id: "home_cooked",
     name: "Home Cooked",

@@ -9327,98 +9327,11 @@ export const MENU_ITEMS = [
     ],
     confidence: "estimated"
   },
-  {
-    id: "sfk_signature_bowl",
-    brandId: "superfood_kitchen",
-    name: "Superfood Signature Bowl",
-    emoji: "🥬",
-    category: "Superfood Bowls",
-    price: 15.9,
-    calories: 480,
-    protein: 28,
-    carbs: 52,
-    fat: 16,
-    compatibleWith: [
-      "no_pork",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "sfk_chicken_bowl",
-    brandId: "superfood_kitchen",
-    name: "Grilled Chicken Superfood Bowl",
-    emoji: "🍗",
-    category: "Superfood Bowls",
-    price: 16.9,
-    calories: 520,
-    protein: 40,
-    carbs: 50,
-    fat: 16,
-    compatibleWith: [
-      "no_pork",
-      "gluten_free"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "sfk_açai_bowl",
-    brandId: "superfood_kitchen",
-    name: "Açaí Power Bowl",
-    emoji: "🫐",
-    category: "Superfood Bowls",
-    price: 14.9,
-    calories: 440,
-    protein: 10,
-    carbs: 70,
-    fat: 14,
-    compatibleWith: [
-      "no_pork",
-      "vegetarian",
-      "vegan"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "sfk_detox_salad",
-    brandId: "superfood_kitchen",
-    name: "Detox Kale Salad",
-    emoji: "🥗",
-    category: "Salads",
-    price: 13.9,
-    calories: 340,
-    protein: 10,
-    carbs: 32,
-    fat: 18,
-    compatibleWith: [
-      "no_pork",
-      "vegetarian",
-      "vegan",
-      "gluten_free"
-    ],
-    confidence: "estimated"
-  },
-  {
-    id: "sfk_protein_smoothie",
-    brandId: "superfood_kitchen",
-    name: "Protein Power Smoothie",
-    emoji: "🥤",
-    category: "Smoothies",
-    price: 9.9,
-    calories: 300,
-    protein: 24,
-    carbs: 36,
-    fat: 6,
-    compatibleWith: [
-      "no_pork",
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
+  
+  
+  
+  
+  
   {
     id: "boost_mango_magic",
     brandId: "boost_juice",
@@ -13503,127 +13416,14 @@ export const MENU_ITEMS = [
     confidence: "estimated",
     isPopular: true
   },
-  {
-    id: "wendys_daves_single_combo",
-    brandId: "wendys",
-    name: "Dave's Single Combo",
-    emoji: "🍔",
-    category: "Combo Meals",
-    price: 15.5,
-    calories: 1050,
-    protein: 38,
-    carbs: 119,
-    fat: 39,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "wendys_spicy_chk_combo",
-    brandId: "wendys",
-    name: "Spicy Chicken Combo",
-    emoji: "🌶️",
-    category: "Combo Meals",
-    price: 15.5,
-    calories: 980,
-    protein: 37,
-    carbs: 133,
-    fat: 26,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "wendys_daves_single",
-    brandId: "wendys",
-    name: "Dave's Single",
-    emoji: "🍔",
-    category: "Burgers",
-    price: 8.5,
-    calories: 570,
-    protein: 34,
-    carbs: 39,
-    fat: 30,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "wendys_daves_double",
-    brandId: "wendys",
-    name: "Dave's Double",
-    emoji: "🍔",
-    category: "Burgers",
-    price: 11.5,
-    calories: 840,
-    protein: 56,
-    carbs: 41,
-    fat: 50,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "wendys_daves_triple",
-    brandId: "wendys",
-    name: "Dave's Triple",
-    emoji: "🍔",
-    category: "Burgers",
-    price: 14.5,
-    calories: 1090,
-    protein: 78,
-    carbs: 43,
-    fat: 70,
-    compatibleWith: [],
-    confidence: "estimated"
-  },
-  {
-    id: "wendys_spicy_chicken",
-    brandId: "wendys",
-    name: "Spicy Chicken Sandwich",
-    emoji: "🌶️",
-    category: "Chicken",
-    price: 8.5,
-    calories: 510,
-    protein: 33,
-    carbs: 53,
-    fat: 17,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "wendys_baconator",
-    brandId: "wendys",
-    name: "Baconator",
-    emoji: "🥓",
-    category: "Burgers",
-    price: 15.5,
-    calories: 960,
-    protein: 68,
-    carbs: 44,
-    fat: 56,
-    compatibleWith: [],
-    confidence: "estimated",
-    isPopular: true
-  },
-  {
-    id: "wendys_frosty_s",
-    brandId: "wendys",
-    name: "Frosty (S)",
-    emoji: "🍦",
-    category: "Desserts",
-    price: 3.5,
-    calories: 240,
-    protein: 7,
-    carbs: 40,
-    fat: 7,
-    compatibleWith: [
-      "vegetarian"
-    ],
-    confidence: "estimated",
-    isPopular: true
-  },
+  
+  
+  
+  
+  
+  
+  
+  
   {
     id: "ing_chicken_breast",
     brandId: "fairprice",

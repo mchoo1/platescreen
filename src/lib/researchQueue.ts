@@ -1540,6 +1540,31 @@ export const RESEARCH_QUEUE = [
     priority: "medium",
     status: "pending",
     notes: "2026-08-23: same pass as Bukit Canberra. This venue already existed in premises.ts with 6 generic SFA-sourced stalls; its own site (yishunparkhc.sg, WordPress) has a 'hawkers' custom-post sitemap listing 34 stall pages. Unlike Bukit Canberra, 9 of those slugs cleanly 302-redirect to the homepage instead of serving stale content — read as retired/renamed stalls and excluded rather than guessed (no content-mismatch risk here, WordPress is doing the right thing by redirecting unpublished posts). The remaining 25 pages each have a real trading name plus a 'name / cuisine / #unit' block in the page body (cuisine phrasing here is the operator's own, not slug-derived, so trusted directly — no equivalent mismatch problem as Bukit Canberra). New Operator 'timbre_plus_hawkers' added rather than reusing 'canopy_hawkers': the site's own branding throughout is Timbre+ Hawkers Pte Ltd (nav says 'Timbre App', footer contact is @timbregroup.asia) even though news coverage reports Canopy Hawkers Group taking over operations from Jul 2026 — sourced what the site itself says rather than the reported handover; worth revisiting if/when the site itself updates. 25 real Brand rows, 27 Premises rows (XinLongXing Modern Tze Char spans 3 adjacent units, #01-28/29/30) — all at 51 Yishun Avenue 11, Singapore 768867, geocoded once for the building with per-unit addresses. One Punggol Hawker Centre (onepunggolhc.sg), also ex-Timbre+ with the same sitemap pattern (31 stall slugs), was NOT completed — every individual stall page inconsistently 302-redirects to its homepage regardless of headers/cookies/referer tried (one attempt with a test cookie returned 200 once, but was not reproducible on retry) — flagged for a future attempt, possibly via browser automation instead of raw curl. Same macro gap as every other batch — no MenuItems added yet."
+  },
+  {
+    id: "mccafe_colocation_research",
+    name: "McCafe",
+    aliases: [
+      "mccafe",
+      "mc cafe"
+    ],
+    type: "grab_go",
+    cuisine: "Cafe / Coffee",
+    priority: "medium",
+    status: "pending",
+    notes: "2026-08-24 (address-accuracy audit): the `mccafe` Brand already exists with 10 real MenuItems, but its only Premises row (`mccafe_p19`) was a legacy 'Multiple outlets islandwide' placeholder with no real address — removed rather than left misleading, since a single address can't represent a co-located concept. McCafe is real (WebSearch: ~43-46 of McDonald's 136 Singapore outlets have a McCafe corner), but which specific outlets is unconfirmed — needs per-outlet research (McDonald's own site or a McCafe-specific store list) to identify the actual subset before adding real Premises rows. Until then McCafe has 0 premises and won't appear as a location in the app, even though its menu data is real and ready."
+  },
+  {
+    id: "nourish_bowl_existence_check",
+    name: "Nourish Bowl",
+    aliases: [
+      "nourish bowl",
+      "nourishbowl"
+    ],
+    type: "restaurant",
+    cuisine: "Healthy / Bowls",
+    priority: "low",
+    status: "pending",
+    notes: "2026-08-24 (address-accuracy audit): the `nourish_bowl` Brand already exists with 5 real MenuItems, but its only Premises row (`nourish_bowl_p28`) was a legacy 'Multiple outlets islandwide' placeholder — removed since no current address could be verified. Two rounds of WebSearch found zero verifiable current Singapore presence under this exact name (only a differently-named 'Nourish Table' at the Botanic Gardens, and 'Nourish Awesome Bowl' in Kuala Lumpur — neither confirmed to be the same brand as this database's `nourish_bowl`). Needs a dedicated pass to either find a real current address or confirm this brand is defunct/was a naming mix-up, similar to the Wendy's/Superfood Kitchen resolution this same session (both confirmed defunct and removed entirely, including their MenuItems)."
   }
-
 ];
