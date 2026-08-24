@@ -239,3 +239,22 @@ DISH_DB.update({
     "Popiah": ("🌯","Local Hawker",3.5,260,8,38,8),
     "Laksa": ("🍜","Local Hawker",5.5,550,20,55,28),
 })
+DISH_DB.update({
+    "Fried Fritters": ("🍤","Local Hawker",1.5,180,3,20,9),
+    "Herbal Chicken Soup": ("🍲","Local Hawker",6.5,350,28,10,20),
+    "Chendol": ("🍧","Bakery/Dessert",3,320,3,60,8),
+    "Seafood Pao Fan": ("🥣","Local Hawker",6,380,22,45,10),
+    "Army Stew": ("🍲","Korean",7,480,25,35,26),
+    "Grilled Fish": ("🐟","Seafood",7,400,32,15,18),
+    "Mee Sua": ("🍜","Local Hawker",4.5,380,15,55,12),
+    "Malay Snacks": ("🍡","Indonesian/Malay",1.5,180,3,25,8),
+    "Nasi Goreng": ("🍚","Indonesian/Malay",4.5,500,15,68,18),
+    "Porridge": ("🥣","Local Hawker",3.5,260,10,42,5),
+    "Bread": ("🍞","Bakery/Dessert",2.5,250,6,42,6),
+    "Oyster Cake": ("🦪","Local Hawker",4.5,380,12,42,18),
+    "Indian Mediterranean Fusion Plate": ("🥙","Indian",7.5,550,28,45,26),
+})
+DISH_DB.update({
+    "Peanut Pancake": ("🥞","Snacks",1.8,220,5,30,9),
+    "Curry Fish head": ("🐟","Seafood",12,550,40,30,30),
+})
