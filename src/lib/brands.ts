@@ -173,6 +173,25 @@
 // duplicates and corrected mid-batch - see the Batch V session doc). The Kitchen and The Green Hut
 // reconfirmed absent from Koufu's current brand taxonomy - not real, not a gap. 1,774 brands
 // (unchanged), +2 premises.
+// 2026-08-24 (defunct chains): removed Wendy's and Superfood Kitchen entirely (brand + premises +
+// menu items) per user direction - both confirmed defunct in Singapore despite having real,
+// previously-researched menu data on file. 1,774 -> 1,772 brands.
+// 2026-08-24 (platforms data defaults, task #61): two DISTINCT categories of edit, kept separate
+// on purpose so neither is mistaken for the other:
+//   (1) DOCUMENTED DEFAULT, not individually verified - added "grab_go" to the `platforms` array
+//       of 1,531 brands (973 food_court_stall + 558 hawker) whose platforms was exactly
+//       ["dine_in"]. Applied as a reasoned structural default per explicit user approval: Singapore
+//       hawker/food-court stalls near-universally allow takeaway ("da bao"). This was NOT
+//       researched per-stall like the rest of this file's data - it's a bulk cultural-default
+//       fill, and should never be read as equivalent to a sourced fact.
+//   (2) INDIVIDUALLY VERIFIED named-chain fix - confirmed via web search that McDonald's, KFC,
+//       and Subway all deliver in Singapore via GrabFood/foodpanda/Deliveroo (added "delivery" to
+//       mcd, kfc, subway, each already had grab_go); confirmed Saizeriya offers both takeaway and
+//       GrabFood delivery (added both "grab_go" and "delivery" - was dine_in only). kopitiam_kfc
+//       (the food-court concession, type: food_court_stall) picked up "grab_go" automatically via
+//       (1) above and was left at [dine_in, grab_go] - its own delivery availability was not
+//       independently verified, so "delivery" was deliberately NOT added there.
+// 1,772 brands (unchanged), 0 premises changed.
 
 export const BRANDS_1 = [
   {
@@ -194,7 +213,8 @@ export const BRANDS_1 = [
     priceRange: "$",
     platforms: [
       "dine_in",
-      "grab_go"
+      "grab_go",
+      "delivery"
     ]
   },
   {
@@ -214,7 +234,8 @@ export const BRANDS_1 = [
     priceRange: "$",
     platforms: [
       "dine_in",
-      "grab_go"
+      "grab_go",
+      "delivery"
     ]
   },
   {
@@ -254,7 +275,8 @@ export const BRANDS_1 = [
     priceRange: "$$",
     platforms: [
       "dine_in",
-      "grab_go"
+      "grab_go",
+      "delivery"
     ]
   },
   {
@@ -790,7 +812,9 @@ export const BRANDS_1 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go",
+      "delivery"
     ]
   },
   {
@@ -1576,7 +1600,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -1598,7 +1623,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -1751,7 +1777,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -1774,7 +1801,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -1797,7 +1825,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -1819,7 +1848,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -1841,7 +1871,8 @@ export const BRANDS_1 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -4595,7 +4626,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4611,7 +4643,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4627,7 +4660,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4643,7 +4677,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4659,7 +4694,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4675,7 +4711,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4691,7 +4728,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4707,7 +4745,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4723,7 +4762,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4739,7 +4779,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4755,7 +4796,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4771,7 +4813,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4787,7 +4830,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4803,7 +4847,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4819,7 +4864,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4837,7 +4883,8 @@ export const BRANDS_2 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4855,7 +4902,8 @@ export const BRANDS_2 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4871,7 +4919,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4887,7 +4936,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4903,7 +4953,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4919,7 +4970,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4935,7 +4987,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4951,7 +5004,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4967,7 +5021,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4983,7 +5038,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -4999,7 +5055,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -5015,7 +5072,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "hawkers_street"
   },
@@ -5227,7 +5285,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5243,7 +5302,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5259,7 +5319,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5275,7 +5336,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5291,7 +5353,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5307,7 +5370,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5323,7 +5387,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5339,7 +5404,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5355,7 +5421,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5371,7 +5438,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5387,7 +5455,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5403,7 +5472,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5419,7 +5489,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5435,7 +5506,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5451,7 +5523,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5467,7 +5540,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5483,7 +5557,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5499,7 +5574,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5515,7 +5591,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5531,7 +5608,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5547,7 +5625,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5563,7 +5642,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5579,7 +5659,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5595,7 +5676,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5611,7 +5693,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5627,7 +5710,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5643,7 +5727,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5659,7 +5744,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5675,7 +5761,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5691,7 +5778,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5707,7 +5795,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5723,7 +5812,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5739,7 +5829,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5755,7 +5846,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5771,7 +5863,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5787,7 +5880,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5803,7 +5897,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5819,7 +5914,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5835,7 +5931,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5851,7 +5948,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5867,7 +5965,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5883,7 +5982,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5899,7 +5999,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5915,7 +6016,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5931,7 +6033,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5947,7 +6050,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5963,7 +6067,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5979,7 +6084,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -5995,7 +6101,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6011,7 +6118,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6027,7 +6135,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6043,7 +6152,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6059,7 +6169,8 @@ export const BRANDS_2 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   }
@@ -6078,7 +6189,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6094,7 +6206,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6110,7 +6223,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6126,7 +6240,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6142,7 +6257,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6158,7 +6274,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6174,7 +6291,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6190,7 +6308,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6206,7 +6325,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6222,7 +6342,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6238,7 +6359,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6254,7 +6376,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6270,7 +6393,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6286,7 +6410,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6302,7 +6427,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6318,7 +6444,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6334,7 +6461,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6350,7 +6478,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6366,7 +6495,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6382,7 +6512,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6398,7 +6529,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6414,7 +6546,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6430,7 +6563,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6446,7 +6580,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6462,7 +6597,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6478,7 +6614,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6494,7 +6631,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6510,7 +6648,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6526,7 +6665,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6542,7 +6682,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6558,7 +6699,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6574,7 +6716,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6590,7 +6733,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6606,7 +6750,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6622,7 +6767,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6638,7 +6784,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6654,7 +6801,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6670,7 +6818,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6686,7 +6835,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6702,7 +6852,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6718,7 +6869,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6734,7 +6886,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6750,7 +6903,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6766,7 +6920,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6782,7 +6937,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6798,7 +6954,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6814,7 +6971,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6830,7 +6988,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6846,7 +7005,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6862,7 +7022,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6878,7 +7039,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6894,7 +7056,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6910,7 +7073,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6926,7 +7090,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6942,7 +7107,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6958,7 +7124,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6974,7 +7141,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -6990,7 +7158,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7006,7 +7175,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7022,7 +7192,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7038,7 +7209,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7054,7 +7226,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7070,7 +7243,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7086,7 +7260,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7102,7 +7277,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7118,7 +7294,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7134,7 +7311,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7150,7 +7328,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7166,7 +7345,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7182,7 +7362,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7198,7 +7379,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7214,7 +7396,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7230,7 +7413,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7246,7 +7430,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7262,7 +7447,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7278,7 +7464,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7294,7 +7481,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7310,7 +7498,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7326,7 +7515,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7342,7 +7532,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7358,7 +7549,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7374,7 +7566,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7390,7 +7583,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7406,7 +7600,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7422,7 +7617,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7438,7 +7634,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7454,7 +7651,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7470,7 +7668,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7486,7 +7685,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7502,7 +7702,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7518,7 +7719,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7534,7 +7736,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7550,7 +7753,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7566,7 +7770,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7582,7 +7787,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7598,7 +7804,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7614,7 +7821,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7630,7 +7838,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7646,7 +7855,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7662,7 +7872,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7678,7 +7889,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7694,7 +7906,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7710,7 +7923,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7726,7 +7940,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7742,7 +7957,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7758,7 +7974,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7774,7 +7991,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7790,7 +8008,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7806,7 +8025,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7822,7 +8042,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7838,7 +8059,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7854,7 +8076,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7870,7 +8093,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7886,7 +8110,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7902,7 +8127,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7918,7 +8144,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7934,7 +8161,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7950,7 +8178,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7966,7 +8195,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7982,7 +8212,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -7998,7 +8229,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8014,7 +8246,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8030,7 +8263,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8046,7 +8280,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8062,7 +8297,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8078,7 +8314,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8094,7 +8331,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8110,7 +8348,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8126,7 +8365,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8142,7 +8382,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8158,7 +8399,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8174,7 +8416,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8190,7 +8433,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8206,7 +8450,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8222,7 +8467,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8238,7 +8484,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8254,7 +8501,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8270,7 +8518,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8286,7 +8535,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8302,7 +8552,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8318,7 +8569,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8334,7 +8586,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8350,7 +8603,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8366,7 +8620,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8382,7 +8637,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8398,7 +8654,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8414,7 +8671,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8430,7 +8688,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8446,7 +8705,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8462,7 +8722,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8478,7 +8739,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8494,7 +8756,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8510,7 +8773,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8526,7 +8790,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8542,7 +8807,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8558,7 +8824,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8574,7 +8841,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8590,7 +8858,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8606,7 +8875,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8622,7 +8892,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8638,7 +8909,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8654,7 +8926,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8670,7 +8943,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8686,7 +8960,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8702,7 +8977,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8718,7 +8994,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8734,7 +9011,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8750,7 +9028,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8766,7 +9045,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8782,7 +9062,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8798,7 +9079,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8814,7 +9096,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8830,7 +9113,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8846,7 +9130,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8862,7 +9147,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8878,7 +9164,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8894,7 +9181,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8910,7 +9198,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8926,7 +9215,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8942,7 +9232,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8958,7 +9249,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8974,7 +9266,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -8990,7 +9283,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9006,7 +9300,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9022,7 +9317,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9038,7 +9334,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9054,7 +9351,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9070,7 +9368,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9086,7 +9385,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9102,7 +9402,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9118,7 +9419,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9134,7 +9436,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9150,7 +9453,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9166,7 +9470,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9182,7 +9487,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9198,7 +9504,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9214,7 +9521,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9230,7 +9538,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9246,7 +9555,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9262,7 +9572,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9278,7 +9589,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9294,7 +9606,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9310,7 +9623,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9326,7 +9640,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9342,7 +9657,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9358,7 +9674,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9374,7 +9691,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9390,7 +9708,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9406,7 +9725,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9422,7 +9742,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9438,7 +9759,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9454,7 +9776,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9470,7 +9793,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9486,7 +9810,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9502,7 +9827,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9518,7 +9844,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9534,7 +9861,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9550,7 +9878,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9566,7 +9895,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9582,7 +9912,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9598,7 +9929,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9614,7 +9946,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9630,7 +9963,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9646,7 +9980,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9662,7 +9997,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9678,7 +10014,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9694,7 +10031,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9710,7 +10048,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9726,7 +10065,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9742,7 +10082,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9758,7 +10099,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9774,7 +10116,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9790,7 +10133,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9806,7 +10150,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9822,7 +10167,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9838,7 +10184,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9854,7 +10201,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9870,7 +10218,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9886,7 +10235,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9902,7 +10252,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9918,7 +10269,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9934,7 +10286,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9950,7 +10303,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9966,7 +10320,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9982,7 +10337,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -9998,7 +10354,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10014,7 +10371,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10030,7 +10388,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10046,7 +10405,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10062,7 +10422,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10078,7 +10439,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10094,7 +10456,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10110,7 +10473,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10126,7 +10490,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10142,7 +10507,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10158,7 +10524,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10174,7 +10541,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10190,7 +10558,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10206,7 +10575,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10222,7 +10592,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10238,7 +10609,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10254,7 +10626,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10270,7 +10643,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10286,7 +10660,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10302,7 +10677,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10318,7 +10694,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10334,7 +10711,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10350,7 +10728,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10366,7 +10745,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10382,7 +10762,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10398,7 +10779,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10414,7 +10796,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10430,7 +10813,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10446,7 +10830,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10462,7 +10847,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10478,7 +10864,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10494,7 +10881,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10510,7 +10898,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10526,7 +10915,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10542,7 +10932,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10558,7 +10949,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10574,7 +10966,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10590,7 +10983,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10606,7 +11000,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10622,7 +11017,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10638,7 +11034,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10654,7 +11051,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10670,7 +11068,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10686,7 +11085,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10702,7 +11102,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10718,7 +11119,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10734,7 +11136,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10750,7 +11153,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10766,7 +11170,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10782,7 +11187,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10798,7 +11204,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10814,7 +11221,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10830,7 +11238,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10846,7 +11255,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10862,7 +11272,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10878,7 +11289,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10894,7 +11306,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10910,7 +11323,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10926,7 +11340,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10942,7 +11357,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10958,7 +11374,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10974,7 +11391,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -10990,7 +11408,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11006,7 +11425,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11022,7 +11442,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11038,7 +11459,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11054,7 +11476,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11070,7 +11493,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11086,7 +11510,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11102,7 +11527,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11118,7 +11544,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11134,7 +11561,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11150,7 +11578,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11166,7 +11595,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11182,7 +11612,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11198,7 +11629,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11214,7 +11646,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11230,7 +11663,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11246,7 +11680,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11262,7 +11697,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11278,7 +11714,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11294,7 +11731,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11310,7 +11748,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11326,7 +11765,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11342,7 +11782,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11358,7 +11799,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11374,7 +11816,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11390,7 +11833,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11406,7 +11850,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11422,7 +11867,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11438,7 +11884,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11454,7 +11901,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11470,7 +11918,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11486,7 +11935,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11502,7 +11952,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11518,7 +11969,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11534,7 +11986,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11550,7 +12003,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11566,7 +12020,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11582,7 +12037,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11598,7 +12054,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11614,7 +12071,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11630,7 +12088,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11646,7 +12105,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11662,7 +12122,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11678,7 +12139,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11694,7 +12156,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11710,7 +12173,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11726,7 +12190,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11742,7 +12207,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11758,7 +12224,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11774,7 +12241,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11790,7 +12258,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11806,7 +12275,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11822,7 +12292,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11838,7 +12309,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11854,7 +12326,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11870,7 +12343,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11886,7 +12360,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11902,7 +12377,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11918,7 +12394,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11934,7 +12411,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11950,7 +12428,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11966,7 +12445,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11982,7 +12462,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -11998,7 +12479,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12014,7 +12496,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12030,7 +12513,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12046,7 +12530,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12062,7 +12547,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12078,7 +12564,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12094,7 +12581,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12110,7 +12598,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12126,7 +12615,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12142,7 +12632,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12158,7 +12649,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12174,7 +12666,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12190,7 +12683,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12206,7 +12700,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12222,7 +12717,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12238,7 +12734,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12254,7 +12751,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12270,7 +12768,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12286,7 +12785,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12302,7 +12802,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12318,7 +12819,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12334,7 +12836,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12350,7 +12853,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12366,7 +12870,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12382,7 +12887,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12398,7 +12904,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12414,7 +12921,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12430,7 +12938,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12446,7 +12955,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12462,7 +12972,8 @@ export const BRANDS_3 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   }
@@ -12481,7 +12992,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12497,7 +13009,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12513,7 +13026,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12529,7 +13043,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12545,7 +13060,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12561,7 +13077,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12577,7 +13094,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12593,7 +13111,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12609,7 +13128,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12625,7 +13145,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12641,7 +13162,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12657,7 +13179,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12673,7 +13196,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12689,7 +13213,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12705,7 +13230,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12721,7 +13247,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12737,7 +13264,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12753,7 +13281,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12769,7 +13298,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12785,7 +13315,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12801,7 +13332,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12817,7 +13349,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12833,7 +13366,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12849,7 +13383,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12865,7 +13400,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12881,7 +13417,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12897,7 +13434,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12913,7 +13451,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12929,7 +13468,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12945,7 +13485,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12961,7 +13502,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12977,7 +13519,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -12993,7 +13536,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13009,7 +13553,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13025,7 +13570,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13041,7 +13587,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13057,7 +13604,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13073,7 +13621,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13089,7 +13638,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13105,7 +13655,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13121,7 +13672,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13137,7 +13689,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13153,7 +13706,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13169,7 +13723,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13185,7 +13740,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13201,7 +13757,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13217,7 +13774,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13233,7 +13791,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13249,7 +13808,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13265,7 +13825,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13281,7 +13842,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13297,7 +13859,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13313,7 +13876,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13329,7 +13893,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13345,7 +13910,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13361,7 +13927,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13377,7 +13944,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13393,7 +13961,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13409,7 +13978,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13425,7 +13995,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13441,7 +14012,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13457,7 +14029,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13473,7 +14046,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13489,7 +14063,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13505,7 +14080,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13521,7 +14097,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13537,7 +14114,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13553,7 +14131,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13569,7 +14148,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13585,7 +14165,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13601,7 +14182,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13617,7 +14199,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13633,7 +14216,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13649,7 +14233,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13665,7 +14250,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13681,7 +14267,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13697,7 +14284,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13713,7 +14301,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13729,7 +14318,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13745,7 +14335,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13761,7 +14352,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13777,7 +14369,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13793,7 +14386,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13809,7 +14403,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13825,7 +14420,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13841,7 +14437,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13857,7 +14454,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13873,7 +14471,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13889,7 +14488,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13905,7 +14505,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13921,7 +14522,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13937,7 +14539,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13953,7 +14556,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13969,7 +14573,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -13985,7 +14590,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14001,7 +14607,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14017,7 +14624,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14033,7 +14641,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14049,7 +14658,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14065,7 +14675,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14081,7 +14692,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14097,7 +14709,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14113,7 +14726,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14129,7 +14743,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14145,7 +14760,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14161,7 +14777,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14177,7 +14794,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14193,7 +14811,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14209,7 +14828,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14225,7 +14845,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14241,7 +14862,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14257,7 +14879,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14273,7 +14896,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14289,7 +14913,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14305,7 +14930,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14321,7 +14947,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14337,7 +14964,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14353,7 +14981,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14369,7 +14998,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14385,7 +15015,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14401,7 +15032,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14417,7 +15049,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14433,7 +15066,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14449,7 +15083,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14465,7 +15100,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14481,7 +15117,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14497,7 +15134,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14513,7 +15151,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14529,7 +15168,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14545,7 +15185,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14561,7 +15202,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14577,7 +15219,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14593,7 +15236,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14609,7 +15253,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14625,7 +15270,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14641,7 +15287,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14657,7 +15304,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14673,7 +15321,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14689,7 +15338,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14705,7 +15355,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14721,7 +15372,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14737,7 +15389,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14753,7 +15406,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14769,7 +15423,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14785,7 +15440,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14801,7 +15457,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14817,7 +15474,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14833,7 +15491,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14849,7 +15508,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14865,7 +15525,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14881,7 +15542,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14897,7 +15559,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14913,7 +15576,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14929,7 +15593,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14945,7 +15610,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14961,7 +15627,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14977,7 +15644,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -14993,7 +15661,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15009,7 +15678,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15025,7 +15695,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15041,7 +15712,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15057,7 +15729,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15073,7 +15746,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15089,7 +15763,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15105,7 +15780,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15121,7 +15797,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15137,7 +15814,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15153,7 +15831,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15169,7 +15848,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15185,7 +15865,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15201,7 +15882,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15217,7 +15899,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15233,7 +15916,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15249,7 +15933,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15265,7 +15950,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15281,7 +15967,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15297,7 +15984,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15313,7 +16001,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15329,7 +16018,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15345,7 +16035,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15361,7 +16052,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15377,7 +16069,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15393,7 +16086,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15409,7 +16103,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15425,7 +16120,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15441,7 +16137,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15457,7 +16154,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15473,7 +16171,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15489,7 +16188,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15505,7 +16205,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15521,7 +16222,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15537,7 +16239,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15553,7 +16256,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15569,7 +16273,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15585,7 +16290,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15601,7 +16307,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15617,7 +16324,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15633,7 +16341,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15649,7 +16358,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15665,7 +16375,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15681,7 +16392,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15697,7 +16409,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15713,7 +16426,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15729,7 +16443,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15745,7 +16460,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15761,7 +16477,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15777,7 +16494,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15793,7 +16511,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15809,7 +16528,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15825,7 +16545,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15841,7 +16562,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15857,7 +16579,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15873,7 +16596,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15889,7 +16613,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15905,7 +16630,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15921,7 +16647,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15937,7 +16664,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15953,7 +16681,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15969,7 +16698,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -15985,7 +16715,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16001,7 +16732,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16017,7 +16749,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16033,7 +16766,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16049,7 +16783,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16065,7 +16800,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16081,7 +16817,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16097,7 +16834,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16113,7 +16851,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16129,7 +16868,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16145,7 +16885,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16161,7 +16902,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16177,7 +16919,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16193,7 +16936,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16209,7 +16953,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16225,7 +16970,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16241,7 +16987,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16257,7 +17004,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16273,7 +17021,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16289,7 +17038,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16305,7 +17055,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16321,7 +17072,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16337,7 +17089,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16353,7 +17106,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16369,7 +17123,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16385,7 +17140,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16401,7 +17157,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16417,7 +17174,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16433,7 +17191,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16449,7 +17208,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16465,7 +17225,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16481,7 +17242,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16497,7 +17259,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16513,7 +17276,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16529,7 +17293,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16545,7 +17310,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16561,7 +17327,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16577,7 +17344,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16593,7 +17361,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16609,7 +17378,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16625,7 +17395,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16641,7 +17412,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16657,7 +17429,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16673,7 +17446,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16689,7 +17463,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16705,7 +17480,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16721,7 +17497,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16737,7 +17514,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16753,7 +17531,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16769,7 +17548,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16785,7 +17565,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16801,7 +17582,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16817,7 +17599,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16833,7 +17616,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16849,7 +17633,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16865,7 +17650,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16881,7 +17667,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16897,7 +17684,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16913,7 +17701,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16929,7 +17718,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16945,7 +17735,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16961,7 +17752,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16977,7 +17769,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -16993,7 +17786,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17009,7 +17803,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17025,7 +17820,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17041,7 +17837,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17057,7 +17854,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17073,7 +17871,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17089,7 +17888,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17105,7 +17905,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17121,7 +17922,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17137,7 +17939,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17153,7 +17956,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17169,7 +17973,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17185,7 +17990,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17201,7 +18007,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17217,7 +18024,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17233,7 +18041,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17249,7 +18058,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17265,7 +18075,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17281,7 +18092,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17297,7 +18109,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17313,7 +18126,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17329,7 +18143,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17345,7 +18160,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17361,7 +18177,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17377,7 +18194,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17393,7 +18211,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17409,7 +18228,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17425,7 +18245,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17441,7 +18262,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17457,7 +18279,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17473,7 +18296,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17489,7 +18313,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17505,7 +18330,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17521,7 +18347,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17537,7 +18364,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17553,7 +18381,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17569,7 +18398,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17585,7 +18415,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17601,7 +18432,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17617,7 +18449,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17633,7 +18466,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17649,7 +18483,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17665,7 +18500,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17681,7 +18517,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17697,7 +18534,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17713,7 +18551,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17729,7 +18568,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17745,7 +18585,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17761,7 +18602,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17777,7 +18619,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17793,7 +18636,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17809,7 +18653,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17825,7 +18670,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17841,7 +18687,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17857,7 +18704,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17873,7 +18721,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17889,7 +18738,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17905,7 +18755,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17921,7 +18772,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17937,7 +18789,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17953,7 +18806,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17969,7 +18823,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -17985,7 +18840,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18001,7 +18857,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18017,7 +18874,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18033,7 +18891,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18049,7 +18908,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18065,7 +18925,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18081,7 +18942,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18097,7 +18959,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18113,7 +18976,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18129,7 +18993,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18145,7 +19010,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18161,7 +19027,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18177,7 +19044,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18193,7 +19061,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18209,7 +19078,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18225,7 +19095,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18241,7 +19112,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18257,7 +19129,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18273,7 +19146,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18289,7 +19163,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18305,7 +19180,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18321,7 +19197,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18337,7 +19214,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18353,7 +19231,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18369,7 +19248,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18385,7 +19265,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18401,7 +19282,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18417,7 +19299,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18433,7 +19316,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18449,7 +19333,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18465,7 +19350,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18481,7 +19367,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18497,7 +19384,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18513,7 +19401,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18529,7 +19418,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18545,7 +19435,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18561,7 +19452,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18577,7 +19469,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18593,7 +19486,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18609,7 +19503,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18625,7 +19520,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18641,7 +19537,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "kopitiam"
   },
@@ -18706,7 +19603,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "food_junction"
   },
@@ -18722,7 +19620,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "food_junction"
   },
@@ -18738,7 +19637,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "food_junction"
   },
@@ -18754,7 +19654,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "food_junction"
   },
@@ -18770,7 +19671,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18786,7 +19688,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18802,7 +19705,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18818,7 +19722,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18834,7 +19739,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18850,7 +19756,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18866,7 +19773,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18882,7 +19790,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18898,7 +19807,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18914,7 +19824,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18930,7 +19841,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18946,7 +19858,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18962,7 +19875,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18978,7 +19892,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -18994,7 +19909,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19010,7 +19926,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19026,7 +19943,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19042,7 +19960,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19058,7 +19977,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19074,7 +19994,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19090,7 +20011,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19106,7 +20028,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19122,7 +20045,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19138,7 +20062,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19154,7 +20079,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19170,7 +20096,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19186,7 +20113,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19202,7 +20130,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19218,7 +20147,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19234,7 +20164,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19250,7 +20181,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19266,7 +20198,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19282,7 +20215,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19298,7 +20232,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19314,7 +20249,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19330,7 +20266,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19346,7 +20283,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "fei_siong"
   },
@@ -19410,7 +20348,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19426,7 +20365,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19442,7 +20382,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19458,7 +20399,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19474,7 +20416,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19490,7 +20433,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19506,7 +20450,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19522,7 +20467,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19538,7 +20484,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19554,7 +20501,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19570,7 +20518,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19586,7 +20535,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19602,7 +20552,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19618,7 +20569,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19634,7 +20586,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19650,7 +20603,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19666,7 +20620,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19682,7 +20637,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19700,7 +20656,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19716,7 +20673,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19732,7 +20690,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19748,7 +20707,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19764,7 +20724,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19780,7 +20741,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19796,7 +20758,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19812,7 +20775,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19828,7 +20792,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19844,7 +20809,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19860,7 +20826,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19876,7 +20843,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19892,7 +20860,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19908,7 +20877,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19924,7 +20894,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19940,7 +20911,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19956,7 +20928,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19972,7 +20945,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -19988,7 +20962,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -20004,7 +20979,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -20020,7 +20996,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -20038,7 +21015,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -20054,7 +21032,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "canopy_hawkers"
   },
@@ -20070,7 +21049,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20088,7 +21068,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20104,7 +21085,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20120,7 +21102,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20136,7 +21119,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20152,7 +21136,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20168,7 +21153,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20184,7 +21170,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20200,7 +21187,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20216,7 +21204,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20232,7 +21221,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20248,7 +21238,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20264,7 +21255,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20280,7 +21272,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20296,7 +21289,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20312,7 +21306,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20328,7 +21323,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20344,7 +21340,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20360,7 +21357,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20376,7 +21374,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20392,7 +21391,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20408,7 +21408,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20424,7 +21425,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20440,7 +21442,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20456,7 +21459,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ],
     operatorId: "timbre_plus_hawkers"
   },
@@ -20472,7 +21476,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20487,7 +21492,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20502,7 +21508,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20517,7 +21524,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20534,7 +21542,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20549,7 +21558,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20564,7 +21574,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20579,7 +21590,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20594,7 +21606,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20609,7 +21622,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20624,7 +21638,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20639,7 +21654,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20654,7 +21670,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20669,7 +21686,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20684,7 +21702,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20699,7 +21718,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20714,7 +21734,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20729,7 +21750,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20744,7 +21766,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20759,7 +21782,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20776,7 +21800,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20791,7 +21816,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20806,7 +21832,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20821,7 +21848,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20836,7 +21864,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20851,7 +21880,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20866,7 +21896,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20881,7 +21912,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20896,7 +21928,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20911,7 +21944,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20928,7 +21962,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20943,7 +21978,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20958,7 +21994,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20973,7 +22010,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -20988,7 +22026,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21003,7 +22042,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21018,7 +22058,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21033,7 +22074,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21048,7 +22090,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21063,7 +22106,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21078,7 +22122,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21093,7 +22138,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21110,7 +22156,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21125,7 +22172,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21142,7 +22190,8 @@ export const BRANDS_4 = [
     ],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21157,7 +22206,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21172,7 +22222,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21187,7 +22238,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21202,7 +22254,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21217,7 +22270,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21232,7 +22286,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21247,7 +22302,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21262,7 +22318,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21277,7 +22334,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21292,7 +22350,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21307,7 +22366,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21322,7 +22382,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21337,7 +22398,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21352,7 +22414,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21367,7 +22430,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21382,7 +22446,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21397,7 +22462,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21412,7 +22478,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21427,7 +22494,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21442,7 +22510,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21457,7 +22526,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21472,7 +22542,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21487,7 +22558,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21502,7 +22574,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21517,7 +22590,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21532,7 +22606,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21547,7 +22622,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21562,7 +22638,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21577,7 +22654,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21592,7 +22670,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21607,7 +22686,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21622,7 +22702,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21637,7 +22718,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21652,7 +22734,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21667,7 +22750,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21682,7 +22766,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21697,7 +22782,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21712,7 +22798,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21727,7 +22814,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21742,7 +22830,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21757,7 +22846,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21772,7 +22862,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21787,7 +22878,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21802,7 +22894,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21817,7 +22910,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21832,7 +22926,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21847,7 +22942,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21862,7 +22958,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21877,7 +22974,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21892,7 +22990,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21907,7 +23006,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21922,7 +23022,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21937,7 +23038,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21952,7 +23054,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21967,7 +23070,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21982,7 +23086,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -21997,7 +23102,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22012,7 +23118,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22027,7 +23134,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22042,7 +23150,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22057,7 +23166,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22072,7 +23182,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22087,7 +23198,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22102,7 +23214,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22117,7 +23230,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22132,7 +23246,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22147,7 +23262,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22162,7 +23278,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22177,7 +23294,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22192,7 +23310,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22207,7 +23326,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22222,7 +23342,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22237,7 +23358,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22252,7 +23374,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22267,7 +23390,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22282,7 +23406,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22297,7 +23422,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22312,7 +23438,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22327,7 +23454,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22342,7 +23470,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22357,7 +23486,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22372,7 +23502,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22387,7 +23518,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22402,7 +23534,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22417,7 +23550,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22432,7 +23566,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22447,7 +23582,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22462,7 +23598,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22477,7 +23614,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22492,7 +23630,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22507,7 +23646,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22522,7 +23662,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22537,7 +23678,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22552,7 +23694,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22567,7 +23710,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22582,7 +23726,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22597,7 +23742,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22612,7 +23758,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22627,7 +23774,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22642,7 +23790,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22657,7 +23806,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22672,7 +23822,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22687,7 +23838,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22702,7 +23854,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22717,7 +23870,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22732,7 +23886,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22747,7 +23902,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22762,7 +23918,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22777,7 +23934,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22792,7 +23950,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22807,7 +23966,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22822,7 +23982,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22837,7 +23998,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22852,7 +24014,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22867,7 +24030,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22882,7 +24046,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22897,7 +24062,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22912,7 +24078,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22927,7 +24094,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22942,7 +24110,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22957,7 +24126,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22972,7 +24142,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -22987,7 +24158,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23002,7 +24174,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23017,7 +24190,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23032,7 +24206,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23047,7 +24222,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23062,7 +24238,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23077,7 +24254,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23092,7 +24270,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23107,7 +24286,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23122,7 +24302,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23137,7 +24318,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23152,7 +24334,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23167,7 +24350,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23182,7 +24366,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23197,7 +24382,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23212,7 +24398,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23227,7 +24414,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23242,7 +24430,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23257,7 +24446,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23272,7 +24462,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23287,7 +24478,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23302,7 +24494,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23317,7 +24510,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23332,7 +24526,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23347,7 +24542,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23362,7 +24558,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23377,7 +24574,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23392,7 +24590,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23407,7 +24606,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23422,7 +24622,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23437,7 +24638,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23452,7 +24654,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23467,7 +24670,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23482,7 +24686,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23497,7 +24702,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23512,7 +24718,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23527,7 +24734,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23542,7 +24750,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23557,7 +24766,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23572,7 +24782,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23587,7 +24798,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23602,7 +24814,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23617,7 +24830,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23632,7 +24846,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23647,7 +24862,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23662,7 +24878,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23677,7 +24894,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23692,7 +24910,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23707,7 +24926,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23722,7 +24942,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23737,7 +24958,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23752,7 +24974,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23767,7 +24990,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23782,7 +25006,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23797,7 +25022,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23812,7 +25038,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23827,7 +25054,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23842,7 +25070,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23857,7 +25086,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23872,7 +25102,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23887,7 +25118,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23902,7 +25134,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23917,7 +25150,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23932,7 +25166,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23947,7 +25182,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23962,7 +25198,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23977,7 +25214,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -23992,7 +25230,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24007,7 +25246,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24022,7 +25262,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24037,7 +25278,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24052,7 +25294,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24067,7 +25310,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24082,7 +25326,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24097,7 +25342,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24112,7 +25358,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24127,7 +25374,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24142,7 +25390,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24157,7 +25406,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24172,7 +25422,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24187,7 +25438,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24202,7 +25454,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24217,7 +25470,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24232,7 +25486,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24247,7 +25502,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24262,7 +25518,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24277,7 +25534,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24292,7 +25550,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24307,7 +25566,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24322,7 +25582,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24337,7 +25598,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24352,7 +25614,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24367,7 +25630,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24382,7 +25646,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24397,7 +25662,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24412,7 +25678,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24427,7 +25694,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24442,7 +25710,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24457,7 +25726,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24472,7 +25742,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24487,7 +25758,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24502,7 +25774,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24517,7 +25790,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24532,7 +25806,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24547,7 +25822,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24562,7 +25838,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24577,7 +25854,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24592,7 +25870,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24607,7 +25886,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24622,7 +25902,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24637,7 +25918,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24652,7 +25934,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24667,7 +25950,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24682,7 +25966,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24697,7 +25982,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24712,7 +25998,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24727,7 +26014,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24742,7 +26030,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24757,7 +26046,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24772,7 +26062,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24787,7 +26078,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24802,7 +26094,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24817,7 +26110,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24832,7 +26126,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24847,7 +26142,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24862,7 +26158,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24877,7 +26174,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24892,7 +26190,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24907,7 +26206,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24922,7 +26222,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24937,7 +26238,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24952,7 +26254,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24967,7 +26270,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24982,7 +26286,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -24997,7 +26302,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25012,7 +26318,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25027,7 +26334,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25042,7 +26350,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25057,7 +26366,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25072,7 +26382,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25087,7 +26398,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25102,7 +26414,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25117,7 +26430,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25132,7 +26446,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25147,7 +26462,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25162,7 +26478,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25177,7 +26494,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25192,7 +26510,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25207,7 +26526,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25222,7 +26542,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25237,7 +26558,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25252,7 +26574,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25267,7 +26590,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25282,7 +26606,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25297,7 +26622,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25312,7 +26638,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25327,7 +26654,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25342,7 +26670,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25357,7 +26686,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25372,7 +26702,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25387,7 +26718,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25402,7 +26734,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25417,7 +26750,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25432,7 +26766,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25447,7 +26782,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25462,7 +26798,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25477,7 +26814,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25492,7 +26830,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25507,7 +26846,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25522,7 +26862,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25537,7 +26878,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25552,7 +26894,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25567,7 +26910,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25582,7 +26926,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25597,7 +26942,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25612,7 +26958,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25627,7 +26974,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25642,7 +26990,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25657,7 +27006,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25672,7 +27022,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25687,7 +27038,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25702,7 +27054,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25717,7 +27070,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25732,7 +27086,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25747,7 +27102,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25762,7 +27118,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25777,7 +27134,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25792,7 +27150,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25807,7 +27166,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25822,7 +27182,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25837,7 +27198,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25852,7 +27214,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25867,7 +27230,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25882,7 +27246,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25897,7 +27262,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25912,7 +27278,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25927,7 +27294,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25942,7 +27310,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25957,7 +27326,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25972,7 +27342,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -25987,7 +27358,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26002,7 +27374,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26017,7 +27390,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26032,7 +27406,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26047,7 +27422,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26062,7 +27438,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26077,7 +27454,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26092,7 +27470,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26107,7 +27486,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26122,7 +27502,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26137,7 +27518,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26152,7 +27534,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26167,7 +27550,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26182,7 +27566,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26197,7 +27582,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26212,7 +27598,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26227,7 +27614,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26242,7 +27630,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26257,7 +27646,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26272,7 +27662,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26287,7 +27678,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26302,7 +27694,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26317,7 +27710,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26332,7 +27726,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26347,7 +27742,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26362,7 +27758,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26377,7 +27774,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26392,7 +27790,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26407,7 +27806,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26422,7 +27822,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26437,7 +27838,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26452,7 +27854,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26467,7 +27870,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26482,7 +27886,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26497,7 +27902,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26512,7 +27918,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26527,7 +27934,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26542,7 +27950,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26557,7 +27966,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26572,7 +27982,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26587,7 +27998,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26602,7 +28014,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26617,7 +28030,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26632,7 +28046,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26647,7 +28062,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26662,7 +28078,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26677,7 +28094,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26692,7 +28110,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26707,7 +28126,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26722,7 +28142,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26737,7 +28158,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26752,7 +28174,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26767,7 +28190,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26782,7 +28206,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26797,7 +28222,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26812,7 +28238,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26827,7 +28254,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26842,7 +28270,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26857,7 +28286,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26872,7 +28302,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26887,7 +28318,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26902,7 +28334,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26917,7 +28350,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26932,7 +28366,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26947,7 +28382,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26962,7 +28398,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26977,7 +28414,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -26992,7 +28430,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27007,7 +28446,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27022,7 +28462,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27037,7 +28478,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27052,7 +28494,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27067,7 +28510,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27082,7 +28526,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27097,7 +28542,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27112,7 +28558,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27127,7 +28574,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27142,7 +28590,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27157,7 +28606,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27172,7 +28622,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27187,7 +28638,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27202,7 +28654,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27217,7 +28670,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27232,7 +28686,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27247,7 +28702,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27262,7 +28718,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27277,7 +28734,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27292,7 +28750,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27307,7 +28766,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27322,7 +28782,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27337,7 +28798,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27352,7 +28814,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27367,7 +28830,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27382,7 +28846,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27397,7 +28862,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27412,7 +28878,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27427,7 +28894,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27442,7 +28910,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27457,7 +28926,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27472,7 +28942,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27487,7 +28958,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27502,7 +28974,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27517,7 +28990,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27532,7 +29006,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27547,7 +29022,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27562,7 +29038,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27577,7 +29054,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27592,7 +29070,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27607,7 +29086,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27622,7 +29102,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27637,7 +29118,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27652,7 +29134,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27667,7 +29150,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27682,7 +29166,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27697,7 +29182,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27712,7 +29198,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27727,7 +29214,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27742,7 +29230,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27757,7 +29246,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27772,7 +29262,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27787,7 +29278,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27802,7 +29294,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27817,7 +29310,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27832,7 +29326,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27847,7 +29342,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27862,7 +29358,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27877,7 +29374,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27892,7 +29390,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27907,7 +29406,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27922,7 +29422,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27937,7 +29438,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27952,7 +29454,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27967,7 +29470,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27982,7 +29486,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -27997,7 +29502,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28012,7 +29518,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28027,7 +29534,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28042,7 +29550,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28057,7 +29566,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28072,7 +29582,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28087,7 +29598,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28102,7 +29614,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28117,7 +29630,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28132,7 +29646,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28147,7 +29662,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28162,7 +29678,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28177,7 +29694,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28192,7 +29710,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28207,7 +29726,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28222,7 +29742,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28237,7 +29758,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28252,7 +29774,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28267,7 +29790,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28282,7 +29806,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28297,7 +29822,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28312,7 +29838,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28327,7 +29854,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28342,7 +29870,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28357,7 +29886,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28372,7 +29902,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28387,7 +29918,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28402,7 +29934,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28417,7 +29950,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28432,7 +29966,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28447,7 +29982,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28462,7 +29998,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28477,7 +30014,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28492,7 +30030,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28507,7 +30046,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28522,7 +30062,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28537,7 +30078,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28552,7 +30094,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28567,7 +30110,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28582,7 +30126,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28597,7 +30142,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28612,7 +30158,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28627,7 +30174,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28642,7 +30190,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28657,7 +30206,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28672,7 +30222,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28687,7 +30238,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28702,7 +30254,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28717,7 +30270,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
   {
@@ -28732,7 +30286,8 @@ export const BRANDS_4 = [
     dietTags: [],
     priceRange: "$",
     platforms: [
-      "dine_in"
+      "dine_in",
+      "grab_go"
     ]
   },
 ];
