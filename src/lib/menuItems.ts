@@ -319,6 +319,12 @@
 // (Chicken Katsu, Pork Floss Bun, Vegetarian Wanton Mee); the rest reused existing dish
 // types (Kueh Lapis, Min Jiang Kueh, Mee Rebus, Lor Mee, Fishball Noodles, Nasi Lemak). See
 // reference/research-sessions/2026-08-24-zero-menu-hougang105-batch-AD.md.
+// 2026-08-24 (task #65, Batch AE): added 10 menu items covering all 10 zero-menu brands at
+// AMK Hub (100% kopitiam-operated, all matched directly in kopitiam-stall-dishes.json). 4
+// new dish types added to dish-macro-lookup.py (Chicken Katsu Curry Rice, Royal Chicken
+// Roti, Ayam Bakar Penyet Set, Dang Gui Roasted Duck Noodle); the rest reused existing dish
+// types (Pad Thai, Saba Fish, Mala Xiang Guo, Roasted Chicken Rice, Yong Tau Foo, Fried
+// Hokkien Mee). See reference/research-sessions/2026-08-24-zero-menu-amkhub-batch-AE.md.
 
 export const MENU_ITEMS = [
   {
@@ -25460,4 +25466,15 @@ export const MENU_ITEMS = [
   { id: "hg105_7", brandId: "hougang_105_hainanese_village_centre_yong_seng_teochew_fishball_mee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
   { id: "hg105_8", brandId: "hougang_105_hainanese_village_centre_xian_ting_vegetarian", name: "Vegetarian Wanton Mee", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 400, protein: 16, carbs: 55, fat: 12, confidence: "estimated" },
   { id: "hg105_9", brandId: "hougang_105_hainanese_village_centre_tian_tian_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+
+  { id: "amk_1", brandId: "kopitiam_egg_thai", name: "Pad Thai", emoji: "🍜", category: "Thai", price: 5.5, calories: 500, protein: 18, carbs: 65, fat: 16, confidence: "estimated" },
+  { id: "amk_2", brandId: "kopitiam_kubis_korean_food", name: "Saba Fish", emoji: "🐟", category: "Japanese", price: 6.5, calories: 420, protein: 32, carbs: 20, fat: 22, confidence: "estimated" },
+  { id: "amk_3", brandId: "kopitiam_bear_baby_spicy_fragrant_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8.0, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "amk_4", brandId: "kopitiam_hong_kong_delights", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "amk_5", brandId: "kopitiam_cik_lim_ytf", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "amk_6", brandId: "kopitiam_chinatown_roasted_delight", name: "Dang Gui Roasted Duck Noodle", emoji: "🍜", category: "Chinese Roast", price: 6.0, calories: 520, protein: 26, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "amk_7", brandId: "kopitiam_washouku_geon", name: "Chicken Katsu Curry Rice", emoji: "🍛", category: "Japanese", price: 8.0, calories: 620, protein: 26, carbs: 68, fat: 24, confidence: "estimated" },
+  { id: "amk_8", brandId: "kopitiam_new_hokkien_mee", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "amk_9", brandId: "kopitiam_jingdong_roti", name: "Royal Chicken Roti", emoji: "🫓", category: "Indian", price: 5.0, calories: 480, protein: 18, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "amk_10", brandId: "kopitiam_pak_wee_chicken_rice", name: "Ayam Bakar Penyet Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 580, protein: 30, carbs: 40, fat: 30, confidence: "estimated" },
 ];
