@@ -221,3 +221,21 @@ DISH_DB.update({
     "Bibimbap": ("🍚","Korean",6.5,550,20,75,16),
     "Mala Xiang Guo": ("🌶️","Mala/Hotpot",8,550,25,35,32),
 })
+DISH_DB.update({
+    "Ginseng Chicken Classic": ("🍲","Chicken Rice/Poultry",7,380,30,15,20),
+    "Econ Bee Hoon": ("🍜","Local Hawker",3.5,380,10,55,12),
+    "Indian Goreng": ("🍜","Indian",4.5,460,14,60,18),
+    "Steamed Fish": ("🐟","Seafood",8,380,35,10,18),
+    "Braised Duck": ("🦆","Chinese Roast",5.5,500,26,55,22),
+    "Curry Noodle": ("🍜","Noodles",5,480,22,55,18),
+    "Kebab Plate": ("🥙","Local Hawker",7,550,28,45,26),
+    "Masala Dosa": ("🫓","Indian",4,320,8,50,10),
+    "Pig Organ Soup": ("🍲","Local Hawker",6,380,28,10,22),
+    "Korean Fried Chicken": ("🍗","Korean",7.5,650,32,45,32),
+    "Glutinous Rice Ball Dessert": ("🥣","Bakery/Dessert",2.2,220,4,42,4),
+    "Soya Bean Drink": ("🥤","Bakery/Dessert",1.6,140,6,20,4),
+})
+DISH_DB.update({
+    "Popiah": ("🌯","Local Hawker",3.5,260,8,38,8),
+    "Laksa": ("🍜","Local Hawker",5.5,550,20,55,28),
+})

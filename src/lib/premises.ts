@@ -3,6 +3,8 @@
 // changes made earlier the same day.
 // 2026-08-22d: added 30 real, OneMap-geocoded premises for 5 Koufu Group in-house chains found via
 // koufu.com.sg (source: "operator_official_site") — see brands.ts header.
+// 2026-08-24 (task #65, Batch F): removed 5 duplicate premises rows at Punggol Coast Hawker
+// Centre — see brands.ts header for the matching Brand removal and full explanation.
 //
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
@@ -77575,71 +77577,11 @@ export const PREMISES_12 = [
     sfa: null,
     source: "web_research"
   },
-  {
-    id: "punggol_coast_hawker_centre_singapore_fried_hokkien_mee_p1",
-    brandId: "punggol_coast_hawker_centre_singapore_fried_hokkien_mee",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "84 Punggol Way, #02-55, Singapore 829911",
-    postal: "829911",
-    lat: 1.41455331350836,
-    lng: 103.908235308668,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "punggol_coast_hawker_centre_hock_hai_hong_lim_curry_chicken_p1",
-    brandId: "punggol_coast_hawker_centre_hock_hai_hong_lim_curry_chicken",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "84 Punggol Way, #02-55, Singapore 829911",
-    postal: "829911",
-    lat: 1.41455331350836,
-    lng: 103.908235308668,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "punggol_coast_hawker_centre_south_buona_vista_braised_duck_p1",
-    brandId: "punggol_coast_hawker_centre_south_buona_vista_braised_duck",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "84 Punggol Way, #02-55, Singapore 829911",
-    postal: "829911",
-    lat: 1.41455331350836,
-    lng: 103.908235308668,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "punggol_coast_hawker_centre_huay_kwang_thai_wanton_mee_p1",
-    brandId: "punggol_coast_hawker_centre_huay_kwang_thai_wanton_mee",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "84 Punggol Way, #02-55, Singapore 829911",
-    postal: "829911",
-    lat: 1.41455331350836,
-    lng: 103.908235308668,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "punggol_coast_hawker_centre_s_j_sickander_ammal_muslim_foods_p1",
-    brandId: "punggol_coast_hawker_centre_s_j_sickander_ammal_muslim_foods",
-    label: "Punggol Coast Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Punggol Coast Hawker Centre",
-    address: "84 Punggol Way, #02-55, Singapore 829911",
-    postal: "829911",
-    lat: 1.41455331350836,
-    lng: 103.908235308668,
-    sfa: null,
-    source: "web_research"
-  },
+  
+  
+  
+  
+  
   {
     id: "marsiling_lane_blk_20_21_soon_xing_coffee_p1",
     brandId: "marsiling_lane_blk_20_21_soon_xing_coffee",

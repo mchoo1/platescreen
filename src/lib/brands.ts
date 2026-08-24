@@ -192,6 +192,13 @@
 //       (1) above and was left at [dine_in, grab_go] - its own delivery availability was not
 //       independently verified, so "delivery" was deliberately NOT added there.
 // 1,772 brands (unchanged), 0 premises changed.
+// 2026-08-24 (task #65, Batch F): removed 5 duplicate brands discovered while covering Punggol
+// Coast Hawker Centre's zero-menu stalls - each was the same real stall at the same address
+// (84 Punggol Way #02-55), recorded twice: once from raw SFA-licensee data (generic id/name,
+// e.g. "punggol_coast_hawker_centre_singapore_fried_hokkien_mee") and once from the Kopitiam
+// site scrape (cleaner id/name, e.g. "kopitiam_singapore_fried_hokkien_mee"). Kept the
+// Kopitiam-scrape version in each pair; the 5 removed had 0 MenuItems and no unique data.
+// 1,772 -> 1,767 brands. See reference/research-sessions/2026-08-24-zero-menu-punggolcoast-batch-F.md.
 
 export const BRANDS_1 = [
   {
@@ -26722,86 +26729,11 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
-  {
-    id: "punggol_coast_hawker_centre_singapore_fried_hokkien_mee",
-    name: "Singapore Fried Hokkien Mee",
-    emoji: "🍤",
-    type: "hawker",
-    cuisine: "Fried Hokkien Mee",
-    aliases: [
-      "singapore fried hokkien mee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "punggol_coast_hawker_centre_hock_hai_hong_lim_curry_chicken",
-    name: "Hock Hai (Hong Lim) Curry Chicken",
-    emoji: "🍛",
-    type: "hawker",
-    cuisine: "Curry Chicken",
-    aliases: [
-      "hock hai (hong lim) curry chicken"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "punggol_coast_hawker_centre_south_buona_vista_braised_duck",
-    name: "South Buona Vista Braised Duck",
-    emoji: "🦆",
-    type: "hawker",
-    cuisine: "Braised Duck",
-    aliases: [
-      "south buona vista braised duck"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "punggol_coast_hawker_centre_huay_kwang_thai_wanton_mee",
-    name: "Huay Kwang Thai Wanton Mee",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Thai Wanton Mee",
-    aliases: [
-      "huay kwang thai wanton mee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "punggol_coast_hawker_centre_s_j_sickander_ammal_muslim_foods",
-    name: "S.J Sickander Ammal Muslim Foods",
-    emoji: "🫓",
-    type: "hawker",
-    cuisine: "Indian Rojak & Roti Prata",
-    aliases: [
-      "s.j sickander ammal muslim foods"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+  
+  
+  
+  
+  
   {
     id: "marsiling_lane_blk_20_21_soon_xing_coffee",
     name: "Soon Xing Coffee",
