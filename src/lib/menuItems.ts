@@ -334,6 +334,15 @@
 // Curry Chicken, Chicken Hotpot, Sliced Fish Soup, Economical Rice, Carrot Cake, Ayam Bakar
 // Penyet Set, Fried Banana, Roti Prata, Fish and Chips). See reference/research-sessions/
 // 2026-08-24-zero-menu-jurongpoint-batch-AF.md.
+// 2026-08-24 (task #65, Batch AG): added 12 menu items covering all 12 zero-menu brands at
+// Tan Tock Seng Hospital (100% kopitiam-operated, all matched directly in
+// kopitiam-stall-dishes.json). Confirmed kopitiam_kakak_handmade_noodle and
+// kopitiam_kakak_handmade_noodles are 2 genuinely distinct outlets at different TTSH
+// buildings (CHI vs main hospital, different postal codes), not a duplicate. 4 new dish
+// types added to dish-macro-lookup.py (Dry Handmade Noodle, Signature Pork Trotter with
+// Vinegar, Signature Dry Handmade Noodle, Beef Roti); the rest reused existing dish types
+// (Economical Rice x2, Ayam Penyet x2, Roasted Chicken Rice, Bread, Fried Hokkien Mee, Beef
+// Noodle). See reference/research-sessions/2026-08-24-zero-menu-ttsh-batch-AG.md.
 
 export const MENU_ITEMS = [
   {
@@ -25502,4 +25511,17 @@ export const MENU_ITEMS = [
   { id: "jp_13", brandId: "kopitiam_traditional_snack", name: "Fried Banana", emoji: "🍌", category: "Bakery/Dessert", price: 2.0, calories: 240, protein: 3, carbs: 42, fat: 8, confidence: "estimated" },
   { id: "jp_14", brandId: "kopitiam_sai_kitchen", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, confidence: "estimated" },
   { id: "jp_15", brandId: "kopitiam_western_beradik", name: "Fish and Chips", emoji: "🍟", category: "Western", price: 8.0, calories: 650, protein: 28, carbs: 55, fat: 32, confidence: "estimated" },
+
+  { id: "ttsh_1", brandId: "kopitiam_universal_economical_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "ttsh_2", brandId: "kopitiam_kakak_handmade_noodle", name: "Dry Handmade Noodle", emoji: "🍜", category: "Noodles", price: 5.0, calories: 460, protein: 18, carbs: 60, fat: 14, confidence: "estimated" },
+  { id: "ttsh_3", brandId: "kopitiam_majulah_penyet_and_bakar", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6.0, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
+  { id: "ttsh_4", brandId: "kopitiam_bu_tang_wang_pepper_soup", name: "Signature Pork Trotter with Vinegar", emoji: "🍲", category: "Local Hawker", price: 7.5, calories: 480, protein: 26, carbs: 20, fat: 28, confidence: "estimated" },
+  { id: "ttsh_5", brandId: "kopitiam_chinatown_hk_roast", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "ttsh_6", brandId: "kopitiam_bread_junction", name: "Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 250, protein: 6, carbs: 42, fat: 6, confidence: "estimated" },
+  { id: "ttsh_7", brandId: "kopitiam_he_jia_bian_fan_porridge", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "ttsh_8", brandId: "kopitiam_kakak_handmade_noodles", name: "Signature Dry Handmade Noodle", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 62, fat: 16, confidence: "estimated" },
+  { id: "ttsh_9", brandId: "kopitiam_pak_lum_local_delights", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "ttsh_10", brandId: "kopitiam_y_and_h_ayam_penyet", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6.0, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
+  { id: "ttsh_11", brandId: "kopitiam_wah_zai_ampang_yong_tau_foo_and_tangkak_beef_noodle", name: "Beef Noodle", emoji: "🍜", category: "Noodles", price: 6.0, calories: 500, protein: 25, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "ttsh_12", brandId: "kopitiam_sheng_tang_chinese_beef_roti", name: "Beef Roti", emoji: "🫓", category: "Indian", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 20, confidence: "estimated" },
 ];
