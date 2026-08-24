@@ -12,6 +12,9 @@
 // from its own duplicate Brand to the existing "mcd" Brand (id changed to
 // "mcd_anchorvale_village_hawker_centre") rather than removing it outright, since it's a
 // real outlet that belongs under McDonald's existing menu.
+// 2026-08-24 (task #65, Batch M): removed 8 more duplicate Premises rows plus 3 redundant
+// exact-duplicate rows within otherwise-legitimate brands, all at Kopitiam @ Northpoint City
+// — see brands.ts and menuItems.ts headers for the full mapping.
 //
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
@@ -60624,20 +60627,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_herbal_soup_northpoint_city_p2",
-    brandId: "kopitiam_herbal_soup_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_japanese_food_northpoint_city_p1",
     brandId: "kopitiam_japanese_food_northpoint_city",
     label: "Kopitiam @ Northpoint City",
@@ -60650,20 +60640,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_japanese_food_northpoint_city_p2",
-    brandId: "kopitiam_japanese_food_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_dao_xiao_mian_northpoint_city_p1",
     brandId: "kopitiam_dao_xiao_mian_northpoint_city",
     label: "Kopitiam @ Northpoint City",
@@ -60676,33 +60653,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_dao_xiao_mian_northpoint_city_p2",
-    brandId: "kopitiam_dao_xiao_mian_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
-    id: "kopitiam_i_sel_fish_northpoint_city_p1",
-    brandId: "kopitiam_i_sel_fish_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+      {
     id: "kopitiam_yong_tao_foo_northpoint_city_p1",
     brandId: "kopitiam_yong_tao_foo_northpoint_city",
     label: "Kopitiam @ Northpoint City",
@@ -60767,46 +60718,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_economic_rice_northpoint_city_p1",
-    brandId: "kopitiam_economic_rice_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
-    id: "kopitiam_xiang_chi_mian_northpoint_city_p1",
-    brandId: "kopitiam_xiang_chi_mian_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
-    id: "kopitiam_kopi_kiosk_northpoint_city_p1",
-    brandId: "kopitiam_kopi_kiosk_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+        {
     id: "kopitiam_rice_garden_p1",
     brandId: "kopitiam_rice_garden",
     label: "Pasir Ris West Plaza",
@@ -61105,20 +61017,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_pepper_lunch_northpoint_city_p1",
-    brandId: "kopitiam_pepper_lunch_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_mini_wok_northpoint_city_p1",
     brandId: "kopitiam_mini_wok_northpoint_city",
     label: "Kopitiam @ Northpoint City",
@@ -61131,20 +61030,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_hk_roasted_northpoint_city_p1",
-    brandId: "kopitiam_hk_roasted_northpoint_city",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_indian_vegetarian_northpoint_city_p1",
     brandId: "kopitiam_indian_vegetarian_northpoint_city",
     label: "Kopitiam @ Northpoint City",
@@ -68700,20 +68586,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_hong_kong_p1",
-    brandId: "kopitiam_hong_kong",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_cha_mu_lan_x_p1",
     brandId: "kopitiam_cha_mu_lan_x",
     label: "Bagus Food Hall @ Northpoint City",
@@ -69844,20 +69717,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_teochew_porridge_and_mixed_veg_rice_p1",
-    brandId: "kopitiam_teochew_porridge_and_mixed_veg_rice",
-    label: "Kopitiam @ Northpoint City",
-    locationType: "food_court",
-    locationContext: "Kopitiam @ Northpoint City",
-    address: "930 Yishun Avenue 2, Northpoint #B2-10, Singapore 769098",
-    postal: "769098",
-    lat: 1.42969848626288,
-    lng: 103.835776491468,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_kallang_wanton_noodle_p1",
     brandId: "kopitiam_kallang_wanton_noodle",
     label: "Changi Airport Terminal 3",

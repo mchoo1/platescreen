@@ -217,6 +217,16 @@
 // row under the existing "mcd" brand - removed that Brand and reassigned its Premises row to
 // "mcd" (see premises.ts header). 1,766 -> 1,761 brands. See reference/research-sessions/
 // 2026-08-24-zero-menu-anchorvale-batch-L.md.
+// 2026-08-24 (task #65, Batch M): removed 8 more duplicate brands, all recording the same
+// concessions at Kopitiam @ Northpoint City (930 Yishun Avenue 2, #B2-10) under a second (or
+// third) id - a Kopitiam-scrape-vs-Kopitiam-scrape duplicate this time, not the raw-SFA
+// pattern from Batches F/J/L. Removed: kopitiam_kopi_kiosk_northpoint_city,
+// kopitiam_xiang_chi_mian_northpoint_city, kopitiam_pepper_lunch_northpoint_city,
+// kopitiam_economic_rice_northpoint_city, kopitiam_teochew_porridge_and_mixed_veg_rice,
+// kopitiam_i_sel_fish_northpoint_city, kopitiam_hk_roasted_northpoint_city, kopitiam_hong_kong
+// - each kept the cleaner/already-covered canonical brand instead (see menuItems.ts header for
+// full mapping). 1,761 -> 1,753 brands. See reference/research-sessions/
+// 2026-08-24-zero-menu-northpoint-batch-M.md.
 
 export const BRANDS_1 = [
   {
@@ -9042,24 +9052,7 @@ export const BRANDS_3 = [
     ],
     operatorId: "kopitiam"
   },
-  {
-    id: "kopitiam_i_sel_fish_northpoint_city",
-    name: "I Sel Fish (Northpoint City)",
-    emoji: "🐟",
-    type: "food_court_stall",
-    cuisine: "Seafood",
-    aliases: [
-      "i sel fish (northpoint city)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
+    {
     id: "kopitiam_yong_tao_foo_northpoint_city",
     name: "Yong Tao Foo (Northpoint City)",
     emoji: "🍽️",
@@ -9144,58 +9137,7 @@ export const BRANDS_3 = [
     ],
     operatorId: "kopitiam"
   },
-  {
-    id: "kopitiam_economic_rice_northpoint_city",
-    name: "Economic Rice (Northpoint City)",
-    emoji: "🍚",
-    type: "food_court_stall",
-    cuisine: "Local Hawker",
-    aliases: [
-      "economic rice (northpoint city)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
-    id: "kopitiam_xiang_chi_mian_northpoint_city",
-    name: "Xiang Chi Mian (Northpoint City)",
-    emoji: "🍜",
-    type: "food_court_stall",
-    cuisine: "Noodles",
-    aliases: [
-      "xiang chi mian (northpoint city)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
-    id: "kopitiam_kopi_kiosk_northpoint_city",
-    name: "Kopi Kiosk (Northpoint City)",
-    emoji: "☕",
-    type: "food_court_stall",
-    cuisine: "Coffeeshop Fare",
-    aliases: [
-      "kopi kiosk (northpoint city)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
+        {
     id: "kopitiam_rice_garden",
     name: "Rice Garden",
     emoji: "🍚",
@@ -9382,24 +9324,7 @@ export const BRANDS_3 = [
     ],
     operatorId: "kopitiam"
   },
-  {
-    id: "kopitiam_pepper_lunch_northpoint_city",
-    name: "Pepper Lunch (Northpoint City)",
-    emoji: "🍚",
-    type: "food_court_stall",
-    cuisine: "Local Hawker",
-    aliases: [
-      "pepper lunch (northpoint city)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
+    {
     id: "kopitiam_mini_wok_northpoint_city",
     name: "Mini Wok (Northpoint City)",
     emoji: "🍚",
@@ -9416,24 +9341,7 @@ export const BRANDS_3 = [
     ],
     operatorId: "kopitiam"
   },
-  {
-    id: "kopitiam_hk_roasted_northpoint_city",
-    name: "HK Roasted (Northpoint City)",
-    emoji: "🍗",
-    type: "food_court_stall",
-    cuisine: "Chinese Roast",
-    aliases: [
-      "hk roasted (northpoint city)"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
+    {
     id: "kopitiam_indian_vegetarian_northpoint_city",
     name: "Indian Vegetarian (Northpoint City)",
     emoji: "🍚",
@@ -17919,24 +17827,7 @@ export const BRANDS_4 = [
     ],
     operatorId: "kopitiam"
   },
-  {
-    id: "kopitiam_hong_kong",
-    name: "Hong Kong",
-    emoji: "🍢",
-    type: "food_court_stall",
-    cuisine: "Chinese Roast",
-    aliases: [
-      "hong kong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
+    {
     id: "kopitiam_cha_mu_lan_x",
     name: "Cha Mu Lan X",
     emoji: "🍽️",
@@ -19381,24 +19272,7 @@ export const BRANDS_4 = [
     ],
     operatorId: "kopitiam"
   },
-  {
-    id: "kopitiam_teochew_porridge_and_mixed_veg_rice",
-    name: "Teochew Porridge & Mixed Veg Rice",
-    emoji: "🍚",
-    type: "food_court_stall",
-    cuisine: "Local Hawker",
-    aliases: [
-      "teochew porridge & mixed veg rice"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ],
-    operatorId: "kopitiam"
-  },
-  {
+    {
     id: "kopitiam_kallang_wanton_noodle",
     name: "Kallang Wanton Noodle",
     emoji: "🍜",

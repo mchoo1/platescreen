@@ -340,3 +340,13 @@ DISH_DB.update({
     "Indian Rojak": ("🥗","Indian",4,380,14,48,16),
     "Economic Bee Hoon": ("🍜","Noodles",1.2,320,10,45,10),
 })
+DISH_DB.update({
+    "White Pepper Fish Maw Pig Stomach Chicken Soup": ("🍲","Local Hawker",7,420,30,15,24),
+    "Chicken Teriyaki & Salmon Teriyaki Bento": ("🍱","Japanese",8.5,650,38,60,26),
+    "Knife Shaven Noodle Soup": ("🍜","Noodles",5.5,500,20,65,15),
+    "Bimbimbap": ("🍚","Korean",7,550,24,70,18),
+    "Grilled Salmon with Aglio Olio": ("🍝","Western",8.5,620,32,55,26),
+    "Beef Rendang Set": ("🍛","Indonesian/Malay",6.5,600,28,58,26),
+    "Yong Tow Foo Soup": ("🍲","Chicken Rice/Poultry",4.5,380,22,45,10),
+    "Sweet & Sour Pork Rice Set": ("🍚","Chinese Roast",5.5,580,24,68,22),
+})
