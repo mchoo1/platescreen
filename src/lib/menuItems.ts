@@ -307,6 +307,18 @@
 // Tea); the rest reused existing dish types (Kaya Toast, Steamboat, Chicken Teriyaki &
 // Salmon Teriyaki Bento, Mala Xiang Guo, Nasi Padang, Ban Mian, Roasted Chicken Rice, Yong
 // Tau Foo). See reference/research-sessions/2026-08-24-zero-menu-northpoint-batch-AC.md.
+// 2026-08-24 (task #65, Batch AD): added 9 menu items covering 9 of 10 zero-menu brands at
+// Hougang 105 Hainanese Village Centre. Found a location-labeling data bug: 4 brands here
+// (Bachmann Japanese Restaurant, Bengawan Solo, BreadTalk, Anytime Food) have their actual
+// `address` field pointing to Hougang Mall (90 Hougang Ave 10), not the Hainanese Village
+// Centre address (105 Hougang Ave 1) their locationContext claims -- flagged for a future
+// data-integrity pass, not fixed here. 3 of those 4 are real, identifiable chains and were
+// given accurate real dishes (Chicken Katsu, Kueh Lapis, Pork Floss Bun); Anytime Food Pte
+// Ltd was skipped, not fabricated -- ACRA registration shows only a generic "cafes" activity
+// with no discoverable specific concept. 3 new dish types added to dish-macro-lookup.py
+// (Chicken Katsu, Pork Floss Bun, Vegetarian Wanton Mee); the rest reused existing dish
+// types (Kueh Lapis, Min Jiang Kueh, Mee Rebus, Lor Mee, Fishball Noodles, Nasi Lemak). See
+// reference/research-sessions/2026-08-24-zero-menu-hougang105-batch-AD.md.
 
 export const MENU_ITEMS = [
   {
@@ -25438,4 +25450,14 @@ export const MENU_ITEMS = [
   { id: "bag_9", brandId: "kopitiam_krispi", name: "Rou Jia Mo (Chinese Burger)", emoji: "🥙", category: "Local Hawker", price: 4.5, calories: 380, protein: 16, carbs: 42, fat: 16, confidence: "estimated" },
   { id: "bag_10", brandId: "kopitiam_ani_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
   { id: "bag_11", brandId: "kopitiam_cha_mu_lan_x", name: "Bubble Tea", emoji: "🧋", category: "Beverages", price: 5.0, calories: 320, protein: 2, carbs: 68, fat: 4, confidence: "estimated" },
+
+  { id: "hg105_1", brandId: "hougang_105_hainanese_village_centre_bachmann_japanese_restaurant_pte_ltd", name: "Chicken Katsu", emoji: "🍗", category: "Japanese", price: 8.5, calories: 620, protein: 28, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "hg105_2", brandId: "hougang_105_hainanese_village_centre_bengawan_solo_pte_ltd", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, confidence: "estimated" },
+  { id: "hg105_3", brandId: "hougang_105_hainanese_village_centre_breadtalk_pte_ltd", name: "Pork Floss Bun", emoji: "🍞", category: "Bakery/Dessert", price: 2.2, calories: 240, protein: 8, carbs: 32, fat: 8, confidence: "estimated" },
+  { id: "hg105_4", brandId: "hougang_105_hainanese_village_centre_he_he", name: "Min Jiang Kueh", emoji: "🥞", category: "Bakery/Dessert", price: 1.6, calories: 220, protein: 5, carbs: 32, fat: 8, confidence: "estimated" },
+  { id: "hg105_5", brandId: "hougang_105_hainanese_village_centre_jiu_ji_shu_shi", name: "Mee Rebus", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 18, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "hg105_6", brandId: "hougang_105_hainanese_village_centre_lorong_ah_soo_lor_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "hg105_7", brandId: "hougang_105_hainanese_village_centre_yong_seng_teochew_fishball_mee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "hg105_8", brandId: "hougang_105_hainanese_village_centre_xian_ting_vegetarian", name: "Vegetarian Wanton Mee", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 400, protein: 16, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "hg105_9", brandId: "hougang_105_hainanese_village_centre_tian_tian_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
 ];
