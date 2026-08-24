@@ -422,4 +422,7 @@ DISH_DB.update({
     "Chicken & Egg Curry Puff": ("🥟","Snacks",1.5,220,7,22,12),
     "Fish Head Bee Hoon": ("🍜","Seafood",7.0,450,28,45,14),
     "Commando Dessert": ("🍧","Desserts",2.0,220,3,45,3),
+    "Chicken Inasal": ("🍗","Indonesian/Malay",6.5,520,34,20,30),
+    "Double Fish Steamboat": ("🍲","Seafood",16.0,480,38,20,24),
+    "Steamboat": ("🍲","Mala/Hotpot",12.0,600,32,30,34),
 })

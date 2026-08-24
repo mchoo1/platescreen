@@ -253,6 +253,12 @@
 // Rice, Chicken & Egg Curry Puff, Fish Head Bee Hoon, Commando Dessert); the rest reused
 // existing dish types. See reference/research-sessions/
 // 2026-08-24-zero-menu-changi-batch-V.md.
+// 2026-08-24 (task #65, Batch W): added 15 menu items covering all 15 zero-menu brands at
+// Hillion Mall (100% kopitiam-operated, all matched directly in kopitiam-stall-dishes.json).
+// 3 new dish types added to dish-macro-lookup.py (Chicken Inasal, Double Fish Steamboat,
+// Steamboat); the rest reused existing dish types. kopitiam_pepper_lunch_express has 2
+// legitimate premises rows here (already-covered multi-outlet chain) - not a duplicate. See
+// reference/research-sessions/2026-08-24-zero-menu-hillion-batch-W.md.
 
 export const MENU_ITEMS = [
   {
@@ -25292,4 +25298,19 @@ export const MENU_ITEMS = [
   { id: "cgt_20", brandId: "changi_village_blk_2_and_3_hjh_salbiah", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
   { id: "cgt_21", brandId: "changi_village_blk_2_and_3_mei_lin_leng_re_yin_pin", name: "Commando Dessert", emoji: "🍧", category: "Desserts", price: 2.0, calories: 220, protein: 3, carbs: 45, fat: 3, confidence: "estimated" },
   { id: "cgt_22", brandId: "changi_village_blk_2_and_3_charlies_corner", name: "Western Food", emoji: "🍽️", category: "Western", price: 6.5, calories: 600, protein: 28, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "hm_1", brandId: "kopitiam_teochew_lao", name: "Teochew Porridge", emoji: "🥣", category: "Local Hawker", price: 4, calories: 280, protein: 15, carbs: 42, fat: 6, confidence: "estimated" },
+  { id: "hm_2", brandId: "kopitiam_new_korean_cuisine", name: "Saba Fish", emoji: "🐟", category: "Japanese", price: 6.5, calories: 420, protein: 32, carbs: 20, fat: 22, confidence: "estimated" },
+  { id: "hm_3", brandId: "kopitiam_ms_inasal_filipino_cuisine", name: "Chicken Inasal", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 520, protein: 34, carbs: 20, fat: 30, confidence: "estimated" },
+  { id: "hm_4", brandId: "kopitiam_halim_s_fish_soup", name: "Double Fish Steamboat", emoji: "🍲", category: "Seafood", price: 16.0, calories: 480, protein: 38, carbs: 20, fat: 24, confidence: "estimated" },
+  { id: "hm_5", brandId: "kopitiam_hao_wei_econ_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "hm_6", brandId: "kopitiam_monster_chili_mala", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "hm_7", brandId: "kopitiam_seng_heng_roasted_delights", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "hm_8", brandId: "kopitiam_house_of_lemang", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "hm_9", brandId: "kopitiam_crave", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "hm_10", brandId: "kopitiam_toyomi_japanese_express", name: "Japanese Curry Rice", emoji: "🍛", category: "Japanese", price: 5.5, calories: 580, protein: 22, carbs: 68, fat: 20, confidence: "estimated" },
+  { id: "hm_11", brandId: "kopitiam_majulah", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "hm_12", brandId: "kopitiam_shabu_days", name: "Steamboat", emoji: "🍲", category: "Mala/Hotpot", price: 12.0, calories: 600, protein: 32, carbs: 30, fat: 34, confidence: "estimated" },
+  { id: "hm_13", brandId: "kopitiam_uncle_john_s_makan_place", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
+  { id: "hm_14", brandId: "kopitiam_new_jia_wei", name: "Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 26, carbs: 12, fat: 22, confidence: "estimated" },
+  { id: "hm_15", brandId: "kopitiam_xin_mei_ban_mian_and_congee", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
 ];
