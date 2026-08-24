@@ -259,6 +259,15 @@
 // Steamboat); the rest reused existing dish types. kopitiam_pepper_lunch_express has 2
 // legitimate premises rows here (already-covered multi-outlet chain) - not a duplicate. See
 // reference/research-sessions/2026-08-24-zero-menu-hillion-batch-W.md.
+// 2026-08-24 (task #65, Batch X): first batch after a fresh per-venue audit (grouped
+// remaining zero-menu brands by locationContext, sorted by size, since every explicitly-
+// named venue through Batch W was exhausted). Added 15 menu items covering all 15
+// zero-menu brands at Plaza Singapura (100% kopitiam-operated, all matched directly in
+// kopitiam-stall-dishes.json). 9 new dish types added to dish-macro-lookup.py (Fried Rice,
+// Pepper Rice, Ayam Panggang Set, Mini Buddha Jumps Over The Wall, Double Chili Chicken,
+// Dumpling Noodle, La Mian, Soya Sauce Chicken Rice, Pickle Sour Slice Meat Pot); the rest
+// reused existing dish types. See reference/research-sessions/
+// 2026-08-24-zero-menu-plazasingapura-batch-X.md.
 
 export const MENU_ITEMS = [
   {
@@ -25313,4 +25322,19 @@ export const MENU_ITEMS = [
   { id: "hm_13", brandId: "kopitiam_uncle_john_s_makan_place", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
   { id: "hm_14", brandId: "kopitiam_new_jia_wei", name: "Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 26, carbs: 12, fat: 22, confidence: "estimated" },
   { id: "hm_15", brandId: "kopitiam_xin_mei_ban_mian_and_congee", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "psg_1", brandId: "kopitiam_seabay_mini_wok", name: "Fried Rice", emoji: "🍚", category: "Local Hawker", price: 4.5, calories: 520, protein: 14, carbs: 68, fat: 18, confidence: "estimated" },
+  { id: "psg_2", brandId: "kopitiam_pepper_lunch", name: "Pepper Rice", emoji: "🍚", category: "Japanese", price: 6.5, calories: 580, protein: 26, carbs: 60, fat: 24, confidence: "estimated" },
+  { id: "psg_3", brandId: "kopitiam_riverside_indonesia_bbq", name: "Ayam Panggang Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 560, protein: 32, carbs: 25, fat: 32, confidence: "estimated" },
+  { id: "psg_4", brandId: "kopitiam_ayam_taliwang_nasi_lemak", name: "Nasi Lemak Ayam Taliwang", emoji: "🍛", category: "Indonesian/Malay", price: 6.5, calories: 620, protein: 28, carbs: 60, fat: 28, confidence: "estimated" },
+  { id: "psg_5", brandId: "kopitiam_ah_er_herbal_soup", name: "Mini Buddha Jumps Over The Wall", emoji: "🍲", category: "Chinese Roast", price: 9.0, calories: 420, protein: 28, carbs: 20, fat: 22, confidence: "estimated" },
+  { id: "psg_6", brandId: "kopitiam_origina_fish_soup", name: "Sliced Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "psg_7", brandId: "kopitiam_homewok", name: "Double Chili Chicken", emoji: "🌶️", category: "Local Hawker", price: 6.5, calories: 540, protein: 28, carbs: 20, fat: 32, confidence: "estimated" },
+  { id: "psg_8", brandId: "kopitiam_yuen_kee", name: "Dumpling Noodle", emoji: "🍜", category: "Noodles", price: 5.0, calories: 460, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "psg_9", brandId: "kopitiam_hai_ge_ji_beef_noodle", name: "Beef Noodle", emoji: "🍜", category: "Noodles", price: 6, calories: 500, protein: 25, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "psg_10", brandId: "kopitiam_belly_belly_good_cai_fan", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5, calories: 560, protein: 26, carbs: 55, fat: 26, confidence: "estimated" },
+  { id: "psg_11", brandId: "kopitiam_hong_hu_la_mian", name: "La Mian", emoji: "🍜", category: "Noodles", price: 5.0, calories: 470, protein: 18, carbs: 62, fat: 14, confidence: "estimated" },
+  { id: "psg_12", brandId: "kopitiam_sing_hi_fry", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "psg_13", brandId: "kopitiam_new_hong_kong_roast", name: "Soya Sauce Chicken Rice", emoji: "🍗", category: "Chinese Roast", price: 5.0, calories: 540, protein: 26, carbs: 62, fat: 18, confidence: "estimated" },
+  { id: "psg_14", brandId: "kopitiam_mini_hot_pot", name: "Pickle Sour Slice Meat Pot", emoji: "🍲", category: "Local Hawker", price: 8.5, calories: 480, protein: 30, carbs: 15, fat: 28, confidence: "estimated" },
+  { id: "psg_15", brandId: "kopitiam_lei_popo", name: "Thunder Tea Rice", emoji: "🍵", category: "Local Hawker", price: 4.5, calories: 400, protein: 12, carbs: 55, fat: 14, confidence: "estimated" },
 ];

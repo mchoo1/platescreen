@@ -425,4 +425,13 @@ DISH_DB.update({
     "Chicken Inasal": ("🍗","Indonesian/Malay",6.5,520,34,20,30),
     "Double Fish Steamboat": ("🍲","Seafood",16.0,480,38,20,24),
     "Steamboat": ("🍲","Mala/Hotpot",12.0,600,32,30,34),
+    "Fried Rice": ("🍚","Local Hawker",4.5,520,14,68,18),
+    "Pepper Rice": ("🍚","Japanese",6.5,580,26,60,24),
+    "Ayam Panggang Set": ("🍗","Indonesian/Malay",6.5,560,32,25,32),
+    "Mini Buddha Jumps Over The Wall": ("🍲","Chinese Roast",9.0,420,28,20,22),
+    "Double Chili Chicken": ("🌶️","Local Hawker",6.5,540,28,20,32),
+    "Dumpling Noodle": ("🍜","Noodles",5.0,460,20,58,14),
+    "La Mian": ("🍜","Noodles",5.0,470,18,62,14),
+    "Soya Sauce Chicken Rice": ("🍗","Chinese Roast",5.0,540,26,62,18),
+    "Pickle Sour Slice Meat Pot": ("🍲","Local Hawker",8.5,480,30,15,28),
 })
