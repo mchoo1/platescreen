@@ -221,6 +221,14 @@
 // Mee Hoon Kway, Crispy Lemongrass Chicken Nasi Lemak, Chili Egg Fried Rice - Korean Fried
 // Chicken already existed); the rest reused existing dish types. See
 // reference/research-sessions/2026-08-24-zero-menu-bukitpanjang-batch-R.md.
+// 2026-08-24 (task #65, Batch S): added 27 menu items covering all 27 zero-menu brands at
+// Senja Hawker Centre / Senja 628 (100% kopitiam-operated, all matched directly in
+// kopitiam-stall-dishes.json). 4 new dish types added to dish-macro-lookup.py (Bak Chor
+// Mee, Pig Trotters, Tandoori Chicken, Curry Fish Head); the rest reused existing dish
+// types. kopitiam_kopi_kiosk has 2 legitimate premises rows here (Senja Hawker Centre +
+// Senja 628) - not a duplicate, it's the same already-covered 69-outlet chain with two
+// outlets at this location; no action needed. See reference/research-sessions/
+// 2026-08-24-zero-menu-senja-batch-S.md.
 
 export const MENU_ITEMS = [
   {
@@ -25168,4 +25176,31 @@ export const MENU_ITEMS = [
   { id: "bp_30", brandId: "pondok_indah_nasi_padang", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
   { id: "bp_31", brandId: "bukit_panjang_hawker_centre_zai_lais_lor_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
   { id: "bp_32", brandId: "bukit_panjang_hawker_centre_tong_fong_fatt_hainanese_boneless_chicken_rice", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "sj_1", brandId: "kopitiam_yong_feng_ji_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "sj_2", brandId: "kopitiam_ubi_le_sheng_yong_tou_fu", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "sj_3", brandId: "kopitiam_maxwell", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "sj_4", brandId: "kopitiam_china_wampoa_home_made_noodle", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "sj_5", brandId: "kopitiam_wok_26", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "sj_6", brandId: "kopitiam_heng_gi_goose_and_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "sj_7", brandId: "kopitiam_heng_heng_noodle_house", name: "Bak Chor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 450, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "sj_8", brandId: "kopitiam_shi_nian", name: "Pig Trotters", emoji: "🍖", category: "Chinese Roast", price: 7.0, calories: 580, protein: 32, carbs: 15, fat: 38, confidence: "estimated" },
+  { id: "sj_9", brandId: "kopitiam_ah_di_claypot", name: "Claypot Rice", emoji: "🍚", category: "Local Hawker", price: 6.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "sj_10", brandId: "kopitiam_amk_711_hainan_western", name: "Western Food", emoji: "🍽️", category: "Western", price: 6.5, calories: 600, protein: 28, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "sj_11", brandId: "kopitiam_jiaocai_seafood", name: "Hotplate BBQ Stingray", emoji: "🐟", category: "Seafood", price: 14.0, calories: 420, protein: 32, carbs: 12, fat: 24, confidence: "estimated" },
+  { id: "sj_12", brandId: "kopitiam_xuan_yuan_su_shi", name: "Olive Fried Rice", emoji: "🍚", category: "Indian", price: 4.5, calories: 480, protein: 10, carbs: 65, fat: 17, confidence: "estimated" },
+  { id: "sj_13", brandId: "kopitiam_hong_fa_japanese_and_korean_cuisine", name: "Bimbimbap", emoji: "🍚", category: "Korean", price: 7, calories: 550, protein: 24, carbs: 70, fat: 18, confidence: "estimated" },
+  { id: "sj_14", brandId: "kopitiam_project_penyek", name: "Ayam Penyet Set", emoji: "🍗", category: "Indonesian/Malay", price: 6.5, calories: 620, protein: 32, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "sj_15", brandId: "kopitiam_mohamed_ayaan_rojak", name: "Indian Rojak", emoji: "🥗", category: "Indian", price: 4, calories: 380, protein: 14, carbs: 48, fat: 16, confidence: "estimated" },
+  { id: "sj_16", brandId: "kopitiam_arabica_kebab", name: "Kebab Rice", emoji: "🥙", category: "Western", price: 7.0, calories: 580, protein: 32, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "sj_17", brandId: "kopitiam_jing_wang_handmade_dim_sum", name: "Dim Sum", emoji: "🥟", category: "Dim Sum", price: 4, calories: 320, protein: 10, carbs: 42, fat: 10, confidence: "estimated" },
+  { id: "sj_18", brandId: "kopitiam_chang_cheng_rice_garden", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "sj_19", brandId: "kopitiam_yu_wei_ju_quan", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "sj_20", brandId: "kopitiam_steam_fish", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
+  { id: "sj_21", brandId: "kopitiam_a_and_m_zaika_indian_muslim_food", name: "Tandoori Chicken", emoji: "🍗", category: "Indian", price: 6.5, calories: 480, protein: 38, carbs: 10, fat: 28, confidence: "estimated" },
+  { id: "sj_22", brandId: "kopitiam_cantonese_seafood", name: "Curry Fish Head", emoji: "🍛", category: "Seafood", price: 14.0, calories: 480, protein: 36, carbs: 15, fat: 28, confidence: "estimated" },
+  { id: "sj_23", brandId: "kopitiam_kueh_kueh", name: "Chwee Kueh", emoji: "🥟", category: "Local Hawker", price: 2.5, calories: 320, protein: 6, carbs: 45, fat: 12, confidence: "estimated" },
+  { id: "sj_24", brandId: "kopitiam_jiesen_yang_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "sj_25", brandId: "kopitiam_economy_bee_hoon", name: "Econ Bee Hoon", emoji: "🍜", category: "Local Hawker", price: 3.5, calories: 380, protein: 10, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "sj_26", brandId: "kopitiam_johnson_duck", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "sj_27", brandId: "kopitiam_hao_wai_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
 ];

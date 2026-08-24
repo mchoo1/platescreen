@@ -403,4 +403,8 @@ DISH_DB.update({
     "Mee Hoon Kway": ("🍜","Local Hawker",5.5,460,20,58,14),
     "Crispy Lemongrass Chicken Nasi Lemak": ("🍛","Indonesian/Malay",5.5,580,26,60,24),
     "Chili Egg Fried Rice": ("🍚","Local Hawker",4.5,520,14,68,18),
+    "Bak Chor Mee": ("🍜","Noodles",4.5,450,20,58,14),
+    "Pig Trotters": ("🍖","Chinese Roast",7.0,580,32,15,38),
+    "Tandoori Chicken": ("🍗","Indian",6.5,480,38,10,28),
+    "Curry Fish Head": ("🍛","Seafood",14.0,480,36,15,28),
 })
