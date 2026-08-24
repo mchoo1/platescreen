@@ -7,6 +7,11 @@
 // Centre — see brands.ts header for the matching Brand removal and full explanation.
 // 2026-08-24 (task #65, Batch J): removed 1 more duplicate premises row at Pasir Ris Central
 // Hawker Centre (pasir_ris_central_hawker_centre_wild_olives) — see brands.ts header.
+// 2026-08-24 (task #65, Batch L): removed 4 more duplicate premises rows at Anchorvale
+// Village Hawker Centre — see brands.ts header. Also reassigned a McDonald's Premises row
+// from its own duplicate Brand to the existing "mcd" Brand (id changed to
+// "mcd_anchorvale_village_hawker_centre") rather than removing it outright, since it's a
+// real outlet that belongs under McDonald's existing menu.
 //
 // Split into 9 untyped-literal chunks and concatenated below — even with
 // no type annotation, a single array literal this large blows past TS's structural
@@ -2757,9 +2762,9 @@ const PREMISES_2 = [
     source: "sfa_licence_match"
   },
   {
-    id: "anchorvale_village_hawker_centre_mcdonald_s_restaurants_pte_ltd_p647",
-    brandId: "anchorvale_village_hawker_centre_mcdonald_s_restaurants_pte_ltd",
-    label: "Anchorvale Village Hawker Centre",
+    id: "mcd_anchorvale_village_hawker_centre",
+    brandId: "mcd",
+    label: "McDonald's Anchorvale Village Hawker Centre",
     locationType: "hawker_centre",
     locationContext: "Anchorvale Village Hawker Centre",
     address: "339 Anchorvale Road, Singapore 540339",
@@ -77153,58 +77158,6 @@ export const PREMISES_12 = [
   {
     id: "anchorvale_village_hawker_centre_pin_wei_hong_kong_style_chee_cheong_fun_p1",
     brandId: "anchorvale_village_hawker_centre_pin_wei_hong_kong_style_chee_cheong_fun",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "339 Anchorvale Road, Singapore 540339",
-    postal: "540339",
-    lat: 1.39679315311901,
-    lng: 103.888437344772,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_hakka_leipopo_p1",
-    brandId: "anchorvale_village_hawker_centre_hakka_leipopo",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "339 Anchorvale Road, Singapore 540339",
-    postal: "540339",
-    lat: 1.39679315311901,
-    lng: 103.888437344772,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_original_simon_road_hokkien_mee_p1",
-    brandId: "anchorvale_village_hawker_centre_original_simon_road_hokkien_mee",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "339 Anchorvale Road, Singapore 540339",
-    postal: "540339",
-    lat: 1.39679315311901,
-    lng: 103.888437344772,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_tai_hao_chi_roasted_delights_p1",
-    brandId: "anchorvale_village_hawker_centre_tai_hao_chi_roasted_delights",
-    label: "Anchorvale Village Hawker Centre",
-    locationType: "hawker_centre",
-    locationContext: "Anchorvale Village Hawker Centre",
-    address: "339 Anchorvale Road, Singapore 540339",
-    postal: "540339",
-    lat: 1.39679315311901,
-    lng: 103.888437344772,
-    sfa: null,
-    source: "web_research"
-  },
-  {
-    id: "anchorvale_village_hawker_centre_munchi_pancakes_p1",
-    brandId: "anchorvale_village_hawker_centre_munchi_pancakes",
     label: "Anchorvale Village Hawker Centre",
     locationType: "hawker_centre",
     locationContext: "Anchorvale Village Hawker Centre",

@@ -329,3 +329,14 @@ DISH_DB.update({
     "Indian Punjab": ("🍛","Indian",6.5,600,26,60,25),
     "Nasi Padang": ("🍛","Indonesian/Malay",5.5,580,24,62,24),
 })
+DISH_DB.update({
+    "Nasi Lemak": ("🍛","Indonesian/Malay",4.5,530,18,62,22),
+    "Fried Banana": ("🍌","Bakery/Dessert",2,240,3,42,8),
+    "Grilled Chicken": ("🍗","Local Hawker",5.5,480,38,10,26),
+    "Braised Pig Trotter": ("🍖","Local Hawker",6,520,32,15,32),
+    "Curry Chicken": ("🍛","Indonesian/Malay",5,560,26,55,26),
+    "Congee": ("🍚","Local Hawker",3.5,280,10,42,6),
+    "Chicken Wing": ("🍗","Local Hawker",1.6,180,14,8,11),
+    "Indian Rojak": ("🥗","Indian",4,380,14,48,16),
+    "Economic Bee Hoon": ("🍜","Noodles",1.2,320,10,45,10),
+})

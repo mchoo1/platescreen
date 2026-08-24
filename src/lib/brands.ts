@@ -206,6 +206,17 @@
 // "kopitiam_wild_olives" (Kopitiam site scrape). Both had 0 MenuItems. Kept the Kopitiam-scrape
 // version, which is covered with a real menu item in this batch. 1,767 -> 1,766 brands. See
 // reference/research-sessions/2026-08-24-zero-menu-pasirriscentral-batch-J.md.
+// 2026-08-24 (task #65, Batch L): removed 4 more duplicate brands discovered while covering
+// Anchorvale Village Hawker Centre's zero-menu stalls, same pattern as Batches F/J - each
+// was a raw-SFA-licensee-derived duplicate ("anchorvale_village_hawker_centre_hakka_leipopo",
+// "..._original_simon_road_hokkien_mee", "..._tai_hao_chi_roasted_delights",
+// "..._munchi_pancakes") of an existing multi-outlet Kopitiam brand that already had a
+// Premises row at this exact address (339 Anchorvale Road, Singapore 540339). Also found a
+// McDonald's outlet modeled as its own zero-menu Brand
+// ("anchorvale_village_hawker_centre_mcdonald_s_restaurants_pte_ltd") instead of a Premises
+// row under the existing "mcd" brand - removed that Brand and reassigned its Premises row to
+// "mcd" (see premises.ts header). 1,766 -> 1,761 brands. See reference/research-sessions/
+// 2026-08-24-zero-menu-anchorvale-batch-L.md.
 
 export const BRANDS_1 = [
   {
@@ -4547,23 +4558,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "anchorvale_village_hawker_centre_mcdonald_s_restaurants_pte_ltd",
-    name: "Mcdonald'S Restaurants Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "mcdonald's restaurants pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-            {
+              {
     id: "one_punggol_hawker_centre_cold_storage_singapore_1983_pte_ltd",
     name: "Cold Storage Singapore (1983) Pte Ltd",
     emoji: "🍜",
@@ -26216,70 +26211,6 @@ export const BRANDS_4 = [
     cuisine: "Chee Cheong Fun",
     aliases: [
       "pin wei hong kong style chee cheong fun"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "anchorvale_village_hawker_centre_hakka_leipopo",
-    name: "Hakka Leipopo",
-    emoji: "🍵",
-    type: "hawker",
-    cuisine: "Hakka Thunder Tea Rice & Yong Tau Foo",
-    aliases: [
-      "hakka leipopo"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "anchorvale_village_hawker_centre_original_simon_road_hokkien_mee",
-    name: "Original Simon Road Hokkien Mee",
-    emoji: "🍤",
-    type: "hawker",
-    cuisine: "Hokkien Mee",
-    aliases: [
-      "original simon road hokkien mee"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "anchorvale_village_hawker_centre_tai_hao_chi_roasted_delights",
-    name: "Tai Hao Chi Roasted Delights",
-    emoji: "🦆",
-    type: "hawker",
-    cuisine: "Roasted Duck & Char Siew",
-    aliases: [
-      "tai hao chi roasted delights"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "anchorvale_village_hawker_centre_munchi_pancakes",
-    name: "Munchi Pancakes",
-    emoji: "🥞",
-    type: "hawker",
-    cuisine: "Min Jiang Kueh",
-    aliases: [
-      "munchi pancakes"
     ],
     dietTags: [],
     priceRange: "$",
