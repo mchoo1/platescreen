@@ -243,6 +243,16 @@
 // Panggang, Salted Baked Chicken, Pao Fan, Carrot Cake, Donburi, Dumplings); the rest
 // reused existing dish types. See reference/research-sessions/
 // 2026-08-24-zero-menu-parkwayparade-batch-U.md.
+// 2026-08-24 (task #65, Batch V): added 22 menu items covering 22 zero-menu brands across
+// two related venues fetched together - Changi Airport Terminal 3 (17 brands, all
+// kopitiam-operated, matched via kopitiam-stall-dishes.json) and Changi Village Blk 2 and 3
+// (5 brands, no operatorId, individually researched - including Mei Lin Leng Re Yin Pin's
+// real, uniquely-named "Commando Dessert", a 28-year-old shaved-ice specialty exclusive to
+// Changi Village, not a fabricated placeholder). 5 new dish types added to
+// dish-macro-lookup.py (Taiwanese Yangchun Noodles, Stir Fry Long Chilli Pepper with Pork
+// Rice, Chicken & Egg Curry Puff, Fish Head Bee Hoon, Commando Dessert); the rest reused
+// existing dish types. See reference/research-sessions/
+// 2026-08-24-zero-menu-changi-batch-V.md.
 
 export const MENU_ITEMS = [
   {
@@ -25260,4 +25270,26 @@ export const MENU_ITEMS = [
   { id: "pp_16", brandId: "kopitiam_steam_house", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, confidence: "estimated" },
   { id: "pp_17", brandId: "kopitiam_briyani_express", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
   { id: "pp_18", brandId: "kopitiam_kuchina_kiosko", name: "Pasta", emoji: "🍝", category: "Western", price: 7.5, calories: 580, protein: 20, carbs: 68, fat: 20, confidence: "estimated" },
+  { id: "cgt_1", brandId: "kopitiam_putian_street_food", name: "Putian Fried Bee Hoon", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 420, protein: 14, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "cgt_2", brandId: "kopitiam_haus_spinach_fish_soup", name: "Spinach Soup", emoji: "🥬", category: "Local Hawker", price: 4.0, calories: 150, protein: 8, carbs: 12, fat: 6, confidence: "estimated" },
+  { id: "cgt_3", brandId: "kopitiam_pak_lum_local_delight", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "cgt_4", brandId: "kopitiam_saayah_sayang_nasi_padang", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "cgt_5", brandId: "kopitiam_lao_fan_ji_claypot_and_bak_kut_teh", name: "Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 420, protein: 28, carbs: 10, fat: 28, confidence: "estimated" },
+  { id: "cgt_6", brandId: "kopitiam_ampang_yong_tao_fu_and_beef_noodle", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, confidence: "estimated" },
+  { id: "cgt_7", brandId: "kopitiam_yu_ni_xiang_yu_grilled_fish", name: "Grilled Fish", emoji: "🐟", category: "Seafood", price: 7, calories: 400, protein: 32, carbs: 15, fat: 18, confidence: "estimated" },
+  { id: "cgt_8", brandId: "kopitiam_he_jia_mixed_veggie_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "cgt_9", brandId: "kopitiam_taiwan_street_food", name: "Taiwanese Yangchun Noodles", emoji: "🍜", category: "Taiwanese", price: 4.5, calories: 420, protein: 14, carbs: 58, fat: 12, confidence: "estimated" },
+  { id: "cgt_10", brandId: "kopitiam_cinta_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "cgt_11", brandId: "kopitiam_monster_chili_mala_hot_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "cgt_12", brandId: "kopitiam_braised_duck_and_kay_chap", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "cgt_13", brandId: "kopitiam_home_wok", name: "Stir Fry Long Chilli Pepper with Pork Rice", emoji: "🍚", category: "Local Hawker", price: 4.5, calories: 480, protein: 20, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "cgt_14", brandId: "kopitiam_heritage_tanglin_puff", name: "Chicken & Egg Curry Puff", emoji: "🥟", category: "Snacks", price: 1.5, calories: 220, protein: 7, carbs: 22, fat: 12, confidence: "estimated" },
+  { id: "cgt_15", brandId: "kopitiam_nana_curry", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5, calories: 560, protein: 26, carbs: 55, fat: 26, confidence: "estimated" },
+  { id: "cgt_16", brandId: "kopitiam_kallang_wanton_noodle", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "cgt_17", brandId: "kopitiam_wah_kee_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "cgt_18", brandId: "changi_village_blk_2_and_3_weng_kee_original_taste_ipoh_hor_fun", name: "Ipoh Hor Fun", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 15, confidence: "estimated" },
+  { id: "cgt_19", brandId: "changi_village_blk_2_and_3_guang_xing_original_taste_fish_head_bee_hoon", name: "Fish Head Bee Hoon", emoji: "🍜", category: "Seafood", price: 7.0, calories: 450, protein: 28, carbs: 45, fat: 14, confidence: "estimated" },
+  { id: "cgt_20", brandId: "changi_village_blk_2_and_3_hjh_salbiah", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "cgt_21", brandId: "changi_village_blk_2_and_3_mei_lin_leng_re_yin_pin", name: "Commando Dessert", emoji: "🍧", category: "Desserts", price: 2.0, calories: 220, protein: 3, carbs: 45, fat: 3, confidence: "estimated" },
+  { id: "cgt_22", brandId: "changi_village_blk_2_and_3_charlies_corner", name: "Western Food", emoji: "🍽️", category: "Western", price: 6.5, calories: 600, protein: 28, carbs: 55, fat: 28, confidence: "estimated" },
 ];

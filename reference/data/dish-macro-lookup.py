@@ -417,4 +417,9 @@ DISH_DB.update({
     "Carrot Cake": ("🍚","Local Hawker",3.5,380,8,52,14),
     "Donburi": ("🍱","Japanese",7.0,560,26,68,18),
     "Dumplings": ("🥟","Dim Sum",4.5,340,12,45,10),
+    "Taiwanese Yangchun Noodles": ("🍜","Taiwanese",4.5,420,14,58,12),
+    "Stir Fry Long Chilli Pepper with Pork Rice": ("🍚","Local Hawker",4.5,480,20,55,18),
+    "Chicken & Egg Curry Puff": ("🥟","Snacks",1.5,220,7,22,12),
+    "Fish Head Bee Hoon": ("🍜","Seafood",7.0,450,28,45,14),
+    "Commando Dessert": ("🍧","Desserts",2.0,220,3,45,3),
 })
