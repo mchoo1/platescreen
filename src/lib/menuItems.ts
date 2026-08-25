@@ -430,6 +430,14 @@
 // the rest reused existing dish types (Char Kway Teow, Roasted Chicken Rice, Mala Xiang Guo,
 // Ayam Penyet, Teppanyaki Chicken Omu Curry Rice). See
 // reference/research-sessions/2026-08-25-zero-menu-bagusPayaLebar-batch-AS.md.
+//
+// Batch AT (2026-08-25): +8 items for 8 zero-menu brands at Kebun Baru Food Centre,
+// `operatorId: undefined` hawker stalls with real, specific dish-descriptive cuisine tags
+// (no external research needed). 3 new dish types added to dish-macro-lookup.py (Mian Fen Guo,
+// Boneless Chicken Rice, Sheng Mian); the rest reused existing dish types (Fishball Noodles,
+// Claypot Rice, Wanton Noodle, Beef Noodle). This is the last single-venue batch before
+// switching to a multi-venue-per-batch approach for the shrinking remaining tiers (per user
+// choice). See reference/research-sessions/2026-08-25-zero-menu-kebunbaru-batch-AT.md.
 
 export const MENU_ITEMS = [
   {
@@ -25724,4 +25732,12 @@ export const MENU_ITEMS = [
   { id: "bpls_6", brandId: "kopitiam_monster_chilli_mala_hot_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
   { id: "bpls_7", brandId: "kopitiam_penyet_king", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
   { id: "bpls_8", brandId: "kopitiam_tornado_egg_curry_rice_and_donburi", name: "Teppanyaki Chicken Omu Curry Rice", emoji: "🍛", category: "Japanese", price: 7.5, calories: 650, protein: 26, carbs: 75, fat: 24, confidence: "estimated" },
+  { id: "kbf_1", brandId: "kebun_baru_food_centre_foo_hing_handmade_fishball_and_meatball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "kbf_2", brandId: "kebun_baru_food_centre_a1_house_of_claypot", name: "Claypot Rice", emoji: "🍚", category: "Local Hawker", price: 6.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "kbf_3", brandId: "kebun_baru_food_centre_hock_kee_wanton_noodle", name: "Wanton Noodle", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "kbf_4", brandId: "kebun_baru_food_centre_seletar_sheng_mian_mian_fen_guo", name: "Mian Fen Guo", emoji: "🍲", category: "Noodles", price: 4.5, calories: 420, protein: 16, carbs: 62, fat: 12, confidence: "estimated" },
+  { id: "kbf_5", brandId: "kebun_baru_food_centre_226_boneless_chicken_rice", name: "Boneless Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 5.0, calories: 540, protein: 30, carbs: 62, fat: 16, confidence: "estimated" },
+  { id: "kbf_6", brandId: "kebun_baru_food_centre_lims_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "kbf_7", brandId: "kebun_baru_food_centre_teck_kee_cooked_food", name: "Sheng Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 460, protein: 18, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "kbf_8", brandId: "kebun_baru_food_centre_hong_heng", name: "Beef Noodle", emoji: "🍜", category: "Noodles", price: 6, calories: 500, protein: 25, carbs: 60, fat: 15, confidence: "estimated" },
 ];
