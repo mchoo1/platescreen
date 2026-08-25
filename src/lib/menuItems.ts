@@ -438,6 +438,13 @@
 // Claypot Rice, Wanton Noodle, Beef Noodle). This is the last single-venue batch before
 // switching to a multi-venue-per-batch approach for the shrinking remaining tiers (per user
 // choice). See reference/research-sessions/2026-08-25-zero-menu-kebunbaru-batch-AT.md.
+//
+// Batch AU (2026-08-25): +8 items for 8 zero-menu brands at Adam Road Food Centre,
+// `operatorId: undefined` hawker stalls with real, specific dish-descriptive cuisine tags (no
+// external research needed). 0 new dish types — all 8 dishes (Nasi Lemak, Fried Hokkien Mee,
+// Fishball Noodles, Prawn Noodles, Cheng Tng, Mee Rebus, Mee Soto, Steamed Chicken Rice)
+// already existed. Closes out the re-run audit's 8-brand tier. See
+// reference/research-sessions/2026-08-25-zero-menu-adamroad-batch-AU.md.
 
 export const MENU_ITEMS = [
   {
@@ -25740,4 +25747,12 @@ export const MENU_ITEMS = [
   { id: "kbf_6", brandId: "kebun_baru_food_centre_lims_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
   { id: "kbf_7", brandId: "kebun_baru_food_centre_teck_kee_cooked_food", name: "Sheng Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 460, protein: 18, carbs: 58, fat: 14, confidence: "estimated" },
   { id: "kbf_8", brandId: "kebun_baru_food_centre_hong_heng", name: "Beef Noodle", emoji: "🍜", category: "Noodles", price: 6, calories: 500, protein: 25, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "adfc_1", brandId: "adam_road_food_centre_selera_rasa_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "adfc_2", brandId: "adam_road_food_centre_stall_22_hokkien_mee", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "adfc_3", brandId: "adam_road_food_centre_adam_fishball_noodles", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "adfc_4", brandId: "adam_road_food_centre_adam_road_noo_cheng_big_prawn_noodles", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "adfc_5", brandId: "adam_road_food_centre_teck_kee_hot_and_cold_dessert", name: "Cheng Tng", emoji: "🥣", category: "Desserts", price: 2, calories: 180, protein: 3, carbs: 40, fat: 1, confidence: "estimated" },
+  { id: "adfc_6", brandId: "adam_road_food_centre_al_sheik_mee_stall", name: "Mee Rebus", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 18, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "adfc_7", brandId: "adam_road_food_centre_amirah_and_nur_aniqah_mee_soto_and_mee_rebus", name: "Mee Soto", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 420, protein: 20, carbs: 50, fat: 14, confidence: "estimated" },
+  { id: "adfc_8", brandId: "adam_road_food_centre_adam_chicken_rice", name: "Steamed Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 530, protein: 28, carbs: 63, fat: 16, confidence: "estimated" },
 ];
