@@ -464,6 +464,15 @@
 // added to dish-macro-lookup.py (Seafood Fried Rice, Putu Piring, Fish Porridge, Mee Siam,
 // Roasted Meats, Fried Hor Fun); the rest reused existing dish types. See
 // reference/research-sessions/2026-08-25-zero-menu-pasirris-haig-ghimmoh-batch-AW.md.
+//
+// Batch AX (2026-08-25): first batch of the 6-brand tier. +9 items across 2 venues: New Upper
+// Changi Road Blk 58 (5 of 6; Lee Len Tong skipped — generic "Local & Hawker" tag, no
+// discoverable specific dish via web search) and Bedok South Road Blk 16 (4 of 6; Goh Poo Huat
+// and Kwek Ah Heoh skipped for the same reason; Warong Jawa confirmed via web search as a real
+// Nasi Lemak stall despite its "Malay Cuisine" tag). 0 new dish types — all 9 dishes (Wanton
+// Mee, Bak Chor Mee, Laksa, Carrot Cake, Fish Soup, Char Kway Teow, Prawn Noodles, Duck Rice,
+// Nasi Lemak) already existed. See
+// reference/research-sessions/2026-08-25-zero-menu-changi58-bedok16-batch-AX.md.
 
 export const MENU_ITEMS = [
   {
@@ -25806,4 +25815,13 @@ export const MENU_ITEMS = [
   { id: "gmmc_5", brandId: "ghim_moh_road_blk_20_thiam_kee_1977_hainanese_chicken_rice", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, confidence: "estimated" },
   { id: "gmmc_6", brandId: "ghim_moh_road_blk_20_the_headless_baker", name: "Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 250, protein: 6, carbs: 42, fat: 6, confidence: "estimated" },
   { id: "gmmc_7", brandId: "ghim_moh_road_blk_20_teck_hin_fried_hor_fun", name: "Fried Hor Fun", emoji: "🍜", category: "Noodles", price: 5.0, calories: 540, protein: 18, carbs: 65, fat: 20, confidence: "estimated" },
+  { id: "nucr58_1", brandId: "new_upper_changi_road_blk_58_hup_lee_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "nucr58_2", brandId: "new_upper_changi_road_blk_58_old_chai_chee_minced_meat_noodle", name: "Bak Chor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 450, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "nucr58_3", brandId: "new_upper_changi_road_blk_58_amys_laksa", name: "Laksa", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 550, protein: 20, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "nucr58_4", brandId: "new_upper_changi_road_blk_58_original_changi_ten_mile", name: "Carrot Cake", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 380, protein: 8, carbs: 52, fat: 14, confidence: "estimated" },
+  { id: "nucr58_5", brandId: "new_upper_changi_road_blk_58_hawker_delights", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "bsr16_1", brandId: "bedok_south_road_blk_16_hill_street_fried_kway_teow", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "bsr16_2", brandId: "bedok_south_road_blk_16_hawker_delights", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "bsr16_3", brandId: "bedok_south_road_blk_16_koon_kee_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "bsr16_4", brandId: "bedok_south_road_blk_16_warong_jawa", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
 ];
