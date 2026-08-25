@@ -455,6 +455,15 @@
 // dishes (Nasi Briyani, Ayam Penyet, Roasted Chicken Rice, Popiah, Fish Soup, Kway Chap,
 // Oyster Omelette, Duck Rice, Carrot Cake, Porridge) already existed. See
 // reference/research-sessions/2026-08-25-zero-menu-teban-clementi726-batch-AV.md.
+//
+// Batch AW (2026-08-25): +21 items across 3 venues, closing out the re-run audit's 7-brand
+// tier entirely: Pasir Ris 527C (7, all Kopitiam, matched via kopitiam-stall-dishes.json),
+// Haig Road Market & Food Centre (7, real dish-descriptive cuisine tags; HJ Waliti HJ Mazuki
+// confirmed via web search to differentiate its dish from neighbouring Afandi Hawa & Family),
+// Ghim Moh Market & Food Centre (7, real dish-descriptive cuisine tags). 6 new dish types
+// added to dish-macro-lookup.py (Seafood Fried Rice, Putu Piring, Fish Porridge, Mee Siam,
+// Roasted Meats, Fried Hor Fun); the rest reused existing dish types. See
+// reference/research-sessions/2026-08-25-zero-menu-pasirris-haig-ghimmoh-batch-AW.md.
 
 export const MENU_ITEMS = [
   {
@@ -25776,4 +25785,25 @@ export const MENU_ITEMS = [
   { id: "cw726_3", brandId: "clementi_west_street_2_blk_726_slice_fish", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
   { id: "cw726_4", brandId: "clementi_west_street_2_blk_726_gui_ji", name: "Carrot Cake", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 380, protein: 8, carbs: 52, fat: 14, confidence: "estimated" },
   { id: "cw726_5", brandId: "clementi_west_street_2_blk_726_ming_kee", name: "Porridge", emoji: "🥣", category: "Local Hawker", price: 3.5, calories: 260, protein: 10, carbs: 42, fat: 5, confidence: "estimated" },
+  { id: "pr527_1", brandId: "kopitiam_kimly_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "pr527_2", brandId: "kopitiam_seafood_king_pao_fan", name: "Pao Fan", emoji: "🍚", category: "Local Hawker", price: 7.0, calories: 480, protein: 22, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "pr527_3", brandId: "kopitiam_ju_bao_xuan_mala_hotpot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "pr527_4", brandId: "kopitiam_econ_bee_hoon", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, confidence: "estimated" },
+  { id: "pr527_5", brandId: "kopitiam_liang_ji", name: "Seafood Fried Rice", emoji: "🍚", category: "Seafood", price: 6.5, calories: 560, protein: 20, carbs: 70, fat: 20, confidence: "estimated" },
+  { id: "pr527_6", brandId: "kopitiam_king_dae_bak_korean_and_japanese", name: "Beef Bulgogi", emoji: "🥩", category: "Korean", price: 7.5, calories: 580, protein: 30, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "pr527_7", brandId: "kopitiam_a_bowl_of_noodle", name: "Laksa", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 550, protein: 20, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "hrmc_1", brandId: "haig_road_market_and_cooked_food_centre_traditional_haig_road_putu_piring", name: "Putu Piring", emoji: "🍥", category: "Bakery/Dessert", price: 2.0, calories: 150, protein: 2, carbs: 30, fat: 3, confidence: "estimated" },
+  { id: "hrmc_2", brandId: "haig_road_market_and_cooked_food_centre_afandi_hawa_and_family", name: "Mee Rebus", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 18, carbs: 55, fat: 16, confidence: "estimated" },
+  { id: "hrmc_3", brandId: "haig_road_market_and_cooked_food_centre_hj_waliti_hj_mazuki", name: "Mee Siam", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 430, protein: 14, carbs: 60, fat: 14, confidence: "estimated" },
+  { id: "hrmc_4", brandId: "haig_road_market_and_cooked_food_centre_tg_fish_porridge", name: "Fish Porridge", emoji: "🥣", category: "Seafood", price: 5.0, calories: 280, protein: 20, carbs: 35, fat: 6, confidence: "estimated" },
+  { id: "hrmc_5", brandId: "haig_road_market_and_cooked_food_centre_soon_lee_cooked_food", name: "Oyster Omelette", emoji: "🍳", category: "Local Hawker", price: 5.5, calories: 480, protein: 18, carbs: 35, fat: 28, confidence: "estimated" },
+  { id: "hrmc_6", brandId: "haig_road_market_and_cooked_food_centre_warong_sudi_mampir", name: "Satay", emoji: "🍢", category: "Local Hawker", price: 6, calories: 375, protein: 30, carbs: 20, fat: 18, confidence: "estimated" },
+  { id: "hrmc_7", brandId: "haig_road_market_and_cooked_food_centre_zhenguang_wantan_noodles", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "gmmc_1", brandId: "ghim_moh_road_blk_20_guan_kee_fried_kway_teow", name: "Fried Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "gmmc_2", brandId: "ghim_moh_road_blk_20_chuan_kee_boneless_braised_duck", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "gmmc_3", brandId: "ghim_moh_road_blk_20_ghim_moh_chwee_kueh", name: "Chwee Kueh", emoji: "🥟", category: "Local Hawker", price: 2.5, calories: 320, protein: 6, carbs: 45, fat: 12, confidence: "estimated" },
+  { id: "gmmc_4", brandId: "ghim_moh_road_blk_20_jiu_jiang_shao_la", name: "Roasted Meats", emoji: "🍖", category: "Chinese Roast", price: 6.5, calories: 560, protein: 30, carbs: 20, fat: 36, confidence: "estimated" },
+  { id: "gmmc_5", brandId: "ghim_moh_road_blk_20_thiam_kee_1977_hainanese_chicken_rice", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, confidence: "estimated" },
+  { id: "gmmc_6", brandId: "ghim_moh_road_blk_20_the_headless_baker", name: "Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 250, protein: 6, carbs: 42, fat: 6, confidence: "estimated" },
+  { id: "gmmc_7", brandId: "ghim_moh_road_blk_20_teck_hin_fried_hor_fun", name: "Fried Hor Fun", emoji: "🍜", category: "Noodles", price: 5.0, calories: 540, protein: 18, carbs: 65, fat: 20, confidence: "estimated" },
 ];
