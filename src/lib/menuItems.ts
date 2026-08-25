@@ -445,6 +445,16 @@
 // Fishball Noodles, Prawn Noodles, Cheng Tng, Mee Rebus, Mee Soto, Steamed Chicken Rice)
 // already existed. Closes out the re-run audit's 8-brand tier. See
 // reference/research-sessions/2026-08-25-zero-menu-adamroad-batch-AU.md.
+//
+// Batch AV (2026-08-25): first multi-venue batch, per user direction to combine smaller venues
+// going forward. +11 items across 2 venues: Teban Gardens Market and Food Centre (6 of 7
+// brands; Cold Storage Singapore skipped as a supermarket, not a food-dish vendor) and
+// Clementi West Street 2 Blk 726 (5 of 7 brands; Cold Storage Singapore skipped again, and
+// New Century Food House @ 721 Pte Ltd skipped as a multi-stall coffeeshop operator entity
+// with no single discoverable dish, confirmed via web search). 0 new dish types — all 11
+// dishes (Nasi Briyani, Ayam Penyet, Roasted Chicken Rice, Popiah, Fish Soup, Kway Chap,
+// Oyster Omelette, Duck Rice, Carrot Cake, Porridge) already existed. See
+// reference/research-sessions/2026-08-25-zero-menu-teban-clementi726-batch-AV.md.
 
 export const MENU_ITEMS = [
   {
@@ -25755,4 +25765,15 @@ export const MENU_ITEMS = [
   { id: "adfc_6", brandId: "adam_road_food_centre_al_sheik_mee_stall", name: "Mee Rebus", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 18, carbs: 55, fat: 16, confidence: "estimated" },
   { id: "adfc_7", brandId: "adam_road_food_centre_amirah_and_nur_aniqah_mee_soto_and_mee_rebus", name: "Mee Soto", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 420, protein: 20, carbs: 50, fat: 14, confidence: "estimated" },
   { id: "adfc_8", brandId: "adam_road_food_centre_adam_chicken_rice", name: "Steamed Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 530, protein: 28, carbs: 63, fat: 16, confidence: "estimated" },
+  { id: "tgfc_1", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "tgfc_2", brandId: "teban_gardens_market_and_food_centre_salbiah_malay_stall", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6, calories: 580, protein: 30, carbs: 50, fat: 26, confidence: "estimated" },
+  { id: "tgfc_3", brandId: "teban_gardens_market_and_food_centre_poh_poh_roasted_chicken_rice", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, confidence: "estimated" },
+  { id: "tgfc_4", brandId: "teban_gardens_market_and_food_centre_ah_boy_popiah", name: "Popiah", emoji: "🌯", category: "Local Hawker", price: 3.5, calories: 260, protein: 8, carbs: 38, fat: 8, confidence: "estimated" },
+  { id: "tgfc_5", brandId: "teban_gardens_market_and_food_centre_tian_wai_tian_fish_soup", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "tgfc_6", brandId: "teban_gardens_market_and_food_centre_tan_hock_seng_cooked_food", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "cw726_1", brandId: "clementi_west_street_2_blk_726_xin_xin_famous_fried_oyster", name: "Oyster Omelette", emoji: "🍳", category: "Local Hawker", price: 5.5, calories: 480, protein: 18, carbs: 35, fat: 28, confidence: "estimated" },
+  { id: "cw726_2", brandId: "clementi_west_street_2_blk_726_he_ji_braised_duck", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "cw726_3", brandId: "clementi_west_street_2_blk_726_slice_fish", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, confidence: "estimated" },
+  { id: "cw726_4", brandId: "clementi_west_street_2_blk_726_gui_ji", name: "Carrot Cake", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 380, protein: 8, carbs: 52, fat: 14, confidence: "estimated" },
+  { id: "cw726_5", brandId: "clementi_west_street_2_blk_726_ming_kee", name: "Porridge", emoji: "🥣", category: "Local Hawker", price: 3.5, calories: 260, protein: 10, carbs: 42, fat: 5, confidence: "estimated" },
 ];
