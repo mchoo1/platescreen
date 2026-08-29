@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import {
   buildScreenerRows, withDistances, applyFilters, sortRows, applyPresetPpdFilter,
+  buildUncoveredBrandRows, withUncoveredDistances, applyUncoveredFilters, sortUncoveredRows,
   DEFAULT_FILTERS, PRESETS,
   type ScreenerFilters, type ScreenerRow, type SortKey, type SortDir,
 } from '@/lib/screener';
@@ -12,6 +13,7 @@ import { fmtMoney, ppdBadgeClasses } from '@/lib/utils';
 import { FilterPanel } from './FilterPanel';
 import { PresetBar } from './PresetBar';
 import { ScreenerTable } from './ScreenerTable';
+import { PendingMenuList } from './PendingMenuList';
 import { MealTray } from './MealTray';
 import type { DietaryFlag, OutletType } from '@/types';
 import type { Platform } from '@/types/db';
@@ -19,6 +21,10 @@ import type { Platform } from '@/types/db';
 const ALL_ROWS = buildScreenerRows();
 const OUTLET_COUNT = new Set(ALL_ROWS.map((r) => r.restaurantId)).size;
 const VERIFIED_COUNT = ALL_ROWS.filter((r) => r.confidence === 'verified').length;
+// Real, physical outlets with zero menu items — previously entirely invisible to
+// search since buildScreenerRows() only ever iterates MENU_ITEMS. See
+// reference/research-sessions/2026-08-29-zero-menu-brand-fallback.md.
+const ALL_UNCOVERED = buildUncoveredBrandRows();
 // Ready-to-eat outlet types only — excludes 'supermarket' so raw ingredients (chicken breast,
 // eggs, dry rice) don't dominate "Top picks" ahead of actual meals someone can walk in and order.
 // See reference/research-sessions/2026-08-22-database-usefulness-audit.md.
@@ -149,6 +155,24 @@ export function ScreenerApp() {
     return sortRows(out, sortKey, sortDir);
   }, [rowsWithDistance, filters, sortKey, sortDir, preset]);
 
+  const uncoveredWithDistance = useMemo(() => {
+    if (!userCoords) return ALL_UNCOVERED;
+    return withUncoveredDistances(ALL_UNCOVERED, userCoords.lat, userCoords.lng);
+  }, [userCoords]);
+
+  // Only the filters that describe the physical outlet itself apply here — there's
+  // no menu data yet to test calorie/protein/carb/price/diet-tag filters against.
+  const visibleUncovered = useMemo(() => {
+    const out = applyUncoveredFilters(uncoveredWithDistance, {
+      q: filters.q,
+      outletTypes: filters.outletTypes,
+      platforms: filters.platforms,
+      location: filters.location,
+      maxDistanceKm: filters.maxDistanceKm,
+    });
+    return sortUncoveredRows(out);
+  }, [uncoveredWithDistance, filters.q, filters.outletTypes, filters.platforms, filters.location, filters.maxDistanceKm]);
+
   const handleSort = (key: SortKey) => {
     if (key === sortKey) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
     else {
@@ -217,9 +241,10 @@ export function ScreenerApp() {
         <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Screen Singapore food by macros &amp; value</h2>
         <p className="text-sm text-slate-500 mt-1 dark:text-slate-400">Search, filter, and compare — like a stock screener, for meals.</p>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 mt-4">
           <StatCard label="Menu items indexed" value={ALL_ROWS.length.toLocaleString()} />
           <StatCard label="Outlets covered" value={OUTLET_COUNT.toLocaleString()} />
+          <StatCard label="Menu pending" value={ALL_UNCOVERED.length.toLocaleString()} />
           <StatCard label="Verified entries" value={VERIFIED_COUNT.toLocaleString()} />
           <StatCard label="Showing now" value={visibleRows.length.toLocaleString()} />
         </div>
@@ -256,6 +281,11 @@ export function ScreenerApp() {
             onSort={handleSort}
             trayIds={trayIds}
             onToggleTray={handleToggleTray}
+            showDistance={geoStatus === 'active'}
+          />
+          <PendingMenuList
+            rows={visibleUncovered}
+            totalCount={ALL_UNCOVERED.length}
             showDistance={geoStatus === 'active'}
           />
         </main>

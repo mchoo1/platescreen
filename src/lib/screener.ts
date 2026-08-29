@@ -112,7 +112,7 @@ export function buildScreenerRows(): ScreenerRow[] {
  * Nearest-premises distance (km) for a brand, or null if we have no location
  * data for it at all. Picks the closest of all its real Premises rows.
  */
-function nearestPremises(brandId: string, userLat: number, userLng: number): { distanceKm: number; branchName: string | null } | null {
+export function nearestPremises(brandId: string, userLat: number, userLng: number): { distanceKm: number; branchName: string | null } | null {
   const prem = (PREMISES_BY_BRAND.get(brandId) ?? []).filter((p) => p.lat != null && p.lng != null);
   if (!prem.length) return null;
   let best = prem[0];
@@ -130,6 +130,86 @@ export function withDistances(rows: ScreenerRow[], userLat: number, userLng: num
     const nearest = nearestPremises(row.restaurantId, userLat, userLng);
     if (!nearest) return row;
     return { ...row, distanceKm: nearest.distanceKm, nearestBranchName: nearest.branchName };
+  });
+}
+
+// ── Zero-menu-item brands ─────────────────────────────────────────────────────
+// 587 of 1,749 brands (33.6%) have no MenuItem rows yet — real, physical outlets
+// that were previously entirely invisible to search because buildScreenerRows()
+// only iterates MENU_ITEMS. This surfaces them as a lightweight, macro-free row
+// (name/location/distance only) instead of dropping them from the app. See
+// reference/research-sessions/2026-08-29-zero-menu-brand-fallback.md.
+export interface UncoveredBrandRow {
+  id: string;
+  name: string;
+  emoji: string;
+  cuisine: string;
+  outletType: OutletType;
+  priceRange: PriceRange;
+  platforms: Platform[];
+  location: string;
+  distanceKm: number | null;
+  nearestBranchName: string | null;
+}
+
+const COVERED_BRAND_IDS = new Set((MENU_ITEMS as MenuItem[]).map((i) => i.brandId));
+
+/** Every brand with zero MenuItem rows — the long tail buildScreenerRows() can't surface. */
+export function buildUncoveredBrandRows(): UncoveredBrandRow[] {
+  return BRANDS.filter((b) => !COVERED_BRAND_IDS.has(b.id)).map((b) => ({
+    id: b.id,
+    name: b.name,
+    emoji: b.emoji,
+    cuisine: b.cuisine,
+    outletType: b.type,
+    priceRange: b.priceRange,
+    platforms: b.platforms,
+    location: brandLocationLabel(b),
+    distanceKm: null,
+    nearestBranchName: null,
+  }));
+}
+
+/** Attach live distance (km) from a user coordinate, same as withDistances() but for uncovered rows. */
+export function withUncoveredDistances(rows: UncoveredBrandRow[], userLat: number, userLng: number): UncoveredBrandRow[] {
+  return rows.map((row) => {
+    const nearest = nearestPremises(row.id, userLat, userLng);
+    if (!nearest) return row;
+    return { ...row, distanceKm: nearest.distanceKm, nearestBranchName: nearest.branchName };
+  });
+}
+
+// Deliberately no calorie/protein/carb/price/diet-tag fields here — there's no
+// MenuItem data to test those against for an uncovered brand. Only the filters
+// that describe the physical outlet itself apply.
+export interface UncoveredFilters {
+  q: string;
+  outletTypes: OutletType[];
+  platforms: Platform[];
+  location: string;
+  maxDistanceKm: number | null;
+}
+
+export function applyUncoveredFilters(rows: UncoveredBrandRow[], f: UncoveredFilters): UncoveredBrandRow[] {
+  const q = f.q.trim().toLowerCase();
+  const loc = f.location.trim().toLowerCase();
+  return rows.filter((row) => {
+    if (q && !row.name.toLowerCase().includes(q)) return false;
+    if (f.outletTypes.length && !f.outletTypes.includes(row.outletType)) return false;
+    if (f.platforms.length && !f.platforms.every((p) => row.platforms.includes(p))) return false;
+    if (loc && !row.location.toLowerCase().includes(loc) && !row.name.toLowerCase().includes(loc)) return false;
+    if (f.maxDistanceKm != null && (row.distanceKm == null || row.distanceKm > f.maxDistanceKm)) return false;
+    return true;
+  });
+}
+
+/** Nearest-first when we have distances, else alphabetical. */
+export function sortUncoveredRows(rows: UncoveredBrandRow[]): UncoveredBrandRow[] {
+  return [...rows].sort((a, b) => {
+    if (a.distanceKm != null && b.distanceKm != null) return a.distanceKm - b.distanceKm;
+    if (a.distanceKm != null) return -1;
+    if (b.distanceKm != null) return 1;
+    return a.name.localeCompare(b.name);
   });
 }
 
