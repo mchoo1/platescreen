@@ -557,3 +557,13 @@ DISH_DB.update({
     "Teochew Kueh": ("🥟","Local Hawker",2.5,280,6,40,10),
     "Vegetarian Satay": ("🍢","Local Hawker",6.0,320,18,20,14),
 })
+
+# --- Batch BE additions (8-venue clean-tag push: Pek Kio, Telok Blangah Rise, Empress Road,
+# Jurong West Street 52 Blk 505, Chong Boon, Cheng San, ION Orchard, EastPoint Mall) ---
+DISH_DB.update({
+    "Chee Cheong Fun": ("🥟","Dim Sum",4.0,320,8,58,6),
+    "Pork Rib Prawn Noodles": ("🍜","Noodles",6.0,520,28,55,20),
+    "Coffee & Toast": ("☕","Beverages",3.5,320,8,45,12),
+    "Tutu Kueh": ("🥟","Local Hawker",2.0,180,4,30,6),
+    "Vegetarian Bee Hoon": ("🥦","Local Hawker",3.5,380,12,58,10),
+})
