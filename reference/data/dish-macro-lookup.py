@@ -575,3 +575,12 @@ DISH_DB.update({
     "Minced Chicken Indomie": ("🍜","Local Hawker",4.5,480,20,55,18),
     "Meatball Noodles": ("🍜","Noodles",5.0,460,22,55,16),
 })
+
+# --- Batch BG additions (kopitiam_-cluster resolution, second wave via
+# kopitiam-stall-dishes.json: Pasir Ris West Plaza, Clementi 209B, Ghim Moh Link 29,
+# Simei 248) ---
+DISH_DB.update({
+    "Beef Stew Garlic Rice": ("🍚","Western",7.0,620,30,55,28),
+    "Korean Fried Chicken": ("🍗","Korean",6.5,580,30,40,30),
+    "Vegetarian Char Kway Teow": ("🍜","Local Hawker",4.5,500,10,65,20),
+})
