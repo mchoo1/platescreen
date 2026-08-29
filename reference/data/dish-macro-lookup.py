@@ -521,3 +521,8 @@ DISH_DB.update({
     "Tau Huay": ("🍮","Bakery/Dessert",2.0,150,8,20,4),
     "Duck Noodle Soup": ("🍜","Chinese Roast",5.5,480,26,55,18),
 })
+
+# --- Batch BA additions (Tiong Bahru Market + Dunman Food Centre + Zion Riverside Food Centre) ---
+DISH_DB.update({
+    "Tau Kwa Pau": ("🥟","Local Hawker",2.0,220,8,25,9),
+})

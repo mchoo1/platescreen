@@ -509,6 +509,16 @@
 // Fried Carrot Cake/Fried Hokkien Prawn Mee/Kway Chap/Mian Fen Guo/Wanton Mee/Popiah left
 // untagged per the established pork-ambiguity/mixed-filling skip list. See
 // reference/research-sessions/2026-08-29-zero-menu-meichin-tpwest-kimkeat-batch-AZ.md.
+//
+// Batch BA (2026-08-29): +18 items across 3 venues in the 6-brand tier, all 18 of 18 brands
+// covered — no skips this batch, since every brand at all 3 venues already carried a real,
+// dish-descriptive cuisine tag (Tiong Bahru Market, Dunman Food Centre, Zion Riverside Food
+// Centre). 1 new dish type added to dish-macro-lookup.py (Tau Kwa Pau, a beancurd-pocket snack).
+// compatibleWith set at creation time; Fried Kway Teow/Lor Mee/Prawn Mee/Fried Hokkien Prawn
+// Mee/Char Siew Wanton Mee/Fried Carrot Cake/Duck Set Kway Chap/Wanton Noodle/Pig Organ Soup
+// deliberately left untagged (pork-lard/pork-offal-adjacent per the established skip list; Pig
+// Organ Soup specifically is literal pork offal, not eligible for no_pork by definition). See
+// reference/research-sessions/2026-08-29-zero-menu-tiongbahru-dunman-zion-batch-BA.md.
 
 export const MENU_ITEMS = [
   {
@@ -25890,4 +25900,22 @@ export const MENU_ITEMS = [
   { id: "kkpm_3", brandId: "kim_keat_palm_market_and_food_centre_min_kee_tanjong_rhu_wanton_noodle", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
   { id: "kkpm_4", brandId: "kim_keat_palm_market_and_food_centre_old_long_house_popiah", name: "Popiah", emoji: "🌯", category: "Local Hawker", price: 3.5, calories: 260, protein: 8, carbs: 38, fat: 8, confidence: "estimated" },
   { id: "kkpm_5", brandId: "kim_keat_palm_market_and_food_centre_ah_chuan_fried_oyster_omelette", name: "Oyster Omelette", emoji: "🍳", category: "Local Hawker", price: 5.5, calories: 480, protein: 18, carbs: 35, fat: 28, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "tbm_1", brandId: "tiong_bahru_market_jian_bo_shui_kueh", name: "Chwee Kueh", emoji: "🥟", category: "Local Hawker", price: 2.5, calories: 320, protein: 6, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "tbm_2", brandId: "tiong_bahru_market_tiong_bahru_fried_kway_teow", name: "Fried Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "tbm_3", brandId: "tiong_bahru_market_joo_chiat_beef_king", name: "Beef Noodles", emoji: "🍜", category: "Noodles", price: 6, calories: 500, protein: 25, carbs: 60, fat: 15, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "tbm_4", brandId: "tiong_bahru_market_lor_mee_178", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "tbm_5", brandId: "tiong_bahru_market_hong_heng_fried_sotong_prawn_mee", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "tbm_6", brandId: "tiong_bahru_market_tiong_bahru_hainanese_boneless_chicken_rice", name: "Boneless Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 5.0, calories: 540, protein: 30, carbs: 62, fat: 16, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "dfc_1", brandId: "dunman_food_centre_no_name_hokkien_mee", name: "Fried Hokkien Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "dfc_2", brandId: "dunman_food_centre_say_seng_tau_kwa_pau", name: "Tau Kwa Pau", emoji: "🥟", category: "Local Hawker", price: 2.0, calories: 220, protein: 8, carbs: 25, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "dfc_3", brandId: "dunman_food_centre_dunman_road_char_siew_wan_ton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "dfc_4", brandId: "dunman_food_centre_dunman_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "dfc_5", brandId: "dunman_food_centre_lau_hong_ser_rojak", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4, calories: 320, protein: 6, carbs: 45, fat: 14, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "dfc_6", brandId: "dunman_food_centre_restaurant_joo_chiat_ah_huat_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "zrfc_1", brandId: "zion_riverside_food_centre_zhi_wei_xian_zion_road_big_prawn_noodle", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "zrfc_2", brandId: "zion_riverside_food_centre_no_18_zion_road_fried_kway_teow", name: "Fried Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "zrfc_3", brandId: "zion_riverside_food_centre_peter_gohs_carrot_cake", name: "Fried Carrot Cake", emoji: "🍘", category: "Bakery/Dessert", price: 4, calories: 450, protein: 10, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "zrfc_4", brandId: "zion_riverside_food_centre_braised_duck_kway_chap", name: "Duck Set Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 6, calories: 520, protein: 26, carbs: 45, fat: 24, confidence: "estimated" },
+  { id: "zrfc_5", brandId: "zion_riverside_food_centre_kangs_wanton_noodle", name: "Wanton Noodle", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "zrfc_6", brandId: "zion_riverside_food_centre_soon_lees_pig_organ_soup", name: "Pig Organ Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 28, carbs: 10, fat: 22, confidence: "estimated" },
 ];
