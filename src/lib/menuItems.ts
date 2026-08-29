@@ -543,6 +543,21 @@
 // Chicken, Lontong). compatibleWith set at creation time using the same conservative rules as
 // every prior batch. See
 // reference/research-sessions/2026-08-29-zero-menu-14venue-batch-BC.md.
+//
+// Batch BD (2026-08-29): +45 items across 10 venues in the 5-brand tier (50 brands total, 5
+// skipped): Beo Crescent, Redhill Food Centre, Commonwealth Crescent, Hong Lim, North Bridge
+// Road, Market Street, Circuit Road Market & Food Centre, Yuhua Market, Marsiling Lane, Ang Mo
+// Kio Central. Also identified (but deliberately excluded from this batch) a cluster of
+// "kopitiam_"-prefixed brand ids shared across multiple venues (Yishun 507, Rivervale Plaza,
+// Bidadari 106, Keat Hong, FairPrice Hub) whose cuisine tags are broad food-type categories
+// (Chinese Roast, Seafood, Western, Korean, Mala/Hotpot) rather than specific dishes — a
+// different, messier data shape than this batch's venues; flagged for a dedicated future pass
+// rather than guessed at here. 2 new dish types added (Teochew Kueh, Vegetarian Satay — the
+// latter for a stall literally named "Victor Veggie" selling mock-meat satay, tagged
+// vegetarian+vegan despite reusing similar skewer-dish macros). compatibleWith set at creation
+// time; notably "Tai Hwa Pork Noodles" (mapped to Bak Chor Mee) and "Hua Xing Bak Kut Teh" left
+// with zero tags since both are explicitly named pork dishes. See
+// reference/research-sessions/2026-08-29-zero-menu-10venue-batch-BD.md.
 
 export const MENU_ITEMS = [
   {
@@ -26098,4 +26113,49 @@ export const MENU_ITEMS = [
   { id: "cav2_4", brandId: "clementi_ave_2_market_cooked_food_centre_gu_zao_wei_braised_duck_rice_noodle_kway_chap", name: "Duck Set Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 6, calories: 520, protein: 26, carbs: 45, fat: 24, confidence: "estimated" },
   { id: "cav2_5", brandId: "clementi_ave_2_market_cooked_food_centre_fa_noodle", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
   { id: "cav2_6", brandId: "clementi_ave_2_market_cooked_food_centre_chef_wei_hk_cheong_fun", name: "Cheong Fun", emoji: "🥟", category: "Dim Sum", price: 3.5, calories: 300, protein: 10, carbs: 45, fat: 7, confidence: "estimated" },
+  { id: "bcm_1", brandId: "beo_crescent_market_chef_wang_fried_rice", name: "Fried Rice", emoji: "🍚", category: "Local Hawker", price: 4.5, calories: 520, protein: 14, carbs: 68, fat: 18, confidence: "estimated" },
+  { id: "bcm_2", brandId: "beo_crescent_market_heng_heng_cooked_food", name: "Fried Carrot Cake", emoji: "🍘", category: "Bakery/Dessert", price: 4, calories: 450, protein: 10, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "bcm_3", brandId: "beo_crescent_market_nan_yuan_teochew_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bcm_4", brandId: "beo_crescent_market_guang_dong_xiang_gang_wei_dao", name: "Claypot Rice", emoji: "🍚", category: "Local Hawker", price: 6.5, calories: 600, protein: 25, carbs: 75, fat: 20, confidence: "estimated" },
+  { id: "bcm_5", brandId: "beo_crescent_market_hai_chew", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "rfc_1", brandId: "redhill_food_centre_bak_kee_teochew_satay_bee_hoon", name: "Satay Bee Hoon", emoji: "🍢", category: "Local Hawker", price: 6.0, calories: 480, protein: 22, carbs: 55, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "rfc_2", brandId: "redhill_food_centre_fu_ming_cooked_food", name: "Fried Carrot Cake", emoji: "🍘", category: "Bakery/Dessert", price: 4, calories: 450, protein: 10, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "rfc_3", brandId: "redhill_food_centre_shi_le_yuan_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "rfc_4", brandId: "redhill_food_centre_jia_xiang_mee_siam", name: "Mee Siam", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 430, protein: 14, carbs: 60, fat: 14, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "ccmfc_1", brandId: "commonwealth_crescent_market_henrys_chicken_rice", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "ccmfc_2", brandId: "commonwealth_crescent_market_foong_kee_traditional_charcoal_roast", name: "Roasted Meats", emoji: "🍖", category: "Chinese Roast", price: 6.5, calories: 560, protein: 30, carbs: 20, fat: 36, confidence: "estimated" },
+  { id: "ccmfc_3", brandId: "commonwealth_crescent_market_asip_fresh_cold_press_juice", name: "Fresh Fruit Juice", emoji: "🥤", category: "Beverages", price: 3.5, calories: 120, protein: 1, carbs: 28, fat: 0, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "ccmfc_4", brandId: "commonwealth_crescent_market_salai_by_meatdrop", name: "Roasted Meats", emoji: "🍖", category: "Chinese Roast", price: 6.5, calories: 560, protein: 30, carbs: 20, fat: 36, confidence: "estimated" },
+  { id: "hlmfc_1", brandId: "hong_lim_food_centre_and_market_outram_park_fried_kway_teow", name: "Fried Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "hlmfc_2", brandId: "hong_lim_food_centre_and_market_heng_kee_curry_chicken_bee_hoon", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5, calories: 560, protein: 26, carbs: 55, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "hlmfc_3", brandId: "hong_lim_food_centre_and_market_tai_hwa_pork_noodles", name: "Bak Chor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 450, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "hlmfc_4", brandId: "hong_lim_food_centre_and_market_midas_chicken_curry", name: "Curry Chicken", emoji: "🍛", category: "Indonesian/Malay", price: 5, calories: 560, protein: 26, carbs: 55, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "hlmfc_5", brandId: "hong_lim_food_centre_and_market_ddsd", name: "Tau Huay", emoji: "🍮", category: "Bakery/Dessert", price: 2.0, calories: 150, protein: 8, carbs: 20, fat: 4, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "nbrmfc_1", brandId: "north_bridge_road_market_hua_mei_zhen", name: "Fried Rice", emoji: "🍚", category: "Local Hawker", price: 4.5, calories: 520, protein: 14, carbs: 68, fat: 18, confidence: "estimated" },
+  { id: "nbrmfc_2", brandId: "north_bridge_road_market_soon_huat_prawn_noodles", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "nbrmfc_3", brandId: "north_bridge_road_market_xiao_ling_fried_carrot_cake", name: "Fried Carrot Cake", emoji: "🍘", category: "Bakery/Dessert", price: 4, calories: 450, protein: 10, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "nbrmfc_4", brandId: "north_bridge_road_market_lao_huang_hakka_niang_tou_fu", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "mshc_1", brandId: "market_street_hawker_centre_ah_liang_ipoh_hor_fun", name: "Ipoh Hor Fun", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 15, confidence: "estimated" },
+  { id: "mshc_2", brandId: "market_street_hawker_centre_ming_fa", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "mshc_3", brandId: "market_street_hawker_centre_peng_tiong_bahru_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "mshc_4", brandId: "market_street_hawker_centre_tian_ci_traditional_prawn_noodles", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "crmfc_1", brandId: "80_circuit_road_market_and_food_centre_tian_seng_fried_prawn_mee", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "crmfc_2", brandId: "80_circuit_road_market_and_food_centre_teo_kee_fried_oyster", name: "Fried Oyster", emoji: "🦪", category: "Local Hawker", price: 6, calories: 450, protein: 15, carbs: 45, fat: 22, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "crmfc_3", brandId: "80_circuit_road_market_and_food_centre_hup_hup_mee_siam", name: "Mee Siam", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 430, protein: 14, carbs: 60, fat: 14, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "crmfc_4", brandId: "80_circuit_road_market_and_food_centre_three_treasures_roast_duck", name: "Roast Duck Rice", emoji: "🦆", category: "Chinese Roast", price: 5.5, calories: 540, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "crmfc_5", brandId: "80_circuit_road_market_and_food_centre_victor_veggie", name: "Vegetarian Satay", emoji: "🍢", category: "Local Hawker", price: 6.0, calories: 320, protein: 18, carbs: 20, fat: 14, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "ymhc_1", brandId: "yuhua_market_and_hawker_centre_jing_jing_hokkien_mee_and_oyster_omelette", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "ymhc_2", brandId: "yuhua_market_and_hawker_centre_guang_tai_lor_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "ymhc_3", brandId: "yuhua_market_and_hawker_centre_lai_heng_handmade_teochew_kueh", name: "Teochew Kueh", emoji: "🥟", category: "Local Hawker", price: 2.5, calories: 280, protein: 6, carbs: 40, fat: 10, confidence: "estimated" },
+  { id: "ymhc_4", brandId: "yuhua_market_and_hawker_centre_xing_yun_hainanese_chicken_rice", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "ymhc_5", brandId: "yuhua_market_and_hawker_centre_hua_xing_bak_kut_teh", name: "Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 420, protein: 28, carbs: 10, fat: 28, confidence: "estimated" },
+  { id: "mlbk_1", brandId: "marsiling_lane_blk_20_21_soon_xing_coffee", name: "Kopi", emoji: "☕", category: "Beverages", price: 1.7, calories: 120, protein: 2, carbs: 20, fat: 4, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "mlbk_2", brandId: "marsiling_lane_blk_20_21_joy_junction", name: "Wanton Noodle", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "mlbk_3", brandId: "marsiling_lane_blk_20_21_chin_heng", name: "Laksa", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 550, protein: 20, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "mlbk_4", brandId: "marsiling_lane_blk_20_21_yap_kee_hainanese_chicken_rice", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "amkcmfc_1", brandId: "blk_724_ang_mo_kio_market_xi_xiang_feng", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "amkcmfc_2", brandId: "blk_724_ang_mo_kio_market_lim_hai_sheng_cooked_food", name: "White Carrot Cake", emoji: "🍘", category: "Bakery/Dessert", price: 4, calories: 420, protein: 10, carbs: 53, fat: 18, confidence: "estimated" },
+  { id: "amkcmfc_3", brandId: "blk_724_ang_mo_kio_market_hup_hup_minced_meat_noodle", name: "Bak Chor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 450, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "amkcmfc_4", brandId: "blk_724_ang_mo_kio_market_fried_hokkien_prawn_noodle", name: "Fried Hokkien Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "amkcmfc_5", brandId: "blk_724_ang_mo_kio_market_seng_bee_hainanese_chicken_rice", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
 ];

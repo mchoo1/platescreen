@@ -549,3 +549,11 @@ DISH_DB.update({
     "Fried Chicken": ("🍗","Chicken Rice/Poultry",5.5,520,30,25,30),
     "Lontong": ("🍛","Indonesian/Malay",4.5,450,12,60,18),
 })
+
+# --- Batch BD additions (10-venue clean-tag push: Beo Crescent, Redhill Food Centre,
+# Commonwealth Crescent, Hong Lim, North Bridge Road, Market Street, Circuit Road Market,
+# Yuhua Market, Marsiling Lane, Ang Mo Kio Central) ---
+DISH_DB.update({
+    "Teochew Kueh": ("🥟","Local Hawker",2.5,280,6,40,10),
+    "Vegetarian Satay": ("🍢","Local Hawker",6.0,320,18,20,14),
+})
