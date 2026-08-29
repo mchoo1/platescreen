@@ -514,3 +514,10 @@ DISH_DB.update({
     "Soya Sauce Chicken Rice": ("🍗","Chinese Roast",5.0,540,26,62,18),
     "Pickle Sour Slice Meat Pot": ("🍲","Local Hawker",8.5,480,30,15,28),
 })
+
+# --- Batch AY additions (Clementi Ave 3 Blk 448 + Eunos Crescent Blk 4A + Tanglin Halt Market) ---
+DISH_DB.update({
+    "Sesame Oil Chicken Rice": ("🍗","Chicken Rice/Poultry",5.0,560,28,55,26),
+    "Tau Huay": ("🍮","Bakery/Dessert",2.0,150,8,20,4),
+    "Duck Noodle Soup": ("🍜","Chinese Roast",5.5,480,26,55,18),
+})

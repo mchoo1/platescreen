@@ -473,6 +473,23 @@
 // Mee, Bak Chor Mee, Laksa, Carrot Cake, Fish Soup, Char Kway Teow, Prawn Noodles, Duck Rice,
 // Nasi Lemak) already existed. See
 // reference/research-sessions/2026-08-25-zero-menu-changi58-bedok16-batch-AX.md.
+//
+// Batch AY (2026-08-29): +16 items across 3 venues in the 6-brand tier: Clementi Ave 3 Blk 448
+// (5 of 6; Lee Jim Pong skipped — web search found conflicting/unreconciled tenant-turnover
+// data for that unit, no confident match), Eunos Crescent Blk 4A (5 of 6, 7 items — 2 brands
+// each got 2 items where the licensee's own name signalled two products, Whampoa Soya Bean and
+// Eng Kee's rice+porridge combo; Teo Kiang Huat skipped, web search identified it as the same
+// physical stall as the already-listed Keng Huat Cold & Hot Dessert under a different SFA
+// licensee name — adding it separately would have double-counted one real stall), Tanglin Halt
+// Market (4 of 6; Lim Hang Tong skipped, nothing found; Ngern Jwee Chye skipped for the same
+// duplicate-stall reason as Teo Kiang Huat — confirmed via a Mothership.sg article as the
+// operator of the already-listed Wei Yi Laksa & Prawn Noodle stall). compatibleWith tags were
+// set at creation time this batch (not left for a later backfill), using the same conservative
+// rules as the 2026-08-29 diet-tag backfill — Wanton Mee/Char Kway Teow/Fishball Noodles/Laksa/
+// Cheong Fun deliberately left untagged (traditionally pork-adjacent or ambiguous-filling even
+// though not named "pork"). 3 new dish types added to dish-macro-lookup.py (Sesame Oil Chicken
+// Rice, Tau Huay, Duck Noodle Soup). See
+// reference/research-sessions/2026-08-29-zero-menu-clementi-eunos-tanglinhalt-batch-AY.md.
 
 export const MENU_ITEMS = [
   {
@@ -25824,4 +25841,20 @@ export const MENU_ITEMS = [
   { id: "bsr16_2", brandId: "bedok_south_road_blk_16_hawker_delights", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
   { id: "bsr16_3", brandId: "bedok_south_road_blk_16_koon_kee_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "bsr16_4", brandId: "bedok_south_road_blk_16_warong_jawa", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "cab448_1", brandId: "clementi_ave_3_blk_448_lee_guat_hoon", name: "Kopi", emoji: "☕", category: "Beverages", price: 1.7, calories: 120, protein: 2, carbs: 20, fat: 4, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "cab448_2", brandId: "clementi_ave_3_blk_448_song_fish_soup", name: "Teochew Sliced Fish Porridge", emoji: "🥣", category: "Seafood", price: 5, calories: 300, protein: 20, carbs: 32, fat: 7, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "cab448_3", brandId: "clementi_ave_3_blk_448_chai_ho_satay", name: "Satay", emoji: "🍢", category: "Local Hawker", price: 6, calories: 375, protein: 30, carbs: 20, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "cab448_4", brandId: "clementi_ave_3_blk_448_boon_kee_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "cab448_5", brandId: "clementi_ave_3_blk_448_soon_huat_cooked_food", name: "Sesame Oil Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 5.0, calories: 560, protein: 28, carbs: 55, fat: 26, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "ec4a_1", brandId: "eunos_crescent_blk_4a_tiong_lee_lim", name: "Soya Bean Drink", emoji: "🥤", category: "Bakery/Dessert", price: 1.6, calories: 140, protein: 6, carbs: 20, fat: 4, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "ec4a_2", brandId: "eunos_crescent_blk_4a_tiong_lee_lim", name: "Tau Huay", emoji: "🍮", category: "Bakery/Dessert", price: 2.0, calories: 150, protein: 8, carbs: 20, fat: 4, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "ec4a_3", brandId: "eunos_crescent_blk_4a_fen_xiang_fried_kway_teow", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "ec4a_4", brandId: "eunos_crescent_blk_4a_eng_kee_hainanese_chicken_rice_porridge", name: "Hainanese Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 540, protein: 26, carbs: 62, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "ec4a_5", brandId: "eunos_crescent_blk_4a_eng_kee_hainanese_chicken_rice_porridge", name: "Porridge", emoji: "🥣", category: "Local Hawker", price: 3.5, calories: 260, protein: 10, carbs: 42, fat: 5, confidence: "estimated" },
+  { id: "ec4a_6", brandId: "eunos_crescent_blk_4a_chao_yang_fish_ball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "ec4a_7", brandId: "eunos_crescent_blk_4a_keng_huat_cold_hot_dessert", name: "Cheng Tng", emoji: "🥣", category: "Desserts", price: 2, calories: 180, protein: 3, carbs: 40, fat: 1, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "thm_1", brandId: "tanglin_halt_market_wei_yi_laksa_prawn_noodle", name: "Laksa", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 550, protein: 20, carbs: 55, fat: 28, confidence: "estimated" },
+  { id: "thm_2", brandId: "tanglin_halt_market_delicious_duck_noodles", name: "Duck Noodle Soup", emoji: "🍜", category: "Chinese Roast", price: 5.5, calories: 480, protein: 26, carbs: 55, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "thm_3", brandId: "tanglin_halt_market_tanglin_halt_original_peanut_pancake", name: "Peanut Pancake", emoji: "🥞", category: "Snacks", price: 1.8, calories: 220, protein: 5, carbs: 30, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "thm_4", brandId: "tanglin_halt_market_jiu_ye", name: "Cheong Fun", emoji: "🥟", category: "Dim Sum", price: 3.5, calories: 300, protein: 10, carbs: 45, fat: 7, confidence: "estimated" },
 ];
