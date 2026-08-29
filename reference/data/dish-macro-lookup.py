@@ -526,3 +526,16 @@ DISH_DB.update({
 DISH_DB.update({
     "Tau Kwa Pau": ("🥟","Local Hawker",2.0,220,8,25,9),
 })
+
+# --- Batch BB additions (15-venue clean-tag push: ABC Brickworks, Redhill, Bendemeer,
+# Telok Blangah Crescent, Holland Drive, People's Park, Albert Centre, East Coast Lagoon,
+# Boon Lay Place, Havelock Road, Tanjong Pagar Plaza, Serangoon Garden, Sims Vista,
+# Taman Jurong, Marine Terrace) ---
+DISH_DB.update({
+    "Wanton Egg Noodles": ("🍜","Noodles",4.5,420,18,55,12),
+    "Bak Kwa": ("🥩","Chinese Roast",8.0,380,22,25,20),
+    "Mee Pok": ("🍜","Noodles",4.5,460,20,58,14),
+    "Rosti": ("🥔","Western",6.5,480,12,55,22),
+    "Pizza": ("🍕","Western",6.0,600,22,65,26),
+    "Sichuan Grilled Fish": ("🐟","Sichuan",8.5,480,35,15,28),
+})
