@@ -631,3 +631,15 @@ DISH_DB.update({
     "Teh Tarik": ("🍵","Beverages",1.8,150,3,25,4),
     "Fried Oyster": ("🦪","Seafood",6.5,480,18,45,24),
 })
+
+# --- Batch BK additions (large kopitiam_ broad-category-tag sweep via
+# kopitiam-stall-dishes.json - discovered these 56 brands were missed by the earlier
+# kopitiam_ cluster batches (BF/BG/BH) because they weren't grouped into a shared-prefix
+# venue cluster, just individually scattered brands with broad-category cuisine tags) ---
+DISH_DB.update({
+    "Chicken Pot": ("🍲","Chicken Rice/Poultry",6.5,480,30,30,20),
+    "Yang Zhou Fried Rice": ("🍚","Chinese Roast",5.5,580,20,70,22),
+    "BBQ Chicken Set": ("🍗","Japanese",7.5,550,32,40,24),
+    "Specialty Coffee": ("☕","Beverages",4.0,20,1,3,0),
+    "Banh Mi": ("🥖","Vietnamese",5.5,480,20,55,18),
+})

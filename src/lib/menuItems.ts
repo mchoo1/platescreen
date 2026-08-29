@@ -647,6 +647,24 @@
 // Noodles, Biang Biang Noodles, Sarawak Kolo Mee, Teh Tarik, Fried Oyster). compatibleWith set
 // at creation time using the same conservative rules as every prior batch. See
 // reference/research-sessions/2026-08-29-zero-menu-crossvenue-batch-BJ.md.
+//
+// Batch BK (2026-08-29): +57 items. Re-ran Batch BJ's cross-venue cherry-pick after excluding
+// the 5 Koufu food-hall brands, and found 56 more kopitiam_-operated brands that were missed by
+// every earlier batch (BB-BJ) because they're scattered individually across many different
+// venues rather than clustered into one shared-prefix venue group like Batches BF/BG/BH's
+// clusters - each has its own broad-category cuisine tag (Western, Noodles, Chinese Roast,
+// Korean, Indian, Seafood, etc.) with no obvious single dish, but resolved cleanly via the same
+// kopitiam-stall-dishes.json lookup used throughout this segment. Also individually researched
+// 1 non-kopitiam brand (Rosnah's Family Kitchen, Ang Mo Kio 628 Market - sethlui confirms
+// Lontong as its most popular dish) and skipped 1 (Ding Dang Guai, Bedok North Street 3 Blk
+// 538 - no reliable stall-specific dish found). One data-quality note: "Claypot Bak Kut Teh"'s
+// scrape entry returned "Salt Baked Chicken Rice" (likely a scrape mismatch), so its own brand
+// name was trusted instead and mapped to the existing Bak Kut Teh dish type. 5 new dish types
+// added (Chicken Pot, Yang Zhou Fried Rice, BBQ Chicken Set, Specialty Coffee, Banh Mi).
+// compatibleWith set at creation time; Bak Kut Teh and Pork Chop (from "SingHK", whose scrape
+// entry "Scrambled Egg w Garlic Park Chop" is read as a typo for "Pork Chop") both left with
+// zero tags. See
+// reference/research-sessions/2026-08-29-zero-menu-kopitiamscatter-batch-BK.md.
 
 export const MENU_ITEMS = [
   {
@@ -26421,4 +26439,61 @@ export const MENU_ITEMS = [
   { id: "mlbk3_1", brandId: "marsiling_lane_blk_20_21_azizah_aziz_caferia", name: "Teh Tarik", emoji: "🍵", category: "Beverages", price: 1.8, calories: 150, protein: 3, carbs: 25, fat: 4, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
   { id: "cr80_1", brandId: "80_circuit_road_market_and_food_centre_tuck_bee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
   { id: "cv23_1", brandId: "changi_village_blk_2_and_3_kun_kee_fried_oyster", name: "Fried Oyster", emoji: "🦪", category: "Seafood", price: 6.5, calories: 480, protein: 18, carbs: 45, fat: 24, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "bkj2_1", brandId: "kopitiam_lau_di_fang_scissors_cut_curry_rice", name: "Curry Rice", emoji: "🍛", category: "Local Hawker", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "bkj2_2", brandId: "kopitiam_kallang_airport_wanton_mee", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "bkj2_3", brandId: "kopitiam_king_dae_bak", name: "Beef Bulgogi", emoji: "🥩", category: "Korean", price: 7.5, calories: 580, protein: 30, carbs: 60, fat: 22, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_4", brandId: "kopitiam_ri_ri_hong_mala_hot_pot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "bkj2_5", brandId: "kopitiam_heavenly_wang", name: "Coffee & Toast", emoji: "☕", category: "Beverages", price: 3.5, calories: 320, protein: 8, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bkj2_6", brandId: "kopitiam_new_hk_roast", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_7", brandId: "kopitiam_divine_chicken_pot", name: "Chicken Pot", emoji: "🍲", category: "Chicken Rice/Poultry", price: 6.5, calories: 480, protein: 30, carbs: 30, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_8", brandId: "kopitiam_singhk", name: "Pork Chop", emoji: "🍽️", category: "Western", price: 6.5, calories: 650, protein: 32, carbs: 55, fat: 30, confidence: "estimated" },
+  { id: "bkj2_9", brandId: "kopitiam_chicken_rice_and_beef_noodles", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_10", brandId: "kopitiam_roasted", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_11", brandId: "kopitiam_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bkj2_12", brandId: "kopitiam_chicken_rice_and_ytf", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_13", brandId: "kopitiam_roasted_deligths", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_14", brandId: "kopitiam_mama_putien", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bkj2_15", brandId: "kopitiam_ban_mian_and_congee", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "bkj2_16", brandId: "kopitiam_malay_cuisine", name: "Ayam Penyet", emoji: "🍗", category: "Indonesian/Malay", price: 6, calories: 580, protein: 30, carbs: 50, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bkj2_17", brandId: "kopitiam_ding_jian_hk_style_charcoal_roasted", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_18", brandId: "kopitiam_orh_kee_noodles_express", name: "Mee Sua", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 380, protein: 15, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "bkj2_19", brandId: "kopitiam_ban_mian_and_spinach", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
+  { id: "bkj2_20", brandId: "kopitiam_braised_duck_and_noodle", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_21", brandId: "kopitiam_claypot_bak_kut_teh", name: "Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 420, protein: 28, carbs: 10, fat: 28, confidence: "estimated" },
+  { id: "bkj2_22", brandId: "kopitiam_hao_ji_traditional_roaster", name: "Hor Fun", emoji: "🍜", category: "Local Hawker", price: 5, calories: 500, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bkj2_23", brandId: "kopitiam_korean_and_japanese", name: "Bibimbap", emoji: "🍚", category: "Korean", price: 6.5, calories: 550, protein: 20, carbs: 75, fat: 16, confidence: "estimated" },
+  { id: "bkj2_24", brandId: "kopitiam_fishball_noodles_and_homemade_curry", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bkj2_25", brandId: "kopitiam_kawan_bowl", name: "Curry Chicken Rice", emoji: "🍛", category: "Chicken Rice/Poultry", price: 5, calories: 550, protein: 25, carbs: 60, fat: 22, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_26", brandId: "kopitiam_tanglin_halt_ban_mian_and_fish_soup", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "bkj2_27", brandId: "kopitiam_thumbupz_roasted_and_soup", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_28", brandId: "kopitiam_mr_foods_indian_cuisine", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bkj2_29", brandId: "kopitiam_sh_indian_cuisine", name: "Mee Goreng", emoji: "🍜", category: "Indonesian/Malay", price: 4, calories: 450, protein: 12, carbs: 60, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bkj2_30", brandId: "kopitiam_coffee_break", name: "Coffee & Toast", emoji: "☕", category: "Beverages", price: 3.5, calories: 320, protein: 8, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bkj2_31", brandId: "kopitiam_mama_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bkj2_32", brandId: "kopitiam_beauty_nutritious_soup", name: "Herbal Chicken Soup", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 350, protein: 28, carbs: 10, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_33", brandId: "kopitiam_tian_fu_yuan", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "bkj2_34", brandId: "kopitiam_uncle_mee_hoon_kueh", name: "Mee Hoon Kway", emoji: "🍜", category: "Local Hawker", price: 5.5, calories: 460, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "bkj2_35", brandId: "kopitiam_ban_mian_fish_soup", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "bkj2_36", brandId: "kopitiam_indian_food", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bkj2_37", brandId: "kopitiam_fishball_noodles", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bkj2_38", brandId: "kopitiam_huat_seafood", name: "Yang Zhou Fried Rice", emoji: "🍚", category: "Chinese Roast", price: 5.5, calories: 580, protein: 20, carbs: 70, fat: 22, confidence: "estimated" },
+  { id: "bkj2_39", brandId: "kopitiam_ming_xiang", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_40", brandId: "kopitiam_kns_indian", name: "Chicken Biryani", emoji: "🍛", category: "Indian", price: 6.0, calories: 620, protein: 28, carbs: 78, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bkj2_41", brandId: "kopitiam_maru_japanese", name: "BBQ Chicken Set", emoji: "🍗", category: "Japanese", price: 7.5, calories: 550, protein: 32, carbs: 40, fat: 24, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_42", brandId: "kopitiam_fatty_bom_bom", name: "Chicken Cutlet", emoji: "🍗", category: "Western", price: 6, calories: 600, protein: 32, carbs: 50, fat: 26, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_43", brandId: "kopitiam_kowloon_roasted_delight", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_44", brandId: "kopitiam_yes_japanese_korean_cuisine", name: "Bibimbap", emoji: "🍚", category: "Korean", price: 6.5, calories: 550, protein: 20, carbs: 75, fat: 16, confidence: "estimated" },
+  { id: "bkj2_45", brandId: "kopitiam_hook_coffee", name: "Specialty Coffee", emoji: "☕", category: "Beverages", price: 4.0, calories: 20, protein: 1, carbs: 3, fat: 0, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "bkj2_46", brandId: "kopitiam_korean_and_japanese_food", name: "Bibimbap", emoji: "🍚", category: "Korean", price: 6.5, calories: 550, protein: 20, carbs: 75, fat: 16, confidence: "estimated" },
+  { id: "bkj2_47", brandId: "kopitiam_cafe_lodge", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bkj2_48", brandId: "kopitiam_xiang_lian_korean_and_japanese", name: "Bibimbap", emoji: "🍚", category: "Korean", price: 6.5, calories: 550, protein: 20, carbs: 75, fat: 16, confidence: "estimated" },
+  { id: "bkj2_49", brandId: "kopitiam_makan_west", name: "Chicken Chop", emoji: "🍗", category: "Western", price: 6.5, calories: 650, protein: 35, carbs: 55, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_50", brandId: "kopitiam_al_ameen", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bkj2_51", brandId: "kopitiam_ba_xian_vegetarian", name: "Vegetarian Bee Hoon", emoji: "🥦", category: "Local Hawker", price: 3.5, calories: 380, protein: 12, carbs: 58, fat: 10, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "bkj2_52", brandId: "kopitiam_vietsea_banh_mi_express_kopitiam_square", name: "Banh Mi", emoji: "🥖", category: "Vietnamese", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 18, confidence: "estimated" },
+  { id: "bkj2_53", brandId: "kopitiam_pu_tian_xing_hua_food", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bkj2_54", brandId: "kopitiam_beef_roti", name: "Beef Roti", emoji: "🫓", category: "Indian", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_55", brandId: "kopitiam_fish_ball_noodles", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "bkj2_56", brandId: "kopitiam_char_meat", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bkj2_57", brandId: "ang_mo_kio_628_market_rosnahs_family_kitchen", name: "Lontong", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 12, carbs: 60, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
 ];
