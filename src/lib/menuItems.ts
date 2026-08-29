@@ -611,6 +611,23 @@
 // time; "Golden Broth Ramen" (mapped from "Golden Broth Ramen with Chicken/Pork") left with
 // zero tags since pork is one of its two named protein options. See
 // reference/research-sessions/2026-08-29-zero-menu-kopitiamcluster3-batch-BH.md.
+//
+// Batch BI (2026-08-29): +21 items. First individually-researched batch since the wide-push
+// approach began (Batches BB-BH) - covers the "follow-up worklist" of broad-category-tag
+// brands accumulated across Batches BB/BC/BD/BE, each researched individually via web search
+// (sethlui/danielfooddiary/misstamchiak/eatbook/OpenRice/Burpple) since none had an operator
+// match for a bulk lookup. 21 of 24 worklist brands covered; 3 skipped for lack of reliable
+// dish info: Hong Mei Western Delights (Geylang Bahru - search results indicate the stall may
+// be closed, no specific dish confirmed), 9 Plus Bistro (Redhill Food Centre - search results
+// only surfaced an unrelated "9 Plus Redhill Pte Ltd" food-poisoning notice at a different
+// address, not this stall), Meng Kee (Empress Road - no specific dish found beyond the
+// existing generic "Local Snacks" tag). 13 new dish types added, all from real, sourced
+// stall-specific dishes (e.g. Uncle Kun's Delicacies' one-of-a-kind Scallop Glutinous Rice,
+// Soon Heng Food Delights' sole-menu-item Fried Shark Lor Mee, Wang Jiao Kitchen's signature
+// Sweet and Sour Pork Rice). compatibleWith set at creation time using the same conservative
+// rules as every prior batch; Sweet and Sour Pork Rice and Fried Shark Lor Mee (contains
+// braised pork belly per source) both left with zero tags. See
+// reference/research-sessions/2026-08-29-zero-menu-worklist-batch-BI.md.
 
 export const MENU_ITEMS = [
   {
@@ -26305,4 +26322,25 @@ export const MENU_ITEMS = [
   { id: "tgs_2", brandId: "teck_ghee_square_jie_mei_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "jw505b_1", brandId: "jurong_west_street_52_blk_505_37_porridge", name: "Porridge", emoji: "🥣", category: "Local Hawker", price: 3.5, calories: 260, protein: 10, carbs: 42, fat: 5, confidence: "estimated" },
   { id: "jw505b_2", brandId: "jurong_west_street_52_blk_505_traditional_hakka_lui_cha", name: "Hakka Thunder Tea Rice", emoji: "🍚", category: "Local Hawker", price: 5, calories: 480, protein: 16, carbs: 70, fat: 14, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "abc2_1", brandId: "abc_brickworks_market_food_centre_wow_wow_west", name: "Chicken Chop", emoji: "🍗", category: "Western", price: 6.5, calories: 650, protein: 35, carbs: 55, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "abc2_2", brandId: "abc_brickworks_market_food_centre_nusa_and_tara", name: "Lontong", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 12, carbs: 60, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tbcf2_1", brandId: "telok_blangah_food_centre_kassim_stall", name: "Mee Goreng", emoji: "🍜", category: "Indonesian/Malay", price: 4, calories: 450, protein: 12, carbs: 60, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "acmfc2_1", brandId: "albert_centre_pondok_makan_indonesia", name: "Satay", emoji: "🍢", category: "Local Hawker", price: 6, calories: 375, protein: 30, carbs: 20, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "blpmfv2_1", brandId: "boon_lay_place_market_and_food_village_kee_hiong_food_stall", name: "Fish Head Curry", emoji: "🍛", category: "Seafood", price: 8.5, calories: 480, protein: 32, carbs: 25, fat: 22, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "tppmfc2_1", brandId: "blk_6_tanjong_pagar_plaza_market_and_food_centre_soon_heng_food_delights", name: "Fried Shark Lor Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 500, protein: 20, carbs: 62, fat: 18, confidence: "estimated" },
+  { id: "svmfc2_1", brandId: "sims_vista_market_and_food_centre_fang_kee", name: "Nyonya Kueh", emoji: "🥟", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 3, carbs: 32, fat: 5, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "mpcm2_1", brandId: "84_marine_parade_central_market_and_food_centre_neptune_hong_kong_dim_sum", name: "Har Gau", emoji: "🥟", category: "Dim Sum", price: 3.6, calories: 220, protein: 14, carbs: 20, fat: 8, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "ubkm2_1", brandId: "blk_17_upper_boon_keng_market_and_food_centre_rotitiam", name: "Cinnamon Roll", emoji: "🥐", category: "Bakery/Dessert", price: 1.6, calories: 320, protein: 6, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "shf2_1", brandId: "shunfu_mart_mei_zhen_hakka_delicacies", name: "Hakka Soon Kueh", emoji: "🥟", category: "Local Hawker", price: 2.0, calories: 220, protein: 5, carbs: 35, fat: 7, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "shf2_2", brandId: "shunfu_mart_wak_limah_stall", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "shf2_3", brandId: "shunfu_mart_chocolat_n_spice", name: "Muffin", emoji: "🧁", category: "Bakery/Dessert", price: 2.5, calories: 350, protein: 5, carbs: 45, fat: 16, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "mdhc2_1", brandId: "margaret_drive_hawker_centre_no_1_western_food", name: "Chicken Cutlet", emoji: "🍗", category: "Western", price: 6, calories: 600, protein: 32, carbs: 50, fat: 26, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "mdhc2_2", brandId: "margaret_drive_hawker_centre_xins_tzechar", name: "Seafood Hor Fun", emoji: "🍜", category: "Noodles", price: 6.5, calories: 520, protein: 26, carbs: 60, fat: 18, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "tpvm2_1", brandId: "toa_payoh_vista_market_uncle_kuns_delicacies", name: "Scallop Glutinous Rice", emoji: "🍚", category: "Local Hawker", price: 4.8, calories: 480, protein: 20, carbs: 65, fat: 14, confidence: "estimated" },
+  { id: "crb79b_1", brandId: "circuit_road_blk_79_79a_qiang_ji_dessert_store", name: "Ginkgo Nut Dessert", emoji: "🍮", category: "Bakery/Dessert", price: 3.0, calories: 180, protein: 3, carbs: 35, fat: 3, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "crb79b_2", brandId: "circuit_road_blk_79_79a_wang_jiao_kitchen", name: "Sweet and Sour Pork Rice", emoji: "🍚", category: "Local Hawker", price: 5.0, calories: 620, protein: 22, carbs: 70, fat: 24, confidence: "estimated" },
+  { id: "ccmfc2_1", brandId: "commonwealth_crescent_market_huang_da_fu", name: "Bak Chor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 450, protein: 20, carbs: 58, fat: 14, confidence: "estimated" },
+  { id: "nbrmfc2_1", brandId: "north_bridge_road_market_tian_yi", name: "Mee Tai Mak", emoji: "🍜", category: "Noodles", price: 4.0, calories: 380, protein: 14, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "mshc2_1", brandId: "market_street_hawker_centre_yummy_nyonya_peranakan", name: "Beef Rendang", emoji: "🍛", category: "Indonesian/Malay", price: 6.5, calories: 550, protein: 28, carbs: 30, fat: 32, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "mlbk2_1", brandId: "marsiling_lane_blk_20_21_selera_menanti_traditional_malay_cuisine", name: "Nasi Rawon", emoji: "🍛", category: "Indonesian/Malay", price: 6.0, calories: 580, protein: 26, carbs: 60, fat: 24, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
 ];

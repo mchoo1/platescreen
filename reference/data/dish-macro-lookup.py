@@ -595,3 +595,21 @@ DISH_DB.update({
     "Fireyaki Grill Set": ("🔥","Japanese",9.5,650,34,40,32),
     "Grilled Steak": ("🥩","Western",9.0,650,40,20,35),
 })
+
+# --- Batch BI additions (individually-researched follow-up worklist brands, real dishes
+# sourced via web search - sethlui/danielfooddiary/misstamchiak/eatbook/OpenRice) ---
+DISH_DB.update({
+    "Fish Head Curry": ("🍛","Seafood",8.5,480,32,25,22),
+    "Fried Shark Lor Mee": ("🍜","Noodles",5.0,500,20,62,18),
+    "Nyonya Kueh": ("🥟","Bakery/Dessert",1.5,180,3,32,5),
+    "Har Gau": ("🥟","Dim Sum",3.6,220,14,20,8),
+    "Cinnamon Roll": ("🥐","Bakery/Dessert",1.6,320,6,45,12),
+    "Hakka Soon Kueh": ("🥟","Local Hawker",2.0,220,5,35,7),
+    "Muffin": ("🧁","Bakery/Dessert",2.5,350,5,45,16),
+    "Seafood Hor Fun": ("🍜","Noodles",6.5,520,26,60,18),
+    "Scallop Glutinous Rice": ("🍚","Local Hawker",4.8,480,20,65,14),
+    "Ginkgo Nut Dessert": ("🍮","Bakery/Dessert",3.0,180,3,35,3),
+    "Sweet and Sour Pork Rice": ("🍚","Local Hawker",5.0,620,22,70,24),
+    "Mee Tai Mak": ("🍜","Noodles",4.0,380,14,55,10),
+    "Nasi Rawon": ("🍛","Indonesian/Malay",6.0,580,26,60,24),
+})
