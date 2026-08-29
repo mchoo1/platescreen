@@ -597,6 +597,20 @@
 // set at creation time; "Lao Huo Tang" (mapped to Bak Kut Teh) left with zero tags since it's
 // a pork soup specialist stall. See
 // reference/research-sessions/2026-08-29-zero-menu-kopitiamcluster2-batch-BG.md.
+//
+// Batch BH (2026-08-29): +26 items, third kopitiam_-cluster wave (Kopitiam @ Mapletree
+// Business City, Upper Serangoon 476D, Bagus @ Northshore Plaza II, Changi General Hospital
+// Medical Centre, Tampines 878C - same kopitiam-stall-dishes.json lookup as Batches BF/BG)
+// plus a re-audit sweep of other small remaining venues: Food Junction's "Go Teppan
+// Go"/"Toast Junction"/"Fireyaki" (shared ids across NEX and Junction 8 - "Go Teppan Go"
+// covers both venues at once), China Square Food Centre, Teck Ghee Square, and 505 Jurong
+// West Market & Food Centre (a second, distinct premises group at the same address as Batch
+// BE's Jurong West Street 52 Blk 505). 1 brand skipped: Food Junction's "Ke/Quench" (cuisine
+// "Drinks/Dessert" - bare category, no single dish). 4 new dish types added (Golden Broth
+// Ramen, Chicken Biryani, Fireyaki Grill Set, Grilled Steak). compatibleWith set at creation
+// time; "Golden Broth Ramen" (mapped from "Golden Broth Ramen with Chicken/Pork") left with
+// zero tags since pork is one of its two named protein options. See
+// reference/research-sessions/2026-08-29-zero-menu-kopitiamcluster3-batch-BH.md.
 
 export const MENU_ITEMS = [
   {
@@ -26265,4 +26279,30 @@ export const MENU_ITEMS = [
   { id: "smi248_1", brandId: "kopitiam_ban_mee", name: "Ban Mian", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 20, carbs: 60, fat: 15, confidence: "estimated" },
   { id: "smi248_2", brandId: "kopitiam_pancakes", name: "Min Jiang Kueh", emoji: "🥞", category: "Bakery/Dessert", price: 1.6, calories: 220, protein: 5, carbs: 32, fat: 8, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "smi248_3", brandId: "kopitiam_soup", name: "Herbal Chicken Soup", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 350, protein: 28, carbs: 10, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "kmbc_1", brandId: "kopitiam_fish_soup_ban_mian", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "kmbc_2", brandId: "kopitiam_mala_tang", name: "Golden Broth Ramen", emoji: "🍜", category: "Noodles", price: 7.0, calories: 550, protein: 24, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "kmbc_3", brandId: "kopitiam_steam_fish_and_soup", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "kmbc_4", brandId: "kopitiam_cui_liang_yu_fen", name: "Fish Soup", emoji: "🍲", category: "Seafood", price: 6, calories: 320, protein: 28, carbs: 25, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "us476d_1", brandId: "kopitiam_ju_bao_xuan_mala", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "us476d_2", brandId: "kopitiam_tender_fresh", name: "Chicken Chop", emoji: "🍗", category: "Western", price: 6.5, calories: 650, protein: 35, carbs: 55, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "us476d_3", brandId: "kopitiam_al_mokial_indian_muslim", name: "Chicken Biryani", emoji: "🍛", category: "Indian", price: 6.0, calories: 620, protein: 28, carbs: 78, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "us476d_4", brandId: "kopitiam_beehoon_and_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bnp2_1", brandId: "kopitiam_wok_delight", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
+  { id: "bnp2_2", brandId: "kopitiam_haji_karim_indian_muslim_food", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bnp2_3", brandId: "kopitiam_hong_le_japanese_and_korean", name: "Bibimbap", emoji: "🍚", category: "Korean", price: 6.5, calories: 550, protein: 20, carbs: 75, fat: 16, confidence: "estimated" },
+  { id: "bnp2_4", brandId: "kopitiam_steam_fish_delight", name: "Steamed Fish", emoji: "🐟", category: "Seafood", price: 8, calories: 380, protein: 35, carbs: 10, fat: 18, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "bnp2_5", brandId: "kopitiam_fat_baby_rotisserie_and_western_cuisine", name: "Chicken Chop", emoji: "🍗", category: "Western", price: 6.5, calories: 650, protein: 35, carbs: 55, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "cghmc_1", brandId: "kopitiam_head_chefz_western_food", name: "Chicken Steak Aglio Olio", emoji: "🍝", category: "Western", price: 6.8, calories: 580, protein: 28, carbs: 65, fat: 22, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "cghmc_2", brandId: "kopitiam_px_chicken_rice", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "t878c_1", brandId: "kopitiam_indian_stall", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "t878c_2", brandId: "kopitiam_mala_claypot", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, confidence: "estimated" },
+  { id: "fj_1", brandId: "food_junction_go_teppan_go", name: "Teppanyaki Bento", emoji: "🍱", category: "Japanese", price: 8, calories: 620, protein: 32, carbs: 60, fat: 24, confidence: "estimated" },
+  { id: "fj_2", brandId: "food_junction_toast_junction", name: "Coffee & Toast", emoji: "☕", category: "Beverages", price: 3.5, calories: 320, protein: 8, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "fj_3", brandId: "food_junction_fireyaki", name: "Fireyaki Grill Set", emoji: "🔥", category: "Japanese", price: 9.5, calories: 650, protein: 34, carbs: 40, fat: 32, confidence: "estimated" },
+  { id: "csfc_1", brandId: "telok_ayer_food_centre_hock_go", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "csfc_2", brandId: "telok_ayer_food_centre_tiffin_makan", name: "Korean Fried Chicken", emoji: "🍗", category: "Korean", price: 6.5, calories: 580, protein: 30, carbs: 40, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "tgs_1", brandId: "teck_ghee_square_steakgrill_steak_house", name: "Grilled Steak", emoji: "🥩", category: "Western", price: 9.0, calories: 650, protein: 40, carbs: 20, fat: 35, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "tgs_2", brandId: "teck_ghee_square_jie_mei_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "jw505b_1", brandId: "jurong_west_street_52_blk_505_37_porridge", name: "Porridge", emoji: "🥣", category: "Local Hawker", price: 3.5, calories: 260, protein: 10, carbs: 42, fat: 5, confidence: "estimated" },
+  { id: "jw505b_2", brandId: "jurong_west_street_52_blk_505_traditional_hakka_lui_cha", name: "Hakka Thunder Tea Rice", emoji: "🍚", category: "Local Hawker", price: 5, calories: 480, protein: 16, carbs: 70, fat: 14, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 ];

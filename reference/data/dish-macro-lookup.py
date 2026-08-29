@@ -584,3 +584,14 @@ DISH_DB.update({
     "Korean Fried Chicken": ("🍗","Korean",6.5,580,30,40,30),
     "Vegetarian Char Kway Teow": ("🍜","Local Hawker",4.5,500,10,65,20),
 })
+
+# --- Batch BH additions (third kopitiam_-cluster wave + Food Junction/standalone venues:
+# Kopitiam @ Mapletree Business City, Upper Serangoon 476D, Bagus @ Northshore Plaza II,
+# Changi General Hospital, Tampines 878C, NEX/Junction 8 (Food Junction), China Square Food
+# Centre, Teck Ghee Square, 505 Jurong West Market & Food Centre) ---
+DISH_DB.update({
+    "Golden Broth Ramen": ("🍜","Noodles",7.0,550,24,60,20),
+    "Chicken Biryani": ("🍛","Indian",6.0,620,28,78,20),
+    "Fireyaki Grill Set": ("🔥","Japanese",9.5,650,34,40,32),
+    "Grilled Steak": ("🥩","Western",9.0,650,40,20,35),
+})
