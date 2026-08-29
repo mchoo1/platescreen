@@ -567,3 +567,11 @@ DISH_DB.update({
     "Tutu Kueh": ("🥟","Local Hawker",2.0,180,4,30,6),
     "Vegetarian Bee Hoon": ("🥦","Local Hawker",3.5,380,12,58,10),
 })
+
+# --- Batch BF additions (kopitiam_-cluster resolution via kopitiam-stall-dishes.json:
+# Yishun 507, Rivervale Plaza, Bidadari 106, Keat Hong, FairPrice Hub) ---
+DISH_DB.update({
+    "Chicken Bolognese": ("🍝","Western",6.5,550,28,55,18),
+    "Minced Chicken Indomie": ("🍜","Local Hawker",4.5,480,20,55,18),
+    "Meatball Noodles": ("🍜","Noodles",5.0,460,22,55,16),
+})
