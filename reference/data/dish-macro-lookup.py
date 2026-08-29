@@ -613,3 +613,21 @@ DISH_DB.update({
     "Mee Tai Mak": ("🍜","Noodles",4.0,380,14,55,10),
     "Nasi Rawon": ("🍛","Indonesian/Malay",6.0,580,26,60,24),
 })
+
+# --- Batch BJ additions (cherry-picked real dish-tag brands surfaced by re-auditing mixed
+# venues - i.e. venues with some CORP/GENERIC brands alongside genuinely dish-named ones -
+# rather than only fully-"[CLEAN]" venues) ---
+DISH_DB.update({
+    "Taiwanese Milk Tea": ("🧋","Beverages",3.5,280,4,55,4),
+    "Thai Nasi Lemak": ("🍛","Thai",5.5,560,24,60,22),
+    "Pad Thai": ("🍜","Thai",6.0,550,20,65,20),
+    "Bubble Tea": ("🧋","Beverages",3.5,300,2,60,3),
+    "Fruit Tea": ("🍹","Beverages",3.0,150,0,35,0),
+    "Fish Head Steamboat": ("🍲","Seafood",12.0,420,35,20,18),
+    "Bamboo Shoot Kueh": ("🥟","Local Hawker",2.0,200,4,32,6),
+    "Yunnan Rice Noodles": ("🍜","Noodles",6.5,480,22,62,14),
+    "Biang Biang Noodles": ("🍜","Noodles",7.0,580,24,70,20),
+    "Sarawak Kolo Mee": ("🍜","Noodles",5.5,460,20,58,14),
+    "Teh Tarik": ("🍵","Beverages",1.8,150,3,25,4),
+    "Fried Oyster": ("🦪","Seafood",6.5,480,18,45,24),
+})
