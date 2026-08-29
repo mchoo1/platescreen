@@ -539,3 +539,13 @@ DISH_DB.update({
     "Pizza": ("🍕","Western",6.0,600,22,65,26),
     "Sichuan Grilled Fish": ("🐟","Sichuan",8.5,480,35,15,28),
 })
+
+# --- Batch BC additions (14-venue clean-tag push: Marine Parade Central, Upper Boon Keng,
+# Geylang Bahru, Shunfu Mart, Margaret Drive, Pasir Panjang, Bukit Merah Central, Bedok Food
+# Centre, Chong Pang, Toa Payoh Vista, Bedok Reservoir Road Blk 630, Circuit Road Blk 79/79A,
+# Circuit Road Blk 89, 353 Clementi Avenue 2) ---
+DISH_DB.update({
+    "Ngoh Hiang": ("🌯","Chinese Roast",4.5,420,18,35,22),
+    "Fried Chicken": ("🍗","Chicken Rice/Poultry",5.5,520,30,25,30),
+    "Lontong": ("🍛","Indonesian/Malay",4.5,450,12,60,18),
+})
