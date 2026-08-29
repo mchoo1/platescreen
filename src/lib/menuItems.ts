@@ -490,6 +490,25 @@
 // though not named "pork"). 3 new dish types added to dish-macro-lookup.py (Sesame Oil Chicken
 // Rice, Tau Huay, Duck Noodle Soup). See
 // reference/research-sessions/2026-08-29-zero-menu-clementi-eunos-tanglinhalt-batch-AY.md.
+//
+// Batch AZ (2026-08-29): +14 items across 3 venues in the 6-brand tier: Mei Chin Road Market
+// (4 of 6; one of two identically-licensee-named "Goh Jee Tee" stalls skipped — no source found
+// for #02-23; the other, #02-22, tentatively matched to "Sin Kee Famous Chicken Rice" via a
+// single hawker-guide unit-number match, lower confidence than a name-based match but consistent
+// with how other licensee-name stalls have been resolved this session; Lee Kee Yeo @Lee Lian
+// Hong skipped, nothing found), Toa Payoh West Market and Food Court (5 of 6; Chang Cheng Food
+// Paradise Pte. Ltd. skipped — confirmed via ACRA/company-site research to be a 160+-outlet F&B
+// operating company running several house brands, not a single dish vendor, same pattern as
+// earlier operator-entity skips), Kim Keat Palm Market and Food Centre (5 of 6; Chang Lai Pte.
+// Ltd. skipped — its SFA address record points to a completely different building (Wearnes
+// Building, Lorong 7) than the other 5 brands at this venue (22 Lorong 7 Toa Payoh) and its real
+// ACRA-registered address is in Woodlands; this looks like a data-grouping error rather than a
+// real stall at this hawker centre, flagged for a future premises-data audit, not fixed here).
+// 0 new dish types — all 14 dishes already existed in dish-macro-lookup.py. compatibleWith set
+// at creation time using the same conservative rules as Batch AY; Ipoh Hor Fun/Fishball Noodles/
+// Fried Carrot Cake/Fried Hokkien Prawn Mee/Kway Chap/Mian Fen Guo/Wanton Mee/Popiah left
+// untagged per the established pork-ambiguity/mixed-filling skip list. See
+// reference/research-sessions/2026-08-29-zero-menu-meichin-tpwest-kimkeat-batch-AZ.md.
 
 export const MENU_ITEMS = [
   {
@@ -25857,4 +25876,18 @@ export const MENU_ITEMS = [
   { id: "thm_2", brandId: "tanglin_halt_market_delicious_duck_noodles", name: "Duck Noodle Soup", emoji: "🍜", category: "Chinese Roast", price: 5.5, calories: 480, protein: 26, carbs: 55, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "thm_3", brandId: "tanglin_halt_market_tanglin_halt_original_peanut_pancake", name: "Peanut Pancake", emoji: "🥞", category: "Snacks", price: 1.8, calories: 220, protein: 5, carbs: 30, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "thm_4", brandId: "tanglin_halt_market_jiu_ye", name: "Cheong Fun", emoji: "🥟", category: "Dim Sum", price: 3.5, calories: 300, protein: 10, carbs: 45, fat: 7, confidence: "estimated" },
+  { id: "mcrm_1", brandId: "mei_chin_road_market_goh_jee_tee", name: "Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 4.5, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "mcrm_2", brandId: "mei_chin_road_market_shi_hui_yuan_hor_fun_specialty", name: "Ipoh Hor Fun", emoji: "🍜", category: "Noodles", price: 5.5, calories: 480, protein: 20, carbs: 55, fat: 15, confidence: "estimated" },
+  { id: "mcrm_3", brandId: "mei_chin_road_market_xin_lu_teochew_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "mcrm_4", brandId: "mei_chin_road_market_hup_kee_teochew_fishball_noodles", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "tpwm_1", brandId: "toa_payoh_west_market_and_food_court_chey_sua_carrot_cake", name: "Fried Carrot Cake", emoji: "🍘", category: "Bakery/Dessert", price: 4, calories: 450, protein: 10, carbs: 55, fat: 20, confidence: "estimated" },
+  { id: "tpwm_2", brandId: "toa_payoh_west_market_and_food_court_come_daily_fried_hokkien_prawn_mee", name: "Fried Hokkien Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated" },
+  { id: "tpwm_3", brandId: "toa_payoh_west_market_and_food_court_da_cheng_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+  { id: "tpwm_4", brandId: "toa_payoh_west_market_and_food_court_hong_kong_lung_hwa_roast_duck", name: "Roast Duck", emoji: "🦆", category: "Chinese Roast", price: 6, calories: 480, protein: 30, carbs: 30, fat: 26, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "tpwm_5", brandId: "toa_payoh_west_market_and_food_court_jia_le_man_fen_guo", name: "Mian Fen Guo", emoji: "🍲", category: "Noodles", price: 4.5, calories: 420, protein: 16, carbs: 62, fat: 12, confidence: "estimated" },
+  { id: "kkpm_1", brandId: "kim_keat_palm_market_and_food_centre_lixin_chao_zhou_fishball_noodle", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
+  { id: "kkpm_2", brandId: "kim_keat_palm_market_and_food_centre_hai_nan_xing_zhou_beef_noodle", name: "Beef Noodles", emoji: "🍜", category: "Noodles", price: 6, calories: 500, protein: 25, carbs: 60, fat: 15, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "kkpm_3", brandId: "kim_keat_palm_market_and_food_centre_min_kee_tanjong_rhu_wanton_noodle", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "kkpm_4", brandId: "kim_keat_palm_market_and_food_centre_old_long_house_popiah", name: "Popiah", emoji: "🌯", category: "Local Hawker", price: 3.5, calories: 260, protein: 8, carbs: 38, fat: 8, confidence: "estimated" },
+  { id: "kkpm_5", brandId: "kim_keat_palm_market_and_food_centre_ah_chuan_fried_oyster_omelette", name: "Oyster Omelette", emoji: "🍳", category: "Local Hawker", price: 5.5, calories: 480, protein: 18, carbs: 35, fat: 28, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
 ];
