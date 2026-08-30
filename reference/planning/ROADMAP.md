@@ -44,61 +44,69 @@ the 2026-08-22 growth-strategy research over a week ago and still hasn't
 been turned on; it's a one-click toggle in the Vercel dashboard (Project →
 Analytics tab) and nothing in this repo can turn it on for you.
 
-**Important correction, found 2026-08-30 — the growth/content automation
-already exists, it's just switched off.** An earlier version of this
-project's planning docs assumed content-drafting automation "doesn't exist
-yet" and proposed building it. That was wrong. Checking the actual scheduled
-task list found six PlateScreen tasks already built and fully wired up:
+**Decision made 2026-08-30 — all six re-enabled, per explicit user request
+to "make it self run."** All six PlateScreen scheduled tasks are now active:
 
 | Task | What it does | Status |
 |---|---|---|
-| `platescreen-research-restaurants` | 3x/day — researches restaurants/hawker/food-court menu items from the queue | Disabled, last ran 2026-08-23 |
-| `platescreen-research-grocery` | 3x/day — same, for grab & go / convenience / supermarket | Disabled, last ran 2026-08-23 |
-| `platescreen-research-branches` | 3x/day — backfills real branch locations (Premises) | Disabled, last ran 2026-08-23 |
-| `platescreen-sync-to-stride` | Weekly — draft-exports new data to Stride's schema for review | Disabled, last ran 2026-08-22 |
-| `platescreen-post-copilot` | Mon/Thu — drafts a real leaderboard post, types it into Reddit, stops before posting | Disabled, **never actually run** (no digest folder exists) |
-| `platescreen-comment-copilot` | Wed — finds relevant threads, drafts replies, stops before sending | Disabled, never run |
+| `platescreen-research-restaurants` | 3x/day — researches restaurants/hawker/food-court menu items from the queue | **Enabled**, next run 2026-08-30 |
+| `platescreen-research-grocery` | 3x/day — same, for grab & go / convenience / supermarket | **Enabled**, next run 2026-08-30 |
+| `platescreen-research-branches` | 3x/day — backfills real branch locations (Premises) | **Enabled**, next run 2026-08-30 |
+| `platescreen-sync-to-stride` | Weekly Sunday — draft-exports new data to Stride's schema for review | **Enabled**, next run 2026-09-06 |
+| `platescreen-post-copilot` | Mon/Thu — drafts a real leaderboard post, types it into Reddit, stops before posting | **Enabled**, next run 2026-08-31 |
+| `platescreen-comment-copilot` | Wed — finds relevant threads, drafts replies, stops before sending | **Enabled**, next run 2026-09-02 |
 
-All six were disabled around 2026-08-22/23 — the same window this project's
-manual, Cowork-session batch research (documented in `../research-sessions/`,
-batches A through BL) took over as the actual mechanism driving progress.
-**Why they were turned off isn't recorded anywhere in this repo** — it may
-have been a deliberate choice to keep tighter human oversight during the
-zero-menu backfill push, or they may have just been paused for a specific
-reason and not resumed. Don't assume either explanation; ask before
-re-enabling anything, and see priority item 1 below.
+**What this does and doesn't make autonomous, stated plainly:** the three
+research tasks and the Stride sync run fully unattended — they only write
+to this repo and commit locally (never push), so there's nothing for a
+human to approve mid-run. The two content tasks draft automatically on
+schedule, but **the actual "Post"/"Send" click on Reddit is a hard stop
+every single run, by design and by platform/safety rule — not a setting
+that can be turned off.** Every run ends with a filled-in draft sitting in
+an open browser tab (or the full text in that day's digest under
+`Post-Copilot-Digests/`/`Comment-Copilot-Digests/`) waiting for a human
+click. "Self-running content creation" means the drafting is unattended;
+publishing never will be, on this or any platform's rules. Check
+`Post-Copilot-Digests/` and `Comment-Copilot-Digests/` (created on first
+run) regularly, or nothing actually reaches Reddit.
+
+Local commits will now accumulate from the research/sync tasks running
+unattended — remember to periodically `git pull && git push` (see section 8
+of `CLAUDE.md`) so the live site actually reflects what the automation adds.
 
 ---
 
 ## Active / near-term (in priority order)
 
-1. **Decide what to do with the six disabled scheduled tasks above.** This
-   is the highest-leverage open item on this whole list — it's already-built
-   automation, not something to design or build from scratch. Options: leave
-   the three research tasks off (manual batch work has been outperforming
-   the "next queue entry" pace anyway) but re-enable `platescreen-post-
-   copilot`/`-comment-copilot` now that there's real data worth posting
-   (they were built when coverage was ~20-30%, useless to post from; at
-   95.8% they'd actually work), or review all six with fresh eyes before
-   touching any of them. Either way, a decision beats them sitting
-   indefinitely idle and undocumented.
-2. **Verify the two still-open UI findings** from the 2026-08-22 review
+1. **Watch the first few automated runs before trusting the pipeline
+   unattended.** All six tasks were just re-enabled 2026-08-30 with no
+   interim verification run. Check the first research-task commits and the
+   first post/comment-copilot digest for quality before assuming the
+   pipeline is reliable at 3x/day/task volume — a bad run compounds fast if
+   nobody checks it for a week.
+2. **Turn on Vercel Web Analytics** — confirmed still off as of 2026-08-30.
+   No code change, just a dashboard toggle (no API/tool can do this from
+   here), and it blocks every data-informed growth decision after it —
+   including whether the now-automated content posts are doing anything.
+3. **Per-brand/per-dish SEO pages** (`/brand/mcdonalds`, etc.) — the
+   highest-leverage *product* growth idea from the growth-strategy research,
+   since the data to populate hundreds of indexable pages already exists.
+   Still unbuilt as of 2026-08-30. A product change (new Next.js routes +
+   sitemap), not something the content-drafting automation can produce.
+4. **Verify the two still-open UI findings** from the retired launch guide
    (grocery-ingredients-as-top-picks; mobile table reflow) — quick to check,
    blocks confidently calling the app launch-ready end to end.
-3. **Turn on Vercel Web Analytics** — confirmed still off as of 2026-08-30.
-   No code change, just a dashboard toggle, and it blocks every
-   data-informed growth decision after it.
-4. **Decide on task #29** (Google Maps/Street View escalation for the ~12
+5. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
    doesn't have) or explicitly accept those ~12 brands as permanently out of
    scope for menu coverage.
-5. **Diet-tag coverage decision**: 52.0% may already be near the ceiling
+6. **Diet-tag coverage decision**: 52.0% may already be near the ceiling
    given the conservative tagging rules (`CLAUDE.md` section 5.1) — before
    running another backfill batch, sample untagged items to estimate how
    many are "legitimately untaggable" vs "overlooked." Don't assume the
    number itself is a problem.
-6. **Grocery SKUs** (`GroceryProduct`, currently 0 rows) — real per-package
+7. **Grocery SKUs** (`GroceryProduct`, currently 0 rows) — real per-package
    research for FairPrice/Cold Storage/Giant/Sheng Siong/Don Don Donki is
    unstarted. Low urgency unless growth plans specifically want packaged-
    grocery comparisons, since it's a genuinely different data shape (per-100g
@@ -106,10 +114,6 @@ re-enabling anything, and see priority item 1 below.
 
 ## Not started, lower priority
 
-- Per-brand/per-dish SEO pages (`/brand/mcdonalds`, etc.) — the
-  highest-leverage *product* growth idea from the 2026-08-22 research, since
-  the data to populate hundreds of indexable pages already exists. A product
-  change (new Next.js routes + sitemap), not a content task.
 - A public feedback mechanism (even a footer `mailto:` or a linked form) —
   flagged as missing in the retired launch guide; status not re-checked.
 
