@@ -3,6 +3,19 @@
 **Written:** 2026-08-22
 **Stage:** Pre-launch. 776 brands / 3,404 premises / 837 menu items, growing 3x/day via scheduled research tasks. Live at platescreen.vercel.app, zero paid marketing spend assumed, single-person team.
 
+> **Correction added 2026-08-30 — read this before the numbers above.** The
+> "776 brands... growing 3x/day" figures are stale: as of 2026-08-30 the app
+> has 1,747 brands / 4,678 premises / 2,552 menu items (95.8% menu coverage),
+> reached mainly through manual Cowork-session batch research, not the
+> scheduled tasks this doc describes — those six tasks (research-
+> restaurants/grocery/branches, sync-to-stride, post-copilot,
+> comment-copilot) were all disabled around 2026-08-22/23 and still are. See
+> `ROADMAP.md` for current numbers and the open decision on whether to
+> re-enable them. The strategy/positioning/channel reasoning below is still
+> the current thinking — only the stage/numbers are out of date. This file
+> is kept at this exact path because `platescreen-post-copilot`'s task
+> definition reads it directly.
+
 ---
 
 ## The gap that has to close before any growth tactic matters

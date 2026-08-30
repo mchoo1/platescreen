@@ -1,8 +1,8 @@
 # PlateScreen — Positioning: Introduction, Value Proposition, Moat
 
 **Status: living reference, not a dated snapshot** (unlike `growth-strategy-
-2026-08-22.md` and `launch-guide-2026-08-22.md`, which are point-in-time).
-Treat this as canonical framing for the project — any Cowork chat, agent, or
+2026-08-22.md`, which is point-in-time). Treat this as canonical framing for
+the project — any Cowork chat, agent, or
 scheduled task working on PlateScreen (marketing copy, a pitch conversation,
 a new contributor's onboarding, a scheduled content-drafting task) should
 read this before writing anything that describes what PlateScreen *is* or
@@ -19,14 +19,36 @@ product, not how to build it.
 
 ## 1. App Introduction
 
-**PlateScreen is a stock-screener for Singapore food.** Instead of scrolling
-a delivery app or guessing at a hawker stall's macros, you filter and sort
-real dishes the way you'd screen stocks: by calories, protein, carbs, fat,
-price, protein-per-dollar, diet compatibility (halal, vegetarian, vegan,
-no-pork, and more), outlet type, and distance. Pick a preset — Cut, Bulk,
-Budget, Keto, High Value — or build your own filter, and get a ranked table
-of dishes that actually fit, each one traceable to a real stall you can walk
-to or order from.
+**Reviewed 2026-08-30: the original version of this section led with the
+screener mechanism ("filter dishes like you'd screen stocks") before
+explaining why anyone would need that. That's backwards — a reader could
+finish it understanding exactly what the app does and still not feel a
+reason to open it. Rewritten below to lead with the actual problem.**
+
+**If you eat out in Singapore and care about what you're eating — hitting a
+protein target, watching calories, keeping halal or vegetarian, or just not
+overpaying — you're flying blind.** Most meals here come from a hawker
+stall, food court, or coffeeshop, not a packaged product with a nutrition
+label. A generic calorie-tracking app either doesn't have your exact stall
+in its database at all, or has it under a generic "fried noodles, mixed
+dish" entry with a national-average macro estimate that could be off by a
+wide margin from what that specific stall actually serves. Delivery apps
+show you photos and prices, not protein or diet compatibility. So the actual
+choice most people make is: track carefully at home and guess wildly the
+moment they eat out, or give up tracking altogether whenever hawker food is
+involved — which, in Singapore, is most of the time.
+
+**PlateScreen exists to remove that guesswork.** It's a stock-screener for
+Singapore food: filter and sort real dishes — from real, named stalls and
+chains — by calories, protein, carbs, fat, price, protein-per-dollar, diet
+compatibility (halal, vegetarian, vegan, no-pork, and more), outlet type,
+and distance. Pick a preset — Cut, Bulk, Budget, Keto, High Value — or build
+your own filter, and get a ranked table of dishes that actually fit, each
+one traceable to a real stall you can walk to or order from. The reason to
+use it over a generic tracker isn't the filtering UI (any nutrition app has
+filters) — it's that the numbers underneath are sourced from real
+Singapore-specific data instead of a generic per-cuisine average, at a level
+of hawker-stall detail generic trackers don't attempt (see section 2).
 
 It's a fully static site — no login, no backend, no tracking beyond
 analytics — because the product doesn't need an account system to be useful;
