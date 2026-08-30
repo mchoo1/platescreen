@@ -643,3 +643,18 @@ DISH_DB.update({
     "Specialty Coffee": ("☕","Beverages",4.0,20,1,3,0),
     "Banh Mi": ("🥖","Vietnamese",5.5,480,20,55,18),
 })
+
+# --- Batch BL additions (GENERIC-cuisine kopitiam_ brands whose real brand `name` itself
+# names a dish, or resolved via kopitiam-stall-dishes.json keyed on that name) ---
+DISH_DB.update({
+    "Chendol": ("🍧","Bakery/Dessert",2.5,280,3,55,6),
+    "Lotus Root Pork Ribs Soup": ("🍲","Local Hawker",6.5,400,26,15,22),
+    "Mixed Vegetable Rice": ("🍚","Local Hawker",3.5,420,15,55,14),
+    "ABC Soup": ("🍲","Local Hawker",5.0,280,12,30,10),
+    "Acai Soft Serve": ("🍨","Bakery/Dessert",5.5,220,4,40,6),
+    "Ice Cream": ("🍦","Bakery/Dessert",4.0,250,4,35,10),
+    "Bakso": ("🍲","Indonesian/Malay",5.5,380,22,30,16),
+    "Goreng Pisang": ("🍌","Local Hawker",2.0,220,2,40,7),
+    "Egg Fried Rice": ("🍳","Local Hawker",4.0,480,12,65,18),
+    "Claypot & Herbal Soup": ("🍲","Local Hawker",6.5,380,28,12,20),
+})

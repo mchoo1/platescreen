@@ -665,6 +665,31 @@
 // entry "Scrambled Egg w Garlic Park Chop" is read as a typo for "Pork Chop") both left with
 // zero tags. See
 // reference/research-sessions/2026-08-29-zero-menu-kopitiamscatter-batch-BK.md.
+//
+// Batch BL (2026-08-29): +33 items. Attempted to identify the actual real-world stall behind
+// every remaining GENERIC-cuisine brand (task #65's final long-tail category). Split into two
+// groups: (1) 36 kopitiam_-operated brands whose `cuisine` field is blank/generic but whose own
+// `name` already IS a dish (e.g. "Curry Rice", "Chendol", "Yong Tao Foo") or resolves cleanly
+// via kopitiam-stall-dishes.json keyed on that exact name - 33 covered, 3 excluded (CuLiang
+// YuFen: self-referential scrape entry with no real data; China Food: scrape entry "Cold
+// dishes" too vague; Cheers: confirmed to be the Cheers convenience-store chain via an empty
+// scrape entry, not a food stall - same treatment as the Batch BJ food-hall exclusions). (2) 13
+// non-kopitiam brands whose name is a bare SFA-licensee person-name or corporate entity (Au
+// Jiahao Alex, Chan Cheow Teck, Chan Kok Hee, Goh Poo Huat, Kwek Ah Heoh, Lee Jim Pong, Lim Hang
+// Tong, Ngern Jwee Chye, Goh Jee Tee [second record], Lee Kee Yeo, Ntuc Club, Chong Yo Private
+// Limited) - individually web-searched, all came up empty (no public review, menu, or listing
+// names them). 3 of these were confirmed or near-certain duplicate brand records for
+// already-covered stalls at the same venue (Teo Kiang Huat = Keng Huat Cold & Hot Dessert,
+// Eunos Crescent Blk 4A; Ngern Jwee Chye = Wei Yi Laksa & Prawn Noodle, Tanglin Halt Market;
+// Goh Jee Tee's second record at Mei Chin Road Market duplicates its own already-covered first
+// record) - a known data-quality issue first flagged in Batch AY, now further confirmed. All 13
+// left uncovered; per task #29 (still pending), the only remaining path for these would be
+// direct visual identification (Google Maps Street View / on-site), not text search. 10 new
+// dish types added (Chendol, Lotus Root Pork Ribs Soup, Mixed Vegetable Rice, ABC Soup, Acai
+// Soft Serve, Ice Cream, Bakso, Goreng Pisang, Egg Fried Rice, Claypot & Herbal Soup).
+// compatibleWith set at creation time; Bak Kut Teh, Lotus Root Pork Ribs Soup, and Pig Organ
+// Soup all left with zero tags. See
+// reference/research-sessions/2026-08-29-zero-menu-genericidentify-batch-BL.md.
 
 export const MENU_ITEMS = [
   {
@@ -26496,4 +26521,37 @@ export const MENU_ITEMS = [
   { id: "bkj2_55", brandId: "kopitiam_fish_ball_noodles", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
   { id: "bkj2_56", brandId: "kopitiam_char_meat", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "bkj2_57", brandId: "ang_mo_kio_628_market_rosnahs_family_kitchen", name: "Lontong", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 12, carbs: 60, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bl_1", brandId: "kopitiam_ah_chew_yong_tao_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bl_2", brandId: "kopitiam_pepper_kitchen", name: "Pepper Rice", emoji: "🍚", category: "Japanese", price: 6.5, calories: 580, protein: 26, carbs: 60, fat: 24, confidence: "estimated" },
+  { id: "bl_3", brandId: "kopitiam_master_crab", name: "Chilli Crab", emoji: "🦀", category: "Seafood", price: 25, calories: 480, protein: 36, carbs: 32, fat: 22, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "bl_4", brandId: "kopitiam_teochew", name: "Pig Organ Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 28, carbs: 10, fat: 22, confidence: "estimated" },
+  { id: "bl_5", brandId: "kopitiam_chendol", name: "Chendol", emoji: "🍧", category: "Bakery/Dessert", price: 2.5, calories: 280, protein: 3, carbs: 55, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_6", brandId: "kopitiam_lau_huo_tang", name: "Lotus Root Pork Ribs Soup", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 400, protein: 26, carbs: 15, fat: 22, confidence: "estimated" },
+  { id: "bl_7", brandId: "kopitiam_swee_heng_bakery", name: "Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 250, protein: 6, carbs: 42, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_8", brandId: "kopitiam_chinese_mixed_rice", name: "Mixed Vegetable Rice", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 420, protein: 15, carbs: 55, fat: 14, confidence: "estimated" },
+  { id: "bl_9", brandId: "kopitiam_hao_wei_rice_garden_mix_veg", name: "Mixed Vegetable Rice", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 420, protein: 15, carbs: 55, fat: 14, confidence: "estimated" },
+  { id: "bl_10", brandId: "kopitiam_takeway_kueh", name: "Chwee Kueh", emoji: "🥟", category: "Local Hawker", price: 2.5, calories: 320, protein: 6, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_11", brandId: "kopitiam_old_world_bak_kut_teh_and_fried_porridge", name: "Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 420, protein: 28, carbs: 10, fat: 28, confidence: "estimated" },
+  { id: "bl_12", brandId: "kopitiam_kfc", name: "Fried Chicken", emoji: "🍗", category: "Chicken Rice/Poultry", price: 5.5, calories: 520, protein: 30, carbs: 25, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bl_13", brandId: "kopitiam_ban_heng_teochew_porridge", name: "Teochew Porridge", emoji: "🥣", category: "Local Hawker", price: 4, calories: 280, protein: 15, carbs: 42, fat: 6, confidence: "estimated" },
+  { id: "bl_14", brandId: "kopitiam_curry_rice", name: "Curry Rice", emoji: "🍛", category: "Local Hawker", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, confidence: "estimated" },
+  { id: "bl_15", brandId: "kopitiam_jocob_soup", name: "ABC Soup", emoji: "🍲", category: "Local Hawker", price: 5.0, calories: 280, protein: 12, carbs: 30, fat: 10, confidence: "estimated" },
+  { id: "bl_16", brandId: "kopitiam_kueh", name: "Chee Cheong Fun", emoji: "🥟", category: "Dim Sum", price: 4.0, calories: 320, protein: 8, carbs: 58, fat: 6, confidence: "estimated" },
+  { id: "bl_17", brandId: "kopitiam_prata_alley", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_18", brandId: "kopitiam_local_delights", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4, calories: 320, protein: 6, carbs: 45, fat: 14, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bl_19", brandId: "kopitiam_mix_veg", name: "Mixed Vegetable Rice", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 420, protein: 15, carbs: 55, fat: 14, confidence: "estimated" },
+  { id: "bl_20", brandId: "kopitiam_nakoko", name: "Acai Soft Serve", emoji: "🍨", category: "Bakery/Dessert", price: 5.5, calories: 220, protein: 4, carbs: 40, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_21", brandId: "kopitiam_creme_and_cone", name: "Ice Cream", emoji: "🍦", category: "Bakery/Dessert", price: 4.0, calories: 250, protein: 4, carbs: 35, fat: 10, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_22", brandId: "kopitiam_ming_kitchen", name: "Hor Fun", emoji: "🍜", category: "Local Hawker", price: 5, calories: 500, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
+  { id: "bl_23", brandId: "kopitiam_chang_cheng_food_paradise_rice_garden", name: "Mixed Vegetable Rice", emoji: "🍚", category: "Local Hawker", price: 3.5, calories: 420, protein: 15, carbs: 55, fat: 14, confidence: "estimated" },
+  { id: "bl_24", brandId: "kopitiam_yong_tao_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bl_25", brandId: "kopitiam_fried_item", name: "Fried Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
+  { id: "bl_26", brandId: "kopitiam_cik_lim_yong_tau_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bl_27", brandId: "kopitiam_indo_6_express", name: "Bakso", emoji: "🍲", category: "Indonesian/Malay", price: 5.5, calories: 380, protein: 22, carbs: 30, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "bl_28", brandId: "kopitiam_local_snack", name: "Goreng Pisang", emoji: "🍌", category: "Local Hawker", price: 2.0, calories: 220, protein: 2, carbs: 40, fat: 7, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "bl_29", brandId: "kopitiam_panini_and_pizza", name: "Pizza", emoji: "🍕", category: "Western", price: 6.0, calories: 600, protein: 22, carbs: 68, fat: 24, confidence: "estimated" },
+  { id: "bl_30", brandId: "kopitiam_beautea", name: "Fruit Tea", emoji: "🍹", category: "Beverages", price: 3.0, calories: 150, protein: 0, carbs: 35, fat: 0, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "bl_31", brandId: "kopitiam_the_bait_kitchen", name: "Egg Fried Rice", emoji: "🍳", category: "Local Hawker", price: 4.0, calories: 480, protein: 12, carbs: 65, fat: 18, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bl_32", brandId: "kopitiam_claypot_and_herbal_soup", name: "Claypot & Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6.5, calories: 380, protein: 28, carbs: 12, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bl_33", brandId: "kopitiam_seabay", name: "Fried Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
 ];
