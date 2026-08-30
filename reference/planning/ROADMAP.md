@@ -32,6 +32,16 @@ meals; the results table doesn't reflow on mobile) have **not been
 re-verified** — check the live app before assuming either is still true or
 still false.
 
+**Deploy status, checked directly against Vercel on 2026-08-30:** `main` is
+pushed and production is live and in sync — the latest deployment
+(`dpl_3J7rBucrRmbhfVERpsc11WaKES3Z`) is `READY` at commit `b80bec1` (this
+doc's own commit), auto-deployed via the GitHub integration as expected. No
+runtime errors in the last 7 days. **Web Analytics is confirmed still not
+enabled** on the project (`web_analytics_not_enabled` from the API) — this
+was flagged as missing in `growth-strategy-2026-08-22.md` over a week ago and
+still hasn't been turned on; it's a one-click toggle in the Vercel dashboard
+(Project → Analytics tab) and nothing in this repo can turn it on for you.
+
 ---
 
 ## Active / near-term (in priority order)
@@ -55,10 +65,11 @@ still false.
    packaged groceries, since it's a genuinely different data shape from
    everything else in the app (per-100g + package size vs one dish/one
    serving).
-5. **Confirm current Vercel + analytics setup** — the 2026-08-22 growth
-   strategy doc found Vercel Web Analytics wasn't enabled at all; that may or
-   may not still be true. This blocks every growth decision below it (you
-   can't act on "what are people searching for" without it).
+5. **Turn on Vercel Web Analytics** — confirmed still off as of 2026-08-30
+   (see deploy-status note above). This blocks every growth decision below
+   it (you can't act on "what are people searching for" without it), and
+   it's the single easiest item on this whole list — no code change, just a
+   dashboard toggle.
 
 ## Not started, lower priority
 
