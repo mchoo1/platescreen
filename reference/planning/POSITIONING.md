@@ -1,8 +1,8 @@
 # PlateScreen — Positioning: Introduction, Value Proposition, Moat
 
-**Status: living reference, not a dated snapshot** (unlike `growth-strategy-
-2026-08-22.md`, which is point-in-time). Treat this as canonical framing for
-the project — any Cowork chat, agent, or
+**Status: living reference, not a dated snapshot** (unlike the archived
+strategy docs in `archive/`, which are point-in-time). Treat this as
+canonical framing for the project — any Cowork chat, agent, or
 scheduled task working on PlateScreen (marketing copy, a pitch conversation,
 a new contributor's onboarding, a scheduled content-drafting task) should
 read this before writing anything that describes what PlateScreen *is* or
@@ -135,7 +135,7 @@ Ranked by how durable each advantage actually is, not by how it sounds:
 3. **Structural readiness for an SEO moat (real, but not yet built).**
    Static-export architecture + the existing brand/dish data means
    hundreds of indexable per-brand/per-dish pages are a routes-and-sitemap
-   change away, per `growth-strategy-2026-08-22.md` and `ROADMAP.md`'s
+   change away, per `GROWTH_STRATEGY.md` and `ROADMAP.md`'s
    lower-priority list — each one answering a real long-tail search. This
    is a moat only once built and once Google has indexed it long enough to
    rank; right now it's unrealized potential, not a current advantage. Don't

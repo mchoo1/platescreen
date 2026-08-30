@@ -10,10 +10,16 @@
 
 ## 1. What Is PlateScreen?
 
-PlateScreen is a **stock-screener-style web app for Singapore food**: search,
-filter, and sort real dishes by macros, price, protein-per-dollar, diet tags,
-outlet type, and location. No login, no backend, no database — it's a fully
-static Next.js export that filters a bundled TypeScript dataset client-side.
+Most meals in Singapore come from a hawker stall, food court, or coffeeshop
+with no nutrition label — anyone trying to hit a protein target, watch
+calories, or keep halal/vegetarian while eating out has been stuck guessing.
+PlateScreen removes that guesswork: it's a **stock-screener-style web app
+for Singapore food** — search, filter, and sort real dishes by macros,
+price, protein-per-dollar, diet tags, outlet type, and location. No login,
+no backend, no database — it's a fully static Next.js export that filters a
+bundled TypeScript dataset client-side. (Full framing — the "why," not just
+the "what" — lives in `reference/planning/POSITIONING.md`; this section is
+the short engineering-facing version.)
 
 **PlateScreen is a completely separate product from Stride** (a different
 fitness app at `C:\stride-app`, different repo, different owner-facing
@@ -85,7 +91,8 @@ PlateScreen/                       ← repo root (this IS the Next.js app, no ne
 │
 └── reference/                     ← NOT part of the build (no imports from src/), all process/history
     ├── planning/                  ← Strategy docs — ROADMAP.md is the entry point (section 7);
-    │                                 POSITIONING.md covers how to describe the product (intro/value prop/moat)
+    │                                 POSITIONING.md covers how to describe the product (intro/value prop/moat);
+    │                                 archive/ holds superseded docs (not deleted, see planning/README.md)
     ├── research-sessions/         ← One dated .md per batch of data work, see section 6 (135+ files, append-only)
     ├── data/                      ← dish-macro-lookup.py + scraped source JSON (see section 5)
     ├── migration-scripts/         ← One-off scripts that produced the current schema (historical, don't re-run blindly)

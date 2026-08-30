@@ -1,12 +1,17 @@
 # PlateScreen
 
-A stock-screener-style web app for Singapore food: search by macros, price,
-protein-per-dollar, diet tags, outlet type, and location. Standalone from the
-main Stride app — no login, no Firebase, no backend. All data and filtering
-run client-side from a static dataset.
+Most meals in Singapore come from a hawker stall, food court, or coffeeshop
+with no nutrition label — tracking macros or keeping a diet while eating out
+usually means guessing. **PlateScreen removes the guesswork:** a
+stock-screener-style web app for Singapore food — search real dishes by
+macros, price, protein-per-dollar, diet tags, outlet type, and location.
+Standalone from the main Stride app — no login, no Firebase, no backend. All
+data and filtering run client-side from a static dataset.
 
-**For architecture, data-sourcing rules, and the batch-work methodology,
-see `CLAUDE.md` — this file is just a quick overview and run instructions.**
+**For architecture, data-sourcing rules, and the batch-work methodology, see
+`CLAUDE.md`. For the fuller introduction/value-proposition/moat framing, see
+`reference/planning/POSITIONING.md`. This file is just a quick overview and
+run instructions.**
 
 ## Data
 

@@ -113,21 +113,29 @@ re-enabling anything, and see priority item 1 below.
 - A public feedback mechanism (even a footer `mailto:` or a linked form) —
   flagged as missing in the retired launch guide; status not re-checked.
 
-## Historical / superseded, kept for reference only
+## Historical / superseded, moved to archive/ (2026-08-30 restructure)
 
-- `database-restructure-proposal-2026-08-20.md` — **DONE**, the Brand/
-  Premises/MenuItem split it proposed was implemented. Kept in place (not
-  deleted) because `platescreen-research-restaurants`'s own task definition
-  points to it by path — don't rename or move this file without also
-  updating that scheduled task.
-- `growth-strategy-2026-08-22.md` and `growth-content-ideas.md` — kept in
-  place for the same reason: `platescreen-post-copilot`'s task definition
-  reads both by exact path. The strategy doc's numbers (776 brands, "growing
-  3x/day") are stale per the corrected automation status above — the
-  content queue itself is still a reasonable starting set of themes.
-- The former `launch-guide-2026-08-22.md` and `AUTOMATION_PROPOSAL.md` have
-  been retired and merged into this file (2026-08-30 consolidation) — their
-  substance now lives in the sections above rather than as separate files.
+Since the six scheduled tasks are being redone from scratch anyway (priority
+1 above), the old path-dependency that previously forced some dated docs to
+stay in place is gone. `reference/planning/` now has clean-named, current
+files at its root, with everything superseded moved to `archive/` rather
+than deleted:
+
+- `SCHEMA_HISTORY.md` (new) replaces `database-restructure-proposal-2026-08-20.md`
+  (**DONE** — the Brand/Premises/MenuItem split it proposed was implemented;
+  full original reasoning preserved in `archive/`).
+- `GROWTH_STRATEGY.md` (new) replaces `growth-strategy-2026-08-22.md` — same
+  strategic reasoning, current numbers instead of the stale "776 brands,
+  growing 3x/day."
+- `CONTENT_QUEUE.md` (new) replaces `growth-content-ideas.md` — identical
+  content queue, just renamed.
+- `launch-guide-2026-08-22.md` and `AUTOMATION_PROPOSAL.md` — retired
+  entirely (their substance already lives in the sections above), moved to
+  `archive/` rather than deleted.
+- The 3 old scheduled tasks that referenced the pre-2026-08-30 file paths
+  (`platescreen-research-restaurants`, `platescreen-post-copilot`,
+  `platescreen-comment-copilot`) had their prompts updated to point at the
+  new filenames — see each task's own definition for the current reference.
 
 ---
 
