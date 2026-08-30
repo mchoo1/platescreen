@@ -8,6 +8,7 @@ the current numbers).
 | File | Status |
 |---|---|
 | `ROADMAP.md` | **Current — start here.** |
+| `POSITIONING.md` | **Current — living reference**, not dated like the rest. App introduction, research value proposition, and moat — read before writing any marketing copy, pitch content, or onboarding material. |
 | `AUTOMATION_PROPOSAL.md` | Current — proposal, not yet actioned. |
 | `database-restructure-proposal-2026-08-20.md` | **Done.** The Brand/Premises/MenuItem split it proposed was implemented; kept as historical design rationale, not an open proposal. |
 | `growth-strategy-2026-08-22.md` | Strategy still valid; the specific numbers it cites (776 brands, no analytics) are stale — see `ROADMAP.md` for current data-completeness status. |

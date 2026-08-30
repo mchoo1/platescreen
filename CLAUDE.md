@@ -84,7 +84,8 @@ PlateScreen/                       ← repo root (this IS the Next.js app, no ne
 │       └── db.ts                  ← Brand, Premises, MenuItem, SfaRegistration, Platform, GroceryProduct
 │
 └── reference/                     ← NOT part of the build (no imports from src/), all process/history
-    ├── planning/                  ← Strategy docs — ROADMAP.md is the entry point (section 7)
+    ├── planning/                  ← Strategy docs — ROADMAP.md is the entry point (section 7);
+    │                                 POSITIONING.md covers how to describe the product (intro/value prop/moat)
     ├── research-sessions/         ← One dated .md per batch of data work, see section 6 (135+ files, append-only)
     ├── data/                      ← dish-macro-lookup.py + scraped source JSON (see section 5)
     ├── migration-scripts/         ← One-off scripts that produced the current schema (historical, don't re-run blindly)

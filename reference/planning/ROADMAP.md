@@ -5,8 +5,10 @@ this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
 
-See `../../CLAUDE.md` for architecture and operating rules. This file is
-about priorities and sequencing, not how the codebase works.
+See `../../CLAUDE.md` for architecture and operating rules, and
+`POSITIONING.md` for how to describe the product (introduction, research
+value proposition, moat) — this file is about priorities and sequencing,
+not how the codebase works or how to talk about it.
 
 ---
 
