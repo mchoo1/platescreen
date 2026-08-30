@@ -1366,26 +1366,6 @@ const PREMISES_1 = [
     },
     source: "sfa_licence_match"
   },
-          {
-    id: "eunos_crescent_blk_4a_teo_kiang_huat_p222",
-    brandId: "eunos_crescent_blk_4a_teo_kiang_huat",
-    label: "Eunos Crescent Blk 4A",
-    locationType: "hawker_centre",
-    locationContext: "Eunos Crescent Blk 4A",
-    address: "EUNOS CRESCENT BLK 4A Stall No 01-23",
-    postal: "402004",
-    lat: 1.320331260100958,
-    lng: 103.9042564784258,
-    sfa: {
-      licenceNumber: "EU10123002",
-      licenseeName: "TEO KIANG HUAT",
-      premisesAddress: "EUNOS CRESCENT BLK 4A Stall No 01-23",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
   {
     id: "eunos_crescent_blk_4a_tiong_lee_lim_p223",
     brandId: "eunos_crescent_blk_4a_tiong_lee_lim",
@@ -1443,26 +1423,6 @@ const PREMISES_1 = [
       licenceNumber: "TTM012001",
       licenseeName: "LIM HANG TONG",
       premisesAddress: "TANGLIN HALT MARKET Stall No 012",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "tanglin_halt_market_ngern_jwee_chye_p265",
-    brandId: "tanglin_halt_market_ngern_jwee_chye",
-    label: "Tanglin Halt Market",
-    locationType: "hawker_centre",
-    locationContext: "Tanglin Halt Market",
-    address: "48A Tanglin Halt Road, Singapore 148813",
-    postal: "148813",
-    lat: 1.30054407507427,
-    lng: 103.797737980247,
-    sfa: {
-      licenceNumber: "TTM020001",
-      licenseeName: "NGERN JWEE CHYE",
-      premisesAddress: "TANGLIN HALT MARKET Stall No 020",
       grade: "A",
       demeritPoints: null,
       licenceSuspended: false

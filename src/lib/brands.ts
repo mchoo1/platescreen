@@ -3449,22 +3449,6 @@ export const BRANDS_1 = [
       "grab_go"
     ]
   },
-          {
-    id: "eunos_crescent_blk_4a_teo_kiang_huat",
-    name: "Teo Kiang Huat",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "teo kiang huat"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
   {
     id: "eunos_crescent_blk_4a_tiong_lee_lim",
     name: "Tiong Lee Lim",
@@ -3508,22 +3492,6 @@ export const BRANDS_1 = [
     cuisine: "Local & Hawker",
     aliases: [
       "lim hang tong"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "tanglin_halt_market_ngern_jwee_chye",
-    name: "Ngern Jwee Chye",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "ngern jwee chye"
     ],
     dietTags: [],
     priceRange: "$",
