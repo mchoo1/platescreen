@@ -88,11 +88,13 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    No code change, just a dashboard toggle (no API/tool can do this from
    here), and it blocks every data-informed growth decision after it —
    including whether the now-automated content posts are doing anything.
-3. **Per-brand/per-dish SEO pages** (`/brand/mcdonalds`, etc.) — the
-   highest-leverage *product* growth idea from the growth-strategy research,
-   since the data to populate hundreds of indexable pages already exists.
-   Still unbuilt as of 2026-08-30. A product change (new Next.js routes +
-   sitemap), not something the content-drafting automation can produce.
+3. ~~**Per-brand/per-dish SEO pages**~~ — **Done 2026-08-30.** `/brand/[id]`
+   (1,747 pages) and `/brand/[id]/[itemId]` (2,552 pages), plus
+   `sitemap.ts`/`robots.ts`. All 4,305 pages build clean as static export;
+   `ScreenerTable.tsx` links through to them. Not yet live — this is a local
+   commit, needs `git push` (see section 8 of `CLAUDE.md`) before Google can
+   crawl any of it, and Vercel Analytics (still off, item 2 above) is the
+   only way to later tell whether it's driving traffic.
 4. **Verify the two still-open UI findings** from the retired launch guide
    (grocery-ingredients-as-top-picks; mobile table reflow) — quick to check,
    blocks confidently calling the app launch-ready end to end.
