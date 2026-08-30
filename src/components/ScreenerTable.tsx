@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { cn, fmtMoney, ppdBadgeClasses } from '@/lib/utils';
 import { PLATFORM_OPTIONS } from '@/lib/screener';
 import type { ScreenerRow, SortKey, SortDir } from '@/lib/screener';
@@ -102,7 +103,12 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap">
                   <span className="mr-1.5">{row.emoji}</span>
-                  <span className="font-medium text-slate-900 dark:text-slate-100">{row.name}</span>
+                  <Link
+                    href={`/brand/${row.restaurantId}/${row.id}`}
+                    className="font-medium text-slate-900 hover:text-blue-600 hover:underline dark:text-slate-100"
+                  >
+                    {row.name}
+                  </Link>
                   {row.isPopular && (
                     <span className="ml-1.5 inline-flex items-center rounded-full bg-blue-50 text-blue-700 text-[10px] font-medium px-1.5 py-0.5 dark:bg-blue-950 dark:text-blue-400">
                       Popular
@@ -116,7 +122,9 @@ export function ScreenerTable({ rows, sortKey, sortDir, onSort, trayIds, onToggl
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap text-slate-600 dark:text-slate-400">
                   <span className="mr-1">{row.restaurantEmoji}</span>
-                  {row.restaurantName}
+                  <Link href={`/brand/${row.restaurantId}`} className="hover:text-blue-600 hover:underline">
+                    {row.restaurantName}
+                  </Link>
                   <PlatformBadges platforms={row.platforms} />
                 </td>
                 <td className="px-3 py-2 whitespace-nowrap text-slate-500 dark:text-slate-400">
