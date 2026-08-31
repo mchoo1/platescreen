@@ -12,33 +12,84 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-08-30)
+## Where things stand (2026-08-31)
 
 | Metric | Value |
 |---|---|
 | Total brands | 1,747 |
-| Total premises | 4,678 |
-| Total menu items | 2,552 |
-| Brands with ≥1 menu item | 1,673 (95.8%) |
-| Zero-menu brands remaining | 74 |
-| Menu items with ≥1 diet tag | 1,327 (52.0%) |
+| Total premises | 4,680 |
+| Total menu items | 2,560 |
+| Brands with ≥1 menu item | 1,674 (95.8%) |
+| Zero-menu brands remaining | 73 |
+| Menu items with ≥1 diet tag | 1,330 (52.0%) |
+| Confidence breakdown | 73 verified / 2,481 estimated / 6 community |
 | Premises missing lat/lng | 0 |
-| Grocery SKUs populated | 0 |
+| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items) |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 0 |
+
+**Launch-readiness review completed 2026-08-31** (code + database, requested
+directly). Verdict: **the database and the codebase are launch-ready; one
+real product-quality bug should be fixed first, and one known UX rough edge
+is a judgment call.** Full findings:
+
+- **Confirmed FIXED**: the 2026-08-22 fix that excluded `supermarket`
+  outletType from the homepage "Top protein/$ picks" carousel holds — spot-
+  checked live, the carousel shows real dishes only.
+- **Confirmed STILL PRESENT, and worse than originally scoped — real bug,
+  not just a UI nice-to-have**: 17 `MenuItem` rows (category `"Ingredients"`,
+  brandId `fairprice`) store **whole-retail-package totals**, not per-serving
+  macros — e.g. `ing_jasmine_rice`: 18,000 cal / 350g protein / $12 (a whole
+  bag of rice, not a serving). These aren't excluded from the **main
+  screener table** (only from the top-picks carousel), so a first-time
+  visitor with no filters applied, sorting by the default Protein/$ column,
+  sees a bag of rice ranked above every real dish in the database — directly
+  undercutting the "real dishes, not confusing numbers" pitch. This is what
+  `GroceryProduct` (per-100g + package size) was designed to model correctly;
+  these 17 rows were never migrated to it. **Recommended before/shortly
+  after launch:** either rescale these 17 items to a realistic single
+  serving, or exclude `category: "Ingredients"` from the main table the same
+  way `supermarket` is excluded from the carousel, until real
+  `GroceryProduct` rows replace them properly.
+- **Confirmed STILL PRESENT, cosmetic not broken**: the results table does
+  not reflow into a card layout on mobile — it stays a horizontally-
+  scrollable table, so a mobile visitor sees item name first and must swipe
+  sideways to see calories/protein/price. Data is reachable, just not a
+  great first impression on what's likely majority-mobile traffic. Lower
+  priority than the ingredients bug above; a product polish item, not a
+  launch blocker.
+- **Database integrity, checked programmatically**: 0 duplicate ids and 0
+  orphaned `brandId` references across all of Brands/Premises/MenuItems, 0
+  premises missing coordinates, 0 price outliers (≤0 or >$100). The only
+  `calories > 2000` items are legitimate family-size items (Jollibee 8pc
+  bucket, KK dozen donuts) — not data errors.
+- **Automation review** (first runs since the six scheduled tasks were
+  re-enabled 2026-08-30): reviewed every commit and uncommitted change from
+  the overnight runs. All of it held to the never-fabricate rule correctly
+  — see the McCafe and content-queue entries below. Found and fixed a real
+  hygiene issue: legitimate research output (2 Dosirak premises, a
+  research-session report, a Post-Copilot digest) was sitting uncommitted,
+  and 14 ephemeral `scratch_compute*.ts` debug scripts were left uncommitted
+  in the repo root — committed the real work, deleted the scratch files
+  (commit `e48d28f`). **Practical implication: someone needs to periodically
+  check for and commit/clean up automation output** — it doesn't fully
+  self-tidy yet.
 
 The core data-completeness problem flagged in the (now-retired) launch
-guide — "4 out of 5 listed places have nothing to screen" — is **effectively
-solved**: menu coverage went from 20% to 95.8% across dozens of research
-batches (full history in `../research-sessions/`). Two smaller findings from
-that same review have **not been re-verified since**: whether the
-homepage's "top picks" still surfaces raw grocery ingredients instead of
-meals, and whether the results table still fails to reflow on mobile. Check
-the live app before assuming either is still true or still false.
+guide — "4 out of 5 listed places have nothing to screen" — remains
+**effectively solved**: menu coverage is 95.8% across dozens of research
+batches (full history in `../research-sessions/`).
 
-**Deploy status, checked directly against Vercel on 2026-08-30:** `main` is
+**Deploy status, checked directly against Vercel on 2026-08-31:** `main` is
 pushed and production is live and in sync — the latest deployment
-(`dpl_3J7rBucrRmbhfVERpsc11WaKES3Z`) is `READY` at commit `b80bec1`,
-auto-deployed via the GitHub integration as expected. No runtime errors in
-the last 7 days. **Web Analytics is confirmed still not enabled** on the
+(`dpl_F1E5qdwUq7CU4AErmZRy1wpvgBqw`) is `READY` at commit `b6efd11` (includes
+the new SEO pages), build completed in 1 minute with all 4,305 static pages
+generated cleanly, auto-deployed via the GitHub integration. No runtime
+errors in the last 7 days. Note: an automated research task's own sandbox
+hit an OOM crash (`SIGBUS`) trying to run `npm run build` locally on this
+same commit and reasoned it was environmental rather than content-related —
+**confirmed correct**: Vercel's own build of the identical commit succeeded
+without issue, so this was a sandbox resource limit, not a real build
+problem. **Web Analytics is confirmed still not enabled** on the
 project (`web_analytics_not_enabled` from the API) — flagged as missing in
 the 2026-08-22 growth-strategy research over a week ago and still hasn't
 been turned on; it's a one-click toggle in the Vercel dashboard (Project →
@@ -78,41 +129,61 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
 
 ## Active / near-term (in priority order)
 
-1. **Watch the first few automated runs before trusting the pipeline
-   unattended.** All six tasks were just re-enabled 2026-08-30 with no
-   interim verification run. Check the first research-task commits and the
-   first post/comment-copilot digest for quality before assuming the
-   pipeline is reliable at 3x/day/task volume — a bad run compounds fast if
-   nobody checks it for a week.
-2. **Turn on Vercel Web Analytics** — confirmed still off as of 2026-08-30.
+1. **Fix the 17 `Ingredients`-category `MenuItem` rows storing whole-package
+   totals** (e.g. `ing_jasmine_rice`: 18,000 cal for $12) — found during the
+   2026-08-31 launch-readiness review. These dominate the *main* screener
+   table's default Protein/$ sort (not just the top-picks carousel, which
+   was already fixed 2026-08-22), so a first-time visitor's very first
+   impression is a bag of rice outranking every real dish. Two options:
+   rescale to a realistic single serving, or exclude `category:
+   "Ingredients"` from the main table until real `GroceryProduct` rows
+   (per-100g + package size — the schema this data should actually live in)
+   replace them. Highest-priority open item; everything else here is
+   secondary to first-visitor experience.
+2. ~~**Watch the first few automated runs before trusting the pipeline
+   unattended.**~~ — **Done 2026-08-31.** Reviewed every commit + uncommitted
+   change from the first overnight runs since re-enabling. Automation held
+   the never-fabricate rule correctly throughout (see McCafe/content-queue
+   entries above). Found one real gap: legitimate output was sitting
+   uncommitted alongside 14 ephemeral debug scripts — committed the former,
+   deleted the latter (`e48d28f`). **The pipeline does not fully self-tidy**
+   — periodically check for and commit stray automation output; it won't
+   reach production otherwise.
+3. **Turn on Vercel Web Analytics** — confirmed still off as of 2026-08-31.
    No code change, just a dashboard toggle (no API/tool can do this from
    here), and it blocks every data-informed growth decision after it —
    including whether the now-automated content posts are doing anything.
-3. ~~**Per-brand/per-dish SEO pages**~~ — **Done 2026-08-30.** `/brand/[id]`
-   (1,747 pages) and `/brand/[id]/[itemId]` (2,552 pages), plus
-   `sitemap.ts`/`robots.ts`. All 4,305 pages build clean as static export;
-   `ScreenerTable.tsx` links through to them. Not yet live — this is a local
-   commit, needs `git push` (see section 8 of `CLAUDE.md`) before Google can
-   crawl any of it, and Vercel Analytics (still off, item 2 above) is the
-   only way to later tell whether it's driving traffic.
-4. **Verify the two still-open UI findings** from the retired launch guide
-   (grocery-ingredients-as-top-picks; mobile table reflow) — quick to check,
-   blocks confidently calling the app launch-ready end to end.
-5. **Decide on task #29** (Google Maps/Street View escalation for the ~12
+4. ~~**Per-brand/per-dish SEO pages**~~ — **Done and LIVE as of 2026-08-31.**
+   `/brand/[id]` (1,747 pages) and `/brand/[id]/[itemId]` (2,552 pages), plus
+   `sitemap.ts`/`robots.ts`. Confirmed on Vercel: commit `b6efd11` deployed
+   `READY`, build completed in 1 minute, all 4,305 pages generated; spot-
+   checked live (`/brand/mcd/mcd_big_mac`, `/sitemap.xml`, `/robots.txt` all
+   serving correctly). `ScreenerTable.tsx` links through to them. Vercel
+   Analytics (still off, item 3 above) is the only way to later tell whether
+   it's driving traffic.
+5. ~~**Verify the two still-open UI findings**~~ — **Done 2026-08-31**, see
+   the launch-readiness review above: grocery-ingredients issue confirmed
+   present and escalated to item 1; mobile table reflow confirmed present,
+   kept as lower-priority polish (item 6 below).
+6. **Mobile table reflow** — results table stays a horizontally-scrollable
+   table on mobile rather than reflowing to cards; data is reachable via
+   swipe, just not a great first impression on likely-majority-mobile
+   traffic. Polish, not a blocker.
+8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
    doesn't have) or explicitly accept those ~12 brands as permanently out of
    scope for menu coverage.
-6. **Diet-tag coverage decision**: 52.0% may already be near the ceiling
+9. **Diet-tag coverage decision**: 52.0% may already be near the ceiling
    given the conservative tagging rules (`CLAUDE.md` section 5.1) — before
    running another backfill batch, sample untagged items to estimate how
    many are "legitimately untaggable" vs "overlooked." Don't assume the
    number itself is a problem.
-7. **Grocery SKUs** (`GroceryProduct`, currently 0 rows) — real per-package
-   research for FairPrice/Cold Storage/Giant/Sheng Siong/Don Don Donki is
-   unstarted. Low urgency unless growth plans specifically want packaged-
-   grocery comparisons, since it's a genuinely different data shape (per-100g
-   + package size vs. one dish/one serving).
+10. **Grocery SKUs** (`GroceryProduct`, currently 0 rows) — real per-package
+    research for FairPrice/Cold Storage/Giant/Sheng Siong/Don Don Donki is
+    unstarted. This is also the proper fix for item 1's 17 misshapen
+    `Ingredients` rows — doing this well would let those 17 items migrate to
+    the correct schema instead of just being hidden or rescaled.
 
 ## Not started, lower priority
 
