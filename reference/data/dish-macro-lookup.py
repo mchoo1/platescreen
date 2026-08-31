@@ -658,3 +658,17 @@ DISH_DB.update({
     "Egg Fried Rice": ("🍳","Local Hawker",4.0,480,12,65,18),
     "Claypot & Herbal Soup": ("🍲","Local Hawker",6.5,380,28,12,20),
 })
+
+# --- Batch 2026-09-01 additions (kopitiam_culiang_yufen - Culiang Yufen By Popular Food,
+# real chain menu via foodpanda, macros calibrated against existing Fish Soup / Meatball
+# Noodles / Fishball Noodles entries above) ---
+DISH_DB.update({
+    "Golden Soup Sliced Fish Rice Noodle": ("🍜","Seafood",9.6,420,27,46,11),
+    "Golden Soup Fat Beef Rice Noodle": ("🍜","Noodles",10.7,480,28,46,19),
+    "Signature Luncheon Meat Rice Noodle": ("🍜","Noodles",8.6,470,16,50,21),
+    "Mala Meat Ball Rice Noodle": ("🍜","Noodles",8.6,490,20,52,22),
+    "Sour & Spicy Fat Intestine Rice Noodle": ("🍜","Noodles",10.7,520,18,45,28),
+    "Tomato Prawn Paste Rice Noodle": ("🍜","Seafood",10.7,440,22,48,15),
+    "Sauerkraut Sliced Fish Soup With Rice": ("🍚","Seafood",11.6,460,30,50,10),
+    "Glutinous Rice Cake": ("🍘","Dim Sum",5.5,230,4,36,8),
+})

@@ -26563,4 +26563,36 @@ export const MENU_ITEMS = [
   { id: "tbsk_rice_kueh", brandId: "kopitiam_tiong_bahru_tian_bo_shui_kueh_pte_ltd", name: "Rice Kueh (3 Pcs)", emoji: "🍘", category: "Local Hawker", price: 4.9, calories: 280, protein: 5, carbs: 48, fat: 6, compatibleWith: [], confidence: "estimated" },
   { id: "tbsk_soon_kueh", brandId: "kopitiam_tiong_bahru_tian_bo_shui_kueh_pte_ltd", name: "Soon Kueh (3 Pcs)", emoji: "🥟", category: "Local Hawker", price: 4.9, calories: 210, protein: 5, carbs: 30, fat: 8, compatibleWith: [], confidence: "estimated" },
   { id: "tbsk_siew_mai", brandId: "kopitiam_tiong_bahru_tian_bo_shui_kueh_pte_ltd", name: "Siew Mai (3 Pcs)", emoji: "🥟", category: "Dim Sum", price: 3.9, calories: 150, protein: 8, carbs: 12, fat: 8, compatibleWith: [], confidence: "estimated" },
+  // --- Batch 2026-09-01: kopitiam_culiang_yufen (Culiang Yufen By Popular Food, Paya Lebar Quarter) ---
+  // Brand already existed (2026-08-22 Kopitiam stall scrape) but its only scrape signal was a
+  // self-referential garbage artifact ({"CuLiang YuFen": ["CuLiang YuFen"]} - see CLAUDE.md section 5).
+  // Resolved via individual web research: the chain runs a consistent, well-documented menu across
+  // its branches (foodpanda listings for Kopitiam Square/Sengkang, Hillion Mall, VivoCity, Cineleisure
+  // all show the same numbered menu - 5 soup flavours x protein choices, 52 items) - real dish names
+  // and SGD prices sourced from https://www.foodpanda.sg/restaurant/u8qd/culiang-yufen-by-popular-food-kopitiam-square,
+  // a different branch of the same chain (this project's Paya Lebar Quarter premises row has no
+  // foodpanda listing of its own found, but the menu/pricing is confirmed consistent chain-wide by the
+  // matching item numbering across all 4 branch listings checked). Picked 8 items spanning distinct
+  // named proteins/formats (fish noodle, beef noodle, luncheon meat noodle, meatball noodle, fat
+  // intestine noodle, prawn paste noodle, fish+rice bowl, rice-cake side) to stay clear of the
+  // near-duplicate rule - flavour-only variants (e.g. the other 4 soup-flavour versions of the same
+  // protein) were skipped as not credibly >10% different in macros. No official nutrition source
+  // exists for this stall; macros are reasoned/calibrated against this project's own existing
+  // Sliced Fish Soup / Fish Soup (320/28/25/10), Double Fish Soup (400/32/25/16), Meatball Noodles
+  // (460/22/55/16), and Fishball Noodles (400/20/55/10) entries (see reference/data/dish-macro-lookup.py),
+  // adjusted upward for the added rice-noodle carb load and, for fattier proteins (fat beef, luncheon
+  // meat, fat intestine), a higher fat estimate - all confidence "estimated". Diet tags follow CLAUDE.md
+  // section 5.1: named-protein items (fish, prawn) get no_pork + pescatarian; luncheon meat and
+  // meatball are left untagged (ambiguous/on the meatball skip-list); fat intestine (pork organ meat)
+  // gets no compatibleWith array at all, matching the categorical-exclusion pattern for pork-implied
+  // dishes; the rice cake's filling composition is unconfirmed so it is also left untagged. isPopular
+  // set only for the 3 items foodpanda's own listing marks "Popular" (a real signal, not a guess).
+  { id: "cyf_golden_soup_sliced_fish_noodle", brandId: "kopitiam_culiang_yufen", name: "Golden Soup Sliced Fish Rice Noodle", emoji: "🍜", category: "Seafood", price: 9.6, calories: 420, protein: 27, carbs: 46, fat: 11, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated", isPopular: true },
+  { id: "cyf_golden_soup_fat_beef_noodle", brandId: "kopitiam_culiang_yufen", name: "Golden Soup Fat Beef Rice Noodle", emoji: "🍜", category: "Noodles", price: 10.7, calories: 480, protein: 28, carbs: 46, fat: 19, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "cyf_signature_luncheon_meat_noodle", brandId: "kopitiam_culiang_yufen", name: "Signature Luncheon Meat Rice Noodle", emoji: "🍜", category: "Noodles", price: 8.6, calories: 470, protein: 16, carbs: 50, fat: 21, compatibleWith: [], confidence: "estimated" },
+  { id: "cyf_mala_meatball_noodle", brandId: "kopitiam_culiang_yufen", name: "Mala Meat Ball Rice Noodle", emoji: "🍜", category: "Noodles", price: 8.6, calories: 490, protein: 20, carbs: 52, fat: 22, compatibleWith: [], confidence: "estimated" },
+  { id: "cyf_sour_spicy_fat_intestine_noodle", brandId: "kopitiam_culiang_yufen", name: "Sour & Spicy Fat Intestine Rice Noodle", emoji: "🍜", category: "Noodles", price: 10.7, calories: 520, protein: 18, carbs: 45, fat: 28, confidence: "estimated" },
+  { id: "cyf_tomato_prawn_paste_noodle", brandId: "kopitiam_culiang_yufen", name: "Tomato Prawn Paste Rice Noodle", emoji: "🍜", category: "Seafood", price: 10.7, calories: 440, protein: 22, carbs: 48, fat: 15, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "cyf_sauerkraut_sliced_fish_rice", brandId: "kopitiam_culiang_yufen", name: "Sauerkraut Sliced Fish Soup With Rice", emoji: "🍚", category: "Seafood", price: 11.6, calories: 460, protein: 30, carbs: 50, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated", isPopular: true },
+  { id: "cyf_glutinous_rice_cake", brandId: "kopitiam_culiang_yufen", name: "Glutinous Rice Cake", emoji: "🍘", category: "Dim Sum", price: 5.5, calories: 230, protein: 4, carbs: 36, fat: 8, compatibleWith: [], confidence: "estimated" },
 ];
