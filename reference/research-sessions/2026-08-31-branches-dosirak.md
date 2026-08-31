@@ -1,45 +1,104 @@
-# Branch premises backfill — Dosirak (2026-08-31)
+# 2026-08-31 — Branch premises backfill: Dosirak (resumed, partial)
 
-**Brand researched:** Dosirak (`brandId: "dosirak"`)
-**Priority:** medium · **Status before run:** pending · **Status after run:** pending (partial coverage)
+**Task:** `platescreen-research-branches` scheduled agent run.
 
-## Method
+## Selection (Phase 1)
 
-1. **Resolved the standing ambiguity first.** The queue entry had deliberately excluded ~7 "Bibimbap/Dosirak" SFA listings under licensee `TENG SHENG BROTHERS PTE. LTD.` from the 2026-08-21 Track Records session, flagged as "unconfirmed whether it's the same Dosirak brand or a different bibimbap concept." Web search (SETHLUI, DanielFoodDiary, a CapitaLand mall directory listing, halalboleh.com) confirmed "Bibimbap/Dosirak" and "Dosirak" are the same brand — a halal-certified bibimbap concept founded 2014, with some outlets trading as "Teng Sheng Bibimbap & Dosirak." Not a distinct concept.
-2. **No cached SFA Track Records xlsx** (the richer 52,101-row, Business-Name-field export used in the 2026-08-21 session) was available in the project or uploads this run, so Option A fell back to the data.gov.sg licensed-establishment dataset (`d_227473e811b09731e64725f140b77697`) queried via exact `filters={"licensee_name":"..."}` (not the unreliable fuzzy `q=`).
-3. Exact match on `TENG SHENG BROTHERS PTE LTD` returned exactly 2 records — a smaller/different snapshot than the Track Records export (which apparently had ~7 under a slightly different licensee-name spelling with periods). Both sampled and verified:
-   - `50 PASIR PANJANG ROAD #03-51 MAPLETREE BUSINESS CITY SINGAPORE 117384` (licence SW16583K000, grade na)
-   - `604 SEMBAWANG ROAD #02-24 SEMBAWANG SHOPPING CENTRE SINGAPORE 758459` (licence NW08506V000, grade A)
-4. The Sembawang Shopping Centre address independently matches a Dosirak location surfaced by web search (halalboleh.com), corroborating the licensee match. Mapletree Business City isn't mentioned in any web source found, but shares the identical distinctive (non-generic) licensee entity, so it was trusted per the same reasoning applied to other single-licensee brand matches in this project.
-5. Tried `datastore_search_sql` to search all 4 remaining known mall addresses (313@Somerset, Suntec City, Bukit Panjang Plaza, Anchorvale/Compassvale) in one query — endpoint returned a 404 (appears deprecated/removed on data.gov.sg). Not usable this run.
-6. Geocoded both new addresses via OneMap (`elastic/search`), sequential requests, both succeeded on first try (postal codes 117384, 758459).
+Deterministic queue selection landed on `bonchon` (first-listed medium-priority
+pending entry). Re-checked it first — identical wall to the three prior runs:
+zero connected browsers (`list_connected_browsers` empty; the built-in Claude
+Browser pane denied navigation to both `bonchon.sg` and a neutral control URL
+`google.com`, confirming this is an unattended-session permission gate, not a
+site-specific block) and no new SFA Track Records xlsx export in the project
+or uploads folder. No new information was possible for bonchon this run, so
+rather than burn the session repeating a known-blocked attempt, pivoted to
+`dosirak` — this queue's other pending medium-priority entry, already
+partially resolved (4 real premises from a prior run) with a clear documented
+next step (Option B for its known-missing malls) that didn't require a
+browser. Bonchon's queue entry was updated with a short note recording this
+re-check; no other changes were made to it. Full deterministic re-selection
+should still land on bonchon next run — that is unchanged.
 
-## Result
+## Method (Phase 2)
 
-- **Premises added:** 2 (`dosirak_p29`, `dosirak_p30`), appended to a new `PREMISES_13` chunk in `premises.ts` (the prior `PREMISES_12` chunk had grown to ~1,100 entries, well past the ~400 guideline, so new records went in a fresh chunk rather than extending it further).
-- **Total Dosirak premises now:** 4 (`dosirak_p27` OUE Downtown, `dosirak_p28` DUO Galleria, `dosirak_p29` Mapletree Business City, `dosirak_p30` Sembawang Shopping Centre).
-- **Geocoding:** 2/2 succeeded.
-- **Known gap vs. total real locations:** web search surfaced 313@Somerset, Suntec City, Bukit Panjang Plaza, and an Anchorvale/Compassvale outlet as additional current/recent Dosirak locations. None matched under the `TENG SHENG BROTHERS PTE LTD` or `P.O. NOSH PRIVATE LIMITED` exact-licensee searches — likely each held under yet other per-outlet corporate entities, consistent with the pattern already seen across `dosirak_p27` (P.O. Nosh) vs `dosirak_p28` (K Royce Pte Ltd). Coverage is therefore still **partial**; status left as `pending` rather than `researched`.
-- **Typecheck:** `npx tsc --noEmit` passed with no errors (verified in a sandbox copy, excluding `node_modules`/`.next`/`out`/`.git`/`reference`).
+Option A (SFA Business Name/licensee matching) was not attempted — no fresh
+SFA Track Records xlsx export was available in the project or uploads folder
+this run (only the task's own `SKILL.md` was present in uploads).
 
-## Next steps (recorded in `branchQueue.ts` notes)
+Option B (official store list/locator), using plain `web_fetch` (no browser
+needed — these pages are server-rendered, unlike bonchon.sg):
 
-- If a fresh SFA Track Records xlsx (or equivalent Business-Name-field export) becomes available, re-run `DOSIRAK`/`BIBIMBAP` businessName search against it first — that's the fastest path to the remaining 4 locations.
-- Otherwise, try Option B (an official Dosirak store list/social page) specifically for 313@Somerset, Suntec City, Bukit Panjang Plaza, and the Anchorvale/Compassvale outlet.
+- **Bedok Mall** — confirmed via CapitaLand's own tenant page
+  (`capitaland.com/sg/malls/bedokmall/en/stores/bibimbap-dosirak.html`):
+  unit **#01-95 External Retail**, contact 97296739. This is a location not
+  previously known to this queue at all (not in any prior run's notes).
+- **Bukit Panjang Plaza** — confirmed via the mall's own dedicated official
+  site (`bukitpanjangplaza.com/shop-dine/`), which lists
+  "Bibimbap! / Dosirak! #01-41 Food & Beverage" in its static store directory.
+  The 2026-08-21 run's guessed CapitaLand URL for this mall 404'd (wrong path
+  shape) — the mall's own separate official site was the working source.
+- **Suntec City** — investigated but NOT added. Multiple third-party blogs
+  (SETHLUI, DanielFoodDiary, Burpple, eatbook, newgravite — all 2019-era)
+  repeat a "Dosirak at B1-170" claim. Checked Suntec City's own official
+  directory (`sunteccity.com.sg/store_categories/dining`) — the specific
+  listing ID that a WebSearch AI summary had conflated with Dosirak is
+  actually named **"Bibim Deli"**, not Dosirak. Unconfirmed whether this is a
+  rebrand/same operator or an unrelated bibimbap concept, and the page is
+  JS-rendered so it couldn't be inspected further without a browser. Not
+  admissible as a match per this task's verification standard.
+- **313@Somerset** — investigated but NOT added. No page on the mall's own
+  official site (`313somerset.com.sg`) came up in search for dosirak/bibimbap;
+  only the same aged 2019 blog posts. Not added.
 
-## Other queue entries checked but not advanced this run
+## Data-quality flag (not fixed this run)
 
-- **bonchon** (medium priority, listed before dosirak): blocked on needing a JS-rendered store locator read. Tried the built-in browser pane (`mcp__Claude_Browser__navigate`) as a possible substitute for Claude in Chrome — navigation was denied/unavailable in this unattended context (no user present to approve), and `list_connected_browsers` confirmed zero Chrome extension instances connected either. No progress possible; left as-is, no new notes added since the situation is identical to the prior two runs.
+`dosirak_p30` (Sembawang Shopping Centre)'s existing SFA-licence-sourced
+record says unit **#02-24**, but the mall's own current official tenant page
+(`sembawangsc.com.sg/store/bibimbap-dosirak/`) says unit **#B1-10/11** — same
+building/postal code, different unit. Left as-is (the SFA record is still a
+valid provenance trail for that address), flagged in `branchQueue.ts` notes
+for a future run to reconcile. Could be a genuine mid-lease relocation within
+the mall since the licence was issued, not necessarily an error.
 
-## Phase 6 — Commit: BLOCKED (environment limitation, needs manual follow-up)
+## Geocoding (Phase 3)
 
-`git add -A -- src/lib/premises.ts src/lib/branchQueue.ts reference/research-sessions/2026-08-31-branches-dosirak.md` failed immediately with `fatal: Unable to create '.git/index.lock': File exists` — a **pre-existing** stale lock (not created by this run) that this session cannot remove: `rm`, `mv`, and `chmod`+`rm` on `.git/index.lock` all fail with `Operation not permitted`, consistent with the documented OneDrive-FUSE-mount limitation recorded in the 2026-08-23 session report (`reference/research-sessions/2026-08-23-kopitiam_chinatown_roasted.md`) — this sandbox cannot delete/rename/unlink files on this mount, which is exactly what git's lock cleanup and object-finalization needs. All edits described above (premises.ts, branchQueue.ts, this report) are correctly written to disk and typecheck-clean; **none of it is committed**. A human needs to, from a regular Windows session (not this sandbox):
+Both new addresses geocoded successfully via OneMap on the first attempt
+(sequential, not concurrent):
 
-```
-del ".git\index.lock"          (or delete it in File Explorer)
-cd "C:\Users\mchoo\OneDrive\Desktop\PlateScreen"
-git add src/lib/premises.ts src/lib/branchQueue.ts reference/research-sessions/2026-08-31-branches-dosirak.md
-git commit -m "Premises: extend dosirak (Teng Sheng Brothers Pte Ltd, 2 new)"
-```
+| Premises | Postal | Lat | Lng |
+|---|---|---|---|
+| Bedok Mall #01-95 | 467360 | 1.324736327847299 | 103.929256259998 |
+| Bukit Panjang Plaza #01-41 | 677743 | 1.379920451762434 | 103.764357180314 |
 
-This stale lock will also block any *other* git operation in this repo (including a future scheduled run) until cleared — worth flagging to the user directly, not just leaving buried in this file.
+## Records written (Phase 4)
+
+Appended to `PREMISES_13` in `src/lib/premises.ts` (chunk had only 2 entries,
+well under the ~400 guideline):
+
+- `dosirak_p31` — Bedok Mall, `source: "official_store_locator"`, `sfa: null`
+- `dosirak_p32` — Bukit Panjang Plaza, `source: "official_store_locator"`, `sfa: null`
+
+Dosirak's real premises count: **4 → 6**.
+
+`branchQueue.ts`'s `dosirak` entry notes were extended with this run's method,
+results, and what remains open (Suntec City / 313@Somerset). **Status kept as
+`pending`** (not flipped to `researched`) — coverage is meaningfully better
+but not confirmed exhaustive while those two malls remain an open question.
+
+## Verification (Phase 5)
+
+Copied the project (excluding `node_modules`, `.next`, `out`, `.git`,
+`reference`) to a sandbox directory, ran `npm install` (394 packages, clean),
+then `npx tsc --noEmit` — **passed with no errors**.
+
+## Outcome
+
+Partial progress, brand left `pending` for a future run. Next steps recorded
+in `branchQueue.ts`: if a connected browser (Claude in Chrome, or the
+built-in Claude Browser pane in an attended session) becomes available,
+render `sunteccity.com.sg/store_categories/dining/13789716` and
+`313somerset.com.sg`'s store directory directly to resolve both remaining
+malls. Bonchon remains blocked pending either a connected browser or a fresh
+SFA Track Records xlsx export with the untested "BON CHON" (two-word) variant.
+
+Committed locally (no push), per task rules.

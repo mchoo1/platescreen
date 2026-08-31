@@ -80225,6 +80225,32 @@ export const PREMISES_13 = [
     },
     source: "sfa_licence_match"
   },
+  {
+    id: "dosirak_p31",
+    brandId: "dosirak",
+    label: "311 NEW UPPER CHANGI ROAD #01-95",
+    locationType: "mall",
+    locationContext: "Bedok Mall, External Retail",
+    address: "311 New Upper Changi Road #01-95 External Retail, Bedok Mall, Singapore 467360",
+    postal: "467360",
+    lat: 1.324736327847299,
+    lng: 103.929256259998,
+    sfa: null,
+    source: "official_store_locator"
+  },
+  {
+    id: "dosirak_p32",
+    brandId: "dosirak",
+    label: "1 JELEBU ROAD #01-41",
+    locationType: "mall",
+    locationContext: "Bukit Panjang Plaza",
+    address: "1 Jelebu Road #01-41, Bukit Panjang Plaza, Singapore 677743",
+    postal: "677743",
+    lat: 1.379920451762434,
+    lng: 103.764357180314,
+    sfa: null,
+    source: "official_store_locator"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];
