@@ -80251,6 +80251,19 @@ export const PREMISES_13 = [
     sfa: null,
     source: "official_store_locator"
   },
+  {
+    id: "grain_burn_road",
+    brandId: "grain",
+    label: "Tee Yih Jia Food Building",
+    locationType: "office",
+    locationContext: "Tee Yih Jia Food Building",
+    address: "5 Burn Road #05-01, Tee Yih Jia Food Building, Singapore 369972",
+    postal: "369972",
+    lat: 1.335246636625769,
+    lng: 103.885008398598,
+    sfa: null,
+    source: "acra_registered_address"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];
