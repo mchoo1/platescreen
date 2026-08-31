@@ -20,6 +20,13 @@ Status values: `pending` (never used) | `used` (posted, see `lastUsed` + `subred
   title: "Protein-per-dollar ranking across major SG fast food chains"
   computation: "Join MENU_ITEMS to BRANDS where type in [restaurant] and platforms includes dine_in/grab_go, filter confidence != 'estimated' unless clearly labeled, compute protein/price per item, rank top 15-20, group by brand for readability"
   status: pending
+  # 2026-08-31 note: attempted as a 16-chain cross-brand ranking — only McDonald's has
+  # `verified` confidence data (53/53 verified items in the fast-food set are mcd; every
+  # other chain is 100% `estimated`). Posted a narrower, fully-defensible McDonald's-only
+  # version instead (all 50 verified items) rather than a diluted 15/16-estimated
+  # cross-chain list. Left status `pending` since the *original* cross-chain theme wasn't
+  # really fulfilled — revisit once KFC/Popeyes/Jollibee/etc. have verified macro data, not
+  # just estimated. See Post-Copilot-Digests/2026-08-31.md for the full reasoning.
 
 - id: hawker_protein_under_5
   title: "Highest-protein hawker dishes under $5"

@@ -80182,4 +80182,49 @@ export const PREMISES_12 = [
   },
 ];
 
-export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12];
+// PREMISES_13 started 2026-08-31 (platescreen-research-branches session) — PREMISES_12
+// had grown past the ~400-entry chunking guideline, so new records go in a fresh chunk.
+export const PREMISES_13 = [
+  {
+    id: "dosirak_p29",
+    brandId: "dosirak",
+    label: "50 PASIR PANJANG ROAD #03-51",
+    locationType: "office",
+    locationContext: "Mapletree Business City",
+    address: "50 Pasir Panjang Road #03-51, Mapletree Business City, Singapore 117384",
+    postal: "117384",
+    lat: 1.276419227666035,
+    lng: 103.7988874457355,
+    sfa: {
+      licenceNumber: "SW16583K000",
+      licenseeName: "TENG SHENG BROTHERS PTE LTD",
+      premisesAddress: "50 PASIR PANJANG ROAD #03-51 MAPLETREE BUSINESS CITY SINGAPORE 117384",
+      grade: "not_applicable",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "sfa_licence_match"
+  },
+  {
+    id: "dosirak_p30",
+    brandId: "dosirak",
+    label: "604 SEMBAWANG ROAD #02-24",
+    locationType: "mall",
+    locationContext: "Sembawang Shopping Centre",
+    address: "604 Sembawang Road #02-24, Sembawang Shopping Centre, Singapore 758459",
+    postal: "758459",
+    lat: 1.441824706757328,
+    lng: 103.8248452072371,
+    sfa: {
+      licenceNumber: "NW08506V000",
+      licenseeName: "TENG SHENG BROTHERS PTE LTD",
+      premisesAddress: "604 SEMBAWANG ROAD #02-24 SEMBAWANG SHOPPING CENTRE SINGAPORE 758459",
+      grade: "A",
+      demeritPoints: null,
+      licenceSuspended: false
+    },
+    source: "sfa_licence_match"
+  },
+];
+
+export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];
