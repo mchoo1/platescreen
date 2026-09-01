@@ -19,7 +19,7 @@ not how the codebase works or how to talk about it.
 | Total brands | 1,748 |
 | Total premises | 4,683 |
 | Total menu items | 2,559 |
-| Menu items with ≥1 diet tag | 1,590 (62.1%) — up from 60.0% earlier same day, see item 9 below |
+| Menu items with ≥1 diet tag | 1,634 (63.9%) — up from 62.1% earlier same day, see item 9 below |
 | Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
 | Premises missing lat/lng | 0 |
 | Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
@@ -225,6 +225,14 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    items should get a separate `vegetarian` tag, and whether "Nyonya" items
    deserve dedicated per-item research — both flagged as human decisions,
    not acted on.
+9c. ~~**Vegetarian tag backfill for beverages (2nd follow-on from item
+   9)**~~ — **Done 2026-09-01.** Tagged 44 plain coffee/tea/espresso items
+   (Starbucks Frappuccino/Espresso Beverages + independent kopitiam
+   Kopi/Teh/Coffee counters) `vegetarian` — dairy-based but zero-meat, not
+   tagged `vegan`. Coverage: 62.1% → 63.9%. Full reasoning:
+   `reference/research-sessions/2026-09-01-vegetarian-tag-backfill-
+   beverages.md`. This closes out both follow-on items the original
+   diet-tag audit flagged as needing their own pass.
 10. ~~**Grocery SKUs**~~ — **Partially done 2026-08-31.** The 17 FairPrice
     items that used to be misshapen MenuItems are now proper GroceryProduct
     rows (19 total, up from 2) — see item 1. Real per-package research for

@@ -4374,7 +4374,7 @@ export const MENU_ITEMS = [
     protein: 10.6,
     carbs: 16,
     fat: 12.4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4389,7 +4389,7 @@ export const MENU_ITEMS = [
     protein: 10.6,
     carbs: 16,
     fat: 12.1,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4404,7 +4404,7 @@ export const MENU_ITEMS = [
     protein: 10.6,
     carbs: 16,
     fat: 12.4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4418,7 +4418,7 @@ export const MENU_ITEMS = [
     protein: 10.3,
     carbs: 15.6,
     fat: 11.7,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4432,7 +4432,7 @@ export const MENU_ITEMS = [
     protein: 0.7,
     carbs: 1.4,
     fat: 0,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4446,7 +4446,7 @@ export const MENU_ITEMS = [
     protein: 0.7,
     carbs: 2.1,
     fat: 0,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4461,7 +4461,7 @@ export const MENU_ITEMS = [
     protein: 10.6,
     carbs: 30.2,
     fat: 18.8,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4476,7 +4476,7 @@ export const MENU_ITEMS = [
     protein: 10.3,
     carbs: 33,
     fat: 23.4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4490,7 +4490,7 @@ export const MENU_ITEMS = [
     protein: 9.2,
     carbs: 32.7,
     fat: 10.3,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4505,7 +4505,7 @@ export const MENU_ITEMS = [
     protein: 9.2,
     carbs: 36.9,
     fat: 10.3,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4519,7 +4519,7 @@ export const MENU_ITEMS = [
     protein: 9.9,
     carbs: 30.2,
     fat: 12.4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4534,7 +4534,7 @@ export const MENU_ITEMS = [
     protein: 10.6,
     carbs: 46.5,
     fat: 21.7,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4548,7 +4548,7 @@ export const MENU_ITEMS = [
     protein: 5,
     carbs: 38,
     fat: 13.5,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4563,7 +4563,7 @@ export const MENU_ITEMS = [
     protein: 4.6,
     carbs: 35.1,
     fat: 11.7,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4578,7 +4578,7 @@ export const MENU_ITEMS = [
     protein: 4.3,
     carbs: 33,
     fat: 11,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -4592,7 +4592,7 @@ export const MENU_ITEMS = [
     protein: 5.3,
     carbs: 31.2,
     fat: 11.4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -4607,7 +4607,7 @@ export const MENU_ITEMS = [
     protein: 5.3,
     carbs: 35.9,
     fat: 13.8,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -16893,7 +16893,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -16908,7 +16908,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -17111,7 +17111,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -17126,7 +17126,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -17285,7 +17285,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -17300,7 +17300,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -17692,7 +17692,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -17707,7 +17707,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -17970,7 +17970,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -17985,7 +17985,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -18394,7 +18394,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -18409,7 +18409,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -18423,7 +18423,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -18438,7 +18438,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -18481,7 +18481,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -18496,7 +18496,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -20382,7 +20382,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -20397,7 +20397,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 28,
     fat: 3,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -20680,7 +20680,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -21938,7 +21938,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -21953,7 +21953,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 28,
     fat: 3,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated"
   },
   {
@@ -22192,7 +22192,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23030,7 +23030,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23045,7 +23045,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 28,
     fat: 3,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
   },
   {
@@ -23389,7 +23389,7 @@ export const MENU_ITEMS = [
     protein: 6,
     carbs: 15,
     fat: 7,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23614,7 +23614,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 20,
     fat: 4,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23629,7 +23629,7 @@ export const MENU_ITEMS = [
     protein: 2,
     carbs: 28,
     fat: 3,
-    compatibleWith: [],
+    compatibleWith: ['vegetarian'],
     confidence: "estimated",
   },
   {
