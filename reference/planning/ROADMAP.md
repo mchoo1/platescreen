@@ -12,24 +12,24 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-01)
+## Where things stand (2026-09-01, evening)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,747 |
+| Total brands | 1,748 |
 | Total premises | 4,683 |
-| Total menu items | 2,551 |
-| Brands with ≥1 menu item | 1,675 (95.9%) |
-| Zero-menu brands remaining | 72 |
-| Menu items with ≥1 diet tag | 1,317 (51.6%) |
-| Confidence breakdown (MenuItems) | 56 verified / 2,489 estimated / 6 community |
+| Total menu items | 2,559 |
+| Menu items with ≥1 diet tag | 1,536 (60.0%) — up from 51.6% same day, see item 9 below |
+| Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
 | Premises missing lat/lng | 0 |
 | Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see below) |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below) |
 
-Confidence and diet-tag percentages dipped slightly (73→56 verified,
-52.0%→51.6% diet-tagged) purely as a side effect of the grocery migration
-below moving 17 items out of MenuItems, not new data-quality loss.
+Brand/premises/menu-item counts move day-to-day now that the three research
+scheduled tasks are running unattended — treat these as "as of last check,"
+not a fixed number. Confidence breakdown dipped earlier in the day (73→56
+verified) purely as a side effect of the grocery migration (item 1) moving
+17 items out of MenuItems, not new data-quality loss.
 
 **Launch-readiness review completed 2026-08-31** (code + database, requested
 directly). Verdict: **the database and the codebase are launch-ready; one
@@ -174,28 +174,38 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    table on mobile rather than reflowing to cards; data is reachable via
    swipe, just not a great first impression on likely-majority-mobile
    traffic. Polish, not a blocker.
-7. **Recurring stale git lock from scheduled tasks — worth investigating.**
-   Hit `.git/index.lock`/`HEAD.lock` left behind twice now (2026-08-31
-   ~03:21, and again 2026-09-01 ~12:10) — both times no process was
-   actually running, both times 6+ hours old, both times safe to remove
-   after checking. Pattern suggests a scheduled task's git commit is
-   occasionally getting interrupted (timeout? crash?) mid-operation rather
-   than completing or cleanly failing. Low urgency *so far* since each lock
-   was caught and cleared within a day, but if one sits long enough
-   unnoticed it would silently block every subsequent commit — the user's
-   own manual pushes included. Worth watching whether it recurs a third
-   time; if so, worth finding out which task and why rather than continuing
-   to just clear the lock each time.
+7. **Recurring stale git lock from scheduled tasks — now happened a third
+   time, worth investigating rather than just clearing.** `.git/index.lock`/
+   `HEAD.lock` found stale at 2026-08-31 ~03:21, 2026-09-01 ~12:10, and again
+   2026-09-01 ~20:10 — all three within 1-6 hours old, no process actually
+   running, all three safe to clear. Two of the three times (~12:10 and
+   ~20:10) line up closely with `platescreen-research-branches`'s 3x/day
+   schedule (4am/12pm/8pm), which is a real pattern, not noise — worth
+   checking that task's commit step specifically for something that could
+   leave a lock behind on a crash/timeout (e.g. a killed process mid-`git
+   commit`) rather than continuing to just clear the lock each time it's
+   found. Still not urgent — caught and cleared within hours every time so
+   far — but the failure mode if unnoticed (every subsequent commit,
+   including the user's own manual pushes, silently blocked) is bad enough
+   to actually fix the root cause rather than keep treating the symptom.
 8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
    doesn't have) or explicitly accept those ~12 brands as permanently out of
    scope for menu coverage.
-9. **Diet-tag coverage decision**: ~52% may already be near the ceiling
-   given the conservative tagging rules (`CLAUDE.md` section 5.1) — before
-   running another backfill batch, sample untagged items to estimate how
-   many are "legitimately untaggable" vs "overlooked." Don't assume the
-   number itself is a problem.
+9. ~~**Diet-tag coverage decision**~~ — **Done 2026-09-01** (commit
+   `e4ee1fa`). Classified all 1,234 untagged MenuItems against CLAUDE.md
+   5.1's exact rules: 42% were correctly untagged (skip-list or pork/offal-
+   named), 40% are genuinely ambiguous and left alone, 18% (216 items) were
+   real gaps. Backfilled 211 of those 216 (5 excluded after manual review
+   caught a keyword-matching false positive — see the writeup). Coverage:
+   51.6% → 60.0%. Full reasoning + a script bug caught and fixed mid-batch:
+   `reference/research-sessions/2026-09-01-diet-tag-coverage-audit-and-
+   backfill.md`. Flagged two follow-on opportunities *not* done in this
+   pass: halal tagging for the Indonesian/Malay + Indian buckets (a
+   different, riskier heuristic than "named protein"), and vegetarian
+   tagging for ~44 plain coffee/tea beverage items (unambiguous but outside
+   this pass's scope) — both need their own human decision before acting.
 10. ~~**Grocery SKUs**~~ — **Partially done 2026-08-31.** The 17 FairPrice
     items that used to be misshapen MenuItems are now proper GroceryProduct
     rows (19 total, up from 2) — see item 1. Real per-package research for
