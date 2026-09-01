@@ -1,11 +1,276 @@
 // Generated 2026-08-20 — schema-only for now, zero rows (see GroceryProduct in types/db.ts
 // and reference/planning/database-restructure-proposal-2026-08-20.md). Packaged-SKU research
 // (per-100g macros + package size) is a separate future effort from this restructure.
-// Note: fairprice's 17 "raw ingredient" items (Chicken Breast, etc, previously mis-modeled
-// as store_fairprice's MenuItems) are flagged in menuItems.ts as a future conversion
-// candidate for this table — not converted yet, still shaped as MenuItem for now.
+//
+// 2026-08-31: migrated the 17 fairprice "raw ingredient" items this comment used to flag —
+// they were sitting in menuItems.ts with whole-package totals (e.g. a 5kg rice bag as
+// "18,000 calories, $12"), which is exactly wrong for a MenuItem (one row = one screenable
+// dish you'd order and eat) and exactly right for this table. No macro data was invented:
+// each package size below was reverse-derived from the original whole-package totals by
+// finding the round retail size (500g pack, 1L carton, dozen eggs, etc.) whose resulting
+// per-100g/ml/each figures match real published nutrition values for that food — e.g.
+// dividing the rice bag's 18,000cal/350g-protein by 5,000g gives 360cal/100g and 7g
+// protein/100g, both consistent with real jasmine rice. Confidence set to "estimated" (down
+// from the original "verified") since the exact package size is this reconstruction, not a
+// re-read label — see reference/research-sessions/2026-08-31-grocery-product-migration.md.
+// Categories are grocery-aisle categories, distinct from MenuItem's dish categories.
 
 export const GROCERY_PRODUCTS = [
+  {
+    id: "fairprice_chicken_breast_500g",
+    brandId: "fairprice",
+    name: "Chicken Breast (skinless, 500g)",
+    emoji: "🍗",
+    category: "Meat & Poultry",
+    packageSize: 500,
+    packageUnit: "g",
+    packagePrice: 6.5,
+    caloriesPer100: 165,
+    proteinPer100: 31,
+    carbsPer100: 0,
+    fatPer100: 3.6,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_chicken_thigh_500g",
+    brandId: "fairprice",
+    name: "Chicken Thigh (boneless, skinless, 500g)",
+    emoji: "🍗",
+    category: "Meat & Poultry",
+    packageSize: 500,
+    packageUnit: "g",
+    packagePrice: 5,
+    caloriesPer100: 179,
+    proteinPer100: 20,
+    carbsPer100: 0,
+    fatPer100: 11,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_eggs_10pk",
+    brandId: "fairprice",
+    name: "Eggs, Local Farm (10-pack)",
+    emoji: "🥚",
+    category: "Eggs & Dairy",
+    packageSize: 10,
+    packageUnit: "each",
+    packagePrice: 2.8,
+    caloriesPer100: 7000,
+    proteinPer100: 600,
+    carbsPer100: 50,
+    fatPer100: 500,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_tuna_water_ayam_150g",
+    brandId: "fairprice",
+    name: "Tuna in Water, Ayam Brand (150g can)",
+    emoji: "🐟",
+    category: "Canned Goods",
+    packageSize: 150,
+    packageUnit: "g",
+    packagePrice: 2.2,
+    caloriesPer100: 93,
+    proteinPer100: 20,
+    carbsPer100: 0,
+    fatPer100: 0.7,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_silken_tofu_unicurd_300g",
+    brandId: "fairprice",
+    name: "Silken Tofu, Unicurd (300g)",
+    emoji: "🫘",
+    category: "Chilled & Plant Protein",
+    packageSize: 300,
+    packageUnit: "g",
+    packagePrice: 1.2,
+    caloriesPer100: 50,
+    proteinPer100: 5,
+    carbsPer100: 2,
+    fatPer100: 2.5,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_greek_yogurt_meiji_500g",
+    brandId: "fairprice",
+    name: "Low-fat Greek Yogurt, Meiji (500g)",
+    emoji: "🫙",
+    category: "Eggs & Dairy",
+    packageSize: 500,
+    packageUnit: "g",
+    packagePrice: 5.5,
+    caloriesPer100: 59,
+    proteinPer100: 10,
+    carbsPer100: 3.6,
+    fatPer100: 0.4,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_jasmine_rice_5kg",
+    brandId: "fairprice",
+    name: "Jasmine Rice, Fragrant (5kg)",
+    emoji: "🍚",
+    category: "Rice & Grains",
+    packageSize: 5000,
+    packageUnit: "g",
+    packagePrice: 12,
+    caloriesPer100: 360,
+    proteinPer100: 7,
+    carbsPer100: 80,
+    fatPer100: 0.5,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_brown_rice_sunwhite_1kg",
+    brandId: "fairprice",
+    name: "Brown Rice, SunWhite (1kg)",
+    emoji: "🍚",
+    category: "Rice & Grains",
+    packageSize: 1000,
+    packageUnit: "g",
+    packagePrice: 4.5,
+    caloriesPer100: 370,
+    proteinPer100: 7.5,
+    carbsPer100: 77,
+    fatPer100: 2.7,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_rolled_oats_quaker_500g",
+    brandId: "fairprice",
+    name: "Rolled Oats, Quaker (500g)",
+    emoji: "🌾",
+    category: "Rice & Grains",
+    packageSize: 500,
+    packageUnit: "g",
+    packagePrice: 3.5,
+    caloriesPer100: 380,
+    proteinPer100: 13,
+    carbsPer100: 67,
+    fatPer100: 7,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_sweet_potato_orange_500g",
+    brandId: "fairprice",
+    name: "Sweet Potato, Orange (500g)",
+    emoji: "🍠",
+    category: "Produce",
+    packageSize: 500,
+    packageUnit: "g",
+    packagePrice: 2,
+    caloriesPer100: 86,
+    proteinPer100: 1.6,
+    carbsPer100: 20,
+    fatPer100: 0.1,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_chickpeas_canned_ayam_240g",
+    brandId: "fairprice",
+    name: "Chickpeas, Canned, Ayam Brand (240g drained)",
+    emoji: "🫘",
+    category: "Canned Goods",
+    packageSize: 240,
+    packageUnit: "g",
+    packagePrice: 2,
+    caloriesPer100: 120,
+    proteinPer100: 7.1,
+    carbsPer100: 20,
+    fatPer100: 2.1,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_banana_cavendish_1pc",
+    brandId: "fairprice",
+    name: "Banana, Cavendish (1 piece)",
+    emoji: "🍌",
+    category: "Produce",
+    packageSize: 118,
+    packageUnit: "g",
+    packagePrice: 0.4,
+    caloriesPer100: 89,
+    proteinPer100: 1.1,
+    carbsPer100: 23,
+    fatPer100: 0.34,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_baby_spinach_120g",
+    brandId: "fairprice",
+    name: "Baby Spinach (120g bag)",
+    emoji: "🥬",
+    category: "Produce",
+    packageSize: 120,
+    packageUnit: "g",
+    packagePrice: 2.5,
+    caloriesPer100: 23,
+    proteinPer100: 3,
+    carbsPer100: 3.5,
+    fatPer100: 0.42,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_broccoli_350g",
+    brandId: "fairprice",
+    name: "Broccoli (1 head, ~350g)",
+    emoji: "🥦",
+    category: "Produce",
+    packageSize: 350,
+    packageUnit: "g",
+    packagePrice: 2.5,
+    caloriesPer100: 34,
+    proteinPer100: 3,
+    carbsPer100: 7,
+    fatPer100: 0.4,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_full_cream_milk_meiji_1l",
+    brandId: "fairprice",
+    name: "Full Cream Milk, Meiji (1L)",
+    emoji: "🥛",
+    category: "Eggs & Dairy",
+    packageSize: 1000,
+    packageUnit: "ml",
+    packagePrice: 3,
+    caloriesPer100: 61,
+    proteinPer100: 3.2,
+    carbsPer100: 4.8,
+    fatPer100: 3.3,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_light_soy_sauce_kikkoman_100ml",
+    brandId: "fairprice",
+    name: "Light Soy Sauce, Kikkoman (100ml)",
+    emoji: "🍶",
+    category: "Condiments & Oils",
+    packageSize: 100,
+    packageUnit: "ml",
+    packagePrice: 3.5,
+    caloriesPer100: 60,
+    proteinPer100: 6,
+    carbsPer100: 6,
+    fatPer100: 0,
+    confidence: "estimated"
+  },
+  {
+    id: "fairprice_sesame_oil_190ml",
+    brandId: "fairprice",
+    name: "Sesame Oil (190ml)",
+    emoji: "🫙",
+    category: "Condiments & Oils",
+    packageSize: 190,
+    packageUnit: "ml",
+    packagePrice: 4,
+    caloriesPer100: 895,
+    proteinPer100: 0,
+    carbsPer100: 0,
+    fatPer100: 102,
+    confidence: "estimated"
+  },
   {
     id: "bengawan_solo_pineapple_tarts_330g",
     brandId: "bengawan_solo",
