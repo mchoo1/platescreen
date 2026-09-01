@@ -1625,7 +1625,7 @@ const PREMISES_2 = [
               
   {
     id: "yuhua_village_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p471",
-    brandId: "yuhua_village_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Yuhua Village Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Yuhua Village Market and Food Centre",
@@ -1667,7 +1667,7 @@ const PREMISES_2 = [
   },
     {
     id: "pasir_ris_central_hawker_centre_bengawan_solo_pte_ltd_p494",
-    brandId: "pasir_ris_central_hawker_centre_bengawan_solo_pte_ltd",
+    brandId: "bengawan_solo",
     label: "Pasir Ris Central Hawker Centre",
     locationType: "hawker_centre",
     locationContext: "Pasir Ris Central Hawker Centre",
@@ -1687,7 +1687,7 @@ const PREMISES_2 = [
   },
   {
     id: "tampines_round_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p495",
-    brandId: "tampines_round_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Tampines Round Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Tampines Round Market and Food Centre",
@@ -1707,7 +1707,7 @@ const PREMISES_2 = [
   },
       {
     id: "tampines_round_market_and_food_centre_kentucky_fried_chicken_management_pte_ltd_p498",
-    brandId: "tampines_round_market_and_food_centre_kentucky_fried_chicken_management_pte_ltd",
+    brandId: "kfc",
     label: "Tampines Round Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Tampines Round Market and Food Centre",
@@ -1727,7 +1727,7 @@ const PREMISES_2 = [
   },
     {
     id: "tampines_round_market_and_food_centre_pizza_hut_singapore_pte_ltd_p500",
-    brandId: "tampines_round_market_and_food_centre_pizza_hut_singapore_pte_ltd",
+    brandId: "pizza_hut",
     label: "Tampines Round Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Tampines Round Market and Food Centre",
@@ -1747,7 +1747,7 @@ const PREMISES_2 = [
   },
   {
     id: "teban_gardens_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p501",
-    brandId: "teban_gardens_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Teban Gardens Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Teban Gardens Market and Food Centre",
@@ -1847,7 +1847,7 @@ const PREMISES_2 = [
   },
           {
     id: "toa_payoh_lorong_4_blk_93_mcdonald_s_restaurants_pte_ltd_p523",
-    brandId: "toa_payoh_lorong_4_blk_93_mcdonald_s_restaurants_pte_ltd",
+    brandId: "mcd",
     label: "Toa Payoh Lorong 4 Blk 93",
     locationType: "hawker_centre",
     locationContext: "Toa Payoh Lorong 4 Blk 93",
@@ -1867,7 +1867,7 @@ const PREMISES_2 = [
   },
   {
     id: "toa_payoh_lorong_4_blk_93_pizza_hut_singapore_pte_ltd_p524",
-    brandId: "toa_payoh_lorong_4_blk_93_pizza_hut_singapore_pte_ltd",
+    brandId: "pizza_hut",
     label: "Toa Payoh Lorong 4 Blk 93",
     locationType: "hawker_centre",
     locationContext: "Toa Payoh Lorong 4 Blk 93",
@@ -1909,7 +1909,7 @@ const PREMISES_2 = [
   
   {
     id: "chong_boon_market_and_food_centre_cheers_holdings_2004_pte_ltd_p533",
-    brandId: "chong_boon_market_and_food_centre_cheers_holdings_2004_pte_ltd",
+    brandId: "cheers",
     label: "Chong Boon Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chong Boon Market and Food Centre",
@@ -1930,7 +1930,7 @@ const PREMISES_2 = [
   
   {
     id: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p535",
-    brandId: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Chong Boon Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Chong Boon Market and Food Centre",
@@ -1953,7 +1953,7 @@ const PREMISES_2 = [
   
   {
     id: "cheng_san_market_and_cooked_food_centre_cheers_holdings_2004_pte_ltd_p539",
-    brandId: "cheng_san_market_and_cooked_food_centre_cheers_holdings_2004_pte_ltd",
+    brandId: "cheers",
     label: "Cheng San Market and Cooked Food Centre",
     locationType: "hawker_centre",
     locationContext: "Cheng San Market and Cooked Food Centre",
@@ -1974,7 +1974,7 @@ const PREMISES_2 = [
   
   {
     id: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd_p541",
-    brandId: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Cheng San Market and Cooked Food Centre",
     locationType: "hawker_centre",
     locationContext: "Cheng San Market and Cooked Food Centre",
@@ -1995,7 +1995,7 @@ const PREMISES_2 = [
   
     {
     id: "mayflower_market_cold_storage_singapore_1983_pte_ltd_p544",
-    brandId: "mayflower_market_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Mayflower Market",
     locationType: "hawker_centre",
     locationContext: "Mayflower Market",
@@ -2015,7 +2015,7 @@ const PREMISES_2 = [
   },
       {
     id: "mayflower_market_mcdonald_s_restaurants_pte_ltd_p547",
-    brandId: "mayflower_market_mcdonald_s_restaurants_pte_ltd",
+    brandId: "mcd",
     label: "Mayflower Market",
     locationType: "hawker_centre",
     locationContext: "Mayflower Market",
@@ -2035,7 +2035,7 @@ const PREMISES_2 = [
   },
       {
     id: "ang_mo_kio_628_market_cold_storage_singapore_1983_pte_ltd_p550",
-    brandId: "ang_mo_kio_628_market_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Ang Mo Kio 628 Market",
     locationType: "hawker_centre",
     locationContext: "Ang Mo Kio 628 Market",
@@ -2055,7 +2055,7 @@ const PREMISES_2 = [
   },
       {
     id: "ang_mo_kio_628_market_mcdonald_s_restaurants_pte_ltd_p553",
-    brandId: "ang_mo_kio_628_market_mcdonald_s_restaurants_pte_ltd",
+    brandId: "mcd",
     label: "Ang Mo Kio 628 Market",
     locationType: "hawker_centre",
     locationContext: "Ang Mo Kio 628 Market",
@@ -2080,7 +2080,7 @@ const PREMISES_2 = [
   
   {
     id: "blk_724_ang_mo_kio_market_cold_storage_singapore_1983_pte_ltd_p560",
-    brandId: "blk_724_ang_mo_kio_market_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Blk 724 Ang Mo Kio Market",
     locationType: "hawker_centre",
     locationContext: "Blk 724 Ang Mo Kio Market",
@@ -2100,7 +2100,7 @@ const PREMISES_2 = [
   },
   {
     id: "bedok_north_street_1_blk_216_bengawan_solo_pte_ltd_p561",
-    brandId: "bedok_north_street_1_blk_216_bengawan_solo_pte_ltd",
+    brandId: "bengawan_solo",
     label: "Bedok North Street 1 Blk 216",
     locationType: "hawker_centre",
     locationContext: "Bedok North Street 1 Blk 216",
@@ -2120,7 +2120,7 @@ const PREMISES_2 = [
   },
   {
     id: "bedok_north_street_1_blk_216_domino_s_pizza_singapore_pte_ltd_p562",
-    brandId: "bedok_north_street_1_blk_216_domino_s_pizza_singapore_pte_ltd",
+    brandId: "dominos",
     label: "Bedok North Street 1 Blk 216",
     locationType: "hawker_centre",
     locationContext: "Bedok North Street 1 Blk 216",
@@ -2140,7 +2140,7 @@ const PREMISES_2 = [
   },
     {
     id: "bedok_north_street_1_blk_216_mcdonald_s_restaurants_pte_ltd_p564",
-    brandId: "bedok_north_street_1_blk_216_mcdonald_s_restaurants_pte_ltd",
+    brandId: "mcd",
     label: "Bedok North Street 1 Blk 216",
     locationType: "hawker_centre",
     locationContext: "Bedok North Street 1 Blk 216",
@@ -2180,7 +2180,7 @@ const PREMISES_2 = [
   },
       {
     id: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p568",
-    brandId: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Kaki Bukit 511 Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Kaki Bukit 511 Market and Food Centre",
@@ -2200,7 +2200,7 @@ const PREMISES_2 = [
   },
             {
     id: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd_p574",
-    brandId: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Bedok North Street 3 Blk 538",
     locationType: "hawker_centre",
     locationContext: "Bedok North Street 3 Blk 538",
@@ -2306,7 +2306,7 @@ const PREMISES_2 = [
   
   {
     id: "clementi_west_street_2_blk_726_cold_storage_singapore_1983_pte_ltd_p591",
-    brandId: "clementi_west_street_2_blk_726_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Clementi West Street 2 Blk 726",
     locationType: "hawker_centre",
     locationContext: "Clementi West Street 2 Blk 726",
@@ -2406,7 +2406,7 @@ const PREMISES_2 = [
   },
   {
     id: "kovan_hougang_market_and_food_centre_breadtalk_pte_ltd_p600",
-    brandId: "kovan_hougang_market_and_food_centre_breadtalk_pte_ltd",
+    brandId: "breadtalk",
     label: "Kovan Hougang Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Kovan Hougang Market and Food Centre",
@@ -2446,7 +2446,7 @@ const PREMISES_2 = [
   },
   {
     id: "kovan_hougang_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p602",
-    brandId: "kovan_hougang_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Kovan Hougang Market and Food Centre",
     locationType: "hawker_centre",
     locationContext: "Kovan Hougang Market and Food Centre",
@@ -2506,7 +2506,7 @@ const PREMISES_2 = [
   },
   {
     id: "hougang_105_hainanese_village_centre_bengawan_solo_pte_ltd_p606",
-    brandId: "hougang_105_hainanese_village_centre_bengawan_solo_pte_ltd",
+    brandId: "bengawan_solo",
     label: "Hougang 105 Hainanese Village Centre",
     locationType: "hawker_centre",
     locationContext: "Hougang 105 Hainanese Village Centre",
@@ -2526,7 +2526,7 @@ const PREMISES_2 = [
   },
   {
     id: "hougang_105_hainanese_village_centre_breadtalk_pte_ltd_p607",
-    brandId: "hougang_105_hainanese_village_centre_breadtalk_pte_ltd",
+    brandId: "breadtalk",
     label: "Hougang 105 Hainanese Village Centre",
     locationType: "hawker_centre",
     locationContext: "Hougang 105 Hainanese Village Centre",
@@ -2546,7 +2546,7 @@ const PREMISES_2 = [
   },
       {
     id: "jurong_west_hawker_centre_cold_storage_singapore_1983_pte_ltd_p611",
-    brandId: "jurong_west_hawker_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Jurong West Hawker Centre",
     locationType: "hawker_centre",
     locationContext: "Jurong West Hawker Centre",
@@ -2646,7 +2646,7 @@ const PREMISES_2 = [
   },
   {
     id: "ayer_rajah_market_cold_storage_singapore_1983_pte_ltd_p630",
-    brandId: "ayer_rajah_market_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Ayer Rajah Market",
     locationType: "hawker_centre",
     locationContext: "Ayer Rajah Market",
@@ -2666,7 +2666,7 @@ const PREMISES_2 = [
   },
   {
     id: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd_p631",
-    brandId: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd",
+    brandId: "dominos",
     label: "Ayer Rajah Market",
     locationType: "hawker_centre",
     locationContext: "Ayer Rajah Market",
@@ -2748,7 +2748,7 @@ const PREMISES_2 = [
   },
             {
     id: "one_punggol_hawker_centre_cold_storage_singapore_1983_pte_ltd_p653",
-    brandId: "one_punggol_hawker_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "One Punggol Hawker Centre",
     locationType: "hawker_centre",
     locationContext: "One Punggol Hawker Centre",
@@ -2788,7 +2788,7 @@ const PREMISES_2 = [
   },
     {
     id: "punggol_coast_hawker_centre_cold_storage_singapore_1983_pte_ltd_p663",
-    brandId: "punggol_coast_hawker_centre_cold_storage_singapore_1983_pte_ltd",
+    brandId: "cold_storage",
     label: "Punggol Coast Hawker Centre",
     locationType: "hawker_centre",
     locationContext: "Punggol Coast Hawker Centre",

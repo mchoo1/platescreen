@@ -16,10 +16,10 @@ not how the codebase works or how to talk about it.
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,748 |
+| Total brands | 1,716 — down from 1,748, see item 12 (32 duplicate SFA-licensee-suffix brands merged into their real existing brand, not lost data) |
 | Total premises | 4,683 |
-| Total menu items | 2,559 |
-| Menu items with ≥1 diet tag | 1,634 (63.9%) — up from 62.1% earlier same day, see item 9 below |
+| Total menu items | 2,562 |
+| Menu items with ≥1 diet tag | 1,652 (64.5%) — up from 63.9%, see items 9/11 below |
 | Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
 | Premises missing lat/lng | 0 |
 | Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
@@ -260,6 +260,42 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     Cold Storage/Giant/Sheng Siong/Don Don Donki, and a UI to actually
     display GroceryProduct data (none exists yet — these 19 rows aren't
     shown anywhere in the app), remain unstarted.
+11. ~~**Vegetarian tag backfill for "Vegetarian"-branded stalls**~~ — **Done
+    2026-09-02.** Closes the last open follow-on flagged in the 2026-09-01
+    halal audit (whether "Vegetarian"-branded Indian items should get a
+    `vegetarian` tag). Extended dataset-wide: 15 items across 11 explicitly
+    "Vegetarian"-named stalls tagged `['no_pork', 'vegetarian']` after
+    individual manual review. Full reasoning:
+    `reference/research-sessions/2026-09-02-vegetarian-tag-backfill-
+    branded-stalls.md`. The run that applied this change had its sandbox
+    shell become fully unresponsive partway through verification and left
+    it uncommitted; a later same-day interactive session (which also fixed
+    the recurring stale git-lock issue, see item 7) synced the mirror, ran
+    `tsc --noEmit` (clean) and the runtime integrity check (0 duplicate
+    ids, 0 orphaned brandIds, all 15 candidates confirmed tagged), and
+    committed it. Coverage: 63.9% → 64.5% (1,634 → 1,652 of 2,562
+    MenuItems — item count also grew slightly from other same-day research
+    task additions).
+12. ~~**Duplicate-brand cleanup (SFA-licensee-suffix brands)**~~ — **Done
+    2026-09-02.** A live audit found 60 Brand rows whose display name was
+    the raw SFA licensee/corporate name (e.g. "Mcdonald'S Restaurants Pte.
+    Ltd.", "Cold Storage Singapore (1983) Pte Ltd") rather than a real
+    trading name — 32 of these were exact duplicates of a chain that
+    already had its own proper Brand row elsewhere (`cold_storage` x16,
+    `mcd` x4, `bengawan_solo` x3, `pizza_hut` x2, `dominos` x2, `cheers`
+    x2, `breadtalk` x2, `kfc` x1), meaning the same real-world outlet was
+    represented twice under two different Brand ids. Merged all 32: their
+    single Premises row was repointed to the correct existing Brand id
+    (not duplicated), any MenuItems repointed the same way, and the 32
+    duplicate Brand rows deleted. Verified 0 duplicate ids and 0 orphaned
+    brandIds across Brands/Premises/MenuItems afterward, and confirmed
+    each target brand's premises/menuItem counts grew by exactly the
+    expected amount. The remaining ~28 "Pte Ltd"-named Brand rows were
+    reviewed but NOT merged — they don't match any existing brand (likely
+    genuine standalone businesses whose corporate name leaked into the
+    display name) and are left for a future display-name cleanup pass,
+    not a duplicate-merge one. Full reasoning: `reference/research-
+    sessions/2026-09-02-duplicate-brand-merge.md`.
 
 ## Not started, lower priority
 

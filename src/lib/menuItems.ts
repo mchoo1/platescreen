@@ -16980,7 +16980,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 55,
     fat: 12,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -16995,7 +16995,7 @@ export const MENU_ITEMS = [
     protein: 12,
     carbs: 58,
     fat: 14,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated"
   },
   {
@@ -18086,7 +18086,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 60,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -18101,7 +18101,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 60,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated"
   },
   {
@@ -19179,7 +19179,7 @@ export const MENU_ITEMS = [
     protein: 10,
     carbs: 65,
     fat: 17,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -19194,7 +19194,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 85,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated"
   },
   {
@@ -19997,7 +19997,7 @@ export const MENU_ITEMS = [
     protein: 18,
     carbs: 85,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -20012,7 +20012,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 85,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated"
   },
   {
@@ -20845,7 +20845,7 @@ export const MENU_ITEMS = [
     protein: 12,
     carbs: 58,
     fat: 14,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true
   },
@@ -22430,7 +22430,7 @@ export const MENU_ITEMS = [
     protein: 12,
     carbs: 58,
     fat: 14,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23500,7 +23500,7 @@ export const MENU_ITEMS = [
   },
   {
     id: "pr_bengawan_solo_pte_ltd_kueh_lapis",
-    brandId: "pasir_ris_central_hawker_centre_bengawan_solo_pte_ltd",
+    brandId: "bengawan_solo",
     name: "Kueh Lapis",
     emoji: "🍰",
     category: "Bakery/Dessert",
@@ -23643,7 +23643,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 55,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24648,7 +24648,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 75,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24858,7 +24858,7 @@ export const MENU_ITEMS = [
     protein: 10,
     carbs: 65,
     fat: 17,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24888,7 +24888,7 @@ export const MENU_ITEMS = [
     protein: 18,
     carbs: 70,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24993,7 +24993,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 55,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ['no_pork', 'vegetarian'],
     confidence: "estimated",
     isPopular: true,
   },
@@ -25477,7 +25477,7 @@ export const MENU_ITEMS = [
   { id: "arf_10", brandId: "ayer_rajah_food_centre_chit_chaat_chai", name: "Chaat", emoji: "🥙", category: "Indian", price: 5.0, calories: 320, protein: 10, carbs: 45, fat: 10, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
   { id: "arf_11", brandId: "ayer_rajah_food_centre_kush", name: "Skewer Rice Bowl", emoji: "🍢", category: "Local Hawker", price: 8.0, calories: 550, protein: 30, carbs: 55, fat: 20, confidence: "estimated" },
   { id: "arf_12", brandId: "ayer_rajah_food_centre_big_bern_s_american_grill_xpolis_pte_ltd", name: "Big Bern's Cheese Burger", emoji: "🍔", category: "Western", price: 12.0, calories: 680, protein: 32, carbs: 45, fat: 38, compatibleWith: ["no_pork"], confidence: "estimated" },
-  { id: "arf_13", brandId: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
+  { id: "arf_13", brandId: "dominos", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
 
   { id: "ccfc_1", brandId: "chomp_chomp_food_centre_ah_hock_fried_hokkien_noodles", name: "Fried Hokkien Mee", emoji: "🍜", category: "Noodles", price: 5.0, calories: 550, protein: 20, carbs: 60, fat: 22, confidence: "estimated" },
   { id: "ccfc_2", brandId: "chomp_chomp_food_centre_swee_heng_wanton_noodle", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
@@ -25515,8 +25515,8 @@ export const MENU_ITEMS = [
   { id: "bag_11", brandId: "kopitiam_cha_mu_lan_x", name: "Bubble Tea", emoji: "🧋", category: "Beverages", price: 5.0, calories: 320, protein: 2, carbs: 68, fat: 4, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 
   { id: "hg105_1", brandId: "hougang_105_hainanese_village_centre_bachmann_japanese_restaurant_pte_ltd", name: "Chicken Katsu", emoji: "🍗", category: "Japanese", price: 8.5, calories: 620, protein: 28, carbs: 55, fat: 28, compatibleWith: ["no_pork"], confidence: "estimated" },
-  { id: "hg105_2", brandId: "hougang_105_hainanese_village_centre_bengawan_solo_pte_ltd", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
-  { id: "hg105_3", brandId: "hougang_105_hainanese_village_centre_breadtalk_pte_ltd", name: "Pork Floss Bun", emoji: "🍞", category: "Bakery/Dessert", price: 2.2, calories: 240, protein: 8, carbs: 32, fat: 8, confidence: "estimated" },
+  { id: "hg105_2", brandId: "bengawan_solo", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "hg105_3", brandId: "breadtalk", name: "Pork Floss Bun", emoji: "🍞", category: "Bakery/Dessert", price: 2.2, calories: 240, protein: 8, carbs: 32, fat: 8, confidence: "estimated" },
   { id: "hg105_4", brandId: "hougang_105_hainanese_village_centre_he_he", name: "Min Jiang Kueh", emoji: "🥞", category: "Bakery/Dessert", price: 1.6, calories: 220, protein: 5, carbs: 32, fat: 8, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "hg105_5", brandId: "hougang_105_hainanese_village_centre_jiu_ji_shu_shi", name: "Mee Rebus", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 18, carbs: 55, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "hg105_6", brandId: "hougang_105_hainanese_village_centre_lorong_ah_soo_lor_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
@@ -25596,9 +25596,9 @@ export const MENU_ITEMS = [
   { id: "vp_9", brandId: "kopitiam_ain_popiah_basah", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4.0, calories: 320, protein: 6, carbs: 45, fat: 14, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "vp_10", brandId: "kopitiam_548_nonya_kueh", name: "Nonya Kueh", emoji: "🍥", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 3, carbs: 32, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 
-  { id: "bn216_1", brandId: "bedok_north_street_1_blk_216_bengawan_solo_pte_ltd", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
-  { id: "bn216_2", brandId: "bedok_north_street_1_blk_216_domino_s_pizza_singapore_pte_ltd", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
-  { id: "bn216_3", brandId: "bedok_north_street_1_blk_216_mcdonald_s_restaurants_pte_ltd", name: "Big Mac", emoji: "🍔", category: "Western", price: 7.2, calories: 550, protein: 25, carbs: 45, fat: 30, confidence: "estimated" },
+  { id: "bn216_1", brandId: "bengawan_solo", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "bn216_2", brandId: "dominos", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
+  { id: "bn216_3", brandId: "mcd", name: "Big Mac", emoji: "🍔", category: "Western", price: 7.2, calories: 550, protein: 25, carbs: 45, fat: 30, confidence: "estimated" },
   { id: "bn216_4", brandId: "bedok_north_street_1_blk_216_chris_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
   { id: "bn216_5", brandId: "bedok_north_street_1_blk_216_joo_chiat_chiap_kee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
   { id: "bn216_6", brandId: "bedok_north_street_1_blk_216_sin_ho", name: "Prawn Paste Chicken", emoji: "🍗", category: "Local Hawker", price: 5.5, calories: 480, protein: 26, carbs: 20, fat: 28, compatibleWith: ["no_pork"], confidence: "estimated" },
@@ -26070,6 +26070,9 @@ export const MENU_ITEMS = [
   { id: "fj_1", brandId: "food_junction_go_teppan_go", name: "Teppanyaki Bento", emoji: "🍱", category: "Japanese", price: 8, calories: 620, protein: 32, carbs: 60, fat: 24, confidence: "estimated" },
   { id: "fj_2", brandId: "food_junction_toast_junction", name: "Coffee & Toast", emoji: "☕", category: "Beverages", price: 3.5, calories: 320, protein: 8, carbs: 45, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "fj_3", brandId: "food_junction_fireyaki", name: "Fireyaki Grill Set", emoji: "🔥", category: "Japanese", price: 9.5, calories: 650, protein: 34, carbs: 40, fat: 32, confidence: "estimated" },
+  { id: "fj_4", brandId: "food_junction_ke_quench", name: "Coco Cloud", emoji: "🥥", category: "Drinks", price: 4.5, calories: 280, protein: 3, carbs: 40, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "fj_5", brandId: "food_junction_ke_quench", name: "Sea Salt Chendol", emoji: "🍧", category: "Desserts", price: 2.2, calories: 240, protein: 2, carbs: 46, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "fj_6", brandId: "food_junction_ke_quench", name: "Kopi Slush", emoji: "☕", category: "Drinks", price: 2.8, calories: 180, protein: 3, carbs: 30, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "csfc_1", brandId: "telok_ayer_food_centre_hock_go", name: "Char Kway Teow", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 550, protein: 15, carbs: 65, fat: 25, confidence: "estimated" },
   { id: "csfc_2", brandId: "telok_ayer_food_centre_tiffin_makan", name: "Korean Fried Chicken", emoji: "🍗", category: "Korean", price: 6.5, calories: 580, protein: 30, carbs: 40, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "tgs_1", brandId: "teck_ghee_square_steakgrill_steak_house", name: "Grilled Steak", emoji: "🥩", category: "Western", price: 9.0, calories: 650, protein: 40, carbs: 20, fat: 35, compatibleWith: ["no_pork"], confidence: "estimated" },

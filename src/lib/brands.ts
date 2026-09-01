@@ -3658,23 +3658,7 @@ export const BRANDS_2 = [
   
             
               
-  {
-    id: "yuhua_village_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-                    
+                      
   
         {
     id: "pasir_ris_central_hawker_centre_bee_cheng_hiang_concept_pte_ltd",
@@ -3692,87 +3676,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-    {
-    id: "pasir_ris_central_hawker_centre_bengawan_solo_pte_ltd",
-    name: "Bengawan Solo Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "bengawan solo pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "tampines_round_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-      {
-    id: "tampines_round_market_and_food_centre_kentucky_fried_chicken_management_pte_ltd",
-    name: "Kentucky Fried Chicken Management Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "kentucky fried chicken management pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-    {
-    id: "tampines_round_market_and_food_centre_pizza_hut_singapore_pte_ltd",
-    name: "Pizza Hut Singapore Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "pizza hut singapore pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "teban_gardens_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-    {
+                      {
     id: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd",
     name: "Barakath International Pte Ltd",
     emoji: "🍜",
@@ -3836,39 +3740,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-          {
-    id: "toa_payoh_lorong_4_blk_93_mcdonald_s_restaurants_pte_ltd",
-    name: "Mcdonald'S Restaurants Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "mcdonald's restaurants pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "toa_payoh_lorong_4_blk_93_pizza_hut_singapore_pte_ltd",
-    name: "Pizza Hut Singapore Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "pizza hut singapore pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-    {
+                {
     id: "kim_keat_palm_market_and_food_centre_chang_lai_pte_ltd",
     name: "Chang Lai Pte. Ltd.",
     emoji: "🍜",
@@ -3886,210 +3758,18 @@ export const BRANDS_2 = [
   },
           
   
-  {
-    id: "chong_boon_market_and_food_centre_cheers_holdings_2004_pte_ltd",
-    name: "Cheers Holdings (2004) Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cheers holdings (2004) pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  
-  {
-    id: "chong_boon_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  
-  
-  
-  {
-    id: "cheng_san_market_and_cooked_food_centre_cheers_holdings_2004_pte_ltd",
-    name: "Cheers Holdings (2004) Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cheers holdings (2004) pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  
-  {
-    id: "cheng_san_market_and_cooked_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  
-    {
-    id: "mayflower_market_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-      {
-    id: "mayflower_market_mcdonald_s_restaurants_pte_ltd",
-    name: "Mcdonald'S Restaurants Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "mcdonald's restaurants pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-      {
-    id: "ang_mo_kio_628_market_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-      {
-    id: "ang_mo_kio_628_market_mcdonald_s_restaurants_pte_ltd",
-    name: "Mcdonald'S Restaurants Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "mcdonald's restaurants pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
+    
     
   
   
+    
+    
+                          
   
   
-  {
-    id: "blk_724_ang_mo_kio_market_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bedok_north_street_1_blk_216_bengawan_solo_pte_ltd",
-    name: "Bengawan Solo Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "bengawan solo pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "bedok_north_street_1_blk_216_domino_s_pizza_singapore_pte_ltd",
-    name: "Domino'S Pizza Singapore Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "domino's pizza singapore pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-    {
-    id: "bedok_north_street_1_blk_216_mcdonald_s_restaurants_pte_ltd",
-    name: "Mcdonald'S Restaurants Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "mcdonald's restaurants pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+  
+  
+            {
     id: "bedok_north_street_1_blk_216_ntuc_club",
     name: "Ntuc Club",
     emoji: "🍜",
@@ -4105,39 +3785,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-      {
-    id: "kaki_bukit_511_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-            {
-    id: "bedok_north_street_3_blk_538_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-          {
+                            {
     id: "85_fengshan_centre_bangkok_street_mookata_pte_ltd",
     name: "Bangkok Street Mookata Pte. Ltd.",
     emoji: "🍜",
@@ -4207,23 +3855,7 @@ export const BRANDS_2 = [
   
   
   
-  {
-    id: "clementi_west_street_2_blk_726_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-    {
+      {
     id: "clementi_west_street_2_blk_726_new_century_food_house_721_pte_ltd",
     name: "New Century Food House @ 721 Pte. Ltd.",
     emoji: "🍜",
@@ -4287,23 +3919,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "kovan_hougang_market_and_food_centre_breadtalk_pte_ltd",
-    name: "Breadtalk Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "breadtalk pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "kovan_hougang_market_and_food_centre_chong_yo_private_limited",
     name: "Chong Yo Private Limited",
     emoji: "🍜",
@@ -4319,23 +3935,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "kovan_hougang_market_and_food_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+    {
     id: "hougang_105_hainanese_village_centre_anytime_food_pte_ltd",
     name: "Anytime Food Pte. Ltd.",
     emoji: "🍜",
@@ -4367,55 +3967,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "hougang_105_hainanese_village_centre_bengawan_solo_pte_ltd",
-    name: "Bengawan Solo Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "bengawan solo pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "hougang_105_hainanese_village_centre_breadtalk_pte_ltd",
-    name: "Breadtalk Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "breadtalk pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-      {
-    id: "jurong_west_hawker_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+            {
     id: "jurong_west_hawker_centre_golden_rooster_pte_ltd",
     name: "Golden Rooster Pte. Ltd.",
     emoji: "🍜",
@@ -4479,39 +4031,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-  {
-    id: "ayer_rajah_market_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
-    id: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd",
-    name: "Domino'S Pizza Singapore Pte. Ltd.",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "domino's pizza singapore pte. ltd."
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-  {
+      {
     id: "ayer_rajah_market_fei_siong_f_b_holdings_pte_ltd",
     name: "Fei Siong (F&B) Holdings Pte. Ltd.",
     emoji: "🍜",
@@ -4545,23 +4065,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-              {
-    id: "one_punggol_hawker_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-    {
+                  {
     id: "one_punggol_hawker_centre_haji_karim_prata_palace_pte_ltd",
     name: "Haji Karim Prata Palace Pte. Ltd.",
     emoji: "🍜",
@@ -4577,23 +4081,7 @@ export const BRANDS_2 = [
       "grab_go"
     ]
   },
-    {
-    id: "punggol_coast_hawker_centre_cold_storage_singapore_1983_pte_ltd",
-    name: "Cold Storage Singapore (1983) Pte Ltd",
-    emoji: "🍜",
-    type: "hawker",
-    cuisine: "Local & Hawker",
-    aliases: [
-      "cold storage singapore (1983) pte ltd"
-    ],
-    dietTags: [],
-    priceRange: "$",
-    platforms: [
-      "dine_in",
-      "grab_go"
-    ]
-  },
-          {
+              {
     id: "punggol_coast_hawker_centre_srisun_prata_com_food_holding_s_pte_ltd",
     name: "Srisun Prata . Com Food Holding'S Pte. Ltd.",
     emoji: "🍜",
