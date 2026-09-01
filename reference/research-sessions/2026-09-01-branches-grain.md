@@ -1,66 +1,77 @@
-# Premises backfill — Grain — 2026-09-01
+# 2026-09-01 — Grain: resolve Granary↔Grain SFA-licence ambiguity
 
-## Phase 1 selection
+**Brand:** `grain` (queue priority: medium, status stays `pending`)
 
-Deterministic selection (pending, priority-sorted, first-listed wins) picked **bonchon** (medium
-priority, first-listed). Re-checked it first: `list_connected_browsers` (Claude in Chrome) returned
-zero connected browsers, and the built-in Claude Browser pane denied navigation to both
-`bonchon.sg/find-us/` and a neutral control URL (`google.com`) — confirming the same
-unattended-session permission gate hit on 2026-08-22 (x2) and 2026-08-31 (x2). No new SFA Track
-Records xlsx export was found in the project or uploads folder either. Following the precedent
-already set in bonchon's own queue notes ("rather than repeat the exact same blocked attempt..."),
-pivoted to **grain** (the next medium-priority pending entry) instead, since it had an unexplored
-Option B angle (no browser dependency).
+## Context
 
-## What was found
+This is the third `platescreen-research-branches` run today (2026-09-01). The first
+two runs both attempted `bonchon` (the queue's first-listed medium-priority pending
+entry, per deterministic Phase 1 selection) and hit the same wall each time: zero
+connected Claude-in-Chrome browsers, and the built-in Claude Browser pane denying
+navigation even to a neutral control URL (google.com), confirming an unattended-session
+permission gate rather than a bonchon-specific block. This run re-verified that wall
+is still up (see bonchon's own `branchQueue.ts` notes for the by-now seven-times-repeated
+confirmation), then — following the precedent set by the last two runs — pivoted to a
+different pending entry rather than repeat an identical blocked attempt with no new
+information.
 
-`branchQueue.ts`'s "grain" entry was stale: it still read "still ALL false positives... needs the
-official source" from 2026-08-21, but a separate 2026-08-24 commit (`12b73e0`, an address/lat-lng
-pooling-bug-fix pass) had already quietly replaced the old `grain_p4` ("Multiple outlets
-islandwide", `legacy_static_coordinate`) placeholder with two real central-kitchen premises
-(`grain_media_circle`, `grain_tampines_north`, both `source: "web_research"`) — without updating
-this queue entry to reflect it.
+`grain`'s own notes (from earlier today) left one explicit next-step that did **not**
+require a browser: confirming or refuting whether "THE GRANARY PTE. LTD." (the SFA
+licensee found at 5 Burn Road #05-01, the same unit as Grain's own ACRA-registered
+address) is the same legal entity as "GRAIN PTE. LTD." or an unrelated tenant.
 
-Confirmed via `grain.com.sg/home` (fetched directly — nav/meta content is available even though the
-body is JS-rendered) that Grain is a delivery/catering-only "online restaurant": the site nav has
-no store-locator or "find us" link, only About / Grain Catering / Our stories / Jobs. This matches
-the brand's own copy elsewhere ("cloud kitchen model — utilizing unwanted real estate as kitchens")
-and is consistent with the two existing premises both being JTC shared-kitchen-space addresses
-rather than retail units. So there is no walk-in storefront network to enumerate for this brand —
-the "premises" here are production kitchens.
+## Method
 
-**New premises added:** `grain_burn_road` — 5 Burn Road #05-01, Tee Yih Jia Food Building,
-Singapore 369972. Source: ACRA (via opengovsg.com, a mirror of Singapore's official company
-register) shows "GRAIN PTE. LTD." (UEN 201332903E, SSIC 56200 Food Caterers, status: live) is
-registered at this exact address — a government source, admissible per this task's rules.
-Geocoded via OneMap (single sequential request, succeeded first try): lat 1.335246636625769,
-lng 103.885008398598.
+Used `WebSearch` + `web_fetch` (no browser needed) to check RecordOwl
+(recordowl.com/company/grain-pte-ltd), a Singapore business-registry aggregator that
+mirrors ACRA data — the same class of source as opengovsg.com, already treated as
+admissible in this queue's prior "acra_registered_address" entries.
 
-**Flagged, not resolved:** SFA's licensed-establishment dataset shows a food licence
-(`SE16186K000`) at the identical unit (#05-01, same building) held by a *different* company name,
-"THE GRANARY PTE. LTD." — could be a trading-name variant of Grain Pte Ltd, could be an unrelated
-tenant of the same unit at a different time. Not confirmed either way, so `sfa` was deliberately
-left `null` on the new row rather than attaching that licence on a name-coincidence basis.
+RecordOwl's company timeline for GRAIN PTE. LTD. (UEN 201332903E) explicitly lists:
 
-**Deliberately not added:** "Grain (Upper Weld Road)" (19 Upper Weld Road, S207376) — consistently
-named across foodpanda, GrabFood, FoodAdvisor, and Burpple, but all four are third-party
-delivery-platform/aggregator listings, not grain.com.sg itself or a government source, so not
-admissible under this task's sourcing rules even though the platforms are operationally likely to
-have the real kitchen address.
+> **Formerly known as:** The Granary
+
+This confirms "THE GRANARY PTE. LTD." is not a different company that happens to
+share the unit — it is the *same legal entity, under its pre-rename registered name*.
+The SFA licence (SE16186K000) issued to that name at 5 Burn Road #05-01 can therefore
+be confidently attached to the `grain_burn_road` premises row.
 
 ## Result
 
-Premises count for `grain`: 2 → 3. `branchQueue.ts` status kept as `pending` (coverage still not
-confirmed exhaustive — the Granary/Grain link and the Upper Weld Road lead remain open). Notes field
-rewritten with full method, what was verified, what was rejected, and what to try next. Bonchon's
-notes also updated to record today's repeat block (5th identical attempt) and the pivot rationale.
+- **Premises found:** 0 new (total remains 3: `grain_media_circle`, `grain_tampines_north`, `grain_burn_road`)
+- **Premises upgraded:** 1 — `grain_burn_road`'s `sfa` field changed from `null` to
+  `{ licenceNumber: "SE16186K000", licenseeName: "THE GRANARY PTE. LTD.", premisesAddress: "5 Burn Road #05-01, Tee Yih Jia Food Building, Singapore 369972" }`.
+  `grade` was deliberately left unset — the data.gov.sg `datastore_search` API call
+  needed to look it up requires a URL that has actually appeared in a prior
+  WebSearch/user-message result (a hand-constructed query URL was rejected by
+  `web_fetch`'s provenance check), and no search this run surfaced a working query
+  URL for this specific licence. Not fabricated.
+- **Geocoding:** unchanged (already geocoded in a prior run).
+- **Typecheck:** `npx tsc --noEmit` passes clean in a fresh sandboxed copy
+  (`npm install` + `tsc --noEmit`, no errors).
+- **Status:** stays `pending` — coverage is still not confirmed exhaustive. Two open
+  items remain, both requiring a browser or a first-party source not yet found:
+  1. `grain.com.sg`'s own site is JS-rendered; plain fetch only returns nav/meta, not
+     body content, so it hasn't been checked for additional kitchen mentions.
+  2. "Grain (Upper Weld Road)" is repeated consistently across delivery-platform
+     listings (foodpanda, GrabFood, FoodAdvisor, Burpple) but has no first-party or
+     government-source confirmation, so it remains unadded per this task's sourcing
+     rules.
 
-## Verification
+## Next run
 
-Copied the project (excluding `node_modules`, `.next`, `out`, `.git`, `reference`) to a sandbox
-directory, ran `npm install` (55 packages) and `npx tsc --noEmit` — exit code 0, no errors.
+- If Claude in Chrome or the built-in Claude Browser pane becomes available (i.e. the
+  unattended-session gate lifts, or a human runs this interactively), check
+  `grain.com.sg` directly for additional kitchen mentions, and try to independently
+  verify the Upper Weld Road address via a first-party source before adding it.
+- Optionally, if a future WebSearch surfaces a working `data.gov.sg` `datastore_search`
+  query URL for licence SE16186K000, fetch it to fill in the `grade` field.
+- `bonchon` remains the deterministic first pick for Phase 1 selection once a browser
+  is available again — its notes document 4 candidate malls (PLQ Mall, Compass One,
+  Wisma Atria, Hillion Mall) awaiting first-party confirmation via
+  `bonchon.sg/find-us/`.
 
-## Status
+## Commit
 
-Partial run — grain remains `pending` (3/3+ premises, coverage not confirmed complete). Committed
-locally, not pushed.
+`git commit -m "Premises: extend grain (confirm Granary↔Grain SFA link)"` — not pushed,
+per task rules.

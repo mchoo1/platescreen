@@ -80261,7 +80261,11 @@ export const PREMISES_13 = [
     postal: "369972",
     lat: 1.335246636625769,
     lng: 103.885008398598,
-    sfa: null,
+    sfa: {
+      licenceNumber: "SE16186K000",
+      licenseeName: "THE GRANARY PTE. LTD.",
+      premisesAddress: "5 Burn Road #05-01, Tee Yih Jia Food Building, Singapore 369972"
+    },
     source: "acra_registered_address"
   },
 ];
