@@ -193,6 +193,27 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    commit to doing it (needs a visual-identification workflow this session
    doesn't have) or explicitly accept those ~12 brands as permanently out of
    scope for menu coverage.
+7b. **2026-09-02 update (partial unblock)**: this session had the in-app
+   Browser pane actually connected (unlike every automated
+   `platescreen-research-branches` run to date, which is unattended and
+   has repeatedly hit a "zero connected browsers" wall — see item 7's
+   git-lock note for the same class of unattended-session limitation).
+   Used it to resolve two stuck `branchQueue.ts` entries: `bonchon`
+   (checked all 5 candidate malls' own official directories directly —
+   PLQ, Compass One, Wisma Atria, Hillion Mall, Northpoint City — zero
+   hits on all 5, directly contradicting an aggregator-sourced "5 active
+   locations" claim; real footprint may genuinely just be the 1 confirmed
+   Bugis+ outlet) and `dosirak` (Suntec City's B1-172 is "Bibim Deli", not
+   Dosirak; 313@Somerset's full-catalog search returns zero for both
+   "Dosirak" and "Bibim" — both leads now resolved-negative). No new
+   Premises rows added, but both entries went from "blocked, needs a
+   browser" to "leads exhausted, browser used." bonchon.sg itself remains
+   blocked even with a connected browser (site-specific, not the general
+   gate). Full writeup: `reference/research-sessions/2026-09-02-bonchon-
+   dosirak-browser-unblock.md`. This suggests item 8's Google Maps/Street
+   View escalation (and the branchQueue's other browser-dependent leads)
+   may also be workable in a future interactive session — worth trying
+   directly rather than assuming it's permanently out of scope.
 9. ~~**Diet-tag coverage decision**~~ — **Done 2026-09-01** (commit
    `e4ee1fa`). Classified all 1,234 untagged MenuItems against CLAUDE.md
    5.1's exact rules: 42% were correctly untagged (skip-list or pork/offal-
