@@ -2746,7 +2746,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 38,
     fat: 9,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -2761,7 +2761,7 @@ export const MENU_ITEMS = [
     protein: 8,
     carbs: 33,
     fat: 2,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -2776,7 +2776,7 @@ export const MENU_ITEMS = [
     protein: 9,
     carbs: 32,
     fat: 2,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -2842,7 +2842,7 @@ export const MENU_ITEMS = [
     protein: 39,
     carbs: 70,
     fat: 44,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -2857,7 +2857,7 @@ export const MENU_ITEMS = [
     protein: 43,
     carbs: 68,
     fat: 43,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -2923,7 +2923,7 @@ export const MENU_ITEMS = [
     protein: 41,
     carbs: 50,
     fat: 48,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -3715,7 +3715,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 124,
     fat: 48,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -4636,7 +4636,7 @@ export const MENU_ITEMS = [
     protein: 16.9,
     carbs: 28.4,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -4650,7 +4650,7 @@ export const MENU_ITEMS = [
     protein: 17.8,
     carbs: 35.1,
     fat: 21.9,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -4665,7 +4665,7 @@ export const MENU_ITEMS = [
     protein: 19.4,
     carbs: 37.6,
     fat: 33,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -4679,7 +4679,7 @@ export const MENU_ITEMS = [
     protein: 17.5,
     carbs: 44.1,
     fat: 13.5,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -4693,7 +4693,7 @@ export const MENU_ITEMS = [
     protein: 23,
     carbs: 28,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -5410,7 +5410,7 @@ export const MENU_ITEMS = [
     protein: 41,
     carbs: 63,
     fat: 42,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -5425,7 +5425,7 @@ export const MENU_ITEMS = [
     protein: 44,
     carbs: 62,
     fat: 29,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -5439,7 +5439,7 @@ export const MENU_ITEMS = [
     protein: 83,
     carbs: 98,
     fat: 47,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -5454,7 +5454,7 @@ export const MENU_ITEMS = [
     protein: 42,
     carbs: 100,
     fat: 31,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -5572,7 +5572,7 @@ export const MENU_ITEMS = [
     protein: 13,
     carbs: 29,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -5634,7 +5634,7 @@ export const MENU_ITEMS = [
     protein: 48,
     carbs: 8,
     fat: 38,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -7492,7 +7492,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 90,
     fat: 48,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -7507,7 +7507,7 @@ export const MENU_ITEMS = [
     protein: 43,
     carbs: 91,
     fat: 47,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -7521,7 +7521,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 100,
     fat: 47,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -7536,7 +7536,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 134,
     fat: 41,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -7610,7 +7610,7 @@ export const MENU_ITEMS = [
     protein: 40,
     carbs: 44,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -7833,7 +7833,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 121,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -7848,7 +7848,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 123,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -7862,7 +7862,7 @@ export const MENU_ITEMS = [
     protein: 23,
     carbs: 112,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -8022,7 +8022,7 @@ export const MENU_ITEMS = [
     protein: 29,
     carbs: 92,
     fat: 21,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -8037,7 +8037,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 122,
     fat: 27,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -8051,7 +8051,7 @@ export const MENU_ITEMS = [
     protein: 33,
     carbs: 88,
     fat: 17,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -8066,7 +8066,7 @@ export const MENU_ITEMS = [
     protein: 39,
     carbs: 95,
     fat: 34,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -8158,7 +8158,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 4,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -8236,7 +8236,7 @@ export const MENU_ITEMS = [
     protein: 31,
     carbs: 17,
     fat: 39,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -8251,7 +8251,7 @@ export const MENU_ITEMS = [
     protein: 27,
     carbs: 14,
     fat: 8,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -10476,7 +10476,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 38,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -10698,7 +10698,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 22,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -10713,7 +10713,7 @@ export const MENU_ITEMS = [
     protein: 20,
     carbs: 22,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -10728,7 +10728,7 @@ export const MENU_ITEMS = [
     protein: 24,
     carbs: 36,
     fat: 12,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -10743,7 +10743,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 38,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -11210,7 +11210,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 20,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -14227,7 +14227,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 88,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -14242,7 +14242,7 @@ export const MENU_ITEMS = [
     protein: 34,
     carbs: 78,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -14257,7 +14257,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 75,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -15936,7 +15936,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -15979,7 +15979,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -15994,7 +15994,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 55,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -16008,7 +16008,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16023,7 +16023,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -16081,7 +16081,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16096,7 +16096,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 60,
     fat: 28,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16198,7 +16198,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 65,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16213,7 +16213,7 @@ export const MENU_ITEMS = [
     protein: 20,
     carbs: 20,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -16242,7 +16242,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16257,7 +16257,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 30,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16286,7 +16286,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 50,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16347,7 +16347,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 30,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16362,7 +16362,7 @@ export const MENU_ITEMS = [
     protein: 40,
     carbs: 30,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16406,7 +16406,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16435,7 +16435,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 40,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -16449,7 +16449,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 45,
     fat: 12,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16494,7 +16494,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16541,7 +16541,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16556,7 +16556,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16600,7 +16600,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16615,7 +16615,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 60,
     fat: 28,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16756,7 +16756,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16771,7 +16771,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 20,
     fat: 14,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16864,7 +16864,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16922,7 +16922,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 30,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16937,7 +16937,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 20,
     fat: 14,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -16951,7 +16951,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -16966,7 +16966,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -17009,7 +17009,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17024,7 +17024,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 55,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -17038,7 +17038,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17053,7 +17053,7 @@ export const MENU_ITEMS = [
     protein: 10,
     carbs: 15,
     fat: 14,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated"
   },
   {
@@ -17067,7 +17067,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17271,7 +17271,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -17387,7 +17387,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 20,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17402,7 +17402,7 @@ export const MENU_ITEMS = [
     protein: 20,
     carbs: 25,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -17416,7 +17416,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 15,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17431,7 +17431,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 15,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -17474,7 +17474,7 @@ export const MENU_ITEMS = [
     protein: 18,
     carbs: 35,
     fat: 6,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17503,7 +17503,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17532,7 +17532,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 55,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17590,7 +17590,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17663,7 +17663,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17751,7 +17751,7 @@ export const MENU_ITEMS = [
     protein: 10,
     carbs: 65,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated"
   },
   {
@@ -17809,7 +17809,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 10,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17896,7 +17896,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 50,
     fat: 28,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17926,7 +17926,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 30,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -17941,7 +17941,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -18057,7 +18057,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 55,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18130,7 +18130,7 @@ export const MENU_ITEMS = [
     protein: 40,
     carbs: 25,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18174,7 +18174,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18203,7 +18203,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 15,
     fat: 12,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18277,7 +18277,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18335,7 +18335,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 55,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18583,7 +18583,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 75,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18598,7 +18598,7 @@ export const MENU_ITEMS = [
     protein: 9,
     carbs: 32,
     fat: 12,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated"
   },
   {
@@ -18612,7 +18612,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18627,7 +18627,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -18656,7 +18656,7 @@ export const MENU_ITEMS = [
     protein: 10,
     carbs: 65,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated"
   },
   {
@@ -18685,7 +18685,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18729,7 +18729,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18744,7 +18744,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -18845,7 +18845,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 35,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -18918,7 +18918,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19019,7 +19019,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 25,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19034,7 +19034,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19048,7 +19048,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19063,7 +19063,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -19077,7 +19077,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19092,7 +19092,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -19165,7 +19165,7 @@ export const MENU_ITEMS = [
     protein: 10,
     carbs: 18,
     fat: 6,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19223,7 +19223,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19281,7 +19281,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 4,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19296,7 +19296,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 15,
     fat: 12,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19310,7 +19310,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 20,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19325,7 +19325,7 @@ export const MENU_ITEMS = [
     protein: 36,
     carbs: 32,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19426,7 +19426,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 20,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19441,7 +19441,7 @@ export const MENU_ITEMS = [
     protein: 36,
     carbs: 32,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19455,7 +19455,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 35,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19470,7 +19470,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 25,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19646,7 +19646,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19719,7 +19719,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 30,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated"
   },
   {
@@ -19791,7 +19791,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 30,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19821,7 +19821,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 6,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19836,7 +19836,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 8,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated"
   },
   {
@@ -19850,7 +19850,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -19894,7 +19894,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 60,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20055,7 +20055,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20158,7 +20158,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20277,7 +20277,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20322,7 +20322,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 25,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20337,7 +20337,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20560,7 +20560,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20620,7 +20620,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20635,7 +20635,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 55,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20695,7 +20695,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 25,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20725,7 +20725,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20740,7 +20740,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 40,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20800,7 +20800,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 10,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20815,7 +20815,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 55,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20860,7 +20860,7 @@ export const MENU_ITEMS = [
     protein: 18,
     carbs: 55,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20875,7 +20875,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20905,7 +20905,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 15,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -20995,7 +20995,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21025,7 +21025,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 10,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21040,7 +21040,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 55,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21130,7 +21130,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21279,7 +21279,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 45,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21428,7 +21428,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 10,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21518,7 +21518,7 @@ export const MENU_ITEMS = [
     protein: 22,
     carbs: 45,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21578,7 +21578,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21593,7 +21593,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 15,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21728,7 +21728,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21758,7 +21758,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21773,7 +21773,7 @@ export const MENU_ITEMS = [
     protein: 40,
     carbs: 30,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21788,7 +21788,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 15,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21803,7 +21803,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 15,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true
   },
@@ -21833,7 +21833,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true
   },
@@ -22012,7 +22012,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22117,7 +22117,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22162,7 +22162,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22207,7 +22207,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 45,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22281,7 +22281,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 25,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22326,7 +22326,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22460,7 +22460,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22625,7 +22625,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 8,
     fat: 11,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22670,7 +22670,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 55,
     fat: 32,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -22940,7 +22940,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23104,7 +23104,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23209,7 +23209,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 15,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23284,7 +23284,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23314,7 +23314,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23374,7 +23374,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 50,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23449,7 +23449,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 30,
     fat: 24,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23599,7 +23599,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 55,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23673,7 +23673,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 65,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23763,7 +23763,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 60,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23853,7 +23853,7 @@ export const MENU_ITEMS = [
     protein: 35,
     carbs: 55,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23898,7 +23898,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 58,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -23958,7 +23958,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 20,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24018,7 +24018,7 @@ export const MENU_ITEMS = [
     protein: 36,
     carbs: 32,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24123,7 +24123,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24243,7 +24243,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24258,7 +24258,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 10,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24288,7 +24288,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24333,7 +24333,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 8,
     fat: 11,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24348,7 +24348,7 @@ export const MENU_ITEMS = [
     protein: 26,
     carbs: 55,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24378,7 +24378,7 @@ export const MENU_ITEMS = [
     protein: 14,
     carbs: 8,
     fat: 11,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24528,7 +24528,7 @@ export const MENU_ITEMS = [
     protein: 38,
     carbs: 60,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24558,7 +24558,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 15,
     fat: 18,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24603,7 +24603,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24663,7 +24663,7 @@ export const MENU_ITEMS = [
     protein: 32,
     carbs: 55,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24678,7 +24678,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 25,
     fat: 10,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24708,7 +24708,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 58,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24813,7 +24813,7 @@ export const MENU_ITEMS = [
     protein: 18,
     carbs: 55,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "vegetarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24873,7 +24873,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 60,
     fat: 22,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24918,7 +24918,7 @@ export const MENU_ITEMS = [
     protein: 25,
     carbs: 60,
     fat: 15,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24963,7 +24963,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 58,
     fat: 20,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -24978,7 +24978,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -25038,7 +25038,7 @@ export const MENU_ITEMS = [
     protein: 30,
     carbs: 58,
     fat: 26,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -25113,7 +25113,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 63,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -25173,7 +25173,7 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 50,
     fat: 16,
-    compatibleWith: [],
+    compatibleWith: ["no_pork", "pescatarian"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -25218,7 +25218,7 @@ export const MENU_ITEMS = [
     protein: 36,
     carbs: 40,
     fat: 30,
-    compatibleWith: [],
+    compatibleWith: ["no_pork"],
     confidence: "estimated",
     isPopular: true,
   },
@@ -25237,7 +25237,7 @@ export const MENU_ITEMS = [
   { id: "yp_13", brandId: "timbre_yishun_park_lao_fu_jia", name: "Herbal Soup", emoji: "🍲", category: "Local Hawker", price: 6, calories: 380, protein: 26, carbs: 12, fat: 22, confidence: "estimated" },
   { id: "yp_14", brandId: "timbre_yishun_park_jj_prawn_noodles", name: "Prawn Mee", emoji: "🍜", category: "Noodles", price: 5.5, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated" },
   { id: "yp_15", brandId: "timbre_yishun_park_li_fang_congee", name: "Pork Congee", emoji: "🥣", category: "Seafood", price: 4.5, calories: 300, protein: 18, carbs: 38, fat: 7, confidence: "estimated" },
-  { id: "yp_16", brandId: "timbre_yishun_park_xinlongxing_modern_tze_char", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, confidence: "estimated" },
+  { id: "yp_16", brandId: "timbre_yishun_park_xinlongxing_modern_tze_char", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
   { id: "yp_17", brandId: "timbre_yishun_park_phawo_thai_food", name: "Pad Thai", emoji: "🍜", category: "Thai", price: 5.5, calories: 500, protein: 18, carbs: 65, fat: 16, confidence: "estimated" },
   { id: "yp_18", brandId: "timbre_yishun_park_taliwang", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "yp_19", brandId: "timbre_yishun_park_smokin_joe", name: "Charcoal Grilled Pork Steak", emoji: "🥩", category: "Western", price: 9.0, calories: 520, protein: 38, carbs: 15, fat: 32, confidence: "estimated" },
@@ -25289,7 +25289,7 @@ export const MENU_ITEMS = [
   { id: "avfc_14", brandId: "alexandra_village_food_centre_lye_bo_toss_noodle", name: "Char Siew Noodles", emoji: "🍜", category: "Chinese Roast", price: 5.0, calories: 460, protein: 22, carbs: 55, fat: 14, confidence: "estimated" },
   { id: "avfc_15", brandId: "alexandra_village_food_centre_pu_tian_delights", name: "Putian Fried Bee Hoon", emoji: "🍜", category: "Local Hawker", price: 4.5, calories: 420, protein: 14, carbs: 58, fat: 14, confidence: "estimated" },
   { id: "avfc_16", brandId: "alexandra_village_food_centre_lau_phua_chay_authentic_roasted_delicacies", name: "Teochew Roast Duck", emoji: "🦆", category: "Chinese Roast", price: 6.0, calories: 480, protein: 28, carbs: 20, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
-  { id: "avfc_17", brandId: "alexandra_village_food_centre_tai_liok_claypot_chicken_rice", name: "Claypot Chicken Rice", emoji: "🍚", category: "Chicken Rice/Poultry", price: 6.5, calories: 600, protein: 28, carbs: 68, fat: 20, confidence: "estimated" },
+  { id: "avfc_17", brandId: "alexandra_village_food_centre_tai_liok_claypot_chicken_rice", name: "Claypot Chicken Rice", emoji: "🍚", category: "Chicken Rice/Poultry", price: 6.5, calories: 600, protein: 28, carbs: 68, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "avfc_18", brandId: "alexandra_village_food_centre_tiong_bahru_lien_fa_shui_jing_pau", name: "Teochew Crystal Dumpling", emoji: "🥟", category: "Dim Sum", price: 4.5, calories: 320, protein: 10, carbs: 45, fat: 10, confidence: "estimated" },
   { id: "avfc_19", brandId: "alexandra_village_food_centre_star_yong_kwang_bbq_seafood", name: "Hotplate BBQ Stingray", emoji: "🐟", category: "Seafood", price: 14.0, calories: 420, protein: 32, carbs: 12, fat: 24, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
   { id: "avfc_20", brandId: "alexandra_village_food_centre_old_punggol_satay", name: "Satay", emoji: "🍢", category: "Local Hawker", price: 6, calories: 375, protein: 30, carbs: 20, fat: 18, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
@@ -25619,7 +25619,7 @@ export const MENU_ITEMS = [
   { id: "cgh_2", brandId: "kopitiam_amiba_mixed_rice", name: "Economical Rice", emoji: "🍱", category: "Local Hawker", price: 4.5, calories: 500, protein: 22, carbs: 60, fat: 18, confidence: "estimated" },
   { id: "cgh_3", brandId: "kopitiam_bake_inc", name: "Bread", emoji: "🍞", category: "Bakery/Dessert", price: 2.5, calories: 250, protein: 6, carbs: 42, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "cgh_4", brandId: "kopitiam_filipino_cuisine", name: "Lechon Kawali", emoji: "🍖", category: "Filipino", price: 8.5, calories: 620, protein: 30, carbs: 15, fat: 45, confidence: "estimated" },
-  { id: "cgh_5", brandId: "kopitiam_crowded_salad_bowl", name: "Salad", emoji: "🥗", category: "Local Hawker", price: 6.0, calories: 280, protein: 12, carbs: 20, fat: 16, confidence: "estimated" },
+  { id: "cgh_5", brandId: "kopitiam_crowded_salad_bowl", name: "Salad", emoji: "🥗", category: "Local Hawker", price: 6.0, calories: 280, protein: 12, carbs: 20, fat: 16, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "cgh_6", brandId: "kopitiam_monster_chili_nasi_lemak", name: "Nasi Lemak", emoji: "🍛", category: "Indonesian/Malay", price: 4.5, calories: 530, protein: 18, carbs: 62, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "cgh_7", brandId: "kopitiam_malay_kueh", name: "Epok-Epok", emoji: "🥟", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 4, carbs: 22, fat: 8, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "cgh_8", brandId: "kopitiam_heyya_duck_rice", name: "Duck Rice", emoji: "🍚", category: "Chinese Roast", price: 5.0, calories: 520, protein: 26, carbs: 60, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
@@ -25631,7 +25631,7 @@ export const MENU_ITEMS = [
   { id: "pg639_5", brandId: "kopitiam_ak_sait_restaurant", name: "Nasi Briyani", emoji: "🍛", category: "Indian", price: 5.5, calories: 600, protein: 25, carbs: 75, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "pg639_6", brandId: "kopitiam_kimly_dim_sum", name: "Dim Sum", emoji: "🥟", category: "Dim Sum", price: 4, calories: 320, protein: 10, carbs: 42, fat: 10, confidence: "estimated" },
   { id: "pg639_7", brandId: "kopitiam_ming_xiang_food", name: "Wanton Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
-  { id: "pg639_8", brandId: "kopitiam_shang_ke_pte_ltd", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, confidence: "estimated" },
+  { id: "pg639_8", brandId: "kopitiam_shang_ke_pte_ltd", name: "Seafood White Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.5, calories: 480, protein: 28, carbs: 50, fat: 16, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
   { id: "pg639_9", brandId: "kopitiam_he_jia_food", name: "Salted Egg Fried Chicken", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.5, calories: 580, protein: 30, carbs: 30, fat: 35, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "jwc679_1", brandId: "kopitiam_nks_indian_muslim_food", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.2, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
   { id: "jwc679_2", brandId: "kopitiam_hong_kong_street_old_chun_kee", name: "Curry Fish head", emoji: "🐟", category: "Seafood", price: 12, calories: 550, protein: 40, carbs: 30, fat: 30, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
@@ -25806,7 +25806,7 @@ export const MENU_ITEMS = [
   { id: "hdmfc_2", brandId: "holland_drive_market_and_food_centre_lao_chen_ji", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "hdmfc_3", brandId: "holland_drive_market_and_food_centre_leong_wee_roasted_delight", name: "Roasted Meats", emoji: "🍖", category: "Chinese Roast", price: 6.5, calories: 560, protein: 30, carbs: 20, fat: 36, confidence: "estimated" },
   { id: "hdmfc_4", brandId: "holland_drive_market_and_food_centre_shimas_kitchen", name: "Nasi Padang", emoji: "🍛", category: "Indonesian/Malay", price: 5.5, calories: 580, protein: 24, carbs: 62, fat: 24, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
-  { id: "hdmfc_5", brandId: "holland_drive_market_and_food_centre_yap_kee_wanton_egg_noodles", name: "Wanton Egg Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, confidence: "estimated" },
+  { id: "hdmfc_5", brandId: "holland_drive_market_and_food_centre_yap_kee_wanton_egg_noodles", name: "Wanton Egg Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 420, protein: 18, carbs: 55, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "hdmfc_6", brandId: "holland_drive_market_and_food_centre_cheng_heng_kway_chap_and_braised_duck_rice", name: "Duck Set Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 6, calories: 520, protein: 26, carbs: 45, fat: 24, confidence: "estimated" },
   { id: "ppfc_1", brandId: "peoples_park_food_centre_yong_xiang_xing_dou_fu", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "ppfc_2", brandId: "peoples_park_food_centre_bai_nian_niang_dou_foo", name: "Yong Tau Foo", emoji: "🍲", category: "Chicken Rice/Poultry", price: 4.5, calories: 380, protein: 22, carbs: 45, fat: 10, compatibleWith: ["no_pork"], confidence: "estimated" },
