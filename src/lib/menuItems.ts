@@ -26287,4 +26287,47 @@ export const MENU_ITEMS = [
   { id: "cyf_tomato_prawn_paste_noodle", brandId: "kopitiam_culiang_yufen", name: "Tomato Prawn Paste Rice Noodle", emoji: "🍜", category: "Seafood", price: 10.7, calories: 440, protein: 22, carbs: 48, fat: 15, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
   { id: "cyf_sauerkraut_sliced_fish_rice", brandId: "kopitiam_culiang_yufen", name: "Sauerkraut Sliced Fish Soup With Rice", emoji: "🍚", category: "Seafood", price: 11.6, calories: 460, protein: 30, carbs: 50, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated", isPopular: true },
   { id: "cyf_glutinous_rice_cake", brandId: "kopitiam_culiang_yufen", name: "Glutinous Rice Cake", emoji: "🍘", category: "Dim Sum", price: 5.5, calories: 230, protein: 4, carbs: 36, fat: 8, compatibleWith: [], confidence: "estimated" },
+
+  // --- 2026-09-01: swensen_s (queue entry "swensen_s", brand-new, no prior notes) ---
+  // No official Swensen's SG nutrition source found (swensens.com.sg's own PDF menu
+  // (wp-content/uploads/2024/06/swensens-menu.pdf) has no calorie/macro data, and no HPB
+  // Healthier Choice Symbol entry exists for this outlet — HCS covers packaged retail
+  // products, not restaurant menu items). Dish names and prices sourced from two
+  // independent third-party menu-price listings (singaporerestaurantshub.com/swensens-menu-prices,
+  // cross-checked against a WebSearch snippet quoting the official swensens-menu.pdf's own
+  // Southern Style Chicken 'n' Waffle price of $16.90 and Golden Classics $17.90-$18.90 range,
+  // which matched exactly) plus foodpanda outlet listings (Plaza Singapura/Junction 8/Bedok/
+  // Compass One) independently confirming the Sourdough 49ers Chicken and Bagus Impossible
+  // Burger item descriptions. A separate menu-price aggregator (thefoodprices.com) was checked
+  // and rejected as a source — its "calories" column was suspiciously uniform (every value a
+  // multiple of 50) and several unrelated items shared identical odd price endings, consistent
+  // with fabricated/templated content rather than a real scrape; not used for names, prices, or
+  // macros. No macro source exists for any item, so every item's calories/protein/carbs/fat is a
+  // reasoned estimate (confidence "estimated" throughout, none "verified"), calibrated against
+  // this project's own existing entries for comparable dishes: astons_chicken_chop /
+  // astons_fish_chips (à la carte Western-casual baselines), kopitiam_beradik_western's Chicken
+  // Chop/Fish & Chips (same baselines scaled up for a bundled-sides "set" plate, which is how
+  // Swensen's own menu describes its sandwiches/golden-classics as served — "with fries and
+  // coleslaw"), ss_shackburger/ss_double_shackburger (double beef patty burger baseline), and
+  // saiz_caesar_salad (plain Caesar baseline, scaled up with an added breaded-chicken portion).
+  // The Bagus Impossible Burger's patty macros are calibrated against Impossible Foods' own
+  // published per-patty nutrition (~240 kcal/19g protein/9g carbs/17g fat for a standard 113g
+  // patty), a well-documented public figure, plus a brioche bun and sauce/onion estimate.
+  // dietTags/compatibleWith: Swensen's Singapore is MUIS halal-certified (confirmed via multiple
+  // independent per-outlet halalboleh.com listings, e.g. VivoCity/Junction 8/Parkway Parade —
+  // not a single unconfirmed claim), so "halal" is applied at Brand level (matching the existing
+  // mcd/kfc/burger_king/subway pattern) and to every MenuItem below, same as mcd's Big Mac.
+  // No Premises added this run — no verifiable, geocodable outlet address was confirmed without
+  // browser tooling (blocked in this unattended session, see researchQueue.ts's kopitiam entry
+  // notes for the same finding today); foodpanda confirms real outlets exist at Plaza Singapura,
+  // Junction 8, Bedok, and Compass One among others, but exact unit addresses + lat/lng need a
+  // future pass with browser/OneMap access. See reference/research-sessions/2026-09-01-swensen_s.md.
+  { id: "swensens_sourdough_49ers_chicken", brandId: "swensen_s", name: "Sourdough 49ers Chicken", emoji: "🥪", category: "Sandwiches", price: 16.9, calories: 750, protein: 42, carbs: 60, fat: 38, compatibleWith: ["halal"], confidence: "estimated", isPopular: true },
+  { id: "swensens_classic_ultra_burger", brandId: "swensen_s", name: "Classic Ultra Burger", emoji: "🍔", category: "Burgers", price: 17.9, calories: 780, protein: 40, carbs: 48, fat: 46, compatibleWith: ["halal"], confidence: "estimated", isPopular: true },
+  { id: "swensens_bagus_impossible_burger", brandId: "swensen_s", name: "Bagus Impossible™ Burger", emoji: "🍔", category: "Burgers", price: 17.9, calories: 560, protein: 26, carbs: 55, fat: 28, compatibleWith: ["vegetarian", "halal"], confidence: "estimated" },
+  { id: "swensens_fish_and_chips", brandId: "swensen_s", name: "Fish & Chips", emoji: "🐟", category: "Seafood", price: 17.9, calories: 700, protein: 27, carbs: 62, fat: 34, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "swensens_chicken_baked_rice", brandId: "swensen_s", name: "Chicken Baked Rice", emoji: "🍚", category: "Rice", price: 15.9, calories: 680, protein: 30, carbs: 78, fat: 26, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "swensens_caesar_salad_breaded_chicken", brandId: "swensen_s", name: "Caesar Salad with Breaded Chicken", emoji: "🥗", category: "Salads", price: 14.9, calories: 520, protein: 28, carbs: 32, fat: 32, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "swensens_spice_n_chic", brandId: "swensen_s", name: "Spice 'n' Chic", emoji: "🍗", category: "Sides", price: 10.9, calories: 480, protein: 24, carbs: 32, fat: 28, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "swensens_southern_style_chicken_waffle", brandId: "swensen_s", name: "Southern Style Chicken 'n' Waffle", emoji: "🧇", category: "Breakfast", price: 16.9, calories: 820, protein: 34, carbs: 78, fat: 40, compatibleWith: ["halal"], confidence: "estimated", isPopular: true },
 ];

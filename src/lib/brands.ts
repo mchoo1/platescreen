@@ -29931,6 +29931,26 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
+  {
+    id: "swensen_s",
+    name: "Swensen's",
+    emoji: "🍨",
+    type: "restaurant",
+    cuisine: "Ice Cream / Western",
+    aliases: [
+      "swensen's",
+      "swensens"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$$$",
+    platforms: [
+      "dine_in",
+      "delivery",
+      "grab_go"
+    ]
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];
