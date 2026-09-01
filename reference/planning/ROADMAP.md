@@ -19,7 +19,7 @@ not how the codebase works or how to talk about it.
 | Total brands | 1,748 |
 | Total premises | 4,683 |
 | Total menu items | 2,559 |
-| Menu items with ≥1 diet tag | 1,536 (60.0%) — up from 51.6% same day, see item 9 below |
+| Menu items with ≥1 diet tag | 1,590 (62.1%) — up from 60.0% earlier same day, see item 9 below |
 | Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
 | Premises missing lat/lng | 0 |
 | Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
@@ -206,6 +206,25 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    different, riskier heuristic than "named protein"), and vegetarian
    tagging for ~44 plain coffee/tea beverage items (unambiguous but outside
    this pass's scope) — both need their own human decision before acting.
+9b. ~~**Halal tag audit (follow-on from item 9)**~~ — **Done 2026-09-01.**
+   Reviewed all 77 untagged `Indonesian/Malay` + `Indian` MenuItems
+   individually (conservative, higher bar than the named-protein pass
+   above, since a mislabeled halal tag is a religious-compliance claim, not
+   just an ingredient guess). Tagged 54 as `['halal', 'no_pork']`: canonical
+   Malay/Muslim dishes (Nasi Lemak, Ayam Penyet, Roti Prata, Mee Rebus/Soto,
+   Rendang, Nasi Padang, Indian [Muslim] Rojak, etc.) regardless of stall
+   name, plus biryani/naan/fusion dishes only where the brand name itself
+   carried an explicit Muslim/Malay/Indonesian signal. Left 23 untagged:
+   anything "Vegetarian"-branded (Hindu-coded, not halal-inferable),
+   South Indian Hindu-tradition dishes (Masala Dosa, Banana Leaf Rice),
+   "Nyonya"/Peranakan items (genuinely mixed halal status), Chinese-named
+   stalls selling nominally Malay dishes, and generic/fusion items with no
+   positive signal either way. Coverage: 60.0% → 62.1%. Full reasoning:
+   `reference/research-sessions/2026-09-01-halal-tag-audit-malay-
+   indonesian-indian.md`. Still open: whether "Vegetarian"-branded Indian
+   items should get a separate `vegetarian` tag, and whether "Nyonya" items
+   deserve dedicated per-item research — both flagged as human decisions,
+   not acted on.
 10. ~~**Grocery SKUs**~~ — **Partially done 2026-08-31.** The 17 FairPrice
     items that used to be misshapen MenuItems are now proper GroceryProduct
     rows (19 total, up from 2) — see item 1. Real per-package research for
