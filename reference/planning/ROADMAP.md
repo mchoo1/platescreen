@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-08-30. This is the entry point for "what's the state of
+**Last updated:** 2026-09-01. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -12,20 +12,24 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-08-31)
+## Where things stand (2026-09-01)
 
 | Metric | Value |
 |---|---|
 | Total brands | 1,747 |
-| Total premises | 4,680 |
-| Total menu items | 2,560 |
-| Brands with ≥1 menu item | 1,674 (95.8%) |
-| Zero-menu brands remaining | 73 |
-| Menu items with ≥1 diet tag | 1,330 (52.0%) |
-| Confidence breakdown | 73 verified / 2,481 estimated / 6 community |
+| Total premises | 4,683 |
+| Total menu items | 2,551 |
+| Brands with ≥1 menu item | 1,675 (95.9%) |
+| Zero-menu brands remaining | 72 |
+| Menu items with ≥1 diet tag | 1,317 (51.6%) |
+| Confidence breakdown (MenuItems) | 56 verified / 2,489 estimated / 6 community |
 | Premises missing lat/lng | 0 |
-| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items) |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 0 |
+| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see below) |
+
+Confidence and diet-tag percentages dipped slightly (73→56 verified,
+52.0%→51.6% diet-tagged) purely as a side effect of the grocery migration
+below moving 17 items out of MenuItems, not new data-quality loss.
 
 **Launch-readiness review completed 2026-08-31** (code + database, requested
 directly). Verdict: **the database and the codebase are launch-ready; one
@@ -129,17 +133,18 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
 
 ## Active / near-term (in priority order)
 
-1. **Fix the 17 `Ingredients`-category `MenuItem` rows storing whole-package
-   totals** (e.g. `ing_jasmine_rice`: 18,000 cal for $12) — found during the
-   2026-08-31 launch-readiness review. These dominate the *main* screener
-   table's default Protein/$ sort (not just the top-picks carousel, which
-   was already fixed 2026-08-22), so a first-time visitor's very first
-   impression is a bag of rice outranking every real dish. Two options:
-   rescale to a realistic single serving, or exclude `category:
-   "Ingredients"` from the main table until real `GroceryProduct` rows
-   (per-100g + package size — the schema this data should actually live in)
-   replace them. Highest-priority open item; everything else here is
-   secondary to first-visitor experience.
+1. ~~**Fix the 17 `Ingredients`-category `MenuItem` rows storing
+   whole-package totals**~~ — **Done 2026-08-31** (commit `47eb9da`). Chose
+   the "migrate to `GroceryProduct`" option rather than rescale-in-place:
+   removed all 17 rows from `menuItems.ts` (they no longer appear in the
+   screener at all, which is what actually fixes the ranking-pollution bug)
+   and added them to `groceryProducts.ts` in the correct shape, reverse-
+   deriving each item's real package size from its original totals rather
+   than inventing new numbers. `GroceryProduct` total: 2 → 19 rows. Full
+   writeup: `reference/research-sessions/2026-08-31-grocery-product-
+   migration.md`. Local build couldn't finish in this sandbox (same
+   resource constraint as before) — `tsc --noEmit` and a runtime integrity
+   check both passed clean; confirm via the next Vercel deploy.
 2. ~~**Watch the first few automated runs before trusting the pipeline
    unattended.**~~ — **Done 2026-08-31.** Reviewed every commit + uncommitted
    change from the first overnight runs since re-enabling. Automation held
@@ -169,21 +174,34 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    table on mobile rather than reflowing to cards; data is reachable via
    swipe, just not a great first impression on likely-majority-mobile
    traffic. Polish, not a blocker.
+7. **Recurring stale git lock from scheduled tasks — worth investigating.**
+   Hit `.git/index.lock`/`HEAD.lock` left behind twice now (2026-08-31
+   ~03:21, and again 2026-09-01 ~12:10) — both times no process was
+   actually running, both times 6+ hours old, both times safe to remove
+   after checking. Pattern suggests a scheduled task's git commit is
+   occasionally getting interrupted (timeout? crash?) mid-operation rather
+   than completing or cleanly failing. Low urgency *so far* since each lock
+   was caught and cleared within a day, but if one sits long enough
+   unnoticed it would silently block every subsequent commit — the user's
+   own manual pushes included. Worth watching whether it recurs a third
+   time; if so, worth finding out which task and why rather than continuing
+   to just clear the lock each time.
 8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
    doesn't have) or explicitly accept those ~12 brands as permanently out of
    scope for menu coverage.
-9. **Diet-tag coverage decision**: 52.0% may already be near the ceiling
+9. **Diet-tag coverage decision**: ~52% may already be near the ceiling
    given the conservative tagging rules (`CLAUDE.md` section 5.1) — before
    running another backfill batch, sample untagged items to estimate how
    many are "legitimately untaggable" vs "overlooked." Don't assume the
    number itself is a problem.
-10. **Grocery SKUs** (`GroceryProduct`, currently 0 rows) — real per-package
-    research for FairPrice/Cold Storage/Giant/Sheng Siong/Don Don Donki is
-    unstarted. This is also the proper fix for item 1's 17 misshapen
-    `Ingredients` rows — doing this well would let those 17 items migrate to
-    the correct schema instead of just being hidden or rescaled.
+10. ~~**Grocery SKUs**~~ — **Partially done 2026-08-31.** The 17 FairPrice
+    items that used to be misshapen MenuItems are now proper GroceryProduct
+    rows (19 total, up from 2) — see item 1. Real per-package research for
+    Cold Storage/Giant/Sheng Siong/Don Don Donki, and a UI to actually
+    display GroceryProduct data (none exists yet — these 19 rows aren't
+    shown anywhere in the app), remain unstarted.
 
 ## Not started, lower priority
 
