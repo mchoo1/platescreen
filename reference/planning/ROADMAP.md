@@ -17,7 +17,7 @@ not how the codebase works or how to talk about it.
 | Metric | Value |
 |---|---|
 | Total brands | 1,716 — down from 1,748, see item 12 (32 duplicate SFA-licensee-suffix brands merged into their real existing brand, not lost data) |
-| Total premises | 4,683 |
+| Total premises | 4,655 — down from 4,683, see item 12's second follow-up (28 duplicate premises removed, 24 pre-existing + 4 from the merge) |
 | Total menu items | 2,557 — see item 12's follow-up fix (5 post-merge duplicate dishes removed) |
 | Menu items with ≥1 diet tag | 1,650 (64.5%) — up from 63.9%, see items 9/11 below |
 | Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
@@ -298,6 +298,16 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     collisions. Removed the 5 redundant lower-confidence rows, keeping the
     better-sourced entry in each group; MenuItems 2,562 → 2,557. See
     `reference/research-sessions/2026-09-02-menu-item-dedup-post-merge.md`.
+    **Second follow-up same day**: re-checking for the equivalent bug at
+    the *location* level found 28 duplicate Premises rows — 4 more caused
+    by this same merge (a merged brand's premises turned out to be the
+    same physical outlet as one the target brand already had) plus 24
+    **pre-existing, fully byte-identical duplicates** unrelated to this
+    merge, dating back to the 2026-08-22 Kopitiam stall-sitemap scrape.
+    Removed all 28; Premises 4,683 → 4,655. See
+    `reference/research-sessions/2026-09-02-premises-duplicate-cleanup.md`.
+    Flagged: the other large batch-scraped brand sets (Koufu, Fei Siong,
+    hawker-centre batches) haven't been swept for this same pattern.
     The remaining ~28 "Pte Ltd"-named Brand rows were reviewed but NOT merged — they don't match any existing brand (likely
     genuine standalone businesses whose corporate name leaked into the
     display name) and are left for a future display-name cleanup pass,

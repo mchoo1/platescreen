@@ -1705,47 +1705,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-      {
-    id: "tampines_round_market_and_food_centre_kentucky_fried_chicken_management_pte_ltd_p498",
-    brandId: "kfc",
-    label: "Tampines Round Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Tampines Round Market and Food Centre",
-    address: "BLK 139 TAMPINES STREET 11 #01-66 SINGAPORE 521139",
-    postal: "521139",
-    lat: 1.3459,
-    lng: 103.9412,
-    sfa: {
-      licenceNumber: "S84212A000",
-      licenseeName: "KENTUCKY FRIED CHICKEN MANAGEMENT PTE LTD",
-      premisesAddress: "BLK 139 TAMPINES STREET 11 #01-66 SINGAPORE 521139",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-    {
-    id: "tampines_round_market_and_food_centre_pizza_hut_singapore_pte_ltd_p500",
-    brandId: "pizza_hut",
-    label: "Tampines Round Market and Food Centre",
-    locationType: "hawker_centre",
-    locationContext: "Tampines Round Market and Food Centre",
-    address: "139 TAMPINES STREET 11 #01-66 SINGAPORE 521139",
-    postal: "521139",
-    lat: 1.3459,
-    lng: 103.9412,
-    sfa: {
-      licenceNumber: "S94171C000",
-      licenseeName: "PIZZA HUT SINGAPORE PTE LTD",
-      premisesAddress: "139 TAMPINES STREET 11 #01-66 SINGAPORE 521139",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+            {
     id: "teban_gardens_market_and_food_centre_cold_storage_singapore_1983_pte_ltd_p501",
     brandId: "cold_storage",
     label: "Teban Gardens Market and Food Centre",
@@ -2524,27 +2484,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "hougang_105_hainanese_village_centre_breadtalk_pte_ltd_p607",
-    brandId: "breadtalk",
-    label: "Hougang 105 Hainanese Village Centre",
-    locationType: "hawker_centre",
-    locationContext: "Hougang 105 Hainanese Village Centre",
-    address: "90 HOUGANG AVENUE 10 HOUGANG MALL (UNIT B1-K12-K15/K17 & 29K) SINGAPORE 538766",
-    postal: "538766",
-    lat: 1.3705,
-    lng: 103.8823,
-    sfa: {
-      licenceNumber: "NE12G58B000",
-      licenseeName: "BREADTALK PTE LTD",
-      premisesAddress: "90 HOUGANG AVENUE 10 HOUGANG MALL (UNIT B1-K12-K15/K17 & 29K) SINGAPORE 538766",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-      {
+        {
     id: "jurong_west_hawker_centre_cold_storage_singapore_1983_pte_ltd_p611",
     brandId: "cold_storage",
     label: "Jurong West Hawker Centre",
@@ -2664,27 +2604,7 @@ const PREMISES_2 = [
     },
     source: "sfa_licence_match"
   },
-  {
-    id: "ayer_rajah_market_domino_s_pizza_singapore_pte_ltd_p631",
-    brandId: "dominos",
-    label: "Ayer Rajah Market",
-    locationType: "hawker_centre",
-    locationContext: "Ayer Rajah Market",
-    address: "505 WEST COAST DRIVE #01-210 SINGAPORE 120505",
-    postal: "120505",
-    lat: 1.311906957239438,
-    lng: 103.7591280189392,
-    sfa: {
-      licenceNumber: "SW11864P000",
-      licenseeName: "DOMINO'S PIZZA SINGAPORE PTE. LTD.",
-      premisesAddress: "505 WEST COAST DRIVE #01-210 SINGAPORE 120505",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
+    {
     id: "ayer_rajah_market_fei_siong_f_b_holdings_pte_ltd_p632",
     brandId: "ayer_rajah_market_fei_siong_f_b_holdings_pte_ltd",
     label: "Ayer Rajah Market",
@@ -55464,20 +55384,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_kopi_kiosk_p71",
-    brandId: "kopitiam_kopi_kiosk",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_kopi_kiosk_p72",
     brandId: "kopitiam_kopi_kiosk",
     label: "Kopitiam @ Northpoint City",
@@ -56842,20 +56749,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_royal_rojak_p4",
-    brandId: "kopitiam_royal_rojak",
-    label: "Kopitiam Food Hall @ Jem",
-    locationType: "food_court",
-    locationContext: "Kopitiam Food Hall @ Jem",
-    address: "50 Jurong Gateway Road, #05-01, Singapore 608549",
-    postal: "608549",
-    lat: 1.33329334473462,
-    lng: 103.743278742341,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_royal_rojak_p5",
     brandId: "kopitiam_royal_rojak",
     label: "West Mall",
@@ -56985,20 +56879,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_flint_specialty_grill_p3",
-    brandId: "kopitiam_flint_specialty_grill",
-    label: "Lau Pa Sat",
-    locationType: "food_court",
-    locationContext: "Lau Pa Sat",
-    address: "18 Raffles Quay, Lau Pa Sat Festival Market, Singapore, 048582",
-    postal: "048582",
-    lat: 1.28059421956056,
-    lng: 103.850408357959,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_hjh_maimunah_p1",
     brandId: "kopitiam_hjh_maimunah",
     label: "VivoCity",
@@ -57141,20 +57022,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_ampang_ytf_p3",
-    brandId: "kopitiam_ampang_ytf",
-    label: "Kopitiam Food Hall @ Jem",
-    locationType: "food_court",
-    locationContext: "Kopitiam Food Hall @ Jem",
-    address: "50 Jurong Gateway Road, #05-01, Singapore 608549",
-    postal: "608549",
-    lat: 1.33329334473462,
-    lng: 103.743278742341,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_fitra_chicken_rice_p1",
     brandId: "kopitiam_fitra_chicken_rice",
     label: "VivoCity",
@@ -57388,20 +57256,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_pepper_lunch_express_p4",
-    brandId: "kopitiam_pepper_lunch_express",
-    label: "Hillion Mall",
-    locationType: "food_court",
-    locationContext: "Hillion Mall",
-    address: "17 Petir Road, Hillion Mall #02-18/19, Singapore 678278",
-    postal: "678278",
-    lat: 1.37843100800213,
-    lng: 103.762842789877,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_pepper_lunch_express_p5",
     brandId: "kopitiam_pepper_lunch_express",
     label: "Kopitiam @ Northpoint City",
@@ -57570,20 +57425,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_majulah_nasi_padang_p4",
-    brandId: "kopitiam_majulah_nasi_padang",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_ha_lou_hokkien_mee_p1",
     brandId: "kopitiam_ha_lou_hokkien_mee",
     label: "Compass One",
@@ -59598,20 +59440,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_telur_thai_p2",
-    brandId: "kopitiam_telur_thai",
-    label: "Tampines Mall",
-    locationType: "food_court",
-    locationContext: "Tampines Mall",
-    address: "4 Tampines Central 5, Tampines Mall #04-27/28/29, Singapore 529510",
-    postal: "529510",
-    lat: 1.35252737278519,
-    lng: 103.944698751072,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_telur_thai_p3",
     brandId: "kopitiam_telur_thai",
     label: "Vista Point",
@@ -59728,20 +59557,7 @@ export const PREMISES_10 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_telur_thai_p12",
-    brandId: "kopitiam_telur_thai",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_telur_thai_p13",
     brandId: "kopitiam_telur_thai",
     label: "Parkway Parade",
@@ -59835,20 +59651,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_hjh_maimunah_malay_snack_p2",
-    brandId: "kopitiam_hjh_maimunah_malay_snack",
-    label: "Tampines Mall",
-    locationType: "food_court",
-    locationContext: "Tampines Mall",
-    address: "4 Tampines Central 5, Tampines Mall #04-27/28/29, Singapore 529510",
-    postal: "529510",
-    lat: 1.35252737278519,
-    lng: 103.944698751072,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_riverside_indonesian_grill_p1",
     brandId: "kopitiam_riverside_indonesian_grill",
     label: "Tampines Mall",
@@ -59874,20 +59677,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_delibowl_rice_express_p2",
-    brandId: "kopitiam_delibowl_rice_express",
-    label: "Tampines Mall",
-    locationType: "food_court",
-    locationContext: "Tampines Mall",
-    address: "4 Tampines Central 5, Tampines Mall #04-27/28/29, Singapore 529510",
-    postal: "529510",
-    lat: 1.35252737278519,
-    lng: 103.944698751072,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_taiwan_dessert_and_milk_tea_p1",
     brandId: "kopitiam_taiwan_dessert_and_milk_tea",
     label: "Changi Airport Terminal 4",
@@ -60264,20 +60054,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_japanese_p3",
-    brandId: "kopitiam_japanese",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_japanese_and_korean_cuisine_p1",
     brandId: "kopitiam_japanese_and_korean_cuisine",
     label: "Kang Kar Mall",
@@ -60914,20 +60691,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_seabay_delight_p4",
-    brandId: "kopitiam_seabay_delight",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_indian_muslim_food_p1",
     brandId: "kopitiam_indian_muslim_food",
     label: "Yishun 507",
@@ -62266,20 +62030,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_filipino_cuisine_p3",
-    brandId: "kopitiam_filipino_cuisine",
-    label: "Yew Tee Square",
-    locationType: "food_court",
-    locationContext: "Yew Tee Square",
-    address: "Blk 624 Choa Chu Kang St 62, #02-222/224, Singapore 680624",
-    postal: "680624",
-    lat: 1.39804736153015,
-    lng: 103.747084778932,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_crowded_salad_bowl_p1",
     brandId: "kopitiam_crowded_salad_bowl",
     label: "Changi General Hospital",
@@ -62344,20 +62095,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_ban_mian_and_fish_soup_2_p4",
-    brandId: "kopitiam_ban_mian_and_fish_soup_2",
-    label: "Yew Tee Square",
-    locationType: "food_court",
-    locationContext: "Yew Tee Square",
-    address: "Blk 624 Choa Chu Kang St 62, #02-222/224, Singapore 680624",
-    postal: "680624",
-    lat: 1.39804736153015,
-    lng: 103.747084778932,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_ban_mian_and_fish_soup_2_p5",
     brandId: "kopitiam_ban_mian_and_fish_soup_2",
     label: "Bagus @ Canberra Plaza",
@@ -62643,20 +62381,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_korean_p5",
-    brandId: "kopitiam_korean",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_mala_fu_wei_p1",
     brandId: "kopitiam_mala_fu_wei",
     label: "Kopitiam Food Hall @ Jurong Point",
@@ -63020,20 +62745,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_odeon_beef_noodles_p2",
-    brandId: "kopitiam_odeon_beef_noodles",
-    label: "Kopitiam Food Hall @ Jem",
-    locationType: "food_court",
-    locationContext: "Kopitiam Food Hall @ Jem",
-    address: "50 Jurong Gateway Road, #05-01, Singapore 608549",
-    postal: "608549",
-    lat: 1.33329334473462,
-    lng: 103.743278742341,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_don_oyster_bar_p1",
     brandId: "kopitiam_don_oyster_bar",
     label: "Kopitiam Food Hall @ Jem",
@@ -63046,20 +62758,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_don_oyster_bar_p2",
-    brandId: "kopitiam_don_oyster_bar",
-    label: "Kopitiam Food Hall @ Jem",
-    locationType: "food_court",
-    locationContext: "Kopitiam Food Hall @ Jem",
-    address: "50 Jurong Gateway Road, #05-01, Singapore 608549",
-    postal: "608549",
-    lat: 1.33329334473462,
-    lng: 103.743278742341,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_seng_heng_roasted_delight_p1",
     brandId: "kopitiam_seng_heng_roasted_delight",
     label: "Kopitiam Food Hall @ Jem",
@@ -63605,20 +63304,7 @@ export const PREMISES_11 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_carrot_cake_p3",
-    brandId: "kopitiam_carrot_cake",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_snack_p1",
     brandId: "kopitiam_snack",
     label: "Yew Tee Square",
@@ -67625,20 +67311,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_bara_penyet_p3",
-    brandId: "kopitiam_bara_penyet",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_new_jia_wei_p1",
     brandId: "kopitiam_new_jia_wei",
     label: "Hillion Mall",
@@ -67664,20 +67337,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_traditional_snack_p2",
-    brandId: "kopitiam_traditional_snack",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_sai_kitchen_p1",
     brandId: "kopitiam_sai_kitchen",
     label: "Bagus @ Jurong Point",
@@ -67690,20 +67350,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_sai_kitchen_p2",
-    brandId: "kopitiam_sai_kitchen",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_xin_mei_ban_mian_and_congee_p1",
     brandId: "kopitiam_xin_mei_ban_mian_and_congee",
     label: "Hillion Mall",
@@ -67768,20 +67415,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_ampang_yong_tau_foo_p5",
-    brandId: "kopitiam_ampang_yong_tau_foo",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_western_beradik_p1",
     brandId: "kopitiam_western_beradik",
     label: "Bagus @ Jurong Point",
@@ -67794,20 +67428,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_western_beradik_p2",
-    brandId: "kopitiam_western_beradik",
-    label: "Bagus @ Jurong Point",
-    locationType: "food_court",
-    locationContext: "Bagus @ Jurong Point",
-    address: "1 Jurong West Central 2, Jurong Point Shopping Centre, #B1-42/43/44/, Singapore 648886",
-    postal: "648886",
-    lat: 1.33945271661445,
-    lng: 103.70668501289,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_yong_tao_foo_p1",
     brandId: "kopitiam_yong_tao_foo",
     label: "Bagus @ Canberra Plaza",
@@ -68509,20 +68130,7 @@ export const PREMISES_12 = [
     sfa: null,
     source: "operator_official_site"
   },
-  {
-    id: "kopitiam_nasi_campur_p3",
-    brandId: "kopitiam_nasi_campur",
-    label: "Lau Pa Sat",
-    locationType: "food_court",
-    locationContext: "Lau Pa Sat",
-    address: "18 Raffles Quay, Lau Pa Sat Festival Market, Singapore, 048582",
-    postal: "048582",
-    lat: 1.28059421956056,
-    lng: 103.850408357959,
-    sfa: null,
-    source: "operator_official_site"
-  },
-  {
+    {
     id: "kopitiam_cik_lim_yong_tau_foo_p1",
     brandId: "kopitiam_cik_lim_yong_tau_foo",
     label: "Bagus @ National Heart Centre",
