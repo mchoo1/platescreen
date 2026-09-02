@@ -18,8 +18,8 @@ not how the codebase works or how to talk about it.
 |---|---|
 | Total brands | 1,716 — down from 1,748, see item 12 (32 duplicate SFA-licensee-suffix brands merged into their real existing brand, not lost data) |
 | Total premises | 4,683 |
-| Total menu items | 2,562 |
-| Menu items with ≥1 diet tag | 1,652 (64.5%) — up from 63.9%, see items 9/11 below |
+| Total menu items | 2,557 — see item 12's follow-up fix (5 post-merge duplicate dishes removed) |
+| Menu items with ≥1 diet tag | 1,650 (64.5%) — up from 63.9%, see items 9/11 below |
 | Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
 | Premises missing lat/lng | 0 |
 | Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
@@ -290,8 +290,15 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     duplicate Brand rows deleted. Verified 0 duplicate ids and 0 orphaned
     brandIds across Brands/Premises/MenuItems afterward, and confirmed
     each target brand's premises/menuItem counts grew by exactly the
-    expected amount. The remaining ~28 "Pte Ltd"-named Brand rows were
-    reviewed but NOT merged — they don't match any existing brand (likely
+    expected amount. **Follow-up fix same day**: a live UI review caught
+    that the merge had created 4 same-brand duplicate-dish groups (e.g.
+    McDonald's "Big Mac" appeared twice with conflicting values) where a
+    merged item's name collided with the target brand's existing catalog
+    — the original merge only checked for duplicate *ids*, not name
+    collisions. Removed the 5 redundant lower-confidence rows, keeping the
+    better-sourced entry in each group; MenuItems 2,562 → 2,557. See
+    `reference/research-sessions/2026-09-02-menu-item-dedup-post-merge.md`.
+    The remaining ~28 "Pte Ltd"-named Brand rows were reviewed but NOT merged — they don't match any existing brand (likely
     genuine standalone businesses whose corporate name leaked into the
     display name) and are left for a future display-name cleanup pass,
     not a duplicate-merge one. Full reasoning: `reference/research-

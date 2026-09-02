@@ -25515,9 +25515,7 @@ export const MENU_ITEMS = [
   { id: "bag_11", brandId: "kopitiam_cha_mu_lan_x", name: "Bubble Tea", emoji: "🧋", category: "Beverages", price: 5.0, calories: 320, protein: 2, carbs: 68, fat: 4, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 
   { id: "hg105_1", brandId: "hougang_105_hainanese_village_centre_bachmann_japanese_restaurant_pte_ltd", name: "Chicken Katsu", emoji: "🍗", category: "Japanese", price: 8.5, calories: 620, protein: 28, carbs: 55, fat: 28, compatibleWith: ["no_pork"], confidence: "estimated" },
-  { id: "hg105_2", brandId: "bengawan_solo", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
-  { id: "hg105_3", brandId: "breadtalk", name: "Pork Floss Bun", emoji: "🍞", category: "Bakery/Dessert", price: 2.2, calories: 240, protein: 8, carbs: 32, fat: 8, confidence: "estimated" },
-  { id: "hg105_4", brandId: "hougang_105_hainanese_village_centre_he_he", name: "Min Jiang Kueh", emoji: "🥞", category: "Bakery/Dessert", price: 1.6, calories: 220, protein: 5, carbs: 32, fat: 8, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+      { id: "hg105_4", brandId: "hougang_105_hainanese_village_centre_he_he", name: "Min Jiang Kueh", emoji: "🥞", category: "Bakery/Dessert", price: 1.6, calories: 220, protein: 5, carbs: 32, fat: 8, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "hg105_5", brandId: "hougang_105_hainanese_village_centre_jiu_ji_shu_shi", name: "Mee Rebus", emoji: "🍜", category: "Indonesian/Malay", price: 4.5, calories: 450, protein: 18, carbs: 55, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "hg105_6", brandId: "hougang_105_hainanese_village_centre_lorong_ah_soo_lor_mee", name: "Lor Mee", emoji: "🍜", category: "Noodles", price: 4.5, calories: 480, protein: 18, carbs: 60, fat: 18, confidence: "estimated" },
   { id: "hg105_7", brandId: "hougang_105_hainanese_village_centre_yong_seng_teochew_fishball_mee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
@@ -25596,10 +25594,7 @@ export const MENU_ITEMS = [
   { id: "vp_9", brandId: "kopitiam_ain_popiah_basah", name: "Rojak", emoji: "🥗", category: "Local Hawker", price: 4.0, calories: 320, protein: 6, carbs: 45, fat: 14, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "vp_10", brandId: "kopitiam_548_nonya_kueh", name: "Nonya Kueh", emoji: "🍥", category: "Bakery/Dessert", price: 1.5, calories: 180, protein: 3, carbs: 32, fat: 6, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 
-  { id: "bn216_1", brandId: "bengawan_solo", name: "Kueh Lapis", emoji: "🍰", category: "Bakery/Dessert", price: 2.0, calories: 220, protein: 3, carbs: 32, fat: 9, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
-  { id: "bn216_2", brandId: "dominos", name: "Pepperoni Pizza", emoji: "🍕", category: "Western", price: 9.9, calories: 700, protein: 28, carbs: 70, fat: 32, confidence: "estimated" },
-  { id: "bn216_3", brandId: "mcd", name: "Big Mac", emoji: "🍔", category: "Western", price: 7.2, calories: 550, protein: 25, carbs: 45, fat: 30, confidence: "estimated" },
-  { id: "bn216_4", brandId: "bedok_north_street_1_blk_216_chris_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
+        { id: "bn216_4", brandId: "bedok_north_street_1_blk_216_chris_kway_chap", name: "Kway Chap", emoji: "🍲", category: "Chinese Roast", price: 5.5, calories: 500, protein: 25, carbs: 45, fat: 22, confidence: "estimated" },
   { id: "bn216_5", brandId: "bedok_north_street_1_blk_216_joo_chiat_chiap_kee", name: "Fishball Noodles", emoji: "🍜", category: "Noodles", price: 4.5, calories: 400, protein: 20, carbs: 55, fat: 10, confidence: "estimated" },
   { id: "bn216_6", brandId: "bedok_north_street_1_blk_216_sin_ho", name: "Prawn Paste Chicken", emoji: "🍗", category: "Local Hawker", price: 5.5, calories: 480, protein: 26, carbs: 20, fat: 28, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "bn216_7", brandId: "bedok_north_street_1_blk_216_han_kee_fish_soup", name: "Sliced Fish Soup", emoji: "🍲", category: "Seafood", price: 6.0, calories: 320, protein: 28, carbs: 25, fat: 10, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
