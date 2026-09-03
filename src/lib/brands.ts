@@ -29439,6 +29439,26 @@ export const BRANDS_4 = [
       "grab_go"
     ]
   },
+  {
+    id: "eighteen_chefs",
+    name: "Eighteen Chefs",
+    emoji: "🍔",
+    type: "restaurant",
+    cuisine: "Western",
+    aliases: [
+      "eighteen chefs",
+      "18 chefs"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go",
+      "delivery"
+    ]
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

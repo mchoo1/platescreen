@@ -188,6 +188,21 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    far — but the failure mode if unnoticed (every subsequent commit,
    including the user's own manual pushes, silently blocked) is bad enough
    to actually fix the root cause rather than keep treating the symptom.
+   **2026-09-02 update (escalating further):** a `platescreen-research-restaurants` run hit both
+   `.git/index.lock` and `.git/HEAD.lock` stale simultaneously (~7h old, no process holding
+   either) and this time **could not clear them at all** — `rm`/`os.remove` failed with
+   `Operation not permitted` on any file inside `.git/` in that run's sandbox, not just the two
+   stale locks (confirmed with a throwaway self-created test file). Worked around the index lock
+   via `GIT_INDEX_FILE` pointed at a temp path, but the ref-update step still needed
+   `HEAD.lock` and failed the same way, so that run's commit was left undone — changes sit
+   uncommitted in the working tree instead (see
+   `reference/research-sessions/2026-09-02-restaurant-track-run3-bare-licensee-sweep.md`). Repo
+   integrity re-checked and unaffected (`HEAD` unmoved, `git fsck` clean). This is a materially
+   worse instance than the three above (previously always clearable by the finding session) —
+   worth prioritizing the root-cause investigation rather than continuing to treat this as a
+   clear-and-continue nuisance; a fix on the user's own machine (deleting the two lock files via
+   Windows Explorer, which isn't subject to the Linux sandbox's delete restriction) will unblock
+   the next scheduled run in the meantime.
 8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session

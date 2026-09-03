@@ -32,31 +32,58 @@ Status values: `pending` (never used) | `used` (posted, see `lastUsed` + `subred
   title: "Highest-protein hawker dishes under $5"
   computation: "Join MENU_ITEMS to PREMISES via BRANDS where Brand.type == 'hawker', filter price <= 5, filter confidence in ['verified','community'] with SFA-backed Premises preferred, rank by protein descending"
   status: pending
+  # 2026-09-03 recheck: 426 hawker items priced <=$5 with protein>0, still 0 with
+  # verified/community confidence (all estimated). Same finding as 2026-08-31 (was
+  # 436/0 then). Skipped again — see Post-Copilot-Digests/2026-09-03.md.
 
 - id: bubble_tea_calorie_ranking
   title: "Calorie ranking of SG bubble tea chains (same standard order, apples-to-apples)"
   computation: "Filter BRANDS by cuisine/aliases matching bubble tea chains (koi, liho, chagee, mixue, etc.), find a comparable standard menu item (e.g. classic milk tea, standard sugar/ice) per chain, rank by calories"
   status: pending
+  # 2026-09-03 recheck: 8 chains, 52 items, still 100% estimated (unchanged from
+  # 2026-08-31). Skipped again — see Post-Copilot-Digests/2026-09-03.md.
 
 - id: grocery_protein_per_dollar
   title: "Best protein-per-dollar packaged grocery items (FairPrice / Cold Storage / Giant)"
   computation: "Use GROCERY_PRODUCTS once populated — proteinPer100 / (packagePrice / (packageSize/100)) — skip this theme entirely if GROCERY_PRODUCTS is still empty, do not force it"
   status: pending
+  # 2026-09-03: GROCERY_PRODUCTS is no longer empty (19 rows as of the 2026-08-31
+  # ingredient migration) but 18/19 are confidence 'estimated' and 1 'community', 0
+  # verified/official. Packaged SKUs have a printed nutrition label, so an estimated
+  # macro number here is unusually easy for a reader to catch as wrong — worse
+  # fact-check risk than fast food, not better. Skipped — see
+  # Post-Copilot-Digests/2026-09-03.md. Revisit once GroceryProduct rows carry real
+  # per-SKU sourcing, not the migrated dish-type estimates.
 
 - id: cheapest_150g_protein_day
   title: "Cheapest realistic way to hit 150g protein in a day eating out in Singapore"
   computation: "Combinatorial: pick 3 real MenuItems (breakfast/lunch/dinner) from different brands whose combined protein >= 150g, minimizing combined price, from the verified/community-confidence subset only"
   status: pending
+  # 2026-09-03 recheck: only 62 MenuItems database-wide have verified/community
+  # confidence (53 McDonald's, 5 Bengawan Solo desserts, 1 each Cheers/SaladStop!/
+  # Paris Baguette/Ichiban Boshi) — still means "eat McDonald's ~3x" to hit the
+  # target, same problem as 2026-08-31. Skipped again — see
+  # Post-Copilot-Digests/2026-09-03.md.
 
 - id: newly_added_chain_spotlight
   title: "Spotlight a chain PlateScreen just added real per-branch SFA data for"
   computation: "Pull the most recently resolved entry from branchQueue.ts history (git log on premises.ts) or the latest reference/research-sessions/*.md — feature its protein/$ standouts as a mini-post, credit the real SFA source"
   status: pending
+  # 2026-09-03: checked the most recent chain addition (eighteen_chefs, added same
+  # day) — all 6 menu items are confidence 'estimated' (no official nutrition source
+  # exists for this chain) and it has zero Premises yet, so there's no real per-branch
+  # SFA data to spotlight. Skipped — see Post-Copilot-Digests/2026-09-03.md.
 
 - id: mrt_line_protein_map
   title: "Protein-per-dollar by MRT line / area (e.g. best options along the East-West line)"
   computation: "Group PREMISES by rough geographic area (lat/lng clustering or postal-code district prefix), rank top protein/$ items per cluster — only run once PREMISES coverage in that area is dense enough to be a real comparison, not a single data point"
   status: pending
+  # 2026-09-03: checked the schema, not just the data — MenuItem price/macros are
+  # keyed to brandId, not Premises (src/types/db.ts), so chain items have one
+  # nationwide price with zero geographic variance to rank by. The only
+  # verified/community items are exactly these fixed-price chain items, so this theme
+  # is structurally unrunnable until hawker-stall-level (per-Premises) data reaches
+  # solid confidence. See Post-Copilot-Digests/2026-09-03.md.
 ```
 
 ## Rules for whichever task uses this file

@@ -26328,4 +26328,129 @@ export const MENU_ITEMS = [
   { id: "swensens_caesar_salad_breaded_chicken", brandId: "swensen_s", name: "Caesar Salad with Breaded Chicken", emoji: "🥗", category: "Salads", price: 14.9, calories: 520, protein: 28, carbs: 32, fat: 32, compatibleWith: ["halal"], confidence: "estimated" },
   { id: "swensens_spice_n_chic", brandId: "swensen_s", name: "Spice 'n' Chic", emoji: "🍗", category: "Sides", price: 10.9, calories: 480, protein: 24, carbs: 32, fat: 28, compatibleWith: ["halal"], confidence: "estimated" },
   { id: "swensens_southern_style_chicken_waffle", brandId: "swensen_s", name: "Southern Style Chicken 'n' Waffle", emoji: "🧇", category: "Breakfast", price: 16.9, calories: 820, protein: 34, carbs: 78, fat: 40, compatibleWith: ["halal"], confidence: "estimated", isPopular: true },
+
+  // --- eighteen_chefs (2026-09-03 scheduled restaurant-track run) ---
+  // New Brand (id "eighteen_chefs" did not previously exist in brands.ts or menuItems.ts —
+  // full Phase 2-4 flow per this run's task design). Eighteen Chefs (est. 2007 by Chef Benny
+  // Se Teo, a well-documented homegrown SG Western-food social-enterprise chain, en.wikipedia.org/
+  // wiki/Eighteen_Chefs) is real and currently operating (foodpanda listings for Star Vista/
+  // Clementi Mall outlets, online.eighteenchefs.com ordering site, CapitaLand mall directory
+  // listing at Bugis Junction). No official nutrition PDF or HPB Nutrition Information Centre
+  // entry exists for this chain, so every item below is confidence "estimated". Dish names and
+  // SGD prices sourced from and cross-verified across multiple independent third-party menu
+  // aggregators that agree on the same figures (sgmyfoodie.com, smpfoodies.com, sgpmenus.com,
+  // menu-sg.com, sgrestaurantmenu.org, singmenus.org — all citing identical prices for the same
+  // named dishes, e.g. Eighteen Beef Burger $15.48 and Truffle Cheese Fusilli $15.36 independently
+  // repeated across sources, not a single unconfirmed listing). Halal status confirmed via
+  // multiple independent sources (Zabihah listing, singaporehalaldirectory.com, asiahalaldirectory.com,
+  // halalboleh.com, and a Facebook post from founder Chef Benny stating all outlets are halal) —
+  // "halal" applied at Brand level and to every MenuItem, matching the existing mcd/kfc/swensen_s
+  // pattern; no additional "no_pork" tag added alongside halal (redundant, per that same pattern).
+  // Macros are reasoned estimates calibrated against this project's own existing comparable
+  // entries: ss_shackburger/ss_double_shackburger (500/24/40/27 @ $12.90 and 790/45/41/50 @
+  // $17.90, single vs double beef-patty burger baselines) for the beef burger; saiz_aglio_olio
+  // (680/17/96/26 @ $6.90, plain vegetarian aglio olio) and wb_chicken_aglio_olio (580/28/65/22
+  // @ $6.80, chicken aglio olio) scaled up for this chain's larger full-service-casual-dining
+  // portions and higher price point, for the three pasta dishes. Truffle Cheese Fusilli, Shimeji
+  // Mushroom & Asparagus Aglio Olio, and Aglio Olio Mushroom Chicken are kept as 3 distinct items
+  // (not near-duplicates) since their named compositions differ meaningfully — cheese-truffle
+  // cream sauce with no named protein vs. plain vegetable aglio olio vs. chicken aglio olio.
+  // Salted Egg Fries reasoned as a rich fried-potato side with salted-egg-yolk sauce (no existing
+  // direct analog in this DB, generic loaded-fries composition knowledge). Ribeye with 3 Pcs
+  // Prawns & 4 Pcs Calamari Rings ($30.96, this chain's most expensive listed item, a surf-and-turf
+  // sharing/premium plate) reasoned from typical ribeye + battered-seafood composition; no existing
+  // analog in this DB for a mixed steak+seafood plate, so treated as the single highest-uncertainty
+  // item in this batch. Skipped Salted Egg Snack Platter ($20.28) and Ribeye combo's own listed
+  // "3pc prawns/4pc calamari" garnish quantities beyond the headline dish, and Dory Breaded Fish &
+  // Chips (menu item confirmed to exist via online.eighteenchefs.com and eighteenchefs.com/menu,
+  // but no price surfaced across any source checked) — left out per the never-guess-a-price rule
+  // rather than including a half-sourced item. No SFA lookup (type "restaurant", not hawker/
+  // food_court_stall — Phase 3 out of scope). No Premises added: this session's browser pane
+  // (mcp__Claude_Browser) denied navigation to sgpmenus.com when tested directly this run (same
+  // unattended-session gate documented throughout researchQueue.ts, e.g. the swensen_s/kopitiam/
+  // mccafe entries), so no address could be verified/geocoded without guessing coordinates —
+  // flagged for a future pass with browser/OneMap access, same as swensen_s. See
+  // reference/research-sessions/2026-09-03-eighteen_chefs.md.
+  { id: "eighteenchefs_beef_burger", brandId: "eighteen_chefs", name: "Eighteen Beef Burger", emoji: "🍔", category: "Burgers", price: 15.48, calories: 650, protein: 35, carbs: 42, fat: 38, compatibleWith: ["halal"], confidence: "estimated", isPopular: true },
+  { id: "eighteenchefs_truffle_cheese_fusilli", brandId: "eighteen_chefs", name: "Truffle Cheese Fusilli", emoji: "🍝", category: "Pasta", price: 15.36, calories: 700, protein: 18, carbs: 70, fat: 34, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "eighteenchefs_shimeji_asparagus_aglio_olio", brandId: "eighteen_chefs", name: "Shimeji Mushroom & Asparagus Aglio Olio", emoji: "🍝", category: "Pasta", price: 12.96, calories: 650, protein: 16, carbs: 82, fat: 24, compatibleWith: ["vegetarian", "halal"], confidence: "estimated" },
+  { id: "eighteenchefs_aglio_olio_mushroom_chicken", brandId: "eighteen_chefs", name: "Aglio Olio Mushroom Chicken", emoji: "🍝", category: "Pasta", price: 13.80, calories: 640, protein: 30, carbs: 68, fat: 24, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "eighteenchefs_salted_egg_fries", brandId: "eighteen_chefs", name: "Salted Egg Fries", emoji: "🍟", category: "Sides", price: 6.90, calories: 420, protein: 6, carbs: 48, fat: 22, compatibleWith: ["vegetarian", "halal"], confidence: "estimated" },
+  { id: "eighteenchefs_ribeye_prawn_calamari", brandId: "eighteen_chefs", name: "Ribeye with 3 Pcs Prawns & 4 Pcs Calamari Rings", emoji: "🥩", category: "Meat", price: 30.96, calories: 820, protein: 55, carbs: 30, fat: 48, compatibleWith: ["halal"], confidence: "estimated", isPopular: true },
+
+  // --- 2026-09-03 (scheduled restaurant-track run): 85_fengshan_centre_bangkok_street_mookata_pte_ltd ---
+  // Brand row already existed (2026-08-20 SFA hawker restructuring, sfaLicenceNo E84169N004,
+  // location: 85 Fengshan Centre) with 0 MenuItems. Brand's own name directly names the dish/style
+  // ("Bangkok Street Mookata" — mookata is a real, specific Thai BBQ-hotpot style), and the SFA
+  // licensee name "Bangkok Street Mookata Pte. Ltd." exactly matches a real, currently-operating
+  // 10-outlet Singapore chain (bangkokstreetmookata.com.sg official ordering site; WebSearch also
+  // confirms outlets in Jurong West/Ang Mo Kio/Sembawang/Bedok — Fengshan is a Bedok subzone). Menu
+  // items and SGD prices sourced directly from the brand's own official site (a la carte add-on
+  // items are chain-standard, not per-branch), the best-available source per CLAUDE.md section 5's
+  // hierarchy. No nutrition data exists anywhere for this brand (raw BBQ/hotpot ingredients, no
+  // official macro source) — all items "estimated", macros reasoned from typical raw-portion
+  // weights for a "Small" mookata add-on plate (~100-120g, a standard convention at SG mookata
+  // stalls) and each cut's known typical cooked macros, cross-checked against this DB's own
+  // existing generic "Mookata" per-pax dish-lookup entry (650/35/40/38 @ $12, Local Hawker) for
+  // rough scale consistency. Marinated Chicken / Basil Chicken / Marinated Pork Collar / Marinated
+  // Pork Belly / Marinated Beef prices ($8/$8/$8/$8/$9) are each site-confirmed "Small" portion
+  // starting prices (all 4 have Small/Medium/Large variants — only Small was used, since Medium/
+  // Large weights/prices aren't disclosed on the product pages and guessing them would fabricate a
+  // price). A4 Japanese Wagyu Beef ($28.80) is a single-SKU premium item with no size variant,
+  // reasoned as a smaller ~90g portion given wagyu's price point and heavy marbling (much higher
+  // fat density per gram than the other cuts). Marinated Pork Collar and Marinated Pork Belly get
+  // NO compatibleWith array at all per CLAUDE.md section 5.1 (dishes explicitly named for pork are
+  // categorically excluded, not merely skipped); Marinated Chicken/Basil Chicken/Marinated Beef/A4
+  // Wagyu Beef get "no_pork" (named protein is chicken or beef, no pork). No halal tag — this is a
+  // shared pork-and-non-pork BBQ grill, not confirmed halal-certified anywhere checked. Deliberately
+  // excluded: Marinated Garlic Chicken / Marinated Garlic Pork Collar / Streaky Bacon / Pig Liver /
+  // Pork Ball / Luncheon Meat / Sirloin Beef Cube / Beef Short Plate / Marinated Beef Short Plate
+  // (near-duplicates of the marinated-protein items already included, or macros too underspecified
+  // to add credibly on top of these 6); the "Mookata Set Platter for 2/3-4/5-6/7-8" multi-pax
+  // sharing sets ($38/$58/$88/$128, official product page ingredient list of 17 shared components)
+  // were also excluded — a multi-person shared platter has no credible single-serving basis without
+  // guessing how it's divided, the same ambiguous-multi-item-platter reasoning that excluded
+  // eighteen_chefs' Salted Egg Snack Platter above. See
+  // reference/research-sessions/2026-09-03-85_fengshan_centre_bangkok_street_mookata_pte_ltd.md.
+  { id: "bsm_marinated_chicken", brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd", name: "Marinated Chicken (Small)", emoji: "🍗", category: "Local Hawker", price: 8.00, calories: 230, protein: 25, carbs: 3, fat: 12, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bsm_basil_chicken", brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd", name: "Basil Chicken (Small)", emoji: "🍗", category: "Local Hawker", price: 8.00, calories: 240, protein: 25, carbs: 4, fat: 13, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bsm_marinated_pork_collar", brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd", name: "Marinated Pork Collar (Small)", emoji: "🍖", category: "Local Hawker", price: 8.00, calories: 320, protein: 20, carbs: 3, fat: 24, confidence: "estimated" },
+  { id: "bsm_marinated_pork_belly", brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd", name: "Marinated Pork Belly (Small)", emoji: "🥓", category: "Local Hawker", price: 8.00, calories: 420, protein: 15, carbs: 2, fat: 38, confidence: "estimated" },
+  { id: "bsm_marinated_beef", brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd", name: "Marinated Beef (Small)", emoji: "🥩", category: "Local Hawker", price: 9.00, calories: 260, protein: 26, carbs: 2, fat: 17, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "bsm_a4_wagyu_beef", brandId: "85_fengshan_centre_bangkok_street_mookata_pte_ltd", name: "A4 Japanese Wagyu Beef", emoji: "🥩", category: "Local Hawker", price: 28.80, calories: 380, protein: 18, carbs: 1, fat: 34, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+
+  // --- 2026-09-03: food_junction_fireyaki (queue entry "food_junction", Brand + Premises already
+  // existed with 1 generic MenuItem, fj_3 "Fireyaki Grill Set" from an earlier, less-rigorous pass) ---
+  // Upgraded with 3 real, currently-orderable named dishes, same pattern as the 2026-09-02
+  // food_junction_ke_quench expansion under this same queue entry. Sourced from Fireyaki's live
+  // foodpanda listing (foodpanda.sg/restaurant/isxj/fireyaki-food-junction-junction-8), which lists
+  // exactly 3 orderable mains, each a teppanyaki-grilled Chicken Chop paired with a different side
+  // (Western Set of coleslaw/fries/baked beans/bun, tomato-or-aglio-olio spaghetti, or garlic egg
+  // fried rice) at real SGD prices — cross-checked against Fireyaki's own official page
+  // (foodjunction.com/our-brands/), which independently lists "Teppanyaki Chicken Chop Western Set"
+  // as one of its 3 "Must Try" items, confirming the name/format match rather than a foodpanda-only
+  // artifact. Deliberately did NOT add the official page's other 2 "Must Try" items (Teppanyaki Pork
+  // Chop with Tomato Spaghetti, Jumbo Fried Fish Fillet Western Set) or the 2022-era opening prices
+  // from an eatbook.sg article (Teppan Tenderloin Steak $10.90, Soy Glazed Chicken Chop $8.20, Ramen
+  // Yakisoba Pancake $7.20) — none of those appear on the current live foodpanda menu, so treating a
+  // 4-year-old opening-week article as still-accurate pricing/naming would risk stale data; left out
+  // rather than guess whether they're still offered. No official nutrition source exists for this
+  // stall, so all 3 items are confidence "estimated" — macros reasoned/calibrated against this
+  // project's own existing kopitiam_beradik_western entries for the same "chicken chop + starch side"
+  // shape (beradikwestern_chicken_chop 650/34/55/30 for the plain-chop baseline, scaled up for the
+  // Western Set's added coleslaw/fries/baked beans/bun; beradikwestern_chicken_chop_aglio_olio
+  // 720/36/70/28 for the spaghetti pairing; beradikwestern_crispy_chicken_cutlet_rice 700/32/75/26 for
+  // the fried-rice pairing, nudged up in fat to reflect garlic-egg frying oil). All 3 get "no_pork"
+  // (named protein is chicken, no pork) — no halal tag, not confirmed halal-certified anywhere
+  // checked. No SFA lookup (type "food_court_stall" but Premises/Brand already existed from an earlier
+  // pass — Phase 3 skipped per Phase 1 step 5). No new Premises added (existing food_junction_fireyaki_p1
+  // row at Junction 8 already matches the foodpanda listing's address). Remaining work on the parent
+  // "food_junction" queue entry unchanged: Go Teppan Go (fj_1) and Toast Junction (fj_2) still carry
+  // only their original 1 generic item each and would benefit from the same real-menu upgrade in a
+  // future pass; the site's outlets almost certainly also have other non-house-brand named concessions
+  // not yet identified (needs per-venue Google Maps/on-site research). Status left "pending" for that
+  // reason. See reference/research-sessions/2026-09-03-food_junction_fireyaki.md.
+  { id: "fireyaki_chicken_chop_western_set", brandId: "food_junction_fireyaki", name: "Teppanyaki Chicken Chop Western Set", emoji: "🍗", category: "Japanese", price: 10.70, calories: 700, protein: 36, carbs: 62, fat: 34, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "fireyaki_chicken_chop_spaghetti", brandId: "food_junction_fireyaki", name: "Teppanyaki Chicken Chop With Spaghetti", emoji: "🍝", category: "Japanese", price: 12.00, calories: 710, protein: 37, carbs: 68, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "fireyaki_chicken_chop_fried_rice", brandId: "food_junction_fireyaki", name: "Teppanyaki Chicken Chop With Garlic Egg Fried Rice", emoji: "🍚", category: "Japanese", price: 12.00, calories: 730, protein: 36, carbs: 70, fat: 32, compatibleWith: ["no_pork"], confidence: "estimated" },
 ];
