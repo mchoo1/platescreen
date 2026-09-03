@@ -12,17 +12,17 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-01, evening)
+## Where things stand (2026-09-04)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,716 — down from 1,748, see item 12 (32 duplicate SFA-licensee-suffix brands merged into their real existing brand, not lost data) |
-| Total premises | 4,655 — down from 4,683, see item 12's second follow-up (28 duplicate premises removed, 24 pre-existing + 4 from the merge) |
-| Total menu items | 2,557 — see item 12's follow-up fix (5 post-merge duplicate dishes removed) |
-| Menu items with ≥1 diet tag | 1,650 (64.5%) — up from 63.9%, see items 9/11 below |
-| Confidence breakdown (MenuItems) | 56 verified / 2,497 estimated / 6 community |
+| Total brands | 1,717 — grew slightly from research tasks running unattended since 2026-09-02 |
+| Total premises | 4,653 — down from 4,655, see item 12's third follow-up (2 duplicate Subway premises removed, 2026-09-04) |
+| Total menu items | 2,572 — grew slightly from research tasks running unattended since 2026-09-02 |
+| Menu items with ≥1 diet tag | 1,650+ as of last check (64.5%+), see items 9/11 below |
+| Confidence breakdown (MenuItems) | last full recount 2026-09-02: 56 verified / 2,497 estimated / 6 community |
 | Premises missing lat/lng | 0 |
-| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) |
+| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) — re-verified 2026-09-04 |
 | Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below) |
 
 Brand/premises/menu-item counts move day-to-day now that the three research
@@ -323,6 +323,16 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     `reference/research-sessions/2026-09-02-premises-duplicate-cleanup.md`.
     Flagged: the other large batch-scraped brand sets (Koufu, Fei Siong,
     hawker-centre batches) haven't been swept for this same pattern.
+    **Third follow-up, 2026-09-04**: ran the same `(brandId, normalized
+    address)` duplicate check dataset-wide (a superset of the Koufu/Fei
+    Siong/hawker-centre scope flagged above) — those three batches came back
+    clean. Found 2 duplicate groups elsewhere, both `subway` (same SFA
+    licence number, same address, differing only in coordinate precision and
+    a franchise-operator name change over time). Removed the 2
+    lower-precision duplicates, kept the higher-precision bulk-geocoded rows.
+    Premises 4,655 → 4,653. This closes out the sweep recommendation above.
+    See `reference/research-sessions/2026-09-04-dataset-wide-duplicate-
+    premises-sweep.md`.
     The remaining ~28 "Pte Ltd"-named Brand rows were reviewed but NOT merged — they don't match any existing brand (likely
     genuine standalone businesses whose corporate name leaked into the
     display name) and are left for a future display-name cleanup pass,

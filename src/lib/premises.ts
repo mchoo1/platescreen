@@ -38650,26 +38650,6 @@ const PREMISES_7 = [
     source: "sfa_licence_match"
   },
   {
-    id: "subway_p1587",
-    brandId: "subway",
-    label: "5 TAMPINES AVENUE 3 #01-08",
-    locationType: "mall",
-    locationContext: null,
-    address: "5 TAMPINES AVENUE 3 #01-08,TAMPINES WEST COMMUNITY CLUB,Singapore 529705",
-    postal: "529705",
-    lat: 1.34876,
-    lng: 103.93569,
-    sfa: {
-      licenceNumber: "NE14021V000",
-      licenseeName: "FLAX SUBS PRIVATE LIMITED",
-      premisesAddress: "5 TAMPINES AVENUE 3 #01-08,TAMPINES WEST COMMUNITY CLUB,Singapore 529705",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
     id: "subway_p1588",
     brandId: "subway",
     label: "418 YISHUN AVENUE 11 #01-401",
@@ -39903,26 +39883,6 @@ const PREMISES_7 = [
       licenceNumber: "SW13302N000",
       licenseeName: "WILL-WIN (PTE. LTD.)",
       premisesAddress: "1 LOWER KENT RIDGE ROAD #01-10,ONE@KENTRIDGE,Singapore 119082",
-      grade: "A",
-      demeritPoints: null,
-      licenceSuspended: false
-    },
-    source: "sfa_licence_match"
-  },
-  {
-    id: "subway_p1650",
-    brandId: "subway",
-    label: "1 MARITIME SQUARE #02-82",
-    locationType: "mall",
-    locationContext: null,
-    address: "1 MARITIME SQUARE #02-82,HARBOURFRONT CENTRE,Singapore 099253",
-    postal: "099253",
-    lat: 1.26397,
-    lng: 103.820243,
-    sfa: {
-      licenceNumber: "SW04110E000",
-      licenseeName: "ZEBULUN SUBS PRIVATE LIMITED",
-      premisesAddress: "1 MARITIME SQUARE #02-82,HARBOURFRONT CENTRE,Singapore 099253",
       grade: "A",
       demeritPoints: null,
       licenceSuspended: false
