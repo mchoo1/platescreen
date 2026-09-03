@@ -26453,4 +26453,40 @@ export const MENU_ITEMS = [
   { id: "fireyaki_chicken_chop_western_set", brandId: "food_junction_fireyaki", name: "Teppanyaki Chicken Chop Western Set", emoji: "🍗", category: "Japanese", price: 10.70, calories: 700, protein: 36, carbs: 62, fat: 34, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
   { id: "fireyaki_chicken_chop_spaghetti", brandId: "food_junction_fireyaki", name: "Teppanyaki Chicken Chop With Spaghetti", emoji: "🍝", category: "Japanese", price: 12.00, calories: 710, protein: 37, carbs: 68, fat: 30, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "fireyaki_chicken_chop_fried_rice", brandId: "food_junction_fireyaki", name: "Teppanyaki Chicken Chop With Garlic Egg Fried Rice", emoji: "🍚", category: "Japanese", price: 12.00, calories: 730, protein: 36, carbs: 70, fat: 32, compatibleWith: ["no_pork"], confidence: "estimated" },
+  // --- Batch 2026-09-04: yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd (Boon Tong Kee,
+  // Yuhua Market and Hawker Centre) --- kopitiam/koufu/foodfare/hawkers_street re-confirmed as
+  // having no addressable Phase 2 gap this run (same exhaustive audit trail as the 2026-09-02/03
+  // runs, not re-walked from scratch — kopitiam_china_food still needs Street View, kopitiam_king_
+  // grouper still needs a Brand-merge restructure out of this task's scope, kopitiam_cheers is
+  // permanently non-food). Brand already existed (2026-08-20 SFA hawker restructuring; SFA licence
+  // SW14705V000, "BOON TONG KEE PTE LTD", Grade A, confirmed via premises.ts) so only menu/macro
+  // research was needed. Boon Tong Kee is a well-documented Singapore Hainanese chicken rice chain
+  // (boontongkee.com.sg) — dish names cross-checked against its own site (recommended-dishes and
+  // chicken-rice pages) and a third-party aggregator that cites the official menu as its source
+  // (sgfoodprice.org/boon-tong-kee-singapore-menu). Note: that aggregator's own "nutrition
+  // information" table was NOT used as a source — its numbers look templated/formulaic (identical
+  // structure repeated across unrelated restaurants on the same site) rather than real published
+  // data, so all macros here are instead reasoned estimates calibrated against this project's own
+  // existing Chicken Rice/Roasted Chicken Rice convention used across dozens of other stalls in this
+  // file (~550/28/65/18) and its existing "Sweet & Sour Pork Set Meal" entry (kopitiam_sin_food_26,
+  // 580/22/60/26 as a rice-inclusive set) scaled down to a side-dish-without-rice portion. Also note:
+  // the official site's "Recommended Dishes" (zi char) page only lists 8 full-service branches (Ang
+  // Mo Kio, Balestier, Bukit Timah, Compass One, River Valley, Smith Street, Star Vista, Whampoa
+  // West) — Yuhua Market and Hawker Centre is NOT among them, suggesting this specific hawker-centre
+  // premises may be a simpler chicken-rice-focused kiosk rather than a full zi char restaurant. To
+  // avoid misrepresenting what this particular outlet sells, only the classic chicken-rice items
+  // (universal to every Boon Tong Kee location) plus a small set of chain-wide side/soup/beverage
+  // items confirmed by name on the official site are included, all confidence "estimated" (no
+  // official nutrition source exists for this chain). "Chicken Rice with Steamed Minced Pork" and
+  // "Sweet & Sour Pork" are explicitly named for pork so get no compatibleWith array at all (CLAUDE.md
+  // 5.1's categorical-exclusion rule), matching the existing "Braised Bean Curd and Roast Pork with
+  // Shrimp Paste" treatment. See reference/research-sessions/2026-09-04-yuhua_market_and_hawker_
+  // centre_boon_tong_kee_pte_ltd.md.
+  { id: "btk_yuhua_steamed_chicken_rice", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Steamed Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 6.50, calories: 550, protein: 28, carbs: 65, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "btk_yuhua_roasted_chicken_rice", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Roasted Chicken Rice", emoji: "🍗", category: "Chicken Rice/Poultry", price: 7.00, calories: 570, protein: 29, carbs: 65, fat: 21, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "btk_yuhua_chicken_rice_minced_pork", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Chicken Rice with Steamed Minced Pork", emoji: "🍚", category: "Chicken Rice/Poultry", price: 10.30, calories: 700, protein: 38, carbs: 67, fat: 28, confidence: "estimated" },
+  { id: "btk_yuhua_soup_of_the_day", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Soup of the Day", emoji: "🍲", category: "Local Hawker", price: 7.70, calories: 100, protein: 9, carbs: 6, fat: 4, compatibleWith: [], confidence: "estimated" },
+  { id: "btk_yuhua_sweet_sour_pork", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Sweet & Sour Pork", emoji: "🍖", category: "Local Hawker", price: 18.00, calories: 420, protein: 20, carbs: 30, fat: 24, confidence: "estimated" },
+  { id: "btk_yuhua_braised_beancurd_roast_pork", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Braised Bean Curd and Roast Pork with Shrimp Paste", emoji: "🧊", category: "Sides", price: 18.00, calories: 360, protein: 18, carbs: 16, fat: 24, confidence: "estimated" },
+  { id: "btk_yuhua_barley_water", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Barley Water", emoji: "🥤", category: "Beverages", price: 4.50, calories: 120, protein: 1, carbs: 28, fat: 0, compatibleWith: ["vegan", "vegetarian", "no_pork"], confidence: "estimated" },
 ];
