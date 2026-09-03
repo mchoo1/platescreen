@@ -203,6 +203,24 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    clear-and-continue nuisance; a fix on the user's own machine (deleting the two lock files via
    Windows Explorer, which isn't subject to the Linux sandbox's delete restriction) will unblock
    the next scheduled run in the meantime.
+   **2026-09-04 side-finding (not a fix, just a sharper diagnosis):** while committing unrelated
+   data work, this run's sandbox hit the same `Operation not permitted` on `.git/index.lock` — but
+   found that `mv`/rename of the lock file (to a throwaway name) succeeds even when `rm`/unlink of
+   the exact same file fails. Every subsequent `git` command (status/add/commit) then recreated its
+   own transient `index.lock` / `HEAD.lock` / `objects/*/tmp_obj_*` files and failed to clean them
+   up afterward (visible as `warning: unable to unlink ...` on otherwise-successful commands) —
+   git tolerated this as non-fatal for `add`/`commit` (both still exited 0 and the commit is real,
+   see item 12's third follow-up), but any command that needs the *old* lock gone first (like a
+   fresh `git status` right after a crash) hard-fails until it's renamed out of the way first. This
+   suggests the underlying filesystem (likely the OneDrive-sync layer under
+   `C:\Users\mchoo\OneDrive\Desktop`) disallows `unlink()` on files it's tracking but allows
+   `rename()` — which would explain both why locks accumulate as `.bak`/`.stale`/`.old` files
+   instead of disappearing, and a workaround: **rename the stale lock out of the way (not `rm` it)
+   immediately before each git command**, rather than deleting it, for any future session that
+   needs to unblock a commit here without shell-level filesystem changes. Not implemented as a
+   permanent fix (would belong in the scheduled tasks' own commit-step code, out of scope for a
+   pure-data-quality task) — just recording the sharper diagnosis for whoever picks up the actual
+   fix.
 8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
