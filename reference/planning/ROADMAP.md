@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-01. This is the entry point for "what's the state of
+**Last updated:** 2026-09-05. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -12,18 +12,19 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-04)
+## Where things stand (2026-09-05)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,717 — grew slightly from research tasks running unattended since 2026-09-02 |
-| Total premises | 4,653 — down from 4,655, see item 12's third follow-up (2 duplicate Subway premises removed, 2026-09-04) |
-| Total menu items | 2,572 — grew slightly from research tasks running unattended since 2026-09-02 |
-| Menu items with ≥1 diet tag | 1,650+ as of last check (64.5%+), see items 9/11 below |
-| Confidence breakdown (MenuItems) | last full recount 2026-09-02: 56 verified / 2,497 estimated / 6 community |
+| Total brands | 1,717 — unchanged 2026-09-04 → 2026-09-05 |
+| Total premises | 4,653 — unchanged since item 12's third follow-up (2026-09-04) |
+| Total menu items | 2,594 — up from 2,587 (+7, Golden Rooster batch, 2026-09-05) |
+| Menu items with ≥1 diet tag | 1,681 (64.8%) as of 2026-09-05 re-verification — spot-checked recently-added brands' untagged items, all correctly excluded per §5.1 (pork-named dishes, genuinely ambiguous generics), no fresh gaps found |
+| Confidence breakdown (MenuItems) | last full recount 2026-09-02: 56 verified / 2,497 estimated / 6 community (not re-run 2026-09-05, no confidence-affecting changes since) |
 | Premises missing lat/lng | 0 |
-| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, grocery products) — re-verified 2026-09-04 |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below) |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, grocery products) — re-verified 2026-09-05 against the full post-Golden-Rooster dataset |
+| Price / calorie / macro-sum outliers | 0 real issues found in a fresh 2026-09-05 sweep — 4 flagged calorie values and 5 flagged macro-sum ratios are known-legitimate (family-size items, near-zero-calorie coffee, and beer's uncounted alcohol calories) — see `reference/research-sessions/2026-09-05-improve-app-git-backlog-and-integrity-sweep.md` |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10. |
 
 Brand/premises/menu-item counts move day-to-day now that the three research
 scheduled tasks are running unattended — treat these as "as of last check,"
@@ -293,6 +294,19 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     Cold Storage/Giant/Sheng Siong/Don Don Donki, and a UI to actually
     display GroceryProduct data (none exists yet — these 19 rows aren't
     shown anywhere in the app), remain unstarted.
+    **2026-09-05 attempt (still unstarted, not for lack of trying):** tried
+    adding a first SKU for one of these 4 chains (Milo 3-in-1). Found real,
+    admissible per-100g macros via OpenFoodFacts (barcode 9556001217233,
+    confirmed sold in Singapore) but could not find an admissible *price* for
+    the same exact package size at any of the 4 target chains — WebSearch
+    only surfaced a forum post (unverifiable pack size/date) and a different
+    pack-size variant, and no retailer's own product page was fetchable
+    (`web_fetch`'s provenance restriction blocks constructed URLs). Declined
+    to guess/mix mismatched-SKU data rather than force an entry. Flagged as
+    likely needing a connected-browser session (per the 2026-09-02 Bonchon/
+    Dosirak precedent) to read a retailer's own site directly. See
+    `reference/research-sessions/2026-09-05-improve-app-git-backlog-and-
+    integrity-sweep.md`.
 11. ~~**Vegetarian tag backfill for "Vegetarian"-branded stalls**~~ — **Done
     2026-09-02.** Closes the last open follow-on flagged in the 2026-09-01
     halal audit (whether "Vegetarian"-branded Indian items should get a
