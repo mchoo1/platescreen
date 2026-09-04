@@ -672,3 +672,11 @@ DISH_DB.update({
     "Sauerkraut Sliced Fish Soup With Rice": ("🍚","Seafood",11.6,460,30,50,10),
     "Glutinous Rice Cake": ("🍘","Dim Sum",5.5,230,4,36,8),
 })
+
+# --- Batch 2026-09-04 additions (85_fengshan_centre_j_k_kings_prata_pte_ltd - no existing
+# convention for these two dishes; calibrated against the existing Roti Prata/Egg Prata
+# entries above and the Curry/Fish Head Curry family for the fish-curry portion) ---
+DISH_DB.update({
+    "Cheese Prata": ("🫓","Indian",2.5,340,11,30,20),
+    "Prata with Fish Curry": ("🫓","Indian",3.5,380,14,40,16),
+})

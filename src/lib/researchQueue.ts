@@ -866,9 +866,9 @@ export const RESEARCH_QUEUE = [
     type: "hawker",
     cuisine: "Local & Hawker",
     priority: "medium",
-    status: "pending",
+    status: "researched",
     sfaLicenceNo: "E02200B000",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: 85 Fengshan Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
+    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: 85 Fengshan Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet. UPDATE 2026-09-04 (scheduled restaurant-track run): confirmed J K Kings Prata Pte Ltd as a real, distinctly-named Indian-Muslim prata/roti-canai coffeeshop chain (SFA/ACRA company records + OpenRice listing for its Jurong East branch). Added 8 MenuItems (Roti Prata, Egg Prata, Cheese Prata, Prata with Fish Curry, Murtabak (Chicken), Chicken Biryani, Indian Rojak, Teh Tarik) — dish names sourced from Foursquare reviews of the chain's Jurong East branch plus a general menu-category web search (same legal entity/chain; no source covers this specific Fengshan branch individually). All confidence 'estimated', no official nutrition source for this chain. See reference/research-sessions/2026-09-04-85_fengshan_centre_j_k_kings_prata_pte_ltd.md. Status flipped to 'researched'."
   },
   {
     id: "85_fengshan_centre_wonderful_management_pte_ltd",

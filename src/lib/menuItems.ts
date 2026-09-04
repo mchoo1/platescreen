@@ -26489,4 +26489,34 @@ export const MENU_ITEMS = [
   { id: "btk_yuhua_sweet_sour_pork", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Sweet & Sour Pork", emoji: "🍖", category: "Local Hawker", price: 18.00, calories: 420, protein: 20, carbs: 30, fat: 24, confidence: "estimated" },
   { id: "btk_yuhua_braised_beancurd_roast_pork", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Braised Bean Curd and Roast Pork with Shrimp Paste", emoji: "🧊", category: "Sides", price: 18.00, calories: 360, protein: 18, carbs: 16, fat: 24, confidence: "estimated" },
   { id: "btk_yuhua_barley_water", brandId: "yuhua_market_and_hawker_centre_boon_tong_kee_pte_ltd", name: "Barley Water", emoji: "🥤", category: "Beverages", price: 4.50, calories: 120, protein: 1, carbs: 28, fat: 0, compatibleWith: ["vegan", "vegetarian", "no_pork"], confidence: "estimated" },
+
+  // --- 2026-09-04 (scheduled restaurant-track run): 85_fengshan_centre_j_k_kings_prata_pte_ltd ---
+  // Brand + Premises (SFA licence E02200B000, Grade A) already existed from the 2026-08-20 SFA
+  // restructuring batch. J K Kings Prata Pte Ltd is a real, distinctly-named Indian-Muslim
+  // prata/roti-canai coffeeshop chain (confirmed via SFA/ACRA company records and OpenRice's
+  // "JK Kings Prata" listing for its Jurong East branch, category "Indian Coffeeshop"). No
+  // official nutrition source exists for this chain, so all items are confidence "estimated".
+  // Dish names for Plain Prata, Egg Prata, Cheese Prata, and Prata with Fish Curry are sourced
+  // from Foursquare reviews of the chain's Jurong East branch (same legal entity/chain, only
+  // branch with indexed reviews); Murtabak, Indian Rojak, and Biryani are confirmed as menu
+  // categories via a separate web search summary of the same chain. No source describes this
+  // specific 85 Fengshan Centre branch's dishes individually, so the chain-wide menu is used,
+  // consistent with the same-chain-different-branch approach used for Boon Tong Kee above.
+  // Macros: Plain/Egg Prata and Teh Tarik use this project's exact established conventions
+  // (matching e.g. bnp2_2, sj_15/kopitiam_mohamed_ayaan_rojak's Indian Rojak, oar_desserts_drinks'
+  // Teh Tarik). Murtabak (Chicken) matches tekka_murtabak's exact convention, with no_pork added
+  // per CLAUDE.md 5.1 (named for chicken) even though that one precedent entry omits it. Chicken
+  // Biryani matches kopitiam_al_mokial_indian_muslim's exact convention. Cheese Prata and Prata
+  // with Fish Curry have no existing convention in this dataset — reasoned estimates calibrated
+  // from Roti Prata/Egg Prata (cheese: richer filling, more fat) and Roti Prata + a curry-gravy
+  // portion sized against this project's other curry-side conventions (e.g. Fish Head Curry).
+  // See reference/research-sessions/2026-09-04-85_fengshan_centre_j_k_kings_prata_pte_ltd.md.
+  { id: "jkp_plain_prata", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Roti Prata", emoji: "🫓", category: "Indian", price: 1.20, calories: 200, protein: 5, carbs: 28, fat: 8, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated", isPopular: true },
+  { id: "jkp_egg_prata", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Egg Prata", emoji: "🫓", category: "Indian", price: 2.00, calories: 270, protein: 9, carbs: 32, fat: 12, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "jkp_cheese_prata", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Cheese Prata", emoji: "🫓", category: "Indian", price: 2.50, calories: 340, protein: 11, carbs: 30, fat: 20, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "jkp_fish_curry_prata", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Prata with Fish Curry", emoji: "🫓", category: "Indian", price: 3.50, calories: 380, protein: 14, carbs: 40, fat: 16, compatibleWith: ["halal", "no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "jkp_murtabak_chicken", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Murtabak (Chicken)", emoji: "🫓", category: "Indian Breads", price: 6.00, calories: 450, protein: 22, carbs: 48, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "jkp_chicken_biryani", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Chicken Biryani", emoji: "🍛", category: "Indian", price: 6.00, calories: 620, protein: 28, carbs: 78, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "jkp_indian_rojak", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Indian Rojak", emoji: "🥗", category: "Indian", price: 4.00, calories: 380, protein: 14, carbs: 48, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "jkp_teh_tarik", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Teh Tarik", emoji: "🍵", category: "Drinks", price: 1.50, calories: 112, protein: 4, carbs: 18, fat: 3, compatibleWith: ["halal", "vegetarian"], confidence: "estimated" },
 ];
