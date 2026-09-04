@@ -680,3 +680,12 @@ DISH_DB.update({
     "Cheese Prata": ("🫓","Indian",2.5,340,11,30,20),
     "Prata with Fish Curry": ("🫓","Indian",3.5,380,14,40,16),
 })
+
+# --- Batch 2026-09-05 additions (jurong_west_hawker_centre_golden_rooster_pte_ltd - Golden
+# Rooster/Tenderfresh Group; no existing convention for these three, calibrated against the
+# existing "Chicken Chop"/"Chicken Wing"/"Fried Rice"/lps_roast_chicken_rice entries above) ---
+DISH_DB.update({
+    "Half Fried Chicken with Rice & Salad": ("🍗","Chicken",5.3,780,40,68,38),
+    "Black Pepper Chicken Chop Rice": ("🍗","Chicken",6.5,630,33,58,32),
+    "Fish & Chips": ("🐟","Seafood",6.8,680,26,60,32),
+})

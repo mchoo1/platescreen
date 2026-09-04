@@ -3970,13 +3970,16 @@ export const BRANDS_2 = [
             {
     id: "jurong_west_hawker_centre_golden_rooster_pte_ltd",
     name: "Golden Rooster Pte. Ltd.",
-    emoji: "🍜",
+    emoji: "🍗",
     type: "hawker",
-    cuisine: "Local & Hawker",
+    cuisine: "Fried & BBQ Chicken (Western)",
     aliases: [
-      "golden rooster pte. ltd."
+      "golden rooster pte. ltd.",
+      "golden rooster"
     ],
-    dietTags: [],
+    dietTags: [
+      "halal"
+    ],
     priceRange: "$",
     platforms: [
       "dine_in",

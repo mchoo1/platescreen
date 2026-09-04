@@ -26519,4 +26519,53 @@ export const MENU_ITEMS = [
   { id: "jkp_chicken_biryani", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Chicken Biryani", emoji: "🍛", category: "Indian", price: 6.00, calories: 620, protein: 28, carbs: 78, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "jkp_indian_rojak", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Indian Rojak", emoji: "🥗", category: "Indian", price: 4.00, calories: 380, protein: 14, carbs: 48, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "jkp_teh_tarik", brandId: "85_fengshan_centre_j_k_kings_prata_pte_ltd", name: "Teh Tarik", emoji: "🍵", category: "Drinks", price: 1.50, calories: 112, protein: 4, carbs: 18, fat: 3, compatibleWith: ["halal", "vegetarian"], confidence: "estimated" },
+
+  // --- 2026-09-05 additions: jurong_west_hawker_centre_golden_rooster_pte_ltd (Golden Rooster,
+  // 638A Jurong West Street 61 #01-22 Pioneer Mall) — confirmed via WebSearch/web_fetch as a
+  // real, well-documented Singapore trading name, not a bare licensee: this is a branch of the
+  // 34-outlet Tenderfresh Group "Golden Rooster" heartland-coffeeshop fried/BBQ-chicken franchise
+  // (tenderfresh.com.sg/goldenrooster; malaymail.com/TODAY 2016 "Seven Singapore places to get
+  // your fried chicken fix" names it explicitly and gives the S$9.80 whole-fried-chicken-with-fries
+  // price point; a 2017 Ivan Teh food-blog review titled "Halal-Certified Heartland Franchise"
+  // covering the shared Tenderfresh Classic & Golden Rooster menu gives per-piece wing pricing
+  // and named dishes). No source describes this specific Jurong West branch's menu individually —
+  // per the same same-chain-different-branch approach used for Boon Tong Kee/J K Kings Prata
+  // above, the chain-wide/reviewer-confirmed dish set is used instead of leaving the brand at
+  // zero MenuItems, since fried/BBQ chicken plates and a la carte wings are core, universal
+  // Golden Rooster items at every branch, not location-specific specials. Brand dietTags set to
+  // ["halal"] — confirmed independently via halalboleh.com's Sims Vista Market and Food Centre
+  // directory explicitly listing "Golden Rooster Western Food" as halal-prepared, plus Tenderfresh
+  // Group's own site (tenderfresh.com.sg/news/categories/halal) and multiple halalboleh.com
+  // listings for sibling Tenderfresh sub-brands (Tenderfresh Classic, Tenderfresh Xpress,
+  // Tenderbest) confirming group-wide MUIS certification. Prices used are the cheaper
+  // coffeeshop-stall tier (malaymail's $9.80 whole chicken w/ fries; a search-summarized "half
+  // chicken with rice and salad ~$5.30" and "chicken chop set $5.80"; the 2017 blog's confirmed
+  // $1.40/piece wing pricing, likely uniform a la carte across the franchise's formats) rather
+  // than the pricier standalone-casual-dining "Tenderfresh Classic" prices quoted in the same
+  // 2017 blog post (e.g. $18.90 for a whole/half specialty chicken plate) — this Brand's existing
+  // priceRange is "$", consistent with a hawker-centre stall, not the mall-based sit-down concept.
+  // Whole Fried Chicken with Fries ($9.80) itself was skipped as a MenuItem — like this project's
+  // established whole-cake-SKU exclusion, a whole shared chicken doesn't fit MenuItem's
+  // one-serving shape, and no reliable per-serving split exists. Macros: Chicken Chop Set reuses
+  // this project's existing generic "Chicken Chop" convention (dish-macro-lookup.py) exactly;
+  // Chicken Wings (Fried/BBQ, 2pc) double this project's existing single "Chicken Wing" convention
+  // (BBQ variant adjusted carbs/fat down-and-up respectively for a glaze vs. fried-batter profile);
+  // Chicken Wing Fried Rice is calibrated off this project's existing kopitiam_wok_qi_fried_rice
+  // "Prawn Paste Chicken Cutlet Fried Rice" entry (same shape: fried rice + a fried-chicken
+  // topping). Half Fried Chicken with Rice & Salad, Black Pepper Chicken Chop Rice, and Fish &
+  // Chips have no exact prior convention — reasoned estimates calibrated against this project's
+  // existing lps_roast_chicken_rice (chicken+rice baseline, adjusted up for frying vs. roasting
+  // and a larger bone-in half-chicken portion), the Chicken Chop convention (black pepper sauce:
+  // similar protein/carbs, more fat/sodium from the sauce), and astons_fish_chips/
+  // beradikwestern_fish_and_chips (hawker-tier fish and chips) respectively — all added to
+  // dish-macro-lookup.py's DISH_DB under a new batch header. All 7 items confidence "estimated"
+  // (no official brand nutrition source exists for this small franchise). See
+  // reference/research-sessions/2026-09-05-jurong_west_hawker_centre_golden_rooster_pte_ltd.md.
+  { id: "goldenrooster_half_fried_chicken_rice", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Half Fried Chicken with Rice & Salad", emoji: "🍗", category: "Chicken", price: 5.30, calories: 780, protein: 40, carbs: 68, fat: 38, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "goldenrooster_chicken_chop_set", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Chop Set", emoji: "🍗", category: "Chicken", price: 5.80, calories: 650, protein: 35, carbs: 55, fat: 30, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "goldenrooster_black_pepper_chicken_chop_rice", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Black Pepper Chicken Chop Rice", emoji: "🍗", category: "Chicken", price: 6.50, calories: 630, protein: 33, carbs: 58, fat: 32, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "goldenrooster_fish_chips", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Fish & Chips", emoji: "🐟", category: "Seafood", price: 6.80, calories: 680, protein: 26, carbs: 60, fat: 32, compatibleWith: ["halal", "pescatarian"], confidence: "estimated" },
+  { id: "goldenrooster_chicken_wing_fried_rice", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Wing Fried Rice", emoji: "🍚", category: "Chicken", price: 5.50, calories: 600, protein: 22, carbs: 70, fat: 24, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "goldenrooster_wings_fried_2pc", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Wings (Fried, 2 pc)", emoji: "🍗", category: "Chicken", price: 2.80, calories: 360, protein: 28, carbs: 16, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "goldenrooster_wings_bbq_2pc", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Wings (BBQ, 2 pc)", emoji: "🍗", category: "Chicken", price: 2.80, calories: 320, protein: 28, carbs: 22, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
 ];
