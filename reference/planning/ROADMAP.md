@@ -222,6 +222,19 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    permanent fix (would belong in the scheduled tasks' own commit-step code, out of scope for a
    pure-data-quality task) — just recording the sharper diagnosis for whoever picks up the actual
    fix.
+   **2026-09-06 confirmation (rename workaround verified end-to-end):** the
+   `platescreen-sync-to-stride` scheduled run hit both `.git/index.lock` and `.git/HEAD.lock`
+   stale again (~3h old, `fuser` confirmed no process holding either, `rm` failed with the same
+   `Operation not permitted`). Applied the 2026-09-04 diagnosis directly — `mv`'d both lock files
+   to `.stale-20260906` suffixed names instead of deleting them — and it worked cleanly: `git add`
+   and `git commit` both then succeeded (commit `46de84a`), with only non-fatal
+   `warning: unable to unlink ...` noise on the transient lock/tmp_obj files git itself creates
+   and discards per-command. Repo integrity re-checked after (`git fsck` clean aside from expected
+   dangling objects from the earlier aborted attempt, `HEAD` advanced correctly, working tree
+   clean). This is now confirmed as a reliable unblock, not just a diagnosis — worth promoting
+   from "recorded for whoever picks up the fix" to an actual first step in any future session's
+   commit routine here: check for `.git/{index,HEAD}.lock` before `git add`/`commit`, and `mv`
+   (never `rm`) them out of the way if stale, before falling back to anything more invasive.
 8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
