@@ -689,3 +689,18 @@ DISH_DB.update({
     "Black Pepper Chicken Chop Rice": ("🍗","Chicken",6.5,630,33,58,32),
     "Fish & Chips": ("🐟","Seafood",6.8,680,26,60,32),
 })
+
+# --- Batch 2026-09-05 additions (teban_gardens_market_and_food_centre_barakath_international_pte_ltd
+# - trades as "Al Barakath Restaurant & Catering", confirmed via its own foodpanda delivery menu,
+# same SFA-licensed address as this Brand's existing Premises row. Real dish names + current SGD
+# prices are the outlet's own listing; macros calibrated against the existing Roti Prata/Egg Prata,
+# Thosai (Plain), Murtabak (Chicken), and Nasi Briyani (Chicken) entries above) ---
+DISH_DB.update({
+    "Briyani Chicken": ("🍛","Indian",7.28,650,32,75,22),
+    "Briyani Mutton": ("🍛","Indian",7.84,720,30,75,32),
+    "Egg Onion Prata": ("🫓","Indian",2.88,290,10,34,13),
+    "Murtabak Ayam": ("🫓","Indian",8.80,600,28,58,26),
+    "Mutton Set Meal": ("🍛","Indian",6.80,620,28,68,26),
+    "Fish Set Meal": ("🍛","Indian",5.76,520,24,68,16),
+    "Plain Thosai (2 pcs)": ("🫓","Indian",3.12,390,12,72,6),
+})

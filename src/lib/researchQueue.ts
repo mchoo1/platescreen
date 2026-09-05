@@ -602,9 +602,9 @@ export const RESEARCH_QUEUE = [
     type: "hawker",
     cuisine: "Local & Hawker",
     priority: "low",
-    status: "pending",
+    status: "researched",
     sfaLicenceNo: "SW04164A000",
-    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Teban Gardens Market and Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet."
+    notes: "Outlet row already exists (added in the 2026-08-20 SFA hawker restructuring, location: Teban Gardens Market and Food Centre) — only menu items/macros (FoodOption records) are needed, not a new Outlet. UPDATE 2026-09-05 (restaurant-track scheduled run): confirmed this Brand trades as \"Al Barakath Restaurant & Catering PTE LTD\" via its own foodpanda delivery-menu listing — the listing's address (Block 39 HDB Teban Gardens, Teban Gardens Rd 39 UNIT N0: 01-332, 600039) is an exact match to this Brand's existing SFA-sourced Premises row (licence SW04164A000, premisesAddress \"39 TEBAN GARDENS ROAD #01-332 SINGAPORE 600039\"), so no separate SFA lookup was needed (Phase 3 skipped per this task's own rule for an already-existing Brand). Added 7 real MenuItems from the outlet's own menu (Briyani Chicken, Briyani Mutton, Egg Onion Prata, Murtabak Ayam, Mutton Set Meal, Fish Set Meal, Plain Thosai 2pcs) — real dish names + current SGD prices from the listing, macros reasoned/calibrated against this project's own existing Roti Prata/Egg Prata, Thosai (Plain), Murtabak (Chicken), and Nasi Briyani (Chicken) entries (no official nutrition source exists for this individual stall), all confidence 'estimated'. Left the pre-existing generic 'Nasi Briyani' item untouched. Brand now has 8 MenuItems total. tsc --noEmit clean in sandbox mirror. Status flipped to 'researched'. See reference/research-sessions/2026-09-05-teban_gardens_barakath_international.md."
   },
   {
     id: "telok_blangah_market_al_borgo_pte_ltd",

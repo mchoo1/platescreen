@@ -26568,4 +26568,21 @@ export const MENU_ITEMS = [
   { id: "goldenrooster_chicken_wing_fried_rice", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Wing Fried Rice", emoji: "🍚", category: "Chicken", price: 5.50, calories: 600, protein: 22, carbs: 70, fat: 24, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "goldenrooster_wings_fried_2pc", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Wings (Fried, 2 pc)", emoji: "🍗", category: "Chicken", price: 2.80, calories: 360, protein: 28, carbs: 16, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "goldenrooster_wings_bbq_2pc", brandId: "jurong_west_hawker_centre_golden_rooster_pte_ltd", name: "Chicken Wings (BBQ, 2 pc)", emoji: "🍗", category: "Chicken", price: 2.80, calories: 320, protein: 28, carbs: 22, fat: 16, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  // --- 2026-09-05 addition: teban_gardens_market_and_food_centre_barakath_international_pte_ltd
+  // (trades as "Al Barakath Restaurant & Catering" — confirmed via its foodpanda listing, whose
+  // address "Block 39 HDB Teban Gardens, Teban Gardens Rd 39 UNIT N0: 01-332, 600039" is an exact
+  // match to this Brand's existing SFA-sourced Premises row, licence SW04164A000). Real dish
+  // names + current SGD prices are the outlet's own delivery-menu listing; macros are reasoned/
+  // calibrated against this project's own existing Roti/Egg Prata, Thosai (Plain), Murtabak
+  // (Chicken), and Nasi Briyani (Chicken) entries elsewhere in this file (see
+  // reference/data/dish-macro-lookup.py's 2026-09-05 batch below) — no official nutrition source
+  // exists for this individual stall. All confidence "estimated". Brought this Brand from 1 to 8
+  // MenuItems. See reference/research-sessions/2026-09-05-teban_gardens_barakath_international.md.
+  { id: "tgbi_1", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Briyani Chicken", emoji: "🍛", category: "Indian", price: 7.28, calories: 650, protein: 32, carbs: 75, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgbi_2", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Briyani Mutton", emoji: "🍛", category: "Indian", price: 7.84, calories: 720, protein: 30, carbs: 75, fat: 32, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgbi_3", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Egg Onion Prata", emoji: "🫓", category: "Indian", price: 2.88, calories: 290, protein: 10, carbs: 34, fat: 13, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "tgbi_4", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Murtabak Ayam", emoji: "🫓", category: "Indian", price: 8.80, calories: 600, protein: 28, carbs: 58, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgbi_5", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Mutton Set Meal", emoji: "🍛", category: "Indian", price: 6.80, calories: 620, protein: 28, carbs: 68, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgbi_6", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Fish Set Meal", emoji: "🍛", category: "Indian", price: 5.76, calories: 520, protein: 24, carbs: 68, fat: 16, compatibleWith: ["halal", "no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "tgbi_7", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Plain Thosai (2 pcs)", emoji: "🫓", category: "Indian", price: 3.12, calories: 390, protein: 12, carbs: 72, fat: 6, compatibleWith: ["halal", "vegetarian", "vegan"], confidence: "estimated" },
 ];
