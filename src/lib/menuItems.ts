@@ -26614,4 +26614,29 @@ export const MENU_ITEMS = [
   { id: "whf_4", brandId: "wok_hei_hor_fun", name: "Ginger Onion Pork Rice", emoji: "🍚", category: "Local Hawker", price: 6.90, calories: 540, protein: 24, carbs: 62, fat: 18, compatibleWith: [], confidence: "estimated" },
   { id: "whf_5", brandId: "wok_hei_hor_fun", name: "Lala Assorted White Bee Hoon", emoji: "🍜", category: "Noodles", price: 7.90, calories: 480, protein: 28, carbs: 50, fat: 16, compatibleWith: [], confidence: "estimated", isPopular: true },
   { id: "whf_6", brandId: "wok_hei_hor_fun", name: "Fried Prawn Paste Chicken (6 pc)", emoji: "🍗", category: "Local Hawker", price: 9.00, calories: 520, protein: 28, carbs: 22, fat: 32, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  // 2026-09-06 (restaurant-track scheduled run): springleaf_prata_place — new Brand, Hawkers'
+  // Street concession at Tang Plaza (Michelin Plate-recognised, MUIS halal-certified chain).
+  // Dish names and prices cross-verified across two independent human-written reviews of the
+  // flagship outlet (DanielFoodDiary.com 2020, 2bearbear.com 2022/2023 — exact price matches on
+  // Plaster Blaster, Portobello Mozzarella, Murtaburger, Ultimate Murtabak, Umami-50, Prata
+  // Alfredo); Tang Plaza branch-specific pricing could not be confirmed (menu board only
+  // available as an un-OCR'd photo on The Ordinary Patrons' blog), so flagship prices were used
+  // — flagged in this run's session report. A third source (sgfoodprice.org) was checked but its
+  // "nutrition information" and several other sections (Drive Thru, Bulk Order, Franchising) are
+  // templated filler repeated across every restaurant on that site and were NOT used for macros;
+  // its price table was only used as a rough current-year sanity check, not a cited source.
+  // Macros are reasoned estimates calibrated against this project's own existing analogs: Egg
+  // Prata and Roti Prata entries above (halal Indian prata stalls), tekka_murtabak's Murtabak
+  // (Chicken) (450/22/48/20), and Popeyes' Classic Chicken Burger (570/28/48/30) for the
+  // burger-style Murtaburger. Halal-certified per MUIS (confirmed independently by
+  // DanielFoodDiary.com, Miss Tam Chiak, and sgfoodprice.org) — every item tagged halal/no_pork;
+  // Magic Meatless Murtabak (lentils, mushroom, vegan mayo, no meat) also tagged vegetarian.
+  { id: "spp_1", brandId: "springleaf_prata_place", name: "Egg Prata", emoji: "🫓", category: "Indian Breads", price: 2.30, calories: 270, protein: 9, carbs: 32, fat: 12, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "spp_2", brandId: "springleaf_prata_place", name: "Masala Chicken", emoji: "🍛", category: "Indian", price: 5.00, calories: 380, protein: 30, carbs: 12, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "spp_3", brandId: "springleaf_prata_place", name: "Portobello Mozzarella Prata", emoji: "🫓", category: "Indian Breads", price: 5.90, calories: 420, protein: 14, carbs: 40, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "spp_4", brandId: "springleaf_prata_place", name: "Plaster Blaster", emoji: "🍳", category: "Indian Breads", price: 5.90, calories: 480, protein: 18, carbs: 35, fat: 28, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "spp_5", brandId: "springleaf_prata_place", name: "Magic Meatless Murtabak", emoji: "🫓", category: "Indian Breads", price: 6.90, calories: 480, protein: 16, carbs: 55, fat: 20, compatibleWith: ["halal", "no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "spp_6", brandId: "springleaf_prata_place", name: "Murtaburger", emoji: "🍔", category: "Indian Breads", price: 8.50, calories: 650, protein: 28, carbs: 55, fat: 32, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "spp_7", brandId: "springleaf_prata_place", name: "Umami-50", emoji: "🧀", category: "Indian Breads", price: 9.90, calories: 600, protein: 22, carbs: 50, fat: 34, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "spp_8", brandId: "springleaf_prata_place", name: "Prata Alfredo", emoji: "🍝", category: "Indian Breads", price: 10.90, calories: 620, protein: 26, carbs: 48, fat: 34, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
 ];

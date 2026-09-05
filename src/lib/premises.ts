@@ -79849,6 +79849,19 @@ export const PREMISES_13 = [
     sfa: null,
     source: "operator_official_site"
   },
+  {
+    id: "springleaf_prata_place_p1",
+    brandId: "springleaf_prata_place",
+    label: "Tang Plaza",
+    locationType: "food_court",
+    locationContext: "Tang Plaza",
+    address: "310 Orchard Rd, Basement 1 Tang Plaza, Singapore 238864",
+    postal: "238864",
+    lat: 1.30505783063002,
+    lng: 103.8330606559494,
+    sfa: null,
+    source: "operator_official_site"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];

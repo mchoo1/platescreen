@@ -29480,6 +29480,24 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "springleaf_prata_place",
+    name: "Springleaf Prata Place",
+    emoji: "🫓",
+    type: "food_court_stall",
+    cuisine: "Prata",
+    aliases: [
+      "springleaf prata place",
+      "springleaf prata"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

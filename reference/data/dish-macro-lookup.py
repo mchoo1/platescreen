@@ -718,3 +718,20 @@ DISH_DB.update({
     "Lala Assorted White Bee Hoon": ("🍜","Noodles",7.90,480,28,50,16),
     "Fried Prawn Paste Chicken (6 pc)": ("🍗","Local Hawker",9.00,520,28,22,32),
 })
+
+# --- Batch 2026-09-06 additions (springleaf_prata_place - new Brand, Hawkers' Street concession
+# at Tang Plaza; MUIS halal-certified chain, Michelin Plate since 2019. Real dish names + prices
+# cross-verified across two independent human reviews of the flagship outlet (DanielFoodDiary.com
+# 2020, 2bearbear.com 2022/2023 - exact price matches on 6 of 8 items); macros calibrated against
+# the existing Egg Prata/Roti Prata entries, tekka_murtabak's Murtabak (Chicken) (450/22/48/20),
+# and Popeyes' Classic Chicken Burger (570/28/48/30) for the burger-style Murtaburger) ---
+DISH_DB.update({
+    "Egg Prata": ("🫓","Indian Breads",2.30,270,9,32,12),
+    "Masala Chicken": ("🍛","Indian",5.00,380,30,12,22),
+    "Portobello Mozzarella Prata": ("🫓","Indian Breads",5.90,420,14,40,22),
+    "Plaster Blaster": ("🍳","Indian Breads",5.90,480,18,35,28),
+    "Magic Meatless Murtabak": ("🫓","Indian Breads",6.90,480,16,55,20),
+    "Murtaburger": ("🍔","Indian Breads",8.50,650,28,55,32),
+    "Umami-50": ("🧀","Indian Breads",9.90,600,22,50,34),
+    "Prata Alfredo": ("🍝","Indian Breads",10.90,620,26,48,34),
+})
