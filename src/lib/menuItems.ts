@@ -26585,4 +26585,33 @@ export const MENU_ITEMS = [
   { id: "tgbi_5", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Mutton Set Meal", emoji: "🍛", category: "Indian", price: 6.80, calories: 620, protein: 28, carbs: 68, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "tgbi_6", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Fish Set Meal", emoji: "🍛", category: "Indian", price: 5.76, calories: 520, protein: 24, carbs: 68, fat: 16, compatibleWith: ["halal", "no_pork", "pescatarian"], confidence: "estimated" },
   { id: "tgbi_7", brandId: "teban_gardens_market_and_food_centre_barakath_international_pte_ltd", name: "Plain Thosai (2 pcs)", emoji: "🫓", category: "Indian", price: 3.12, calories: 390, protein: 12, carbs: 72, fat: 6, compatibleWith: ["halal", "vegetarian", "vegan"], confidence: "estimated" },
+  // --- 2026-09-05 addition: wok_hei_hor_fun (new Brand, operatorId "hawkers_street") — a
+  // Michelin Bib Gourmand (2026) hor fun stall whose flagship is Redhill Food Centre #01-94,
+  // identified this run as a genuinely new named concession at Hawkers' Street's newer venue,
+  // The Clementi Mall (opened 28 Oct 2025), via Little Day Out's in-person stall writeup
+  // (littledayout.com/hawkers-street-clementi-mall-food-court) — real dish names + this branch's
+  // own SGD prices sourced directly from that piece. No official nutrition source exists for this
+  // hawker stall; macros reasoned/calibrated against this project's own existing Hor Fun analogs
+  // (alexandra_village_food_centre_hor_fun_premium's Beef Hor Fun, margaret_drive_hawker_centre_
+  // xins_tzechar's Seafood Hor Fun), its own existing Seafood White Bee Hoon entries (used as a
+  // near-direct analog for Lala Assorted White Bee Hoon, whose description in a second source,
+  // SETHLUI.com, explicitly lists pork slices + sliced fish + prawns + clams — kept distinct from
+  // the seafood-only version and left with no diet tags for that reason), its own BBQ Pork Rice
+  // entries (for Ginger Onion Pork Rice), and its own Prawn Paste Chicken/Har Cheong Gai entries
+  // (for Fried Prawn Paste Chicken) — see reference/data/dish-macro-lookup.py's 2026-09-05 batch
+  // below. All 6 items confidence "estimated". Per CLAUDE.md section 5.1, Hor Fun is on the
+  // never-tag-no_pork skip-list (the stall's own SETHLUI.com review confirms pork lard is offered
+  // with the hor fun) so both Hor Fun items and the ambiguous-protein Assorted Bee Hoon were left
+  // with empty compatibleWith arrays rather than guessed; Ginger Onion Pork Rice is named for pork
+  // (compatibleWith: [], same convention as this file's existing BBQ Pork Rice entries, not the
+  // categorical no-array-at-all treatment reserved for the exact dish names on CLAUDE.md's list).
+  // Fried Prawn Paste Chicken is named for chicken only, tagged no_pork (no halal claim — this is
+  // a Chinese hawker stall, not a certified/Malay-Muslim one). See
+  // reference/research-sessions/2026-09-05-wok_hei_hor_fun.md.
+  { id: "whf_1", brandId: "wok_hei_hor_fun", name: "Assorted Hor Fun", emoji: "🍜", category: "Noodles", price: 6.90, calories: 560, protein: 26, carbs: 60, fat: 22, compatibleWith: [], confidence: "estimated", isPopular: true },
+  { id: "whf_2", brandId: "wok_hei_hor_fun", name: "Sliced Fish Hor Fun", emoji: "🍜", category: "Noodles", price: 7.90, calories: 500, protein: 26, carbs: 58, fat: 16, compatibleWith: [], confidence: "estimated" },
+  { id: "whf_3", brandId: "wok_hei_hor_fun", name: "Assorted Bee Hoon", emoji: "🍜", category: "Noodles", price: 6.90, calories: 520, protein: 22, carbs: 60, fat: 18, compatibleWith: [], confidence: "estimated" },
+  { id: "whf_4", brandId: "wok_hei_hor_fun", name: "Ginger Onion Pork Rice", emoji: "🍚", category: "Local Hawker", price: 6.90, calories: 540, protein: 24, carbs: 62, fat: 18, compatibleWith: [], confidence: "estimated" },
+  { id: "whf_5", brandId: "wok_hei_hor_fun", name: "Lala Assorted White Bee Hoon", emoji: "🍜", category: "Noodles", price: 7.90, calories: 480, protein: 28, carbs: 50, fat: 16, compatibleWith: [], confidence: "estimated", isPopular: true },
+  { id: "whf_6", brandId: "wok_hei_hor_fun", name: "Fried Prawn Paste Chicken (6 pc)", emoji: "🍗", category: "Local Hawker", price: 9.00, calories: 520, protein: 28, carbs: 22, fat: 32, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
 ];

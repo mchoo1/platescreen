@@ -29462,6 +29462,24 @@ export const BRANDS_4 = [
       "delivery"
     ]
   },
+  {
+    id: "wok_hei_hor_fun",
+    name: "Wok Hei Hor Fun",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hor Fun",
+    aliases: [
+      "wok hei hor fun",
+      "wok hei hor fun redhill"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

@@ -704,3 +704,17 @@ DISH_DB.update({
     "Fish Set Meal": ("🍛","Indian",5.76,520,24,68,16),
     "Plain Thosai (2 pcs)": ("🫓","Indian",3.12,390,12,72,6),
 })
+
+# --- Batch 2026-09-05 additions (wok_hei_hor_fun - new Brand, Michelin Bib Gourmand hor fun
+# stall, Hawkers' Street concession at The Clementi Mall; flagship at Redhill Food Centre.
+# Real dish names + this branch's own prices from Little Day Out's in-person stall writeup;
+# macros calibrated against the existing Hor Fun/Seafood Hor Fun, Seafood White Bee Hoon,
+# BBQ Pork Rice, and Prawn Paste Chicken/Har Cheong Gai entries above) ---
+DISH_DB.update({
+    "Assorted Hor Fun": ("🍜","Noodles",6.90,560,26,60,22),
+    "Sliced Fish Hor Fun": ("🍜","Noodles",7.90,500,26,58,16),
+    "Assorted Bee Hoon": ("🍜","Noodles",6.90,520,22,60,18),
+    "Ginger Onion Pork Rice": ("🍚","Local Hawker",6.90,540,24,62,18),
+    "Lala Assorted White Bee Hoon": ("🍜","Noodles",7.90,480,28,50,16),
+    "Fried Prawn Paste Chicken (6 pc)": ("🍗","Local Hawker",9.00,520,28,22,32),
+})
