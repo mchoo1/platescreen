@@ -26671,4 +26671,65 @@ export const MENU_ITEMS = [
   { id: "hmcm_5", brandId: "hjh_maimunah_clementi_mall", name: "Lemak Siput Sedut", emoji: "🐚", category: "Indonesian/Malay", price: 7.50, calories: 220, protein: 14, carbs: 6, fat: 16, compatibleWith: ["halal", "pescatarian"], confidence: "estimated", isPopular: true },
   { id: "hmcm_6", brandId: "hjh_maimunah_clementi_mall", name: "Sotong Hitam", emoji: "🦑", category: "Indonesian/Malay", price: 7.00, calories: 240, protein: 20, carbs: 10, fat: 14, compatibleWith: ["halal", "pescatarian"], confidence: "estimated" },
   { id: "hmcm_7", brandId: "hjh_maimunah_clementi_mall", name: "Sayur Lodeh", emoji: "🥘", category: "Indonesian/Malay", price: 1.50, calories: 140, protein: 3, carbs: 11, fat: 10, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+
+  // --- Batch 2026-09-06 (3rd restaurant-track run today): tartini_grill_pasta_clementi_mall ---
+  // New Brand (food_court_stall, operatorId 'hawkers_street') — a Western grill-and-pasta stall
+  // confirmed at Hawkers' Street's Clementi Mall food court, Level 4, via Little Day Out's own
+  // in-person stall-by-stall writeup (littledayout.com/hawkers-street-clementi-mall-food-court,
+  // names Chicken Chop/Black Pepper Beef Steak/creamy Mushroom Pasta as signatures, a $14.90 lamb
+  // chop, $6.90-for-2pc chicken wing rice, and a $10.90 Chicken Chop Spanish Fried Rice). The stall
+  // also has its own foodpanda delivery listing under a slightly different storefront name,
+  // "Tartini Kitchen Grill and Pasta (Clementi Mall)" (foodpanda.sg/restaurant/mcxl/...), whose
+  // address (3155 Commonwealth Avenue West #04-20,#04-21,#04-22, The Clementi Mall) matches this
+  // project's existing wok_hei_hor_fun_p1/hjh_maimunah_clementi_mall_p1 Premises rows for this same
+  // venue exactly — used as the primary source for real dish names + SGD prices (its "from $X" price
+  // is a delivery-discount figure; the crossed-out full price alongside it was used instead, matching
+  // dine-in/menu pricing). halalboleh.com independently lists a third name variant, "Tartini Sedap
+  // Grill and Pasta," at the same address (3155 Commonwealth Avenue West, coordinates
+  // 1.31499040/103.76441730, essentially identical to the coordinates already on file for this
+  // venue) with "✅ MUIS Certified" status — halal applied at Brand level and to every item below
+  // (all proteins are chicken/fish/beef/lamb/prawn; no pork-containing item on the foodpanda menu).
+  // All 3 name variants plus the Little Day Out plain "Tartini Grill & Pasta" are captured as
+  // aliases on the Brand; used "Tartini Grill & Pasta" as the canonical name (the plain, unbranded
+  // form independently corroborated by Little Day Out's own reporting, rather than picking between
+  // the two divergent food-delivery-platform storefront names).
+  //
+  // 10 representative items chosen from foodpanda's ~29-item delivery menu, skipping close
+  // protein-swap duplicates (e.g. the near-identical Chicken Cutlet/Fried Fish/Grilled
+  // Fish/Salmon/Chicken/Chicken Sausage Spaghetti variants, and Baked Cheese Spaghetti as a near
+  // duplicate of Baked Cheese Rice) to keep a well-differentiated set spanning grills, a combo
+  // platter, fried rice, 3 distinct pasta sauces, and a fried side. No official/HPB nutrition
+  // source exists for this stall or chain, so all 10 are confidence "estimated," macros reasoned
+  // and calibrated against this project's own existing Western food-court-stall analogs already in
+  // this file: astons_chicken_chop (420/40/8/24, à la carte) and kopitiam_beradik_western's Chicken
+  // Chop (650/34/55/30, full set) bracket the Signature Chicken Chop (this stall's version comes
+  // with fries + coleslaw, not rice, so estimated between the two baselines); astons_fish_chips
+  // (560/28/52/26) anchors Classic Fish and Chips; astons_salmon (440/42/4/26, à la carte, no
+  // sides) anchors Grilled Salmon, scaled up for the fries side; the existing "Mixed Grill"
+  // entries (750/40/45/40, a single 2-3-protein grill platter) anchor the 3-protein Mixed Grill
+  // Combo A, scaled up further for its extra protein + fries + coleslaw; saiz_carbonara
+  // (820/24/98/36) and dom_pasta_bolognese/beradikwestern_chicken_bolognese (580-620/24-28/72-78/
+  // 18-20) anchor the 2 spaghetti dishes; the existing Grilled Salmon with Aglio Olio and Chicken
+  // Steak Aglio Olio entries (560-620/28-32/55-65/20-26) anchor Prawn Aglio Olio; ws_wings_6pc_hot
+  // (570/48/3/38 for 6pcs, dry-rubbed/no batter) is scaled down and adjusted for a smaller,
+  // batter-coated 3pc portion for the Chicken Wings side. Signature Fried Rice's protein is a
+  // customer choice on the menu (not fixed) — following this project's existing convention for
+  // choice-of-protein rice dishes (see CLAUDE.md's economic/mixed-vegetable-rice precedent), it is
+  // tagged halal only, not no_pork.
+  //
+  // No SFA lookup performed (Phase 3 skipped) — same reasoning as this venue's other Hawkers'
+  // Street concessions (wok_hei_hor_fun, hjh_maimunah_clementi_mall, springleaf_prata_place): a
+  // named mall-food-court concession's licence sits with the food-court operator/premises, not the
+  // individual stall. Premises row reuses this venue's exact address/coordinates already on file.
+  // See reference/research-sessions/2026-09-06-tartini_grill_pasta_clementi_mall.md.
+  { id: "tgp_1", brandId: "tartini_grill_pasta_clementi_mall", name: "Signature Chicken Chop", emoji: "🍗", category: "Western", price: 11.90, calories: 560, protein: 38, carbs: 40, fat: 26, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "tgp_2", brandId: "tartini_grill_pasta_clementi_mall", name: "Classic Fish and Chips", emoji: "🐟", category: "Western", price: 11.90, calories: 580, protein: 26, carbs: 58, fat: 28, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgp_3", brandId: "tartini_grill_pasta_clementi_mall", name: "Beef Steak", emoji: "🥩", category: "Western", price: 16.90, calories: 620, protein: 40, carbs: 35, fat: 34, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "tgp_4", brandId: "tartini_grill_pasta_clementi_mall", name: "Grilled Salmon", emoji: "🐟", category: "Western", price: 14.90, calories: 520, protein: 40, carbs: 30, fat: 28, compatibleWith: ["halal", "no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "tgp_5", brandId: "tartini_grill_pasta_clementi_mall", name: "Mixed Grill Combo A (Chicken Chop + Grilled Fish + Lamb Steak)", emoji: "🍖", category: "Western", price: 18.90, calories: 980, protein: 62, carbs: 55, fat: 55, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "tgp_6", brandId: "tartini_grill_pasta_clementi_mall", name: "Signature Fried Rice", emoji: "🍚", category: "Western", price: 9.90, calories: 550, protein: 22, carbs: 78, fat: 16, compatibleWith: ["halal"], confidence: "estimated" },
+  { id: "tgp_7", brandId: "tartini_grill_pasta_clementi_mall", name: "Chicken Ham Carbonara", emoji: "🍝", category: "Pasta", price: 10.90, calories: 750, protein: 26, carbs: 85, fat: 32, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgp_8", brandId: "tartini_grill_pasta_clementi_mall", name: "Chicken Bolognese", emoji: "🍝", category: "Pasta", price: 9.90, calories: 580, protein: 26, carbs: 72, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tgp_9", brandId: "tartini_grill_pasta_clementi_mall", name: "Prawn Aglio Olio", emoji: "🍝", category: "Pasta", price: 13.90, calories: 560, protein: 28, carbs: 70, fat: 20, compatibleWith: ["halal", "no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "tgp_10", brandId: "tartini_grill_pasta_clementi_mall", name: "Chicken Wings (3pcs)", emoji: "🍗", category: "Sides", price: 8.90, calories: 330, protein: 22, carbs: 14, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
 ];

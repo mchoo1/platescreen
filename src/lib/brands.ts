@@ -29517,6 +29517,29 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "tartini_grill_pasta_clementi_mall",
+    name: "Tartini Grill & Pasta",
+    emoji: "🍝",
+    type: "food_court_stall",
+    cuisine: "Western",
+    aliases: [
+      "tartini grill & pasta",
+      "tartini grill and pasta",
+      "tartini kitchen grill and pasta",
+      "tartini sedap grill and pasta"
+    ],
+    dietTags: [
+      "halal"
+    ],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go",
+      "delivery"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

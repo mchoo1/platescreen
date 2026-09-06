@@ -735,3 +735,24 @@ DISH_DB.update({
     "Umami-50": ("🧀","Indian Breads",9.90,600,22,50,34),
     "Prata Alfredo": ("🍝","Indian Breads",10.90,620,26,48,34),
 })
+
+# --- Batch 2026-09-06 additions (3rd restaurant-track run today; tartini_grill_pasta_clementi_mall
+# - new Brand, Hawkers' Street concession at The Clementi Mall; Western grill-and-pasta stall, also
+# listed as "Tartini Kitchen Grill and Pasta" on foodpanda and "Tartini Sedap Grill and Pasta" on
+# halalboleh.com (MUIS certified), all same address. Real dish names + prices from foodpanda's full
+# delivery menu; macros calibrated against astons_chicken_chop/astons_fish_chips/astons_salmon,
+# kopitiam_beradik_western's Chicken Chop, the existing "Mixed Grill" entries, saiz_carbonara,
+# dom_pasta_bolognese/beradikwestern_chicken_bolognese, the Grilled Salmon with Aglio Olio /
+# Chicken Steak Aglio Olio entries, and ws_wings_6pc_hot) ---
+DISH_DB.update({
+    "Signature Chicken Chop": ("🍗","Western",11.90,560,38,40,26),
+    "Classic Fish and Chips": ("🐟","Western",11.90,580,26,58,28),
+    "Tartini Beef Steak": ("🥩","Western",16.90,620,40,35,34),
+    "Tartini Grilled Salmon": ("🐟","Western",14.90,520,40,30,28),
+    "Mixed Grill Combo A (Chicken Chop + Grilled Fish + Lamb Steak)": ("🍖","Western",18.90,980,62,55,55),
+    "Tartini Signature Fried Rice": ("🍚","Western",9.90,550,22,78,16),
+    "Chicken Ham Carbonara": ("🍝","Pasta",10.90,750,26,85,32),
+    "Tartini Chicken Bolognese": ("🍝","Pasta",9.90,580,26,72,20),
+    "Prawn Aglio Olio": ("🍝","Pasta",13.90,560,28,70,20),
+    "Tartini Chicken Wings (3pcs)": ("🍗","Sides",8.90,330,22,14,22),
+})
