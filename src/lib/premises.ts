@@ -79862,6 +79862,19 @@ export const PREMISES_13 = [
     sfa: null,
     source: "operator_official_site"
   },
+  {
+    id: "hjh_maimunah_clementi_mall_p1",
+    brandId: "hjh_maimunah_clementi_mall",
+    label: "The Clementi Mall",
+    locationType: "food_court",
+    locationContext: "The Clementi Mall",
+    address: "3155 Commonwealth Ave W, #04-20/21/22, Singapore 129588",
+    postal: "129588",
+    lat: 1.314966522855597,
+    lng: 103.7642704675928,
+    sfa: null,
+    source: "operator_official_site"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];

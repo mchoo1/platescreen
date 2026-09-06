@@ -26639,4 +26639,36 @@ export const MENU_ITEMS = [
   { id: "spp_6", brandId: "springleaf_prata_place", name: "Murtaburger", emoji: "🍔", category: "Indian Breads", price: 8.50, calories: 650, protein: 28, carbs: 55, fat: 32, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
   { id: "spp_7", brandId: "springleaf_prata_place", name: "Umami-50", emoji: "🧀", category: "Indian Breads", price: 9.90, calories: 600, protein: 22, carbs: 50, fat: 34, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "spp_8", brandId: "springleaf_prata_place", name: "Prata Alfredo", emoji: "🍝", category: "Indian Breads", price: 10.90, calories: 620, protein: 26, carbs: 48, fat: 34, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  // --- 2026-09-06 (2nd restaurant-track run today): Hjh Maimunah, Hawkers' Street @ The Clementi
+  // Mall (3155 Commonwealth Ave W #04-20/21/22) — a new named concession identified in the
+  // hawkers_street queue entry's 2025/2026 update notes (eatbook.sg's Oct 2025 coverage of the
+  // venue opening, "Clementi Mall's New Food Court Has 5 Famous Stalls"), confirmed via Mothership
+  // and the chain's own hjmaimunah.com/pages/clementi listing. No macro or price source exists for
+  // this specific branch (Hjh Maimunah does not publish per-outlet menus/prices), so dish names and
+  // prices are taken from the chain's own well-documented flagship outlets (Jalan Pisang, Joo
+  // Chiat) and its Mini-format branches, all serving the same standing menu — the same
+  // flagship-menu-applies-chainwide approach used for wok_hei_hor_fun and springleaf_prata_place
+  // above. Sources: eatbook.sg's Hjh Maimunah review + the Clementi Mall opening piece (Beef
+  // Rendang, Lemak Siput Sedut, Lontong, Nasi Sambal Goreng named as signatures); The Ordinary
+  // Patrons' Joo Chiat visit (Siput Sedut $7.50, Sotong Hitam $7, Sayur Lodeh $1.50, Beef Rendang
+  // Set $8.50, Chicken Set $8); a Hjh Maimunah Mini branch's published Lontong Sayur price ($5.50,
+  // via a maimunahfoods Facebook post). Macros are reasoned estimates calibrated against this
+  // project's own existing Nasi Padang analogs (mnp_beef_rendang_set 620/28/65/26,
+  // pr_selera_timur_nasi_sambal_goreng_set 560/20/68/22, gsm_lontong/tekka_lontong 480/14/68/18) —
+  // Lemak Siput Sedut and Sotong Hitam have no existing DB analog (seafood/shellfish side dishes
+  // not previously represented) so their macros are original reasoned estimates for a lemak-gravy
+  // shellfish side and a black-sauce braised-squid side respectively. Halal-certified (confirmed
+  // independently by eatbook.sg) — every item tagged halal; Lontong Sayur also tagged
+  // vegetarian/vegan matching this project's existing Lontong precedent (gsm_lontong,
+  // tekka_lontong); Lemak Siput Sedut and Sotong Hitam tagged pescatarian (shellfish/squid, no
+  // meat). No SFA lookup performed — same reasoning as wok_hei_hor_fun/springleaf_prata_place
+  // above (a named concession's licence sits with the mall food-court premises, not the individual
+  // stall). See reference/research-sessions/2026-09-06-hjh_maimunah_clementi_mall.md.
+  { id: "hmcm_1", brandId: "hjh_maimunah_clementi_mall", name: "Beef Rendang Set", emoji: "🍛", category: "Indonesian/Malay", price: 8.50, calories: 640, protein: 28, carbs: 62, fat: 28, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "hmcm_2", brandId: "hjh_maimunah_clementi_mall", name: "Chicken Set", emoji: "🍗", category: "Indonesian/Malay", price: 8.00, calories: 560, protein: 30, carbs: 45, fat: 24, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "hmcm_3", brandId: "hjh_maimunah_clementi_mall", name: "Nasi Sambal Goreng", emoji: "🍛", category: "Indonesian/Malay", price: 6.00, calories: 560, protein: 20, carbs: 68, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "hmcm_4", brandId: "hjh_maimunah_clementi_mall", name: "Lontong Sayur", emoji: "🍲", category: "Indonesian/Malay", price: 5.50, calories: 480, protein: 14, carbs: 68, fat: 18, compatibleWith: ["halal", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "hmcm_5", brandId: "hjh_maimunah_clementi_mall", name: "Lemak Siput Sedut", emoji: "🐚", category: "Indonesian/Malay", price: 7.50, calories: 220, protein: 14, carbs: 6, fat: 16, compatibleWith: ["halal", "pescatarian"], confidence: "estimated", isPopular: true },
+  { id: "hmcm_6", brandId: "hjh_maimunah_clementi_mall", name: "Sotong Hitam", emoji: "🦑", category: "Indonesian/Malay", price: 7.00, calories: 240, protein: 20, carbs: 10, fat: 14, compatibleWith: ["halal", "pescatarian"], confidence: "estimated" },
+  { id: "hmcm_7", brandId: "hjh_maimunah_clementi_mall", name: "Sayur Lodeh", emoji: "🥘", category: "Indonesian/Malay", price: 1.50, calories: 140, protein: 3, carbs: 11, fat: 10, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
 ];

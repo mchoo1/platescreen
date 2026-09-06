@@ -29498,6 +29498,25 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "hjh_maimunah_clementi_mall",
+    name: "Hjh Maimunah",
+    emoji: "🍛",
+    type: "food_court_stall",
+    cuisine: "Indonesian/Malay",
+    aliases: [
+      "hjh maimunah",
+      "hjh maimunah clementi mall",
+      "hajah maimunah"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];
