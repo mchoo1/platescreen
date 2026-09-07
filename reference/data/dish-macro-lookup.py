@@ -756,3 +756,21 @@ DISH_DB.update({
     "Prawn Aglio Olio": ("🍝","Pasta",13.90,560,28,70,20),
     "Tartini Chicken Wings (3pcs)": ("🍗","Sides",8.90,330,22,14,22),
 })
+
+# --- Batch 2026-09-07 additions (restaurant-track scheduled run; rong_cheng_rou_gu_cha_clementi_mall
+# - new Brand, Hawkers' Street concession at The Clementi Mall; heritage Teochew bak kut teh
+# pioneer, one of 5 Michelin Bib Gourmand names at this venue per greatdeals.com.sg/alvinology.com's
+# Oct/Nov 2025 opening coverage. Real dish names + prices from Eatbook.sg's Nov 2021 flagship
+# media-tasting review (no Clementi-specific menu found; chain publishes one standing menu).
+# "Bak Kut Teh", "Pig Trotters", and "You Tiao" reuse this DISH_DB's own existing entries verbatim
+# (see above) rather than being redefined here. Dragon Rib Soup, Rice, Mui Choy, and Braised
+# Peanuts are new dish types: Dragon Rib Soup reasoned as a scaled-up Bak Kut Teh (bigger, meatier
+# loin ribs, ~1.35x per Eatbook's description and its $9 vs $6.50 price ratio); Rice/Mui
+# Choy/Braised Peanuts have no existing analog or official/HPB source (standard BKT sides) -
+# reasoned estimates from typical per-serving composition at the sizes implied by Eatbook's prices ---
+DISH_DB.update({
+    "Dragon Rib Soup": ("🍖","Local Hawker",9.00,580,36,12,36),
+    "Rice (BKT side)": ("🍚","Sides",0.50,190,4,42,0.5),
+    "Mui Choy": ("🥬","Sides",2.00,35,1,6,1),
+    "Braised Peanuts": ("🥜","Sides",2.00,170,7,10,12),
+})

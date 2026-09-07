@@ -29540,6 +29540,25 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "rong_cheng_rou_gu_cha_clementi_mall",
+    name: "Rong Cheng Rou Gu Cha",
+    emoji: "🍲",
+    type: "food_court_stall",
+    cuisine: "Bak Kut Teh",
+    aliases: [
+      "rong cheng rou gu cha",
+      "rong cheng bak kut teh",
+      "rong cheng"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

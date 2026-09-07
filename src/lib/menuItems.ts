@@ -26732,4 +26732,41 @@ export const MENU_ITEMS = [
   { id: "tgp_8", brandId: "tartini_grill_pasta_clementi_mall", name: "Chicken Bolognese", emoji: "🍝", category: "Pasta", price: 9.90, calories: 580, protein: 26, carbs: 72, fat: 20, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
   { id: "tgp_9", brandId: "tartini_grill_pasta_clementi_mall", name: "Prawn Aglio Olio", emoji: "🍝", category: "Pasta", price: 13.90, calories: 560, protein: 28, carbs: 70, fat: 20, compatibleWith: ["halal", "no_pork", "pescatarian"], confidence: "estimated" },
   { id: "tgp_10", brandId: "tartini_grill_pasta_clementi_mall", name: "Chicken Wings (3pcs)", emoji: "🍗", category: "Sides", price: 8.90, calories: 330, protein: 22, carbs: 14, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+
+// --- Batch 2026-09-07 additions (restaurant-track scheduled run; rong_cheng_rou_gu_cha_clementi_mall
+// - new Brand, Hawkers' Street concession at The Clementi Mall. Rong Cheng Rou Gu Cha is a
+// heritage Teochew-style bak kut teh pioneer founded by Lim Hai Chay in 1976, credited as the
+// first in Singapore to serve loin ("dragon") ribs in BKT — confirmed at this venue via
+// greatdeals.com.sg and alvinology.com's Oct/Nov 2025 opening coverage of Hawkers' Street @ The
+// Clementi Mall (one of 5 Michelin Bib Gourmand names + 11 heritage brands at that outlet). No
+// Clementi-Mall-specific menu/pricing was found (chain publishes one standing menu across
+// branches), so real dish names + SGD prices are sourced from Eatbook.sg's Nov 2021 media-tasting
+// review of the flagship relaunch (Ang Mo Kio outlet) — the same flagship-menu approach already
+// used for this venue's other Hawkers' Street concessions (wok_hei_hor_fun, hjh_maimunah,
+// springleaf_prata_place, tartini_grill_pasta_clementi_mall). Macros for Bak Kut Teh and Pig
+// Trotters reuse this project's own existing calibration values verbatim (see dish-macro-lookup.py
+// DISH_DB: "Bak Kut Teh" 420/28/10/28 and "Pig Trotters" 580/32/15/38 - both already directly
+// price-matched or close to Eatbook's $6.50 figures). Dragon Rib Soup has no existing analog;
+// reasoned as a scaled-up Bak Kut Teh (bigger, meatier loin ribs, ~1.35x the standard bowl per
+// Eatbook's description and its $9 vs $6.50 price ratio). You Tiao reuses the existing You Tiao
+// calibration (180/4/25/7) with Eatbook's own $1.50 price. Rice, Mui Choy, and Braised Peanuts have
+// no existing analog in this database and no official/HPB source (they are standard BKT side
+// dishes) - reasoned estimates from typical per-serving composition at the sizes implied by
+// Eatbook's prices (a $0.50 rice topping, a $2 small preserved-vegetable side, a $2 small peanut
+// side), confidence 'estimated' for all 7 items. Per CLAUDE.md 5.1, Bak Kut Teh, Dragon Rib Soup
+// (a pork rib soup, same explicit-pork category as Bak Kut Teh itself), and Pig Trotters (literally
+// named "Pig") get no compatibleWith array at all; Rice/Mui Choy/You Tiao/Braised Peanuts are
+// plant-based sides tagged ["no_pork","vegetarian","vegan"]. No SFA lookup performed (Phase 3
+// skipped) - same reasoning as this venue's other Hawkers' Street concessions: a named
+// mall-food-court concession's licence sits with the food-court operator/premises, not the
+// individual stall. Premises row reuses this venue's exact address/coordinates already on file.
+// Brand is not halal-certified (pork-based BKT) - dietTags left empty at Brand level, no halal tag
+// on any item. See reference/research-sessions/2026-09-07-rong_cheng_rou_gu_cha_clementi_mall.md.
+  { id: "rcrgc_1", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Dragon Rib Soup", emoji: "🍖", category: "Local Hawker", price: 9.00, calories: 580, protein: 36, carbs: 12, fat: 36, confidence: "estimated", isPopular: true },
+  { id: "rcrgc_2", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Bak Kut Teh", emoji: "🍲", category: "Local Hawker", price: 6.50, calories: 420, protein: 28, carbs: 10, fat: 28, confidence: "estimated", isPopular: true },
+  { id: "rcrgc_3", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Pig Trotters", emoji: "🍖", category: "Local Hawker", price: 6.50, calories: 580, protein: 32, carbs: 15, fat: 38, confidence: "estimated" },
+  { id: "rcrgc_4", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Rice", emoji: "🍚", category: "Sides", price: 0.50, calories: 190, protein: 4, carbs: 42, fat: 0.5, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "rcrgc_5", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Mui Choy", emoji: "🥬", category: "Sides", price: 2.00, calories: 35, protein: 1, carbs: 6, fat: 1, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "rcrgc_6", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "You Tiao", emoji: "🥖", category: "Sides", price: 1.50, calories: 180, protein: 4, carbs: 25, fat: 7, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+  { id: "rcrgc_7", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Braised Peanuts", emoji: "🥜", category: "Sides", price: 2.00, calories: 170, protein: 7, carbs: 10, fat: 12, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
 ];
