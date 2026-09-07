@@ -26769,4 +26769,18 @@ export const MENU_ITEMS = [
   { id: "rcrgc_5", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Mui Choy", emoji: "🥬", category: "Sides", price: 2.00, calories: 35, protein: 1, carbs: 6, fat: 1, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
   { id: "rcrgc_6", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "You Tiao", emoji: "🥖", category: "Sides", price: 1.50, calories: 180, protein: 4, carbs: 25, fat: 7, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
   { id: "rcrgc_7", brandId: "rong_cheng_rou_gu_cha_clementi_mall", name: "Braised Peanuts", emoji: "🥜", category: "Sides", price: 2.00, calories: 170, protein: 7, carbs: 10, fat: 12, compatibleWith: ["no_pork", "vegetarian", "vegan"], confidence: "estimated" },
+// --- 2026-09-08 (restaurant-track scheduled run): malalah_clementi_mall, a "customizable mala"
+// concept stall (per greatdeals.com.sg/alvinology.com's Oct 2025 opening coverage of Hawkers'
+// Street @ The Clementi Mall - a first-time collaboration, no independent named-dish menu found
+// via WebSearch of eatbook.sg/sethlui.com/littledayout.com's own stall-by-stall coverage of this
+// venue, nor any Malalah-specific delivery listing). This is a pay-by-weight/spice-level format
+// with no fixed named dishes to itemise, same shape as this project's 6 existing weight-priced
+// mala-format brands (kopitiam_mala_hot_pot, kopitiam_chinatown_mala_hotpot,
+// kopitiam_ri_ri_hong_mala_hot_pot, fei_siong_xiang_guo_shi_dai,
+// alexandra_village_food_centre_ma_la_xiang_guo, canopy_bukit_canberra_add_more_mala_hot_pot) -
+// all represented as a single standardized "Mala Xiang Guo" MenuItem, reused verbatim here rather
+// than fabricated fresh: price/macros cross-checked against independent 2026 SG mala-pricing
+// roundups (themoneybees.co, misslobang.com - hawker/food-court mala runs ~S$2.20-2.68/100g, a
+// ~350-500g bowl lands ~S$8-8.80), consistent with this DB's existing $8 calibration.
+  { id: "malalah_mala_xiang_guo", brandId: "malalah_clementi_mall", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, compatibleWith: [], confidence: "estimated", isPopular: true },
 ];

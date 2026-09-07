@@ -29559,6 +29559,25 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "malalah_clementi_mall",
+    name: "Malalah",
+    emoji: "🌶️",
+    type: "food_court_stall",
+    cuisine: "Mala/Hotpot",
+    aliases: [
+      "malalah",
+      "malalah!",
+      "malalah clementi mall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];
