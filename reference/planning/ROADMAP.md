@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-05. This is the entry point for "what's the state of
+**Last updated:** 2026-09-08. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -31,6 +31,24 @@ scheduled tasks are running unattended — treat these as "as of last check,"
 not a fixed number. Confidence breakdown dipped earlier in the day (73→56
 verified) purely as a side effect of the grocery migration (item 1) moving
 17 items out of MenuItems, not new data-quality loss.
+
+**⚠️ New standing issue, flagged 2026-09-08: sandbox disk exhaustion, 2nd
+consecutive day, blocking all `tsc`/build verification.** The
+`platescreen-improve-app` scheduled task's sandbox has hit `/sessions`
+100% full (single-digit MB free out of 9.8G) on both 2026-09-07 and
+2026-09-08, confirmed with a fresh, near-empty session home directory both
+times (so it's not this task's own residue) — `npm install` fails
+immediately with `ENOSPC`, meaning `tsc --noEmit` cannot run at all, which
+blocks any data-file edit under CLAUDE.md section 6's mandatory
+verification step. Likely cause: the size of the user's own mounted
+OneDrive folders sharing the same filesystem, not anything PlateScreen's
+automation created. This will also block the three research scheduled
+tasks' own verification steps if it persists. Needs the user's direct
+attention (freeing space in the mounted folders, or a larger sandbox disk
+allocation) — no scheduled task can fix this from inside its own sandbox.
+See `reference/research-sessions/2026-09-07-improve-app-no-action.md` and
+`reference/research-sessions/2026-09-08-improve-app-no-action-disk-
+exhausted-2nd-day.md`.
 
 **Launch-readiness review completed 2026-08-31** (code + database, requested
 directly). Verdict: **the database and the codebase are launch-ready; one
@@ -235,6 +253,13 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    from "recorded for whoever picks up the fix" to an actual first step in any future session's
    commit routine here: check for `.git/{index,HEAD}.lock` before `git add`/`commit`, and `mv`
    (never `rm`) them out of the way if stale, before falling back to anything more invasive.
+   **2026-09-08 reconfirmation:** the `platescreen-improve-app` run hit the same stale-lock pair
+   again (`.git/index.lock`/`.git/HEAD.lock`, ~5-7h old, `fuser` confirmed no holding process) —
+   this time left behind by the 2026-09-07 mccafe-colocation 13th-pass run, whose own commit had
+   failed the same way and left a note append + 2 files uncommitted. Applied the rename workaround
+   again (`mv` to `.stale-20260908` suffixes) and it worked cleanly; committed the pending output
+   (`6ee3de8`) with the same non-fatal `unable to unlink ...tmp_obj_*` warnings as 2026-09-06, no
+   fatal errors. Continues to hold up as a reliable unblock.
 8. **Decide on task #29** (Google Maps/Street View escalation for the ~12
    remaining SFA-licensee-name brands text search can't identify) — either
    commit to doing it (needs a visual-identification workflow this session
