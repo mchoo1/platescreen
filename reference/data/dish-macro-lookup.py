@@ -774,3 +774,25 @@ DISH_DB.update({
     "Mui Choy": ("🥬","Sides",2.00,35,1,6,1),
     "Braised Peanuts": ("🥜","Sides",2.00,170,7,10,12),
 })
+
+# --- Batch 2026-09-08 additions (restaurant-track scheduled run, 2nd pick;
+# lixin_teochew_fishball_noodle_clementi_mall - new Brand, Hawkers' Street concession at The
+# Clementi Mall; Michelin-recognised, est. 1968. Real dish names + prices sourced directly from
+# this exact stall's own foodpanda listing (restaurant id ogn0). No official calorie/macro figures
+# published by the brand or found on HPB - all macros are reasoned estimates anchored on this
+# DISH_DB's own existing "Teochew Fishball Noodle" calibration (400/20/55/10 for a basic $4.50
+# hawker portion), scaled per item for this stall's larger $6.50-$11.70 food-court/delivery
+# portions and each item's specific composition (noodle vs soup-only, added minced meat/mushroom/
+# dumplings). No diet tags assigned on any item at the MenuItem level: fishball-noodle dishes are
+# on CLAUDE.md 5.1's standing no_pork skip-list (the brand's own site confirms noodles are served
+# "topped with crispy lard"), and the brand's own site confirms the fish dumpling filling is pork,
+# so dumpling items get no compatibleWith array at all rather than a false-safe tag. ---
+DISH_DB.update({
+    "Traditional Fishball Noodle (Lixin)": ("🍜","Noodles",8.80,430,22,56,12),
+    "Lixin Signature Noodle": ("🍜","Noodles",11.70,600,32,66,20),
+    "Mushroom Minced Meat Noodle": ("🍜","Noodles",10.60,540,26,62,18),
+    "Fish Dumpling Soup": ("🍥","Soups",8.80,300,22,18,14),
+    "Fishball Soup (Lixin)": ("🍥","Soups",6.50,220,18,10,10),
+    "Fishcake (Lixin)": ("🐟","Sides",5.20,210,13,9,12),
+    "Sambal Meat Dumplings": ("🥟","Sides",7.10,340,16,24,20),
+})

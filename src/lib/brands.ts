@@ -29578,6 +29578,27 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "lixin_teochew_fishball_noodle_clementi_mall",
+    name: "Lixin Teochew Fishball Noodle",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Fishball Noodles",
+    aliases: [
+      "lixin teochew fishball noodle",
+      "lixin",
+      "li xin teochew fishball noodles",
+      "lixin fishball noodle clementi mall"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go",
+      "delivery"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

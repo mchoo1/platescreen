@@ -26783,4 +26783,29 @@ export const MENU_ITEMS = [
 // roundups (themoneybees.co, misslobang.com - hawker/food-court mala runs ~S$2.20-2.68/100g, a
 // ~350-500g bowl lands ~S$8-8.80), consistent with this DB's existing $8 calibration.
   { id: "malalah_mala_xiang_guo", brandId: "malalah_clementi_mall", name: "Mala Xiang Guo", emoji: "🌶️", category: "Mala/Hotpot", price: 8, calories: 550, protein: 25, carbs: 35, fat: 32, compatibleWith: [], confidence: "estimated", isPopular: true },
+
+// --- 2026-09-08 (restaurant-track scheduled run, 2nd pick this run): lixin_teochew_fishball_noodle_clementi_mall
+// (Hawkers' Street @ The Clementi Mall). Real, venue-specific menu + prices sourced directly from
+// this exact stall's own foodpanda listing (foodpanda.sg/restaurant/ogn0/lixin-teochew-fishball-noodle-
+// hawkers-street-at-the-clementi-mall) - not a generic estimate. Brand background (est. 1968, Michelin-
+// recognised, 100% yellowtail fish fishballs "no fillers", handmade fish dumplings confirmed to use a
+// pork filling, noodles served "topped with crispy lard") from lixinfishball.com's own About/Our Food
+// pages. No official calorie/macro figures published by the brand or found on HPB, so all macros below
+// are reasoned estimates anchored on this project's existing "Teochew Fishball Noodle" DISH_DB
+// calibration (400 cal/20g protein/55g carbs/10g fat for a basic $4.50 hawker-stall portion), scaled up
+// per item for this stall's larger, higher-priced ($6.50-$11.70) food-court/delivery portions and
+// each item's specific composition (noodle vs soup-only, added minced meat/mushroom/dumplings).
+// No compatibleWith tags assigned on any item: "Fishball Noodles" is on CLAUDE.md section 5.1's
+// standing no_pork skip-list (may traditionally carry pork lard/broth despite the name) - confirmed
+// here by the brand's own site language ("crispy lard"); the dumpling filling is confirmed pork per
+// the brand's own site, so dumpling items get no diet tag at all rather than a false-safe one; and no
+// gluten/dairy/nut-free claim is attempted per standing project rule. See
+// reference/research-sessions/2026-09-08-lixin_teochew_fishball_noodle_clementi_mall.md.
+  { id: "ltfn_1", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Traditional Fishball Noodle", emoji: "🍜", category: "Noodles", price: 8.80, calories: 430, protein: 22, carbs: 56, fat: 12, confidence: "estimated", isPopular: true },
+  { id: "ltfn_2", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Lixin Signature Noodle", emoji: "🍜", category: "Noodles", price: 11.70, calories: 600, protein: 32, carbs: 66, fat: 20, confidence: "estimated", isPopular: true },
+  { id: "ltfn_3", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Mushroom Minced Meat Noodle", emoji: "🍜", category: "Noodles", price: 10.60, calories: 540, protein: 26, carbs: 62, fat: 18, confidence: "estimated" },
+  { id: "ltfn_4", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Fish Dumpling Soup", emoji: "🍥", category: "Soups", price: 8.80, calories: 300, protein: 22, carbs: 18, fat: 14, confidence: "estimated", isPopular: true },
+  { id: "ltfn_5", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Fishball Soup", emoji: "🍥", category: "Soups", price: 6.50, calories: 220, protein: 18, carbs: 10, fat: 10, confidence: "estimated", isPopular: true },
+  { id: "ltfn_6", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Fishcake", emoji: "🐟", category: "Sides", price: 5.20, calories: 210, protein: 13, carbs: 9, fat: 12, confidence: "estimated", isPopular: true },
+  { id: "ltfn_7", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Sambal Meat Dumplings", emoji: "🥟", category: "Sides", price: 7.10, calories: 340, protein: 16, carbs: 24, fat: 20, confidence: "estimated" },
 ];
