@@ -64,3 +64,25 @@ status type has no `'blocked'` state to do this natively (`src/types/db.ts`).
 
 No new MenuItem, GroceryProduct, Brand, or Premises records added. No
 `git push` performed. `C:\stride-app` not touched.
+
+## Git housekeeping note
+
+`.git/index.lock` was found stale (dated 2026-09-08, no live git process
+holding it) and blocked the normal `git add && git commit` flow. The
+underlying filesystem for this OneDrive-synced folder does not permit
+`unlink()` from this session (confirmed: `rm`, and git's own internal
+`unlink()` calls on loose-object temp files and `HEAD.lock`, all fail with
+"Operation not permitted" even though the owning user has rwx on the
+files) — consistent with the disk-exhaustion/git-lock issues noted in this
+entry's 2026-09-08 history. Worked around it by committing via plumbing
+with a temporary `GIT_INDEX_FILE` (`git add` / `write-tree` /
+`commit-tree` / `update-ref refs/heads/main`) instead of the blocked
+porcelain path — verified content-correct via `git show --stat` and
+`git diff --stat` against the parent commit (exactly the 2 intended files
+changed, matching this session's edits). The commit is real and on
+`main` (`9c61e03`). The *default* `.git/index` was not refreshed (doing so
+would hit the same blocked-unlink issue), so a plain `git status` run
+after this session may show misleading staged/unstaged noise until a
+session with delete permission on this path runs `git add -A` (or
+similar) once to resync the index — this is a repo-housekeeping artifact,
+not a data-file problem. No `git push` performed.
