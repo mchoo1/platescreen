@@ -21,6 +21,42 @@ for (const p of PREMISES) {
   PREMISES_BY_BRAND.set(p.brandId, list);
 }
 
+/**
+ * Normalize free text for search matching: lowercase, drop apostrophes/smart
+ * quotes entirely (so "McDonald's" and "mcdonalds" compare equal — the
+ * apostrophe-less spelling is how almost everyone actually types it),
+ * collapse remaining punctuation to spaces, and collapse whitespace.
+ *
+ * Found via a live search-box review: 65 brand names in this dataset carry
+ * an apostrophe (McDonald's, Domino's Pizza, Nando's, Dunkin', Carl's Jr.,
+ * etc.) and the previous plain `.includes()` match meant searching
+ * "mcdonalds" returned zero results for one of the most common fast-food
+ * chains in the database. See reference/research-sessions/2026-09-13-
+ * search-apostrophe-and-multiword-fix.md.
+ */
+export function normalizeSearchText(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/['’‘`]/g, '')
+    .replace(/[^\w\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * True if every whitespace-separated token in `query` appears somewhere
+ * across the normalized, combined `fields` — order-independent, so a query
+ * like "mcdonalds big mac" matches a row whose name is "Big Mac" at
+ * restaurant "McDonald's" even though neither field alone contains the
+ * whole query string. An empty/whitespace-only query always matches.
+ */
+export function matchesQuery(query: string, ...fields: string[]): boolean {
+  const q = normalizeSearchText(query);
+  if (!q) return true;
+  const combined = fields.map(normalizeSearchText).join(' ');
+  return q.split(' ').filter(Boolean).every((token) => combined.includes(token));
+}
+
 /** Protein per dollar (g/$), rounded to 1 decimal. Returns 0 if price is 0. */
 export function proteinPerDollar(protein: number, price: number): number {
   if (!price) return 0;
@@ -191,13 +227,11 @@ export interface UncoveredFilters {
 }
 
 export function applyUncoveredFilters(rows: UncoveredBrandRow[], f: UncoveredFilters): UncoveredBrandRow[] {
-  const q = f.q.trim().toLowerCase();
-  const loc = f.location.trim().toLowerCase();
   return rows.filter((row) => {
-    if (q && !row.name.toLowerCase().includes(q)) return false;
+    if (!matchesQuery(f.q, row.name)) return false;
     if (f.outletTypes.length && !f.outletTypes.includes(row.outletType)) return false;
     if (f.platforms.length && !f.platforms.every((p) => row.platforms.includes(p))) return false;
-    if (loc && !row.location.toLowerCase().includes(loc) && !row.name.toLowerCase().includes(loc)) return false;
+    if (!matchesQuery(f.location, row.location, row.name)) return false;
     if (f.maxDistanceKm != null && (row.distanceKm == null || row.distanceKm > f.maxDistanceKm)) return false;
     return true;
   });
@@ -270,10 +304,8 @@ export const DEFAULT_FILTERS: ScreenerFilters = {
 };
 
 export function applyFilters(rows: ScreenerRow[], f: ScreenerFilters): ScreenerRow[] {
-  const q = f.q.trim().toLowerCase();
-  const loc = f.location.trim().toLowerCase();
   return rows.filter((row) => {
-    if (q && !row.name.toLowerCase().includes(q) && !row.restaurantName.toLowerCase().includes(q)) return false;
+    if (!matchesQuery(f.q, row.name, row.restaurantName)) return false;
     if (f.calMin != null && row.calories < f.calMin) return false;
     if (f.calMax != null && row.calories > f.calMax) return false;
     if (f.protMin != null && row.protein < f.protMin) return false;
@@ -283,7 +315,7 @@ export function applyFilters(rows: ScreenerRow[], f: ScreenerFilters): ScreenerR
     if (f.outletTypes.length && !f.outletTypes.includes(row.outletType)) return false;
     if (f.platforms.length && !f.platforms.every((p) => row.platforms.includes(p))) return false;
     if (f.verifiedOnly && row.confidence !== 'verified') return false;
-    if (loc && !row.location.toLowerCase().includes(loc) && !row.restaurantName.toLowerCase().includes(loc)) return false;
+    if (!matchesQuery(f.location, row.location, row.restaurantName)) return false;
     if (f.maxDistanceKm != null && (row.distanceKm == null || row.distanceKm > f.maxDistanceKm)) return false;
     return true;
   });
