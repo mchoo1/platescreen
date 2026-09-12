@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-08. This is the entry point for "what's the state of
+**Last updated:** 2026-09-13. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -408,6 +408,27 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     display name) and are left for a future display-name cleanup pass,
     not a duplicate-merge one. Full reasoning: `reference/research-
     sessions/2026-09-02-duplicate-brand-merge.md`.
+
+13. ~~**Search box: apostrophe-insensitive + multi-word/cross-field
+    matching**~~ — **Done 2026-09-13.** Asked to review and improve the
+    screener search feature. Found the search box (`filters.q`) and
+    location search (`filters.location`) did plain `.includes()` matching,
+    which silently failed for any of the 65 brand names (of 1,724) that
+    contain an apostrophe — McDonald's, Domino's Pizza, Nando's, Dunkin',
+    Carl's Jr., Auntie Anne's, etc. — since typing "mcdonalds" (the
+    near-universal no-apostrophe convention) returned 0 results. Also fixed
+    a smaller gap: multi-word queries spanning two fields (e.g. "big mac
+    mcdonalds") matched nothing because the whole query string was checked
+    against each field independently. Added `normalizeSearchText()` +
+    `matchesQuery()` to `screener.ts` (strip apostrophes, punctuation ->
+    space, token-AND match across any number of fields) and rewired
+    `applyFilters`/`applyUncoveredFilters` to use them. Verified: `tsc
+    --noEmit` clean, live re-run against current data (2,647 menu-item
+    rows) confirms mcdonalds 0->56, dominos 0->13, nandos 0->18, "big mac
+    mcdonalds" 0->1 (correct row), plain searches unchanged (chicken rice:
+    128, laksa: 28). No data files touched -- pure filter-logic change. See
+    `reference/research-sessions/2026-09-13-search-apostrophe-and-
+    multiword-fix.md`.
 
 ## Not started, lower priority
 
