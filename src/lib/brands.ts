@@ -29599,6 +29599,46 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "the_neighbourwok_fried_hokkien_prawn_mee_clementi_mall",
+    name: "The Neighbourwok",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Hokkien Mee",
+    aliases: [
+      "the neighbourwok",
+      "neighbourwok",
+      "the neighbourwok fried hokkien prawn mee",
+      "neighbour wok fried hokkien mee"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
+  {
+    id: "hup_hong_chicken_rice_tang_plaza",
+    name: "Hup Hong Chicken Rice",
+    emoji: "🍗",
+    type: "food_court_stall",
+    cuisine: "Chicken Rice",
+    aliases: [
+      "hup hong chicken rice",
+      "hup hong",
+      "hup hong chicken rice tang plaza"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go",
+      "delivery"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

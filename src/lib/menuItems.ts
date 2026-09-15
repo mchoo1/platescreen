@@ -26808,4 +26808,39 @@ export const MENU_ITEMS = [
   { id: "ltfn_5", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Fishball Soup", emoji: "🍥", category: "Soups", price: 6.50, calories: 220, protein: 18, carbs: 10, fat: 10, confidence: "estimated", isPopular: true },
   { id: "ltfn_6", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Fishcake", emoji: "🐟", category: "Sides", price: 5.20, calories: 210, protein: 13, carbs: 9, fat: 12, confidence: "estimated", isPopular: true },
   { id: "ltfn_7", brandId: "lixin_teochew_fishball_noodle_clementi_mall", name: "Sambal Meat Dumplings", emoji: "🥟", category: "Sides", price: 7.10, calories: 340, protein: 16, carbs: 24, fat: 20, confidence: "estimated" },
+  { id: "tnw_1", brandId: "the_neighbourwok_fried_hokkien_prawn_mee_clementi_mall", name: "Fried Hokkien Prawn Mee (Small)", emoji: "🍜", category: "Noodles", price: 6.90, calories: 520, protein: 20, carbs: 60, fat: 20, confidence: "estimated", isPopular: true },
+  { id: "tnw_2", brandId: "the_neighbourwok_fried_hokkien_prawn_mee_clementi_mall", name: "Fried Hokkien Prawn Mee (Large)", emoji: "🍜", category: "Noodles", price: 9.90, calories: 680, protein: 26, carbs: 78, fat: 26, confidence: "estimated" },
+  { id: "tnw_3", brandId: "the_neighbourwok_fried_hokkien_prawn_mee_clementi_mall", name: "Fried Hokkien Big Prawn Mee", emoji: "🍤", category: "Noodles", price: 13.90, calories: 780, protein: 34, carbs: 82, fat: 30, confidence: "estimated", isPopular: true },
+// Hup Hong Chicken Rice (hawkers_street, Tang Plaza) — 2026-09-15 batch. Michelin Guide-listed
+// Hainanese chicken rice stall, flagship at Yuhua Village Market & Food Centre (Jurong East),
+// confirmed operating a branch inside Hawkers' Street's Tang Plaza venue via HungryGoWhere and
+// The Ordinary Patrons' own in-person Tang Plaza stall-by-stall coverage (both list Hup Hong among
+// the venue's 6 Michelin-recognised names) plus TANGS' own store directory page
+// (tangs.com/store/tang-plaza/store-hup-hong-chicken-rice). Real dish names and this branch's own
+// SGD prices sourced directly from foodpanda's Tang-Plaza-specific delivery listing
+// ("Hup Hong Chicken Rice (TANGS)", address matches this Premises row exactly). No calorie/protein/
+// carb/fat source exists for this stall specifically, so macros for the two base rice plates were
+// calibrated against this project's own existing Chicken Rice calibration values already used at
+// tian_tian_chicken_rice and lau_pa_sat_chicken_rice (steamed 607/35/74/17, roasted 650/36/76/20,
+// both $5 flagship-hawker-centre pricing) — reused verbatim here despite this branch's higher $7.20
+// price (delivery-platform markup + Orchard Road mall premium, not a larger portion; no source
+// describes a bigger serving at this location). Duo Chicken Rice (mixed steamed+roasted) averaged
+// between the two base values rather than summed, since it's the same total plate size split
+// between two chicken styles, not a double portion. Chicken Wing Rice and Chicken Drumstick Rice
+// are distinct bone-in cuts (not near-duplicates of the sliced-breast base rice), reasoned down from
+// the base rice values to reflect a smaller/bonier meat portion at a similar overall plate price.
+// Braised Egg reasoned from standard single soy-braised hawker egg nutrition (~1 large egg), a
+// well-established generic value, not outlet-specific. Skipped the foodpanda listing's other a la
+// carte sides (Chicken Liver, Chicken Gizzard, Oyster Sauce Vegetable, Bean Sprout, Achar, plain
+// Chicken Rice) — no credible macro basis or existing DB analog for these small hawker sides was
+// found, so left out per the never-fabricate rule rather than guessed. All items confidence
+// 'estimated'. No SFA lookup (food_court_stall inside a mall venue, reused the existing Tang Plaza
+// Premises address/coordinates already established by springleaf_prata_place per this entry's own
+// Phase 3 precedent). See reference/research-sessions/2026-09-15-hup_hong_chicken_rice_tang_plaza.md.
+  { id: "hhcr_1", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Steamed Chicken Rice", emoji: "🍗", category: "Rice", price: 7.20, calories: 607, protein: 35, carbs: 74, fat: 17, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "hhcr_2", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Roasted Chicken Rice", emoji: "🍗", category: "Rice", price: 7.20, calories: 650, protein: 36, carbs: 76, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "hhcr_3", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Duo Chicken Rice", emoji: "🍗", category: "Rice", price: 8.60, calories: 628, protein: 35, carbs: 75, fat: 18, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "hhcr_4", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Chicken Wing Rice (2pc)", emoji: "🍗", category: "Rice", price: 8.00, calories: 580, protein: 30, carbs: 66, fat: 22, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "hhcr_5", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Chicken Drumstick Rice", emoji: "🍗", category: "Rice", price: 8.60, calories: 620, protein: 34, carbs: 68, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "hhcr_6", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Braised Egg", emoji: "🥚", category: "Sides", price: 1.70, calories: 78, protein: 6, carbs: 1, fat: 5, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 ];

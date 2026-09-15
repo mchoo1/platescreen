@@ -796,3 +796,22 @@ DISH_DB.update({
     "Fishcake (Lixin)": ("🐟","Sides",5.20,210,13,9,12),
     "Sambal Meat Dumplings": ("🥟","Sides",7.10,340,16,24,20),
 })
+
+# --- Batch 2026-09-15 additions (hup_hong_chicken_rice_tang_plaza - new Brand, Hawkers' Street
+# concession at Tang Plaza; Michelin Guide-listed, flagship at Yuhua Village Market & Food Centre.
+# Real dish names + this branch's own prices sourced directly from foodpanda's Tang-Plaza-specific
+# delivery listing. No outlet-specific calorie/macro source found, so the two base rice plates were
+# calibrated against this DISH_DB's own existing "Chicken Rice" values at tian_tian_chicken_rice/
+# lau_pa_sat_chicken_rice (607/35/74/17 steamed, 650/36/76/20 roasted) rather than the older generic
+# "Steamed/Roasted Chicken Rice" entries above (which predate that calibration and are used
+# elsewhere) - added under disambiguated "(Hup Hong)" keys so this update does not silently change
+# the generic entries' values for other brands' scrape-matching. Duo/Wing/Drumstick/Braised Egg are
+# reasoned variants/estimates with no existing DISH_DB key. ---
+DISH_DB.update({
+    "Steamed Chicken Rice (Hup Hong)": ("🍗","Rice",7.20,607,35,74,17),
+    "Roasted Chicken Rice (Hup Hong)": ("🍗","Rice",7.20,650,36,76,20),
+    "Duo Chicken Rice": ("🍗","Rice",8.60,628,35,75,18),
+    "Chicken Wing Rice (2pc)": ("🍗","Rice",8.00,580,30,66,22),
+    "Chicken Drumstick Rice": ("🍗","Rice",8.60,620,34,68,20),
+    "Braised Egg": ("🥚","Sides",1.70,78,6,1,5),
+})

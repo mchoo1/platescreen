@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-13. This is the entry point for "what's the state of
+**Last updated:** 2026-09-15. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -12,18 +12,19 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-05)
+## Where things stand (2026-09-15)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,717 — unchanged 2026-09-04 → 2026-09-05 |
-| Total premises | 4,653 — unchanged since item 12's third follow-up (2026-09-04) |
-| Total menu items | 2,594 — up from 2,587 (+7, Golden Rooster batch, 2026-09-05) |
-| Menu items with ≥1 diet tag | 1,681 (64.8%) as of 2026-09-05 re-verification — spot-checked recently-added brands' untagged items, all correctly excluded per §5.1 (pork-named dishes, genuinely ambiguous generics), no fresh gaps found |
-| Confidence breakdown (MenuItems) | last full recount 2026-09-02: 56 verified / 2,497 estimated / 6 community (not re-run 2026-09-05, no confidence-affecting changes since) |
-| Premises missing lat/lng | 0 |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, grocery products) — re-verified 2026-09-05 against the full post-Golden-Rooster dataset |
-| Price / calorie / macro-sum outliers | 0 real issues found in a fresh 2026-09-05 sweep — 4 flagged calorie values and 5 flagged macro-sum ratios are known-legitimate (family-size items, near-zero-calorie coffee, and beer's uncounted alcohol calories) — see `reference/research-sessions/2026-09-05-improve-app-git-backlog-and-integrity-sweep.md` |
+| Total brands | 1,726 — up from 1,717 (2026-09-05); growth from unattended research-task runs during the disk-exhaustion window (item 15) |
+| Total premises | 4,662 — up from 4,653 (2026-09-05), same cause |
+| Total menu items | 2,656 — up from 2,594 (2026-09-05), same cause |
+| Menu items with ≥1 diet tag | 1,724 (64.9%) — re-verified 2026-09-15 via the Node-native-TS lightweight check (item 15), not `tsc`/full pipeline |
+| Confidence breakdown (MenuItems) | 56 verified / 2,594 estimated / 6 community — re-verified 2026-09-15 |
+| Premises missing lat/lng | not re-checked 2026-09-15 (last confirmed 0 on 2026-09-05); no lat/lng-affecting changes since |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items) — re-verified 2026-09-15, see item 15. `GroceryProduct` not included in this pass's script (unchanged since 2026-09-05, still 19 rows) |
+| Zero-menu brands | 42 — down from 74 (2026-08-30 CLAUDE.md snapshot), from ongoing research-task coverage; not independently audited this pass |
+| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) in the 2026-09-15 lightweight sweep; calorie/macro-sum ratio check not re-run this pass (last full sweep 2026-09-05, see that date's report) |
 | Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10. |
 
 Brand/premises/menu-item counts move day-to-day now that the three research
@@ -49,6 +50,34 @@ allocation) — no scheduled task can fix this from inside its own sandbox.
 See `reference/research-sessions/2026-09-07-improve-app-no-action.md` and
 `reference/research-sessions/2026-09-08-improve-app-no-action-disk-
 exhausted-2nd-day.md`.
+**2026-09-15 reconfirmation + sharper diagnosis:** `/sessions` was still
+100% full (23MB free of 9.8G), and this time `mkdir` itself failed with
+`ENOSPC` before `npm install` was even attempted — confirmed via `mount`
+that `/sessions` (`/dev/sdc`, ext4) is shared across *multiple concurrent
+Cowork sessions* (another session's own mount entries were visible
+alongside this one), not per-task-sandbox private disk, which is the
+likely real cause (other sessions' usage, not PlateScreen automation or
+OneDrive folder size). **Tried and ruled out a workaround:** relocated a
+build mirror + npm cache to the `outputs` fuse mount instead (`df` showed
+62G free there) — config files copied fine, but `npm install` (and even a
+plain `du`/`rm -rf` afterward) hung past a 3-minute timeout and had to be
+abandoned; a fuse-proxied mount to the host filesystem is far too slow for
+npm's thousands-of-small-files workload, so relocating the mirror is not a
+viable fix. **Found a partial substitute that *is* viable:** Node 22's
+native TypeScript type-stripping can `import` `brands.ts`/`premises.ts`/
+`menuItems.ts`/`operators.ts` directly (no `npm install`, no build mirror
+needed — Node ≥22.6 strips type annotations at parse time) since these
+files are plain literal exports with no runtime dependency on the `.ts`
+type files. This gives a real, non-fabricated duplicate-id/orphaned-FK/
+diet-tag-coverage/price-outlier check — everything CLAUDE.md §6 calls the
+"runtime integrity check" — without `tsc`. It does **not** replace `tsc`
+for catching actual type errors (e.g. an invalid enum literal), so it's a
+partial substitute, not a full one: safe for reviewing/committing
+*already-written* data (this session used it to verify and commit 3 runs'
+worth of backlogged automation output — see below), but not a green light
+to author *new* hand-typed data changes without real type-checking. See
+`reference/research-sessions/2026-09-15-improve-app-disk-exhaustion-and-
+automation-reconciliation.md` for the full script and output.
 
 **Launch-readiness review completed 2026-08-31** (code + database, requested
 directly). Verdict: **the database and the codebase are launch-ready; one
@@ -192,7 +221,11 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
 6. **Mobile table reflow** — results table stays a horizontally-scrollable
    table on mobile rather than reflowing to cards; data is reachable via
    swipe, just not a great first impression on likely-majority-mobile
-   traffic. Polish, not a blocker.
+   traffic. Polish, not a blocker. **Re-confirmed 2026-09-14 with hard
+   numbers**: measured live at 375px viewport — table is 2,013px wide
+   inside a 335px scroll container. Promoted to top launch-readiness
+   priority (see item 14) since most link-shared/social traffic will be
+   mobile. Not fixed this session — see item 14 for why.
 7. **Recurring stale git lock from scheduled tasks — now happened a third
    time, worth investigating rather than just clearing.** `.git/index.lock`/
    `HEAD.lock` found stale at 2026-08-31 ~03:21, 2026-09-01 ~12:10, and again
@@ -429,6 +462,74 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     128, laksa: 28). No data files touched -- pure filter-logic change. See
     `reference/research-sessions/2026-09-13-search-apostrophe-and-
     multiword-fix.md`.
+
+14. **Launch-readiness review + growth review, 2026-09-14 — session hit a
+    sandbox shell outage partway through.** Confirmed the 2026-09-13
+    search fix is live in production (Vercel API showed `origin/main` had
+    already moved to a newer automated commit than this session's own
+    last local commit — something else pushed in the meantime). Live
+    re-checks confirmed 3 standing items are all still open:
+    `GroceryProduct` UI (item 2 above), mobile table reflow (item 6,
+    re-measured: 2,013px table in a 335px mobile container), and
+    `Brand.dietTags` (item 1 above) — which turned out to be **half-fixed
+    since 2026-09-02**: some automated task wired it into brand-page
+    display (confirmed live: McDonald's page shows a "halal" badge from
+    `brand.dietTags`), but it's still not read by `applyFilters` in
+    `screener.ts`, so it doesn't affect the Halal/Vegetarian/etc. filter
+    buttons yet.
+    **Growth check**: Vercel Web Analytics still off (needs the account
+    owner to flip it on — no code/build required, just a dashboard
+    toggle). Both growth scheduled tasks (`platescreen-post-copilot`,
+    `platescreen-comment-copilot`) are correctly stalled, not broken —
+    per their own 2026-09-13 digests, 97%+ of the database is `estimated`
+    confidence, so every planned content angle fails their own
+    "publicly-defensible" bar. The actual unlock is sourcing 2-3 more
+    chains' official nutrition data (KFC/Burger King suggested), not a
+    prompt or code fix to those tasks.
+    **No code shipped this session**: the sandbox's Linux shell (git,
+    tsc, node scripts) went down mid-session — a platform-level issue per
+    its own error message ("A Windows update released September 8
+    prevents Claude's workspace from reaching your files"), confirmed
+    dead across 4 identical retries. Shipping the mobile-reflow/
+    GroceryProduct-UI/dietTags-filter-wiring fixes without any way to
+    verify `tsc`/build would break this project's own verification
+    discipline, so they're documented as the next session's top 3 instead
+    of attempted blind. This ROADMAP edit and its companion report are
+    plain file edits — **not committed**, since git wasn't available
+    either. See `reference/research-sessions/2026-09-14-launch-
+    readiness-review-and-shell-outage.md` for full detail, including why
+    a next session should `git pull` before any git operation (origin
+    has moved since this repo's last known local commit).
+15. **2026-09-15 — sandbox disk exhaustion reconfirmed (worse than 2026-09-07/08); backlogged
+    automation output reviewed and committed instead of forcing new data work.** This session's
+    `platescreen-improve-app` run hit `/sessions` 100% full again — this time `mkdir` itself
+    failed with `ENOSPC` before `npm install` could even be tried, and `mount` showed `/sessions`
+    is shared across multiple concurrent Cowork sessions, a sharper diagnosis than the earlier
+    "OneDrive folder size" guess (see the disk-exhaustion callout above for full detail). Tried
+    relocating the build mirror to the `outputs` fuse mount (62G free there) as a workaround —
+    `npm install` and even plain `du`/`rm -rf` hung past a 3-minute timeout, so a fuse-mounted
+    mirror is not viable; **ruled out**, not just untried. Found a partial substitute instead:
+    Node 22's native TS type-stripping can `import` `brands.ts`/`premises.ts`/`menuItems.ts`/
+    `operators.ts` directly with no `npm install` at all, giving a real (non-fabricated)
+    duplicate-id / orphaned-FK / diet-tag-coverage / price-outlier check — everything CLAUDE.md
+    section 6 calls the "runtime integrity check" — without `tsc`. Used this to review and verify
+    several days' worth of backlogged, already-written automation output sitting uncommitted in
+    the working tree (2 new Brands + Premises + 9 MenuItems from `platescreen-research-restaurants`
+    covering `the_neighbourwok_fried_hokkien_prawn_mee_clementi_mall` and
+    `hup_hong_chicken_rice_tang_plaza`, plus queue-status note updates, a Post-Copilot digest, and
+    several research-session reports) — manually read every data diff for section 5 sourcing-rule
+    compliance (all sourced: HungryGoWhere/TANGS store directory/foodpanda listings, macros
+    calibrated against this project's own existing Chicken Rice calibration values, never
+    invented) and ran the lightweight integrity check (0 duplicate ids, 0 orphaned brandIds, 0
+    orphaned operatorIds, 0 price outliers across 1,726 brands / 4,662 premises / 2,656 menu
+    items — full output in the report below). Committed rather than left stranded, since the
+    content itself was sound even though full `tsc`/build verification stayed unavailable.
+    **Deliberately did not author any new hand-typed data-quality change this pass** — the
+    lightweight check substitutes for the runtime-integrity step but not for real type-checking,
+    so authoring new data blind (vs. reviewing/committing already-written data) would risk a
+    type-level mistake this check can't catch. Full script, output, and reasoning:
+    `reference/research-sessions/2026-09-15-improve-app-disk-exhaustion-and-automation-
+    reconciliation.md`.
 
 ## Not started, lower priority
 
