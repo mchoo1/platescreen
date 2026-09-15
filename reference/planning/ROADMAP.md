@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-15. This is the entry point for "what's the state of
+**Last updated:** 2026-09-16. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -12,17 +12,17 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-15)
+## Where things stand (2026-09-16)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,726 — up from 1,717 (2026-09-05); growth from unattended research-task runs during the disk-exhaustion window (item 15) |
-| Total premises | 4,662 — up from 4,653 (2026-09-05), same cause |
-| Total menu items | 2,656 — up from 2,594 (2026-09-05), same cause |
-| Menu items with ≥1 diet tag | 1,724 (64.9%) — re-verified 2026-09-15 via the Node-native-TS lightweight check (item 15), not `tsc`/full pipeline |
-| Confidence breakdown (MenuItems) | 56 verified / 2,594 estimated / 6 community — re-verified 2026-09-15 |
-| Premises missing lat/lng | not re-checked 2026-09-15 (last confirmed 0 on 2026-09-05); no lat/lng-affecting changes since |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items) — re-verified 2026-09-15, see item 15. `GroceryProduct` not included in this pass's script (unchanged since 2026-09-05, still 19 rows) |
+| Total brands | 1,726 (2026-09-16, unchanged this pass — data-only tag fix, no new brands) |
+| Total premises | 4,662 (2026-09-16, unchanged this pass) |
+| Total menu items | 2,665 — up from 2,656 (2026-09-15), growth from unattended research-task runs; no items added or removed by this pass |
+| Menu items with ≥1 diet tag | 1,731 (65.0%) — re-verified 2026-09-16 via a **real `npx tsc --noEmit`** pass (first since 2026-09-08, see the disk-exhaustion callout below for the workaround that made this possible), 2 fewer than a straight-line projection would suggest since this pass removed 2 spurious tags (see item 16) |
+| Confidence breakdown (MenuItems) | not re-tallied 2026-09-16 (last confirmed 2026-09-15: 56 verified / 2,594 estimated / 6 community); this pass only touched `compatibleWith`, not `confidence` |
+| Premises missing lat/lng | not re-checked 2026-09-16 (last confirmed 0 on 2026-09-05); no lat/lng-affecting changes since |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-16 via real `tsc`-backed data, not the Node-native-import substitute |
 | Zero-menu brands | 42 — down from 74 (2026-08-30 CLAUDE.md snapshot), from ongoing research-task coverage; not independently audited this pass |
 | Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) in the 2026-09-15 lightweight sweep; calorie/macro-sum ratio check not re-run this pass (last full sweep 2026-09-05, see that date's report) |
 | Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10. |
@@ -78,6 +78,23 @@ worth of backlogged automation output — see below), but not a green light
 to author *new* hand-typed data changes without real type-checking. See
 `reference/research-sessions/2026-09-15-improve-app-disk-exhaustion-and-
 automation-reconciliation.md` for the full script and output.
+**2026-09-16 — real fix found (not just a substitute):** `/sessions` (`/dev/sdc`) was still 100%
+full, but `$HOME` and every previous session's `~/build` mirror live *under* `/sessions` — that's
+why `npm install` always failed there. The root filesystem (`/dev/sda1`, mounted at `/`) is a
+**separate disk** with its own free space (1.1G at this session's start) that no prior session had
+tried. Building the mirror at `/tmp/<name>` instead of `~/build`, and pointing npm's cache at
+`/tmp/npm-cache` (npm defaults to `$HOME/.npm`, itself on the full disk, so this redirect is
+required even after moving the mirror), let `npm install` complete cleanly and `npx tsc --noEmit`
+run for real — a genuine `tsc` pass, not the Node-native-type-stripping substitute. `npm run build`
+got all the way through compiling, type-checking, and generating all 4,397 static pages, and only
+hit `ENOSPC` at the very last step (copying exported HTML into `out/`, since only ~500M remains
+free on `/` after `node_modules`) — a disk-*size* ceiling on the final export copy, not a
+build/content problem. **Recommended for every future run of this task and the three research
+tasks:** mirror to `/tmp/<name>` and set `npm_config_cache=/tmp/npm-cache`, not `~/build`. Treat
+`tsc --noEmit` (which now fully succeeds) as the real verification gate; a `npm run build` that
+fails only at the final export-copy step with `ENOSPC` can be treated the same as a build that
+doesn't finish in the time budget — not a sign of a real problem. See
+`reference/research-sessions/2026-09-16-diet-tag-categorical-exclusion-audit-and-disk-workaround.md`.
 
 **Launch-readiness review completed 2026-08-31** (code + database, requested
 directly). Verdict: **the database and the codebase are launch-ready; one
@@ -530,6 +547,25 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     type-level mistake this check can't catch. Full script, output, and reasoning:
     `reference/research-sessions/2026-09-15-improve-app-disk-exhaustion-and-automation-
     reconciliation.md`.
+16. **2026-09-16 — diet-tag categorical-exclusion audit (2 fixes) + real disk-exhaustion fix
+    (not just a substitute).** Found that mirroring to `/tmp/<name>` (root disk, separate from the
+    100%-full `/sessions` disk that `$HOME`/`~/build` live on) and pointing npm's cache at
+    `/tmp/npm-cache` lets `npm install` and a real `npx tsc --noEmit` succeed — the first genuine
+    `tsc` pass since 2026-09-08; `npm run build` got through compiling/type-checking/generating all
+    4,397 static pages and only hit `ENOSPC` at the final export-copy step (disk-size limit, not a
+    content problem). See the disk-exhaustion callout above for the full recommendation to future
+    sessions. Used the now-real `tsc` pipeline to audit every MenuItem against CLAUDE.md 5.1's
+    pork/offal categorical-exclusion rule (8 named dishes that should carry no `compatibleWith`
+    array at all) — found and fixed 2 genuine violations (`lps_fx_herbal_bkt`, `gmfc_bak_kut_teh`,
+    both literally named "Bak Kut Teh," both had spurious `lactose_free`/`gluten_free` tags).
+    Reviewed 9 other skip-list keyword matches and 39 vegetarian/egg keyword matches and confirmed
+    all correct (explicit-protein or ovo-vegetarian conventions, not bugs) — no other changes made.
+    Flagged 2 borderline cases (`lps_fx_organ_porridge`, `ss_roast_pork` — pork-named but not an
+    exact match to CLAUDE.md 5.1's 8-name list) for a human decision rather than extending the rule
+    unilaterally. Coverage: 1,733 → 1,731 tagged MenuItems (65.0%, item count also grew slightly
+    from other same-day automation). Full reasoning, verification output, and the disk-workaround
+    detail: `reference/research-sessions/2026-09-16-diet-tag-categorical-exclusion-audit-and-
+    disk-workaround.md`.
 
 ## Not started, lower priority
 

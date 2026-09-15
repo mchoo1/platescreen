@@ -12136,9 +12136,6 @@ export const MENU_ITEMS = [
     protein: 28,
     carbs: 8,
     fat: 22,
-    compatibleWith: [
-      "lactose_free"
-    ],
     confidence: "estimated",
     isPopular: true
   },
@@ -13127,10 +13124,6 @@ export const MENU_ITEMS = [
     protein: 36,
     carbs: 12,
     fat: 28,
-    compatibleWith: [
-      "gluten_free",
-      "lactose_free"
-    ],
     confidence: "estimated",
     isPopular: true
   },
