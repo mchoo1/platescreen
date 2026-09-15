@@ -815,3 +815,17 @@ DISH_DB.update({
     "Chicken Drumstick Rice": ("🍗","Rice",8.60,620,34,68,20),
     "Braised Egg": ("🥚","Sides",1.70,78,6,1,5),
 })
+
+# --- Batch 2026-09-16 additions (545_whampoa_prawn_noodles_square_2 - new Brand, Hawkers' Street
+# concession at Square 2/Novena, found this run while identifying that venue's previously-unknown
+# 9-stall list. Real dish names + this stall's own prices sourced from littledayout.com/eatbook.sg
+# coverage of the venue's Sep 2025 opening. Base "Prawn Noodles" macros reused verbatim from this
+# DISH_DB's existing generic entry above, added under a disambiguated "(545 Whampoa)" key since this
+# stall's own price ($6.90) differs from the generic entry's ($5.50) - same convention as the Hup
+# Hong batch above. Pig Tail / Pork Liver variants have no DISH_DB precedent - reasoned from the base
+# bowl plus generic raw-ingredient nutrition data for each named cut, not outlet-specific sources. ---
+DISH_DB.update({
+    "Prawn Noodles (545 Whampoa)": ("🍜","Noodles",6.90,500,22,55,18),
+    "Pig Tail Prawn Noodle": ("🍜","Noodles",8.90,680,30,55,34),
+    "Pork Liver Prawn Noodle": ("🍜","Noodles",8.50,615,39,57,21),
+})

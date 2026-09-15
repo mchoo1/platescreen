@@ -29639,6 +29639,25 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "545_whampoa_prawn_noodles_square_2",
+    name: "545 Whampoa Prawn Noodles",
+    emoji: "🍜",
+    type: "food_court_stall",
+    cuisine: "Prawn Noodles",
+    aliases: [
+      "545 whampoa prawn noodles",
+      "whampoa prawn noodles",
+      "545 whampoa"
+    ],
+    dietTags: [],
+    priceRange: "$",
+    platforms: [
+      "dine_in",
+      "grab_go"
+    ],
+    operatorId: "hawkers_street"
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

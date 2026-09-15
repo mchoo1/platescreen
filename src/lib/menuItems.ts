@@ -26888,4 +26888,18 @@ export const MENU_ITEMS = [
   { id: "gtg_7", brandId: "food_junction_go_teppan_go", name: "Teppan Vegetables", emoji: "🥦", category: "Japanese", price: 2.90, calories: 90, protein: 3, carbs: 12, fat: 4, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "gtg_8", brandId: "food_junction_go_teppan_go", name: "White Rice", emoji: "🍚", category: "Japanese", price: 1.00, calories: 200, protein: 4, carbs: 44, fat: 1, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
   { id: "gtg_9", brandId: "food_junction_go_teppan_go", name: "Spring Onions Rolled Omelette", emoji: "🍳", category: "Japanese", price: 5.00, calories: 180, protein: 10, carbs: 4, fat: 13, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+// Batch 2026-09-16: 545 Whampoa Prawn Noodles (Square 2), a new Hawkers' Street food_court_stall
+// concession discovered this run while identifying Square 2's previously-unknown stall list (see
+// researchQueue.ts's hawkers_street entry notes and reference/research-sessions/2026-09-16-
+// 545_whampoa_prawn_noodles_square_2.md). Base "Prawn Noodles" reuses this DB's existing calibration
+// value already used across ~10 other prawn-noodle stalls (500 cal/22g protein/55g carbs/18g fat),
+// priced at this stall's own $6.90. "Prawn Mee/Noodles" is on CLAUDE.md 5.1's no_pork skip-list, so
+// left untagged. Pig Tail Prawn Noodle and Pork Liver Prawn Noodle are this stall's own named,
+// priced variants (not on CLAUDE.md 5.1's exact categorical-exclusion list, but both explicitly
+// pork-named, so also left untagged per the same section) — macros reasoned from the base bowl plus
+// generic nutrition-data additions for each named cut (pig tail: fatty/collagen-rich, ~+180cal/+16g
+// fat; pork liver: lean/high-protein organ meat, ~+115cal/+17g protein), not outlet-specific sources.
+  { id: "wpn_1", brandId: "545_whampoa_prawn_noodles_square_2", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 6.90, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated", isPopular: true },
+  { id: "wpn_2", brandId: "545_whampoa_prawn_noodles_square_2", name: "Pig Tail Prawn Noodle", emoji: "🍜", category: "Noodles", price: 8.90, calories: 680, protein: 30, carbs: 55, fat: 34, confidence: "estimated" },
+  { id: "wpn_3", brandId: "545_whampoa_prawn_noodles_square_2", name: "Pork Liver Prawn Noodle", emoji: "🍜", category: "Noodles", price: 8.50, calories: 615, protein: 39, carbs: 57, fat: 21, confidence: "estimated" },
 ];
