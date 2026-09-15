@@ -26843,4 +26843,56 @@ export const MENU_ITEMS = [
   { id: "hhcr_4", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Chicken Wing Rice (2pc)", emoji: "🍗", category: "Rice", price: 8.00, calories: 580, protein: 30, carbs: 66, fat: 22, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "hhcr_5", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Chicken Drumstick Rice", emoji: "🍗", category: "Rice", price: 8.60, calories: 620, protein: 34, carbs: 68, fat: 20, compatibleWith: ["no_pork"], confidence: "estimated" },
   { id: "hhcr_6", brandId: "hup_hong_chicken_rice_tang_plaza", name: "Braised Egg", emoji: "🥚", category: "Sides", price: 1.70, calories: 78, protein: 6, carbs: 1, fat: 5, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+// --- 2026-09-15 scheduled restaurant-track run: food_junction_go_teppan_go (Go Teppan Go, Nex/
+// Westgate/The Food Place @ Raffles City), upgrading from its single pre-existing generic item
+// (fj_1 "Teppanyaki Bento") to a real, currently-orderable menu. kopitiam/koufu/foodfare/hawkers_
+// street (the 4 higher-priority operator queue entries) were re-checked first and re-confirmed to
+// have no addressable single-outlet gap this run (same operator-container / SFA-licensee-name-needs-
+// Street-View state documented across their own queue entries' extensive prior notes); gen_korean_bbq
+// (next real single-outlet candidate by priority) was re-confirmed via fresh WebSearch to still have
+// no findable Singapore outlet, consistent with its 2026-09-02 finding. food_junction's own queue
+// entry notes flagged Go Teppan Go (fj_1) and Toast Junction (fj_2) as still carrying only their
+// original 1 generic item each as of the 2026-09-03 run — picked Go Teppan Go here.
+// Dish names + SGD prices sourced from MakanCents' Go Teppan Go stall page (makancents.com/stall/
+// go-teppan-go, "every price photographed", 21 items listed for its The Food Place @ Raffles City
+// branch) — cross-verified against foodjunction.com/our-brands/'s own "Must Try" list for this brand
+// (Beef Tenderloin Steak, Soy Butter Chicken Chop, Sambal Kicap Chargrilled Squid Deluxe Set), which
+// independently confirms the Soy Butter Chicken Chop item and the brand's steak/squid/deluxe-set
+// menu shape. No official nutrition source exists for this teppanyaki concept (not HPB/HCS-listed,
+// no packaged retail), so all items are confidence 'estimated' — macros reasoned/calibrated against
+// this project's own existing entries for comparable dishes: the sibling food_junction_fireyaki
+// brand's own teppanyaki Western Set entries (fireyaki_chicken_chop_western_set: 700/36/62/34 @
+// $10.70) for the Deluxe Set's fuller-meal composition, tartini_grill_pasta_clementi_mall's Grilled
+// Salmon (tgp_4: 520/40/30/28, halal/pescatarian) and Beef Steak (tgp_3: 620/40/35/34) for the
+// salmon/steak items, and teck_ghee_square_steakgrill_steak_house's Grilled Steak (tgs_1: 650/40/20/
+// 35) for the ribeye. Selected 9 of MakanCents' 21 listed items, skipping near-duplicates: Black
+// Pepper Sliced Beef/Chicken (à la carte, same black-pepper-sauce format as the kept Soy Butter
+// Chicken Chop and Ribeye Steak items, no >10% macro-distinguishing basis) and their own Deluxe Set
+// variants, Miso Chargrilled Salmon (near-duplicate of the kept Honey Mustard Salmon Fillet — same
+// cut, sauce-only difference), Coca Cola Original/Zero and Bottled Water (packaged beverages, not
+// a cooked dish), Sunny-side Up Egg and Soup Of The Day (generic sides with no stall-specific
+// distinguishing detail beyond what Spring Onions Rolled Omelette / Teppan Vegetables already cover).
+// Kept: Soy Butter Chicken Chop With Black Pepper Sauce (à la carte + Deluxe Set, the two differ by
+// >10% in composition — the Deluxe Set is a fuller plate with rice/sides per Fireyaki's sibling-brand
+// set format), Signature Black Pepper Ribeye Steak, Honey Mustard Salmon Fillet, Miso Chargrilled
+// Squid, Mixed Mushroom Medley, Teppan Vegetables, White Rice, and Spring Onions Rolled Omelette —
+// covering the brand's protein range (chicken/beef/salmon/squid), a vegetarian option, and sides.
+// dietTags: no_pork applied to all (no pork-named items on this menu); vegetarian applied to Mixed
+// Mushroom Medley/Teppan Vegetables/White Rice/Spring Onions Rolled Omelette per this project's own
+// convention of tagging plain-egg dishes vegetarian (see e.g. hhcr_6 Braised Egg, svmfc_3 Egg Prata);
+// pescatarian applied to the salmon and squid items. No halal tag — Go Teppan Go's Brand dietTags are
+// empty and no MUIS-certification source was found for this specific brand (Ke/Quench's own our-
+// brands/ description mentions a "Halal-Certified version at selected locations" only for itself, not
+// Go Teppan Go). No SFA lookup (type is food_court_stall inside existing Premises rows already
+// established 2026-08-23, not a new hawker/food_court_stall Brand). See reference/research-sessions/
+// 2026-09-15-food_junction_go_teppan_go.md.
+  { id: "gtg_1", brandId: "food_junction_go_teppan_go", name: "Soy Butter Chicken Chop With Black Pepper Sauce", emoji: "🍗", category: "Japanese", price: 13.90, calories: 450, protein: 38, carbs: 15, fat: 26, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "gtg_2", brandId: "food_junction_go_teppan_go", name: "Soy Butter Chicken Chop Deluxe Set", emoji: "🍱", category: "Japanese", price: 22.90, calories: 750, protein: 42, carbs: 70, fat: 32, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "gtg_3", brandId: "food_junction_go_teppan_go", name: "Signature Black Pepper Ribeye Steak", emoji: "🥩", category: "Japanese", price: 18.90, calories: 680, protein: 42, carbs: 18, fat: 44, compatibleWith: ["no_pork"], confidence: "estimated", isPopular: true },
+  { id: "gtg_4", brandId: "food_junction_go_teppan_go", name: "Honey Mustard Salmon Fillet", emoji: "🐟", category: "Japanese", price: 15.90, calories: 540, protein: 38, carbs: 22, fat: 30, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "gtg_5", brandId: "food_junction_go_teppan_go", name: "Miso Chargrilled Squid", emoji: "🦑", category: "Japanese", price: 8.90, calories: 280, protein: 26, carbs: 10, fat: 14, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "gtg_6", brandId: "food_junction_go_teppan_go", name: "Mixed Mushroom Medley", emoji: "🍄", category: "Japanese", price: 9.90, calories: 220, protein: 8, carbs: 20, fat: 12, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "gtg_7", brandId: "food_junction_go_teppan_go", name: "Teppan Vegetables", emoji: "🥦", category: "Japanese", price: 2.90, calories: 90, protein: 3, carbs: 12, fat: 4, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "gtg_8", brandId: "food_junction_go_teppan_go", name: "White Rice", emoji: "🍚", category: "Japanese", price: 1.00, calories: 200, protein: 4, carbs: 44, fat: 1, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
+  { id: "gtg_9", brandId: "food_junction_go_teppan_go", name: "Spring Onions Rolled Omelette", emoji: "🍳", category: "Japanese", price: 5.00, calories: 180, protein: 10, carbs: 4, fat: 13, compatibleWith: ["no_pork", "vegetarian"], confidence: "estimated" },
 ];
