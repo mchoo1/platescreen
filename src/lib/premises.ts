@@ -79979,6 +79979,19 @@ export const PREMISES_13 = [
     sfa: null,
     source: "operator_official_site"
   },
+  {
+    id: "king_of_fried_rice_hws_p4",
+    brandId: "king_of_fried_rice_hws",
+    label: "Square 2",
+    locationType: "food_court",
+    locationContext: "Square 2",
+    address: "10 Sinaran Dr, #04-14/15/16, Square 2, Singapore 307506",
+    postal: "307506",
+    lat: 1.320705109568455,
+    lng: 103.8441607096606,
+    sfa: null,
+    source: "web_research"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];
