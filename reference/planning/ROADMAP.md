@@ -12,20 +12,32 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-16)
+## Where things stand (2026-09-17)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,726 (2026-09-16, unchanged this pass — data-only tag fix, no new brands) |
-| Total premises | 4,662 (2026-09-16, unchanged this pass) |
-| Total menu items | 2,665 — up from 2,656 (2026-09-15), growth from unattended research-task runs; no items added or removed by this pass |
-| Menu items with ≥1 diet tag | 1,731 (65.0%) — re-verified 2026-09-16 via a **real `npx tsc --noEmit`** pass (first since 2026-09-08, see the disk-exhaustion callout below for the workaround that made this possible), 2 fewer than a straight-line projection would suggest since this pass removed 2 spurious tags (see item 16) |
-| Confidence breakdown (MenuItems) | not re-tallied 2026-09-16 (last confirmed 2026-09-15: 56 verified / 2,594 estimated / 6 community); this pass only touched `compatibleWith`, not `confidence` |
-| Premises missing lat/lng | not re-checked 2026-09-16 (last confirmed 0 on 2026-09-05); no lat/lng-affecting changes since |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-16 via real `tsc`-backed data, not the Node-native-import substitute |
-| Zero-menu brands | 42 — down from 74 (2026-08-30 CLAUDE.md snapshot), from ongoing research-task coverage; not independently audited this pass |
-| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) in the 2026-09-15 lightweight sweep; calorie/macro-sum ratio check not re-run this pass (last full sweep 2026-09-05, see that date's report) |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10. |
+| Total brands | 1,727 (2026-09-17, unchanged by this pass — landed pre-existing automation output, no new brands authored this pass) |
+| Total premises | 4,665 — up from 4,662 (2026-09-16 snapshot), +1 from landing `king_of_fried_rice_hws_p4` (Square 2) plus other same-day research-task additions already in flight |
+| Total menu items | 2,668 — up from 2,665 (2026-09-16), growth from unattended research-task runs; no items added or removed by this pass |
+| Menu items with ≥1 diet tag | 1,731 (64.9%) — re-verified 2026-09-17 via a real `npx tsc --noEmit` pass; unchanged count, no tag edits this pass |
+| Confidence breakdown (MenuItems) | not re-tallied 2026-09-17 (last confirmed 2026-09-15: 56 verified / 2,594 estimated / 6 community); this pass touched neither `compatibleWith` nor `confidence` |
+| Premises missing lat/lng | not re-checked 2026-09-17 (last confirmed 0 on 2026-09-05); the 1 new Premises row this pass carries real coordinates |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-17 via real `tsc`-backed data |
+| Zero-menu brands | not independently re-audited 2026-09-17 (last confirmed 42 on 2026-09-16) |
+| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100), re-verified 2026-09-17; calorie/macro-sum ratio check not re-run this pass (last full check 2026-09-16) |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10, still unstarted as of 2026-09-17. |
+
+**2026-09-17 — backlogged automation output reconciled, stale git locks cleared.** Several days'
+worth of same-day (2026-09-16) legitimate research-task output — a Premises addition
+(`king_of_fried_rice_hws_p4`) and queue-note updates, plus 6 session reports and 1 Comment-Copilot
+digest — had been left uncommitted by a recurring stale `.git/index.lock`/`.git/HEAD.lock` pair
+(first hit by a same-day branches run at 06:12, confirmed unheld by any process ~25h later).
+Reviewed every pending diff and report against CLAUDE.md section 5/5.1 (all clean — one real
+Premises addition with verified sourcing, the rest notes-only or no-op reconfirmations), verified
+via a real `tsc --noEmit` pass + runtime integrity check, then cleared the stale locks (and a
+separately-stale `refs/heads/main.lock`) via the documented rename-not-delete workaround and
+committed everything as `188792e`. No new hand-authored data-quality change this pass — see
+`reference/research-sessions/2026-09-17-improve-app-backlog-reconciliation.md` for full detail.
 
 Brand/premises/menu-item counts move day-to-day now that the three research
 scheduled tasks are running unattended — treat these as "as of last check,"
@@ -566,6 +578,12 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     from other same-day automation). Full reasoning, verification output, and the disk-workaround
     detail: `reference/research-sessions/2026-09-16-diet-tag-categorical-exclusion-audit-and-
     disk-workaround.md`.
+
+17. ~~**2026-09-17 backlog reconciliation**~~ — **Done 2026-09-17.** Landed several days' worth
+    of legitimate same-day (2026-09-16) automation output that a recurring stale git lock had
+    blocked from being committed — see the callout above and
+    `reference/research-sessions/2026-09-17-improve-app-backlog-reconciliation.md`. No new
+    hand-authored data change; this was verification + housekeeping only.
 
 ## Not started, lower priority
 
