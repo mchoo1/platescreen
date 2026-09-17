@@ -12,20 +12,33 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-17)
+## Where things stand (2026-09-18)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,727 (2026-09-17, unchanged by this pass — landed pre-existing automation output, no new brands authored this pass) |
-| Total premises | 4,665 — up from 4,662 (2026-09-16 snapshot), +1 from landing `king_of_fried_rice_hws_p4` (Square 2) plus other same-day research-task additions already in flight |
-| Total menu items | 2,668 — up from 2,665 (2026-09-16), growth from unattended research-task runs; no items added or removed by this pass |
-| Menu items with ≥1 diet tag | 1,731 (64.9%) — re-verified 2026-09-17 via a real `npx tsc --noEmit` pass; unchanged count, no tag edits this pass |
-| Confidence breakdown (MenuItems) | not re-tallied 2026-09-17 (last confirmed 2026-09-15: 56 verified / 2,594 estimated / 6 community); this pass touched neither `compatibleWith` nor `confidence` |
-| Premises missing lat/lng | not re-checked 2026-09-17 (last confirmed 0 on 2026-09-05); the 1 new Premises row this pass carries real coordinates |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-17 via real `tsc`-backed data |
-| Zero-menu brands | not independently re-audited 2026-09-17 (last confirmed 42 on 2026-09-16) |
-| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100), re-verified 2026-09-17; calorie/macro-sum ratio check not re-run this pass (last full check 2026-09-16) |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10, still unstarted as of 2026-09-17. |
+| Total brands | 1,727 (unchanged since 2026-09-17 — no new brands authored 2026-09-17 or 2026-09-18) |
+| Total premises | 4,667 (unchanged by the 2026-09-18 pass — no new Premises rows landed that day; up from the 4,665 snapshot via other same-day automation already in flight as of 2026-09-17) |
+| Total menu items | 2,672 — up from 2,668 (2026-09-17 snapshot), +4 from landing `hg105_10`–`hg105_13` (`hougang_105_..._bachmann_japanese_restaurant`) in the 2026-09-18 backlog-reconciliation pass |
+| Menu items with ≥1 diet tag | 1,732 (64.8%) — re-verified 2026-09-18 via a real `npx tsc --noEmit` pass; no tag edits this pass, small % shift from the +4 items above |
+| Confidence breakdown (MenuItems) | 56 verified / 2,610 estimated / 6 community — re-tallied 2026-09-18; this pass touched neither `compatibleWith` nor `confidence` |
+| Premises missing lat/lng | not re-checked 2026-09-18 (last confirmed 0 on 2026-09-05) |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-18 via real `tsc`-backed data |
+| Zero-menu brands | not independently re-audited 2026-09-18 (last confirmed 42 on 2026-09-16) |
+| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100), re-verified 2026-09-18; calorie/macro-sum ratio check not re-run this pass (last full check 2026-09-16) |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10, still unstarted as of 2026-09-18 (browser access re-checked 2026-09-18, still unavailable in this unattended session). |
+
+**2026-09-18 — backlogged automation output (2026-09-17 runs) reconciled, stale git locks cleared
+again.** Same shape of issue as the 2026-09-17 pass, recurring within ~13 hours: a `Premises`-track
+notes update, a `MenuItem` addition (4 rows for `hougang_105_..._bachmann_japanese_restaurant`), and
+6 session reports/digests from same-day restaurant/branches/copilot runs were left uncommitted by a
+fresh stale `.git/index.lock`/`.git/HEAD.lock` pair (~13h old, confirmed unheld by any process via
+`fuser`). Reviewed every pending diff and report against CLAUDE.md section 5/5.1 (all clean — the 4
+new menu items are chain-menu-sourced with correctly-applied diet tags, the branches notes are
+negative/no-op findings, no fabrication anywhere), verified via a real `tsc --noEmit` pass + runtime
+integrity check in a `/tmp` mirror (root disk — `/sessions` was 100% full again, same recurring
+constraint), then cleared the stale locks via the documented rename-not-delete workaround and
+committed everything as `2372bbf`. No new hand-authored data-quality change this pass — see
+`reference/research-sessions/2026-09-18-improve-app-backlog-reconciliation.md` for full detail.
 
 **2026-09-17 — backlogged automation output reconciled, stale git locks cleared.** Several days'
 worth of same-day (2026-09-16) legitimate research-task output — a Premises addition
@@ -584,6 +597,19 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     blocked from being committed — see the callout above and
     `reference/research-sessions/2026-09-17-improve-app-backlog-reconciliation.md`. No new
     hand-authored data change; this was verification + housekeeping only.
+
+18. ~~**2026-09-18 backlog reconciliation**~~ — **Done 2026-09-18.** Same shape of issue recurred
+    within ~13 hours of item 17: a fresh stale git lock pair had blocked a same-day (2026-09-17)
+    `MenuItem` addition, a `Premises`-track notes update, and 6 session reports/digests from
+    committing. Reviewed and verified all of it (real `tsc --noEmit` + runtime integrity check, 0
+    duplicate ids / orphaned refs / price outliers), cleared the locks via the standing
+    rename-workaround, and committed as `2372bbf`. Menu items 2,668 → 2,672; diet-tag coverage
+    64.9% → 64.8% (denominator shift only, no tag edits). No new hand-authored data change — see
+    `reference/research-sessions/2026-09-18-improve-app-backlog-reconciliation.md`. This is now the
+    3rd `improve-app` run in a row (2026-09-15, -17, -18) whose entire scope was reconciling
+    automation backlog rather than authoring new data — worth a human considering whether the
+    underlying git-lock root cause (item 7) should be prioritized over continuing to treat each
+    recurrence as a fresh housekeeping pass.
 
 ## Not started, lower priority
 
