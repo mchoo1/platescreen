@@ -1,65 +1,42 @@
-# 2026-09-18 — mccafe_colocation_research (26th pass, scheduled grocery-track run)
+# Session Report — 2026-09-18 (26th pass, scheduled grocery-track run)
 
 ## Track
-`platescreen-research-grocery` (grab_go / ready_to_eat / supermarket)
+`platescreen-research-grocery` (grab_go / ready_to_eat / supermarket queue entries)
 
-## Queue scan
-Filtered `RESEARCH_QUEUE` to `status: 'pending'` AND `type` in {`grab_go`, `ready_to_eat`, `supermarket'}.
-Result: **1 entry** — `mccafe_colocation_research` (priority: medium). `ok_convenience`, the only
-other entry that has ever competed with it in this track, remains `'researched'`. No other
-candidate exists, so this is the deterministic pick again, not a fallback choice.
+## Phase 1 — Selection
+Filtered `RESEARCH_QUEUE` to `status === 'pending'` and `type` in `grab_go` / `ready_to_eat` / `supermarket`.
 
-## Re-verification (no re-investigation — this question was already answered 25 times)
-- `premises.ts`: 0 rows with `brandId: "mccafe"` (unchanged).
-- `brands.ts`: `mccafe` Brand row still exists (unchanged).
-- `menuItems.ts`: 10 `mccafe` MenuItems still present (unchanged).
-- `ok_convenience` queue entry: still `status: "researched"`.
+Result: **1 matching entry** — `mccafe_colocation_research` (McCafe, type `grab_go`, priority `medium`).
 
-No new facts were sought. The blocker identified on 2026-08-30 and reconfirmed on every scheduled
-pass since (25 consecutive prior passes, most recently the 25th pass on 2026-09-17b) is a
-**schema/taxonomy decision**, not a missing fact:
+`ok_convenience` (the only other entry ever in this track) remains `'researched'`. No other candidates exist in this track.
 
-> Premises rows are strictly one-`brandId`-per-row. Representing "McCafé beverages are served from
-> every McDonald's main counter islandwide" (confirmed via McDonald's SG's own site + Help Center —
-> the standalone barista McCafé corner concept was retired chain-wide from 27 March 2026) requires a
-> human to choose between (a) copying all ~136 `mcdonalds` Premises rows as new `mccafe` Premises
-> rows, or (b) retiring the standalone `mccafe` Brand and folding its MenuItems into `mcdonalds` as a
-> beverage category. Both are legitimate, neither is this research task's call to make unilaterally.
+## Outcome — no action taken on data files
+This is the entry's **26th consecutive scheduled pick**, going back to 2026-08-30. Every prior pass (documented at length in the entry's own `notes` field in `researchQueue.ts`) has reached the identical conclusion:
 
-This is now a **26th consecutive identical outcome**.
+- The underlying **empirical** question was resolved on 2026-08-31: McDonald's SG retired barista-staffed McCafé service counters islandwide on 27 March 2026; McCafé beverages are now served from the main counter at every restaurant (confirmed via McDonald's own Help Center articles and the live `mcdonalds.com.sg/mccafe` page, which states "Available at all restaurants islandwide").
+- What remains unresolved is a **schema/taxonomy decision**, not a research gap: `Premises` in this project is strictly one-`brandId`-per-row, with no shared-multiple-brands mechanism. Representing "McCafé exists everywhere McDonald's does" requires a human to choose between:
+  - **(a)** Copy all ~136-145 existing `mcdonalds` Premises rows as new `mccafe` Premises rows, or
+  - **(b)** Drop the standalone `mccafe` Brand/Premises concept and fold its 10 existing MenuItems into the `mcdonalds` Brand as a beverage category.
+- This is a bigger call than this task's normal per-entry research scope (append records to one outlet), so no prior pass — including this one — has made it unilaterally.
 
-## Action taken this pass
-None on Brand/MenuItem/GroceryProduct/Premises data — same as passes 2 through 25. Deliberately did
-**not** append another multi-paragraph duplicate note to the `mccafe_colocation_research` entry in
-`researchQueue.ts`: that field is already ~28,000 characters of near-identical restatement, and prior
-passes (22nd–25th) already explicitly escalated this to the user as conclusive. Adding a 26th
-restatement would compound the bloat without adding information. `researchQueue.ts` was **not
-edited** this pass.
+### This pass's verification (re-confirmation only, no re-investigation)
+- `grep` confirms `premises.ts` still has **0 rows** for `brandId: "mccafe"`.
+- `grep` confirms `brands.ts` still has the `mccafe` Brand row (unchanged).
+- `grep` confirms `menuItems.ts` still has exactly **10** MenuItems for `brandId: "mccafe"` (unchanged).
+- No new facts, no schema change since 2026-08-30/31.
 
-## Observed but out of scope — not touched
-The working tree already had uncommitted changes when this pass started, unrelated to this track:
-- `M src/lib/menuItems.ts`, `M src/lib/researchQueue.ts` — appear to belong to a same-day
-  restaurant-track run (staged report: `reference/research-sessions/2026-09-18-food_junction_toast_junction.md`,
-  not a grocery-track entry — Food Junction is a food-court operator, handled by the sibling
-  `platescreen-research-restaurants` task).
-- Two empty `_probe*.txt.stale-20260917` files (untracked). Read and confirmed empty/inert — not
-  acted on.
-- `.git/HEAD.lock` exists (dated today, 06:21 SGT) plus ~10 `HEAD.lock.bak*` artifacts going back to
-  August, consistent with the recurring git-lock problem flagged in the 25th-pass report.
+No Brand / MenuItem / GroceryProduct / Premises files were touched this run. Status left `'pending'`.
 
-None of the above were modified, staged, or committed by this pass — they belong to a different
-task's run and mixing them into a grocery-track commit would violate this task's scope.
+### Phase 4/5 (typecheck / commit)
+Skipped for the data tables — no data changed, so there is nothing to typecheck. Did attempt to add a short final reconfirmation note to `researchQueue.ts` (this file) and commit it; see Git note below.
 
-## Phase 4/5
-Skipped — no Brand/MenuItem/GroceryProduct/Premises files changed, nothing to typecheck or commit.
+### Unrelated observation (not acted on)
+At the time of this run, `git status` showed an already-modified `src/lib/branchQueue.ts` and an untracked report `reference/research-sessions/2026-09-18-branches-bonchon-sfa-licence-gap.md`, plus a live `.git/index.lock`. These belong to a different, apparently concurrently-running track (branches/restaurant) — not touched by this session, per this task's scope (grocery-track only, PlateScreen-only, never touch unrelated in-flight work).
 
-## Recommendation (restated, now with 26 data points behind it)
-Automated re-picking of `mccafe_colocation_research` has run its course. Recommend one of:
-1. A human makes the (a)/(b) Premises-modeling call above, so the entry can actually move to
-   `'researched'`; or
-2. The queue/status schema gains a way to mark an entry as blocked-on-human-decision (current
-   `ResearchQueueEntry.status` is only `'pending' | 'researched'`) so scheduled runs stop re-selecting
-   it as if it were open research work.
+## Recommendation (unchanged, now stronger)
+26 consecutive identical outcomes confirms no further scheduled pass will add new information. Recommend a human:
+1. Make the (a)/(b) taxonomy call directly, **or**
+2. Remove or reprioritize this queue entry so automated runs stop re-selecting it, **or**
+3. Extend `ResearchQueueEntry`'s status type (`src/types/db.ts`, currently `'pending' | 'researched'`) with a `'blocked'` state.
 
-No further scheduled pass should re-investigate the underlying fact pattern — it hasn't changed since
-2026-08-31 and won't change on its own.
+This session did not attempt any of the three above — all are outside this task's normal scope (schema/taxonomy changes on a populated, existing Brand) and were already explicitly reserved for a human decision by every prior pass.
