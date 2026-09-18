@@ -26965,4 +26965,33 @@ export const MENU_ITEMS = [
   { id: "tj_11", brandId: "food_junction_toast_junction", name: "Kopi", emoji: "☕", category: "Beverages", price: 2.00, calories: 130, protein: 2, carbs: 20, fat: 4, compatibleWith: ["vegetarian"], confidence: "estimated" },
   { id: "tj_12", brandId: "food_junction_toast_junction", name: "Teh", emoji: "🍵", category: "Beverages", price: 2.00, calories: 140, protein: 2, carbs: 23, fat: 4, compatibleWith: ["vegetarian"], confidence: "estimated" },
   { id: "tj_13", brandId: "food_junction_toast_junction", name: "Milo", emoji: "🥛", category: "Beverages", price: 2.30, calories: 190, protein: 5, carbs: 33, fat: 4, compatibleWith: ["halal"], confidence: "estimated" },
+  // --- Batch 2026-09-18 (2nd pass, scheduled restaurant-track run): toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd
+  // (Lee Kwang Kee Teochew Cuisine, 212 Lorong 8 Toa Payoh #01-53). Brand/Premises already existed from the
+  // 2026-08-20 SFA hawker restructuring under the bare licensee name "Lee Kwang Kee Groups Pte. Ltd." - confirmed
+  // via SFA licence E75024N002 (data.gov.sg live API) and independently via WebSearch that this is a real, well
+  // -documented Chinese Teochew restaurant trading as "Lee Kwang Kee Teochew Cuisine" (est. Sept 2014, official
+  // site teochew-cuisine.com, Facebook facebook.com/212teochewcuisine, Burpple/Tripadvisor/Lemon8 coverage) - not
+  // a bare corporate placeholder like several sibling queue entries this run turned out to be (see researchQueue.ts
+  // notes). Real dish names + prices sourced from ivanteh-runningman.blogspot.com's photographed-menu 2019 review
+  // (dim sum items, oyster omelette, fish, crab, dessert) since the official site's own menu is an unparsable image
+  // scan. All confidence 'estimated' (no official nutrition source for this independent restaurant) - dim sum items
+  // (Har Gow/Xiao Long Bao/Siew Mai/Beancurd Skin Roll) calibrated against this DISH_DB's own existing dim sum
+  // entries (tbsk_siew_mai 150/8/12/8 @ 3pc, kopitiam xiao_long_bao 300/12/32/12); Oyster Omelette calibrated
+  // against max_oyster_omelette (396/18/35/19 @ hawker $5 portion) scaled up ~20% for this restaurant's larger
+  // $12 "small" size; Sweet & Sour Garoupa Fish and Cold Crab reasoned as shared/family-style plates (feeds 2-3)
+  // scaled from this DISH_DB's steamed-fish (380/35/10/18 @ $8 single portion) and chilli-crab (480/36/32/22 @ $25)
+  // entries respectively, adjusted for frying/sauce vs. steaming-and-chilling technique. Xiao Long Bao kept
+  // unnamed-for-pork per CLAUDE.md's skip-list (compatibleWith: []); Steamed Pork Ribs Black Bean Sauce is
+  // explicitly pork-named so gets no compatibleWith array at all, matching convention. See
+  // reference/research-sessions/2026-09-18-lee_kwang_kee_teochew_cuisine.md. ---
+  { id: "lkk_har_gow", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Har Gow (3 Pcs)", emoji: "🥟", category: "Dim Sum", price: 3.60, calories: 150, protein: 7, carbs: 14, fat: 6, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "lkk_xiao_long_bao", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Xiao Long Bao (3 Pcs)", emoji: "🥟", category: "Dim Sum", price: 3.60, calories: 160, protein: 6, carbs: 16, fat: 8, compatibleWith: [], confidence: "estimated" },
+  { id: "lkk_siew_mai", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Siew Mai (3 Pcs)", emoji: "🥟", category: "Dim Sum", price: 3.60, calories: 150, protein: 8, carbs: 12, fat: 8, compatibleWith: [], confidence: "estimated" },
+  { id: "lkk_beancurd_roll", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Steamed Shrimp Beancurd Skin Roll (3 Pcs)", emoji: "🥟", category: "Dim Sum", price: 3.60, calories: 170, protein: 7, carbs: 10, fat: 11, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "lkk_pork_ribs_black_bean", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Steamed Pork Ribs Black Bean Sauce", emoji: "🍖", category: "Dim Sum", price: 3.60, calories: 190, protein: 12, carbs: 5, fat: 14, confidence: "estimated" },
+  { id: "lkk_yam_cake", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Pan-Fried Yam Cake", emoji: "🍘", category: "Local Hawker", price: 2.00, calories: 180, protein: 3, carbs: 20, fat: 10, compatibleWith: [], confidence: "estimated" },
+  { id: "lkk_oyster_omelette", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Teochew Fried Oyster Omelette (Small)", emoji: "🦪", category: "Seafood", price: 12.00, calories: 480, protein: 20, carbs: 38, fat: 24, compatibleWith: ["no_pork"], confidence: "estimated" },
+  { id: "lkk_sweet_sour_garoupa", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Sweet & Sour Sliced Garoupa Fish (Small)", emoji: "🐟", category: "Seafood", price: 35.00, calories: 900, protein: 45, carbs: 60, fat: 45, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "lkk_cold_crab", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Teochew Cold Crab (Per Crab)", emoji: "🦀", category: "Seafood", price: 50.00, calories: 320, protein: 42, carbs: 4, fat: 14, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
+  { id: "lkk_yam_paste_pumpkin_gingko", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Yam Paste With Pumpkin & Gingko Nuts", emoji: "🍮", category: "Bakery/Dessert", price: 4.50, calories: 340, protein: 3, carbs: 48, fat: 15, compatibleWith: ["vegetarian"], confidence: "estimated" },
 ];

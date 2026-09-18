@@ -829,3 +829,24 @@ DISH_DB.update({
     "Pig Tail Prawn Noodle": ("🍜","Noodles",8.90,680,30,55,34),
     "Pork Liver Prawn Noodle": ("🍜","Noodles",8.50,615,39,57,21),
 })
+
+# --- Batch 2026-09-18 (2nd pass) additions (toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd
+# - Lee Kwang Kee Teochew Cuisine, 212 Lorong 8 Toa Payoh. Brand/Premises already existed from the
+# 2026-08-20 SFA restructuring under a bare licensee name; confirmed via SFA licence E75024N002 and
+# WebSearch to be a real, independently-documented Teochew restaurant, not a corporate placeholder.
+# Real dish names + prices sourced from ivanteh-runningman.blogspot.com's photographed-menu review;
+# macros reasoned/calibrated against this DISH_DB's own dim sum, oyster omelette, steamed fish, and
+# chilli crab entries - see menuItems.ts's comment block immediately above the lkk_ entries and
+# reference/research-sessions/2026-09-18-lee_kwang_kee_teochew_cuisine.md for full reasoning. ---
+DISH_DB.update({
+    "Har Gow (3 Pcs)": ("🥟","Dim Sum",3.60,150,7,14,6),
+    "Xiao Long Bao (3 Pcs)": ("🥟","Dim Sum",3.60,160,6,16,8),
+    "Siew Mai (3 Pcs)": ("🥟","Dim Sum",3.60,150,8,12,8),
+    "Steamed Shrimp Beancurd Skin Roll (3 Pcs)": ("🥟","Dim Sum",3.60,170,7,10,11),
+    "Steamed Pork Ribs Black Bean Sauce": ("🍖","Dim Sum",3.60,190,12,5,14),
+    "Pan-Fried Yam Cake (Lee Kwang Kee)": ("🍘","Local Hawker",2.00,180,3,20,10),
+    "Teochew Fried Oyster Omelette (Small)": ("🦪","Seafood",12.00,480,20,38,24),
+    "Sweet & Sour Sliced Garoupa Fish (Small)": ("🐟","Seafood",35.00,900,45,60,45),
+    "Teochew Cold Crab (Per Crab)": ("🦀","Seafood",50.00,320,42,4,14),
+    "Yam Paste With Pumpkin & Gingko Nuts": ("🍮","Bakery/Dessert",4.50,340,3,48,15),
+})
