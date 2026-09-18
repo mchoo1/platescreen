@@ -12,20 +12,20 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-18)
+## Where things stand (2026-09-19)
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,727 (unchanged since 2026-09-17 — no new brands authored 2026-09-17 or 2026-09-18) |
-| Total premises | 4,667 (unchanged by the 2026-09-18 pass — no new Premises rows landed that day; up from the 4,665 snapshot via other same-day automation already in flight as of 2026-09-17) |
-| Total menu items | 2,672 — up from 2,668 (2026-09-17 snapshot), +4 from landing `hg105_10`–`hg105_13` (`hougang_105_..._bachmann_japanese_restaurant`) in the 2026-09-18 backlog-reconciliation pass |
-| Menu items with ≥1 diet tag | 1,732 (64.8%) — re-verified 2026-09-18 via a real `npx tsc --noEmit` pass; no tag edits this pass, small % shift from the +4 items above |
-| Confidence breakdown (MenuItems) | 56 verified / 2,610 estimated / 6 community — re-tallied 2026-09-18; this pass touched neither `compatibleWith` nor `confidence` |
-| Premises missing lat/lng | not re-checked 2026-09-18 (last confirmed 0 on 2026-09-05) |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-18 via real `tsc`-backed data |
-| Zero-menu brands | not independently re-audited 2026-09-18 (last confirmed 42 on 2026-09-16) |
-| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100), re-verified 2026-09-18; calorie/macro-sum ratio check not re-run this pass (last full check 2026-09-16) |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). A 2026-09-05 attempt to add a 20th (Milo 3-in-1 at a new retailer chain) found real macro data via OpenFoodFacts but couldn't find an admissible matching price, so nothing was added — see item 10, still unstarted as of 2026-09-18 (browser access re-checked 2026-09-18, still unavailable in this unattended session). |
+| Total brands | 1,727 (unchanged since 2026-09-17) |
+| Total premises | 4,667 (unchanged since 2026-09-18) |
+| Total menu items | 2,695 (unchanged this pass — 2026-09-19 only edited existing rows' `compatibleWith`, no rows added/removed; up from 2,672 via other same-day automation between the 2026-09-18 and 2026-09-19 improve-app passes, already committed as `2036cb0`/`b49e626`/`f2889d4`) |
+| Menu items with ≥1 diet tag | 1,762 (65.4%) — up from 1,748 (64.9%), +14 from the 2026-09-19 vegetarian dessert/beverage backfill (see item 19 below) |
+| Confidence breakdown (MenuItems) | 56 verified / 2,633 estimated / 6 community — re-tallied 2026-09-19; this pass touched `compatibleWith` only, not `confidence` |
+| Premises missing lat/lng | not re-checked 2026-09-19 (last confirmed 0 on 2026-09-05) |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-19 via real `tsc`-backed data |
+| Zero-menu brands | not independently re-audited 2026-09-19 (last confirmed 42 on 2026-09-16) |
+| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) and 0 macro-sum outliers (stated calories vs. protein/carbs/fat-derived, ±35%/150kcal tolerance) — both re-verified 2026-09-19, the macro-sum check specifically re-run for the first time since 2026-09-16 |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). Still unstarted beyond that as of 2026-09-19 — see item 10; a 2026-09-19 retry hit an Incapsula bot-challenge on `shengsiong.com.sg` via `web_fetch`, and in-app Browser pane access was declined again at the session level. |
 
 **2026-09-18 — backlogged automation output (2026-09-17 runs) reconciled, stale git locks cleared
 again.** Same shape of issue as the 2026-09-17 pass, recurring within ~13 hours: a `Premises`-track
@@ -610,6 +610,31 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     automation backlog rather than authoring new data — worth a human considering whether the
     underlying git-lock root cause (item 7) should be prioritized over continuing to treat each
     recurrence as a fresh housekeeping pass.
+
+19. ~~**2026-09-19 backlog reconciliation + vegetarian dessert/beverage diet-tag backfill**~~ —
+    **Done 2026-09-19.** Two parts: (a) landed a small automation backlog from the same recurring
+    stale-git-lock pattern as items 15/17/18 (Bonchon SFA-live-API investigation notes + 2 reports,
+    committed `bbce95d`) — new finding: `.git/` has accumulated ~150 zero-byte stale-lock artifact
+    files since 2026-08-10 that can't be deleted from any sandbox session (same `unlink`
+    restriction as the locks themselves), worth a human clearing directly via Windows Explorer at
+    some point; and (b) attempted ROADMAP item 10 (GroceryProduct chain expansion) again — still
+    blocked (`web_fetch` hits an Incapsula bot-challenge on `shengsiong.com.sg`, Browser pane access
+    declined at session level) — then pivoted to a real diet-tag coverage pass: re-ran the
+    2026-09-01 "named protein" heuristic against the current 947-item untagged pool (grown
+    substantially since 2026-09-01) and manually excluded all 7 candidates it found (misspelled
+    "suasage", a glutinous-rice dish with hidden-pork risk analogous to the Claypot Rice skip-list
+    entry, and 3 items at a brand whose own sourcing comment confirms pork-lard broth — exactly the
+    kind of false positive manual review exists to catch). Found a cleaner pattern instead: 14
+    unambiguous vegetarian desserts/beverages (Cheng Teng, Soya Bean Drink, Chendol, Tang Yuan
+    Peanut Soup, Cut Fruits, muffins, You Tiao, Fried Banana) sitting as un-reviewed
+    `compatibleWith: []` placeholders across 12 kopitiam/hawker-centre brands, extending the
+    already-approved 2026-09-01 beverage-backfill reasoning (item 9c) rather than introducing a new
+    policy. Tagged all 14 `["no_pork", "vegetarian"]` (Cut Fruits also got `vegan`), after
+    individually excluding adjacent ambiguous items (Curry Puff, Xiao Long Bao and close analogs,
+    Carrot Cake variants, Cheong Fun, generic Dumplings/"Dim Sum", generic "Bread"). Also ran a
+    fresh macro-sum consistency check (stated calories vs. protein/carbs/fat math) for the first
+    time since 2026-09-16 — 0 outliers, dataset clean on that axis. Coverage: 64.9% → 65.4%. Full
+    detail: `reference/research-sessions/2026-09-19-improve-app-vegetarian-dessert-backfill.md`.
 
 ## Not started, lower priority
 
