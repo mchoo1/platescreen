@@ -26906,4 +26906,63 @@ export const MENU_ITEMS = [
   { id: "wpn_1", brandId: "545_whampoa_prawn_noodles_square_2", name: "Prawn Noodles", emoji: "🍜", category: "Noodles", price: 6.90, calories: 500, protein: 22, carbs: 55, fat: 18, confidence: "estimated", isPopular: true },
   { id: "wpn_2", brandId: "545_whampoa_prawn_noodles_square_2", name: "Pig Tail Prawn Noodle", emoji: "🍜", category: "Noodles", price: 8.90, calories: 680, protein: 30, carbs: 55, fat: 34, confidence: "estimated" },
   { id: "wpn_3", brandId: "545_whampoa_prawn_noodles_square_2", name: "Pork Liver Prawn Noodle", emoji: "🍜", category: "Noodles", price: 8.50, calories: 615, protein: 39, carbs: 57, fat: 21, confidence: "estimated" },
+// Batch 2026-09-18 (scheduled restaurant-track run): Toast Junction (food_junction_toast_junction),
+// the other of Food Junction's two remaining 1-generic-item house-brand concessions flagged in this
+// Brand's own queue-entry notes (fj_2 "Coffee & Toast" was a single generic placeholder, same pattern
+// already fixed for sibling brand Go Teppan Go via gtg_1-9 above). kopitiam/koufu/foodfare/hawkers_
+// street (the 4 higher-priority operator queue entries) re-confirmed to have no addressable single-
+// outlet gap this run (same documented state as every prior run back to 2026-09-02). Real dish names
+// and SGD prices sourced from foodpanda's own delivery-menu listing for this exact brand/premises
+// (foodpanda.sg "Toast Junction (Food Junction - Raffles City)") — one of Toast Junction's own 6
+// premises — cross-verified against foodjunction.com/our-brands/'s own page for this brand, which
+// independently names "Kaya Butter Toast, Thick Toast, Asian Delights" as its 3 Must Try items; all
+// 3 categories are represented below. No official brand-specific nutrition source exists (same gap as
+// every other kopitiam-style toast/coffeeshop concession in this DB), so macros are reasoned/
+// calibrated against this project's own existing analogs for identical dish types: kaya toast from
+// yk_kaya_toast_thin/tb_kaya_toast_thick/kopikiosk_kaya_butter_toast (200-300 cal range), French Toast
+// from yk_french_toast/tb_french_toast (320-340 cal), Chee Cheong Fun from cc_chee_cheong_fun (295/10/
+// 48/7), Chwee Kueh from bedok_chee_kuek_chwee_kueh (320/6/45/12), Mee Siam from tb_mee_siam (420/16/
+// 68/10, Toast Box being the closest existing kopitiam-toast-stall analog), Mee Rebus averaged from
+// lps_wps_mee_rebus and inspirasi_mee_rebus (~470/19/62/15), Curry Chicken With Rice matched directly
+// to curry_mixed_veg_rice_curry_chicken_rice (550/25/60/22), Nonya Laksa averaged from max_laksa/
+// lps_sk_laksa/gmfc_laksa (~570/24/66/22), Fried Bee Hoon with Egg & Chicken Wing scaled up from
+// he_li_economical_bee_hoo_fried_bee_hoon's base bowl (380/10/55/12) for the added egg+wing, and the
+// 3 beverages (Kopi/Teh/Milo) matched to kopikiosk_kopi/kopikiosk_teh/mcd_milo_hot respectively. Turkey
+// Ham & Cheese Thick Toast has no close existing analog (this DB's other thick-toast entries are all
+// sweet kaya/peanut-butter spreads) — reasoned from tb_kaya_toast_thick's bread/butter base plus
+// typical deli turkey ham + cheese slice macros, flagged here as the least-calibrated item this batch.
+// Skipped near-duplicates/unpriced items: Peanut Butter Toast (near-dup of French Toast's sweet-toast
+// slot, no distinguishing macro basis beyond swapping spreads), all "Deal Set"/"Family Bundle" combos
+// (multi-item bundles, not single dishes), Mineral Water and Iced Homemade Barley (plain water/
+// unflavoured drink, no meaningful macro profile), and Bee Hoon Set B (near-dup of Set A, same base
+// dish with squid fillet swapped for chicken wing — kept only Set A as the representative variant).
+// dietTags: found a specific, credible third-party source (halalboleh.com, a dedicated MUIS-certified
+// halal-food directory) confirming Toast Junction is MUIS Halal Certified, listing the same 6 premises
+// this project already has for this Brand (Century Square, Food Junction Jln Girang, Junction 8,
+// Labrador Tower, NEX, Raffles City) — a specific, checkable match, not a generic chain-wide guess.
+// This is a MenuItems-only run per Phase 1 (Brand already exists), so Brand.dietTags was deliberately
+// NOT edited here (out of this run's write scope) — flagging the halal-certification finding for a
+// future pass to add "halal" to food_junction_toast_junction's Brand-level dietTags. Applied "halal"
+// (whole-establishment certification, not dish-name inference) to every non-vegetarian item below,
+// "no_pork" alongside "halal" where the dish also names a specific protein (per this project's own
+// inspirasi_mee_rebus/he_li_fried_bee_hoon convention), and "vegetarian" to the meat-free toast/dim
+// sum/beverage items, following this DB's existing tagging convention for those same dish types. Mee
+// Siam, Chwee Kueh, and Nonya Laksa left untagged (matching their own existing DB analogs, all of
+// which are also untagged) since belacan/dried-shrimp ambiguity in their gravies/dips makes a
+// vegetarian or no_pork call unreliable from the dish name alone. No SFA lookup (type is
+// food_court_stall inside existing Premises rows already established 2026-08-23, not a new hawker/
+// food_court_stall Brand). See reference/research-sessions/2026-09-18-food_junction_toast_junction.md.
+  { id: "tj_1", brandId: "food_junction_toast_junction", name: "Kaya Butter Toast (2 Slices)", emoji: "🍞", category: "Toast", price: 4.00, calories: 300, protein: 6, carbs: 38, fat: 13, compatibleWith: ["vegetarian"], confidence: "estimated", isPopular: true },
+  { id: "tj_2", brandId: "food_junction_toast_junction", name: "French Toast", emoji: "🍳", category: "Toast", price: 2.50, calories: 320, protein: 8, carbs: 38, fat: 16, compatibleWith: ["vegetarian"], confidence: "estimated" },
+  { id: "tj_3", brandId: "food_junction_toast_junction", name: "Turkey Ham & Cheese Thick Toast", emoji: "🥪", category: "Toast", price: 3.00, calories: 320, protein: 14, carbs: 32, fat: 15, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tj_4", brandId: "food_junction_toast_junction", name: "Chee Cheong Fun", emoji: "🍜", category: "Dim Sum", price: 2.70, calories: 295, protein: 10, carbs: 48, fat: 7, compatibleWith: ["vegetarian"], confidence: "estimated" },
+  { id: "tj_5", brandId: "food_junction_toast_junction", name: "Chwee Kueh", emoji: "🥟", category: "Dim Sum", price: 2.70, calories: 320, protein: 6, carbs: 45, fat: 12, confidence: "estimated" },
+  { id: "tj_6", brandId: "food_junction_toast_junction", name: "Mee Siam", emoji: "🍜", category: "Asian Delights", price: 5.00, calories: 420, protein: 16, carbs: 68, fat: 10, confidence: "estimated" },
+  { id: "tj_7", brandId: "food_junction_toast_junction", name: "Mee Rebus", emoji: "🍜", category: "Asian Delights", price: 5.00, calories: 470, protein: 19, carbs: 62, fat: 15, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tj_8", brandId: "food_junction_toast_junction", name: "Curry Chicken With Rice", emoji: "🍛", category: "Asian Delights", price: 7.00, calories: 550, protein: 25, carbs: 60, fat: 22, compatibleWith: ["halal", "no_pork"], confidence: "estimated", isPopular: true },
+  { id: "tj_9", brandId: "food_junction_toast_junction", name: "Nonya Laksa", emoji: "🍲", category: "Asian Delights", price: 6.00, calories: 570, protein: 24, carbs: 66, fat: 22, confidence: "estimated" },
+  { id: "tj_10", brandId: "food_junction_toast_junction", name: "Fried Bee Hoon With Fried Egg & Chicken Wing", emoji: "🍜", category: "Asian Delights", price: 5.50, calories: 420, protein: 16, carbs: 55, fat: 14, compatibleWith: ["halal", "no_pork"], confidence: "estimated" },
+  { id: "tj_11", brandId: "food_junction_toast_junction", name: "Kopi", emoji: "☕", category: "Beverages", price: 2.00, calories: 130, protein: 2, carbs: 20, fat: 4, compatibleWith: ["vegetarian"], confidence: "estimated" },
+  { id: "tj_12", brandId: "food_junction_toast_junction", name: "Teh", emoji: "🍵", category: "Beverages", price: 2.00, calories: 140, protein: 2, carbs: 23, fat: 4, compatibleWith: ["vegetarian"], confidence: "estimated" },
+  { id: "tj_13", brandId: "food_junction_toast_junction", name: "Milo", emoji: "🥛", category: "Beverages", price: 2.30, calories: 190, protein: 5, carbs: 33, fat: 4, compatibleWith: ["halal"], confidence: "estimated" },
 ];
