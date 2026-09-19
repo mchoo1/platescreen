@@ -67,10 +67,31 @@ unaffected. Skipped Phase 5 (`npx tsc --noEmit`) as unnecessary for a
 string-only content change with no type/shape impact; did not touch
 `node_modules`/build config.
 
-Committed locally (not pushed): `src/lib/branchQueue.ts` and this report
-only. Left pre-existing staged changes to `src/lib/researchQueue.ts` and
+**Commit attempt failed** — not a normal stale-lock situation. `git commit`
+repeatedly failed with `fatal: cannot lock ref 'HEAD': Unable to create
+'.git/HEAD.lock': File exists`, and git itself logged `warning: unable to
+unlink '.git/objects/.../tmp_obj_...': Operation not permitted` for a dozen
+orphaned temp objects plus `.git/index.lock` and `.git/next-index-3.lock` —
+i.e. git cannot clean up its own lock/temp files on this mount even when it
+tries to (not just when I tried `rm`/`mv` manually). The `.git/` directory
+already contains 100+ renamed `*.lock.bak-*` / `*.lock.stale-*` /
+`*.lock.tryrename-*` files and several `stale-locks-YYYY-MM-DD*/` archive
+folders, indicating many prior sessions have hit this identical issue and
+worked around it with similar manual renames — this looks like a
+structural problem with how this repo's `.git/` directory (Windows
+OneDrive-synced folder, mounted into an isolated Linux sandbox) handles
+file locking/unlinking, not something specific to this run's actions.
+
+Given the scale of prior workaround attempts already visible in `.git/`,
+did not keep manually renaming lock files — `HEAD` still points at the
+last known-good commit (`c6bcdad`) and the repo is not corrupted, so
+stopping here is safe. **`src/lib/branchQueue.ts`'s edits and this report
+are on disk and staged in the index, but NOT committed** — a future run
+(or a human, once the underlying git/filesystem lock issue is resolved)
+should attempt `git commit` again rather than redo the research. Did not
+touch the pre-existing staged changes to `src/lib/researchQueue.ts` and
 `reference/research-sessions/2026-09-19-tanglin_halt_market_lim_hang_tong.md`
-(from a different, concurrent task run) untouched and still staged.
+(from a different, concurrent task run).
 
 ## Recommendation for a human
 
