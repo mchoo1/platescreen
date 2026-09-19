@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-16. This is the entry point for "what's the state of
+**Last updated:** 2026-09-20. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -12,20 +12,20 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-19)
+## Where things stand (2026-09-20)
 
 | Metric | Value |
 |---|---|
 | Total brands | 1,727 (unchanged since 2026-09-17) |
-| Total premises | 4,667 (unchanged since 2026-09-18) |
-| Total menu items | 2,695 (unchanged this pass — 2026-09-19 only edited existing rows' `compatibleWith`, no rows added/removed; up from 2,672 via other same-day automation between the 2026-09-18 and 2026-09-19 improve-app passes, already committed as `2036cb0`/`b49e626`/`f2889d4`) |
-| Menu items with ≥1 diet tag | 1,762 (65.4%) — up from 1,748 (64.9%), +14 from the 2026-09-19 vegetarian dessert/beverage backfill (see item 19 below) |
-| Confidence breakdown (MenuItems) | 56 verified / 2,633 estimated / 6 community — re-tallied 2026-09-19; this pass touched `compatibleWith` only, not `confidence` |
-| Premises missing lat/lng | not re-checked 2026-09-19 (last confirmed 0 on 2026-09-05) |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-19 via real `tsc`-backed data |
-| Zero-menu brands | not independently re-audited 2026-09-19 (last confirmed 42 on 2026-09-16) |
-| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) and 0 macro-sum outliers (stated calories vs. protein/carbs/fat-derived, ±35%/150kcal tolerance) — both re-verified 2026-09-19, the macro-sum check specifically re-run for the first time since 2026-09-16 |
-| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). Still unstarted beyond that as of 2026-09-19 — see item 10; a 2026-09-19 retry hit an Incapsula bot-challenge on `shengsiong.com.sg` via `web_fetch`, and in-app Browser pane access was declined again at the session level. |
+| Total premises | 4,668 (+1 vs. 2026-09-19, from other same-day research-track automation) |
+| Total menu items | 2,695 (unchanged since 2026-09-19) |
+| Menu items with ≥1 diet tag | 1,762 (65.4%, unchanged since 2026-09-19) |
+| Confidence breakdown (MenuItems) | 56 verified / 2,633 estimated / 6 community (unchanged since 2026-09-19) |
+| Premises missing lat/lng | not re-checked 2026-09-20 (last confirmed 0 on 2026-09-05) |
+| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-20 via the Node-native-TS-stripping lightweight check (real `tsc` unavailable this pass — see item 20) |
+| Zero-menu brands | **35**, down from 42 (2026-09-16) — re-audited 2026-09-20; improvement is from other same-day/same-week research-track automation, not this pass's own work |
+| Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) and 0 macro-sum outliers (stated calories vs. protein/carbs/fat-derived, ±35%/150kcal tolerance) — both re-verified 2026-09-20 |
+| Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). Still unstarted beyond that as of 2026-09-20 — see item 10; not re-attempted this pass, same standing blockers (Incapsula bot-challenge on `shengsiong.com.sg`, unattended-session Browser pane access declined). |
 
 **2026-09-18 — backlogged automation output (2026-09-17 runs) reconciled, stale git locks cleared
 again.** Same shape of issue as the 2026-09-17 pass, recurring within ~13 hours: a `Premises`-track
@@ -635,6 +635,27 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     fresh macro-sum consistency check (stated calories vs. protein/carbs/fat math) for the first
     time since 2026-09-16 — 0 outliers, dataset clean on that axis. Coverage: 64.9% → 65.4%. Full
     detail: `reference/research-sessions/2026-09-19-improve-app-vegetarian-dessert-backfill.md`.
+
+20. ~~**2026-09-20 backlog reconciliation + fresh integrity re-check**~~ — **Done 2026-09-20.** Same
+    recurring shape as items 15/17/18/19: a fresh stale `.git/index.lock`/`.git/next-index-3.lock`
+    pair (confirmed stale via `fuser` + process check) had blocked a same-day (2026-09-19)
+    `branchQueue.ts` notes update and 2 new research-session reports (bonchon 3rd branches run,
+    mccafe 27th grocery-track pass) from committing. Reviewed every diff for section 5/5.1
+    compliance (all clean — notes-only, no fabricated data, no new Premises/MenuItem rows), cleared
+    the locks via the standing rename-workaround (including one additional collision when `git
+    commit` itself couldn't clean up its own transient lock — same class of issue as the 2026-09-04
+    finding), and committed as `7bd785e`. Attempted the `/tmp`-mirror real-`tsc` verification
+    recommended 2026-09-16, but hit a new variant of the disk-pressure problem: `npm install` made
+    real progress (0 → 337 packages) but never finished within this sandbox's ~178s per-command
+    execution cap across 3 attempts, consuming `/dev/sda1` free space from 2.0G → 1.4G in the
+    process — stopped and freed the space rather than continuing. Fell back to the documented Node
+    22 native-TS-type-stripping substitute for a real (non-fabricated) integrity re-check instead: 0
+    duplicate ids / 0 orphaned refs / 0 price outliers / 0 macro-sum outliers across all 5 data
+    arrays, and a genuine improvement surfaced by re-tallying zero-menu brands for the first time
+    since 2026-09-16: 42 → 35 (from other same-day/same-week research-track automation, not this
+    pass). No new hand-authored data change this pass, consistent with not having real `tsc`
+    available to verify one. Full detail: `reference/research-sessions/2026-09-20-improve-app-
+    backlog-reconciliation-and-integrity-check.md`.
 
 ## Not started, lower priority
 
