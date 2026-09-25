@@ -5,6 +5,7 @@ import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import {
   buildScreenerRows, withDistances, applyFilters, sortRows, applyPresetPpdFilter,
   buildUncoveredBrandRows, withUncoveredDistances, applyUncoveredFilters, sortUncoveredRows,
+  buildGroceryRows, applyGroceryFilters,
   DEFAULT_FILTERS, PRESETS,
   type ScreenerFilters, type ScreenerRow, type SortKey, type SortDir,
 } from '@/lib/screener';
@@ -14,6 +15,7 @@ import { FilterPanel } from './FilterPanel';
 import { PresetBar } from './PresetBar';
 import { ScreenerTable } from './ScreenerTable';
 import { PendingMenuList } from './PendingMenuList';
+import { GroceryList } from './GroceryList';
 import { MealTray } from './MealTray';
 import type { DietaryFlag, OutletType } from '@/types';
 import type { Platform } from '@/types/db';
@@ -25,6 +27,10 @@ const VERIFIED_COUNT = ALL_ROWS.filter((r) => r.confidence === 'verified').lengt
 // search since buildScreenerRows() only ever iterates MENU_ITEMS. See
 // reference/research-sessions/2026-08-29-zero-menu-brand-fallback.md.
 const ALL_UNCOVERED = buildUncoveredBrandRows();
+// 19 packaged-grocery SKUs (rice, oats, chicken breast, eggs, etc.) — previously
+// fully invisible in the UI. See reference/research-sessions/2026-09-25-
+// grocery-product-pantry-ui.md.
+const ALL_GROCERY = buildGroceryRows();
 // Ready-to-eat outlet types only — excludes 'supermarket' so raw ingredients (chicken breast,
 // eggs, dry rice) don't dominate "Top picks" ahead of actual meals someone can walk in and order.
 // See reference/research-sessions/2026-08-22-database-usefulness-audit.md.
@@ -173,6 +179,11 @@ export function ScreenerApp() {
     return sortUncoveredRows(out);
   }, [uncoveredWithDistance, filters.q, filters.outletTypes, filters.platforms, filters.location, filters.maxDistanceKm]);
 
+  const visibleGrocery = useMemo(() => {
+    const out = applyGroceryFilters(ALL_GROCERY, filters.q);
+    return [...out].sort((a, b) => b.ppd - a.ppd);
+  }, [filters.q]);
+
   const handleSort = (key: SortKey) => {
     if (key === sortKey) setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
     else {
@@ -288,6 +299,7 @@ export function ScreenerApp() {
             totalCount={ALL_UNCOVERED.length}
             showDistance={geoStatus === 'active'}
           />
+          <GroceryList rows={visibleGrocery} totalCount={ALL_GROCERY.length} />
         </main>
       </div>
 
