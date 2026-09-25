@@ -1,7 +1,8 @@
 import { BRANDS as RAW_BRANDS } from './brands';
 import { PREMISES as RAW_PREMISES } from './premises';
 import { MENU_ITEMS as RAW_MENU_ITEMS } from './menuItems';
-import type { Brand, Premises, MenuItem, Platform } from '@/types/db';
+import { GROCERY_PRODUCTS as RAW_GROCERY_PRODUCTS } from './groceryProducts';
+import type { Brand, Premises, MenuItem, GroceryProduct, Platform } from '@/types/db';
 import type { DietaryFlag, OutletType, PriceRange } from '@/types';
 import { haversineKm } from './geo';
 
@@ -11,6 +12,7 @@ import { haversineKm } from './geo';
 const BRANDS = RAW_BRANDS as unknown as Brand[];
 const PREMISES = RAW_PREMISES as unknown as Premises[];
 const MENU_ITEMS = RAW_MENU_ITEMS as unknown as MenuItem[];
+const GROCERY_PRODUCTS = RAW_GROCERY_PRODUCTS as unknown as GroceryProduct[];
 
 // Lookups, once, at module load.
 const BRAND_BY_ID = new Map<string, Brand>(BRANDS.map((b) => [b.id, b]));
@@ -55,6 +57,25 @@ export function matchesQuery(query: string, ...fields: string[]): boolean {
   if (!q) return true;
   const combined = fields.map(normalizeSearchText).join(' ');
   return q.split(' ').filter(Boolean).every((token) => combined.includes(token));
+}
+
+// Explicit-name conflict keywords for the Brand.dietTags OR-in in applyFilters
+// below. A brand-level tag (e.g. a bakery certified "halal" overall) must
+// never override CLAUDE.md 5.1's categorical-exclusion rule: a dish
+// explicitly named for pork/offal (or meat/seafood, for vegetarian/vegan)
+// gets no compatibleWith array at all, even at an otherwise-compliant brand
+// (found live: BreadTalk is tagged brand-level "halal", but sells a "Pork
+// Floss Bun" with compatibleWith: [] — correctly excluded per-dish). These
+// patterns only ever narrow the OR-in (never widen it), so an incomplete
+// keyword list can under-apply the brand tag but can never mis-apply it.
+const PORK_NAME_PATTERN = /\bpork\b|bak kut teh|pig organ|char siu|siu yuk|sio bak|bak kwa|\bham\b|\blard\b|\bbacon\b/i;
+const MEAT_SEAFOOD_NAME_PATTERN = /\bpork\b|\bchicken\b|\bbeef\b|\bmutton\b|\blamb\b|\bduck\b|\bfish\b|\bprawn\b|\bshrimp\b|\bcrab\b|\bsquid\b|\boctopus\b|\bbacon\b|\bham\b|\bsausage\b|\bmeat\b|seafood|\begg\b/i;
+
+/** Whether a brand-level dietTag is safe to apply to a specific dish by name (see patterns above). */
+function brandTagAppliesToDish(tag: DietaryFlag, dishName: string): boolean {
+  if (tag === 'halal' || tag === 'no_pork') return !PORK_NAME_PATTERN.test(dishName);
+  if (tag === 'vegetarian' || tag === 'vegan') return !MEAT_SEAFOOD_NAME_PATTERN.test(dishName);
+  return true;
 }
 
 /** Protein per dollar (g/$), rounded to 1 decimal. Returns 0 if price is 0. */
@@ -247,6 +268,64 @@ export function sortUncoveredRows(rows: UncoveredBrandRow[]): UncoveredBrandRow[
   });
 }
 
+// ── Grocery products (packaged SKUs) ────────────────────────────────────────
+// 19 rows in groceryProducts.ts (raw ingredients: rice, oats, chicken breast,
+// eggs, etc.), previously fully invisible in the UI — the "Grocery" outlet
+// filter surfaced ordinary whole-item MenuItem rows (a rotisserie chicken,
+// a bento box) instead, since buildScreenerRows() only ever iterates
+// MENU_ITEMS. This is a separate, additive surface (a "Pantry" section),
+// not a change to that filter. See reference/research-sessions/2026-09-25-
+// grocery-product-pantry-ui.md.
+export interface GroceryRow {
+  id: string;
+  name: string;
+  emoji: string;
+  category: string;
+  retailerName: string;
+  retailerEmoji: string;
+  packageSize: number;
+  packageUnit: 'g' | 'ml' | 'each';
+  packagePrice: number;
+  caloriesPer100: number;
+  proteinPer100: number;
+  carbsPer100: number;
+  fatPer100: number;
+  pricePer100: number; // packagePrice normalized to the same 100-unit basis as the macros above
+  ppd: number;         // protein per dollar for the whole package (same metric/scale as ScreenerRow.ppd)
+  confidence: 'verified' | 'estimated' | 'community';
+}
+
+export function buildGroceryRows(): GroceryRow[] {
+  return GROCERY_PRODUCTS.map((g) => {
+    const b = BRAND_BY_ID.get(g.brandId);
+    const pricePer100 = g.packageSize ? Math.round(((g.packagePrice / g.packageSize) * 100) * 100) / 100 : 0;
+    const totalProtein = (g.proteinPer100 / 100) * g.packageSize;
+    return {
+      id: g.id,
+      name: g.name,
+      emoji: g.emoji,
+      category: g.category,
+      retailerName: b?.name ?? g.brandId,
+      retailerEmoji: b?.emoji ?? '🛒',
+      packageSize: g.packageSize,
+      packageUnit: g.packageUnit,
+      packagePrice: g.packagePrice,
+      caloriesPer100: g.caloriesPer100,
+      proteinPer100: g.proteinPer100,
+      carbsPer100: g.carbsPer100,
+      fatPer100: g.fatPer100,
+      pricePer100,
+      ppd: proteinPerDollar(totalProtein, g.packagePrice),
+      confidence: g.confidence,
+    };
+  });
+}
+
+/** Text search across name / category / retailer, reusing the same apostrophe/multi-word-safe matcher as the main screener. */
+export function applyGroceryFilters(rows: GroceryRow[], q: string): GroceryRow[] {
+  return rows.filter((row) => matchesQuery(q, row.name, row.category, row.retailerName));
+}
+
 export type SortKey =
   | 'name' | 'restaurant' | 'location' | 'calories' | 'protein' | 'carbs' | 'fat' | 'price' | 'ppd' | 'distance';
 export type SortDir = 'asc' | 'desc';
@@ -311,7 +390,16 @@ export function applyFilters(rows: ScreenerRow[], f: ScreenerFilters): ScreenerR
     if (f.protMin != null && row.protein < f.protMin) return false;
     if (f.carbMax != null && row.carbs > f.carbMax) return false;
     if (f.priceMax != null && row.price > f.priceMax) return false;
-    if (f.tags.length && !f.tags.every((t) => row.compatibleWith.includes(t))) return false;
+    // A tag matches if the dish itself is tagged, OR the brand carries that tag
+    // overall (Brand.dietTags — e.g. a halal-certified stall) even before every
+    // individual dish has been tagged — guarded by brandTagAppliesToDish so a
+    // brand-level tag never overrides an explicit per-dish name conflict (e.g.
+    // a "Pork Floss Bun" at a brand-level-halal bakery). See
+    // reference/research-sessions/2026-09-25-diettags-filter-wiring.md.
+    if (
+      f.tags.length &&
+      !f.tags.every((t) => row.compatibleWith.includes(t) || (row.dietTags.includes(t) && brandTagAppliesToDish(t, row.name)))
+    ) return false;
     if (f.outletTypes.length && !f.outletTypes.includes(row.outletType)) return false;
     if (f.platforms.length && !f.platforms.every((p) => row.platforms.includes(p))) return false;
     if (f.verifiedOnly && row.confidence !== 'verified') return false;
