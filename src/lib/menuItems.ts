@@ -26994,4 +26994,34 @@ export const MENU_ITEMS = [
   { id: "lkk_sweet_sour_garoupa", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Sweet & Sour Sliced Garoupa Fish (Small)", emoji: "🐟", category: "Seafood", price: 35.00, calories: 900, protein: 45, carbs: 60, fat: 45, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
   { id: "lkk_cold_crab", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Teochew Cold Crab (Per Crab)", emoji: "🦀", category: "Seafood", price: 50.00, calories: 320, protein: 42, carbs: 4, fat: 14, compatibleWith: ["no_pork", "pescatarian"], confidence: "estimated" },
   { id: "lkk_yam_paste_pumpkin_gingko", brandId: "toa_payoh_lorong_8_blk_210_lee_kwang_kee_groups_pte_ltd", name: "Yam Paste With Pumpkin & Gingko Nuts", emoji: "🍮", category: "Bakery/Dessert", price: 4.50, calories: 340, protein: 3, carbs: 48, fat: 15, compatibleWith: ["vegetarian"], confidence: "estimated" },
+  // --- 2026-09-25 additions (koufu_elemen - new standalone Koufu Group Brand, "elemen 元素", a
+  // 100%-vegetarian restaurant chain confirmed via koufu.com.sg/our-brands/cafe-restaurants/. Real
+  // dish names + prices sourced from danielfooddiary.com/WebSearch aggregation and a direct sethlui.com
+  // review of the Great World City branch ("elemen Classic"), cross-checked against elemengroup.com.sg
+  // (menu page is Squarespace/JS-rendered, no static price list available via fetch). No official SG
+  // nutrition source exists for this sit-down vegetarian-fusion restaurant (not HPB Healthier Choice
+  // eligible, not packaged retail) - all 9 items confidence 'estimated', macros reasoned from each
+  // dish's stated ingredients/format and calibrated against this DB's own existing pizza (Margherita/
+  // Pepperoni, ~600-700cal personal pizza), quinoa/tofu rice-bowl (daily_cut's Grilled Chicken Thigh
+  // Bowl (Quinoa) 490/42/44/14 and Pan-Fried Tofu Bowl (Brown Rice) 440/22/54/14), and pasta entries.
+  // dietTags: whole Brand tagged 'vegetarian' (confirmed 100% vegetarian concept); per-item 'vegan' only
+  // applied where no dairy/egg was named in the sourced description (pizza has a cream base + cheese,
+  // pasta has egg omelette, curry and the dessert's coconut "ice cream" left unconfirmed - all 3 kept
+  // vegetarian-only per the never-guess rule on dairy/egg content). Skipped 3 signature dishes mentioned
+  // only in aggregated blurbs with no findable price (5 Elements Soup, Truffle Broth Ramen, Rojak) rather
+  // than estimate a price with no basis. HarbourFront Centre outlet (still listed on koufu.com.sg's page)
+  // deliberately excluded from Premises - WebSearch confirmed the entire HarbourFront Centre building
+  // permanently closed 27 Jul 2026 for redevelopment (reopening ~2031), so that page is stale for this
+  // one location; the other 4 outlets (Paya Lebar Quarter, Great World City, Woodlands Height/Koufu HQ,
+  // Millenia Walk) were independently confirmed still current. See reference/research-sessions/
+  // 2026-09-25-koufu_elemen.md. ---
+  { id: "elm_truffle_mushroom_pizza", brandId: "koufu_elemen", name: "Wild Mushroom & White Truffle Pizza", emoji: "🍕", category: "Pizza", price: 17.80, calories: 650, protein: 20, carbs: 68, fat: 30, compatibleWith: ["vegetarian", "no_pork"], confidence: "estimated" },
+  { id: "elm_sizzling_quinoa_brown_rice", brandId: "koufu_elemen", name: "Sizzling Quinoa Brown Rice", emoji: "🍚", category: "Rice Bowls", price: 15.80, calories: 480, protein: 14, carbs: 62, fat: 18, compatibleWith: ["vegetarian", "vegan", "no_pork"], confidence: "estimated" },
+  { id: "elm_blue_flower_tofu_wild_rice", brandId: "koufu_elemen", name: "Blue Flower Tofu with Black Truffle Wild Rice", emoji: "🍚", category: "Rice Bowls", price: 15.80, calories: 460, protein: 16, carbs: 58, fat: 16, compatibleWith: ["vegetarian", "vegan", "no_pork"], confidence: "estimated" },
+  { id: "elm_purple_rice_rolls", brandId: "koufu_elemen", name: "Shiitake Mushroom-Stuffed Purple Rice Rolls", emoji: "🍙", category: "Mains", price: 15.80, calories: 420, protein: 10, carbs: 68, fat: 10, compatibleWith: ["vegetarian", "vegan", "no_pork"], confidence: "estimated" },
+  { id: "elm_asian_curry_dough_balls", brandId: "koufu_elemen", name: "Asian Curry with Dough Balls", emoji: "🍛", category: "Mains", price: 12.80, calories: 480, protein: 12, carbs: 56, fat: 20, compatibleWith: ["vegetarian", "no_pork"], confidence: "estimated" },
+  { id: "elm_spicy_oyster_mushroom_pasta", brandId: "koufu_elemen", name: "Spicy Oyster Mushroom Omelette Pasta", emoji: "🍝", category: "Pasta", price: 12.80, calories: 560, protein: 16, carbs: 62, fat: 26, compatibleWith: ["vegetarian", "no_pork"], confidence: "estimated" },
+  { id: "elm_stirfried_brown_rice_beancurd", brandId: "koufu_elemen", name: "Stir-Fried Brown Rice with Beancurd Preserved", emoji: "🍚", category: "Rice Bowls", price: 16.80, calories: 500, protein: 14, carbs: 68, fat: 18, compatibleWith: ["vegetarian", "vegan", "no_pork"], confidence: "estimated" },
+  { id: "elm_maca_soup", brandId: "koufu_elemen", name: "Double-Boiled Maca Soup", emoji: "🥣", category: "Soups", price: 8.80, calories: 120, protein: 4, carbs: 14, fat: 5, compatibleWith: ["vegetarian", "vegan", "no_pork"], confidence: "estimated" },
+  { id: "elm_purple_rice_porridge_dessert", brandId: "koufu_elemen", name: "Chilled Purple Rice Porridge with Coconut Ice Cream", emoji: "🍨", category: "Desserts", price: 6.80, calories: 280, protein: 4, carbs: 48, fat: 9, compatibleWith: ["vegetarian", "no_pork"], confidence: "estimated" },
 ];

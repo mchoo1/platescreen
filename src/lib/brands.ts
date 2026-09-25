@@ -29658,6 +29658,27 @@ export const BRANDS_4 = [
     ],
     operatorId: "hawkers_street"
   },
+  {
+    id: "koufu_elemen",
+    name: "elemen",
+    emoji: "🌱",
+    type: "restaurant",
+    cuisine: "Vegetarian",
+    aliases: [
+      "elemen",
+      "elemen classic",
+      "elemen 元素",
+      "元素"
+    ],
+    dietTags: [
+      "vegetarian"
+    ],
+    priceRange: "$$",
+    platforms: [
+      "dine_in",
+      "delivery"
+    ]
+  },
 ];
 
 export const BRANDS = [...BRANDS_1, ...BRANDS_2, ...BRANDS_3, ...BRANDS_4];

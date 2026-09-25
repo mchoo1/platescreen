@@ -80045,6 +80045,58 @@ export const PREMISES_13 = [
     sfa: null,
     source: "web_research"
   },
+  {
+    id: "koufu_elemen_p1",
+    brandId: "koufu_elemen",
+    label: "Paya Lebar Quarter",
+    locationType: "mall",
+    locationContext: "Paya Lebar Quarter",
+    address: "10 Paya Lebar Road, #03-13, Singapore 409057",
+    postal: "409057",
+    lat: 1.3174,
+    lng: 103.8933,
+    sfa: null,
+    source: "operator_official_site"
+  },
+  {
+    id: "koufu_elemen_p2",
+    brandId: "koufu_elemen",
+    label: "Elemen Classic @ Great World City",
+    locationType: "mall",
+    locationContext: "Great World City",
+    address: "1 Kim Seng Promenade, #01-122, Singapore 237994",
+    postal: "237994",
+    lat: 1.29361,
+    lng: 103.83194,
+    sfa: null,
+    source: "operator_official_site"
+  },
+  {
+    id: "koufu_elemen_p3",
+    brandId: "koufu_elemen",
+    label: "Woodlands Height (Koufu Group HQ)",
+    locationType: "other",
+    locationContext: "Koufu Group HQ",
+    address: "1 Woodlands Height, #01-02, Singapore 737859",
+    postal: "737859",
+    lat: 1.42837057089738,
+    lng: 103.799127175267,
+    sfa: null,
+    source: "operator_official_site"
+  },
+  {
+    id: "koufu_elemen_p4",
+    brandId: "koufu_elemen",
+    label: "Millenia Walk",
+    locationType: "mall",
+    locationContext: "Millenia Walk",
+    address: "9 Raffles Boulevard, #01-75A/76, Singapore 039596",
+    postal: "039596",
+    lat: 1.29264,
+    lng: 103.85932,
+    sfa: null,
+    source: "operator_official_site"
+  },
 ];
 
 export const PREMISES = [...PREMISES_1, ...PREMISES_2, ...PREMISES_3, ...PREMISES_4, ...PREMISES_5, ...PREMISES_6, ...PREMISES_7, ...PREMISES_8, ...PREMISES_9, ...PREMISES_10, ...PREMISES_11, ...PREMISES_12, ...PREMISES_13];
