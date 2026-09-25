@@ -1,6 +1,6 @@
 # PlateScreen — Roadmap & Current Status
 
-**Last updated:** 2026-09-20. This is the entry point for "what's the state of
+**Last updated:** 2026-09-25. This is the entry point for "what's the state of
 this project and what should happen next" — read this before the other files
 in this folder, which are point-in-time strategy docs that may have stale
 numbers (each is dated; treat the numbers in this file as current).
@@ -12,17 +12,22 @@ not how the codebase works or how to talk about it.
 
 ---
 
-## Where things stand (2026-09-20)
+## Where things stand (2026-09-25)
+
+All 7 scheduled tasks are **paused** as of today (see item 21) — these
+numbers won't move again until they're re-enabled or someone does hand
+research.
 
 | Metric | Value |
 |---|---|
-| Total brands | 1,727 (unchanged since 2026-09-17) |
-| Total premises | 4,668 (+1 vs. 2026-09-19, from other same-day research-track automation) |
-| Total menu items | 2,695 (unchanged since 2026-09-19) |
-| Menu items with ≥1 diet tag | 1,762 (65.4%, unchanged since 2026-09-19) |
-| Confidence breakdown (MenuItems) | 56 verified / 2,633 estimated / 6 community (unchanged since 2026-09-19) |
-| Premises missing lat/lng | not re-checked 2026-09-20 (last confirmed 0 on 2026-09-05) |
-| Duplicate ids / orphaned brandIds / orphaned operatorIds | 0 / 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-20 via the Node-native-TS-stripping lightweight check (real `tsc` unavailable this pass — see item 20) |
+| Total brands | 1,728 (+1 vs. 2026-09-20, from same-day research-track automation before the pause) |
+| Total premises | 4,673 (+5 vs. 2026-09-20) |
+| Total menu items | 2,704 (+9 vs. 2026-09-20) |
+| GroceryProduct rows | 19 — unchanged, but now visible in the UI (see item 21) |
+| Menu items with ≥1 diet tag | not re-tallied 2026-09-25 (last confirmed 65.4% on 2026-09-19/20) |
+| Confidence breakdown (MenuItems) | not re-tallied 2026-09-25 (last confirmed 56 verified / 2,633 estimated / 6 community on 2026-09-19/20) |
+| Premises missing lat/lng | not re-checked 2026-09-25 (last confirmed 0 on 2026-09-05) |
+| Duplicate ids / orphaned brandIds | 0 / 0 (brands, premises, menu items, and GroceryProduct) — re-verified 2026-09-25 with a real `tsc --noEmit` (sandbox shell had recovered by this session, unlike 2026-09-20's substitute check) |
 | Zero-menu brands | **35**, down from 42 (2026-09-16) — re-audited 2026-09-20; improvement is from other same-day/same-week research-track automation, not this pass's own work |
 | Price / calorie / macro-sum outliers | 0 price outliers (≤0 or >$100) and 0 macro-sum outliers (stated calories vs. protein/carbs/fat-derived, ±35%/150kcal tolerance) — both re-verified 2026-09-20 |
 | Grocery SKUs populated (dedicated `GroceryProduct` schema) | 19 (2 original + 17 migrated from MenuItem 2026-08-31 — see item 1 below). Still unstarted beyond that as of 2026-09-20 — see item 10; not re-attempted this pass, same standing blockers (Incapsula bot-challenge on `shengsiong.com.sg`, unattended-session Browser pane access declined). |
@@ -260,14 +265,9 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    the launch-readiness review above: grocery-ingredients issue confirmed
    present and escalated to item 1; mobile table reflow confirmed present,
    kept as lower-priority polish (item 6 below).
-6. **Mobile table reflow** — results table stays a horizontally-scrollable
-   table on mobile rather than reflowing to cards; data is reachable via
-   swipe, just not a great first impression on likely-majority-mobile
-   traffic. Polish, not a blocker. **Re-confirmed 2026-09-14 with hard
-   numbers**: measured live at 375px viewport — table is 2,013px wide
-   inside a 335px scroll container. Promoted to top launch-readiness
-   priority (see item 14) since most link-shared/social traffic will be
-   mobile. Not fixed this session — see item 14 for why.
+6. ~~**Mobile table reflow**~~ — **Done 2026-09-25** (commit `146523e`) —
+   see item 21. Card layout below the `md` breakpoint, table unchanged
+   above it.
 7. **Recurring stale git lock from scheduled tasks — now happened a third
    time, worth investigating rather than just clearing.** `.git/index.lock`/
    `HEAD.lock` found stale at 2026-08-31 ~03:21, 2026-09-01 ~12:10, and again
@@ -506,7 +506,9 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     multiword-fix.md`.
 
 14. **Launch-readiness review + growth review, 2026-09-14 — session hit a
-    sandbox shell outage partway through.** Confirmed the 2026-09-13
+    sandbox shell outage partway through.** (The 3 code findings below —
+    mobile reflow, dietTags filter-wiring, GroceryProduct UI — were fixed
+    2026-09-25, see item 21.) Confirmed the 2026-09-13
     search fix is live in production (Vercel API showed `origin/main` had
     already moved to a newer automated commit than this session's own
     last local commit — something else pushed in the meantime). Live
@@ -656,6 +658,45 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
     pass). No new hand-authored data change this pass, consistent with not having real `tsc`
     available to verify one. Full detail: `reference/research-sessions/2026-09-20-improve-app-
     backlog-reconciliation-and-integrity-check.md`.
+
+21. ~~**2026-09-25 — all 7 scheduled tasks paused; the 3 code-level launch-
+    readiness fixes from item 14 landed**~~ — **Done 2026-09-25.** Direct
+    request: "stop all scheduled, it is not working, I want to launch it."
+    Paused (not deleted) `platescreen-research-restaurants`,
+    `-research-grocery`, `-sync-to-stride`, `-research-branches`,
+    `-post-copilot`, `-comment-copilot`, `-improve-app` — recoverable via
+    `enabled: true` later. Confirmed via the Vercel API this was the right
+    call independent of the request: `mccafe_colocation_research` had run
+    **28 consecutive scheduled passes** since 2026-08-30 reaching the
+    identical "blocked on a human decision" conclusion every time (see
+    `2026-09-25-mccafe-colocation-28th-pass.md`) — real waste, not a false
+    alarm. Also found and cleared ~228 stray `.git/*.lock.bak-*`/`.stale-*`/
+    `.old*` quarantine files accumulated from the project's own rename-not-
+    delete stale-lock workaround (76K total — not the disk-exhaustion
+    cause, just cleanup debt) and landed 3 backlogged automated-task
+    outputs blocked by a stale lock (bonchon branches reconfirmation,
+    stride-sync report, mccafe 28th-pass report).
+    Then landed the three item-14 code fixes with full `tsc`+build-mirror
+    verification (sandbox shell had recovered by this session): **mobile
+    card reflow** (`ScreenerTable.tsx` — `hidden md:block`/`md:hidden`
+    split, commit `146523e`), **`Brand.dietTags` wired into `applyFilters`**
+    (`screener.ts`, commit `f0ec14f` — caught and fixed a real safety bug
+    in testing: a naive OR let "BreadTalk / Pork Floss Bun" surface under
+    the halal filter before a name-conflict guard was added; see
+    `2026-09-25-diettags-filter-wiring.md`), and a **new Pantry section**
+    surfacing the 19 `GroceryProduct` rows (`GroceryList.tsx`, commit
+    `b743031` — see `2026-09-25-grocery-product-pantry-ui.md`). Item 14's
+    4th recommendation (source official nutrition PDFs for 2-3 more
+    chains) remains the standing, non-code unlock for the growth-content
+    tasks once they're re-enabled.
+    **Vercel Web Analytics remains OFF** — confirmed free on this account's
+    Hobby plan (50k events/month included, no charge ever on overage, just
+    a pause) and offered to enable it; user held off for now ("keep it
+    free" — already true either way, but respected the explicit no).
+    Local repo was ~30 commits ahead of `origin/main` at the start of this
+    session (confirmed via the Vercel deployment API, not assumed) —
+    unchanged by this session's own work, since this sandbox has never had
+    push credentials; see the standing `git pull && git push` handoff.
 
 ## Not started, lower priority
 
