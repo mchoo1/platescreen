@@ -249,7 +249,12 @@ of `CLAUDE.md`) so the live site actually reflects what the automation adds.
    deleted the latter (`e48d28f`). **The pipeline does not fully self-tidy**
    — periodically check for and commit stray automation output; it won't
    reach production otherwise.
-3. **Turn on Vercel Web Analytics** — confirmed still off as of 2026-08-31.
+3. ~~**Turn on Vercel Web Analytics**~~ — **Done 2026-09-25** (commit
+   `44c472c`). Enabled on the free Hobby tier + added the
+   `@vercel/analytics` code integration to `layout.tsx` (dashboard
+   enablement alone doesn't inject a tracking script). See
+   `2026-09-25-vercel-web-analytics-integration.md`. Data won't show until
+   this deploys — needs the standing `git pull && git push`.
    No code change, just a dashboard toggle (no API/tool can do this from
    here), and it blocks every data-informed growth decision after it —
    including whether the now-automated content posts are doing anything.
