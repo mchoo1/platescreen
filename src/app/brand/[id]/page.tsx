@@ -1,151 +1,89 @@
-// Per-brand SEO page — static export via generateStaticParams(). One of
-// these exists for every one of the 1,747 brands, indexable by search
-// engines even though the interactive screener itself is a single-page app.
-// See reference/planning/GROWTH_STRATEGY.md for why this route exists and
-// src/lib/brandPages.ts for the data-access layer it's built on.
+// Per-brand page — statically generated for every brand.
 
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import {
-  getAllBrandIds,
-  getBrandPageData,
-  outletTypeLabel,
-  brandLocationSummary,
-} from '@/lib/brandPages';
-import { fmtMoney, ppdBadgeClasses } from '@/lib/utils';
+import { allBrandIds, fmtDate, getBrand, outletTypeLabel } from '@/lib/pages';
+import { AppHeader, TrustBadge, fmt$, fmtN } from '@/components/v2/ui';
 
 export function generateStaticParams() {
-  return getAllBrandIds().map((id) => ({ id }));
+  return allBrandIds().map((id) => ({ id }));
 }
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
-  const data = getBrandPageData(params.id);
-  if (!data) return { title: 'Not found — PlateScreen' };
-  const { brand, menuItems } = data;
-  const location = brandLocationSummary(data.premises);
-  const title = `${brand.name} — Calories, Protein & Price in Singapore | PlateScreen`;
-  const description = menuItems.length
-    ? `${brand.name} nutrition info for ${menuItems.length} real menu item${menuItems.length === 1 ? '' : 's'} in Singapore: calories, protein, carbs, fat, price, and protein-per-dollar. ${location}.`
-    : `${brand.name} on PlateScreen — a ${outletTypeLabel(brand.type).toLowerCase()} in Singapore. ${location}. Menu nutrition data coming soon.`;
-  return {
-    title,
-    description,
-    alternates: { canonical: `/brand/${brand.id}` },
-    openGraph: { title, description },
-  };
+  const b = getBrand(params.id);
+  if (!b) return { title: 'Not found — PlateScreen' };
+  const title = `${b.brand.name} — Calories, Protein & Price in Singapore | PlateScreen`;
+  const description = b.items.length
+    ? `${b.brand.name}: calories, protein, price, allergens and cooking style for ${b.items.length} dish${b.items.length === 1 ? '' : 'es'} in Singapore.${b.outletCount > 1 ? ` ${b.outletCount} outlets.` : ''}`
+    : `${b.brand.name} — ${outletTypeLabel(b.brand.type).toLowerCase()} in Singapore. Menu data coming soon.`;
+  return { title, description, alternates: { canonical: `/brand/${b.brand.id}` }, openGraph: { title, description } };
 }
 
 export default function BrandPage({ params }: { params: { id: string } }) {
-  const data = getBrandPageData(params.id);
-  if (!data) notFound();
-  const { brand, premises, menuItems } = data;
-
+  const b = getBrand(params.id);
+  if (!b) notFound();
+  const { brand, items, outlets, outletCount } = b;
   return (
-    <main className="max-w-3xl mx-auto px-4 py-8">
-      <nav className="text-sm text-slate-500 mb-4">
-        <Link href="/" className="hover:text-blue-600">PlateScreen</Link>
-        <span className="mx-1.5">/</span>
-        <span className="text-slate-700">{brand.name}</span>
-      </nav>
+    <div className="min-h-screen">
+      <AppHeader />
+      <main className="max-w-3xl mx-auto px-4 sm:px-6 py-6 flex flex-col gap-5">
+        <nav aria-label="Breadcrumb" className="text-sm text-ps-muted"><Link href="/" className="text-ps-muted no-underline hover:text-ps-ink">PlateScreen</Link></nav>
+        <header className="flex flex-col gap-1">
+          <h1 className="m-0 font-display text-3xl font-bold">{brand.name}</h1>
+          <p className="m-0 text-sm text-ps-muted">{outletTypeLabel(brand.type)} · {brand.cuisine} · {brand.priceRange}{outletCount > 1 ? ` · ${outletCount} outlets` : outlets[0]?.venue ? ` · ${outlets[0].venue.name}` : ''}</p>
+        </header>
 
-      <header className="mb-6">
-        <h1 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
-          <span>{brand.emoji}</span>
-          {brand.name}
-        </h1>
-        <p className="mt-1 text-sm text-slate-500">
-          {outletTypeLabel(brand.type)} · {brand.cuisine} · {brand.priceRange}
-        </p>
-        <p className="mt-1 text-sm text-slate-500">{brandLocationSummary(premises)}</p>
-        {brand.dietTags.length > 0 && (
-          <div className="mt-2 flex flex-wrap gap-1.5">
-            {brand.dietTags.map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center rounded-full bg-blue-50 text-blue-700 text-xs font-medium px-2 py-0.5"
-              >
-                {tag.replace(/_/g, ' ')}
-              </span>
-            ))}
-          </div>
-        )}
-      </header>
-
-      <section className="mb-8">
-        <h2 className="text-lg font-semibold text-slate-900 mb-3">
-          {menuItems.length > 0 ? `Menu (${menuItems.length} item${menuItems.length === 1 ? '' : 's'})` : 'Menu'}
-        </h2>
-        {menuItems.length === 0 ? (
-          <p className="text-sm text-slate-500">
-            No screened menu items for {brand.name} yet — PlateScreen never fabricates
-            macros, so this brand is listed for location purposes and will show dishes
-            once they're individually researched and verified.
-          </p>
-        ) : (
-          <div className="rounded-xl border border-slate-200 overflow-hidden">
-            <table className="w-full text-sm">
-              <thead className="bg-slate-50">
-                <tr className="text-left text-xs font-medium text-slate-500">
-                  <th className="px-3 py-2">Item</th>
-                  <th className="px-3 py-2 text-right">Cal</th>
-                  <th className="px-3 py-2 text-right">Protein</th>
-                  <th className="px-3 py-2 text-right">Price</th>
-                  <th className="px-3 py-2 text-right">Protein/$</th>
-                </tr>
-              </thead>
-              <tbody>
-                {menuItems.map((item) => (
-                  <tr key={item.id} className="border-t border-slate-100">
-                    <td className="px-3 py-2">
-                      <Link href={`/brand/${brand.id}/${item.id}`} className="font-medium text-slate-900 hover:text-blue-600">
-                        {item.emoji} {item.name}
-                      </Link>
-                      {item.isPopular && (
-                        <span className="ml-1.5 inline-flex items-center rounded-full bg-blue-50 text-blue-700 text-[10px] font-medium px-1.5 py-0.5">
-                          Popular
-                        </span>
-                      )}
-                    </td>
-                    <td className="px-3 py-2 text-right text-slate-700">{item.calories}</td>
-                    <td className="px-3 py-2 text-right text-slate-700">{item.protein}g</td>
-                    <td className="px-3 py-2 text-right font-medium text-slate-900">{fmtMoney(item.price)}</td>
-                    <td className="px-3 py-2 text-right">
-                      <span className={`inline-flex items-center rounded-full text-xs font-semibold px-2 py-0.5 ${ppdBadgeClasses(item.ppd)}`}>
-                        {item.ppd.toFixed(1)}
-                      </span>
-                    </td>
+        <section className="flex flex-col gap-2">
+          <h2 className="m-0 label-caps">Menu{items.length ? ` · ${items.length}` : ''}</h2>
+          {items.length === 0 ? (
+            <p className="m-0 text-sm text-ps-muted">We know this stall exists but haven't found a reliable source for its dishes yet.</p>
+          ) : (
+            <div className="overflow-x-auto rounded-2xl border border-ps-line">
+              <table className="w-full min-w-[560px] border-collapse text-sm">
+                <thead className="bg-ps-surface text-xs uppercase tracking-wider text-ps-muted">
+                  <tr>
+                    <th scope="col" className="text-left px-3 py-3 font-semibold">Dish</th>
+                    <th scope="col" className="text-right px-3 py-3 font-semibold">Price</th>
+                    <th scope="col" className="text-right px-3 py-3 font-semibold">kcal</th>
+                    <th scope="col" className="text-right px-3 py-3 font-semibold">Protein</th>
+                    <th scope="col" className="text-right px-3 py-3 font-semibold">g P / $</th>
+                    <th scope="col" className="text-left px-3 py-3 font-semibold">Data</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-      </section>
-
-      {premises.length > 0 && (
-        <section className="mb-8">
-          <h2 className="text-lg font-semibold text-slate-900 mb-3">
-            Locations ({premises.length})
-          </h2>
-          <ul className="space-y-2 text-sm">
-            {premises.slice(0, 30).map((p) => (
-              <li key={p.id} className="text-slate-600">
-                <span className="font-medium text-slate-800">{p.locationContext || p.label}</span>
-                {p.address && <span className="text-slate-400"> — {p.address}</span>}
-              </li>
-            ))}
-            {premises.length > 30 && (
-              <li className="text-slate-400">…and {premises.length - 30} more outlets islandwide.</li>
-            )}
-          </ul>
+                </thead>
+                <tbody className="font-mono text-[13px]">
+                  {items.map(({ product, profile, trust, price, ppd }, i) => (
+                    <tr key={product.id} className={`border-t border-ps-line ${i % 2 ? 'bg-ps-bar' : ''}`}>
+                      <td className="px-3 py-3 font-sans"><Link href={`/brand/${brand.id}/${product.id}`} className="text-ps-ink no-underline font-semibold hover:underline">{product.name}</Link></td>
+                      <td className="px-3 py-3 text-right">{fmt$(price)}</td>
+                      <td className="px-3 py-3 text-right">{fmtN(profile?.caloriesKcal ?? null)}</td>
+                      <td className="px-3 py-3 text-right text-ps-green">{fmtN(profile?.proteinG ?? null, ' g')}</td>
+                      <td className="px-3 py-3 text-right">{ppd == null ? '—' : ppd.toFixed(1)}</td>
+                      <td className="px-3 py-3 font-sans"><TrustBadge trust={trust} /></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </section>
-      )}
 
-      <p className="text-xs text-slate-400 pt-4 border-t border-slate-100">
-        Every dish on PlateScreen traces to a real, sourced menu — nothing is
-        estimated from "what's typical." <Link href="/" className="text-blue-600 hover:underline">Screen every dish in Singapore →</Link>
-      </p>
-    </main>
+        {outletCount > 0 && (
+          <section className="card p-4 flex flex-col gap-3">
+            <h2 className="m-0 text-[15px] font-bold">{outletCount === 1 ? 'Where' : `Outlets (${outletCount})`}</h2>
+            <ul className="list-none m-0 p-0 grid sm:grid-cols-2 gap-3 text-sm">
+              {outlets.map((o) => (
+                <li key={o.outlet.id} className="flex flex-col gap-0.5">
+                  <span className="font-semibold">{o.venue?.name ?? o.outlet.label}</span>
+                  {o.outlet.address && <span className="text-xs text-ps-muted">{o.outlet.address}</span>}
+                  {o.upcomingClosures[0] && <span className="text-xs text-ps-muted">Next centre closure: {fmtDate(o.upcomingClosures[0].startDate)}</span>}
+                </li>
+              ))}
+            </ul>
+            {outletCount > outlets.length && <p className="m-0 text-xs text-ps-muted">Showing {outlets.length} of {outletCount}.</p>}
+          </section>
+        )}
+      </main>
+    </div>
   );
 }

@@ -4,22 +4,26 @@
 
 @layer base {
   html, body {
-    @apply bg-slate-50 text-slate-900;
+    @apply bg-ps-bg text-ps-ink;
+    color-scheme: dark;
   }
-  html.dark, html.dark body {
-    @apply bg-slate-950 text-slate-100;
-  }
+  a { @apply text-ps-blue; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-ps-blue; }
 }
 
 @layer utilities {
-  .tabular {
-    font-variant-numeric: tabular-nums;
+  .tabular { font-variant-numeric: tabular-nums; }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
+
+@layer components {
+  .chip {
+    @apply inline-flex items-center gap-1.5 h-9 px-3 rounded-full border border-ps-line2 bg-ps-surface text-ps-ink text-[13px] font-semibold whitespace-nowrap shrink-0;
   }
-  .scrollbar-thin::-webkit-scrollbar {
-    height: 6px;
-    width: 6px;
-  }
-  .scrollbar-thin::-webkit-scrollbar-thumb {
-    @apply bg-slate-300 dark:bg-slate-700 rounded-full;
-  }
+  .chip-on { @apply border-ps-blue bg-ps-select; }
+  .card { @apply rounded-2xl border border-ps-line bg-ps-surface; }
+  .btn-primary { @apply inline-flex items-center justify-center h-12 px-5 rounded-xl bg-ps-green text-ps-bg font-bold; }
+  .btn-ghost { @apply inline-flex items-center justify-center h-11 px-4 rounded-xl border border-ps-line2 text-ps-ink font-semibold; }
+  .label-caps { @apply text-[12px] font-bold tracking-wider text-ps-muted uppercase; }
 }

@@ -1,12 +1,51 @@
 # PlateScreen — Developer & Agent Handoff Guide
 
-> **Last updated:** 2026-08-30
+> **Last updated:** 2026-11-16 (v2 rebuild — read section 0 first)
 > **For:** Any Cowork session or developer picking up this project cold.
 > Read this first, top to bottom, before touching `src/lib/*.ts`. It contains
 > operating rules (not just architecture) that earlier sessions learned the
 > hard way — skipping them means redoing work or reintroducing bad data.
 
 ---
+
+## 0. v2 rebuild (2026-11-16) — what changed, read this first
+
+The data and the UI were rebuilt to the Master PRD v2.0. **Sections 4.1, 4.5
+and 6 below describe the v1 layout and are now historical**; everything
+else (sourcing rules, diet-tag rules, container brands) still applies.
+
+- **The database is `/data/*.json`** (23 tables, one row per line). Schema:
+  `src/db/schema.ts`. Rules + table guide: `data/README.md`. Integrity
+  checks: `src/db/validate.ts`.
+- **The legacy files `src/lib/{brands,premises,menuItems,operators,
+  groceryProducts}.ts` are frozen.** They're kept only for
+  `scripts/migrate-v1.ts` and the parity tests. Never edit them for data work
+  again, and never re-run `migrate-v1.ts` (it would wipe /data edits).
+- **New facts the database now holds:** nutrition with status/basis/
+  assumptions/source (and "typical for this dish" concept profiles), dated
+  prices by outlet/channel, three-state diet tags, **allergens**
+  (likely vs declared), **gluten-free claims**, **cooking style + spice**,
+  **outlet opening hours** and **venue closures** (NEA cleaning dates).
+- **Allergen policy (Ming, 2026-11-15):** inference may only say
+  `likely_contains` (with a reason). Contains / free-from / gluten-free need
+  the brand's or stall's own declaration. Unknown is never "safe".
+- **Never overwrite a fact** — close it with `validTo` and add a new row.
+- **Browser data:** the site fetches `public/data/search-index.json`, built
+  by `npm run build:index` (runs automatically before `next build`; the build
+  fails if /data has integrity errors). No more 4 MB of TS in the bundle.
+- **Search engine:** `src/lib/search/` — `parse.ts` turns plain language
+  into filters (regex, no AI call), `filter.ts` decides every match and sort
+  deterministically, `hours.ts` handles open-now (SGT), `build.ts` builds
+  the index. Meal maths: `src/db/nutrition.ts` (incomplete → "≥" lower bound).
+- **UI:** `src/components/v2/` (Discover, FilterSheet, Compare) and the
+  rebuilt `/brand/[id]` and `/brand/[id]/[itemId]` pages. Dark-only design
+  from the approved mockups. Old components were removed.
+- **Tests:** `npm test` (vitest) — integrity, v1→v2 parity (same dishes,
+  prices, macros and filter results as the old screener), rules, search,
+  hours, meal nutrition. CI runs typecheck + tests + build on every push.
+- **New data workflow:** edit `data/*.json` → `npm test` → `npm run build`
+  → write the research-session note → commit. Name rules for new dishes:
+  `src/db/rules.ts` (`inferCooking`, `inferSpice`, `inferAllergens`).
 
 ## 1. What Is PlateScreen?
 
@@ -347,6 +386,10 @@ counts before/after, dup/orphan checks) and a pointer to the matching
 ---
 
 ## 9. What NOT To Do
+
+- (v2) Don't edit the frozen legacy data files or re-run `scripts/migrate-v1.ts` (section 0).
+- (v2) Don't record an inferred allergen as anything but `likely_contains`, and never add a gluten-free claim without a brand/stall declaration.
+- (v2) Don't overwrite or delete a fact row — close it with `validTo` and add a new one.
 
 - Don't fabricate dish data under any circumstance (section 5).
 - Don't assign a MenuItem to a food-court container brand (section 4.3).

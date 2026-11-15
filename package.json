@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prebuild": "tsx scripts/build-search-index.ts",
+    "build:index": "tsx scripts/build-search-index.ts",
+    "test": "vitest run",
+    "migrate:v1": "tsx scripts/migrate-v1.ts",
+    "import:nea": "tsx scripts/import-nea-closures.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -26,6 +31,8 @@
     "eslint-config-next": "^14.2.5",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.3"
+    "tsx": "^4.23.15",
+    "typescript": "^5.5.3",
+    "vitest": "^2.1.9"
   }
 }

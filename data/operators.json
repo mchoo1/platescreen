@@ -1,0 +1,10 @@
+[
+{"id":"kopitiam","name":"Kopitiam","type":"food_court_operator"},
+{"id":"koufu","name":"Koufu","type":"food_court_operator"},
+{"id":"foodfare","name":"NTUC Foodfare","type":"food_court_operator"},
+{"id":"hawkers_street","name":"Hawkers' Street","type":"food_court_operator"},
+{"id":"food_junction","name":"Food Junction","type":"food_court_operator"},
+{"id":"fei_siong","name":"Fei Siong Group","type":"food_court_operator"},
+{"id":"canopy_hawkers","name":"Canopy Hawkers Group","type":"food_court_operator"},
+{"id":"timbre_plus_hawkers","name":"Timbre+ Hawkers","type":"food_court_operator"}
+]

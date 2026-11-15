@@ -1,0 +1,6 @@
+[
+{"id":"legacy_v1","name":"PlateScreen legacy dataset (v1)","type":"legacy_import","reference":"src/lib/{brands,premises,menuItems,operators,groceryProducts}.ts @ 9dd3a9b","retrievedAt":"2026-11-16","licensingNotes":"Compiled by PlateScreen research sessions; per-batch provenance in reference/research-sessions/."},
+{"id":"name_rule_v1","name":"PlateScreen name-based inference rules (v1)","type":"rule_inference","reference":"src/db/rules.ts","retrievedAt":"2026-11-16","licensingNotes":null},
+{"id":"sfa_licensed_eating_establishments","name":"NEA/SFA Licensed Eating Establishments","type":"government_open_data","reference":"https://data.gov.sg/datasets/d_227473e811b09731e64725f140b77697/view","retrievedAt":null,"licensingNotes":"Singapore Open Data Licence"},
+{"id":"nea_hawker_closures","name":"NEA Dates of Hawker Centres Closure","type":"government_open_data","reference":"https://data.gov.sg/datasets/d_bda4baa634dd1cc7a6c7cad5f19e2d68/view","retrievedAt":"2026-11-15","licensingNotes":"Singapore Open Data Licence — free for personal or commercial use"}
+]
