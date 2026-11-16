@@ -2702,5 +2702,10 @@
 {"id":"elm_spicy_oyster_mushroom_pasta","brandId":"koufu_elemen","conceptId":null,"name":"Spicy Oyster Mushroom Omelette Pasta","emoji":"🍝","category":"Pasta","kind":"dish","isPopular":false,"activeStatus":"active"},
 {"id":"elm_stirfried_brown_rice_beancurd","brandId":"koufu_elemen","conceptId":null,"name":"Stir-Fried Brown Rice with Beancurd Preserved","emoji":"🍚","category":"Rice Bowls","kind":"dish","isPopular":false,"activeStatus":"active"},
 {"id":"elm_maca_soup","brandId":"koufu_elemen","conceptId":null,"name":"Double-Boiled Maca Soup","emoji":"🥣","category":"Soups","kind":"dish","isPopular":false,"activeStatus":"active"},
-{"id":"elm_purple_rice_porridge_dessert","brandId":"koufu_elemen","conceptId":null,"name":"Chilled Purple Rice Porridge with Coconut Ice Cream","emoji":"🍨","category":"Desserts","kind":"dessert","isPopular":false,"activeStatus":"active"}
+{"id":"elm_purple_rice_porridge_dessert","brandId":"koufu_elemen","conceptId":null,"name":"Chilled Purple Rice Porridge with Coconut Ice Cream","emoji":"🍨","category":"Desserts","kind":"dessert","isPopular":false,"activeStatus":"active"},
+{"id":"mcd_fries_s","brandId":"mcd","conceptId":null,"name":"French Fries (S)","emoji":"🍟","category":"Sides","kind":"side","isPopular":false,"activeStatus":"active"},
+{"id":"mcd_fries_m","brandId":"mcd","conceptId":null,"name":"French Fries (M)","emoji":"🍟","category":"Sides","kind":"side","isPopular":false,"activeStatus":"active"},
+{"id":"mcd_fries_l","brandId":"mcd","conceptId":null,"name":"French Fries (L)","emoji":"🍟","category":"Sides","kind":"side","isPopular":false,"activeStatus":"active"},
+{"id":"mcd_coke_less_sugar_s","brandId":"mcd","conceptId":null,"name":"Coca-Cola Original Taste Less Sugar (S)","emoji":"🥤","category":"Beverages","kind":"drink","isPopular":false,"activeStatus":"active"},
+{"id":"mcd_coke_zero_s","brandId":"mcd","conceptId":null,"name":"Coca-Cola Zero Sugar (S)","emoji":"🥤","category":"Beverages","kind":"drink","isPopular":false,"activeStatus":"active"}
 ]

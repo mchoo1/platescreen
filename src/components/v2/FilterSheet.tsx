@@ -210,7 +210,7 @@ export function FilterSheet({ open, focus, filters, index, user, onRequestLocati
         </div>
 
         <div className="p-4 border-t border-ps-line bg-ps-bar shrink-0">
-          <button onClick={() => onApply(d)} className="btn-primary w-full">Show {count.toLocaleString()} {count === 1 ? 'dish' : 'dishes'}</button>
+          <button onClick={() => onApply(d)} className="btn-primary w-full">Show {count.toLocaleString()} {count === 1 ? 'result' : 'results'}</button>
         </div>
       </div>
     </div>

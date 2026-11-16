@@ -2702,5 +2702,10 @@
 {"id":"elm_spicy_oyster_mushroom_pasta--default","productId":"elm_spicy_oyster_mushroom_pasta","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
 {"id":"elm_stirfried_brown_rice_beancurd--default","productId":"elm_stirfried_brown_rice_beancurd","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
 {"id":"elm_maca_soup--default","productId":"elm_maca_soup","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
-{"id":"elm_purple_rice_porridge_dessert--default","productId":"elm_purple_rice_porridge_dessert","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true}
+{"id":"elm_purple_rice_porridge_dessert--default","productId":"elm_purple_rice_porridge_dessert","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
+{"id":"mcd_fries_s--default","productId":"mcd_fries_s","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
+{"id":"mcd_fries_m--default","productId":"mcd_fries_m","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
+{"id":"mcd_fries_l--default","productId":"mcd_fries_l","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
+{"id":"mcd_coke_less_sugar_s--default","productId":"mcd_coke_less_sugar_s","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true},
+{"id":"mcd_coke_zero_s--default","productId":"mcd_coke_zero_s","name":"Regular","portionQuantity":1,"portionUnit":"serving","isDefault":true}
 ]

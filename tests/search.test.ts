@@ -22,9 +22,9 @@ describe('plain-language search', () => {
   it('leaves plain dish names as text', () => {
     expect(parseQuery('mcdonalds big mac').text).toBe('mcdonalds big mac');
   });
-  it('the PRD example returns the 10 dishes that fit', () => {
+  it('the PRD example returns the 9 dishes that fit (home-cooked excluded)', () => {
     const r = applyFilters(index(), { ...DEFAULT_FILTERS, kcalMax: 650, proteinMin: 40, priceMax: 12 }, { user: null, now: NOW });
-    expect(r).toHaveLength(10);
+    expect(r).toHaveLength(9);
     expect(r[0].row.ppd! >= r[r.length - 1].row.ppd!).toBe(true);
   });
 });

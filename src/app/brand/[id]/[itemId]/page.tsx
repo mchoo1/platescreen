@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ALLERGENS } from '@/db/schema';
-import { ALLERGEN_LABEL, COOKING_LABEL, DAY, allDishParams, fmtDate, getDish, outletTypeLabel } from '@/lib/pages';
+import { ALLERGEN_LABEL, COOKING_LABEL, DAY, allDishParams, fmtDate, getDish, mealsContaining, outletTypeLabel } from '@/lib/pages';
 import { AppHeader, Icon, TrustBadge, fmt$, fmtN } from '@/components/v2/ui';
 
 export function generateStaticParams() {
@@ -97,12 +97,12 @@ export default function DishPage({ params }: { params: { id: string; itemId: str
 
         {trustCopy && (
           <section aria-label="Where these numbers come from" className={`p-4 rounded-2xl flex flex-col gap-2 ${d.trust === 'verified' || d.trust === 'operator' ? 'bg-ps-greenbg border border-ps-greenline' : 'bg-ps-amberbg border-[1.5px] border-dashed border-ps-amberline'}`}>
-            <TrustBadge trust={d.trust} />
+            <div className="flex"><TrustBadge trust={d.trust} /></div>
             <p className={`m-0 text-sm leading-relaxed ${d.trust === 'verified' || d.trust === 'operator' ? 'text-ps-greenink' : 'text-ps-amberink'}`}>
               {trustCopy.body}{d.concept && d.trust === 'typical' && d.concept.name.toLowerCase() !== product.name.toLowerCase() ? ` Standard dish: ${d.concept.name}.` : ''}
             </p>
             {p && p.assumptions.length > 0 && (
-              <details className="text-[13px] text-ps-amberink">
+              <details className={`text-[13px] ${d.trust === 'verified' || d.trust === 'operator' ? 'text-ps-greenink' : 'text-ps-amberink'}`}>
                 <summary className="cursor-pointer font-semibold min-h-8 flex items-center">What this assumes</summary>
                 <ul className="mt-1 mb-0 pl-5">{p.assumptions.map((a) => <li key={a}>{a}</li>)}</ul>
               </details>
@@ -171,6 +171,13 @@ export default function DishPage({ params }: { params: { id: string; itemId: str
           </ul>
           {d.outletCount > d.outlets.length && <Link href={`/brand/${brand.id}`} className="text-sm no-underline">See all {d.outletCount} outlets</Link>}
         </section>
+
+        {mealsContaining(product.id).length > 0 && (
+          <section aria-label="As a meal" className="card p-4 flex flex-col gap-2">
+            <h2 className="m-0 text-[15px] font-bold">Also as a meal</h2>
+            {mealsContaining(product.id).slice(0, 6).map((m) => <Link key={m.id} href={`/brand/${brand.id}/meal/${m.id}`} className="text-sm no-underline">{m.name}</Link>)}
+          </section>
+        )}
 
         <div className="flex gap-2.5 flex-wrap">
           <Link href={`/compare?ids=${product.id}`} className="btn-ghost no-underline">Compare</Link>

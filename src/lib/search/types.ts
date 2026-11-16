@@ -6,8 +6,24 @@ import type { Allergen, AllergenStatus, CookingMethod, NutritionBasis, Nutrition
 
 export type Trust = 'verified' | 'operator' | 'typical' | 'estimate' | 'community';
 
+/** One way of ordering a meal set (a choice per group), with its totals. */
+export interface SetCombo {
+  summary: string;               // "French Fries (M) + Coca-Cola Zero Sugar (S)"
+  isDefault: boolean;
+  kcal: number | null;           // sum of known components (a lower bound if !complete)
+  protein: number | null;
+  carbs: number | null;
+  fat: number | null;
+  complete: boolean;
+  price: number | null;          // set price + upgrade charges; null if any charge unknown
+  ppd: number | null;
+}
+
 export interface SearchRow {
   id: string;
+  kind: 'dish' | 'set';
+  combos?: SetCombo[];           // sets only; combos[0] is the default meal
+  priceNote: 'unconfirmed' | null; // price from unconfirmed listings (not just undated)
   brandId: string;
   name: string;
   emoji: string;
@@ -72,10 +88,10 @@ export interface SearchIndex {
   venues: VenueInfo[];
   pending: PendingBrandRow[];
   brandOutlets: Record<string, number[]>; // brandId → indices into outlets
-  stats: { dishes: number; brands: number; outlets: number; verified: number; typical: number; estimate: number; venuesWithClosures: number };
+  stats: { dishes: number; sets: number; brands: number; outlets: number; verified: number; typical: number; estimate: number; venuesWithClosures: number };
 }
 
-export type OutletGroup = 'hawker' | 'restaurant' | 'grab_go' | 'supermarket' | 'home';
+export type OutletGroup = 'hawker' | 'restaurant' | 'grab_go' | 'supermarket';
 export type SortKey = 'ppd' | 'price' | 'kcal' | 'protein' | 'distance' | 'name';
 export type SpiceFilter = 'any' | 'mild' | 'spicy';
 
@@ -115,10 +131,16 @@ export const UI_COOKING: { value: CookingMethod; label: string }[] = [
 export const OUTLET_GROUPS: { value: OutletGroup; label: string; types: OutletType[] }[] = [
   { value: 'hawker', label: 'Hawker & food court', types: ['hawker', 'food_court_stall', 'food_court', 'coffeeshop', 'canteen'] },
   { value: 'restaurant', label: 'Restaurants & chains', types: ['restaurant'] },
-  { value: 'grab_go', label: 'Grab & go', types: ['grab_go', 'ready_to_eat'] },
+  { value: 'grab_go', label: 'Grab & go / takeaway shops', types: ['grab_go', 'ready_to_eat'] },
   { value: 'supermarket', label: 'Supermarket', types: ['supermarket'] },
-  { value: 'home', label: 'Home-cooked', types: ['home_cooked'] },
 ];
+
+/**
+ * Outlet types left out of search, the sitemap and static pages for now
+ * (Ming, 2026-11-16: "remove home cooked food in the search"). The data stays
+ * in /data; delete the type from this list to bring it back.
+ */
+export const HIDDEN_OUTLET_TYPES: OutletType[] = ['home_cooked'];
 
 export interface Filters {
   q: string;

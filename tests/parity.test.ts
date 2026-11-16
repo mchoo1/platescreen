@@ -2,17 +2,24 @@
 import { describe, expect, it } from 'vitest';
 import * as legacy from '@/lib/screener';
 import { applyFilters } from '@/lib/search/filter';
-import { DEFAULT_FILTERS, type Filters } from '@/lib/search/types';
+import { DEFAULT_FILTERS, HIDDEN_OUTLET_TYPES, type Filters } from '@/lib/search/types';
 import { index } from './helpers';
 
-const legacyRows = legacy.buildScreenerRows();
-const ids = (rows: { id: string }[]) => new Set(rows.map((r) => r.id));
-const run = (patch: Partial<Filters>) => ids(applyFilters(index(), { ...DEFAULT_FILTERS, ...patch }).map((r) => r.row));
+// Home-cooked recipes are deliberately hidden from search since 2026-11-16
+// (HIDDEN_OUTLET_TYPES), so parity is checked on everything else.
+const legacyRows = legacy.buildScreenerRows().filter((r) => !HIDDEN_OUTLET_TYPES.includes(r.outletType));
+const visible = new Set(legacyRows.map((r) => r.id));
+const ids = (rows: { id: string }[]) => new Set(rows.map((r) => r.id).filter((id) => visible.has(id)));
+const run = (patch: Partial<Filters>) => new Set(applyFilters(index(), { ...DEFAULT_FILTERS, ...patch }).filter((r) => r.row.kind === 'dish' && visible.has(r.row.id)).map((r) => r.row.id));
 const runLegacy = (patch: Partial<legacy.ScreenerFilters>) => ids(legacy.applyFilters(legacyRows, { ...legacy.DEFAULT_FILTERS, ...patch }));
 
 describe('v1 → v2 parity', () => {
+  it('home-cooked recipes are not in search', () => {
+    expect(index().rows.some((r) => r.outletType === 'home_cooked')).toBe(false);
+  });
+
   it('every v1 dish exists with identical name, stall, price and macros', () => {
-    const byId = new Map(index().rows.map((r) => [r.id, r]));
+    const byId = new Map(index().rows.filter((r) => visible.has(r.id)).map((r) => [r.id, r]));
     expect(byId.size).toBe(legacyRows.length);
     for (const l of legacyRows) {
       const r = byId.get(l.id)!;

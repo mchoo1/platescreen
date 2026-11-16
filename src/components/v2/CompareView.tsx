@@ -65,7 +65,7 @@ export function CompareView() {
                     <th scope="col" />
                     {rows.map((r) => (
                       <th key={r.id} scope="col" className="text-left align-top px-2 sm:px-3 py-3">
-                        <Link href={`/brand/${r.brandId}/${r.id}`} className="text-ps-ink no-underline font-bold leading-snug hover:underline">{r.name}</Link>
+                        <Link href={r.kind === 'set' ? `/brand/${r.brandId}/meal/${r.id}` : `/brand/${r.brandId}/${r.id}`} className="text-ps-ink no-underline font-bold leading-snug hover:underline">{r.name}</Link>
                         <div className="text-xs font-medium text-ps-muted mt-0.5">{r.brandName}</div>
                       </th>
                     ))}

@@ -1087,5 +1087,8 @@
 {"productId":"elm_stirfried_brown_rice_beancurd","method":"stir_fried","isPrimary":true,"basis":"name_rule","sourceId":"name_rule_v1"},
 {"productId":"elm_maca_soup","method":"soup","isPrimary":true,"basis":"name_rule","sourceId":"name_rule_v1"},
 {"productId":"elm_maca_soup","method":"boiled","isPrimary":false,"basis":"name_rule","sourceId":"name_rule_v1"},
-{"productId":"elm_purple_rice_porridge_dessert","method":"soup","isPrimary":true,"basis":"name_rule","sourceId":"name_rule_v1"}
+{"productId":"elm_purple_rice_porridge_dessert","method":"soup","isPrimary":true,"basis":"name_rule","sourceId":"name_rule_v1"},
+{"productId":"mcd_fries_s","method":"deep_fried","isPrimary":true,"basis":"operator_declared","sourceId":"mcd_sg_website_2026_11"},
+{"productId":"mcd_fries_m","method":"deep_fried","isPrimary":true,"basis":"operator_declared","sourceId":"mcd_sg_website_2026_11"},
+{"productId":"mcd_fries_l","method":"deep_fried","isPrimary":true,"basis":"operator_declared","sourceId":"mcd_sg_website_2026_11"}
 ]

@@ -8,7 +8,7 @@ import type {
   OutletClosure, OutletHours, OutletLicence, Price, Product, ProductDietTag, ProductPreparation, Venue,
 } from '@/db/schema';
 import { trustOf, proteinPerDollar } from '@/lib/search/build';
-import type { Trust } from '@/lib/search/types';
+import { HIDDEN_OUTLET_TYPES, type Trust } from '@/lib/search/types';
 
 function lazy<T>(fn: () => T): () => T {
   let v: T | undefined;
@@ -134,8 +134,9 @@ export function getBrand(brandId: string): BrandView | null {
   return { brand, items, outlets: views, outletCount: count };
 }
 
-export const allBrandIds = () => ctx().db.brands.map((b) => b.id);
-export const allDishParams = () => ctx().db.products.map((p) => ({ id: p.brandId, itemId: p.id }));
+const visibleBrand = (id: string) => { const b = ctx().brand.get(id); return !!b && !HIDDEN_OUTLET_TYPES.includes(b.type); };
+export const allBrandIds = () => ctx().db.brands.filter((b) => visibleBrand(b.id)).map((b) => b.id);
+export const allDishParams = () => ctx().db.products.filter((p) => visibleBrand(p.brandId)).map((p) => ({ id: p.brandId, itemId: p.id }));
 
 const OUTLET_TYPE_LABEL: Record<string, string> = {
   restaurant: 'Restaurant', food_court: 'Food court', coffeeshop: 'Coffeeshop', canteen: 'Canteen', grab_go: 'Grab & go',
@@ -153,3 +154,69 @@ export const COOKING_LABEL: Record<string, string> = {
 };
 export const DAY = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 export const fmtDate = (iso: string) => new Date(iso + 'T00:00:00Z').toLocaleDateString('en-SG', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+// ── Meal sets ────────────────────────────────────────────────────────────────
+export interface MealOptionView {
+  id: string;
+  productId: string;
+  name: string;
+  isDefault: boolean;
+  kcal: number | null; protein: number | null; carbs: number | null; fat: number | null;
+  trust: Trust | null;
+  priceDelta: number | null;     // null = unknown; defaults are included (0)
+}
+export interface MealView {
+  brand: Brand;
+  id: string;
+  name: string;
+  groups: { id: string; name: string; options: MealOptionView[] }[];
+  setPrice: number | null;
+  setPriceSource: DataSource | null;
+  sources: DataSource[];
+  mainProductId: string | null;
+}
+
+export function getMeal(brandId: string, configId: string): MealView | null {
+  const c = ctx();
+  const cfg = c.db.meal_configurations.find((m) => m.id === configId && m.brandId === brandId && m.activeStatus === 'active');
+  const brand = c.brand.get(brandId);
+  if (!cfg || !brand || HIDDEN_OUTLET_TYPES.includes(brand.type)) return null;
+  const groups = c.db.configuration_groups.filter((g) => g.configurationId === cfg.id).sort((a, b) => a.displayOrder - b.displayOrder);
+  const optPrice = new Map(c.db.prices.filter((p) => p.subjectType === 'option' && p.validTo == null && p.channel === 'in_store').map((p) => [p.subjectId, p]));
+  const usedSources = new Set<string>();
+  const views = groups.map((g) => ({
+    id: g.id, name: g.name,
+    options: c.db.configuration_options.filter((o) => o.groupId === g.id).sort((a, b) => Number(b.isDefault) - Number(a.isDefault)).map((o) => {
+      const prod = c.product.get(o.productId);
+      const prof = preferredProfile(c.nut, o.productId, prod?.conceptId ?? null);
+      if (prof) usedSources.add(prof.sourceId);
+      const pr = optPrice.get(o.id);
+      if (pr) usedSources.add(pr.sourceId);
+      return {
+        id: o.id, productId: o.productId, name: prod?.name ?? o.productId, isDefault: o.isDefault,
+        kcal: prof?.caloriesKcal ?? null, protein: prof?.proteinG ?? null, carbs: prof?.carbohydrateG ?? null, fat: prof?.fatG ?? null,
+        trust: trustOf(prof), priceDelta: o.isDefault ? 0 : pr?.amount ?? null,
+      };
+    }),
+  }));
+  const sp = c.db.prices.find((p) => p.subjectType === 'configuration' && p.subjectId === cfg.id && p.validTo == null && p.channel === 'in_store');
+  if (sp) usedSources.add(sp.sourceId);
+  return {
+    brand, id: cfg.id, name: cfg.name, groups: views,
+    setPrice: sp?.amount ?? null, setPriceSource: sp ? c.source.get(sp.sourceId) ?? null : null,
+    sources: [...usedSources].map((s) => c.source.get(s)).filter((s): s is DataSource => !!s),
+    mainProductId: views[0]?.options[0]?.productId ?? null,
+  };
+}
+
+export const allMealParams = () => ctx().db.meal_configurations
+  .filter((m) => m.activeStatus === 'active' && visibleBrand(m.brandId))
+  .map((m) => ({ id: m.brandId, configId: m.id }));
+
+/** Meals that include this product as an option (for "Also as a meal" links). */
+export function mealsContaining(productId: string): { id: string; name: string }[] {
+  const c = ctx();
+  const groupIds = new Set(c.db.configuration_options.filter((o) => o.productId === productId).map((o) => o.groupId));
+  const cfgIds = new Set(c.db.configuration_groups.filter((g) => groupIds.has(g.id)).map((g) => g.configurationId));
+  return c.db.meal_configurations.filter((m) => cfgIds.has(m.id) && m.activeStatus === 'active').map((m) => ({ id: m.id, name: m.name }));
+}

@@ -1,1 +1,15 @@
-[]
+[
+{"id":"mcd_evm_big_mac","brandId":"mcd","name":"Big Mac Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_mcspicy","brandId":"mcd","name":"McSpicy Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_double_mcspicy","brandId":"mcd","name":"Double McSpicy Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_quarter_pounder","brandId":"mcd","name":"Quarter Pounder with Cheese Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_double_quarter_pounder","brandId":"mcd","name":"Double Quarter Pounder with Cheese Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_buttermilk_crispy","brandId":"mcd","name":"Buttermilk Crispy Chicken Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_mcchicken","brandId":"mcd","name":"McChicken Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_filet_o_fish","brandId":"mcd","name":"Filet-O-Fish Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_double_filet","brandId":"mcd","name":"Double Filet-O-Fish Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_nuggets_6pc","brandId":"mcd","name":"Chicken McNuggets (6pc) Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_nuggets_9pc","brandId":"mcd","name":"Chicken McNuggets (9pc) Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_double_cheeseburger","brandId":"mcd","name":"Double Cheeseburger Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"},
+{"id":"mcd_evm_mcwings_4pc","brandId":"mcd","name":"McWings (4pc) Extra Value Meal","type":"set","officialProfileId":null,"activeStatus":"active"}
+]

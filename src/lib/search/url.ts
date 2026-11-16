@@ -10,7 +10,7 @@ const n = (v: string | null) => (v == null || v === '' || Number.isNaN(Number(v)
 
 const LEGACY_OUTLET_TO_GROUP: Record<string, OutletGroup> = {
   hawker: 'hawker', food_court_stall: 'hawker', food_court: 'hawker', coffeeshop: 'hawker', canteen: 'hawker',
-  restaurant: 'restaurant', grab_go: 'grab_go', ready_to_eat: 'grab_go', supermarket: 'supermarket', home_cooked: 'home',
+  restaurant: 'restaurant', grab_go: 'grab_go', ready_to_eat: 'grab_go', supermarket: 'supermarket',
 };
 
 export function filtersFromParams(p: URLSearchParams): { filters: Filters; ask: string; compare: string[] } {

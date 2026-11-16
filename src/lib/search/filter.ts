@@ -14,13 +14,42 @@ import { haversineKm } from '@/lib/geo';
 import { brandTagAppliesToDish } from '@/db/rules';
 import { combineOpenStates, outletOpenState, sgtClock, type OpenState, type SgtClock } from './hours';
 import { matchesNormalized, normalizeSearchText } from './text';
-import { OUTLET_GROUPS, type Filters, type SearchIndex, type SearchRow } from './types';
+import { OUTLET_GROUPS, type Filters, type SearchIndex, type SearchRow, type SetCombo } from './types';
+
+/** The numbers a result is shown and ranked by (a set's chosen combination, or the dish itself). */
+export interface ResultView { kcal: number | null; protein: number | null; carbs: number | null; fat: number | null; price: number | null; ppd: number | null; complete: boolean }
 
 export interface ResultRow {
   row: SearchRow;
+  view: ResultView;
+  combo: SetCombo | null;        // sets: the combination shown (default if it fits, else the best fit)
   distanceKm: number | null;
   nearestOutlet: number | null;
   open: OpenState;
+}
+
+const viewOf = (r: SearchRow | SetCombo): ResultView => ({ kcal: r.kcal, protein: r.protein, carbs: r.carbs, fat: r.fat, price: r.price, ppd: r.ppd, complete: r.complete });
+
+/**
+ * Nutrient/price limits against possibly-incomplete totals:
+ *   - a maximum can only be confirmed when the total is complete;
+ *   - a minimum can be confirmed by a lower bound.
+ */
+function passesNumbers(v: ResultView, f: Filters): boolean {
+  const max = (val: number | null, lim: number | null) => lim == null || (val != null && v.complete && val <= lim);
+  const min = (val: number | null, lim: number | null) => lim == null || (val != null && val >= lim);
+  return max(v.kcal, f.kcalMax) && min(v.kcal, f.kcalMin) && min(v.protein, f.proteinMin)
+    && max(v.carbs, f.carbsMax) && max(v.fat, f.fatMax)
+    && (f.priceMax == null || (v.price != null && v.price <= f.priceMax));
+}
+
+/** For a set: the default meal if it fits, otherwise the cheapest fitting combination (then most protein). */
+export function pickCombo(row: SearchRow, f: Filters): SetCombo | null {
+  const combos = row.combos ?? [];
+  const fits = combos.filter((c) => passesNumbers(viewOf(c), f));
+  if (!fits.length) return null;
+  if (fits[0].isDefault) return fits[0];
+  return [...fits].sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity) || (b.protein ?? 0) - (a.protein ?? 0))[0];
 }
 
 export interface FilterContext {
@@ -46,12 +75,7 @@ export function allergenBlocks(row: SearchRow, allergen: string, hideUnknown: bo
 
 function passesStatic(row: SearchRow, f: Filters, clockDays: number | null): boolean {
   if (!matchesNormalized(f.q, row.text)) return false;
-  if (f.kcalMin != null && (row.kcal == null || row.kcal < f.kcalMin)) return false;
-  if (f.kcalMax != null && (row.kcal == null || row.kcal > f.kcalMax)) return false;
-  if (f.proteinMin != null && (row.protein == null || row.protein < f.proteinMin)) return false;
-  if (f.carbsMax != null && (row.carbs == null || row.carbs > f.carbsMax)) return false;
-  if (f.fatMax != null && (row.fat == null || row.fat > f.fatMax)) return false;
-  if (f.priceMax != null && (row.price == null || row.price > f.priceMax)) return false;
+  if (row.kind === 'dish' && !passesNumbers(viewOf(row), f)) return false;
   if (f.diet.length && !f.diet.every((t) => dietMatches(row, t))) return false;
   if (f.glutenFreeConfirmed && !row.glutenFree) return false;
   if (f.excludeAllergens.some((a) => allergenBlocks(row, a, f.hideUnknownAllergens))) return false;
@@ -81,6 +105,12 @@ export function applyFilters(index: SearchIndex, f: Filters, ctx: FilterContext 
   const out: ResultRow[] = [];
   for (const row of index.rows) {
     if (!passesStatic(row, f, today)) continue;
+    let combo: SetCombo | null = null;
+    if (row.kind === 'set') {
+      combo = pickCombo(row, f);
+      if (!combo) continue;
+    }
+    const view = combo ? viewOf(combo) : viewOf(row);
 
     // Outlet-level filters: area, distance, open state — evaluated on the outlets that match.
     const all = index.brandOutlets[row.brandId] ?? [];
@@ -115,7 +145,7 @@ export function applyFilters(index: SearchIndex, f: Filters, ctx: FilterContext 
       if (open === 'closed' || open === 'closed_today') continue;
       if (open === 'unknown' && !f.includeHoursUnknown) continue;
     }
-    out.push({ row, distanceKm, nearestOutlet: nearest, open });
+    out.push({ row, view, combo, distanceKm, nearestOutlet: nearest, open });
   }
   return sortResults(out, f.sort);
 }
@@ -130,10 +160,10 @@ const nullsLast = (a: number | null, b: number | null, dir: 1 | -1) => {
 export function sortResults(rows: ResultRow[], sort: Filters['sort']): ResultRow[] {
   const r = [...rows];
   switch (sort) {
-    case 'ppd': return r.sort((a, b) => nullsLast(a.row.ppd, b.row.ppd, -1) || a.row.name.localeCompare(b.row.name));
-    case 'price': return r.sort((a, b) => nullsLast(a.row.price, b.row.price, 1) || a.row.name.localeCompare(b.row.name));
-    case 'kcal': return r.sort((a, b) => nullsLast(a.row.kcal, b.row.kcal, 1) || a.row.name.localeCompare(b.row.name));
-    case 'protein': return r.sort((a, b) => nullsLast(a.row.protein, b.row.protein, -1) || a.row.name.localeCompare(b.row.name));
+    case 'ppd': return r.sort((a, b) => nullsLast(a.view.ppd, b.view.ppd, -1) || a.row.name.localeCompare(b.row.name));
+    case 'price': return r.sort((a, b) => nullsLast(a.view.price, b.view.price, 1) || a.row.name.localeCompare(b.row.name));
+    case 'kcal': return r.sort((a, b) => nullsLast(a.view.kcal, b.view.kcal, 1) || a.row.name.localeCompare(b.row.name));
+    case 'protein': return r.sort((a, b) => nullsLast(a.view.protein, b.view.protein, -1) || a.row.name.localeCompare(b.row.name));
     case 'distance': return r.sort((a, b) => nullsLast(a.distanceKm, b.distanceKm, 1) || a.row.name.localeCompare(b.row.name));
     case 'name': return r.sort((a, b) => a.row.name.localeCompare(b.row.name));
   }

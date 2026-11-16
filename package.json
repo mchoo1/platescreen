@@ -12,7 +12,8 @@
     "build:index": "tsx scripts/build-search-index.ts",
     "test": "vitest run",
     "migrate:v1": "tsx scripts/migrate-v1.ts",
-    "import:nea": "tsx scripts/import-nea-closures.ts"
+    "import:nea": "tsx scripts/import-nea-closures.ts",
+    "predev": "tsx scripts/build-search-index.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

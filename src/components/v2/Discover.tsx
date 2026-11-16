@@ -24,32 +24,53 @@ const EXAMPLES = [
 function fitsLine(r: ResultRow, f: Filters): string | null {
   const parts: string[] = [];
   let constrained = false;
-  if (f.kcalMax != null && r.row.kcal != null) { constrained = true; const left = f.kcalMax - r.row.kcal; if (left > 0) parts.push(`${left} kcal`); }
-  if (f.priceMax != null && r.row.price != null) { constrained = true; const left = f.priceMax - r.row.price; if (left > 0.004) parts.push(`$${left.toFixed(2)}`); }
+  if (f.kcalMax != null && r.view.kcal != null) { constrained = true; const left = f.kcalMax - r.view.kcal; if (left > 0) parts.push(`${left} kcal`); }
+  if (f.priceMax != null && r.view.price != null) { constrained = true; const left = f.priceMax - r.view.price; if (left > 0.004) parts.push(`$${left.toFixed(2)}`); }
   if (!constrained) return null;
   return parts.length ? `Fits · leaves ${parts.join(', ')}` : 'Fits exactly';
 }
 
+export const resultHref = (row: { kind: string; brandId: string; id: string }) =>
+  row.kind === 'set' ? `/brand/${row.brandId}/meal/${row.id}` : `/brand/${row.brandId}/${row.id}`;
+
+function SetLine({ r }: { r: ResultRow }) {
+  if (r.row.kind !== 'set' || !r.combo) return null;
+  const def = r.row.combos![0];
+  if (r.combo.isDefault) return <span className="text-xs text-ps-muted">With {r.combo.summary}</span>;
+  return (
+    <span className="text-xs text-ps-muted">
+      <span className="text-ps-greenink">Fits with {r.combo.summary}</span>
+      {' · '}standard meal {def.kcal == null ? '—' : `${def.kcal} kcal`}{def.price != null ? `, $${def.price.toFixed(2)}` : ''}
+    </span>
+  );
+}
+
+const PriceNote = ({ row }: { row: { priceNote: string | null } }) =>
+  row.priceNote === 'unconfirmed' ? <span className="block text-[11px] font-sans font-medium text-ps-muted text-right">unconfirmed</span> : null;
+
 const distanceLabel = (km: number | null) => (km == null ? null : km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`);
 
 function ResultCard({ r, f, selected, onToggle, canSelect }: { r: ResultRow; f: Filters; selected: boolean; onToggle: () => void; canSelect: boolean }) {
-  const { row } = r;
+  const { row, view } = r;
   const fits = fitsLine(r, f);
   return (
     <li className="card p-4 flex flex-col gap-2.5">
       <div className="flex justify-between gap-3">
         <div className="flex flex-col min-w-0">
-          <Link href={`/brand/${row.brandId}/${row.id}`} className="text-ps-ink no-underline font-bold text-base leading-snug hover:underline">{row.name}</Link>
+          <Link href={resultHref(row)} className="text-ps-ink no-underline font-bold text-base leading-snug hover:underline">
+            {row.name}{row.kind === 'set' && <span className="ml-2 align-middle text-[11px] font-bold text-ps-blue border border-ps-blue rounded-full px-1.5 py-0.5">Meal</span>}
+          </Link>
           <span className="text-[13px] text-ps-muted truncate">{row.location && row.location !== row.brandName ? `${row.brandName} · ${row.location}` : row.brandName}</span>
         </div>
-        <span className="font-mono font-semibold text-[17px] shrink-0">{fmt$(row.price)}</span>
+        <span className="font-mono font-semibold text-[17px] shrink-0">{fmt$(view.price)}<PriceNote row={row} /></span>
       </div>
+      <SetLine r={r} />
       <div className="flex flex-wrap gap-x-4 gap-y-1 font-mono text-[13px] text-ps-muted">
-        <span><b className="text-ps-ink">{fmtN(row.kcal)}</b> kcal</span>
-        <span><b className="text-ps-green">{fmtN(row.protein, ' g')}</b> P</span>
-        <span>{fmtN(row.carbs)} C</span>
-        <span>{fmtN(row.fat)} F</span>
-        <span className="ml-auto"><b className="text-ps-ink">{row.ppd == null ? '—' : row.ppd.toFixed(1)}</b> g/$</span>
+        <span><b className="text-ps-ink">{view.complete ? '' : '≥ '}{fmtN(view.kcal)}</b> kcal</span>
+        <span><b className="text-ps-green">{view.complete ? '' : '≥ '}{fmtN(view.protein, ' g')}</b> P</span>
+        <span>{fmtN(view.carbs)} C</span>
+        <span>{fmtN(view.fat)} F</span>
+        <span className="ml-auto"><b className="text-ps-ink">{view.ppd == null ? '—' : view.ppd.toFixed(1)}</b> g/$</span>
       </div>
       <div className="flex items-center justify-between gap-2 flex-wrap">
         <div className="flex items-center gap-3 text-xs">
@@ -58,7 +79,7 @@ function ResultCard({ r, f, selected, onToggle, canSelect }: { r: ResultRow; f: 
           <OpenBadge state={r.open} />
         </div>
         <div className="flex items-center gap-3">
-          <TrustBadge trust={row.trust} complete={row.complete} />
+          <TrustBadge trust={row.trust} complete={view.complete} />
           <label className={`flex items-center gap-1.5 text-xs font-semibold min-h-8 ${canSelect || selected ? 'text-ps-muted cursor-pointer' : 'text-ps-dim'}`}>
             <input type="checkbox" checked={selected} disabled={!canSelect && !selected} onChange={onToggle} className="w-4 h-4 accent-ps-green" />
             Compare
@@ -95,19 +116,23 @@ function ResultsTable({ rows, f, sort, onSort, selected, onToggle, canSelect }: 
             return (
               <tr key={r.row.id} className={`border-t border-ps-line ${sel ? 'bg-[#15301f]' : i % 2 ? 'bg-ps-bar' : ''}`}>
                 <td className="px-3 py-3"><input type="checkbox" aria-label={`Compare ${r.row.name}`} checked={sel} disabled={!canSelect && !sel} onChange={() => onToggle(r.row.id)} className="w-4 h-4 accent-ps-green" /></td>
-                <td className="px-3 py-3 font-sans"><Link href={`/brand/${r.row.brandId}/${r.row.id}`} className="text-ps-ink font-semibold no-underline hover:underline">{r.row.name}</Link></td>
+                <td className="px-3 py-3 font-sans">
+                  <Link href={resultHref(r.row)} className="text-ps-ink font-semibold no-underline hover:underline">{r.row.name}</Link>
+                  {r.row.kind === 'set' && <span className="ml-2 text-[11px] font-bold text-ps-blue border border-ps-blue rounded-full px-1.5 py-0.5">Meal</span>}
+                  <div><SetLine r={r} /></div>
+                </td>
                 <td className="px-3 py-3 font-sans text-ps-muted">
                   {r.row.location && r.row.location !== r.row.brandName ? `${r.row.brandName} · ${r.row.location}` : r.row.brandName}
                   <span className="ml-2"><OpenBadge state={r.open} /></span>
                   {distanceLabel(r.distanceKm) && <span className="ml-2 text-ps-dim">{distanceLabel(r.distanceKm)}</span>}
                 </td>
-                <td className="px-3 py-3 text-right">{fmt$(r.row.price)}</td>
-                <td className="px-3 py-3 text-right">{fmtN(r.row.kcal)}</td>
-                <td className="px-3 py-3 text-right text-ps-green">{fmtN(r.row.protein)}</td>
-                <td className="px-3 py-3 text-right">{fmtN(r.row.carbs)}</td>
-                <td className="px-3 py-3 text-right">{fmtN(r.row.fat)}</td>
-                <td className="px-3 py-3 text-right font-semibold">{r.row.ppd == null ? '—' : r.row.ppd.toFixed(1)}</td>
-                <td className="px-3 py-3 font-sans"><TrustBadge trust={r.row.trust} complete={r.row.complete} /></td>
+                <td className="px-3 py-3 text-right">{fmt$(r.view.price)}<PriceNote row={r.row} /></td>
+                <td className="px-3 py-3 text-right">{r.view.complete ? '' : '≥ '}{fmtN(r.view.kcal)}</td>
+                <td className="px-3 py-3 text-right text-ps-green">{fmtN(r.view.protein)}</td>
+                <td className="px-3 py-3 text-right">{fmtN(r.view.carbs)}</td>
+                <td className="px-3 py-3 text-right">{fmtN(r.view.fat)}</td>
+                <td className="px-3 py-3 text-right font-semibold">{r.view.ppd == null ? '—' : r.view.ppd.toFixed(1)}</td>
+                <td className="px-3 py-3 font-sans"><TrustBadge trust={r.row.trust} complete={r.view.complete} /></td>
               </tr>
             );
           })}
@@ -233,7 +258,7 @@ export function Discover() {
           <>
             <div className="mt-6 mb-3 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <h1 className="m-0 font-display text-xl font-bold">{results.length.toLocaleString()} {results.length === 1 ? 'dish' : 'dishes'}{nActive || filters.q ? ' fit' : ''}</h1>
+                <h1 className="m-0 font-display text-xl font-bold">{results.length.toLocaleString()} {results.length === 1 ? 'result' : 'results'}{nActive || filters.q ? ' fit' : ''}</h1>
                 <p className="m-0 text-xs text-ps-muted">
                   {trustCounts.verified} verified · {trustCounts.typical} typical · {trustCounts.estimate} estimate
                 </p>
